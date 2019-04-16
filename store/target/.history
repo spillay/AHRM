@@ -1,0 +1,22 @@
+run
+compile
+run
+compile
+run
+compile
+run
+run  -Dlogback.debug=true
+run  -Dlogback.debug=true -Dlogger.resource=logback.xml
+run  -Dlogger.resource=logback.xml
+compile
+run  -Dlogger.resource=logback.xml
+exit
+compile
+clean compile
+clean
+compile
+run -Dlogback.debug=true
+exit
+run
+compile
+run

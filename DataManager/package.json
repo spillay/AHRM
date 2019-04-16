@@ -1,0 +1,72 @@
+{
+  "name": "DataManager",
+  "version": "1.0.0",
+  "author": "Suresh Pillay",
+  "main": "dist/index.js",
+  "description": "Module to Query ES for Emotion Analysis",
+  "contributors": [
+    {
+      "name": "Suresh Pillay",
+      "email": "me@sureshpillay.com"
+    }
+  ],
+  "scripts": {
+    "lint": "eslint src test",
+    "build:source": "rimraf dist/ && babel --presets babel-preset-es2015 src/ --out-dir dist/ --copy-files",
+    "build:tests": "rimraf test-dist/ && babel test/ --out-dir test-dist/",
+    "clean": "rimraf dist/ && rimraf test-dist/",
+    "build": "npm run build:source && npm run build:tests",
+    "test": "node node_modules/mocha/bin/mocha --compilers js:babel-core/register --reporter spec test-dist/*",
+    "testone": "node node_modules/mocha/bin/mocha --compilers js:babel-core/register --reporter spec test-dist/Single-test.js",
+    "example": "node example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:spillay/Tools.git"
+  },
+  "keywords": [
+    "module",
+    "es6",
+    "es5",
+    "babel"
+  ],
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "6.16.0",
+    "babel-core": "^6.18.0",
+    "babel-eslint": "7.0.0",
+    "babel-preset-es2015": "6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "chai": "3.5.0",
+    "elasticsearch": "^14.1.0",
+    "eslint": "3.6.1",
+    "eslint-config-airbnb": "12.0.0",
+    "eslint-plugin-import": "1.16.0",
+    "eslint-plugin-jsx-a11y": "2.2.2",
+    "eslint-plugin-react": "6.3.0",
+    "gulp": "3.9.1",
+    "gulp-babel": "6.1.2",
+    "gulp-eslint": "3.0.1",
+    "gulp-mocha": "3.0.1",
+    "gulp-rimraf": "0.2.0",
+    "mocha": "3.2.0",
+    "rimraf": "2.5.4",
+    "run-sequence": "1.2.2"
+  },
+  "engine": "node >= 0.10.x",
+  "homepage": "https://github.com/spillay/Tools",
+  "bugs": {
+    "url": "https://github.com/spillay/Tools/issues"
+  },
+  "private": false,
+  "license": "ISC",
+  "dependencies": {
+    "link": "^0.1.5",
+    "moment": "^2.20.1"
+  }
+}
