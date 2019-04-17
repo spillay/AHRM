@@ -89,6 +89,7 @@ export default class SearchView extends React.Component {
                         <option>frank.hayden@enron.com</option>
                         <option>lisa.kinsey@enron.com</option>
                         <option>mike.roberts@enron.com</option>
+                        <option>from@example.com</option>
                     </datalist>
                     <div className="form-group">
                         <label htmlFor="email">Email address</label>

@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/store/test/controllers/ApplicationControllerSpec.scala:26:31: value query is not a member of com.dsleng.controllers.ApplicationController[0m
+[0m[[0m[31merror[0m] [0m[0m      val result = controller.query().apply(request)[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

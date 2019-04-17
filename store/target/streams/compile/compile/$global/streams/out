@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/store/app/com/dsleng/service/ESService.scala:65:24: ';' expected but string literal found.[0m
+[0m[[0m[31merror[0m] [0m[0m    val indexq = index "/_search";[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

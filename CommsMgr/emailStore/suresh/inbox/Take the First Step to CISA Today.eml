@@ -1,0 +1,439 @@
+Return-Path: <v-plmjnb_blibbelgel_dodhaala_dodhaala_a@bounce.e.isaca.org>
+Delivered-To: suresh@workspaceafrica.com
+Received: from gaea.thishost.co.za
+	by gaea.thishost.co.za (Dovecot) with LMTP id ccLTISQdnFmGCg0AFcTQEQ
+	for <suresh@workspaceafrica.com>; Tue, 22 Aug 2017 14:01:40 +0200
+Return-path: <v-plmjnb_blibbelgel_dodhaala_dodhaala_a@bounce.e.isaca.org>
+Envelope-to: suresh@workspaceafrica.com
+Delivery-date: Tue, 22 Aug 2017 14:01:40 +0200
+Received: from mail7347.e.isaca.org ([129.33.240.44]:48169)
+	by gaea.thishost.co.za with esmtp (Exim 4.89)
+	(envelope-from <v-plmjnb_blibbelgel_dodhaala_dodhaala_a@bounce.e.isaca.org>)
+	id 1dk7s8-003acR-TG
+	for suresh@workspaceafrica.com; Tue, 22 Aug 2017 14:01:29 +0200
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=spop1024; d=e.isaca.org;
+ h=Date:From:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type:List-Unsubscribe; i=donotreply@e.isaca.org;
+ bh=U3BAlkpVR3OEiZvurrf5+UZnrLA=;
+ b=DyXOA9+lxJcdoFku8I4tQWi3s4VV77jKo5bcuRSHNkgV+f8hcecXAdo59X/eUZcSX6npDfRtLO1w
+   NLtKbYYppOAv3W424RvFJbQ9CMna76JkBGnB5wUj5HZ4VA6eDDrh1jHPe6cpLEBmEn/UNQMoa5yW
+   /oWcFgxYM18OCjxuLys=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=spop1024; d=e.isaca.org;
+ b=abULmM84YrA4dVqnbP9EUKZ32FldNPOsx+W0cr34Luu8IyAMdx/XSWbxB7IvkYByw0xAJs+/djB7
+   gCHkX1rL31ie4v3oLpneOU0ADH8B3mu2cIo3WpA4tB+/RvPIPqRThmE6kotpBuf5588A77gpfihT
+   WFT0qOWMJlENo77oIBo=;
+Received: by mail7347.e.isaca.org id hjgehk19if48 for <suresh@workspaceafrica.com>; Tue, 22 Aug 2017 12:00:47 +0000 (envelope-from <v-plmjnb_blibbelgel_dodhaala_dodhaala_a@bounce.e.isaca.org>)
+Date: Tue, 22 Aug 2017 12:00:47 +0000 (GMT)
+From: ISACA - Certifications <donotreply@e.isaca.org>
+Reply-To: donotreply@e.isaca.org
+To: suresh@workspaceafrica.com
+Message-ID: <425548653.413178981503403247818.JavaMail.app@rbg11.atlis1>
+Subject: Take the First Step to CISA Today
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_125690_1145661328.1503403211746"
+x-mid: 16501201
+X-CSA-Complaints: whitelist-complaints@eco.de
+x-rpcampaign: sp16501201
+Feedback-ID: pod1_3083_16501201_1043792048:pod1_3083:ibmsilverpop
+x-job: 16501201
+x-orgId: 3083
+List-Unsubscribe: <mailto:v-plmjnb_blibbelgel_dodhaala_dodhaala_a@bounce.e.isaca.org?subject=Unsubscribe>
+X-SADomain-MailScanner-Information: Please contact SA Domain technical support for more information
+X-SADomain-MailScanner-ID: 1dk7s8-003acR-TG
+X-SADomain-MailScanner: Found to be clean
+X-SADomain-MailScanner-SpamCheck: not spam, SpamAssassin (not cached,
+	score=0.594, required 5, BAYES_00 -1.90, DCC_CHECK 1.10,
+	DKIM_SIGNED 0.10, DKIM_VALID -0.10, DKIM_VALID_AU -0.10,
+	HTML_MESSAGE 0.00, MIME_HTML_ONLY 0.72, MIME_HTML_ONLY_MULTI 0.00,
+	MPART_ALT_DIFF 0.79, RCVD_IN_DNSWL_NONE -0.00,
+	RCVD_IN_MSPIKE_H4 -0.01, RCVD_IN_MSPIKE_WL -0.01,
+	SPF_HELO_PASS -0.00, SPF_PASS -0.00, URIBL_BLOCKED 0.00)
+X-SADomain-MailScanner-From: v-plmjnb_blibbelgel_dodhaala_dodhaala_a@bounce.e.isaca.org
+X-Spam-Status: No
+
+------=_Part_125690_1145661328.1503403211746
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>ISACA</title>
+	<style type="text/css">#outlook a {padding:0;}
+body {width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+.ExternalClass {width:100%;}
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} 
+#backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+img {outline:none; text-decoration:none; border:none; -ms-interpolation-mode: bicubic;}
+a img {border:none;}
+.image_fix {display:block;}
+p {margin: 0 0 15px 0 !important;}
+table td {border-collapse: collapse;}
+table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+a {color: #9ec459; text-decoration:none;}
+table[class=full] {width:100%; clear:both; }
+
+/*IPAD STYLES*/
+@media only screen and (max-width: 640px) {
+table[class="responsive-table"] {width:100%!important;}
+table[class=devicewidth] { width:400px!important;}
+table[class=devicewidth1] { width:400px!important;}
+table[class=bannerwidth] { width:400px!important;}
+td[class="section-padding"] {padding: 0px 15px 0px 15px !important;}
+td[class="mobile-wrapper"] {padding: 10px 5% 15px 5% !important;}
+img[class="img-max"] {max-width: 100% !important; width: 100% !important; height:auto !important;}
+td[class="footer-padding"] {padding: 20px 15px 20px 15px !important;}
+}
+
+@media only screen and (max-width: 480px) {
+table[class=devicewidth] { width:280px!important;}
+table[class=devicewidth1] { width:280px!important;}
+table[class=bannerwidth] { width:280px!important;}
+}
+	</style>
+</head>
+<body bgcolor="#e0e0e0" style="background:#e0e0e0;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	
+		<tr>
+			<td align="center" bgcolor="#e0e0e0" style="padding:5px 0 0 0;">
+			<table border="0" cellpadding="0" cellspacing="0" class="bannerwidth" width="600">
+				
+					<tr>
+						<td>
+						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							
+								<tr>
+									<td align="center" style="color:#6A747C; font-family:Arial, Helvetica, sans-serif; font-size:8.5px; padding:0 10px 8px 10px;">Make obtaining the CISA certification your next move&mdash;Take the first step and register for an upcoming exam today!</td>
+								</tr>
+								<tr>
+									<td align="center" style="color:#6A747C; font-family:Arial, Helvetica, sans-serif;" valign="top"><a href="http://links.e.isaca.org/ctt?kn=8&ms=MTY1MDEyMDES1&r=MTE4MTI5NzM1MjQzS0&b=0&j=MTA0Mzc5MjA0OAS2&mt=1&rt=0" name="Cert_CISA_Reg_01" target="_blank" ><img alt="Globlally Recognized. Locally In-Demand" border="0" class="img-max"  height="175"   src='http://contentz.mkt7946.com/ra/2017/3083/08/16501201/HeroBanner_World1NA2_Reg_600x175.jpg' style="display:block; border:none; outline:none; text-decoration:none;" title="Globlally Recognized. Locally In-Demand" width="600"  /></a></td>
+								</tr>
+							
+						</table>
+						</td>
+					</tr>
+				
+			</table>
+			</td>
+		</tr>
+	
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	
+		<tr>
+			<td align="center" bgcolor="#e0e0e0" valign="top">
+			<table align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidth" width="600">
+				
+					<tr>
+						<td bgcolor="#F1F2F2" style="padding:15px 20px 15px 32px;">
+						<table border="0" cellpadding="0" cellspacing="0" style="font-family:Arial, Helvetica, sans-serif; font-size:14px;" width="100%">
+							
+								<tr>
+									<td style="color:#A30046;"><strong>CISA CERTIFICATION</strong> showcases audit, control, security and cyber security expertise for professionals around the world&mdash;and in your part of it.</td>
+								</tr>
+							
+						</table>
+						</td>
+					</tr>
+				
+			</table>
+			</td>
+		</tr>
+	
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	
+		<tr>
+			<td align="center" bgcolor="#e0e0e0" valign="top">
+			<table align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidth" width="600">
+				
+					<tr>
+						<td bgcolor="#ffffff" style="padding:20px 0px 0px 32px;">
+						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							
+								<tr>
+									<td valign="top">
+									<table align="left" border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="350">
+										
+											<tr>
+												<td valign="top">
+												<table border="0" cellpadding="0" cellspacing="0" style="font-family:Arial, Helvetica, sans-serif; font-size:12px;" width="100%">
+													
+														<tr>
+															<td style="color:#4D4D4D; font-size:12px; font-weight:bold; padding-bottom:6px; line-height:16px;">Take Your CISA Certification Exam on Your Schedule<br />
+															<span style="color:#a30046;"></span><br />
+															<span style="color:#4D4D4D;"><strong></strong>Exams Available:<strong></strong></span><span style="color:#a30046;"><br />
+															1 August-30 September<br />
+															1 November-31 December</span><span style="color:#a30046;"></span></td>
+														</tr>
+														<tr>
+															<td height="28" valign="top"><a href="http://links.e.isaca.org/ctt?kn=18&ms=MTY1MDEyMDES1&r=MTE4MTI5NzM1MjQzS0&b=0&j=MTA0Mzc5MjA0OAS2&mt=1&rt=0" name="Cert_CISA_RegNow_02" target="_blank" ><img alt="register now" border="0"  height="24"   src='http://contentz.mkt7946.com/ra/2017/3083/08/16501201/images_register-now.jpg' style="display:block;" title="register now" width="120"  /></a></td>
+														</tr>
+														<tr>
+															<td>&nbsp;</td>
+														</tr>
+														<tr>
+															<td style="color:#4D4D4D;">Dear Mr. Suresh Pillay</td>
+														</tr>
+														<tr>
+															<td>&nbsp;</td>
+														</tr>
+														<tr>
+															<td style="color:#4D4D4D; line-height:14px;">For companies, governments and organizations worldwide, information has become the most valuable currency in today&rsquo;s fast-moving global environment. ISACA<sup>&reg;</sup>&rsquo;s globally recognized <strong>Certified Information Systems Auditor<sup>&reg;</sup> (CISA<sup>&reg;</sup>)</strong> has come to showcase vital information systems knowledge, skills and experience for professionals in enterprises far, wide and close to home.</td>
+														</tr>
+														<tr>
+															<td>&nbsp;</td>
+														</tr>
+														<tr>
+															<td style="color:#4D4D4D; padding-left:20px; line-height:14px;"><strong>From Kingston, Jamaica to Taipei, Taiwan and beyond&hellip;</strong> ISACA certifications are recognized, preferred and even demanded for important IS/IT roles by organizations and agencies across the world and in your area.</td>
+														</tr>
+														<tr>
+															<td>&nbsp;</td>
+														</tr>
+														<tr>
+															<td style="color:#4D4D4D; line-height:14px;"><strong>Be counted among the most-qualified IS/IT professionals anywhere! </strong></td>
+														</tr>
+														<tr>
+															<td>&nbsp;</td>
+														</tr>
+														<tr>
+															<td bgcolor="#808080" valign="top">
+															<table align="left" border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="50%">
+																
+																	<tr>
+																		<td bgcolor="#F1F2F2" valign="top">
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			
+																				<tr>
+																					<td align="center"><a href="http://links.e.isaca.org/ctt?kn=10&ms=MTY1MDEyMDES1&r=MTE4MTI5NzM1MjQzS0&b=0&j=MTA0Mzc5MjA0OAS2&mt=1&rt=0" name="Cert_CISA_Logo" target="_blank" ><img alt="CISA" border="0"  height="86"   src='http://contentz.mkt7946.com/ra/2017/3083/08/16501201/images_cisa.jpg' style="display:block;" title="CISA" width="154"  /></a></td>
+																				</tr>
+																			
+																		</table>
+																		</td>
+																	</tr>
+																
+															</table>
+
+															<table align="right" border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="48%">
+																
+																	<tr>
+																		<td valign="top">
+																		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			
+																				<tr>
+																					<td style="padding:8px 15px 8px 15px;" valign="top">
+																					<table border="0" cellpadding="0" cellspacing="0" style="font-family:Arial, Helvetica, sans-serif;" width="100%">
+																						
+																							<tr>
+																								<td align="center" style="font-size:10px; padding-bottom:5px; line-height:12px; color:#fff;">CISA&mdash;one of the most recognized IS/IT certifications in the world.</td>
+																							</tr>
+																							<tr>
+																								<td align="center"><a href="http://links.e.isaca.org/ctt?kn=7&ms=MTY1MDEyMDES1&r=MTE4MTI5NzM1MjQzS0&b=0&j=MTA0Mzc5MjA0OAS2&mt=1&rt=0" name="Cert_CISA_LearnMore" target="_blank" ><img alt="learn more" border="0"  height="20"   src='http://contentz.mkt7946.com/ra/2017/3083/08/16501201/images_learn-more.jpg' style="display:block;" title="learn more" width="120"  /></a></td>
+																							</tr>
+																						
+																					</table>
+																					</td>
+																				</tr>
+																			
+																		</table>
+																		</td>
+																	</tr>
+																
+															</table>
+															</td>
+														</tr>
+														<tr>
+															<td valign="top">&nbsp;</td>
+														</tr>
+													
+												</table>
+												</td>
+											</tr>
+										
+									</table>
+
+									<table align="right" border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="200">
+										
+											<tr>
+												<td bgcolor="#F1F2F2" valign="top">
+												<table border="0" cellpadding="0" cellspacing="0" width="100%">
+													
+														<tr>
+															<td align="right"><img alt="World" border="0"  height="229"   src='http://contentz.mkt7946.com/ra/2017/3083/08/16501201/Map_World_200x2292.jpg' style="display:block;" title="World" width="200"  /></td>
+														</tr>
+														<tr>
+															<td>&nbsp;</td>
+														</tr>
+														<tr>
+															<td style="padding:0 15px 0 15px;" valign="top">
+															<table border="0" cellpadding="0" cellspacing="0" style="font-family:Arial, Helvetica, sans-serif; font-size:8px;" width="100%">
+																
+																	<tr>
+																		<td style="font-size:12px; line-height:14px; color:#A30046; font-weight:bold;">ISACA Certifications Serve the World&rsquo;s Professionals and their Enterprises*</td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;</td>
+																	</tr>
+																	<tr>
+																		<td style="color:#4D4D4D; line-height:12px; font-size: 11px;">Enterprises in 180 countries around the world enjoy the confidence- and business-building benefits of employees who are ISACA certified.</td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;</td>
+																	</tr>
+																	<tr>
+																		<td style="color:#4D4D4D; line-height:12px; font-size: 11px;">58% global growth of certification holders in security and risk professions.</td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;</td>
+																	</tr>
+																	<tr>
+																		<td style="color:#4D4D4D; line-height:12px; font-size: 11px;">70% of ISACA certification registrants worldwide are under age 40.</td>
+																	</tr>
+																	<tr>
+																		<td style="color:#4D4D4D; line-height:12px;">&nbsp;</td>
+																	</tr>
+																
+															</table>
+															</td>
+														</tr>
+													
+												</table>
+												</td>
+											</tr>
+										
+									</table>
+									</td>
+								</tr>
+							
+						</table>
+						</td>
+					</tr>
+				
+			</table>
+			</td>
+		</tr>
+	
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	
+		<tr>
+			<td align="center" bgcolor="#e0e0e0" valign="top">
+			<table align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidth" width="600">
+				
+					<tr>
+						<td bgcolor="#808080" style="padding:6px 10px 6px 32px;">
+						<table border="0" cellpadding="0" cellspacing="0" style="font-family:Arial, Helvetica, sans-serif; font-size:13px;" width="100%">
+							
+								<tr>
+									<td style="color:#ffffff;">Other globally accepted ISACA certifications include:</td>
+								</tr>
+							
+						</table>
+						</td>
+					</tr>
+				
+			</table>
+			</td>
+		</tr>
+	
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	
+		<tr>
+			<td align="center" bgcolor="#e0e0e0" valign="top">
+			<table align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidth" width="600">
+				
+					<tr>
+						<td bgcolor="#E0E0E0" style="padding:6px 10px 6px 32px;">
+						<table border="0" cellpadding="0" cellspacing="0" style="font-family:Arial, Helvetica, sans-serif;" width="100%">
+							
+								<tr>
+									<td>
+									<table align="center" border="0" cellpadding="0" cellspacing="0" class="devicewidth" width="555">
+										
+											<tr>
+												<td><a href="http://links.e.isaca.org/ctt?kn=11&ms=MTY1MDEyMDES1&r=MTE4MTI5NzM1MjQzS0&b=0&j=MTA0Mzc5MjA0OAS2&mt=1&rt=0" name="Cert_CISA_CRISC" target="_blank" ><img alt="crisc" border="0" class="img-max"  height="65"   src='http://contentz.mkt7946.com/ra/2017/3083/08/16501201/images_crisc.jpg' style="display:block; border:none; outline:none; text-decoration:none;" title="crisc" width="144"  /></a></td>
+												<td><a href="http://links.e.isaca.org/ctt?kn=12&ms=MTY1MDEyMDES1&r=MTE4MTI5NzM1MjQzS0&b=0&j=MTA0Mzc5MjA0OAS2&mt=1&rt=0" name="Cert_CISA_CISM" target="_blank" ><img alt="cism" border="0" class="img-max"  height="65"   src='http://contentz.mkt7946.com/ra/2017/3083/08/16501201/images_cism.jpg' style="display:block; border:none; outline:none; text-decoration:none;" title="cism" width="153"  /></a></td>
+												<td><a href="http://links.e.isaca.org/ctt?kn=16&ms=MTY1MDEyMDES1&r=MTE4MTI5NzM1MjQzS0&b=0&j=MTA0Mzc5MjA0OAS2&mt=1&rt=0" name="Cert_CISA_CGEIT" target="_blank" ><img alt="cgeit" border="0" class="img-max"  height="65"   src='http://contentz.mkt7946.com/ra/2017/3083/08/16501201/images_cgeit.jpg' style="display:block; border:none; outline:none; text-decoration:none;" width="171"  /></a></td>
+												<td><a href="http://links.e.isaca.org/ctt?kn=13&ms=MTY1MDEyMDES1&r=MTE4MTI5NzM1MjQzS0&b=0&j=MTA0Mzc5MjA0OAS2&mt=1&rt=0" name="Cert_CISA_JustAsk" target="_blank" ><img alt="just ask" border="0" class="img-max"  height="65"   src='http://contentz.mkt7946.com/ra/2017/3083/08/16501201/images_just-ask.jpg' style="display:block; border:none; outline:none; text-decoration:none;" title="just ask" width="87"  /></a></td>
+											</tr>
+										
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td style="color:#4D4D4D; font-size:8px; line-height:10px; padding-top:6px;">The American National Standards Institute (ANSI) has accredited these ISACA certification programs under ISO/IEC 17024:2012.<br />
+									CISA is the 2017 <em>SC Magazine</em> Award Winner for Best Professional Certification Program.<br />
+									*ISACA internal research.</td>
+								</tr>
+							
+						</table>
+						</td>
+					</tr>
+				
+			</table>
+			</td>
+		</tr>
+	
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	
+		<tr>
+			<td align="center" bgcolor="#e0e0e0">
+			<table border="0" cellpadding="0" cellspacing="0" class="devicewidth" width="600">
+				
+					<tr>
+						<td>
+						<table border="0" cellpadding="0" cellspacing="0" style="font-family:Arial, Helvetica, sans-serif; font-size:10px;" width="100%">
+							
+								<tr>
+									<td style="border-top:8px solid #808080;">&nbsp;</td>
+								</tr>
+								<tr>
+									<td style="color:#6A747C; font-size:10px; padding:0 0 5px 0;"><a href="http://www.pages01.net/isaca/FormsMasterDatabase/MasterDB_Unsubscribe?spMailingID=16501201&spUserID=MTE4MTI5NzM1MjQzS0&spJobID=MTA0Mzc5MjA0OAS2&spReportId=MTA0Mzc5MjA0OAS2" name="Cert_Admin_Unsub" style="color:#6A747C; text-decoration:none;" xt="LPWEBFORMOPTOUT" xtwebform="7095966">Unsubscribe from all ISACA emails</a> &nbsp;|&nbsp; <a href="http://www.pages01.net/isaca/preferences/PreferenceCenter.html?spMailingID=16501201&spUserID=MTE4MTI5NzM1MjQzS0&spJobID=MTA0Mzc5MjA0OAS2&spReportId=MTA0Mzc5MjA0OAS2" name="Cert_Admin_Preferences" style="color:#6A747C; text-decoration:none;" xt="LPWEBFORMOPTIN" xtwebform="6641286">Manage Email Preferences</a> &nbsp;|&nbsp; <a href="http://links.e.isaca.org/ctt?kn=3&ms=MTY1MDEyMDES1&r=MTE4MTI5NzM1MjQzS0&b=0&j=MTA0Mzc5MjA0OAS2&mt=1&rt=0" name="Cert_Admin_Privacy" style="color:#6A747C; text-decoration:none;" >ISACA Privacy Policy</a></td>
+								</tr>
+								<tr>
+									<td style="color:#6A747C; font-size:10px; padding:0 0 10px 0;">&copy; 2017 ISACA. All rights reserved. 3701 Algonquin Road, Suite 1010, Rolling Meadows, Illinois 60008, USA</td>
+								</tr>
+								<tr>
+									<td valign="top">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										
+											<tr>
+												<td style="padding:0 8px 0 0;" width="40"><a href="http://links.e.isaca.org/ctt?kn=1&ms=MTY1MDEyMDES1&r=MTE4MTI5NzM1MjQzS0&b=0&j=MTA0Mzc5MjA0OAS2&mt=1&rt=0" name="Cert_Social_Facebook" target="_blank" ><img alt="facebook" border="0"    src='http://contentz.mkt7946.com/ra/2017/3083/08/16501201/images_facebook.jpg' style="display:block;"  /></a></td>
+												<td style="padding:0 8px 0 0;" width="40"><a href="http://links.e.isaca.org/ctt?kn=17&ms=MTY1MDEyMDES1&r=MTE4MTI5NzM1MjQzS0&b=0&j=MTA0Mzc5MjA0OAS2&mt=1&rt=0" name="Cert_Social_Twitter" target="_blank" ><img alt="twitter" border="0"    src='http://contentz.mkt7946.com/ra/2017/3083/08/16501201/images_twitter.jpg' style="display:block;"  /></a></td>
+												<td style="padding:0 8px 0 0;" width="40"><a href="http://links.e.isaca.org/ctt?kn=4&ms=MTY1MDEyMDES1&r=MTE4MTI5NzM1MjQzS0&b=0&j=MTA0Mzc5MjA0OAS2&mt=1&rt=0" name="Cert_Social_LinkedIn" target="_blank" ><img alt="linkedin" border="0"    src='http://contentz.mkt7946.com/ra/2017/3083/08/16501201/images_linkedin.jpg' style="display:block;"  /></a></td>
+												<td style="padding:0 8px 0 0;" width="40"><a href="http://links.e.isaca.org/ctt?kn=15&ms=MTY1MDEyMDES1&r=MTE4MTI5NzM1MjQzS0&b=0&j=MTA0Mzc5MjA0OAS2&mt=1&rt=0" name="Cert_Social_Instagram" target="_blank" ><img alt="instagram" border="0"    src='http://contentz.mkt7946.com/ra/2017/3083/08/16501201/images_instagram.jpg' style="display:block;"  /></a></td>
+												<td style="font-family:Arial, Helvetica, sans-serif; color:#6A747C; font-size:10px; font-weight:bold;" width="437"><a href="http://www.pages01.net/isaca/FormsMasterDatabase/MasterDB_ForwardToFriend?spMailingID=16501201&spUserID=MTE4MTI5NzM1MjQzS0&spJobID=MTA0Mzc5MjA0OAS2&spReportId=MTA0Mzc5MjA0OAS2" name="Cert_Admin_Forward" style="color:#6A747C; text-decoration:underline;" xt="LPWEBFORMF2F" xtwebform="7095969">Forward</a> &nbsp;&nbsp; <a href="http://links.e.isaca.org/servlet/MailView?ms=MTY1MDEyMDES1&r=MTE4MTI5NzM1MjQzS0&j=MTA0Mzc5MjA0OAS2&mt=1&rt=0" name="Cert_Admin_WebVersion" style="color:#6A747C; text-decoration:underline;" xt="SPCLICKTOVIEW">Web Version</a></td>
+												<td style="font-family:Arial, Helvetica, sans-serif; color:#6A747C; font-size:10px; font-weight:bold;" width="10"><a href="http://links.e.isaca.org/ctt?kn=6&ms=MTY1MDEyMDES1&r=MTE4MTI5NzM1MjQzS0&b=0&j=MTA0Mzc5MjA0OAS2&mt=1&rt=0" name="Cert_Admin_ISACA" ><img alt="ISACA" border="0"  src="http://www.isaca.org/SiteCollectionImages/emails/2016/ES_COBIT_ISACA_Logo.png" style="display:block;" /></a></td>
+											</tr>
+										
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td height="15" valign="top">&nbsp;</td>
+								</tr>
+							
+						</table>
+						</td>
+					</tr>
+				
+			</table>
+			</td>
+		</tr>
+	
+</table>
+<IMG src="http://links.e.isaca.org/open/log/16501201/MTE4MTI5NzM1MjQzS0/0/MTA0Mzc5MjA0OAS2/1/0"></body>
+</html>
+
+
+
+------=_Part_125690_1145661328.1503403211746--
+

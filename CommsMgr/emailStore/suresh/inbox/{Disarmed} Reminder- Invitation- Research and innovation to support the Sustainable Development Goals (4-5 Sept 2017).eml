@@ -1,0 +1,1080 @@
+Return-Path: <bounce_amZMKSo4e30OpYms_Cy5R9TEBKTz61SYj_d0f099c868d7288d_9@mail.eversrv.com>
+Delivered-To: suresh@workspaceafrica.com
+Received: from gaea.thishost.co.za
+	by gaea.thishost.co.za (Dovecot) with LMTP id YeudDOs7nFlSPQ8AFcTQEQ
+	for <suresh@workspaceafrica.com>; Tue, 22 Aug 2017 16:12:59 +0200
+Return-path: <bounce_amZMKSo4e30OpYms_Cy5R9TEBKTz61SYj_d0f099c868d7288d_9@mail.eversrv.com>
+Envelope-to: suresh@workspaceafrica.com
+Delivery-date: Tue, 22 Aug 2017 16:12:59 +0200
+Received: from mail172.outbound.eversrv.com ([69.63.146.172]:49522)
+	by gaea.thishost.co.za with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.89)
+	(envelope-from <bounce_amZMKSo4e30OpYms_Cy5R9TEBKTz61SYj_d0f099c868d7288d_9@mail.eversrv.com>)
+	id 1dk9vJ-004CB5-Av
+	for suresh@workspaceafrica.com; Tue, 22 Aug 2017 16:12:54 +0200
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=eversrv; d=eversrv.com;
+ h=Reply-To:Sender:List-Unsubscribe:From:To:Subject:MIME-Version:Date:
+ Message-Id:Content-Type:Content-Transfer-Encoding;
+ i=enquiries=3Dnstf.co.za@mail.eversrv.com;
+ bh=yTh6mfk6GhNXYYsf3CEJ+Xw5P72lq9M679MwnNK0vW0=;
+ b=Pjx37Pliuqodu4E3uaRUQu5RJKScuv6sWNRTGk7p9XAY9fQ+VR1leqQJ4A7h74VRM+6YKZxDGIMa
+   u0/ZLNN9n2Bhro3bUWEWwfXOIJKbBZ79Ii/1nZ0NJr1AiCBRHCxMENKBbrAHBofpQifTakRykI20
+   L3UCcJJuRRErUG858b927PsFPWhnUCSSFwim3eINyOgALA/XfodnPbi7OhiqPZEQ+xxMK+W/1032
+   n4xTC+I0XJTfVm312C70yUvlqh/bAIWX/ZSYO656oaGWVQgt4MIvaqhIs+W+iDGFoFs+88MY4UDq
+   s8eVAMllsvR7r2FkfvMYB+IqelKrOQCKG8CG1A==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=eversrv; d=eversrv.com;
+ h=Reply-To:Sender:List-Unsubscribe:From:To:Subject:MIME-Version:Date:
+ Message-Id:Content-Type:Content-Transfer-Encoding;
+ bh=yTh6mfk6GhNXYYsf3CEJ+Xw5P72lq9M679MwnNK0vW0=;
+ b=Yb2YGZWwNpzAVKjTw6QmnILgDZL9cHkKrFUXUBnLrLsaB4aUlVz8wUx0kTQ5+q2B0PCAzk1DJysM
+   HuqBDUeCs2eHdR7VTwHYj5bMqQY1A4mTz4Q9vHRmBSgFQw8Og1NVpOjT3cGd+z4p6PDFYChaaa4D
+   /BZhZaEJPCGT0wUVkoV56EKEiBIpy6+mGZ1EQeAEZPqov4hkmGD99WoKyQ6dDQymZNEzKB2Mte1+
+   HjDiDFUrlDNGP16eWnGtinfTtjbwa+HpzBX6UP5aDLWGc0NJO+tWJtWKTsIAlsqo/7IJ8/+2oS1V
+   T0ytQ96nCl8yogLyaoIRt+t8Fng2Gd7dzl1/Ag==
+Received: from localhost (10.10.204.18) by mail172.outbound.eversrv.com id hjgtuc2cbvov for <suresh@workspaceafrica.com>; Tue, 22 Aug 2017 16:12:10 +0200 (envelope-from <bounce_amZMKSo4e30OpYms_Cy5R9TEBKTz61SYj_d0f099c868d7288d_9@mail.eversrv.com>)
+Reply-To: enquiries@nstf.co.za
+X-Priority: 3
+Sender: "NSTF" <enquiries=nstf.co.za@mail.eversrv.com>
+X-Report-Abuse: <http://comms.nstf-mail.com/public/contacts/complaints/amZMKSo4e30OpYms/Cy5R9TEBKTz61SYj/d0f099c868d7288d>
+List-Unsubscribe: <mailto:unsubscribe_amZMKSo4e30OpYms_Cy5R9TEBKTz61SYj_d0f099c868d7288d_9@eversrv.com>,<http://comms.nstf-mail.com/public/contacts/unsubscribe/amZMKSo4e30OpYms/Cy5R9TEBKTz61SYj/d0f099c868d7288d>
+X-Data: Cy5R9TEBKTz61SYj.d0f099c868d7288d
+X-Data-EUID: 016b87ed227b02bf82137b70d7cce7a6
+X-Data-Rating: 60
+X-Contact-Score: 4
+From: NSTF <enquiries@nstf.co.za>
+To: Suresh <suresh@workspaceafrica.com>
+Subject: {Disarmed} Reminder: Invitation: Research and innovation to support the Sustainable
+ Development Goals (4-5 Sept 2017)
+MIME-Version: 1.0
+Date: Tue, 22 Aug 2017 16:12:01 +0200
+Message-Id: <2017082216162210.28522.112@nstf.co.za>
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 8bit
+X-SADomain-MailScanner-Information: Please contact SA Domain technical support for more information
+X-SADomain-MailScanner-ID: 1dk9vJ-004CB5-Av
+X-SADomain-MailScanner: Found to be clean
+X-SADomain-MailScanner-SpamCheck: not spam, SpamAssassin (not cached,
+	score=-2.5, required 5, BAYES_00 -1.90, DKIM_SIGNED 0.10,
+	DKIM_VALID -0.10, HTML_FONT_LOW_CONTRAST 0.00,
+	HTML_IMAGE_RATIO_04 0.56, HTML_MESSAGE 0.00, MIME_HTML_ONLY 0.72,
+	RCVD_IN_DNSWL_NONE -0.00, RCVD_IN_IADB_DK -0.10,
+	RCVD_IN_IADB_LISTED -0.00, RCVD_IN_IADB_OPTIN -1.47,
+	RCVD_IN_IADB_RDNS -0.23, RCVD_IN_IADB_SENDERID -0.00,
+	RCVD_IN_IADB_SPF -0.06, RCVD_IN_MSPIKE_H4 -0.01,
+	RCVD_IN_MSPIKE_WL -0.01, SPF_PASS -0.00, URIBL_BLOCKED 0.00)
+X-SADomain-MailScanner-From: bounce_amzmkso4e30opyms_cy5r9tebktz61syj_d0f099c868d7288d_9@mail.eversrv.com
+X-Spam-Status: No
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title></title>
+<meta name="template_last_modified_date" content=""><!-- Template Definitions Begin!-->
+<meta name="template_type" content="builder">
+<meta name="template_code" content="xpcRroUxrJQAUD7PAN">
+<meta name="template_name" content="NSTF Newsletter (Plain)">
+<meta name="template_category" content="">
+<meta name="template_thumbnail" content="nstf-plain.html_1481061600.png">
+<meta name="template_approved" content="Yes">
+<meta name="template_is_responsive" content="Yes"><!-- These are optional !-->
+<meta name="template_install_id" content="9">
+<meta name="template_customer_id" content="197"><!-- Template Definitions End !-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width"><!-- Builder_CSS BEGIN !-->
+<!-- Builder_CSS END !-->
+
+<style type="text/css">
+body {
+width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0;
+}
+.ExternalClass {
+width: 100%;
+}
+.ExternalClass {
+line-height: 100%;
+}
+#backgroundTable {
+margin: 0; padding: 0; width: 100% !important; line-height: 100% !important;
+}
+img {
+outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block;
+}
+body {
+color: #222222; font-family: Helvetica, Arial, sans-serif; font-weight: normal; padding: 0; margin: 0; text-align: left; line-height: 1.3;
+}
+body {
+font-size: 14px; line-height: 19px;
+}
+a:hover {
+color: #2795b6 !important;
+}
+a:active {
+color: #2795b6 !important;
+}
+a:visited {
+color: #2ba6cb !important;
+}
+h1 a:active {
+color: #2ba6cb !important;
+}
+h2 a:active {
+color: #2ba6cb !important;
+}
+h3 a:active {
+color: #2ba6cb !important;
+}
+h4 a:active {
+color: #2ba6cb !important;
+}
+h5 a:active {
+color: #2ba6cb !important;
+}
+h6 a:active {
+color: #2ba6cb !important;
+}
+h1 a:visited {
+color: #2ba6cb !important;
+}
+h2 a:visited {
+color: #2ba6cb !important;
+}
+h3 a:visited {
+color: #2ba6cb !important;
+}
+h4 a:visited {
+color: #2ba6cb !important;
+}
+h5 a:visited {
+color: #2ba6cb !important;
+}
+h6 a:visited {
+color: #2ba6cb !important;
+}
+table.button:hover td {
+background: #2795b6 !important;
+}
+table.button:visited td {
+background: #2795b6 !important;
+}
+table.button:active td {
+background: #2795b6 !important;
+}
+table.button:hover td a {
+color: #ffffff !important;
+}
+table.button:visited td a {
+color: #ffffff !important;
+}
+table.button:active td a {
+color: #ffffff !important;
+}
+table.button:hover td {
+background: #2795b6 !important;
+}
+table.tiny-button:hover td {
+background: #2795b6 !important;
+}
+table.small-button:hover td {
+background: #2795b6 !important;
+}
+table.medium-button:hover td {
+background: #2795b6 !important;
+}
+table.large-button:hover td {
+background: #2795b6 !important;
+}
+table.button:hover td a {
+color: #ffffff !important;
+}
+table.button:active td a {
+color: #ffffff !important;
+}
+table.button td a:visited {
+color: #ffffff !important;
+}
+table.tiny-button:hover td a {
+color: #ffffff !important;
+}
+table.tiny-button:active td a {
+color: #ffffff !important;
+}
+table.tiny-button td a:visited {
+color: #ffffff !important;
+}
+table.small-button:hover td a {
+color: #ffffff !important;
+}
+table.small-button:active td a {
+color: #ffffff !important;
+}
+table.small-button td a:visited {
+color: #ffffff !important;
+}
+table.medium-button:hover td a {
+color: #ffffff !important;
+}
+table.medium-button:active td a {
+color: #ffffff !important;
+}
+table.medium-button td a:visited {
+color: #ffffff !important;
+}
+table.large-button:hover td a {
+color: #ffffff !important;
+}
+table.large-button:active td a {
+color: #ffffff !important;
+}
+table.large-button td a:visited {
+color: #ffffff !important;
+}
+table.secondary:hover td {
+background: #d0d0d0 !important; color: #555555;
+}
+table.secondary:hover td a {
+color: #555555 !important;
+}
+table.secondary td a:visited {
+color: #555555 !important;
+}
+table.secondary:active td a {
+color: #555555 !important;
+}
+table.success:hover td {
+background: #457a1a !important;
+}
+table.alert:hover td {
+background: #970b0e !important;
+}
+body.outlook p {
+display: inline !important;
+}
+body {
+background-color: #fefefe;
+}
+a:hover {
+color: #0000ee !important;
+}
+a:active {
+color: #0000ee !important;
+}
+a:visited {
+color: #0000ee !important;
+}
+.white-link a:visited {
+color: #fefefe !important; text-decoration: underline;
+}
+.white-link a:active {
+color: #fefefe !important; text-decoration: underline;
+}
+.white-link a:hover {
+color: #fefefe !important; text-decoration: underline;
+}
+table.button:hover td {
+background: #fefefe;
+}
+table.button:visited td {
+background: #fefefe;
+}
+table.button:active td {
+background: #fefefe;
+}
+table.button:hover td a {
+color: #D68357 !important;
+}
+table.button:visited td a {
+color: #D68357 !important;
+}
+table.button:active td a {
+color: #D68357 !important;
+}
+table.button:hover td {
+background: #fefefe !important;
+}
+table.tiny-button:hover td {
+background: #fefefe !important;
+}
+table.small-button:hover td {
+background: #fefefe !important;
+}
+table.medium-button:hover td {
+background: #fefefe !important;
+}
+table.large-button:hover td {
+background: #fefefe !important;
+}
+table.button:hover td a {
+background: #fefefe; color: #D68357 !important;
+}
+table.button:active td a {
+background: #fefefe; color: #D68357 !important;
+}
+table.button td a:visited {
+background: #fefefe; color: #D68357 !important;
+}
+table.tiny-button:hover td a {
+background: #fefefe; color: #D68357 !important;
+}
+table.tiny-button:active td a {
+background: #fefefe; color: #D68357 !important;
+}
+table.tiny-button td a:visited {
+background: #fefefe; color: #D68357 !important;
+}
+table.small-button:hover td a {
+background: #fefefe; color: #D68357 !important;
+}
+table.small-button:active td a {
+background: #fefefe; color: #D68357 !important;
+}
+table.small-button td a:visited {
+background: #fefefe; color: #D68357 !important;
+}
+table.medium-button:hover td a {
+background: #fefefe; color: #D68357 !important;
+}
+table.medium-button:active td a {
+background: #fefefe; color: #D68357 !important;
+}
+table.medium-button td a:visited {
+background: #fefefe; color: #D68357 !important;
+}
+table.large-button:hover td a {
+background: #fefefe; color: #D68357 !important;
+}
+table.large-button:active td a {
+background: #fefefe; color: #D68357 !important;
+}
+table.large-button td a:visited {
+background: #fefefe; color: #D68357 !important;
+}
+@media only screen and (max-width: 600px) {
+  table[class='body'] img {
+    width: auto !important; height: auto !important;
+  }
+  table[class='body'] center {
+    min-width: 0 !important;
+  }
+  table[class='body'] .container {
+    width: 95% !important;
+  }
+  table[class='body'] .row {
+    width: 100% !important; display: block !important;
+  }
+  table[class='body'] .wrapper {
+    display: block !important; padding-right: 0 !important;
+  }
+  table[class='body'] .columns {
+    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+  }
+  table[class='body'] .column {
+    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+  }
+  table[class='body'] .wrapper.first .columns {
+    display: table !important;
+  }
+  table[class='body'] .wrapper.first .column {
+    display: table !important;
+  }
+  table[class='body'] table.columns td {
+    width: 100% !important;
+  }
+  table[class='body'] table.column td {
+    width: 100% !important;
+  }
+  table[class='body'] .columns td.one {
+    width: 8.333333% !important;
+  }
+  table[class='body'] .column td.one {
+    width: 8.333333% !important;
+  }
+  table[class='body'] .columns td.two {
+    width: 16.666666% !important;
+  }
+  table[class='body'] .column td.two {
+    width: 16.666666% !important;
+  }
+  table[class='body'] .columns td.three {
+    width: 25% !important;
+  }
+  table[class='body'] .column td.three {
+    width: 25% !important;
+  }
+  table[class='body'] .columns td.four {
+    width: 33.333333% !important;
+  }
+  table[class='body'] .column td.four {
+    width: 33.333333% !important;
+  }
+  table[class='body'] .columns td.five {
+    width: 41.666666% !important;
+  }
+  table[class='body'] .column td.five {
+    width: 41.666666% !important;
+  }
+  table[class='body'] .columns td.six {
+    width: 50% !important;
+  }
+  table[class='body'] .column td.six {
+    width: 50% !important;
+  }
+  table[class='body'] .columns td.seven {
+    width: 58.333333% !important;
+  }
+  table[class='body'] .column td.seven {
+    width: 58.333333% !important;
+  }
+  table[class='body'] .columns td.eight {
+    width: 66.666666% !important;
+  }
+  table[class='body'] .column td.eight {
+    width: 66.666666% !important;
+  }
+  table[class='body'] .columns td.nine {
+    width: 75% !important;
+  }
+  table[class='body'] .column td.nine {
+    width: 75% !important;
+  }
+  table[class='body'] .columns td.ten {
+    width: 83.333333% !important;
+  }
+  table[class='body'] .column td.ten {
+    width: 83.333333% !important;
+  }
+  table[class='body'] .columns td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class='body'] .column td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class='body'] .columns td.twelve {
+    width: 100% !important;
+  }
+  table[class='body'] .column td.twelve {
+    width: 100% !important;
+  }
+  table[class='body'] td.offset-by-one {
+    padding-left: 0 !important;
+  }
+  table[class='body'] td.offset-by-two {
+    padding-left: 0 !important;
+  }
+  table[class='body'] td.offset-by-three {
+    padding-left: 0 !important;
+  }
+  table[class='body'] td.offset-by-four {
+    padding-left: 0 !important;
+  }
+  table[class='body'] td.offset-by-five {
+    padding-left: 0 !important;
+  }
+  table[class='body'] td.offset-by-six {
+    padding-left: 0 !important;
+  }
+  table[class='body'] td.offset-by-seven {
+    padding-left: 0 !important;
+  }
+  table[class='body'] td.offset-by-eight {
+    padding-left: 0 !important;
+  }
+  table[class='body'] td.offset-by-nine {
+    padding-left: 0 !important;
+  }
+  table[class='body'] td.offset-by-ten {
+    padding-left: 0 !important;
+  }
+  table[class='body'] td.offset-by-eleven {
+    padding-left: 0 !important;
+  }
+  table[class='body'] table.columns td.expander {
+    width: 1px !important;
+  }
+  table[class='body'] .right-text-pad {
+    padding-left: 10px !important;
+  }
+  table[class='body'] .text-pad-right {
+    padding-left: 10px !important;
+  }
+  table[class='body'] .left-text-pad {
+    padding-right: 10px !important;
+  }
+  table[class='body'] .text-pad-left {
+    padding-right: 10px !important;
+  }
+  table[class='body'] .hide-for-small {
+    display: none !important;
+  }
+  table[class='body'] .show-for-desktop {
+    display: none !important;
+  }
+  table[class='body'] .show-for-small {
+    display: inherit !important;
+  }
+  table[class='body'] .hide-for-desktop {
+    display: inherit !important;
+  }
+}
+</style>
+
+<style type="text/css">
+    @media only screen and (max-width: 596px) {
+        table.ev-footer { width: 100% !important; }
+
+        td.ev-footer-padding {
+            padding: 10px !important;
+        }
+    }
+    @media only screen and (max-width: 490px) {
+        table.ev-footer { width: 100% !important; }
+
+        td.menu-item {
+            padding: 10px !important;
+        }
+    }
+    @media only screen and (max-width: 390px) {
+        table.ev-footer { width: 100% !important; }
+
+        td.ev-footer-padding {
+            padding: 10px !important;
+        }
+    }
+    @media only screen and (max-width: 350px) {
+        table.ev-footer { width: 100% !important; }
+
+        td.ev-footer-padding {
+            padding: 10px !important;
+        }
+    }
+</style>
+</head>
+<body style=
+"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background: #fefefe; color: #222222; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; min-width: 100%; padding: 0; text-align: left; width: 100% !important"
+bgcolor="#FEFEFE">
+<img src="https://s3.amazonaws.com/msv5/images/spacer.gif" width="1" height="1" alt="Web Bug from http://comms.nstf-mail.com/s/r/375/45840/1117272.gif?m=Cy5R9TEBKTz61SYj&h=ab8ea3cef6aa0133c96df565b7e536e6" />
+<table class="body" style=
+"border-collapse: collapse; border-spacing: 0; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; height: 100%; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; width: 100%">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="center" align="center" valign="top" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0; text-align: center; vertical-align: top; word-break: break-word">
+<center style="min-width: 580px; width: 100%">
+<table class="container" ev-content-builder="" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; min-height: 0px; padding: 0; text-align: inherit; vertical-align: top; width: 580px">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="main_panel" style=
+"-moz-hyphens: none; -webkit-hyphens: none; background: #fefefe; border: 0px solid #fefefe; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0px; text-align: left; vertical-align: top; word-break: break-word"
+align="left" bgcolor="#FEFEFE" valign="top">
+<center class="" style="min-width: 580px; width: 100%"><!-- ngRepeat: section in sections -->
+<table class="row ev-section social-icons" bgcolor="#005B7F" style="border-collapse: collapse; border-spacing: 0; display: block; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="wrapper" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px 20px 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top">
+<table class="four columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 180px">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="center" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0px 0px 10px; text-align: center; vertical-align: top; word-break: break-word"
+align="center" valign="top"><a href="http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363430" target=
+"new" style="color: #0000ee; text-decoration: underline"><img class="center" src="https://dmqnxuvihlkxc.cloudfront.net/users/templates/_clients/nstf/newsletter/social-icons/facebook.jpg" width="30" height="25" style=
+"-ms-interpolation-mode: bicubic; border: none; clear: both; display: inline-block; float: none; margin: 0 1px; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none"></a> <a href=
+"http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363431" target="new" style=
+"color: #0000ee; text-decoration: underline"><img class="center" src="https://dmqnxuvihlkxc.cloudfront.net/users/templates/_clients/nstf/newsletter/social-icons/youtube.jpg" width="30" height="25" style=
+"-ms-interpolation-mode: bicubic; border: none; clear: both; display: inline-block; float: none; margin: 0 1px; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none"></a> <a href=
+"http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363432" target="new" style=
+"color: #0000ee; text-decoration: underline"><img class="center" src="https://dmqnxuvihlkxc.cloudfront.net/users/templates/_clients/nstf/newsletter/social-icons/twitter.jpg" width="30" height="25" style=
+"-ms-interpolation-mode: bicubic; border: none; clear: both; display: inline-block; float: none; margin: 0 1px; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none"></a> <a href=
+"http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363433" target="new" style=
+"color: #0000ee; text-decoration: underline"><img class="center" src="https://dmqnxuvihlkxc.cloudfront.net/users/templates/_clients/nstf/linkendin.png" width="30" height="25" style=
+"-ms-interpolation-mode: bicubic; border: none; clear: both; display: inline-block; float: none; margin: 0 1px; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none"></a></td>
+<td class="expander" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word"
+align="left" valign="top"></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="wrapper" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px 20px 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top">
+<table class="six columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 280px">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="white-link" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 5px 0px 10px; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top">
+<p style="color: #fefefe; font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: center" align="center">Email: <a class="white-link" href=
+"mailto: enquiries@nstf.co.za" style="color: #fefefe; text-decoration: underline">enquiries@nstf.co.za</a> | Tel: <a class="white-link" href="tel: +27128413987" style="color: #fefefe; text-decoration: underline">+27 12 841 3987</a></p>
+</td>
+<td class="expander" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word"
+align="left" valign="top"></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="wrapper last" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top">
+<table class="two columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 80px">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0px 0px 10px; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top"></td>
+<td class="expander" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word"
+align="left" valign="top"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="row ev-section" id="logo-panel" style="border-collapse: collapse; border-spacing: 0; display: block; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="wrapper last" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-bottom-color: #d88357; border-bottom-style: solid; border-bottom-width: 20px; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top">
+<table class="twelve columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="center ev-block-dropzone" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-bottom-color: #d88357; border-bottom-style: solid; border-bottom-width: 20px; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0px; text-align: center; vertical-align: top; word-break: break-word"
+align="center" valign="top"><img alt="K-13093-NSTF-Basic-Online-Template_Dev_V5_Discussion-Forum_72_dpi(1).jpg" class="center ev-control: image ev-block" src=
+"https://dmqnxuvihlkxc.cloudfront.net/users/assets/197/images/Discussion_Forums_-_November_2016/K-13093-NSTF-Basic-Online-Template_Dev_V5_Discussion-Forum_72_dpi(1).jpg" style=
+"-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; height: auto; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: 580px" width="580" height="143" align="none"></td>
+<td class="expander" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-bottom-color: #d88357; border-bottom-style: solid; border-bottom-width: 20px; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0px; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word"
+align="left" valign="top"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="row ev-section" style="border-collapse: collapse; border-spacing: 0; display: block; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="wrapper last" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top">
+<table class="twelve columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="ev-block-dropzone" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px 0px; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top">
+<div class="ev-control: text-editor ev-block" style="position: relative">
+<h1 style="color: #005b7f; font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: bold; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal" align="left">Research and innovation to support the Sustainable
+Development Goals</h1>
+<h2 style="color: #db6e4d; font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: bold; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal" align="left"><strong>4-5 September&nbsp;2017, Kempton Park,
+Gauteng</strong></h2>
+<br>
+In partnership with its <a href="http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363434" style=
+"color: #0000ee; text-decoration: underline"><span style="color: #0000EE">Science Councils and Statutory Bodies sector</span></a>, the <a href=
+"http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363435" style=
+"color: #0000ee; text-decoration: underline"><span style="color: #0000EE">National Science and Technology Forum (NSTF)</span></a> is hosting a national Discussion Forum on <a href=
+"http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363436" style=
+"color: #0000ee; text-decoration: underline"><span style="color: #0000EE">‘Research and innovation in relation to the&nbsp;Sustainable Development Goals (SDGs)’</span></a>.<br>
+<br>
+&nbsp;
+<h3 style="color: #005b7f; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; line-height: 1.3; margin: 0; padding: 0; text-align: center; word-break: normal" align="center">Science, engineering and technology (SET)
+and&nbsp;evidence-based research<br>
+are crucial to realising&nbsp;the goals of the <strong><a href=
+"http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363437" style=
+"color: #2ba6cb; text-decoration: underline"><span style="color: #0000EE">SDGs</span></a></strong><br>
+and the <strong><a href="http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363438" style=
+"color: #2ba6cb; text-decoration: underline"><span style="color: #0000EE">National Development Plan (NDP)</span></a></strong>.</h3>
+&nbsp;
+<h4 style="color: #db6e4d; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; line-height: 1.3; margin: 0; padding: 0; text-align: center; word-break: normal" align="center">Click here to <strong><a href=
+"http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363439" style=
+"color: #2ba6cb; text-decoration: underline"><span style="color: #0000EE">register</span></a></strong></h4>
+</div>
+</td>
+<td class="expander" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word"
+align="left" valign="top"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="row ev-section" style="border-collapse: collapse; border-spacing: 0; display: block; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="wrapper" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px 20px 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top">
+<table class="six columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 280px">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="ev-block-dropzone" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px 0px; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top"><img alt="logosSDG2.png" class="center ev-control: image ev-block" style=
+"-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; height: auto; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: 280px" src=
+"https://dmqnxuvihlkxc.cloudfront.net/users/assets/197/images/logosSDG2.png" width="280" height="149" align="none"></td>
+<td class="expander" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word"
+align="left" valign="top"></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="wrapper last" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top">
+<table class="six columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 280px">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="ev-block-dropzone" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px 0px; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top"><img alt="logosNDP2.png" class="center ev-control: image ev-block" style=
+"-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; height: auto; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: 280px" src=
+"https://dmqnxuvihlkxc.cloudfront.net/users/assets/197/images/logosNDP2.png" width="280" height="164" align="none"></td>
+<td class="expander" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word"
+align="left" valign="top"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="row ev-section" style="border-collapse: collapse; border-spacing: 0; display: block; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="wrapper last" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top">
+<table class="twelve columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="ev-block-dropzone panel" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top">
+<div class="ev-control: text-editor ev-block" style="position: relative"></div>
+</td>
+<td class="expander" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word"
+align="left" valign="top"></td>
+</tr>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="ev-block-dropzone panel" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top">
+<div class="ev-control: text-editor ev-block" style="position: relative">
+<div style="text-align: center" align="center">
+<div style="text-align: left" align="left"><strong>Event objective:</strong> To facilitate solution-driven exchanges around ‘Research and innovation as a driver of SDG goals in South Africa’ by creating a platform for the research, development and
+innovation community and relevant government departments to discuss and respond to issues that influence policy-makers.</div>
+<div style="text-align: left" align="left">&nbsp;<br>
+<strong>International policy background:</strong> On 25 September 2015, many countries adopted the United Nation’s (UN) SDG agenda – to protect the planet, enhance the quality of lives and ensure prosperity for the human race. Research and
+innovation play an important role in attaining the SDGs.<br>
+&nbsp;<br>
+<strong>The SDGs and South Africa’s policies:</strong> The NDP is a roadmap for eliminating poverty and reducing inequality in South Africa by the 2030. The NDP is aligned to the UN’s SDG action plan, both encouraging active citizenry as a way to
+achieve the goals. Despite progress in fulfilling the aims of the NDP and SDGs, South Africa still has a long way to go.<br>
+&nbsp;</div>
+<div style="text-align: left" align="left"><strong>How can you become involved?</strong> <strong><a href=
+"http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363440" style=
+"color: #0000ee; text-decoration: underline"><span style="color: #0000EE">NSTF Discussion Forums</span></a></strong> gather stakeholders together, across the public and private sectors, to put forward recommendations to influence government
+policies. This discussion forum will consider issues such as:</div>
+<ul style="color: #005b7f; font-size: 14px; font-weight: bold">
+<li style="text-align: left">
+<p style="color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">Research, development and innovation (RDI) as a key driver:
+enabling the research towards realising SDGs.</p>
+</li>
+<li style="text-align: left">
+<p style="color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">How is research and development important for attaining the
+SDGs?</p>
+</li>
+<li style="text-align: left">
+<p style="color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">In what way do publicly-funded institutions contribute to
+reaching the SDGs?</p>
+</li>
+<li style="text-align: left">
+<p style="color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">To what extent do departmental research strategies relate to
+the SDGs? (Strategies of the line departments of science councils)</p>
+</li>
+<li style="text-align: left">
+<p style="color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">What aspects of publicly-funded institutions’ RDI work should
+be prioritised for increased funding?</p>
+</li>
+</ul>
+<div style="text-align: left" align="left"><strong>Envisaged outcomes</strong> include recommendations for policy makers and research institutions.<br>
+&nbsp;<br>
+<strong>What are the SDGs?</strong>&nbsp;<strong><a href=
+"http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363441" style=
+"color: #0000ee; text-decoration: underline"><span style="color: #0000EE">Click here</span></a></strong>&nbsp;for the lists of targets under each goal.</div>
+</div>
+</div>
+</td>
+<td class="expander" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word"
+align="left" valign="top"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="row ev-section" style="border-collapse: collapse; border-spacing: 0; display: block; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="wrapper last" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top">
+<table class="twelve columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="ev-block-dropzone" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px 0px; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top"><a class="ev-control: image ev-block" href=
+"http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363442" title="SDG_Poster.png" target="_blank" style=
+"color: #0000ee; text-decoration: underline"><img alt="SDG_Poster.png" class="center" style=
+"-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; float: none; height: auto; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: 581px" src=
+"https://dmqnxuvihlkxc.cloudfront.net/users/assets/197/images/SDG_Poster.png" width="580" height="1145" align="none"></a></td>
+<td class="expander" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word"
+align="left" valign="top"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="row ev-section" style="border-collapse: collapse; border-spacing: 0; display: block; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="wrapper last" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top">
+<table class="twelve columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="ev-block-dropzone" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px 0px; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top">
+<div class="ev-control: text-editor cke_editable_inline cke_contents_ltr ev-block" style="position: relative" tabindex="0" spellcheck="false" role="textbox" aria-label="Rich Text Editor, editor4" title="Rich Text Editor, editor4" aria-describedby=
+"cke_300">
+<div style="text-align: center" align="center"><span style="font-size: 12px"><span style="color: #005b7f"><strong>This is a FREE event for all employees of</strong></span> <a href=
+"http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363443" style=
+"color: #0000ee; text-decoration: underline"><strong>NSTF Member Organisations</strong></a></span></div>
+&nbsp;
+<div><span style="font-size: 12px"><span style="color: #005b7f"><strong>Delegate registration information</strong></span><br>
+<span style="color: #db6e4d"><strong>NSTF Discussion Forum:</strong></span><strong>&nbsp;<a href=
+"http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363444" style=
+"color: #0000ee; text-decoration: underline"><span style="color: #0000EE">Research and innovation in relation to the SDGs</span></a></strong><br>
+<span style="color: #db6e4d"><strong>Date:</strong></span> 4-5 September&nbsp;2017<br>
+<span style="color: #db6e4d"><strong>Time:</strong></span> 08:30 for 09:00 to 16:30<br>
+<strong><a href="http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363445" style=
+"color: #0000ee; text-decoration: underline"><span style="color: #0000EE">Programme</span></a></strong>&nbsp; &nbsp; &nbsp;<br>
+<span style="color: #db6e4d"><strong>Venue:</strong></span> <strong><a href=
+"http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363446" style=
+"color: #0000ee; text-decoration: underline">Emperors Palace Convention Centre</a></strong>, 64&nbsp;Jones Road, Kempton Park, Gauteng (next to OR Tambo International Airport)<br>
+<span style="color: #db6e4d"><strong>Registration:</strong></span> <strong><a href=
+"http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363447" style=
+"color: #0000ee; text-decoration: underline"><span style="color: #0000EE">RSVP your attendance online</span></a></strong> by no later than Monday, 28 August 2017</span></div>
+<div style="text-align: center" align="center"><span style="font-size: 12px"><span style="color: #db6e4d"><strong>***Important: note the registration information at the bottom of this invitation***</strong></span></span></div>
+<div>
+<div>
+<div id="_com_1" uage="JavaScript"><span style="font-size: 12px">We invite you to join us for lunch and use the opportunity for further discussion and networking.</span></div>
+</div>
+</div>
+</div>
+</td>
+<td class="expander" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word"
+align="left" valign="top"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="row ev-section" style="border-collapse: collapse; border-spacing: 0; display: block; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="wrapper last" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top">
+<table class="twelve columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="ev-block-dropzone" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px 0px; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top">
+<div class="ev-control: text-editor ev-block" style="position: relative"><span style="font-size: 12px"><span style="font-family: arial,helvetica,sans-serif"><span style="color: #005b7f">Registration information***</span><br>
+<span style="color: #db6e4d"><strong>Non-Member Organisations of the NSTF:</strong></span> <em>Attendance is open for anyone interested but <strong>non-members of the NSTF are charged a R2,000.00 (excluding VAT) registration fee</strong> which
+includes attendance, documentation relating to the event, conference stationery, refreshments and lunch.</em><br>
+&nbsp;</span></span><br>
+<span style="font-size: 12px"><span style="font-family: arial,helvetica,sans-serif"><em>***Non-members of the NSTF – Please note, your registration fee for this Discussion Forum contributes directly to the mission of the NSTF as a non-profit
+company, as a consultative forum and watchdog for influencing the formulation and delivery of SET and innovation public policy in South Africa. Furthermore, the NSTF:</em></span></span>
+<ul style="color: #005b7f; font-size: 14px; font-weight: bold">
+<li><span style="font-size: 12px"><span style="font-family: arial,helvetica,sans-serif"><a href=
+"http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363448" style=
+"color: #0000ee; text-decoration: underline">Provides information</a></span></span></li>
+<li><span style="font-size: 12px"><span style="font-family: arial,helvetica,sans-serif"><a href=
+"http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363449" style=
+"color: #0000ee; text-decoration: underline">Promotes SET and innovation</a></span></span></li>
+<li><span style="font-size: 12px"><span style="font-family: arial,helvetica,sans-serif"><a href=
+"http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363450" style=
+"color: #0000ee; text-decoration: underline">Hosts platforms for networking and debate</a> <em>on current SET issues</em></span></span></li>
+<li><span style="font-size: 12px"><span style="font-family: arial,helvetica,sans-serif"><em>Engages with government on SET-related policy</em></span></span></li>
+</ul>
+<span style="font-size: 12px"><span style="font-family: arial,helvetica,sans-serif"><em>Please note that if you do not RSVP, the NSTF cannot be held responsible for any unforeseen changes or cancellations of programmes. Communications are sent only
+via e-mail or through notifications on the</em> <a href=
+"http://comms.nstf-mail.com/servlet/link/375/45840/1117272/363451" style=
+"color: #0000ee; text-decoration: underline">NSTF website</a><em>.</em></span></span></div>
+</td>
+<td class="expander" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word"
+align="left" valign="top"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="row ev-section" style="border-collapse: collapse; border-spacing: 0; display: block; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="wrapper last" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top">
+<table class="twelve columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px">
+<tbody>
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="ev-block-dropzone" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 10px 0px; text-align: left; vertical-align: top; word-break: break-word"
+align="left" valign="top"><img alt="K-13093_NSTF_Basic_Online_Template_Dev_V3_Discussion_Forum_Footer.png" class="center ev-control: image ev-block" src=
+"https://dmqnxuvihlkxc.cloudfront.net/users/assets/197/images/Discussion_Forums_-_November_2016/K-13093_NSTF_Basic_Online_Template_Dev_V3_Discussion_Forum_Footer.png" style=
+"-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; height: auto; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: 580px" width="580" height="265" align="none"></td>
+<td class="expander" style=
+"-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse !important; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; hyphens: none; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word"
+align="left" valign="top"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+</td>
+</tr>
+</tbody>
+</table>
+
+    <br>
+<br>
+
+
+<table id="product-footer" class="body" style="background: #fefefe; border-collapse: collapse; border-spacing: 0; width: 100%" bgcolor="#FEFEFE">
+<tr>
+<td class="center" align="center" valign="top" style="border-collapse: collapse !important; margin: 0; padding: 0; text-align: center; vertical-align: top;">
+<center>
+<table class="container" ev-content-builder="" style="background: #fefefe; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px" bgcolor="#FEFEFE">
+<tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+<td class="ev-footer-padding" style=
+"-moz-hyphens: none; -webkit-hyphens: none; background: #fefefe; border: 0px solid #fefefe; border-collapse: collapse !important; color: #8b8b8b; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 12px; font-weight: 300; hyphens: none; line-height: 19px; margin: 0; padding: 16px; text-align: center; vertical-align: middle; word-wrap: break-word"
+align="center" bgcolor="#FEFEFE" valign="top">
+                                                            
+<table class="ev-footer" style="width: 580px; text-align: center;">
+<tr>
+<td style="padding: 0px; margin: 0 auto; float: none; text-align: center; vertical-align: top; border-top: 1px solid #E1E1E1; padding-top: 10px;" align="center">
+                                                                                            
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" align="center" style="text-align: center; padding: 0px 0px 10px; vertical-align: middle; margin: 0;">
+                                                                                                                             <a href="http://www.facebook.com/share.php?u=https://linku.cc/2NCgvL/amZMKSo4e30OpYms&amp;t=Reminder: Invitation: Research and innovation to support the Sustainable Development Goals (4-5 Sept 2017)" style=
+"color: #555555; text-decoration: none"><img width="31" height="30" src="https://dmqnxuvihlkxc.cloudfront.net/images/email_icons/facebook-footer.png" style=
+"-ms-interpolation-mode: bicubic; border: none; clear: both; display: inline-block; float: none; max-width: 100%; outline: none; text-decoration: none;" align="none"></a> &nbsp;
+                                                                                                                                                                                         <a href="http://twitter.com/home?status=https://linku.cc/gyC2c/amZMKSo4e30OpYms" style="color: #555555; text-decoration: none"><img width="31" height="30" src=
+"https://dmqnxuvihlkxc.cloudfront.net/images/email_icons/twitter-footer.png" style="-ms-interpolation-mode: bicubic; border: none; clear: both; display: inline-block; float: none; max-width: 100%; outline: none; text-decoration: none;"
+align="none"></a> &nbsp;
+                                                                                                                                                                                         <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://linku.cc/xP1sJ/amZMKSo4e30OpYms&amp;title=Reminder: Invitation: Research and innovation to support the Sustainable Development Goals (4-5 Sept 2017)"
+style="color: #555555; text-decoration: none"><img width="31" height="30" src="https://dmqnxuvihlkxc.cloudfront.net/images/email_icons/linked-in-footer.png" style=
+"-ms-interpolation-mode: bicubic; border: none; clear: both; display: inline-block; float: none; max-width: 100%; outline: none; text-decoration: none;" align="none"></a> 
+                                                                                                                    </td>
+</tr>
+</table>
+
+                                                                                                                                        
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="100%" align="center" style=
+"text-align: center; padding: 0px 0px 10px; vertical-align: middle; margin: 0; color: #8b8b8b; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 19px;"><a href=
+"http://comms.nstf-mail.com/public/contacts/unsubscribe/amZMKSo4e30OpYms/Cy5R9TEBKTz61SYj/d0f099c868d7288d" style="color: #8b8b8b; text-decoration: none">Unsubscribe</a> <span style="color: #94c93d;">•</span> <a href="http://comms.nstf-mail.com/public/contacts/update-my-profile/Cy5R9TEBKTz61SYj/d0f099c868d7288d" style=
+"color: #8b8b8b; text-decoration: none">Update Profile</a> <span style="color: #94c93d;">•</span> <a href="http://comms.nstf-mail.com/public/messages/print-pdf/amZMKSo4e30OpYms/Cy5R9TEBKTz61SYj/d0f099c868d7288d" style="color: #8b8b8b; text-decoration: none">
+View PDF</a>
+                                                                                                                            <!-- Share link -->
+ <span style="color: #94c93d;">•</span> <a href="http://comms.nstf-mail.com/public/messages/view-online/amZMKSo4e30OpYms/Cy5R9TEBKTz61SYj/d0f099c868d7288d/send" style="color: #8b8b8b; text-decoration: none">Share</a> <!-- /Share link -->
+                                                                                                                        <span style="color: #94c93d;">•</span> <a href="http://comms.nstf-mail.com/public/contacts/pause-subscription/amZMKSo4e30OpYms/d0f099c868d7288d" style="color: #8b8b8b; text-decoration: none">
+Pause Subscription</a> <!-- View online - no option in message properties -->
+ <span style="color: #94c93d;">•</span> <a href="http://comms.nstf-mail.com/public/messages/view-online/amZMKSo4e30OpYms/Cy5R9TEBKTz61SYj/d0f099c868d7288d" style="color: #8b8b8b; text-decoration: none">View Online</a> <!-- /View online check --></td>
+</tr>
+</table>
+
+                                                                                    </td>
+</tr>
+</table>
+
+                                                        
+<table class="ev-footer" style="width: 580px;text-align: center;">
+<tr>
+<td style="padding: 0px; float: none; text-align: center; vertical-align: top; margin:0; color: #8b8b8b; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 12px; font-weight: normal; hyphens: auto; line-height: 19px;" align="center">
+                                                                                    <!-- Email Recipient -->
+                                            This email was sent to <a href="mailto:suresh@workspaceafrica.com" style="text-decoration: underline; font-weight: normal; color: #555555;">
+suresh@workspaceafrica.com</a> on 22-08-2017
+                                                                                            by National Science and Technology Forum,
+                                                c/o CSIR Campus, Building 33 Room S140 Meiring Naude Road Brummeria, Pretoria, Gauteng,                                                                                         <br>
+<br>
+<!-- /Email Recipient -->
+ <!-- Report Abuse -->
+                                            <a href="http://comms.nstf-mail.com/servlet/link/enterprise" style=
+"text-decoration: none;font-weight: normal; color: #555555;">Mailer</a> 
+is intended for opt-in communication only. If you feel this email is unsolicited please <a href="http://comms.nstf-mail.com/public/contacts/complaints/amZMKSo4e30OpYms/Cy5R9TEBKTz61SYj/d0f099c868d7288d" style="color: #555555; text-decoration: underline">
+report it</a> to us
+                                            <!-- /Report Abuse -->
+<br>
+<br>
+
+                                                                                                                            <!-- Enterprise Branding -->
+                                            Email Powered By <a href="http://comms.nstf-mail.com/servlet/link/enterprise" style="text-decoration: none;font-weight: normal; color: #555555;">
+Mailer</a>
+                                                                                            <!-- Enterprise Logo -->
+<br>
+<a href="http://comms.nstf-mail.com/servlet/link/enterprise" style="text-decoration: none;font-weight: normal;"><img class="center" src=
+"https://dmqnxuvihlkxc.cloudfront.net/users/enterprise_logos/21_enterprise_logo_small_1447075683.PNG" style=
+"-ms-interpolation-mode: bicubic; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-decoration: none; width: auto" align="none"></a> <!-- /Enterprise Logo -->
+                                                                                        <!-- /Enterprise Branding -->
+                                                                            </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+</td>
+</tr>
+</table>
+</body>
+</html>

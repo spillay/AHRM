@@ -1,0 +1,20 @@
+GET /_snapshot/_all
+PUT /_snapshot/sp_backup2
+{
+   "type": "fs",
+   "settings": {
+       "compress" : true,
+       "location": "/Data/backup2"
+   }
+}
+PUT /_snapshot/sp_backup2/snapshot-inbox?wait_for_completion=true
+
+DELETE /_snapshot/sp_backup2
+
+PUT /_snapshot/sp_backup2/snapshot-inbox?wait_for_completion=true
+{
+  "indices": "inbox-items,sent-items",
+  "ignore_unavailable": true,
+  "include_global_state": false
+}
+GET /_snapshot/sp_backup2/snapshot-inbox

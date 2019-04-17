@@ -62,7 +62,7 @@ class Home extends Component {
     this.state = {
       data: [],
       dataDonut: [],
-      pivotDate: "01/01/2001",
+      pivotDate: "05/05/2019",
       dh: new DataHelper()
     };
   }
@@ -83,6 +83,7 @@ class Home extends Component {
       var range = dt.getWeekRange();
       console.log("--------------------" + range.start + " : " + range.end)
       var query = this.getSeries("1d", range.start, range.end);
+      console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>." + query);
       this.executeQuery(query, this.updateData);
       var query2 = this.getTerms(range.start, range.end);
       this.executeQuery(query2, this.updateDataDonut);
@@ -93,6 +94,7 @@ class Home extends Component {
       console.log("--------------------" + range.start + " : " + range.end)
       var query = this.getSeries("1w", range.start, range.end);
       this.executeQuery(query, this.updateData);
+      console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>." + query);
       var query2 = this.getTerms(range.start, range.end);
       this.executeQuery(query2, this.updateDataDonut);
     }
@@ -101,6 +103,7 @@ class Home extends Component {
       var range = dt.getYearRange();
       console.log("--------------------" + range.start + " : " + range.end)
       var query = this.getSeries("1M", range.start, range.end);
+      console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>." + query);
       this.executeQuery(query, this.updateData);
       var query2 = this.getTerms(range.start, range.end);
       this.executeQuery(query2, this.updateDataDonut);
@@ -165,8 +168,8 @@ class Home extends Component {
   }
   getSeries = (interval, start, end) => {
     var query = this.state.dh.getQuery("Prime", "Series")
+    query.cleanFilters()
     query.addTimeSeriesParams("model.date", interval, "6", start, end);
-    //query.addTimeSeriesParams("model.date", "1h", "6", '01/01/2000', '25/03/2001');
     var range = { "start": start, "end": end };
     var timeFilter = this.state.dh.getTimeFilter(range);
     query.addFilterObj(timeFilter);
@@ -174,6 +177,7 @@ class Home extends Component {
   }
   getTerms = (start, end) => {
     var query = this.state.dh.getQuery("Prime", "Terms")
+    query.cleanFilters()
     var range = {
       "start": start,
       "end": end
@@ -186,7 +190,7 @@ class Home extends Component {
   executeQuery = (query, updateFunc) => {
     var essvr = new ESService();
     essvr.getData(JSON.parse(query)).then(function (resp) {
-      //console.log(resp);
+      console.log("//////////////////////////////////////////// " + resp);
       updateFunc(JSON.parse(resp))
     }, function (error) {
       console.log("----------------------------" + error.message);

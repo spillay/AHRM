@@ -1,0 +1,2365 @@
+Return-Path: <delivery@bounce.edx.org>
+Delivered-To: suresh@workspaceafrica.com
+Received: from gaea.thishost.co.za
+	by gaea.thishost.co.za (Dovecot) with LMTP id 4Yy/I9E9nFmHXQ8AFcTQEQ
+	for <suresh@workspaceafrica.com>; Tue, 22 Aug 2017 16:21:05 +0200
+Return-path: <delivery@bounce.edx.org>
+Envelope-to: suresh@workspaceafrica.com
+Delivery-date: Tue, 22 Aug 2017 16:21:05 +0200
+Received: from mx-a224.sailthru.com ([64.34.57.224]:50850)
+	by gaea.thishost.co.za with esmtp (Exim 4.89)
+	(envelope-from <delivery@bounce.edx.org>)
+	id 1dkA33-004EL5-G9
+	for suresh@workspaceafrica.com; Tue, 22 Aug 2017 16:20:54 +0200
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; s=mt; d=pmta.sailthru.com;
+ h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:List-Unsubscribe;
+ bh=eevA6nDFUWncZ/2Uv3GNkG503bk=;
+ b=KIuvejboxNZyiqOEfNBWQ/BiLYEmd+CEVFZ3yGge9O5yuwuGaR2R1RzMuREQQd7IWlbQ5C9VKtTa
+   Wr7+zmObSYO0s8g9KrCHhCTyvh+B67dU66G+/IkpCkIEkIUljLk/ClTiBQ/b/rH3VppXPMn1JTe4
+   JrecYnqvPJsZ/fhwH+Q=
+Received: from nj2mta-17.sailthru.com (204.153.121.17) by mx-a224.sailthru.com id hjgusc1qqbsa for <suresh@workspaceafrica.com>; Tue, 22 Aug 2017 10:20:12 -0400 (envelope-from <delivery@bounce.edx.org>)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple; t=1503411612;
+	s=sailthru; d=edx.org;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:List-Unsubscribe;
+	bh=JLPguxdG+Bs/xnG+eL2C8x1cWgPyvCmP2L2bf0NB4rw=;
+	b=Yx3bi3hQneD6aLvtraaM6jm5/P3KEDoM4R4tIr0VZqeXaV7WbGtWM4hWAO73Jibn
+	ogG5rVvnalElTVp49AISwvvtFKJVTdUvx7jCl8BT3/hKWP3NGeXX2ys2QJp398c1sLG
+	jet1rEi7K8DZX265B9kFcpTRcKk8v/EYqlRrA3lo=
+Date: Tue, 22 Aug 2017 10:20:12 -0400 (EDT)
+From: Jeannie from edX <news@edx.org>
+To: suresh@workspaceafrica.com
+Message-ID: <20170822102011.10407770.241635@sailthru.com>
+Subject: These top courses are open for enrollment
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_8459724_1734907584.1503411612055"
+Precedence: bulk
+X-TM-ID: 20170822102011.10407770.241635
+X-Info: Message sent by sailthru.com customer edX.org
+X-Info: We do not permit unsolicited commercial email
+X-Info: Please report abuse by forwarding complete headers to
+X-Info: abuse@sailthru.com
+X-Mailer: sailthru.com
+X-Unsubscribe-Web: http://link.edx.org/oc/5888a5560aea112b548b45ad672oq.56g3/2056c077
+List-Unsubscribe: <http://link.edx.org/oc/5888a5560aea112b548b45ad672oq.56g3/2056c077>, <mailto:unsubscribe_20170822102011.10407770.241635@mx.sailthru.com>
+X-rpcampaign: stkbx10407769
+X-SADomain-MailScanner-Information: Please contact SA Domain technical support for more information
+X-SADomain-MailScanner-ID: 1dkA33-004EL5-G9
+X-SADomain-MailScanner: Found to be clean
+X-SADomain-MailScanner-SpamCheck: not spam, SpamAssassin (not cached,
+	score=1.578, required 5, BAYES_00 -1.90, DCC_CHECK 1.10,
+	DKIM_SIGNED 0.10, DKIM_VALID -0.10, DKIM_VALID_AU -0.10,
+	HTML_FONT_FACE_BAD 0.98, HTML_FONT_LOW_CONTRAST 0.00,
+	HTML_IMAGE_RATIO_06 0.00, HTML_MESSAGE 0.00, MIME_HTML_ONLY 0.72,
+	MIME_HTML_ONLY_MULTI 0.00, MPART_ALT_DIFF 0.79,
+	RCVD_IN_DNSWL_NONE -0.00, RCVD_IN_MSPIKE_H4 -0.01,
+	RCVD_IN_MSPIKE_WL -0.01, SPF_PASS -0.00, URIBL_BLOCKED 0.00)
+X-SADomain-MailScanner-SpamScore: s
+X-SADomain-MailScanner-From: delivery@bounce.edx.org
+X-Spam-Status: No
+
+------=_Part_8459724_1734907584.1503411612055
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+<head>
+<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+<meta name=3D"viewport" content=3D"initial-scale=3D1.0">
+<meta name=3D"format-detection" content=3D"telephone=3Dno">
+<title>   </title>
+<link href=3D"https://fonts.googleapis.com/css?family=3DOpen+Sans:300,400,7=
+00" rel=3D"stylesheet">
+<style type=3D"text/css">
+.gmailfix {
+display: none!important;
+}
+.ReadMsgBody{
+width:100%;
+background-color:#d9d9d9;
+}
+.ExternalClass{
+width:100%;
+background-color:#d9d9d9;
+}
+.ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.Ex=
+ternalClass td,.ExternalClass div{
+line-height:100%;
+}
+#outlook a{
+padding:0;
+}
+html{
+width:100%;
+}
+body{
+-webkit-text-size-adjust:none;
+-ms-text-size-adjust:none;
+}
+html,body{
+background-color:#d9d9d9;
+margin:0;
+padding:0;
+}
+table{
+border-spacing:0;
+}
+table td{
+border-collapse:collapse;
+}
+br,strong br,b br,em br,i br{
+line-height:100%;
+}
+h1,h2,h3,h4,h5,h6{
+line-height:100% !important;
+-webkit-font-smoothing:antialiased;
+}
+img{
+height:auto !important;
+line-height:100%;
+outline:none;
+text-decoration:none;
+display:block !important;
+}
+span a{
+text-decoration:none !important;
+}
+table p{
+margin:0;
+}
+.yshortcuts,.yshortcuts a,.yshortcuts a:link,.yshortcuts a:visited,.yshortc=
+uts a:hover,.yshortcuts a span{
+text-decoration:none !important;
+border-bottom:none !important;
+}
+table{
+mso-table-lspace:0pt;
+mso-table-rspace:0pt;
+}
+img{
+-ms-interpolation-mode:bicubic;
+}
+body{
+-webkit-text-size-adjust:100%;
+}
+body{
+-ms-text-size-adjust:100%;
+}
+.default-edit-image{
+height:20px;
+}
+.nav-ul{
+margin-left:-23px !important;
+margin-top:0px !important;
+margin-bottom:0px !important;
+}
+img{
+height:auto !important;
+}
+td[class=3Dimage-250px] img{
+width:300px;
+height:auto !important;
+max-width:300px !important;
+}
+td[class=3Dimage-170px] img{
+width:170px;
+height:auto !important;
+max-width:170px !important;
+}
+td[class=3Dimage-185px] img{
+width:185px;
+height:auto !important;
+max-width:185px !important;
+}
+td[class=3Dimage-124px] img{
+width:124px;
+height:auto !important;
+max-width:124px !important;
+}
+@media only screen and (max-width: 640px){
+body{
+width:auto!important;
+}
+}   @media only screen and (max-width: 640px){
+table[class=3Dcontainer]{
+width:100%!important;
+padding-left:20px!important;
+padding-right:20px!important;
+}
+}   @media only screen and (max-width: 640px){
+td[class=3Dimage-250px] img{
+width:100% !important;
+height:auto !important;
+max-width:100% !important;
+}
+}   @media only screen and (max-width: 640px){
+td[class=3Dimage-170px] img{
+width:100% !important;
+height:auto !important;
+max-width:100% !important;
+}
+}   @media only screen and (max-width: 640px){
+td[class=3Dimage-185px] img{
+width:185px !important;
+height:auto !important;
+max-width:185px !important;
+}
+}   @media only screen and (max-width: 640px){
+td[class=3Dimage-124px] img{
+width:100% !important;
+height:auto !important;
+max-width:100% !important;
+}
+}   @media only screen and (max-width: 640px){
+td[class=3Dimage-100-percent] img{
+width:100% !important;
+height:auto !important;
+max-width:100% !important;
+}
+}   @media only screen and (max-width: 640px){
+td[class=3Dsmall-image-100-percent] img{
+width:100% !important;
+height:auto !important;
+}
+}   @media only screen and (max-width: 640px){
+table[class=3Dfull-width]{
+width:100% !important;
+}
+}   @media only screen and (max-width: 640px){
+table[class=3Dfull-width-text]{
+width:100% !important;
+background-color:#ffffff;
+padding-left:20px !important;
+padding-right:20px !important;
+}
+}   @media only screen and (max-width: 640px){
+table[class=3Dfull-width-text2]{
+width:100% !important;
+background-color:#ffffff;
+padding-left:20px !important;
+padding-right:20px !important;
+}
+}   @media only screen and (max-width: 640px){
+table[class=3Dcol-2-3img]{
+width:50% !important;
+margin-right:20px !important;
+}
+}   @media only screen and (max-width: 640px){
+table[class=3Dcol-2-3img-last]{
+width:50% !important;
+}
+}   @media only screen and (max-width: 640px){
+table[class=3Dcol-2-footer]{
+width:55% !important;
+margin-right:20px !important;
+}
+}   @media only screen and (max-width: 640px){
+table[class=3Dcol-2-footer-last]{
+width:40% !important;
+}
+}   @media only screen and (max-width: 640px){
+table[class=3Dcol-2]{
+width:47% !important;
+margin-right:20px !important;
+}
+}   @media only screen and (max-width: 640px){
+table[class=3Dcol-2-last]{
+width:47% !important;
+}
+}   @media only screen and (max-width: 640px){
+table[class=3Dcol-3]{
+width:29% !important;
+margin-right:20px !important;
+text-align:center!important;
+}
+}   @media only screen and (max-width: 640px){
+table[class=3Dcol-3-last]{
+width:29% !important;
+text-align:center!important;
+}
+}   @media only screen and (max-width: 640px){
+table[class=3Drow-2]{
+width:50% !important;
+}
+}   @media only screen and (max-width: 640px){
+td[class=3Dtext-center]{
+text-align:center !important;
+}
+td[class=3Dtext-left]{
+text-align:left !important;
+}
+}   @media only screen and (max-width: 640px){
+table[class=3Dremove]{
+display:none !important;
+}
+}   @media only screen and (max-width: 640px){
+td[class=3Dremove]{
+display:none !important;
+}
+}   @media only screen and (max-width: 640px){
+table[class=3Dfix-box]{
+padding-left:20px !important;
+padding-right:20px !important;
+}
+}   @media only screen and (max-width: 640px){
+td[class=3Dfix-box]{
+padding-left:20px !important;
+padding-right:20px !important;
+}
+}   @media only screen and (max-width: 640px){
+td[class=3Dfont-resize]{
+font-size:18px !important;
+line-height:22px !important;
+}
+}   @media only screen and (max-width: 640px){
+table[class=3Dspace-scale]{
+width:100% !important;
+float:none !important;
+}
+}   @media only screen and (max-width: 640px){
+table[class=3Dclear-align-600]{
+float:none !important;
+}table[class=3Dcontainer2]{
+width:100%!important;
+float:none !important;
+padding:0px!important;
+}
+td[class=3Dmobileheight]{
+height:10px!important;
+}
+}   @media only screen and (max-width: 479px){
+body{
+font-size:10px !important;
+}
+}   @media only screen and (max-width: 479px){
+table[class=3Dcontainer]{
+width:100%!important;
+padding-left:10px!important;
+padding-right:10px!important;
+}
+}   @media only screen and (max-width: 479px){
+table[class=3Dcontainer2]{
+width:100%!important;
+float:none !important;
+padding:0px!important;
+}
+}   @media only screen and (max-width: 479px){
+td[class=3Dfull-width] img{
+width:100% !important;
+height:auto !important;
+max-width:100% !important;
+min-width:124px !important;
+}
+}   @media only screen and (max-width: 479px){
+td[class=3Dimage-250px] img{
+width:100% !important;
+height:auto !important;
+max-width:100% !important;
+min-width:124px !important;
+}
+}   @media only screen and (max-width: 479px){
+td[class=3Dimage-200px] img{
+width:100% !important;
+height:auto !important;
+max-width:100% !important;
+min-width:124px !important;
+}
+}   @media only screen and (max-width: 479px){
+td[class=3Dimage-170px] img{
+width:100% !important;
+height:auto !important;
+max-width:100% !important;
+min-width:124px !important;
+}
+}   @media only screen and (max-width: 479px){
+td[class=3Dimage-185px] img{
+width:185px !important;
+height:auto !important;
+max-width:185px !important;
+min-width:124px !important;
+}
+}   @media only screen and (max-width: 479px){
+td[class=3Dimage-124px] img{
+width:100% !important;
+height:auto !important;
+max-width:100% !important;
+min-width:124px !important;
+}
+}   @media only screen and (max-width: 479px){
+td[class=3Dimage-100-percent] img{
+width:100% !important;
+height:auto !important;
+max-width:100% !important;
+min-width:124px !important;
+}
+}   @media only screen and (max-width: 479px){
+td[class=3Dsmall-image-100-percent] img{
+width:100% !important;
+height:auto !important;
+max-width:100% !important;
+min-width:124px !important;
+}
+}   @media only screen and (max-width: 479px){
+table[class=3Dfull-width]{
+width:100% !important;
+}
+}   @media only screen and (max-width: 479px){
+table[class=3Dfull-width-text]{
+width:100% !important;
+background-color:#ffffff;
+padding-left:20px !important;
+padding-right:20px !important;
+}
+}   @media only screen and (max-width: 479px){
+table[class=3Dfull-width-text2]{
+width:100% !important;
+background-color:#ffffff;
+padding-left:20px !important;
+padding-right:20px !important;
+}
+}   @media only screen and (max-width: 479px){
+table[class=3Dcol-2-footer]{
+width:100% !important;
+margin-right:0px !important;
+}
+}   @media only screen and (max-width: 479px){
+table[class=3Dcol-2-footer-last]{
+width:100% !important;
+}
+}   @media only screen and (max-width: 479px){
+table[class=3Dcol-2]{
+width:100% !important;
+margin-right:0px !important;
+}
+}   @media only screen and (max-width: 479px){
+table[class=3Dcol-2-last]{
+width:100% !important;
+}
+}   @media only screen and (max-width: 479px){
+table[class=3Dcol-3]{
+width:100% !important;
+text-align:center!important;
+margin-right:0px !important;
+}
+}   @media only screen and (max-width: 479px){
+table[class=3Dcol-3-last]{
+width:100% !important;
+text-align:center!important;
+}
+}   @media only screen and (max-width: 479px){
+table[class=3Drow-2]{
+width:100% !important;
+}
+}   @media only screen and (max-width: 479px){
+table[id=3Dcol-underline]{
+float:none !important;
+width:100% !important;
+}
+}   @media only screen and (max-width: 479px){
+td[id=3Dcol-underline]{
+float:none !important;
+width:100% !important;
+}
+}   @media only screen and (max-width: 479px){
+td[class=3Dcol-underline]{
+float:none !important;
+width:100% !important;
+}
+}   @media only screen and (max-width: 479px){
+td[class=3Dtext-center]{
+text-align:center !important;
+}
+td[class=3Dtext-left]{
+text-align:left !important;
+}
+}   @media only screen and (max-width: 479px){
+div[class=3Dtext-center]{
+text-align:center !important;
+}
+}   @media only screen and (max-width: 479px){
+table[id=3Dclear-padding]{
+padding:0 !important;
+}
+}   @media only screen and (max-width: 479px){
+td[id=3Dclear-padding]{
+padding:0 !important;
+}
+}   @media only screen and (max-width: 479px){
+td[class=3Dclear-padding]{
+padding:0 !important;
+}
+}   @media only screen and (max-width: 479px){
+table[class=3Dremove-479]{
+display:none !important;
+}
+}   @media only screen and (max-width: 479px){
+td[class=3Dremove-479]{
+display:none !important;
+}
+}   @media only screen and (max-width: 479px){
+table[class=3Dclear-align]{
+float:none !important;
+}
+}   @media only screen and (max-width: 479px){
+table[class=3Dwidth-small]{
+width:100% !important;
+}
+}   @media only screen and (max-width: 479px){
+table[class=3Dfix-box]{
+padding-left:0px !important;
+padding-right:0px !important;
+}
+}   @media only screen and (max-width: 479px){
+td[class=3Dfix-box]{
+padding-left:0px !important;
+padding-right:0px !important;
+}
+td[class=3Dmobileheight]{
+height:10px!important;
+}
+}   @media only screen and (max-width: 479px){
+td[class=3Dfont-resize]{
+font-size:14px !important;
+}
+}   @media only screen and (max-width: 479px){
+td[class=3Dincrease-Height]{
+height:10px !important;
+}
+}   @media only screen and (max-width: 479px){
+td[class=3Dincrease-Height-20]{
+height:20px !important;
+}
+}   @media only screen and (max-width: 479px){
+*[class~=3Dhide_on_mobile]{
+display:none !important;
+}
+*[class~=3Dimg-center]{
+float:none!important;text-align:center!important;
+}
+}   @media only screen and (max-width: 320px){
+table[class=3Dwidth-small]{
+width:125px !important;
+}
+}   @media only screen and (max-width: 320px){
+img[class=3Dimage-100-percent]{
+width:100% !important;
+height:auto !important;
+max-width:100% !important;
+min-width:124px !important;
+}
+}   @media only screen and (max-width: 320px){
+*[class~=3Dhide_on_mobile]{
+display:none !important;
+}
+} </style></head>
+<body style=3D"background-color:#d9d9d9; padding: 0 ; margin: 0;" class=3D"=
+Arini" bgcolor=3D"#d9d9d9">
+<a href=3D"http://link.edx.org/click/10407770.241635/aHR0cDovL3d3dy5lZHgub3=
+JnP3V0bV9zb3VyY2U9c2FpbHRocnUmdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249bmV3c=
+2xldHRlcl9zdHVkZW50X2FjdGl2ZV8yMDE3MDgyMg/5888a5560aea112b548b45adB03c83a4e=
+"><img src=3D"http://link.edx.org/img/5888a5560aea112b548b45ad672oq.56g3/0e=
+99fc07.gif" alt=3D"" border=3D"0" /></a>
+<!--PREVIEW TEXT -->
+<div style=3D"display:none;font-size:1px;color:#f5f6fa;line-height:1px;max-=
+height:0px;max-width:0px;opacity:0;overflow:hidden;">
+Discover exciting courses in subjects you've expressed interest in, or top =
+courses in Java, Python, effective communication, project management, data =
+structures, and more! </div>
+<!--END OF PREVIEW TEXT -->
+<table bgcolor=3D"#d9d9d9" width=3D"100%" border=3D"0" align=3D"center" cel=
+lpadding=3D"0" cellspacing=3D"0">=20
+<tr>
+<td bgcolor=3D"#d9d9d9" align=3D"center" valign=3D"top"><table bgcolor=3D"#=
+FFFFFF" width=3D"600" align=3D"center" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" class=3D"container2" style=3D"background-color: #ffffff;  ">
+<tr>
+<td bgcolor=3D"#ffffff" align=3D"center" style=3D"padding:  0px;" valign=3D=
+"top"><table width=3D"560" align=3D"center" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" class=3D"container2" style=3D"background-color: #ffffff; =
+">
+<tr>
+<td valign=3D"top"><table width=3D"100%" align=3D"center" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0">
+<tr>
+<td align=3D"center" valign=3D"top"><table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" class=3D"container2">
+<tr>
+<td><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+">
+<tr>
+<td style=3D"font-size: 10px; line-height: 18px; font-family:Arial,Tahoma, =
+Helvetica, sans-serif; color:#666666; font-weight:normal; text-align:center=
+;"><table bgcolor=3D"#FFFFFF" width=3D"600" align=3D"center" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" class=3D"container2" style=3D"background=
+-color: #ffffff;  ">
+<tr>
+<td align=3D"center" valign=3D"top"><table width=3D"600" align=3D"center" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"full-width" bgcolo=
+r=3D"#ffffff" style=3D"background-color:#ffffff;">
+<tr>
+</tr><!--start Main Logo Section-->
+<tr>
+<td bgcolor=3D"#d9d9d9" align=3D"center" valign=3D"top"><table bgcolor=3D"#=
+FFFFFF" width=3D"600" align=3D"center" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" class=3D"container2" style=3D"background-color: #ffffff;  ">
+<tr>
+<td bgcolor=3D"#f2f2f2" align=3D"center" style=3D"padding:  0px;" valign=3D=
+"top"><table width=3D"560" align=3D"center" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0" class=3D"container2" style=3D"background-color: #f2f2f2; =
+">
+<tr>
+<td valign=3D"top"><table width=3D"100%" align=3D"center" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0">
+<tr>
+<td align=3D"center" valign=3D"top"><table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" class=3D"container2">
+<tr>
+<td><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+">
+<tr>
+<td style=3D"font-size: 10px; line-height: 18px; font-family:Arial,Tahoma, =
+Helvetica, sans-serif; color:#666666; font-weight:normal; text-align:center=
+;"><table bgcolor=3D"#FFFFFF" width=3D"600" align=3D"center" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" class=3D"container2" style=3D"background=
+-color: #ffffff;  ">
+<tr>
+<td align=3D"center" valign=3D"top"><table width=3D"600" align=3D"center" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"full-width" bgcolo=
+r=3D"#ffffff" style=3D"background-color:#ffffff;">
+<!--start Main Logo Section-->
+<tr>
+<td bgcolor=3D"#ffffff" align=3D"center" valign=3D"top" style=3D"padding:0p=
+x 20px;"><table width=3D"550" align=3D"center" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" class=3D"container" bgcolor=3D"#0174b3" style=3D"backg=
+round-color:#ffffff;">
+<tr>
+<td valign=3D"top" class=3D"image-100-percent"><img editable=3D"" src=3D"ht=
+tps://gallery.mailchimp.com/f9e1def4585df864e1be57f66/images/661d1f85-b8a8-=
+4e65-8bdd-be35ef89e2b4.png" width=3D"560" alt=3D"" style=3D"display:block !=
+important;  max-width:560px;"></td>
+</tr><tr>
+<td height=3D"20"></td>
+</tr>
+<tr>
+<td valign=3D"top" width=3D"100%"><table width=3D"80" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"full-width">
+<tr>
+<td class=3D"center" align=3D"center" valign=3D"top" style=3D"padding: 0px;=
+"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" al=
+ign=3D"center" class=3D"full-width">
+<tr>
+<td valign=3D"top" width=3D"100%" ><table  bgcolor=3D"#FFFFFF"    border=3D=
+"0" width=3D"80" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"     >=
+    <tr>
+<td align=3D"center" style=3D"padding:  0px;"  > <a style=3D"color:#20438d;=
+" href=3D"http://link.edx.org/click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9=
+yZy8_dXRtX3NvdXJjZT1zYWlsdGhydSZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1uZX=
+dzbGV0dGVyX3N0dWRlbnRfYWN0aXZlXzIwMTcwODIy/5888a5560aea112b548b45adB4c0f7bc=
+a"> <img width=3D"74"  src=3D"https://edx.org/sites/default/files/theme/edx=
+-logo-header.png" alt=3D"Start learning on edX.org" style=3D"display:block =
+!important; max-width:600px; width:74px;" border=3D"0" hspace=3D"0" vspace=
+=3D"0"></a></td>
+</tr>   =20
+</table></td>
+</tr> =20
+</table></td>
+</tr>
+</table><table width=3D"350" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" align=3D"right" class=3D"full-width">
+<tr>
+<td valign=3D"top"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" align=3D"center">
+<tr>
+<td height=3D"10"></td>
+</tr>                           <tr>
+<td class=3D"text-center" valign=3D"top" align=3D"center"><table width=3D"1=
+00%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"right">
+<tr>
+<td valign=3D"top" align=3D"right"><table     border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0" align=3D"right"    class=3D"full-width"   >    <tr>
+<td   class=3D"text-center" align=3D"left" style=3D"  font-family: 'Open Sa=
+ns',Arial, Helvetica, sans-serif; color:#414141; font-size:13px; font-weigh=
+t:400; mso-line-height-rule: exactly; padding:0px 0px;  "><a style=3D"text-=
+decoration:underline;color:#0079bc;" href=3D"http://link.edx.org/click/1040=
+7770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2U_Y291cnNlPWFsbCZ1dG1fc291cmN=
+lPXNhaWx0aHJ1JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5ld3NsZXR0ZXJfc3R1ZG=
+VudF9hY3RpdmVfMjAxNzA4MjI/5888a5560aea112b548b45adBc5f529df"><font face=3D"=
+'Open Sans',Arial, Helvetica, sans-serif;">Courses</font></a>&nbsp;&nbsp;|&=
+nbsp;&nbsp;<a style=3D"text-decoration:underline;color:#0079bc;" href=3D"ht=
+tp://link.edx.org/click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2U=
+_cHJvZ3JhbT1hbGwmdXRtX3NvdXJjZT1zYWlsdGhydSZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW=
+1wYWlnbj1uZXdzbGV0dGVyX3N0dWRlbnRfYWN0aXZlXzIwMTcwODIy/5888a5560aea112b548b=
+45adCd7db5859"><font face=3D"'Open Sans',Arial, Helvetica, sans-serif;">Pro=
+grams</font></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a style=3D"text-decoration:underl=
+ine;color:#0079bc;" href=3D"http://link.edx.org/click/10407770.241635/aHR0c=
+HM6Ly93d3cuZWR4Lm9yZy9zY2hvb2xzLXBhcnRuZXJzP3V0bV9zb3VyY2U9c2FpbHRocnUmdXRt=
+X21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249bmV3c2xldHRlcl9zdHVkZW50X2FjdGl2ZV8yMDE=
+3MDgyMg/5888a5560aea112b548b45adB14b0e37b"><font face=3D"'Open Sans',Arial,=
+ Helvetica, sans-serif;">Institutions</font></a>
+</td>
+</tr>   =20
+</table></td>                         </tr>=20
+</table></td>
+</tr>
+<tr>
+<td height=3D"10"></td>
+</tr>                            =20
+</table></td>
+</tr>
+</table>
+<table class=3D"remove" width=3D"1" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" align=3D"left" style=3D"font-size: 0;line-height: 0;border-collap=
+se: collapse;">
+<tr>
+<td width=3D"0" height=3D"2" style=3D"font-size: 0;line-height: 0;border-co=
+llapse: collapse;"><p style=3D"padding-left: 10px;">&nbsp;</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table></td>
+</tr>          =20
+<!-- End Main Logo Section-->
+<!--Start border section--><tr>
+<td valign=3D"top" width=3D"100%"><table   width=3D"600" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0" align=3D"center" class=3D"full-width">
+<tr>
+<td  ><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" align=3D"center">
+<tr>
+<td height=3D"10"></td>
+</tr> <tr>
+<td valign=3D"top" class=3D"image-100-percent" align=3D"center"><a style=3D=
+"color:#20438d;" href=3D"http://link.edx.org/click/10407770.241635/aHR0cHM6=
+Ly93d3cuZWR4Lm9yZy8_dXRtX3NvdXJjZT1zYWlsdGhydSZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9=
+jYW1wYWlnbj1uZXdzbGV0dGVyX3N0dWRlbnRfYWN0aXZlXzIwMTcwODIy/5888a5560aea112b5=
+48b45adC4c0f7bca"> <img src=3D"http://media.sailthru.com/595/1k0/c/s/5863e1=
+4f760cd.jpg" alt=3D"" style=3D"display:block !important; max-width:600px; "=
+ border=3D"0" hspace=3D"0" vspace=3D"0"></a></td>
+</tr>
+</table></td>
+</tr>
+</table>
+</td>
+</tr><!--End border section-->
+</table></td>
+</tr>
+<!--Start Main Header Section-->
+<tr>
+<td   valign=3D"top" style=3D"padding:0px 20px;">
+<table width=3D"560" class=3D"full-width" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0" align=3D"center">
+<tr>
+<td height=3D"15"></td>
+</tr>                      <tr>
+<td  class=3D"text-center"  align=3D"center" style=3D"  font-family: 'Open =
+Sans',Arial, Helvetica, sans-serif; color:#404041; font-size:24px; text-ali=
+gn:center; line-height:28px; mso-line-height-rule: exactly; padding:5px; fo=
+nt-weight:normal;"><font face=3D"'Open Sans',Arial, Helvetica, sans-serif;"=
+>12 Recommended Courses For   SureshPillay </font>
+</td>
+</tr>
+<tr>
+<td class=3D"text-center"  align=3D"center" style=3D"  font-family: 'Open S=
+ans',Arial, Helvetica, sans-serif; color:#404041; font-size:16px; text-alig=
+n:center; line-height:18px; mso-line-height-rule: exactly; padding:5px; fon=
+t-weight:normal;"><font face=3D"'Open Sans',Arial, Helvetica, sans-serif;">=
+Discover courses we picked just for you or explore all edX courses</font>
+</td>
+</tr>                                    <tr>
+<td height=3D"20"></td>
+</tr>
+</table> =20
+</td>
+</tr>
+<!--End Main Header Section-->
+<!--Main CTA-->
+<tr>
+<td align=3D"center" valign=3D"top"  style=3D"padding:0px 20px;"><table bgc=
+olor=3D"#0079bc" width=3D"560" class=3D"full-width" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0" style=3D"border-radius:5px;" align=3D"center">
+<tr>
+<td class=3D"center" align=3D"left" style=3D"  font-family: 'Open Sans',Ari=
+al, Helvetica, sans-serif; color:#ffffff; font-size:16px; text-align:center=
+; line-height:21px; mso-line-height-rule: exactly; padding:8px 5px; font-we=
+ight:700;"><a style=3D"color:#ffffff; text-decoration:none;" href=3D"http:/=
+/link.edx.org/click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2U_dXR=
+tX3NvdXJjZT1zYWlsdGhydSZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1uZXdzbGV0dG=
+VyX3N0dWRlbnRfYWN0aXZlXzIwMTcwODIy/5888a5560aea112b548b45adD9554181f">See A=
+ll Courses</a>
+</td>
+</tr>
+</table></td>
+</tr>       <tr>
+<td height=3D"40"></td>
+</tr>                   =20
+<!--End Main CTA--> =20
+<!--Start Course-Two block--> <tr>
+<td bgcolor=3D"#f5f5f5" class=3D"text-center" align=3D"center" valign=3D"to=
+p"  style=3D"padding:0px 20px;"><table width=3D"560" align=3D"center" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"full-width" bgcolor=3D=
+"#f5f5f5" style=3D"background-color:#f5f5f5;">
+<tr>
+<td valign=3D"top" height=3D"10" class=3D"image-100-percent"></td>
+</tr>
+<tr>
+<td valign=3D"top" width=3D"100%"><table width=3D"195" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"full-width">
+<tr>
+<td valign=3D"top"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" align=3D"center">
+<tr>
+<td height=3D"10"></td>
+</tr>                           <tr>
+<td valign=3D"top" align=3D"center"><a href=3D"http://link.edx.org/click/10=
+407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2UvcHJvYmFiaWxpdHktYmFzaWMtY=
+29uY2VwdHMtZGlzY3JldGUtcHVyZHVleC00MTYtMXgtMT91dG1fc291cmNlPXNhaWx0aHJ1JnV0=
+bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5ld3NsZXR0ZXJfc3R1ZGVudF9hY3RpdmVfMjA=
+xNzA4MjI/5888a5560aea112b548b45adBaf44081d"><img width=3D"195" height=3D"12=
+0" src=3D"https://www.edx.org/sites/default/files/course/image/promoted/pro=
+b_416.1x-_378x225_0.jpg" alt=3D"Probability: Basic Concepts & Discrete Rand=
+om Variables" style=3D"display:block !important; max-width:195px; max-heigh=
+t:120px; " border=3D"0" hspace=3D"0" vspace=3D"0"></a></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"padding: 0px;"><table width=3D"195" bgcolor=3D"=
+#d9d9d9" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tr>
+<td width=3D"195" class=3D"center" align=3D"center" style=3D"  font-family:=
+ 'Open Sans',Arial, Helvetica, sans-serif; color:#414042; font-size:16px; t=
+ext-align:center; line-height:16px; mso-line-height-rule: exactly; padding:=
+5px 10px; font-weight:700;"><font face=3D"'Open Sans',arial, Helvetica, san=
+s-serif;">PurdueX </font></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table class=3D"remove" width=3D"1" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" align=3D"left" style=3D"font-size: 0;line-height: 0;border-collap=
+se: collapse;">
+<tr>
+<td width=3D"0" height=3D"2" style=3D"font-size: 0;line-height: 0;border-co=
+llapse: collapse;"><p style=3D"padding-left: 10px;">&nbsp;</p></td>
+</tr>
+</table>
+<table width=3D"330" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"right" class=3D"full-width">
+<tr>
+<td class=3D"center" align=3D"center" valign=3D"top" style=3D"padding: 0px;=
+"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" al=
+ign=3D"center" class=3D"full-width">
+<tr>
+<td height=3D"10"></td>
+</tr>
+<tr>
+<td class=3D"text-center" align=3D"left" style=3D"  font-family: 'Open Sans=
+',Arial, Helvetica, sans-serif; color:#414141; font-size:24px;   line-heigh=
+t:28px; mso-line-height-rule: exactly; padding:0px  ; font-weight:400;"><a =
+style=3D"text-decoration: none; color:inherit" href=3D"http://link.edx.org/=
+click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2UvcHJvYmFiaWxpdHktY=
+mFzaWMtY29uY2VwdHMtZGlzY3JldGUtcHVyZHVleC00MTYtMXgtMT91dG1fc291cmNlPXNhaWx0=
+aHJ1JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5ld3NsZXR0ZXJfc3R1ZGVudF9hY3R=
+pdmVfMjAxNzA4MjI/5888a5560aea112b548b45adCaf44081d"> <font face=3D"'Open Sa=
+ns',Arial, Helvetica, sans-serif;">Probability: Basic Concepts & Discrete R=
+andom Variables</font></a><br>
+<span style=3D"color: #414141;font-size:16px; line-height:30px;"></span>
+</td>
+</tr>
+<tr>
+<td height=3D"20"></td>
+</tr>   <tr>
+<td class=3D"text-center"><table class=3D"full-width" width=3D"140"   borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0; border-coll=
+apse:separate; border-radius:3px;  ">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" style=3D" padding: 8px 5px; border-r=
+adius:2px;    font-size: 16px; line-height: 21px; font-family: 'Open Sans',=
+ Arial, Helvetica,   sans-serif; color: #1e8142; margin: 0px !important;bor=
+der:1px solid #1e8142; ">
+<a href=3D"http://link.edx.org/click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm=
+9yZy9jb3Vyc2UvcHJvYmFiaWxpdHktYmFzaWMtY29uY2VwdHMtZGlzY3JldGUtcHVyZHVleC00M=
+TYtMXgtMT91dG1fc291cmNlPXNhaWx0aHJ1JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWdu=
+PW5ld3NsZXR0ZXJfc3R1ZGVudF9hY3RpdmVfMjAxNzA4MjI/5888a5560aea112b548b45adDaf=
+44081d" style=3D"  font-weight: bold; font-style: normal; color:#1e8142; te=
+xt-decoration: none;"><font face=3D"'Open Sans', Arial, Helvetica,   sans-s=
+erif">Learn More</font></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+</tr><tr>
+<td height=3D"15"></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height=3D"10"></td>
+</tr>
+</table></td>
+</tr>
+<!--Start Course-Two block--> <tr>
+<td bgcolor=3D"#f5f5f5" class=3D"text-center" align=3D"center" valign=3D"to=
+p"  style=3D"padding:0px 20px;"><table width=3D"560" align=3D"center" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"full-width" bgcolor=3D=
+"#f5f5f5" style=3D"background-color:#f5f5f5;">
+<tr>
+<td valign=3D"top" height=3D"10" class=3D"image-100-percent"></td>
+</tr>
+<tr>
+<td valign=3D"top" width=3D"100%"><table width=3D"195" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"full-width">
+<tr>
+<td valign=3D"top"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" align=3D"center">
+<tr>
+<td height=3D"10"></td>
+</tr>                           <tr>
+<td valign=3D"top" align=3D"center"><a href=3D"http://link.edx.org/click/10=
+407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2Uvc3RhdGlzdGljYWwtdGhpbmtpb=
+mctZGF0YS1zY2llbmNlLWNvbHVtYmlheC1kczEwMXgtMT91dG1fc291cmNlPXNhaWx0aHJ1JnV0=
+bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5ld3NsZXR0ZXJfc3R1ZGVudF9hY3RpdmVfMjA=
+xNzA4MjI/5888a5560aea112b548b45adB95032ceb"><img width=3D"195" height=3D"12=
+0" src=3D"https://www.edx.org/sites/default/files/course/image/promoted/col=
+umbiax_ds101x378x225.jpg" alt=3D"Statistical Thinking for Data Science and =
+Analytics" style=3D"display:block !important; max-width:195px; max-height:1=
+20px; " border=3D"0" hspace=3D"0" vspace=3D"0"></a></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"padding: 0px;"><table width=3D"195" bgcolor=3D"=
+#d9d9d9" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tr>
+<td width=3D"195" class=3D"center" align=3D"center" style=3D"  font-family:=
+ 'Open Sans',Arial, Helvetica, sans-serif; color:#414042; font-size:16px; t=
+ext-align:center; line-height:16px; mso-line-height-rule: exactly; padding:=
+5px 10px; font-weight:700;"><font face=3D"'Open Sans',arial, Helvetica, san=
+s-serif;">ColumbiaX </font></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table class=3D"remove" width=3D"1" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" align=3D"left" style=3D"font-size: 0;line-height: 0;border-collap=
+se: collapse;">
+<tr>
+<td width=3D"0" height=3D"2" style=3D"font-size: 0;line-height: 0;border-co=
+llapse: collapse;"><p style=3D"padding-left: 10px;">&nbsp;</p></td>
+</tr>
+</table>
+<table width=3D"330" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"right" class=3D"full-width">
+<tr>
+<td class=3D"center" align=3D"center" valign=3D"top" style=3D"padding: 0px;=
+"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" al=
+ign=3D"center" class=3D"full-width">
+<tr>
+<td height=3D"10"></td>
+</tr>
+<tr>
+<td class=3D"text-center" align=3D"left" style=3D"  font-family: 'Open Sans=
+',Arial, Helvetica, sans-serif; color:#414141; font-size:24px;   line-heigh=
+t:28px; mso-line-height-rule: exactly; padding:0px  ; font-weight:400;"><a =
+style=3D"text-decoration: none; color:inherit" href=3D"http://link.edx.org/=
+click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2Uvc3RhdGlzdGljYWwtd=
+GhpbmtpbmctZGF0YS1zY2llbmNlLWNvbHVtYmlheC1kczEwMXgtMT91dG1fc291cmNlPXNhaWx0=
+aHJ1JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5ld3NsZXR0ZXJfc3R1ZGVudF9hY3R=
+pdmVfMjAxNzA4MjI/5888a5560aea112b548b45adC95032ceb"> <font face=3D"'Open Sa=
+ns',Arial, Helvetica, sans-serif;">Statistical Thinking for Data Science an=
+d Analytics</font></a><br>
+<span style=3D"color: #414141;font-size:16px; line-height:30px;"></span>
+</td>
+</tr>
+<tr>
+<td height=3D"20"></td>
+</tr>   <tr>
+<td class=3D"text-center"><table class=3D"full-width" width=3D"140"   borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0; border-coll=
+apse:separate; border-radius:3px;  ">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" style=3D" padding: 8px 5px; border-r=
+adius:2px;    font-size: 16px; line-height: 21px; font-family: 'Open Sans',=
+ Arial, Helvetica,   sans-serif; color: #1e8142; margin: 0px !important;bor=
+der:1px solid #1e8142; ">
+<a href=3D"http://link.edx.org/click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm=
+9yZy9jb3Vyc2Uvc3RhdGlzdGljYWwtdGhpbmtpbmctZGF0YS1zY2llbmNlLWNvbHVtYmlheC1kc=
+zEwMXgtMT91dG1fc291cmNlPXNhaWx0aHJ1JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWdu=
+PW5ld3NsZXR0ZXJfc3R1ZGVudF9hY3RpdmVfMjAxNzA4MjI/5888a5560aea112b548b45adD95=
+032ceb" style=3D"  font-weight: bold; font-style: normal; color:#1e8142; te=
+xt-decoration: none;"><font face=3D"'Open Sans', Arial, Helvetica,   sans-s=
+erif">Learn More</font></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+</tr><tr>
+<td height=3D"15"></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height=3D"10"></td>
+</tr>
+</table></td>
+</tr>
+<!--Start Course-Two block--> <tr>
+<td bgcolor=3D"#f5f5f5" class=3D"text-center" align=3D"center" valign=3D"to=
+p"  style=3D"padding:0px 20px;"><table width=3D"560" align=3D"center" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"full-width" bgcolor=3D=
+"#f5f5f5" style=3D"background-color:#f5f5f5;">
+<tr>
+<td valign=3D"top" height=3D"10" class=3D"image-100-percent"></td>
+</tr>
+<tr>
+<td valign=3D"top" width=3D"100%"><table width=3D"195" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"full-width">
+<tr>
+<td valign=3D"top"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" align=3D"center">
+<tr>
+<td height=3D"10"></td>
+</tr>                           <tr>
+<td valign=3D"top" align=3D"center"><a href=3D"http://link.edx.org/click/10=
+407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2UvYW5hbHl0aWNzLWNsYXNzcm9vb=
+S10ZWFjaGVyLWN1cnRpbngtZWR1MXgtMD91dG1fc291cmNlPXNhaWx0aHJ1JnV0bV9tZWRpdW09=
+ZW1haWwmdXRtX2NhbXBhaWduPW5ld3NsZXR0ZXJfc3R1ZGVudF9hY3RpdmVfMjAxNzA4MjI/588=
+8a5560aea112b548b45adB209d8d90"><img width=3D"195" height=3D"120" src=3D"ht=
+tps://www.edx.org/sites/default/files/course/image/promoted/edu1x_courseabo=
+utpage_378x225.jpg" alt=3D"Analytics for the Classroom Teacher" style=3D"di=
+splay:block !important; max-width:195px; max-height:120px; " border=3D"0" h=
+space=3D"0" vspace=3D"0"></a></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"padding: 0px;"><table width=3D"195" bgcolor=3D"=
+#d9d9d9" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tr>
+<td width=3D"195" class=3D"center" align=3D"center" style=3D"  font-family:=
+ 'Open Sans',Arial, Helvetica, sans-serif; color:#414042; font-size:16px; t=
+ext-align:center; line-height:16px; mso-line-height-rule: exactly; padding:=
+5px 10px; font-weight:700;"><font face=3D"'Open Sans',arial, Helvetica, san=
+s-serif;">CurtinX </font></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table class=3D"remove" width=3D"1" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" align=3D"left" style=3D"font-size: 0;line-height: 0;border-collap=
+se: collapse;">
+<tr>
+<td width=3D"0" height=3D"2" style=3D"font-size: 0;line-height: 0;border-co=
+llapse: collapse;"><p style=3D"padding-left: 10px;">&nbsp;</p></td>
+</tr>
+</table>
+<table width=3D"330" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"right" class=3D"full-width">
+<tr>
+<td class=3D"center" align=3D"center" valign=3D"top" style=3D"padding: 0px;=
+"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" al=
+ign=3D"center" class=3D"full-width">
+<tr>
+<td height=3D"10"></td>
+</tr>
+<tr>
+<td class=3D"text-center" align=3D"left" style=3D"  font-family: 'Open Sans=
+',Arial, Helvetica, sans-serif; color:#414141; font-size:24px;   line-heigh=
+t:28px; mso-line-height-rule: exactly; padding:0px  ; font-weight:400;"><a =
+style=3D"text-decoration: none; color:inherit" href=3D"http://link.edx.org/=
+click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2UvYW5hbHl0aWNzLWNsY=
+XNzcm9vbS10ZWFjaGVyLWN1cnRpbngtZWR1MXgtMD91dG1fc291cmNlPXNhaWx0aHJ1JnV0bV9t=
+ZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5ld3NsZXR0ZXJfc3R1ZGVudF9hY3RpdmVfMjAxNzA=
+4MjI/5888a5560aea112b548b45adC209d8d90"> <font face=3D"'Open Sans',Arial, H=
+elvetica, sans-serif;">Analytics for the Classroom Teacher</font></a><br>
+<span style=3D"color: #414141;font-size:16px; line-height:30px;"></span>
+</td>
+</tr>
+<tr>
+<td height=3D"20"></td>
+</tr>   <tr>
+<td class=3D"text-center"><table class=3D"full-width" width=3D"140"   borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0; border-coll=
+apse:separate; border-radius:3px;  ">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" style=3D" padding: 8px 5px; border-r=
+adius:2px;    font-size: 16px; line-height: 21px; font-family: 'Open Sans',=
+ Arial, Helvetica,   sans-serif; color: #1e8142; margin: 0px !important;bor=
+der:1px solid #1e8142; ">
+<a href=3D"http://link.edx.org/click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm=
+9yZy9jb3Vyc2UvYW5hbHl0aWNzLWNsYXNzcm9vbS10ZWFjaGVyLWN1cnRpbngtZWR1MXgtMD91d=
+G1fc291cmNlPXNhaWx0aHJ1JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5ld3NsZXR0=
+ZXJfc3R1ZGVudF9hY3RpdmVfMjAxNzA4MjI/5888a5560aea112b548b45adD209d8d90" styl=
+e=3D"  font-weight: bold; font-style: normal; color:#1e8142; text-decoratio=
+n: none;"><font face=3D"'Open Sans', Arial, Helvetica,   sans-serif">Learn =
+More</font></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+</tr><tr>
+<td height=3D"15"></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height=3D"10"></td>
+</tr>
+</table></td>
+</tr>
+<!--Start Course-Two block--> <tr>
+<td bgcolor=3D"#f5f5f5" class=3D"text-center" align=3D"center" valign=3D"to=
+p"  style=3D"padding:0px 20px;"><table width=3D"560" align=3D"center" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"full-width" bgcolor=3D=
+"#f5f5f5" style=3D"background-color:#f5f5f5;">
+<tr>
+<td valign=3D"top" height=3D"10" class=3D"image-100-percent"></td>
+</tr>
+<tr>
+<td valign=3D"top" width=3D"100%"><table width=3D"195" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"full-width">
+<tr>
+<td valign=3D"top"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" align=3D"center">
+<tr>
+<td height=3D"10"></td>
+</tr>                           <tr>
+<td valign=3D"top" align=3D"center"><a href=3D"http://link.edx.org/click/10=
+407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2Uva25vd2xlZGdlLW1hbmFnZW1lb=
+nQtYmlnLWRhdGEtYnVzaW5lc3MtaGtwb2x5dXgtaXNlMTAxeC0zP3V0bV9zb3VyY2U9c2FpbHRo=
+cnUmdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249bmV3c2xldHRlcl9zdHVkZW50X2FjdGl=
+2ZV8yMDE3MDgyMg/5888a5560aea112b548b45adB89d020e0"><img width=3D"195" heigh=
+t=3D"120" src=3D"https://www.edx.org/sites/default/files/course/image/promo=
+ted/ise101x-knowledge-revolution-378x225.jpg" alt=3D"Knowledge Management a=
+nd Big Data in Business" style=3D"display:block !important; max-width:195px=
+; max-height:120px; " border=3D"0" hspace=3D"0" vspace=3D"0"></a></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"padding: 0px;"><table width=3D"195" bgcolor=3D"=
+#d9d9d9" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tr>
+<td width=3D"195" class=3D"center" align=3D"center" style=3D"  font-family:=
+ 'Open Sans',Arial, Helvetica, sans-serif; color:#414042; font-size:16px; t=
+ext-align:center; line-height:16px; mso-line-height-rule: exactly; padding:=
+5px 10px; font-weight:700;"><font face=3D"'Open Sans',arial, Helvetica, san=
+s-serif;">HKPolyUx </font></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table class=3D"remove" width=3D"1" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" align=3D"left" style=3D"font-size: 0;line-height: 0;border-collap=
+se: collapse;">
+<tr>
+<td width=3D"0" height=3D"2" style=3D"font-size: 0;line-height: 0;border-co=
+llapse: collapse;"><p style=3D"padding-left: 10px;">&nbsp;</p></td>
+</tr>
+</table>
+<table width=3D"330" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"right" class=3D"full-width">
+<tr>
+<td class=3D"center" align=3D"center" valign=3D"top" style=3D"padding: 0px;=
+"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" al=
+ign=3D"center" class=3D"full-width">
+<tr>
+<td height=3D"10"></td>
+</tr>
+<tr>
+<td class=3D"text-center" align=3D"left" style=3D"  font-family: 'Open Sans=
+',Arial, Helvetica, sans-serif; color:#414141; font-size:24px;   line-heigh=
+t:28px; mso-line-height-rule: exactly; padding:0px  ; font-weight:400;"><a =
+style=3D"text-decoration: none; color:inherit" href=3D"http://link.edx.org/=
+click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2Uva25vd2xlZGdlLW1hb=
+mFnZW1lbnQtYmlnLWRhdGEtYnVzaW5lc3MtaGtwb2x5dXgtaXNlMTAxeC0zP3V0bV9zb3VyY2U9=
+c2FpbHRocnUmdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249bmV3c2xldHRlcl9zdHVkZW5=
+0X2FjdGl2ZV8yMDE3MDgyMg/5888a5560aea112b548b45adC89d020e0"> <font face=3D"'=
+Open Sans',Arial, Helvetica, sans-serif;">Knowledge Management and Big Data=
+ in Business</font></a><br>
+<span style=3D"color: #414141;font-size:16px; line-height:30px;"></span>
+</td>
+</tr>
+<tr>
+<td height=3D"20"></td>
+</tr>   <tr>
+<td class=3D"text-center"><table class=3D"full-width" width=3D"140"   borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0; border-coll=
+apse:separate; border-radius:3px;  ">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" style=3D" padding: 8px 5px; border-r=
+adius:2px;    font-size: 16px; line-height: 21px; font-family: 'Open Sans',=
+ Arial, Helvetica,   sans-serif; color: #1e8142; margin: 0px !important;bor=
+der:1px solid #1e8142; ">
+<a href=3D"http://link.edx.org/click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm=
+9yZy9jb3Vyc2Uva25vd2xlZGdlLW1hbmFnZW1lbnQtYmlnLWRhdGEtYnVzaW5lc3MtaGtwb2x5d=
+XgtaXNlMTAxeC0zP3V0bV9zb3VyY2U9c2FpbHRocnUmdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2Ft=
+cGFpZ249bmV3c2xldHRlcl9zdHVkZW50X2FjdGl2ZV8yMDE3MDgyMg/5888a5560aea112b548b=
+45adD89d020e0" style=3D"  font-weight: bold; font-style: normal; color:#1e8=
+142; text-decoration: none;"><font face=3D"'Open Sans', Arial, Helvetica,  =
+ sans-serif">Learn More</font></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+</tr><tr>
+<td height=3D"15"></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height=3D"10"></td>
+</tr>
+</table></td>
+</tr>
+<!--Start Course-Two block--> <tr>
+<td bgcolor=3D"#f5f5f5" class=3D"text-center" align=3D"center" valign=3D"to=
+p"  style=3D"padding:0px 20px;"><table width=3D"560" align=3D"center" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"full-width" bgcolor=3D=
+"#f5f5f5" style=3D"background-color:#f5f5f5;">
+<tr>
+<td valign=3D"top" height=3D"10" class=3D"image-100-percent"></td>
+</tr>
+<tr>
+<td valign=3D"top" width=3D"100%"><table width=3D"195" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"full-width">
+<tr>
+<td valign=3D"top"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" align=3D"center">
+<tr>
+<td height=3D"10"></td>
+</tr>                           <tr>
+<td valign=3D"top" align=3D"center"><a href=3D"http://link.edx.org/click/10=
+407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2UvbGVhcm4tcHJvZ3JhbS1qYXZhL=
+W1pY3Jvc29mdC1kZXYyNzZ4P3V0bV9zb3VyY2U9c2FpbHRocnUmdXRtX21lZGl1bT1lbWFpbCZ1=
+dG1fY2FtcGFpZ249bmV3c2xldHRlcl9zdHVkZW50X2FjdGl2ZV8yMDE3MDgyMg/5888a5560aea=
+112b548b45adBbdd04227"><img width=3D"195" height=3D"120" src=3D"https://www=
+.edx.org/sites/default/files/course/image/promoted/dev276x-378225.jpg" alt=
+=3D"Learn to Program in Java" style=3D"display:block !important; max-width:=
+195px; max-height:120px; " border=3D"0" hspace=3D"0" vspace=3D"0"></a></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"padding: 0px;"><table width=3D"195" bgcolor=3D"=
+#d9d9d9" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tr>
+<td width=3D"195" class=3D"center" align=3D"center" style=3D"  font-family:=
+ 'Open Sans',Arial, Helvetica, sans-serif; color:#414042; font-size:16px; t=
+ext-align:center; line-height:16px; mso-line-height-rule: exactly; padding:=
+5px 10px; font-weight:700;"><font face=3D"'Open Sans',arial, Helvetica, san=
+s-serif;">Microsoft </font></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table class=3D"remove" width=3D"1" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" align=3D"left" style=3D"font-size: 0;line-height: 0;border-collap=
+se: collapse;">
+<tr>
+<td width=3D"0" height=3D"2" style=3D"font-size: 0;line-height: 0;border-co=
+llapse: collapse;"><p style=3D"padding-left: 10px;">&nbsp;</p></td>
+</tr>
+</table>
+<table width=3D"330" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"right" class=3D"full-width">
+<tr>
+<td class=3D"center" align=3D"center" valign=3D"top" style=3D"padding: 0px;=
+"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" al=
+ign=3D"center" class=3D"full-width">
+<tr>
+<td height=3D"10"></td>
+</tr>
+<tr>
+<td class=3D"text-center" align=3D"left" style=3D"  font-family: 'Open Sans=
+',Arial, Helvetica, sans-serif; color:#414141; font-size:24px;   line-heigh=
+t:28px; mso-line-height-rule: exactly; padding:0px  ; font-weight:400;"><a =
+style=3D"text-decoration: none; color:inherit" href=3D"http://link.edx.org/=
+click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2UvbGVhcm4tcHJvZ3Jhb=
+S1qYXZhLW1pY3Jvc29mdC1kZXYyNzZ4P3V0bV9zb3VyY2U9c2FpbHRocnUmdXRtX21lZGl1bT1l=
+bWFpbCZ1dG1fY2FtcGFpZ249bmV3c2xldHRlcl9zdHVkZW50X2FjdGl2ZV8yMDE3MDgyMg/5888=
+a5560aea112b548b45adCbdd04227"> <font face=3D"'Open Sans',Arial, Helvetica,=
+ sans-serif;">Learn to Program in Java</font></a><br>
+<span style=3D"color: #414141;font-size:16px; line-height:30px;"></span>
+</td>
+</tr>
+<tr>
+<td height=3D"20"></td>
+</tr>   <tr>
+<td class=3D"text-center"><table class=3D"full-width" width=3D"140"   borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0; border-coll=
+apse:separate; border-radius:3px;  ">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" style=3D" padding: 8px 5px; border-r=
+adius:2px;    font-size: 16px; line-height: 21px; font-family: 'Open Sans',=
+ Arial, Helvetica,   sans-serif; color: #1e8142; margin: 0px !important;bor=
+der:1px solid #1e8142; ">
+<a href=3D"http://link.edx.org/click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm=
+9yZy9jb3Vyc2UvbGVhcm4tcHJvZ3JhbS1qYXZhLW1pY3Jvc29mdC1kZXYyNzZ4P3V0bV9zb3VyY=
+2U9c2FpbHRocnUmdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249bmV3c2xldHRlcl9zdHVk=
+ZW50X2FjdGl2ZV8yMDE3MDgyMg/5888a5560aea112b548b45adDbdd04227" style=3D"  fo=
+nt-weight: bold; font-style: normal; color:#1e8142; text-decoration: none;"=
+><font face=3D"'Open Sans', Arial, Helvetica,   sans-serif">Learn More</fon=
+t></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+</tr><tr>
+<td height=3D"15"></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height=3D"10"></td>
+</tr>
+</table></td>
+</tr>
+<!--Start Course-Two block--> <tr>
+<td bgcolor=3D"#f5f5f5" class=3D"text-center" align=3D"center" valign=3D"to=
+p"  style=3D"padding:0px 20px;"><table width=3D"560" align=3D"center" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"full-width" bgcolor=3D=
+"#f5f5f5" style=3D"background-color:#f5f5f5;">
+<tr>
+<td valign=3D"top" height=3D"10" class=3D"image-100-percent"></td>
+</tr>
+<tr>
+<td valign=3D"top" width=3D"100%"><table width=3D"195" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"full-width">
+<tr>
+<td valign=3D"top"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" align=3D"center">
+<tr>
+<td height=3D"10"></td>
+</tr>                           <tr>
+<td valign=3D"top" align=3D"center"><a href=3D"http://link.edx.org/click/10=
+407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2UvaW50cm9kdWN0aW9uLWNvbXB1d=
+GVyLXNjaWVuY2UtbWl0eC02LTAwLTF4LTExP3V0bV9zb3VyY2U9c2FpbHRocnUmdXRtX21lZGl1=
+bT1lbWFpbCZ1dG1fY2FtcGFpZ249bmV3c2xldHRlcl9zdHVkZW50X2FjdGl2ZV8yMDE3MDgyMg/=
+5888a5560aea112b548b45adB39fe2bfa"><img width=3D"195" height=3D"120" src=3D=
+"https://www.edx.org/sites/default/files/course/image/promoted/mitx_6.00.1.=
+x_378x225.jpg" alt=3D"Introduction to Computer Science and Programming Usin=
+g Python" style=3D"display:block !important; max-width:195px; max-height:12=
+0px; " border=3D"0" hspace=3D"0" vspace=3D"0"></a></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"padding: 0px;"><table width=3D"195" bgcolor=3D"=
+#d9d9d9" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tr>
+<td width=3D"195" class=3D"center" align=3D"center" style=3D"  font-family:=
+ 'Open Sans',Arial, Helvetica, sans-serif; color:#414042; font-size:16px; t=
+ext-align:center; line-height:16px; mso-line-height-rule: exactly; padding:=
+5px 10px; font-weight:700;"><font face=3D"'Open Sans',arial, Helvetica, san=
+s-serif;">MITx </font></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table class=3D"remove" width=3D"1" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" align=3D"left" style=3D"font-size: 0;line-height: 0;border-collap=
+se: collapse;">
+<tr>
+<td width=3D"0" height=3D"2" style=3D"font-size: 0;line-height: 0;border-co=
+llapse: collapse;"><p style=3D"padding-left: 10px;">&nbsp;</p></td>
+</tr>
+</table>
+<table width=3D"330" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"right" class=3D"full-width">
+<tr>
+<td class=3D"center" align=3D"center" valign=3D"top" style=3D"padding: 0px;=
+"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" al=
+ign=3D"center" class=3D"full-width">
+<tr>
+<td height=3D"10"></td>
+</tr>
+<tr>
+<td class=3D"text-center" align=3D"left" style=3D"  font-family: 'Open Sans=
+',Arial, Helvetica, sans-serif; color:#414141; font-size:24px;   line-heigh=
+t:28px; mso-line-height-rule: exactly; padding:0px  ; font-weight:400;"><a =
+style=3D"text-decoration: none; color:inherit" href=3D"http://link.edx.org/=
+click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2UvaW50cm9kdWN0aW9uL=
+WNvbXB1dGVyLXNjaWVuY2UtbWl0eC02LTAwLTF4LTExP3V0bV9zb3VyY2U9c2FpbHRocnUmdXRt=
+X21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249bmV3c2xldHRlcl9zdHVkZW50X2FjdGl2ZV8yMDE=
+3MDgyMg/5888a5560aea112b548b45adC39fe2bfa"> <font face=3D"'Open Sans',Arial=
+, Helvetica, sans-serif;">Introduction to Computer Science and Programming =
+Using Python</font></a><br>
+<span style=3D"color: #414141;font-size:16px; line-height:30px;"></span>
+</td>
+</tr>
+<tr>
+<td height=3D"20"></td>
+</tr>   <tr>
+<td class=3D"text-center"><table class=3D"full-width" width=3D"140"   borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0; border-coll=
+apse:separate; border-radius:3px;  ">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" style=3D" padding: 8px 5px; border-r=
+adius:2px;    font-size: 16px; line-height: 21px; font-family: 'Open Sans',=
+ Arial, Helvetica,   sans-serif; color: #1e8142; margin: 0px !important;bor=
+der:1px solid #1e8142; ">
+<a href=3D"http://link.edx.org/click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm=
+9yZy9jb3Vyc2UvaW50cm9kdWN0aW9uLWNvbXB1dGVyLXNjaWVuY2UtbWl0eC02LTAwLTF4LTExP=
+3V0bV9zb3VyY2U9c2FpbHRocnUmdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249bmV3c2xl=
+dHRlcl9zdHVkZW50X2FjdGl2ZV8yMDE3MDgyMg/5888a5560aea112b548b45adD39fe2bfa" s=
+tyle=3D"  font-weight: bold; font-style: normal; color:#1e8142; text-decora=
+tion: none;"><font face=3D"'Open Sans', Arial, Helvetica,   sans-serif">Lea=
+rn More</font></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+</tr><tr>
+<td height=3D"15"></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height=3D"10"></td>
+</tr>
+</table></td>
+</tr>
+<!--Start Course-Two block--> <tr>
+<td bgcolor=3D"#f5f5f5" class=3D"text-center" align=3D"center" valign=3D"to=
+p"  style=3D"padding:0px 20px;"><table width=3D"560" align=3D"center" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"full-width" bgcolor=3D=
+"#f5f5f5" style=3D"background-color:#f5f5f5;">
+<tr>
+<td valign=3D"top" height=3D"10" class=3D"image-100-percent"></td>
+</tr>
+<tr>
+<td valign=3D"top" width=3D"100%"><table width=3D"195" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"full-width">
+<tr>
+<td valign=3D"top"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" align=3D"center">
+<tr>
+<td height=3D"10"></td>
+</tr>                           <tr>
+<td valign=3D"top" align=3D"center"><a href=3D"http://link.edx.org/click/10=
+407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2UvbWljcm9zb2Z0LXByb2Zlc3Npb=
+25hbC1wcm9ncmFtLWZyb250LWVuZC1taWNyb3NvZnQtZGV2MjM3eD91dG1fc291cmNlPXNhaWx0=
+aHJ1JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5ld3NsZXR0ZXJfc3R1ZGVudF9hY3R=
+pdmVfMjAxNzA4MjI/5888a5560aea112b548b45adBba9566fc"><img width=3D"195" heig=
+ht=3D"120" src=3D"https://www.edx.org/sites/default/files/course/image/prom=
+oted/dev237x_course_image.png" alt=3D"Microsoft Professional Program : Fron=
+t-End Web Development Orientation" style=3D"display:block !important; max-w=
+idth:195px; max-height:120px; " border=3D"0" hspace=3D"0" vspace=3D"0"></a>=
+</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"padding: 0px;"><table width=3D"195" bgcolor=3D"=
+#d9d9d9" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tr>
+<td width=3D"195" class=3D"center" align=3D"center" style=3D"  font-family:=
+ 'Open Sans',Arial, Helvetica, sans-serif; color:#414042; font-size:16px; t=
+ext-align:center; line-height:16px; mso-line-height-rule: exactly; padding:=
+5px 10px; font-weight:700;"><font face=3D"'Open Sans',arial, Helvetica, san=
+s-serif;">Microsoft </font></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table class=3D"remove" width=3D"1" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" align=3D"left" style=3D"font-size: 0;line-height: 0;border-collap=
+se: collapse;">
+<tr>
+<td width=3D"0" height=3D"2" style=3D"font-size: 0;line-height: 0;border-co=
+llapse: collapse;"><p style=3D"padding-left: 10px;">&nbsp;</p></td>
+</tr>
+</table>
+<table width=3D"330" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"right" class=3D"full-width">
+<tr>
+<td class=3D"center" align=3D"center" valign=3D"top" style=3D"padding: 0px;=
+"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" al=
+ign=3D"center" class=3D"full-width">
+<tr>
+<td height=3D"10"></td>
+</tr>
+<tr>
+<td class=3D"text-center" align=3D"left" style=3D"  font-family: 'Open Sans=
+',Arial, Helvetica, sans-serif; color:#414141; font-size:24px;   line-heigh=
+t:28px; mso-line-height-rule: exactly; padding:0px  ; font-weight:400;"><a =
+style=3D"text-decoration: none; color:inherit" href=3D"http://link.edx.org/=
+click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2UvbWljcm9zb2Z0LXByb=
+2Zlc3Npb25hbC1wcm9ncmFtLWZyb250LWVuZC1taWNyb3NvZnQtZGV2MjM3eD91dG1fc291cmNl=
+PXNhaWx0aHJ1JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5ld3NsZXR0ZXJfc3R1ZGV=
+udF9hY3RpdmVfMjAxNzA4MjI/5888a5560aea112b548b45adCba9566fc"> <font face=3D"=
+'Open Sans',Arial, Helvetica, sans-serif;">Microsoft Professional Program :=
+ Front-End Web Development Orientation</font></a><br>
+<span style=3D"color: #414141;font-size:16px; line-height:30px;"></span>
+</td>
+</tr>
+<tr>
+<td height=3D"20"></td>
+</tr>   <tr>
+<td class=3D"text-center"><table class=3D"full-width" width=3D"140"   borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0; border-coll=
+apse:separate; border-radius:3px;  ">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" style=3D" padding: 8px 5px; border-r=
+adius:2px;    font-size: 16px; line-height: 21px; font-family: 'Open Sans',=
+ Arial, Helvetica,   sans-serif; color: #1e8142; margin: 0px !important;bor=
+der:1px solid #1e8142; ">
+<a href=3D"http://link.edx.org/click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm=
+9yZy9jb3Vyc2UvbWljcm9zb2Z0LXByb2Zlc3Npb25hbC1wcm9ncmFtLWZyb250LWVuZC1taWNyb=
+3NvZnQtZGV2MjM3eD91dG1fc291cmNlPXNhaWx0aHJ1JnV0bV9tZWRpdW09ZW1haWwmdXRtX2Nh=
+bXBhaWduPW5ld3NsZXR0ZXJfc3R1ZGVudF9hY3RpdmVfMjAxNzA4MjI/5888a5560aea112b548=
+b45adDba9566fc" style=3D"  font-weight: bold; font-style: normal; color:#1e=
+8142; text-decoration: none;"><font face=3D"'Open Sans', Arial, Helvetica, =
+  sans-serif">Learn More</font></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+</tr><tr>
+<td height=3D"15"></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height=3D"10"></td>
+</tr>
+</table></td>
+</tr>
+<!--Start Course-Two block--> <tr>
+<td bgcolor=3D"#f5f5f5" class=3D"text-center" align=3D"center" valign=3D"to=
+p"  style=3D"padding:0px 20px;"><table width=3D"560" align=3D"center" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"full-width" bgcolor=3D=
+"#f5f5f5" style=3D"background-color:#f5f5f5;">
+<tr>
+<td valign=3D"top" height=3D"10" class=3D"image-100-percent"></td>
+</tr>
+<tr>
+<td valign=3D"top" width=3D"100%"><table width=3D"195" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"full-width">
+<tr>
+<td valign=3D"top"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" align=3D"center">
+<tr>
+<td height=3D"10"></td>
+</tr>                           <tr>
+<td valign=3D"top" align=3D"center"><a href=3D"http://link.edx.org/click/10=
+407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2UvbGVhZGluZy1lZmZlY3RpdmUtY=
+29tbXVuaWNhdGlvbi1jYXRhbHlzdHgtaWw1eC0wP3V0bV9zb3VyY2U9c2FpbHRocnUmdXRtX21l=
+ZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249bmV3c2xldHRlcl9zdHVkZW50X2FjdGl2ZV8yMDE3MDg=
+yMg/5888a5560aea112b548b45adBc7a4bf4a"><img width=3D"195" height=3D"120" sr=
+c=3D"https://www.edx.org/sites/default/files/course/image/promoted/il5x_ban=
+ner378x225_0.jpg" alt=3D"Leading With Effective Communication (Inclusive Le=
+adership Training)" style=3D"display:block !important; max-width:195px; max=
+-height:120px; " border=3D"0" hspace=3D"0" vspace=3D"0"></a></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"padding: 0px;"><table width=3D"195" bgcolor=3D"=
+#d9d9d9" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tr>
+<td width=3D"195" class=3D"center" align=3D"center" style=3D"  font-family:=
+ 'Open Sans',Arial, Helvetica, sans-serif; color:#414042; font-size:16px; t=
+ext-align:center; line-height:16px; mso-line-height-rule: exactly; padding:=
+5px 10px; font-weight:700;"><font face=3D"'Open Sans',arial, Helvetica, san=
+s-serif;">CatalystX </font></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table class=3D"remove" width=3D"1" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" align=3D"left" style=3D"font-size: 0;line-height: 0;border-collap=
+se: collapse;">
+<tr>
+<td width=3D"0" height=3D"2" style=3D"font-size: 0;line-height: 0;border-co=
+llapse: collapse;"><p style=3D"padding-left: 10px;">&nbsp;</p></td>
+</tr>
+</table>
+<table width=3D"330" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"right" class=3D"full-width">
+<tr>
+<td class=3D"center" align=3D"center" valign=3D"top" style=3D"padding: 0px;=
+"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" al=
+ign=3D"center" class=3D"full-width">
+<tr>
+<td height=3D"10"></td>
+</tr>
+<tr>
+<td class=3D"text-center" align=3D"left" style=3D"  font-family: 'Open Sans=
+',Arial, Helvetica, sans-serif; color:#414141; font-size:24px;   line-heigh=
+t:28px; mso-line-height-rule: exactly; padding:0px  ; font-weight:400;"><a =
+style=3D"text-decoration: none; color:inherit" href=3D"http://link.edx.org/=
+click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2UvbGVhZGluZy1lZmZlY=
+3RpdmUtY29tbXVuaWNhdGlvbi1jYXRhbHlzdHgtaWw1eC0wP3V0bV9zb3VyY2U9c2FpbHRocnUm=
+dXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249bmV3c2xldHRlcl9zdHVkZW50X2FjdGl2ZV8=
+yMDE3MDgyMg/5888a5560aea112b548b45adCc7a4bf4a"> <font face=3D"'Open Sans',A=
+rial, Helvetica, sans-serif;">Leading With Effective Communication (Inclusi=
+ve Leadership Training)</font></a><br>
+<span style=3D"color: #414141;font-size:16px; line-height:30px;"></span>
+</td>
+</tr>
+<tr>
+<td height=3D"20"></td>
+</tr>   <tr>
+<td class=3D"text-center"><table class=3D"full-width" width=3D"140"   borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0; border-coll=
+apse:separate; border-radius:3px;  ">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" style=3D" padding: 8px 5px; border-r=
+adius:2px;    font-size: 16px; line-height: 21px; font-family: 'Open Sans',=
+ Arial, Helvetica,   sans-serif; color: #1e8142; margin: 0px !important;bor=
+der:1px solid #1e8142; ">
+<a href=3D"http://link.edx.org/click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm=
+9yZy9jb3Vyc2UvbGVhZGluZy1lZmZlY3RpdmUtY29tbXVuaWNhdGlvbi1jYXRhbHlzdHgtaWw1e=
+C0wP3V0bV9zb3VyY2U9c2FpbHRocnUmdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249bmV3=
+c2xldHRlcl9zdHVkZW50X2FjdGl2ZV8yMDE3MDgyMg/5888a5560aea112b548b45adDc7a4bf4=
+a" style=3D"  font-weight: bold; font-style: normal; color:#1e8142; text-de=
+coration: none;"><font face=3D"'Open Sans', Arial, Helvetica,   sans-serif"=
+>Learn More</font></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+</tr><tr>
+<td height=3D"15"></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height=3D"10"></td>
+</tr>
+</table></td>
+</tr>
+<!--Start Course-Two block--> <tr>
+<td bgcolor=3D"#f5f5f5" class=3D"text-center" align=3D"center" valign=3D"to=
+p"  style=3D"padding:0px 20px;"><table width=3D"560" align=3D"center" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"full-width" bgcolor=3D=
+"#f5f5f5" style=3D"background-color:#f5f5f5;">
+<tr>
+<td valign=3D"top" height=3D"10" class=3D"image-100-percent"></td>
+</tr>
+<tr>
+<td valign=3D"top" width=3D"100%"><table width=3D"195" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"full-width">
+<tr>
+<td valign=3D"top"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" align=3D"center">
+<tr>
+<td height=3D"10"></td>
+</tr>                           <tr>
+<td valign=3D"top" align=3D"center"><a href=3D"http://link.edx.org/click/10=
+407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2UvcHJvamVjdC1tYW5hZ2VtZW50L=
+WxpZmUtY3ljbGUtcml0eC1wbTkwMDF4LTA_dXRtX3NvdXJjZT1zYWlsdGhydSZ1dG1fbWVkaXVt=
+PWVtYWlsJnV0bV9jYW1wYWlnbj1uZXdzbGV0dGVyX3N0dWRlbnRfYWN0aXZlXzIwMTcwODIy/58=
+88a5560aea112b548b45adB3c508f72"><img width=3D"195" height=3D"120" src=3D"h=
+ttps://www.edx.org/sites/default/files/course/image/promoted/project_manage=
+ment_lifecycle_378x225.jpg" alt=3D"Project Management Life Cycle" style=3D"=
+display:block !important; max-width:195px; max-height:120px; " border=3D"0"=
+ hspace=3D"0" vspace=3D"0"></a></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"padding: 0px;"><table width=3D"195" bgcolor=3D"=
+#d9d9d9" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tr>
+<td width=3D"195" class=3D"center" align=3D"center" style=3D"  font-family:=
+ 'Open Sans',Arial, Helvetica, sans-serif; color:#414042; font-size:16px; t=
+ext-align:center; line-height:16px; mso-line-height-rule: exactly; padding:=
+5px 10px; font-weight:700;"><font face=3D"'Open Sans',arial, Helvetica, san=
+s-serif;">RITx </font></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table class=3D"remove" width=3D"1" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" align=3D"left" style=3D"font-size: 0;line-height: 0;border-collap=
+se: collapse;">
+<tr>
+<td width=3D"0" height=3D"2" style=3D"font-size: 0;line-height: 0;border-co=
+llapse: collapse;"><p style=3D"padding-left: 10px;">&nbsp;</p></td>
+</tr>
+</table>
+<table width=3D"330" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"right" class=3D"full-width">
+<tr>
+<td class=3D"center" align=3D"center" valign=3D"top" style=3D"padding: 0px;=
+"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" al=
+ign=3D"center" class=3D"full-width">
+<tr>
+<td height=3D"10"></td>
+</tr>
+<tr>
+<td class=3D"text-center" align=3D"left" style=3D"  font-family: 'Open Sans=
+',Arial, Helvetica, sans-serif; color:#414141; font-size:24px;   line-heigh=
+t:28px; mso-line-height-rule: exactly; padding:0px  ; font-weight:400;"><a =
+style=3D"text-decoration: none; color:inherit" href=3D"http://link.edx.org/=
+click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2UvcHJvamVjdC1tYW5hZ=
+2VtZW50LWxpZmUtY3ljbGUtcml0eC1wbTkwMDF4LTA_dXRtX3NvdXJjZT1zYWlsdGhydSZ1dG1f=
+bWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1uZXdzbGV0dGVyX3N0dWRlbnRfYWN0aXZlXzIwMTc=
+wODIy/5888a5560aea112b548b45adC3c508f72"> <font face=3D"'Open Sans',Arial, =
+Helvetica, sans-serif;">Project Management Life Cycle</font></a><br>
+<span style=3D"color: #414141;font-size:16px; line-height:30px;"></span>
+</td>
+</tr>
+<tr>
+<td height=3D"20"></td>
+</tr>   <tr>
+<td class=3D"text-center"><table class=3D"full-width" width=3D"140"   borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0; border-coll=
+apse:separate; border-radius:3px;  ">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" style=3D" padding: 8px 5px; border-r=
+adius:2px;    font-size: 16px; line-height: 21px; font-family: 'Open Sans',=
+ Arial, Helvetica,   sans-serif; color: #1e8142; margin: 0px !important;bor=
+der:1px solid #1e8142; ">
+<a href=3D"http://link.edx.org/click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm=
+9yZy9jb3Vyc2UvcHJvamVjdC1tYW5hZ2VtZW50LWxpZmUtY3ljbGUtcml0eC1wbTkwMDF4LTA_d=
+XRtX3NvdXJjZT1zYWlsdGhydSZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1uZXdzbGV0=
+dGVyX3N0dWRlbnRfYWN0aXZlXzIwMTcwODIy/5888a5560aea112b548b45adD3c508f72" sty=
+le=3D"  font-weight: bold; font-style: normal; color:#1e8142; text-decorati=
+on: none;"><font face=3D"'Open Sans', Arial, Helvetica,   sans-serif">Learn=
+ More</font></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+</tr><tr>
+<td height=3D"15"></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height=3D"10"></td>
+</tr>
+</table></td>
+</tr>
+<!--Start Course-Two block--> <tr>
+<td bgcolor=3D"#f5f5f5" class=3D"text-center" align=3D"center" valign=3D"to=
+p"  style=3D"padding:0px 20px;"><table width=3D"560" align=3D"center" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"full-width" bgcolor=3D=
+"#f5f5f5" style=3D"background-color:#f5f5f5;">
+<tr>
+<td valign=3D"top" height=3D"10" class=3D"image-100-percent"></td>
+</tr>
+<tr>
+<td valign=3D"top" width=3D"100%"><table width=3D"195" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"full-width">
+<tr>
+<td valign=3D"top"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" align=3D"center">
+<tr>
+<td height=3D"10"></td>
+</tr>                           <tr>
+<td valign=3D"top" align=3D"center"><a href=3D"http://link.edx.org/click/10=
+407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2UvbGVhZGVycy1sZWFybmluZy1oY=
+XJ2YXJkeC1nc2UyeC0xP3V0bV9zb3VyY2U9c2FpbHRocnUmdXRtX21lZGl1bT1lbWFpbCZ1dG1f=
+Y2FtcGFpZ249bmV3c2xldHRlcl9zdHVkZW50X2FjdGl2ZV8yMDE3MDgyMg/5888a5560aea112b=
+548b45adBb8d91337"><img width=3D"195" height=3D"120" src=3D"https://www.edx=
+.org/sites/default/files/course/image/promoted/gse2x-course_card_image11132=
+015-378x225.jpg" alt=3D"Leaders of Learning" style=3D"display:block !import=
+ant; max-width:195px; max-height:120px; " border=3D"0" hspace=3D"0" vspace=
+=3D"0"></a></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"padding: 0px;"><table width=3D"195" bgcolor=3D"=
+#d9d9d9" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tr>
+<td width=3D"195" class=3D"center" align=3D"center" style=3D"  font-family:=
+ 'Open Sans',Arial, Helvetica, sans-serif; color:#414042; font-size:16px; t=
+ext-align:center; line-height:16px; mso-line-height-rule: exactly; padding:=
+5px 10px; font-weight:700;"><font face=3D"'Open Sans',arial, Helvetica, san=
+s-serif;">HarvardX </font></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table class=3D"remove" width=3D"1" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" align=3D"left" style=3D"font-size: 0;line-height: 0;border-collap=
+se: collapse;">
+<tr>
+<td width=3D"0" height=3D"2" style=3D"font-size: 0;line-height: 0;border-co=
+llapse: collapse;"><p style=3D"padding-left: 10px;">&nbsp;</p></td>
+</tr>
+</table>
+<table width=3D"330" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"right" class=3D"full-width">
+<tr>
+<td class=3D"center" align=3D"center" valign=3D"top" style=3D"padding: 0px;=
+"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" al=
+ign=3D"center" class=3D"full-width">
+<tr>
+<td height=3D"10"></td>
+</tr>
+<tr>
+<td class=3D"text-center" align=3D"left" style=3D"  font-family: 'Open Sans=
+',Arial, Helvetica, sans-serif; color:#414141; font-size:24px;   line-heigh=
+t:28px; mso-line-height-rule: exactly; padding:0px  ; font-weight:400;"><a =
+style=3D"text-decoration: none; color:inherit" href=3D"http://link.edx.org/=
+click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2UvbGVhZGVycy1sZWFyb=
+mluZy1oYXJ2YXJkeC1nc2UyeC0xP3V0bV9zb3VyY2U9c2FpbHRocnUmdXRtX21lZGl1bT1lbWFp=
+bCZ1dG1fY2FtcGFpZ249bmV3c2xldHRlcl9zdHVkZW50X2FjdGl2ZV8yMDE3MDgyMg/5888a556=
+0aea112b548b45adCb8d91337"> <font face=3D"'Open Sans',Arial, Helvetica, san=
+s-serif;">Leaders of Learning</font></a><br>
+<span style=3D"color: #414141;font-size:16px; line-height:30px;"></span>
+</td>
+</tr>
+<tr>
+<td height=3D"20"></td>
+</tr>   <tr>
+<td class=3D"text-center"><table class=3D"full-width" width=3D"140"   borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0; border-coll=
+apse:separate; border-radius:3px;  ">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" style=3D" padding: 8px 5px; border-r=
+adius:2px;    font-size: 16px; line-height: 21px; font-family: 'Open Sans',=
+ Arial, Helvetica,   sans-serif; color: #1e8142; margin: 0px !important;bor=
+der:1px solid #1e8142; ">
+<a href=3D"http://link.edx.org/click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm=
+9yZy9jb3Vyc2UvbGVhZGVycy1sZWFybmluZy1oYXJ2YXJkeC1nc2UyeC0xP3V0bV9zb3VyY2U9c=
+2FpbHRocnUmdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249bmV3c2xldHRlcl9zdHVkZW50=
+X2FjdGl2ZV8yMDE3MDgyMg/5888a5560aea112b548b45adDb8d91337" style=3D"  font-w=
+eight: bold; font-style: normal; color:#1e8142; text-decoration: none;"><fo=
+nt face=3D"'Open Sans', Arial, Helvetica,   sans-serif">Learn More</font></=
+a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+</tr><tr>
+<td height=3D"15"></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height=3D"10"></td>
+</tr>
+</table></td>
+</tr>
+<!--Start Course-Two block--> <tr>
+<td bgcolor=3D"#f5f5f5" class=3D"text-center" align=3D"center" valign=3D"to=
+p"  style=3D"padding:0px 20px;"><table width=3D"560" align=3D"center" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"full-width" bgcolor=3D=
+"#f5f5f5" style=3D"background-color:#f5f5f5;">
+<tr>
+<td valign=3D"top" height=3D"10" class=3D"image-100-percent"></td>
+</tr>
+<tr>
+<td valign=3D"top" width=3D"100%"><table width=3D"195" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"full-width">
+<tr>
+<td valign=3D"top"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" align=3D"center">
+<tr>
+<td height=3D"10"></td>
+</tr>                           <tr>
+<td valign=3D"top" align=3D"center"><a href=3D"http://link.edx.org/click/10=
+407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2UvZm91bmRhdGlvbnMtZGF0YS1zd=
+HJ1Y3R1cmVzLWlpdGJvbWJheXgtY3MyMTMtMXgtMD91dG1fc291cmNlPXNhaWx0aHJ1JnV0bV9t=
+ZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5ld3NsZXR0ZXJfc3R1ZGVudF9hY3RpdmVfMjAxNzA=
+4MjI/5888a5560aea112b548b45adB36438a3f"><img width=3D"195" height=3D"120" s=
+rc=3D"https://www.edx.org/sites/default/files/course/image/promoted/cs213x_=
+banner_378x225.jpg" alt=3D"Foundations of Data Structures" style=3D"display=
+:block !important; max-width:195px; max-height:120px; " border=3D"0" hspace=
+=3D"0" vspace=3D"0"></a></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"padding: 0px;"><table width=3D"195" bgcolor=3D"=
+#d9d9d9" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tr>
+<td width=3D"195" class=3D"center" align=3D"center" style=3D"  font-family:=
+ 'Open Sans',Arial, Helvetica, sans-serif; color:#414042; font-size:16px; t=
+ext-align:center; line-height:16px; mso-line-height-rule: exactly; padding:=
+5px 10px; font-weight:700;"><font face=3D"'Open Sans',arial, Helvetica, san=
+s-serif;">IITBombayX </font></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table class=3D"remove" width=3D"1" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" align=3D"left" style=3D"font-size: 0;line-height: 0;border-collap=
+se: collapse;">
+<tr>
+<td width=3D"0" height=3D"2" style=3D"font-size: 0;line-height: 0;border-co=
+llapse: collapse;"><p style=3D"padding-left: 10px;">&nbsp;</p></td>
+</tr>
+</table>
+<table width=3D"330" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"right" class=3D"full-width">
+<tr>
+<td class=3D"center" align=3D"center" valign=3D"top" style=3D"padding: 0px;=
+"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" al=
+ign=3D"center" class=3D"full-width">
+<tr>
+<td height=3D"10"></td>
+</tr>
+<tr>
+<td class=3D"text-center" align=3D"left" style=3D"  font-family: 'Open Sans=
+',Arial, Helvetica, sans-serif; color:#414141; font-size:24px;   line-heigh=
+t:28px; mso-line-height-rule: exactly; padding:0px  ; font-weight:400;"><a =
+style=3D"text-decoration: none; color:inherit" href=3D"http://link.edx.org/=
+click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2UvZm91bmRhdGlvbnMtZ=
+GF0YS1zdHJ1Y3R1cmVzLWlpdGJvbWJheXgtY3MyMTMtMXgtMD91dG1fc291cmNlPXNhaWx0aHJ1=
+JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5ld3NsZXR0ZXJfc3R1ZGVudF9hY3RpdmV=
+fMjAxNzA4MjI/5888a5560aea112b548b45adC36438a3f"> <font face=3D"'Open Sans',=
+Arial, Helvetica, sans-serif;">Foundations of Data Structures</font></a><br=
+>
+<span style=3D"color: #414141;font-size:16px; line-height:30px;"></span>
+</td>
+</tr>
+<tr>
+<td height=3D"20"></td>
+</tr>   <tr>
+<td class=3D"text-center"><table class=3D"full-width" width=3D"140"   borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0; border-coll=
+apse:separate; border-radius:3px;  ">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" style=3D" padding: 8px 5px; border-r=
+adius:2px;    font-size: 16px; line-height: 21px; font-family: 'Open Sans',=
+ Arial, Helvetica,   sans-serif; color: #1e8142; margin: 0px !important;bor=
+der:1px solid #1e8142; ">
+<a href=3D"http://link.edx.org/click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm=
+9yZy9jb3Vyc2UvZm91bmRhdGlvbnMtZGF0YS1zdHJ1Y3R1cmVzLWlpdGJvbWJheXgtY3MyMTMtM=
+XgtMD91dG1fc291cmNlPXNhaWx0aHJ1JnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5l=
+d3NsZXR0ZXJfc3R1ZGVudF9hY3RpdmVfMjAxNzA4MjI/5888a5560aea112b548b45adD36438a=
+3f" style=3D"  font-weight: bold; font-style: normal; color:#1e8142; text-d=
+ecoration: none;"><font face=3D"'Open Sans', Arial, Helvetica,   sans-serif=
+">Learn More</font></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+</tr><tr>
+<td height=3D"15"></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height=3D"10"></td>
+</tr>
+</table></td>
+</tr>
+<!--Start Course-Two block--> <tr>
+<td bgcolor=3D"#f5f5f5" class=3D"text-center" align=3D"center" valign=3D"to=
+p"  style=3D"padding:0px 20px;"><table width=3D"560" align=3D"center" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"full-width" bgcolor=3D=
+"#f5f5f5" style=3D"background-color:#f5f5f5;">
+<tr>
+<td valign=3D"top" height=3D"10" class=3D"image-100-percent"></td>
+</tr>
+<tr>
+<td valign=3D"top" width=3D"100%"><table width=3D"195" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"left" class=3D"full-width">
+<tr>
+<td valign=3D"top"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" align=3D"center">
+<tr>
+<td height=3D"10"></td>
+</tr>                           <tr>
+<td valign=3D"top" align=3D"center"><a href=3D"http://link.edx.org/click/10=
+407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2Uvc2NpZW5jZS1jb29raW5nLWhhd=
+XRlLWN1aXNpbmUtc29mdC1oYXJ2YXJkeC1zcHUyNy0xeC0wP3V0bV9zb3VyY2U9c2FpbHRocnUm=
+dXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249bmV3c2xldHRlcl9zdHVkZW50X2FjdGl2ZV8=
+yMDE3MDgyMg/5888a5560aea112b548b45adB24e21a0b"><img width=3D"195" height=3D=
+"120" src=3D"https://www.edx.org/sites/default/files/course/image/promoted/=
+cooking_course_378x225_0_0.jpg" alt=3D"Science & Cooking: From Haute Cuisin=
+e to Soft Matter Science (part 1)" style=3D"display:block !important; max-w=
+idth:195px; max-height:120px; " border=3D"0" hspace=3D"0" vspace=3D"0"></a>=
+</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td valign=3D"top" style=3D"padding: 0px;"><table width=3D"195" bgcolor=3D"=
+#d9d9d9" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tr>
+<td width=3D"195" class=3D"center" align=3D"center" style=3D"  font-family:=
+ 'Open Sans',Arial, Helvetica, sans-serif; color:#414042; font-size:16px; t=
+ext-align:center; line-height:16px; mso-line-height-rule: exactly; padding:=
+5px 10px; font-weight:700;"><font face=3D"'Open Sans',arial, Helvetica, san=
+s-serif;">HarvardX </font></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<table class=3D"remove" width=3D"1" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" align=3D"left" style=3D"font-size: 0;line-height: 0;border-collap=
+se: collapse;">
+<tr>
+<td width=3D"0" height=3D"2" style=3D"font-size: 0;line-height: 0;border-co=
+llapse: collapse;"><p style=3D"padding-left: 10px;">&nbsp;</p></td>
+</tr>
+</table>
+<table width=3D"330" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"right" class=3D"full-width">
+<tr>
+<td class=3D"center" align=3D"center" valign=3D"top" style=3D"padding: 0px;=
+"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" al=
+ign=3D"center" class=3D"full-width">
+<tr>
+<td height=3D"10"></td>
+</tr>
+<tr>
+<td class=3D"text-center" align=3D"left" style=3D"  font-family: 'Open Sans=
+',Arial, Helvetica, sans-serif; color:#414141; font-size:24px;   line-heigh=
+t:28px; mso-line-height-rule: exactly; padding:0px  ; font-weight:400;"><a =
+style=3D"text-decoration: none; color:inherit" href=3D"http://link.edx.org/=
+click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2Uvc2NpZW5jZS1jb29ra=
+W5nLWhhdXRlLWN1aXNpbmUtc29mdC1oYXJ2YXJkeC1zcHUyNy0xeC0wP3V0bV9zb3VyY2U9c2Fp=
+bHRocnUmdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249bmV3c2xldHRlcl9zdHVkZW50X2F=
+jdGl2ZV8yMDE3MDgyMg/5888a5560aea112b548b45adC24e21a0b"> <font face=3D"'Open=
+ Sans',Arial, Helvetica, sans-serif;">Science & Cooking: From Haute Cuisine=
+ to Soft Matter Science (part 1)</font></a><br>
+<span style=3D"color: #414141;font-size:16px; line-height:30px;"></span>
+</td>
+</tr>
+<tr>
+<td height=3D"20"></td>
+</tr>   <tr>
+<td class=3D"text-center"><table class=3D"full-width" width=3D"140"   borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"margin: 0; border-coll=
+apse:separate; border-radius:3px;  ">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" style=3D" padding: 8px 5px; border-r=
+adius:2px;    font-size: 16px; line-height: 21px; font-family: 'Open Sans',=
+ Arial, Helvetica,   sans-serif; color: #1e8142; margin: 0px !important;bor=
+der:1px solid #1e8142; ">
+<a href=3D"http://link.edx.org/click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm=
+9yZy9jb3Vyc2Uvc2NpZW5jZS1jb29raW5nLWhhdXRlLWN1aXNpbmUtc29mdC1oYXJ2YXJkeC1zc=
+HUyNy0xeC0wP3V0bV9zb3VyY2U9c2FpbHRocnUmdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFp=
+Z249bmV3c2xldHRlcl9zdHVkZW50X2FjdGl2ZV8yMDE3MDgyMg/5888a5560aea112b548b45ad=
+D24e21a0b" style=3D"  font-weight: bold; font-style: normal; color:#1e8142;=
+ text-decoration: none;"><font face=3D"'Open Sans', Arial, Helvetica,   san=
+s-serif">Learn More</font></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+</tr><tr>
+<td height=3D"15"></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td height=3D"10"></td>
+</tr>
+</table></td>
+</tr>
+<!--end Course-two block-->
+<tr>
+<td align=3D"center" valign=3D"top" class=3D"fix-box"><table bgcolor=3D"#f5=
+f5f5" style=3D"background-color:#f5f5f5;" width=3D"600" align=3D"center" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"full-width">
+<tr>
+<td height=3D"25"></td>
+</tr>  <!--Main CTA-->
+<tr>
+<td align=3D"center" valign=3D"top"  style=3D"padding:0px 20px;"><table bgc=
+olor=3D"#0079bc" width=3D"560" class=3D"full-width" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0" style=3D"border-radius:5px;" align=3D"center">
+<tr>
+<td class=3D"center" align=3D"left" style=3D"  font-family: 'Open Sans',Ari=
+al, Helvetica, sans-serif; color:#ffffff; font-size:16px; text-align:center=
+; line-height:21px; mso-line-height-rule: exactly; padding:8px 5px; font-we=
+ight:700;"><a style=3D"color:#ffffff; text-decoration:none;" href=3D"http:/=
+/link.edx.org/click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy9jb3Vyc2U_dXR=
+tX3NvdXJjZT1zYWlsdGhydSZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1uZXdzbGV0dG=
+VyX3N0dWRlbnRfYWN0aXZlXzIwMTcwODIy/5888a5560aea112b548b45adE9554181f">View =
+All Courses</a>
+</td>
+</tr>
+</table></td>
+</tr>       <tr>
+<td height=3D"40"></td>
+</tr>                   =20
+<!--End Main CTA-->                </table></td>
+<!--Start Footer-->
+<!--Start Footer-->
+<tr bgcolor=3D"ffffff">
+<td align=3D"center" valign=3D"top"><table width=3D"550" align=3D"center" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"full-width" bgcolo=
+r=3D"#ffffff" style=3D"background-color:#ffffff;">
+<tr>
+<td valign=3D"top" class=3D"image-100-percent"><img editable=3D"" src=3D"ht=
+tps://gallery.mailchimp.com/f9e1def4585df864e1be57f66/images/661d1f85-b8a8-=
+4e65-8bdd-be35ef89e2b4.png" width=3D"560" alt=3D"" style=3D"display:block !=
+important;  max-width:560px;"></td>
+</tr>
+<tr>
+<td valign=3D"top" width=3D"100%"><table width=3D"280" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" align=3D"right" class=3D"full-width">
+<tr>
+<td><table class=3D"socialbox" align=3D"center" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"center" valign=3D"middle" width=3D"35"><a hre=
+f=3D"http://link.edx.org/click/10407770.241635/aHR0cDovL3d3dy5saW5rZWRpbi5j=
+b20vY29tcGFueS9lZHg_dXRtX3NvdXJjZT1zYWlsdGhydSZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9=
+jYW1wYWlnbj1uZXdzbGV0dGVyX3N0dWRlbnRfYWN0aXZlXzIwMTcwODIy/5888a5560aea112b5=
+48b45adB349916f3" target=3D"_blank"><img alt=3D"Follow us on LinkedIn" bord=
+er=3D"0" src=3D"http://media.sailthru.com/595/1k0/c/e/58517ffb6e294.png" st=
+yle=3D"max-width:44px;" title=3D"linkedin" width=3D"44"> </a></td>
+<td align=3D"center" class=3D"center" valign=3D"middle" width=3D"35"><a hre=
+f=3D"http://link.edx.org/click/10407770.241635/aHR0cHM6Ly90d2l0dGVyLmNvbS9l=
+ZFhPbmxpbmU_dXRtX3NvdXJjZT1zYWlsdGhydSZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWl=
+nbj1uZXdzbGV0dGVyX3N0dWRlbnRfYWN0aXZlXzIwMTcwODIy/5888a5560aea112b548b45adB=
+7bbddef8" target=3D"_blank"><img alt=3D"Follow us on Twitter" border=3D"0" =
+src=3D"http://media.sailthru.com/595/1k0/c/e/585180653bb31.png" style=3D"ma=
+x-width:44px;" title=3D"twitter" width=3D"44"></a></td>
+<td align=3D"center" class=3D"center" valign=3D"middle" width=3D"35"><a hre=
+f=3D"http://link.edx.org/click/10407770.241635/aHR0cDovL3d3dy5mYWNlYm9vay5j=
+b20vRWR4T25saW5lP3V0bV9zb3VyY2U9c2FpbHRocnUmdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2F=
+tcGFpZ249bmV3c2xldHRlcl9zdHVkZW50X2FjdGl2ZV8yMDE3MDgyMg/5888a5560aea112b548=
+b45adBaf6ba095" target=3D"_blank"><img alt=3D"Follow us on Facebook" border=
+=3D"0" src=3D"http://media.sailthru.com/595/1k0/c/e/585180c21d284.png" styl=
+e=3D"max-width:44px;" title=3D"facebook" width=3D"44"></a></td>
+<td align=3D"center" class=3D"center" valign=3D"middle" width=3D"35"><a hre=
+f=3D"http://link.edx.org/click/10407770.241635/aHR0cHM6Ly93d3cueW91dHViZS5j=
+b20vdXNlci9FZFhPbmxpbmU_dXRtX3NvdXJjZT1zYWlsdGhydSZ1dG1fbWVkaXVtPWVtYWlsJnV=
+0bV9jYW1wYWlnbj1uZXdzbGV0dGVyX3N0dWRlbnRfYWN0aXZlXzIwMTcwODIy/5888a5560aea1=
+12b548b45adB8955beb4" target=3D"_blank"><img alt=3D"Follow us on YouTube" b=
+order=3D"0" src=3D"http://media.sailthru.com/595/1k0/9/e/57d967c5a09d8.png"=
+ style=3D"max-width:44px;" title=3D"YouTube" width=3D"44"></a></td>
+<td align=3D"center" class=3D"center" valign=3D"middle" width=3D"35"><a hre=
+f=3D"http://link.edx.org/click/10407770.241635/aHR0cDovL3d3dy5yZWRkaXQuY29t=
+L3IvZWR4P3V0bV9zb3VyY2U9c2FpbHRocnUmdXRtX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ24=
+9bmV3c2xldHRlcl9zdHVkZW50X2FjdGl2ZV8yMDE3MDgyMg/5888a5560aea112b548b45adB7d=
+1804bf" target=3D"_blank"><img alt=3D"Follw up on Reddit" border=3D"0" src=
+=3D"http://media.sailthru.com/595/1k0/c/e/585181645b328.png" style=3D"max-w=
+idth:44px;" title=3D"Reddit" width=3D"44"></a></td>
+</tr>
+</tbody>
+</table></td>
+</tr>                           <tr>
+<td valign=3D"top"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" align=3D"center">
+<tr>
+<td height=3D"10"></td>
+</tr>                           <tr>
+<td class=3D"text-center" valign=3D"top" align=3D"center"><table width=3D"1=
+00%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tr>
+<td valign=3D"top" align=3D"center"><a style=3D"color:#20438d;" href=3D"htt=
+p://link.edx.org/click/10407770.241635/aHR0cHM6Ly9pdHVuZXMuYXBwbGUuY29tL3Vz=
+L2FwcC9lZHgvaWQ5NDU0ODA2Njc_bXQ9OCZ1dG1fc291cmNlPXNhaWx0aHJ1JnV0bV9tZWRpdW0=
+9ZW1haWwmdXRtX2NhbXBhaWduPW5ld3NsZXR0ZXJfc3R1ZGVudF9hY3RpdmVfMjAxNzA4MjI/58=
+88a5560aea112b548b45adB571950ae"> <img src=3D"http://media.sailthru.com/595=
+/1k0/c/e/585193595fa29.png" alt=3D"Available on App Store" style=3D"display=
+:block !important; max-width:600px; " border=3D"0" hspace=3D"0" vspace=3D"0=
+"></a></td>
+<td valign=3D"top" align=3D"center"><a style=3D"color:#20438d;" href=3D"htt=
+p://link.edx.org/click/10407770.241635/aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3Rv=
+cmUvYXBwcy9kZXRhaWxzP2lkPW9yZy5lZHgubW9iaWxlJnV0bV9zb3VyY2U9c2FpbHRocnUmdXR=
+tX21lZGl1bT1lbWFpbCZ1dG1fY2FtcGFpZ249bmV3c2xldHRlcl9zdHVkZW50X2FjdGl2ZV8yMD=
+E3MDgyMg/5888a5560aea112b548b45adB5efd2a42"> <img src=3D"http://media.sailt=
+hru.com/595/1k0/c/e/585193b293d4d.png" alt=3D"Available on Google Play" sty=
+le=3D"display:block !important; max-width:600px; " border=3D"0" hspace=3D"0=
+" vspace=3D"0"></a></td>                         </tr>
+</table></td>
+</tr>
+<tr>
+<td height=3D"10"></td>
+</tr>                            =20
+</table></td>
+</tr>
+</table>
+<table width=3D"280" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"left" class=3D"full-width">
+<tr>
+<td valign=3D"top"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" align=3D"center">
+</table></td>
+</tr>
+<tr>
+<td class=3D"center" align=3D"center" valign=3D"top" style=3D"padding: 0px;=
+"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" al=
+ign=3D"center" class=3D"full-width center">
+<tr>
+<td valign=3D"top"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0" align=3D"center">
+<tr>
+<td valign=3D"top" align=3D"left"><a style=3D"color:#20438d;" href=3D"http:=
+//link.edx.org/click/10407770.241635/aHR0cHM6Ly93d3cuZWR4Lm9yZy8_dXRtX3NvdX=
+JjZT1zYWlsdGhydSZ1dG1fbWVkaXVtPWVtYWlsJnV0bV9jYW1wYWlnbj1uZXdzbGV0dGVyX3N0d=
+WRlbnRfYWN0aXZlXzIwMTcwODIy/5888a5560aea112b548b45adD4c0f7bca"> <img src=3D=
+"https://d37djvu3ytnwxt.cloudfront.net/static/edx.org/images/logo-footer.fd=
+e85fe42f6b.png" alt=3D"Start learning on edX.org!" style=3D"display:block !=
+important; max-width:600px; " border=3D"0" hspace=3D"0" vspace=3D"0"></a></=
+td>
+</tr>
+</table></td>
+</tr>                         <tr>
+<td height=3D"10"></td>
+</tr>
+<tr><td height=3D"15"></td></tr>  =20
+<tr>
+<td class=3D"center" align=3D"left" style=3D"  font-family: 'Open Sans',Ari=
+al, Helvetica, sans-serif; color:#414141; font-size:16px; font-weight:700; =
+mso-line-height-rule: exactly; padding:0px 5px; font-weight:700;"><a style=
+=3D"text-decoration:none;color:#414141;" href=3D"http://link.edx.org/forwar=
+d/5888a5560aea112b548b45ad672oq.56g3/3aa21aac"><font face=3D"'Open Sans',Ar=
+ial, Helvetica, sans-serif;">Forward to a friend</font></a>
+</td>
+</tr>
+<tr><td height=3D"15"></td></tr>=20
+<tr>
+<td class=3D"center" align=3D"left" style=3D"  font-family: 'Open Sans',Ari=
+al, Helvetica, sans-serif; color:#414141; font-size:14px; font-weight:400; =
+mso-line-height-rule: exactly; padding:0px 5px;  "><a style=3D"text-decorat=
+ion:underline;color:#414141;" href=3D"http://link.edx.org/view/5888a5560aea=
+112b548b45ad672oq.56g3/490c2a84"><font face=3D"'Open Sans',Arial, Helvetica=
+, sans-serif;">
+<u>View on Web</u>  </font></a>
+</td>
+</tr>
+<tr><td height=3D"15"></td></tr> =20
+<tr>
+<td class=3D"center" align=3D"left" style=3D"  font-family: 'Open Sans',Ari=
+al, Helvetica, sans-serif; color:#414141; font-size:14px; font-weight:400; =
+mso-line-height-rule: exactly; padding:0px 5px;  "><a style=3D"text-decorat=
+ion:underline;color:#414141;" href=3D"http://link.edx.org/oc/5888a5560aea11=
+2b548b45ad672oq.56g3/2056c077"><font face=3D"'Open Sans',Arial, Helvetica, =
+sans-serif;">
+<u>Unsubscribe from this list</u>   </font></a>
+</td>
+</tr> =20
+<tr><td height=3D"15"></td></tr>               <tr>
+<td class=3D"center" align=3D"left" style=3D"  font-family: 'Open Sans',Ari=
+al, Helvetica, sans-serif; color:#414141; font-size:14px; font-weight:400; =
+mso-line-height-rule: exactly; padding:0px 5px;  "><font face=3D"'Open Sans=
+',Arial, Helvetica, sans-serif;">Copyright =C2=A9 2017 edX, All rights rese=
+rved <br><br>
+<p>Our mailing address is:<br>
+141 Portland St. 9th Floor <br>Cambridge, MA 02139</p> </font>
+</td>
+</tr> =20
+</table></td>
+</tr>
+</table>                          <table class=3D"remove" width=3D"1" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"left" style=3D"font-si=
+ze: 0;line-height: 0;border-collapse: collapse;">
+<tr>
+<td width=3D"0" height=3D"2" style=3D"font-size: 0;line-height: 0;border-co=
+llapse: collapse;"><p style=3D"padding-left: 10px;">&nbsp;</p></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height=3D"20"></td>
+</tr>
+</table></td>
+</tr>    =20
+<!--End Footer-->   =20
+<!--End Footer-->
+</table>                          </td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>=20
+</table>
+<div class=3D"gmailfix" style=3D"white-space:nowrap; font:15px courier; lin=
+e-height:0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp;=20
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+;=20
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+</body>
+</html>
+
+------=_Part_8459724_1734907584.1503411612055--
+

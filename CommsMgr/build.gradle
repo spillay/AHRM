@@ -1,0 +1,57 @@
+apply plugin: 'scala'
+apply plugin: 'eclipse'
+
+// For these to work we need a folder called /Data/enron/maildir/
+task startServer(type:Exec) {
+  workingDir '.'
+  commandLine 'sbt', 'run'
+}
+task clearIndex(type:Exec){
+  commandLine "curl","-XDELETE","localhost:9200/logstash-emailbeats*?pretty"
+}
+task upload(type:Exec){
+  commandLine "sbt","runMain com.dsleng.email.SimpleEmailProcess"
+}
+task createSentIndex(type:Exec){
+	commandLine "./scripts/init/create-map.sh","192.168.1.5","sent-items"
+}
+task createInboxIndex(type:Exec){
+	commandLine "./scripts/init/create-map.sh","192.168.1.5","inbox-items"
+}
+task initIndex(type:Exec){
+	commandLine "echo","Indexes Initialized"
+}
+task startGEOService(type:Exec){
+	commandLine "./scripts/init/runFreegeoip.sh"
+}
+task startEMOService(type:Exec){
+	commandLine "../EmoWebService/runWS.sh"
+}
+task startServices(type:Exec){
+	commandLine "echo","Services Started"
+}
+task createMeta(type:Exec){
+	commandLine "./scripts/init/run-genMetaData.sh"
+}
+task processReset(type:Exec){
+	commandLine "./scripts/init/run-reset.sh"
+}
+task processInbox(type:Exec){
+	commandLine "./scripts/init/run-inbox.sh"
+}
+task processOutbox(type:Exec){
+	commandLine "./scripts/init/run-sentitems.sh"
+}
+clean.doFirst {
+    delete "${rootDir}/bin"
+    println "cleaning out ${rootDir}/bin/"
+}
+initIndex.dependsOn createSentIndex
+initIndex.dependsOn createInboxIndex
+startServices.dependsOn initIndex
+startServices.dependsOn startGEOService
+startServices.dependsOn startEMOService
+//processReset.dependsOn startServices
+createMeta.dependsOn processReset
+processInbox.dependsOn createMeta
+processOutbox.dependsOn processInbox

@@ -61,7 +61,8 @@ class ESService(server: String) {
     val entity = new NStringEntity(query, ContentType.APPLICATION_JSON);
     val indexc = index.replaceAll("\"","")
     //val indexq = indexc + "/_search";
-    val indexq = "all-items/_search";
+    //val indexq = "all-items/_search";
+    val indexq = indexc + "/_search";
     var response = restClient.performRequest("GET", indexq,params,entity)
     var responseBody = EntityUtils.toString(response.getEntity())
     restClient.close();

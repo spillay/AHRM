@@ -1,0 +1,1 @@
+sbt "run-main com.dsleng.email.EnronEmailProcess --reset All --emailStore /Data/enron/maildir/ --boxDir sent_items --index sent-items --metaFile /Data/enron/emailModel.res --fileExt '.complete' --newExt '.completed'"

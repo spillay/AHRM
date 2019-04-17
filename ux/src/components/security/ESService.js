@@ -11,6 +11,7 @@ export default class ESService {
         this.fetch = this.fetch.bind(this)
     }
     getData(query) {
+        console.log("getdata" + this.domain)
         console.log(query)
         return this.fetch(`${this.domain}/api/query`, {
             method: 'POST',

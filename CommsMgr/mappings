@@ -1,0 +1,56 @@
+curl -XPUT 'localhost:9200/logstash-emailbeats?pretty' -H 'Content-Type: application/json' -d'
+{
+  "mappings": {
+    "deception": {
+	"properties": {	
+      	 "level": {
+        	"type": "float"
+	 }
+	}
+    }
+  }
+}'
+// Use in Kibana dev tools
+DELETE /emaillogs
+PUT emaillogs
+PUT /emaillogs/_mapping/_doc 
+{
+  "properties": {
+    "content": {
+      "type": "text"
+    },
+            "date": {
+              "type": "date"
+            },
+            "emotions": {
+              "type": "text"
+            },
+            "from": {
+              "type": "text"
+            },
+            "location": {
+              "type": "geo_point"
+            },
+            "senderGEO": {
+              "type": "text"
+            },
+            "senderIP": {
+              "type": "text"
+            },
+            "subject": {
+              "type": "text"
+            },
+            "to": {
+              "type": "text"
+            },
+            "prime": {
+              "type": "text"
+            },
+            "norm": {
+              "type": "text"
+            },
+            "ec": {
+              "type": "text"
+            }
+  }
+}

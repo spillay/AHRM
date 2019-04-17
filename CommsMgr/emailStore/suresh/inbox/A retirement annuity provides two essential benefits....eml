@@ -1,0 +1,598 @@
+Return-Path: <bounce-44dd9bdb-6af4-40a1-84fc-c43f240fa9de@server1.postmanmail.co.za>
+Delivered-To: suresh@workspaceafrica.com
+Received: from gaea.thishost.co.za
+	by gaea.thishost.co.za (Dovecot) with LMTP id 2SaGNLpwnFme/QEAFcTQEQ
+	for <suresh@workspaceafrica.com>; Tue, 22 Aug 2017 19:58:18 +0200
+Return-path: <bounce-44dd9bdb-6af4-40a1-84fc-c43f240fa9de@server1.postmanmail.co.za>
+Envelope-to: suresh@workspaceafrica.com
+Delivery-date: Tue, 22 Aug 2017 19:58:18 +0200
+Received: from server1.postmanmail.co.za ([198.23.109.250]:49819)
+	by gaea.thishost.co.za with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.89)
+	(envelope-from <bounce-44dd9bdb-6af4-40a1-84fc-c43f240fa9de@server1.postmanmail.co.za>)
+	id 1dkDRO-000Y64-Lc
+	for suresh@workspaceafrica.com; Tue, 22 Aug 2017 19:58:15 +0200
+dkim-signature: v=1; a=rsa-sha256; d=server1.postmanmail.co.za; s=web1;
+	c=relaxed/relaxed; q=dns/txt; h=From:Sender:Reply-To:Subject:Date:Message-ID:To:MIME-Version:Content-Type:List-Unsubscribe;
+	bh=WMYt+QfsE57z8YXixwEoQamdhEbZbCH7eXCs04QOT5M=;
+	b=r/uHo0HjHU4UHeCIWffmvS0pdZkfzJZkf2tESDbdLxD+pyW9VzkK4VBy2mQUYD4YKGgKV3agWDdv09OIgO4bl63/LXHvXmaaP3Bfj97G6YpkHvyHsw7N4cA0SSjHOHsUpw/x1VukdRWWBndZw+pTpp76b7zeF4vIroHpYEUazu8=
+Received: from server2 (server2.postmanmail.co.za [127.0.0.1])
+	by server1.postmanmail.co.za with ESMTP
+	; Tue, 22 Aug 2017 17:57:31 +0000
+Message-ID: <5D34BFEE-EC61-42DA-9F37-E3902626BC9A@server1.postmanmail.co.za>
+List-Unsubscribe: <mailto:44dd9bdb-6af4-40a1-84fc-c43f240fa9de@server1.postmanmail.co.za?subject=Unsubscribe&header=1>
+MIME-Version: 1.0
+Sender: bounce-44dd9bdb-6af4-40a1-84fc-c43f240fa9de@server1.postmanmail.co.za
+From: "Retirement Annuity" <ra@server1.postmanmail.co.za>
+To: suresh@workspaceafrica.com
+Reply-To: ra@server1.postmanmail.co.za
+Date: 22 Aug 2017 17:57:31 +0000
+Subject: A retirement annuity provides two essential benefits...
+Content-Type: multipart/alternative;
+ boundary=--boundary_387679_eff78e17-e447-4000-92d2-d676e5d4d417
+X-SADomain-MailScanner-Information: Please contact SA Domain technical support for more information
+X-SADomain-MailScanner-ID: 1dkDRO-000Y64-Lc
+X-SADomain-MailScanner: Found to be clean
+X-SADomain-MailScanner-SpamCheck: not spam, SpamAssassin (not cached,
+	score=1.212, required 5, BAYES_40 -0.00, DCC_CHECK 1.10,
+	DKIM_SIGNED 0.10, HTML_FONT_LOW_CONTRAST 0.00, HTML_MESSAGE 0.00,
+	RCVD_IN_DNSWL_NONE -0.00, T_DKIM_INVALID 0.01, URIBL_BLOCKED 0.00)
+X-SADomain-MailScanner-SpamScore: s
+X-SADomain-MailScanner-From: bounce-44dd9bdb-6af4-40a1-84fc-c43f240fa9de@server1.postmanmail.co.za
+X-Spam-Status: No
+
+
+----boundary_387679_eff78e17-e447-4000-92d2-d676e5d4d417
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+to view in your browser=0Ahttp://www.weretire.co.za/?utm_source=3D=
+VLAD&utm_medium=3DEmail&utm_campaign=3DVLAD=0A=0AStart Saving For=
+ Your Retirement From R300 per month. =0Ahttp://www.weretire.co.z=
+a/?utm_source=3DVLAD&utm_medium=3DEmail&utm_campaign=3DVLAD=0A=0A=
+Get a Retirement Annuity Quote Today.=0Ahttp://www.weretire.co.za=
+/?utm_source=3DVLAD&utm_medium=3DEmail&utm_campaign=3DVLAD=0A=0AA=
+ retirement annuity provides two essential benefits; a lump sum p=
+ayout & a monthly pension for the rest of your life.=0Ahttp://www=
+.weretire.co.za/?utm_source=3DVLAD&utm_medium=3DEmail&utm_campaig=
+n=3DVLAD=0A=0ARequest A Quote. =E2=86=92=0A http://www.weretire.c=
+o.za/?utm_source=3DVLAD&utm_medium=3DEmail&utm_campaign=3DVLAD=0A=
+=0A =0AWhat are the Benefits?.=0A1.=0ATax efficient way to save f=
+or retirement.=0A2.=0AYour money is safe & protected from credito=
+rs.=0A3.=0ADependents have access to your funds, following your d=
+eath.=0A4.=0ANo hidden costs, legislation requires companies to b=
+e transparent.=0ARequest A Quote. =E2=86=92=0Ahttp://www.weretire=
+.co.za/?utm_source=3DVLAD&utm_medium=3DEmail&utm_campaign=3DVLAD=0A=
+=0Aweretire.co.za transmits your personal information securely to=
+ a consultant at a financial institution that will contact you to=
+ provide you with a quote for a Retirement Annuity.=0ARequest A Q=
+uote. =E2=86=92=0Ahttp://www.weretire.co.za/?utm_source=3DVLAD&ut=
+m_medium=3DEmail&utm_campaign=3DVLAD=0A=0A=0A=0AYou can unsubscri=
+be by pasting this link http://web1.postmanmail.co.za/unsubscribe=
+.aspx?id=3D44dd9bdb-6af4-40a1-84fc-c43f240fa9de=0Ainto your brows=
+er =0A
+----boundary_387679_eff78e17-e447-4000-92d2-d676e5d4d417
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0A<html lang=3D"en">=0A    <head>=0A        <titl=
+e>weretire.co.za | Newsletter</title>=0A        <meta charset=3D"=
+utf-8" />=0A        <meta name=3D"viewport" content=3D"width=3Dde=
+vice-width" />=0A        <style type=3D"text/css">=0A            =
+/* CLIENT-SPECIFIC STYLES */=0A            #outlook a{padding:0;}=
+ /* Force Outlook to provide a "view in browser" message */=0A   =
+         .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /*=
+ Force Hotmail to display emails at full width */=0A            .=
+ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalCl=
+ass font, .ExternalClass td, .ExternalClass div {line-height: 100=
+%;} /* Force Hotmail to display normal line spacing */=0A        =
+    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-si=
+ze-adjust:100%;} /* Prevent WebKit and Windows mobile changing de=
+fault text sizes */=0A            table, td{mso-table-lspace:0pt;=
+ mso-table-rspace:0pt;} /* Remove spacing between tables in Outlo=
+ok 2007 and up */=0A            img{-ms-interpolation-mode:bicubi=
+c;} /* Allow smoother rendering of resized image in Internet Expl=
+orer */=0A            /* RESET STYLES */=0A            body{margi=
+n:0; padding:0;}=0A            img{border:0; height:auto; line-he=
+ight:100%; outline:none; text-decoration:none;}=0A            tab=
+le{border-collapse:collapse !important;}=0A            body{heigh=
+t:100% !important; margin:0; padding:0; width:100% !important;}=0A=
+            /* iOS BLUE LINKS */=0A            .appleBody a {colo=
+r:#68440a; text-decoration: none;}=0A            .appleFooter a {=
+color:#999999; text-decoration: none;}=0A            /* MOBILE ST=
+YLES */=0A            @media screen and (max-width: 525px) {=0A  =
+          /* ALLOWS FOR FLUID TABLES */=0A            table[class=
+=3D"wrapper"]{=0A            width:100% !important;=0A           =
+ }=0A            /* ADJUSTS LAYOUT OF LOGO IMAGE */=0A           =
+ td[class=3D"logo"]{=0A            text-align: left;=0A          =
+  padding: 20px 0 20px 0 !important;=0A            }=0A          =
+  td[class=3D"logo"] img{=0A            margin:0 auto!important;=0A=
+            }=0A            /* USE THESE CLASSES TO HIDE CONTENT =
+ON MOBILE */=0A            td[class=3D"mobile-hide"]{=0A         =
+   display:none;}=0A            img[class=3D"mobile-hide"]{=0A   =
+         display: none !important;=0A            }=0A            =
+img[class=3D"img-max"]{=0A            max-width: 100% !important;=
+=0A            height:auto !important;=0A            }=0A        =
+    /* FULL-WIDTH TABLES */=0A            table[class=3D"responsi=
+ve-table"]{=0A            width:100%!important;=0A            }=0A=
+            /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */=
+=0A            td[class=3D"padding"]{=0A            padding: 10px=
+ 5% 15px 5% !important;=0A            }=0A            td[class=3D=
+"padding-copy"]{=0A            padding: 10px 5% 10px 5% !importan=
+t;=0A            text-align: center;=0A            }=0A          =
+  td[class=3D"padding-meta"]{=0A            padding: 30px 5% 0px =
+5% !important;=0A            text-align: center;=0A            }=0A=
+            td[class=3D"no-pad"]{=0A            padding: 0 0 20px=
+ 0 !important;=0A            }=0A            td[class=3D"no-paddi=
+ng"]{=0A            padding: 0 !important;=0A            }=0A    =
+        td[class=3D"section-padding"]{=0A            padding: 50p=
+x 15px 50px 15px !important;=0A            }=0A            td[cla=
+ss=3D"section-padding-bottom-image"]{=0A            padding: 50px=
+ 15px 0 15px !important;=0A            }=0A            /* ADJUST =
+BUTTONS ON MOBILE */=0A            td[class=3D"mobile-wrapper"]{=0A=
+            padding: 10px 5% 15px 5% !important;=0A            }=0A=
+            table[class=3D"mobile-button-container"]{=0A         =
+   margin:0 auto;=0A            width:100% !important;=0A        =
+    }=0A            a[class=3D"mobile-button"]{=0A            wid=
+th:80% !important;=0A            padding: 15px !important;=0A    =
+        border: 0 !important;=0A            font-size: 16px !impo=
+rtant;=0A            }=0A            }=0A        </style>=0A    <=
+/head>=0A    <body style=3D"margin: 0; padding: 0;">=0A        <t=
+able width=3D"500" align=3D"center" class=3D"responsive-table" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A            <tb=
+ody>=0A                <tr>=0A                    <td align=3D"ce=
+nter" valign=3D"middle" style=3D"font-size: 12px; line-height: 18=
+px; font-family: Helvetica, Arial, sans-serif; color:#666666;">=0A=
+                    <a class=3D"original-only" style=3D"color: #6=
+66666; text-decoration: none;" href=3D"http://www.weretire.co.za/=
+?utm_source=3DVLAD&amp;utm_medium=3DEmail&amp;utm_campaign=3DVLAD=
+">to view in your browser</a><span class=3D"original-only" style=3D=
+"color: rgb(68, 68, 68); font-family: Arial,sans-serif; font-size=
+: 12px;">=0A                    </span></td>=0A                </=
+tr>=0A            </tbody>=0A        </table>=0A        <!-- HEAD=
+ER -->=0A        <table width=3D"100%" align=3D"center" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0">=0A            <tbody>=0A=
+                <tr>=0A                    <td style=3D"backgroun=
+d-color: rgb(255, 255, 255);">=0A                    <div style=3D=
+"padding: 0px 15px; text-align: center;">=0A                    <=
+table width=3D"640" align=3D"center" class=3D"wrapper" border=3D"=
+0" cellspacing=3D"0" cellpadding=3D"0">=0A                       =
+ <!-- LOGO/PREHEADER TEXT -->=0A                        <tbody>=0A=
+                            <tr>=0A                              =
+  <td class=3D"logo" style=3D"padding: 20px 0px 30px 0px;">=0A   =
+                             <table width=3D"100%" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0">=0A                           =
+         <tbody>=0A                                        <tr>=0A=
+                                            <td align=3D"center" =
+valign=3D"middle" style=3D"width: 100%; background-color: rgb(255=
+, 255, 255);"><a href=3D"http://www.weretire.co.za?utm_source=3DV=
+LAD&amp;utm_medium=3DEmail&amp;utm_campaign=3DVLAD" target=3D"_bl=
+ank"><img width=3D"250" alt=3D"weretire.co.za - Start Saving For =
+Your Retirement From R300 Per Month" src=3D"http://www.weretire.c=
+o.za/mailer_vlad/img/logo.png" /></a></td>=0A                    =
+                    </tr>=0A                                     =
+   <tr>=0A                                            <td align=3D=
+"center" valign=3D"middle" style=3D"padding: 0px 0px 5px; color: =
+rgb(255, 255, 255); font-family: Arial,sans-serif; font-size: 14p=
+x; text-decoration: none; background-color: rgb(255, 255, 255);">=
+=0A                                            <br />=0A         =
+                                   <span style=3D"color: rgb(36, =
+82, 105); text-decoration: none;"><a href=3D"http://www.weretire.=
+co.za?utm_source=3DVLAD&amp;utm_medium=3DEmail&amp;utm_campaign=3D=
+VLAD" target=3D"_blank">Start Saving</a> For Your Retirement From=
+ R300 per month.</span>=0A                                       =
+     </td>=0A                                        </tr>=0A    =
+                                </tbody>=0A                      =
+          </table>=0A                                </td>=0A    =
+                        </tr>=0A                        </tbody>=0A=
+                    </table>=0A                    </div>=0A     =
+               </td>=0A                </tr>=0A            </tbod=
+y>=0A        </table>=0A        <!-- ONE COLUMN SECTION -->=0A   =
+     <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0">=0A            <tbody>=0A                <tr>=0A      =
+              <td align=3D"center" class=3D"section-padding" styl=
+e=3D"background-color: rgb(58, 148, 206);">=0A                   =
+ <table width=3D"640" class=3D"responsive-table" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0">=0A                        <tbod=
+y>=0A                            <tr>=0A                         =
+       <td>=0A                                <table width=3D"100=
+%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A          =
+                          <tbody>=0A                             =
+           <tr>=0A                                            <td=
+>=0A                                            <!-- HERO IMAGE -=
+->=0A                                            <table width=3D"=
+100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A       =
+                                         <tbody>=0A              =
+                                      <tr>=0A                    =
+                                    <td>=0A                      =
+                                  <!-- COPY -->=0A               =
+                                         <table width=3D"100%" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A               =
+                                             <tbody>=0A          =
+                                                      <tr>=0A    =
+                                                                <=
+td align=3D"center" class=3D"padding-copy" style=3D"font-family: =
+Helvetica, Arial, sans-serif; color: #FFFFFF; padding-top: 10px;"=
+>=0A                                                             =
+       <h1>Get a Retirement Annuity Quote Today.</h1>=0A         =
+                                                           </td>=0A=
+                                                                <=
+/tr>=0A                                                          =
+      <tr>=0A                                                    =
+                <td align=3D"center" class=3D"padding-copy" style=
+=3D"font-size: 16px; line-height: 25px; font-family: Helvetica, A=
+rial, sans-serif; color: #245269;">=0A                           =
+                                         <p style=3D"color: white=
+; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font=
+-size: 16px;">A retirement annuity provides <a href=3D"http://www=
+.weretire.co.za?utm_source=3DVLAD&amp;utm_medium=3DEmail&amp;utm_=
+campaign=3DVLAD" target=3D"_blank">two essential benefits</a>; a =
+lump sum payout &amp; a monthly pension for the rest of your life=
+.</p>=0A                                                         =
+           </td>=0A                                              =
+                  </tr>=0A                                       =
+                         <tr>=0A                                 =
+                                   <td>=0A                       =
+                                             <!-- BULLETPROOF BUT=
+TON -->=0A                                                       =
+             <table width=3D"100%" class=3D"mobile-button-contain=
+er" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A         =
+                                                               <t=
+body>=0A                                                         =
+                   <tr>=0A                                       =
+                                         <td align=3D"center" cla=
+ss=3D"padding-copy" style=3D"padding: 25px 0 25px 0;">=0A        =
+                                                                 =
+       <table class=3D"responsive-table" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">=0A                                     =
+                                               <tbody>=0A        =
+                                                                 =
+               <tr>=0A                                           =
+                                                 <td align=3D"cen=
+ter"><a class=3D"mobile-button" style=3D"font-size: 16px; font-fa=
+mily: Helvetica, Arial, sans-serif; font-weight: normal; color: #=
+ffffff; text-decoration: none; background-color: #F3A32A; border-=
+top: 15px solid #F3A32A; border-bottom: 15px solid #F3A32A; borde=
+r-left: 25px solid #F3A32A; border-right: 25px solid #F3A32A; bor=
+der-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: =
+3px; display: inline-block;" href=3D"http://www.weretire.co.za?ut=
+m_source=3DVLAD&amp;utm_medium=3DEmail&amp;utm_campaign=3DVLAD" t=
+arget=3D"_blank">Request A Quote. &rarr;</a></td>=0A             =
+                                                                 =
+          </tr>=0A                                               =
+                                     </tbody>=0A                 =
+                                                               </=
+table>=0A                                                        =
+                        </td>=0A                                 =
+                                           </tr>=0A              =
+                                                          </tbody=
+>=0A                                                             =
+       </table>=0A                                               =
+                     </td>=0A                                    =
+                            </tr>=0A                             =
+                               </tbody>=0A                       =
+                                 </table>=0A                     =
+                                   </td>=0A                      =
+                              </tr>=0A                           =
+                         <tr>=0A                                 =
+                       <td class=3D"padding-copy">=0A            =
+                                            <table width=3D"100%"=
+ align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+">=0A                                                            =
+<tbody>=0A                                                       =
+         <tr>=0A                                                 =
+                   <td align=3D"center" valign=3D"middle">=0A    =
+                                                                <=
+a href=3D"http://www.weretire.co.za?utm_source=3DVLAD&amp;utm_med=
+ium=3DEmail&amp;utm_campaign=3DVLAD" target=3D"_blank"><img class=
+=3D"img-max" style=3D"border-width: 0px; border-style: solid; pad=
+ding: 0px; display: block;" alt=3D"Start saving for your retirmen=
+t from R300 per month." src=3D"http://www.weretire.co.za/mailer_v=
+lad/img/header_image.jpg" /></a>=0A                              =
+                                      </td>=0A                   =
+                                             </tr>=0A            =
+                                                </tbody>=0A      =
+                                                  </table>=0A    =
+                                                    </td>=0A     =
+                                               </tr>=0A          =
+                                      </tbody>=0A                =
+                            </table>=0A                          =
+                  </td>=0A                                       =
+ </tr>=0A                                        <tr>=0A         =
+                                   <td>=0A                       =
+                     </td>=0A                                    =
+    </tr>=0A                                    </tbody>=0A      =
+                          </table>=0A                            =
+    </td>=0A                            </tr>=0A                 =
+       </tbody>=0A                    </table>=0A                =
+    </td>=0A                </tr>=0A            </tbody>=0A      =
+  </table>=0A        <!-- TWO COLUMN SECTION -->=0A        <table=
+ width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=
+=0A            <tbody>=0A                <tr>=0A                 =
+   <td align=3D"center" class=3D"section-padding" style=3D"paddin=
+g: 70px 15px; background-color: rgb(255, 255, 255);">=0A         =
+           <table width=3D"500" class=3D"responsive-table" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A                   =
+     <tbody>=0A                            <tr>=0A               =
+                 <td>=0A                                <!-- TITL=
+E SECTION AND COPY -->=0A                                <table w=
+idth=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A=
+                                    <tbody>=0A                   =
+                     <tr>=0A                                     =
+       <td align=3D"center" class=3D"padding-copy" style=3D"font-=
+size: 25px; font-family: Helvetica, Arial, sans-serif; color: #ff=
+ffff;"><img alt=3D"" src=3D"http://www.weretire.co.za/mailer_vlad=
+/img/question.gif" /> </td>=0A                                   =
+     </tr>=0A                                        <tr>=0A     =
+                                       <td align=3D"center" class=
+=3D"padding-copy" style=3D"padding: 20px 0 20px 0; font-size: 28p=
+x; line-height: 32px; font-family: Helvetica, Arial, sans-serif; =
+color: #000000;">What are the Benefits?.</td>=0A                 =
+                       </tr>=0A                                  =
+  </tbody>=0A                                </table>=0A         =
+                       </td>=0A                            </tr>=0A=
+                            <tr>=0A                              =
+  <td>=0A                                <!-- TWO COLUMNS -->=0A =
+                               <table width=3D"100%" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0">=0A                         =
+           <tbody>=0A                                        <tr>=
+=0A                                            <td class=3D"mobil=
+e-wrapper" valign=3D"top" style=3D"padding: 0;">=0A              =
+                              <!-- LEFT COLUMN -->=0A            =
+                                <table width=3D"47%" align=3D"lef=
+t" class=3D"responsive-table" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0">=0A                                                =
+<tbody>=0A                                                    <tr=
+>=0A                                                        <td s=
+tyle=3D"padding: 20px 0 40px 0;">=0A                             =
+                           <table width=3D"100%" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0">=0A                             =
+                               <tbody>=0A                        =
+                                        <tr>=0A                  =
+                                                  <td align=3D"ce=
+nter" style=3D"padding: 15px 0px 0px; color: rgb(0, 0, 0); font-f=
+amily: Arial,sans-serif; font-size: 4em; font-weight: 600; backgr=
+ound-color: rgb(255, 255, 255);">1.</td>=0A                      =
+                                          </tr>=0A               =
+                                                 <tr>=0A         =
+                                                           <td al=
+ign=3D"center" style=3D"padding: 5px 0px 0px; color: rgb(0, 0, 0)=
+; line-height: 1.4; font-family: Arial,sans-serif; font-size: 21p=
+x; font-weight: 300; background-color: rgb(255, 255, 255);"><span=
+ class=3D"appleBody"><a href=3D"http://www.weretire.co.za?utm_sou=
+rce=3DVLAD&amp;utm_medium=3DEmail&amp;utm_campaign=3DVLAD" target=
+=3D"_blank">Tax efficient way to save</a> for retirement.</span><=
+/td>=0A                                                          =
+      </tr>=0A                                                   =
+         </tbody>=0A                                             =
+           </table>=0A                                           =
+             </td>=0A                                            =
+        </tr>=0A                                                <=
+/tbody>=0A                                            </table>=0A=
+                                            <!-- RIGHT COLUMN -->=
+=0A                                            <table width=3D"47=
+%" align=3D"right" class=3D"responsive-table" border=3D"0" cellsp=
+acing=3D"0" cellpadding=3D"0">=0A                                =
+                <tbody>=0A                                       =
+             <tr>=0A                                             =
+           <td style=3D"padding: 20px 0 40px 0;">=0A             =
+                                           <table width=3D"100%" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A             =
+                                               <tbody>=0A        =
+                                                        <tr>=0A  =
+                                                                 =
+ <td align=3D"center" style=3D"padding: 15px 0px 0px; color: rgb(=
+0, 0, 0); font-family: Arial,sans-serif; font-size: 4em; font-wei=
+ght: 600; background-color: rgb(255, 255, 255);">2.</td>=0A      =
+                                                          </tr>=0A=
+                                                                <=
+tr>=0A                                                           =
+         <td align=3D"center" style=3D"padding: 5px 0px 0px; colo=
+r: rgb(0, 0, 0); line-height: 1.4; font-family: Arial,sans-serif;=
+ font-size: 21px; font-weight: 300; background-color: rgb(255, 25=
+5, 255);"><span class=3D"appleBody">Your <a href=3D"http://www.we=
+retire.co.za?utm_source=3DVLAD&amp;utm_medium=3DEmail&amp;utm_cam=
+paign=3DVLAD" target=3D"_blank">money is safe</a> &amp; protected=
+ from creditors.</span></td>=0A                                  =
+                              </tr>=0A                           =
+                                 </tbody>=0A                     =
+                                   </table>=0A                   =
+                                     </td>=0A                    =
+                                </tr>=0A                         =
+                       </tbody>=0A                               =
+             </table>=0A                                         =
+   </td>=0A                                        </tr>=0A      =
+                              </tbody>=0A                        =
+        </table>=0A                                </td>=0A      =
+                      </tr>=0A                            <tr>=0A=
+                                <td>=0A                          =
+      <!-- TWO COLUMNS -->=0A                                <!--=
+ LEFT COLUMN -->=0A                                <table width=3D=
+"47%" align=3D"left" class=3D"responsive-table" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0">=0A                              =
+      <tbody>=0A                                        <tr>=0A  =
+                                          <td style=3D"padding: 2=
+0px 0 40px 0;">=0A                                            <ta=
+ble width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0">=0A                                                <tbody>=0A =
+                                                   <tr>=0A       =
+                                                 <td align=3D"cen=
+ter" style=3D"padding: 15px 0px 0px; color: rgb(0, 0, 0); font-fa=
+mily: Arial,sans-serif; font-size: 4em; font-weight: 600; backgro=
+und-color: rgb(255, 255, 255);">3.</td>=0A                       =
+                             </tr>=0A                            =
+                        <tr>=0A                                  =
+                      <td align=3D"center" style=3D"padding: 5px =
+0px 0px; color: rgb(0, 0, 0); line-height: 1.4; font-family: Aria=
+l,sans-serif; font-size: 21px; font-weight: 300; background-color=
+: rgb(255, 255, 255);"><span class=3D"appleBody">Dependents <a hr=
+ef=3D"http://www.weretire.co.za?utm_source=3DVLAD&amp;utm_medium=3D=
+Email&amp;utm_campaign=3DVLAD" target=3D"_blank">have access</a> =
+to your funds, following your death.</span></td>=0A              =
+                                      </tr>=0A                   =
+                             </tbody>=0A                         =
+                   </table>=0A                                   =
+         </td>=0A                                        </tr>=0A=
+                                    </tbody>=0A                  =
+              </table>=0A                                <!-- RIG=
+HT COLUMN -->=0A                                <table width=3D"4=
+7%" align=3D"right" class=3D"responsive-table" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0">=0A                               =
+     <tbody>=0A                                        <tr>=0A   =
+                                         <td style=3D"padding: 20=
+px 0 40px 0;">=0A                                            <tab=
+le width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+">=0A                                                <tbody>=0A  =
+                                                  <tr>=0A        =
+                                                <td align=3D"cent=
+er" style=3D"padding: 15px 0px 0px; color: rgb(0, 0, 0); font-fam=
+ily: Arial,sans-serif; font-size: 4em; font-weight: 600; backgrou=
+nd-color: rgb(255, 255, 255);">4.</td>=0A                        =
+                            </tr>=0A                             =
+                       <tr>=0A                                   =
+                     <td align=3D"center" style=3D"padding: 5px 0=
+px 0px; color: rgb(0, 0, 0); line-height: 1.4; font-family: Arial=
+,sans-serif; font-size: 21px; font-weight: 300; background-color:=
+ rgb(255, 255, 255);"><span class=3D"appleBody"><a href=3D"http:/=
+/www.weretire.co.za?utm_source=3DVLAD&amp;utm_medium=3DEmail&amp;=
+utm_campaign=3DVLAD" target=3D"_blank">No hidden costs</a>, legis=
+lation requires companies to be transparent.</span></td>=0A      =
+                                              </tr>=0A           =
+                                     </tbody>=0A                 =
+                           </table>=0A                           =
+                 </td>=0A                                        =
+</tr>=0A                                    </tbody>=0A          =
+                      </table>=0A                                =
+</td>=0A                            </tr>=0A                     =
+       <tr>=0A                                <td>=0A            =
+                    <!-- BULLETPROOF BUTTON -->=0A               =
+                 <table width=3D"100%" class=3D"mobile-button-con=
+tainer" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A     =
+                               <tbody>=0A                        =
+                <tr>=0A                                          =
+  <td align=3D"center" class=3D"padding-copy" style=3D"padding: 2=
+5px 0 25px 0;">=0A                                            <ta=
+ble class=3D"responsive-table" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0">=0A                                               =
+ <tbody>=0A                                                    <t=
+r>=0A                                                        <td =
+align=3D"center"><a class=3D"mobile-button" style=3D"font-size: 1=
+6px; font-family: Helvetica, Arial, sans-serif; font-weight: norm=
+al; color: #ffffff; text-decoration: none; background-color: #F3A=
+32A; border-top: 15px solid #F3A32A; border-bottom: 15px solid #F=
+3A32A; border-left: 25px solid #F3A32A; border-right: 25px solid =
+#F3A32A; border-radius: 3px; -webkit-border-radius: 3px; -moz-bor=
+der-radius: 3px; display: inline-block;" href=3D"http://www.weret=
+ire.co.za?utm_source=3DVLAD&amp;utm_medium=3DEmail&amp;utm_campai=
+gn=3DVLAD" target=3D"_blank">Request A Quote. &rarr;</a></td>=0A =
+                                                   </tr>=0A      =
+                                          </tbody>=0A            =
+                                </table>=0A                      =
+                      </td>=0A                                   =
+     </tr>=0A                                    </tbody>=0A     =
+                           </table>=0A                           =
+     </td>=0A                            </tr>=0A                =
+        </tbody>=0A                    </table>=0A               =
+     </td>=0A                </tr>=0A            </tbody>=0A     =
+   </table>=0A        <!-- TWO COLUMN SECTION -->=0A        <tabl=
+e width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+>=0A            <tbody>=0A                <tr>=0A                =
+    <td align=3D"center" class=3D"section-padding" style=3D"paddi=
+ng: 70px 15px; background-color: rgb(58, 148, 206);">=0A         =
+           <table width=3D"500" class=3D"responsive-table" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A                   =
+     <tbody>=0A                            <tr>=0A               =
+                 <td>=0A                                <!-- TITL=
+E SECTION AND COPY -->=0A                                <table w=
+idth=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A=
+                                    <tbody>=0A                   =
+                     <tr>=0A                                     =
+       <td align=3D"center" class=3D"padding-copy" style=3D"font-=
+size: 18px; font-family: Helvetica, Arial, sans-serif; color: #ff=
+ffff;">=0A                                            <p>weretire=
+.co.za transmits your personal information securely to a consulta=
+nt at a financial institution that will contact you to provide yo=
+u with a <a href=3D"http://www.weretire.co.za?utm_source=3DVLAD&a=
+mp;utm_medium=3DEmail&amp;utm_campaign=3DVLAD" target=3D"_blank">=
+quote for a Retirement Annuity</a>.</p>=0A                       =
+                     </td>=0A                                    =
+    </tr>=0A                                    </tbody>=0A      =
+                          </table>=0A                            =
+    </td>=0A                            </tr>=0A                 =
+           <tr>=0A                                <td>=0A        =
+                        <!-- BULLETPROOF BUTTON -->=0A           =
+                     <table width=3D"100%" class=3D"mobile-button=
+-container" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A =
+                                   <tbody>=0A                    =
+                    <tr>=0A                                      =
+      <td align=3D"center" class=3D"padding-copy" style=3D"paddin=
+g: 25px 0 25px 0;">=0A                                           =
+ <table class=3D"responsive-table" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0">=0A                                           =
+     <tbody>=0A                                                  =
+  <tr>=0A                                                        =
+<td align=3D"center"><a class=3D"mobile-button" style=3D"font-siz=
+e: 16px; font-family: Helvetica, Arial, sans-serif; font-weight: =
+normal; color: #ffffff; text-decoration: none; background-color: =
+#F3A32A; border-top: 15px solid #F3A32A; border-bottom: 15px soli=
+d #F3A32A; border-left: 25px solid #F3A32A; border-right: 25px so=
+lid #F3A32A; border-radius: 3px; -webkit-border-radius: 3px; -moz=
+-border-radius: 3px; display: inline-block;" href=3D"http://www.w=
+eretire.co.za?utm_source=3DVLAD&amp;utm_medium=3DEmail&amp;utm_ca=
+mpaign=3DVLAD" target=3D"_blank">Request A Quote. &rarr;</a></td>=
+=0A                                                    </tr>=0A  =
+                                              </tbody>=0A        =
+                                    </table>=0A                  =
+                          </td>=0A                               =
+         </tr>=0A                                    </tbody>=0A =
+                               </table>=0A                       =
+         </td>=0A                            </tr>=0A            =
+            </tbody>=0A                    </table>=0A           =
+         </td>=0A                </tr>=0A            </tbody>=0A =
+       </table>=0A        <!-- FOOTER -->=0A        <table width=3D=
+"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A      =
+      <tbody>=0A                <tr>=0A                    <td al=
+ign=3D"center" style=3D"background-color: rgb(255, 255, 255);">=0A=
+                    <table width=3D"100%" align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A                   =
+     <tbody>=0A                            <tr>=0A               =
+                 <td style=3D"padding: 20px 0px 20px 0px;">=0A   =
+                             <!-- UNSUBSCRIBE COPY -->=0A        =
+                        <table width=3D"500" align=3D"center" cla=
+ss=3D"responsive-table" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0">=0A                                    <tbody>=0A        =
+                                <tr>=0A                          =
+                  <td align=3D"center" valign=3D"middle" style=3D=
+"font-size: 12px; line-height: 18px; font-family: Helvetica, Aria=
+l, sans-serif; color:#666666;">=0A                               =
+             <a class=3D"original-only" style=3D"color: #666666; =
+text-decoration: none;" href=3D"http://web1.postmanmail.co.za/uns=
+ubscribe.aspx?id=3D44dd9bdb-6af4-40a1-84fc-c43f240fa9de">Unsubscr=
+ibe</a><span class=3D"original-only" style=3D"color: rgb(68, 68, =
+68); font-family: Arial,sans-serif; font-size: 12px;">&nbsp;&nbsp=
+;&nbsp;|&nbsp;&nbsp;&nbsp;</span><a style=3D"color: #666666; text=
+-decoration: none;" href=3D"&lt;a href=3D" target=3D"_blank" www.=
+weretire.co.za?utm_source=3D"VLAD&amp;utm_medium=3DEmail&amp;utm_=
+campaign=3DVLAD'">View this email in your browser</a><br />=0A   =
+                                         </td>=0A                =
+                        </tr>=0A                                 =
+   </tbody>=0A                                </table>=0A        =
+                        </td>=0A                            </tr>=
+=0A                        </tbody>=0A                    </table=
+>=0A                    </td>=0A                </tr>=0A         =
+   </tbody>=0A        </table>=0A        <img alt=3D'' src=3D'htt=
+p://web1.postmanmail.co.za/eyeball.aspx?b=3D44dd9bdb-6af4-40a1-84=
+fc-c43f240fa9de'>=0A        <table width=3D"100%" align=3D"center=
+" cellspacing=3D"0" cellpadding=3D"10">=0A            <tbody>=0A =
+               <tr>=0A                    <td align=3D"center" st=
+yle=3D"color: #000000;">=0A                    You have received =
+this communication on the address suresh@workspaceafrica.com<br /=
+>=0A                    Please do not reply to this email, if you=
+ have any queries please complete the form <a href=3D"http://web1=
+.postmanmail.co.za/contactus.aspx" shape=3D"rect">here</a></td>=0A=
+                </tr>=0A            </tbody>=0A        </table>=0A=
+    </body>=0A</html>
+----boundary_387679_eff78e17-e447-4000-92d2-d676e5d4d417--
+
+
+

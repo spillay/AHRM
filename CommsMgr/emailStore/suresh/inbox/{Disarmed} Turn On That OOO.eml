@@ -1,0 +1,1359 @@
+Return-Path: <deals@save.spirit-airlines.com>
+Delivered-To: suresh@workspaceafrica.com
+Received: from gaea.thishost.co.za
+	by gaea.thishost.co.za (Dovecot) with LMTP id XZXkI0ZKnFnxHAAAFcTQEQ
+	for <suresh@workspaceafrica.com>; Tue, 22 Aug 2017 17:14:14 +0200
+Return-path: <deals@save.spirit-airlines.com>
+Envelope-to: suresh@workspaceafrica.com
+Delivery-date: Tue, 22 Aug 2017 17:14:14 +0200
+Received: from omp.save.spirit-airlines.com ([12.130.136.48]:34266)
+	by gaea.thishost.co.za with esmtp (Exim 4.89)
+	(envelope-from <deals@save.spirit-airlines.com>)
+	id 1dkAsU-0001va-Up
+	for suresh@workspaceafrica.com; Tue, 22 Aug 2017 17:14:05 +0200
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=spirit-airlines;
+ d=save.spirit-airlines.com;
+ h=MIME-Version:Content-Type:Content-Transfer-Encoding:Date:To:From:Reply-To:
+ Subject:List-Unsubscribe:Message-ID; i=deals@save.spirit-airlines.com;
+ bh=XQpC3fmnRXquNq04IWq2UBAZvyJnrJkvTOQ5E92Y49M=;
+ b=k4HwPmWu+e7LO2wsC6v7fTPt2mVRfMuNj4Lnrz5bFRL1TxM5b6QiFDExi9ut6mc3X0DHcVMEQ6KD
+   wtB8S8Dq88/O/7kPkAlsE+AaAxdZeaSwSoDhDKB+GJaRlGeSBHFD0QF1jkrRoqy0MkXriVLvuLBf
+   axncRkRYkG5TsbHOSiI=
+Received: by omp.save.spirit-airlines.com id hjh53o29qu8a for <suresh@workspaceafrica.com>; Tue, 22 Aug 2017 08:13:20 -0700 (envelope-from <deals@save.spirit-airlines.com>)
+X-CSA-Complaints: whitelist-complaints@eco.de
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=spirit-airlines;
+ d=save.spirit-airlines.com;
+ h=MIME-Version:Content-Type:Content-Transfer-Encoding:Date:To:From:Reply-To:
+ Subject:List-Unsubscribe:Message-ID; i=deals@save.spirit-airlines.com;
+ bh=XQpC3fmnRXquNq04IWq2UBAZvyJnrJkvTOQ5E92Y49M=;
+ b=k4HwPmWu+e7LO2wsC6v7fTPt2mVRfMuNj4Lnrz5bFRL1TxM5b6QiFDExi9ut6mc3X0DHcVMEQ6KD
+   wtB8S8Dq88/O/7kPkAlsE+AaAxdZeaSwSoDhDKB+GJaRlGeSBHFD0QF1jkrRoqy0MkXriVLvuLBf
+   axncRkRYkG5TsbHOSiI=
+Received: by mta.prod.responsys.com id hjh50u29qu8f for <suresh@workspaceafrica.com>; Tue, 22 Aug 2017 08:13:19 -0700 (envelope-from <deals@save.spirit-airlines.com>)
+X-CSA-Complaints: whitelist-complaints@eco.de
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+Date: Tue, 22 Aug 2017 08:13:19 -0700
+To: suresh@workspaceafrica.com
+From: "Spirit Deals" <deals@save.spirit-airlines.com>
+Reply-To: "Spirit Deals" <admin@save.spirit-airlines.com>
+Subject: {Disarmed} Turn On That OOO
+Feedback-ID: 8760:265862:oraclersys
+List-Unsubscribe: <https://save.spirit-airlines.com/pub/optout/UnsubscribeOneStepConfirmAction?YES=true&_ri_=X0Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOza&_ei_=EolaGGF4SNMvxFF7KucKuWOalvqyTfPrugZEOhrp5fdCfaQxZ5wnC5vo5M>, <mailto:unsubscribe-YQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOza@imh.rsys2.com?subject=List-Unsubscribe>
+X-sgxh1: kmjLkoxOhjskiHJLHMjpJHQJhu
+X-rext: 5.interact2.EnVunaNxbQ7Z5uIdBBLhjSBrjyGRXYQpHRIBILv_zDiZzjOkyKwQ
+X-cid: spirit.629642
+Message-ID: <0.0.4C.F0C.1D31B592FFF8BEC.0@mta.prod.responsys.com>
+X-SADomain-MailScanner-Information: Please contact SA Domain technical support for more information
+X-SADomain-MailScanner-ID: 1dkAsU-0001va-Up
+X-SADomain-MailScanner: Found to be clean
+X-SADomain-MailScanner-SpamCheck: not spam, SpamAssassin (not cached,
+	score=0.506, required 5, BAYES_00 -1.90, DCC_CHECK 1.10,
+	DKIM_SIGNED 0.10, DKIM_VALID -0.10, DKIM_VALID_AU -0.10,
+	HTML_IMAGE_RATIO_08 0.00, HTML_MESSAGE 0.00, KAM_HUGEIMGSRC 0.20,
+	MIME_HTML_ONLY 0.72, RCVD_IN_DNSWL_NONE -0.00,
+	RCVD_IN_MSPIKE_H3 -0.01, RCVD_IN_MSPIKE_WL -0.01,
+	RCVD_IN_SORBS_SPAM 0.50, SPF_PASS -0.00, URIBL_BLOCKED 0.00,
+	URI_TRY_3LD 0.00)
+X-SADomain-MailScanner-From: deals@save.spirit-airlines.com
+X-Spam-Status: No
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style=3D"opacity: 1;" xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=
+=3D"urn:schemas-microsoft-com:office:office" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml">
+<head>
+   <title>spirit</title>
+   <meta content=3D"text/html; charset=3Dutf-8" http-equiv=3D"Content-Type"=
+ />
+   <meta content=3D"IE=3Dedge" http-equiv=3D"X-UA-Compatible" />
+   <meta content=3D"width=3Ddevice-width, initial-scale=3D1.0 " name=3D"vie=
+wport" />
+   <meta content=3D"telephone=3Dno" name=3D"format-detection" />
+   <style type=3D"text/css">body {
+      margin: 0 !important;
+      padding: 0 !important;
+      -webkit-text-size-adjust: 100% !important;
+      -ms-text-size-adjust: 100% !important;
+      -webkit-font-smoothing: antialiased !important;
+      }
+      img {
+        border: 0 !important;
+        outline: none !important;
+      }
+      p {
+        Margin: 0px !important;
+        Padding: 0px !important;
+      }
+      table {
+        border-collapse: collapse;
+        mso-table-lspace: 0px;
+        mso-table-rspace: 0px;
+      }
+      td, a, span {
+        border-collapse: collapse;
+        mso-line-height-rule: exactly;
+      }
+      .ExternalClass * {
+        line-height: 100%;
+      }
+      .em_defaultlink a {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+      span.MsoHyperlink {
+        mso-style-priority: 99;
+        color: inherit;
+      }
+      span.MsoHyperlinkFollowed {
+        mso-style-priority: 99;
+        color: inherit;
+      }
+      .em_black a
+      {
+        color:#00000;
+        text-decoration:none;
+      }
+      .em_blue a
+      {
+        color:#0073e6;
+        text-decoration:none;
+      }
+      .em_yellow
+      {
+        color:#ffe600;
+        text-decoration:none;
+      }
+      @media only screen and (min-width:481px) and (max-width:599px) {
+        .em_main_table {
+          width: 481px !important;
+        }
+        .em_aside {
+          padding: 0px 10px!important;
+          /*Update the values as required*/
+        }
+        .em_aside1 {
+          padding: 0px 20px!important;
+          /*Update the values as required*/
+        }
+        .em_hide {
+          display: none !important;
+        }
+        .em_full_img {
+          width: 100% !important;
+          height: auto !important;
+        }
+        .em_height {
+          height: 20px !important;
+          font-size: 1px !important;
+          line-height: 1px !important;
+        }
+        .em_spacer {
+          width: 30px !important;
+        }
+        .em_text1 {
+          font-size: 12px !important;
+          line-height: 18px !important
+        }
+        .em_font8 {
+          font-size: 13px !important;
+          line-height: 16px !important;
+        }
+        .em_font10 {
+          font-size: 10px !important;
+          line-height: 12px !important;
+        }
+        .em_width200 {
+          width: 170px !important;
+        }
+        .em_text2 {
+          font-size: 24px !important;
+          line-height: 26px !important;
+        }
+        .em_text4 {
+          font-size: 16px !important;
+          line-height: 23px !important;
+        }
+        .em_width149 {
+          width: 220px !important;
+          height: auto !important
+        }
+        .em_widthf74 {
+          width: 82px !important;
+          height: auto !important;
+        }
+        .em_ffont {
+          font-size: 20px !important;
+          line-height: 22px !important;
+        }
+        .em_widthf150 {
+          width: 150px !important;
+        }
+        .em_text4 {
+          font-size: 16px !important;
+          line-height: 25px !important;
+        }
+        .em_height10 {
+          height: 10px !important;
+          font-size: 1px !important;
+          line-height: 1px !important;
+        }
+        .em_spacer1 {
+          width: 20px !important;
+        }
+        .em_wrapper {
+          width: 100% !important;
+        }
+      }
+      @media only screen and (min-width:414px) and (max-width:480px) {
+        .em_main_table {
+          width: 414px !important;
+        }
+        .em_aside {
+          padding: 0px 10px!important;
+          /*Update the values as required*/
+        }
+        .em_hide {
+          display: none !important;
+        }
+        .em_full_img {
+          width: 100% !important;
+          height: auto !important;
+        }
+        .em_height {
+          height: 20px !important;
+          font-size: 1px !important;
+          line-height: 1px !important;
+        }
+        .em_spacer {
+          width: 20px !important;
+        }
+        .em_text1 {
+          font-size: 10px !important;
+          line-height: 16px !important
+        }
+        .em_font8 {
+          font-size: 11px !important;
+          line-height: 14px !important;
+        }
+        .em_font10 {
+          font-size: 10px !important;
+          line-height: 12px !important;
+        }
+        .em_widthoff100 {
+          width: 180px !important;
+          height: auto !important;
+        }
+        .em_width200 {
+          width: 170px !important;
+        }
+        .em_text2 {
+          font-size: 24px !important;
+          line-height: 26px !important;
+        }
+        .em_width149 {
+          width: 195px !important;
+          height: auto !important
+        }
+        .em_width94 {
+          width: 150px !important;
+          height: 40px !important;
+        }
+        .em_fbtn {
+          font-size: 12px !important;
+        }
+        .em_fbtn a {
+          line-height: 40px !important;
+        }
+        .em_widthf74 {
+          width: 74px !important;
+          height: auto !important;
+        }
+        .em_ffont {
+          font-size: 20px !important;
+          line-height: 22px !important;
+        }
+        .em_widthf150 {
+          width: 150px !important;
+        }
+        .em_height10 {
+          height: 10px !important;
+          font-size: 1px !important;
+          line-height: 1px !important;
+        }
+        .em_spacer1 {
+          width: 10px !important;
+        }
+        .em_wrapper {
+          width: 100% !important;
+        }
+      }
+      @media only screen and (min-width:375px) and (max-width:413px) {
+        .em_main_table {
+          width: 375px !important;
+        }
+        .em_aside {
+          padding: 0px 10px!important;
+          /*Update the values as required*/
+        }
+        .em_hide {
+          display: none !important;
+        }
+        .em_full_img {
+          width: 100% !important;
+          height: auto !important;
+        }
+        .em_height {
+          height: 20px !important;
+          font-size: 1px !important;
+          line-height: 1px !important;
+        }
+        .em_spacer {
+          width: 20px !important;
+        }
+        .em_text1 {
+          font-size: 9px !important;
+          line-height: 14px !important
+        }
+        .em_font8 {
+          font-size: 9px !important;
+          line-height: 12px !important;
+        }
+        .em_font10 {
+          font-size: 10px !important;
+          line-height: 12px !important;
+        }
+        .em_width100 {
+          width: 100px !important;
+          height: auto !important;
+        }
+        .em_width150 {
+          width: 150px !important;
+        }
+        .em_widthoff100 {
+          width: 170px !important;
+          height: auto !important;
+        }
+        .em_text2 {
+          font-size: 24px !important;
+          line-height: 26px !important;
+        }
+        .em_width200 {
+          width: 170px !important;
+        }
+        .em_text4 {
+          font-size: 16px !important;
+          line-height: 24px !important;
+        }
+        .em_width149 {
+          width: 195px !important;
+          height: auto !important
+        }
+        .em_width94 {
+          width: 150px !important;
+          height: 40px !important;
+        }
+        .em_fbtn {
+          font-size: 10px !important;
+        }
+        .em_fbtn a {
+          line-height: 30px !important;
+        }
+        .em_widthf74 {
+          width: 74px !important;
+          height: auto !important;
+        }
+        .em_ffont {
+          font-size: 20px !important;
+          line-height: 22px !important;
+        }
+        .em_widthf150 {
+          width: 150px !important;
+        }
+        .em_height10 {
+          height: 10px !important;
+          font-size: 1px !important;
+          line-height: 1px !important;
+        }
+        .em_spacer1 {
+          width: 10px !important;
+        }
+        .em_wrapper {
+          width: 100% !important;
+        }
+        .em_w165 {
+          width:110px !important;
+        }
+      }
+      /*Stylesheed for the devices width between 0px to 374px*/
+      @media only screen and (max-width:374px) {
+        .em_main_table {
+          width: 320px !important;
+        }
+        .em_aside {
+          padding: 0px 10px!important;
+          /*Update the values as required*/
+        }
+        .em_hide {
+          display: none !important;
+        }
+        .em_full_img {
+          width: 100% !important;
+          height: auto !important;
+        }
+        .em_height {
+          height: 20px !important;
+          font-size: 1px !important;
+          line-height: 1px !important;
+        }
+        .em_height10 {
+          height: 10px !important;
+          font-size: 1px !important;
+          line-height: 1px !important;
+        }
+        .em_spacer {
+          width: 10px !important;
+        }
+        .em_spacer1 {
+          width: 10px !important;
+        }
+        .em_text1 {
+          font-size: 8px !important;
+          line-height: 14px !important
+        }
+        .em_font8 {
+          font-size: 8px !important;
+          line-height: 10px !important;
+        }
+        .em_font10 {
+          font-size: 10px !important;
+          line-height: 12px !important;
+        }
+        .em_width100 {
+          width: 90px !important;
+          height: auto !important;
+        }
+        .em_width150 {
+          width: 150px !important;
+        }
+        .em_widthf150 {
+          width: 150px !important;
+        }
+        .em_widthoff100 {
+          width: 120px !important;
+          height: auto !important;
+        }
+        .em_text2 {
+          font-size: 15px !important;
+          line-height: 17px !important;
+        }
+        .em_width200 {
+          width: 150px !important;
+        }
+        .em_text4 {
+          font-size: 16px !important;
+          line-height: 24px !important;
+        }
+        .em_footer1, em_footer1 a {
+          font-size: 10px !important;
+          line-height: 13px !important;
+        }
+        .em_width10 {
+          width: 10px !important;
+        }
+        .em_width149 {
+          width: 149px !important;
+          height: 130px !important;
+        }
+        .em_width94 {
+          width: 130px !important;
+          height: 30px !important;
+        }
+        .em_fbtn {
+          font-size: 10px !important;
+        }
+        .em_fbtn a {
+          line-height: 30px !important;
+        }
+        .em_widthf74 {
+          width: 74px !important;
+          height: auto !important;
+        }
+        .em_ffont {
+          font-size: 16px !important;
+          line-height: 18px !important;
+        }
+        .em_btn a {
+          height: 30px !important;
+          line-height: 30px !important;
+        }
+        .em_btn {
+          height: 30px !important;
+        }
+        .em_h1 {
+          height: 18px !important;
+          line-height: 0px !important;
+          font-size: 0px !important;
+        }
+        .em_img13 {
+          width: 13px !important;
+          height: auto !important;
+        }
+        .em_btnblue {
+          font-size: 14px !important;
+          height: 30px !important;
+        }
+        .em_btnblue a {
+          line-height: 30px !important;
+        }
+        .em_pad_tb {
+          padding-top: 10px !important;
+          padding-bottom: 10px !important;
+        }
+
+
+        .em_pad_top6 {
+          padding-top: 2px !important;
+        }
+        .em_wrapper {
+          width: 100% !important;
+        }
+        .em_w165 {
+          width:100px !important;
+        }
+      }
+   </style>
+   <!--[if gte mso 9]>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+</head>
+<body bgcolor=3D"#ffffff" style=3D"margin: 0px; padding: 0px;"><table cellp=
+adding=3D"0" cellspacing=3D"0" style=3D"border: 0px; padding: 0px; margin: =
+0px; position: absolute; display: none; float: left">
+<tr>
+<td height=3D"1" style=3D"font-size: 1px; line-height: 1px; padding: 0px;">
+<img src=3D"https://s3.amazonaws.com/msv5/images/spacer.gif" width=3D"1" he=
+ight=3D"1" alt=3D"Web Bug from https://save.spirit-airlines.com/pub/as?_ri_=
+=3DX0Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pz=
+dFrwsPdOzaVXHkMX%3Dw&_ei_=3DEolaGGF4SNMvxFF7KucKuWOalvqyTfPrugZEOhrp5fdCfaQ=
+xZ5wnC5vo5M." /></img>
+</td>
+</tr>
+</table>
+<!--Full width table start-->
+<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%">
+   <tbody>
+      <tr>
+         <td align=3D"center"><!--Template Body Start-->
+         <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"em_main_table" style=3D"table-layout:fixed;width:600px;" wi=
+dth=3D"600"><!--Pre headera section-->
+            <tbody>
+               <tr>
+                  <td align=3D"center" class=3D"em_aside" style=3D"padding:=
+0px 29px;" valign=3D"top">
+                  <table align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" width=3D"100%">
+                     <tbody>
+                        <tr>
+                           <td height=3D"10" style=3D"line-height:1px;font-=
+size:1px;"><img alt=3D"" height=3D"1" src=3D"https://static.cdn.responsys.n=
+et/i2/responsysimages/spirit/contentlibrary/1_templates/spacer.gif" style=
+=3D"display:block;border:none;" width=3D"1" /></td>
+                        </tr>
+                        <tr>
+                           <td align=3D"center" valign=3D"top">
+                           <table align=3D"left" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0">
+                              <tbody>
+                                 <tr>
+                                    <td align=3D"left" class=3D"em_text1 em=
+_blue" data-content-region-name=3D"Preheader" style=3D"font-family: Verdana=
+, Geneva, sans-serif;font-size: 14px;color: #0073e6;line-height: 22px;" val=
+ign=3D"top">
+<a href=3D"https://save.spirit-airlines.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLj=
+HJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DU=
+WYAWT&amp;_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_g=
+NnVfZcbgU3." style=3D"text-decoration:underline;color:#0073e6;" target=3D"_=
+blank">Save Up To 65% Off*</a>&nbsp;+<br />
+<a href=3D"https://save.spirit-airlines.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLj=
+HJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DU=
+WYAAT&amp;_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_g=
+NnVfZcbgU3." style=3D"text-decoration:underline;color:#0073e6;" target=3D"_=
+blank">Florida Vacations</a></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+
+                           <table align=3D"right" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0">
+                              <tbody>
+                                 <tr>
+                                    <td height=3D"18" style=3D"line-height:=
+1px;font-size:1px;"></td>
+                                 </tr>
+                                 <tr>
+                                    <td align=3D"right" class=3D"em_font8 e=
+m_blue" style=3D"font-family: Verdana, Geneva, sans-serif;font-size:12px;co=
+lor:#000000;line-height:16px;" valign=3D"top">Trouble Viewing this email? T=
+ry this <span class=3D"em_font10" style=3D"font-size:14px;font-weight:bold;=
+color:#0073e6"><a href=3D"https://save.spirit-airlines.com/pub/cc?_ri_=3DX0=
+Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrws=
+PdOzaVXtpKX%3DUWYACT&amp;_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x=
+5-YkN-IEJfH6g_gNnVfZcbgU3." style=3D"text-decoration:underline;color:#0073e=
+6;text-transform:uppercase;" target=3D"_blank">VIEW</a></span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td height=3D"5" style=3D"line-height:1px;font-s=
+ize:1px;"><img alt=3D"" height=3D"1" src=3D"https://static.cdn.responsys.ne=
+t/i2/responsysimages/spirit/contentlibrary/1_templates/spacer.gif" style=3D=
+"display:block;border:none;" width=3D"1" /></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+               <!--//Pre header section--><!-- logo and button section-->
+               <tr>
+                  <td align=3D"center" bgcolor=3D"#ffec01" class=3D"em_asid=
+e" data-content-region-name=3D"Header" style=3D"padding:0px 29px;" valign=
+=3D"top" width=3D"100%">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%">
+   <tbody>
+      <tr>
+         <td align=3D"center" valign=3D"top">
+         <table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"em_width100" style=3D"width:115px;" width=3D"115">
+            <tbody>
+               <tr>
+                  <td class=3D"em_h1" height=3D"29"></td>
+               </tr>
+               <tr>
+                  <td align=3D"left" valign=3D"top"><a href=3D"https://www.=
+spirit.com/Default.aspx" style=3D"text-decoration:none;" target=3D"_blank">=
+<img alt=3D"spirit" class=3D"em_width100" height=3D"32" src=3D"https://stat=
+ic.cdn.responsys.net/i2/responsysimages/spirit/contentlibrary/1_templates/l=
+ogo_top.png" style=3D"display: block;border: none;font-family: Arial, sans-=
+serif;font-size: 25px;line-height: 32px;color: #000000;max-width:115px;" wi=
+dth=3D"115" /></a></td>
+               </tr>
+               <tr>
+                  <td class=3D"em_height10" height=3D"25"></td>
+               </tr>
+            </tbody>
+         </table>
+
+         <table align=3D"right" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"em_width150" style=3D"width:177px;" width=3D"177">
+            <tbody>
+               <tr>
+                  <td align=3D"right" class=3D"em_pad_tb" style=3D"padding-=
+top:16px;padding-bottom:20px;" valign=3D"top">
+                  <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" c=
+lass=3D"em_width150" style=3D"width:177px;border:3px solid #0073e6;" width=
+=3D"177">
+                     <tbody>
+                        <tr>
+                           <td align=3D"center" bgcolor=3D"#ffffff" class=
+=3D"em_btn em_blue" height=3D"44" style=3D"font-family: Verdana, Geneva, sa=
+ns-serif;color: #0073e6;font-size: 14px;font-weight: bold;text-transform: u=
+ppercase;" valign=3D"middle"><a href=3D"http://marketing.spirit.com/traveld=
+eals/traveldeals.php" style=3D"line-height: 44px;text-decoration: none;disp=
+lay: block;color: #0073e6;" target=3D"_blank">See all deals</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         </td>
+      </tr>
+   </tbody>
+</table>
+</td>
+               </tr>
+               <!-- logo and button section-->
+               <tr>
+                  <td align=3D"center" valign=3D"top">
+                  <table align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" width=3D"100%">
+                     <tbody>
+                        <tr>
+                           <td align=3D"center" data-content-region-name=3D=
+"Offer1" valign=3D"top">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%">
+   <tbody>
+      <tr>
+         <td align=3D"center" valign=3D"top"><a href=3D"https://save.spirit=
+-airlines.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor=
+17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DUWYBRT&_ei_=3DEq2tf9zs59idfPO1S=
+c_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_gNnVfZcbgU3." style=3D"text-decorat=
+ion:none;" target=3D"_blank"><img alt=3D"Spirit" class=3D"em_full_img" heig=
+ht=3D"280" src=3D"https://static.cdn.responsys.net/i2/responsysimages/spiri=
+t/contentlibrary/promotional/2017/aug/22248_17_TTTuesday_Email_A.jpg" style=
+=3D"max-width:600px;" width=3D"600" /></a></td>
+      </tr>
+      <tr>
+         <td class=3D"em_height10" height=3D"38"></td>
+      </tr>
+      <tr>
+         <td align=3D"center" valign=3D"top">
+         <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%">
+            <tbody>
+               <tr>
+                  <td class=3D"em_spacer" style=3D"width:47px;" width=3D"47=
+"></td>
+                  <td align=3D"left" style=3D"padding-top:5px;" valign=3D"t=
+op"><a href=3D"https://save.spirit-airlines.com/pub/cc?_ri_=3DX0Gzc2X%3DYQp=
+glLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX=
+%3DUWYBTT&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_g=
+NnVfZcbgU3." style=3D"text-decoration:none;" target=3D"_blank"><img alt=3D"=
+Deal" class=3D"em_widthoff100" src=3D"https://static.cdn.responsys.net/i2/r=
+esponsysimages/spirit/contentlibrary/promotional/2017/aug/22248_17_TTTuesda=
+y_EmailPricing_A.jpg" style=3D"display: block;border: none;font-family: Ari=
+al, sans-serif;font-size: 30px;line-height: 35px;color: #000000;" width=3D"=
+200" /></a></td>
+                  <td align=3D"right" valign=3D"top" width=3D"242">
+                  <table align=3D"right" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" class=3D"em_width200" style=3D"width:242px;">
+                     <tbody>
+                        <tr>
+                           <td align=3D"left" class=3D"em_text2 em_black" s=
+tyle=3D"font-family: Verdana, Geneva, sans-serif;font-size: 30px;color: #00=
+0000;font-weight: bold;line-height: 36px;" valign=3D"top">Take A Real Vacat=
+ion<br />
+                           <br />
+                           <font color=3D"red">Today Only!</font></td>
+                        </tr>
+                        <tr>
+                           <td class=3D"em_height10" height=3D"18" style=3D=
+"line-height:1px;font-size:1px;"></td>
+                        </tr>
+                        <tr>
+                           <td align=3D"left" valign=3D"top">
+                           <table align=3D"left" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" class=3D"em_width150" style=3D"width:177px;" width=
+=3D"177">
+                              <tbody>
+                                 <tr>
+                                    <td align=3D"center" bgcolor=3D"#0073e6=
+" class=3D"em_btnblue " height=3D"50" style=3D"font-family: Verdana, Geneva=
+, sans-serif;color: #ffffff;font-size: 20px;font-weight: bold;text-transfor=
+m: uppercase;" valign=3D"middle"><a href=3D"https://save.spirit-airlines.co=
+m/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5za=
+ia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DUWYBWT&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iug=
+v0oNAsu4RqK92x5-YkN-IEJfH6g_gNnVfZcbgU3." style=3D"text-decoration: none;co=
+lor: #ffffff;line-height: 50px;display: block;" target=3D"_blank">Click her=
+e</a></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class=3D"em_height10" height=3D"25"></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         </td>
+      </tr>
+      <tr>
+         <td align=3D"center" valign=3D"top"><img class=3D"em_full_img" hei=
+ght=3D"32" src=3D"https://static.cdn.responsys.net/i2/responsysimages/spiri=
+t/contentlibrary/promotional/2017/aug/20953_SPIRIT_EmailImage_ArrowAsset_R1=
+.jpg" style=3D"display: block;border: none;font-family: Arial, sans-serif;f=
+ont-size: 12px;line-height: 20px;color: #000000;" width=3D"600" /></td>
+      </tr>
+      <tr>
+         <td bgcolor=3D"#efefef" class=3D"em_hide" height=3D"15" style=3D"l=
+ine-height:1px; font-size:1px;"></td>
+      </tr>
+      <tr>
+         <td bgcolor=3D"#efefef" class=3D"em_height10" height=3D"35"></td>
+      </tr>
+      <tr>
+         <td bgcolor=3D"#efefef" class=3D"em_aside em_aside1" valign=3D"top=
+">
+         <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%">
+            <tbody>
+               <tr>
+                  <td class=3D"em_hide" style=3D"width:124px;" width=3D"124=
+"></td>
+                  <td valign=3D"top">
+                  <table align=3D"left" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" class=3D"em_wrapper" style=3D"width:386px;" width=3D"386">
+                     <tbody>
+                        <tr>
+                           <td align=3D"left" class=3D"em_text3 em_black" s=
+tyle=3D"font-family:Arial, sans-serif;font-size:16px;color:#000000;line-hei=
+ght:24px;" valign=3D"top">
+                           <p>Weekend trips? Pssht. Practically everyone ge=
+ts weekends off. Wanna know the secret to vacationing like a boss? First yo=
+u take days off work. We're talking about leaving on a Wednesday. Maybe eve=
+n a Tuesday if you're really feeling it. Then you put some money back in th=
+e pockets of your khakis by flying with the airline that wrote the book on =
+the Frill Control. So book this deal, turn on that out-of-office email, and=
+ fire up those finger guns. It's vacay time, Jefe.<br />
+                           <br />
+                           <img src=3D"https://static.cdn.responsys.net/i2/=
+responsysimages/spirit/contentlibrary/1_templates/icon.jpg" />&nbsp; 65% of=
+f<a href=3D"https://save.spirit-airlines.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglL=
+jHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX%3D=
+UWYBAT&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_gNnV=
+fZcbgU3." style=3D"text-decoration: none;">*</a> round-trip flight-only boo=
+kings or the round-trip flight portion of vacation packages<br />
+                           <img src=3D"https://static.cdn.responsys.net/i2/=
+responsysimages/spirit/contentlibrary/1_templates/icon.jpg" />&nbsp; Travel=
+: 8/29/17 - 12/13/17 (Tue / Wed)<br />
+                           <img src=3D"https://static.cdn.responsys.net/i2/=
+responsysimages/spirit/contentlibrary/1_templates/icon.jpg" />&nbsp; Blacko=
+ut Dates: 9/5/17, 11/21/17, 11/22/17 and 11/28/17<br />
+                           <br />
+                           <img src=3D"https://static.cdn.responsys.net/i2/=
+responsysimages/spirit/contentlibrary/1_templates/icon.jpg" />&nbsp; 35% of=
+f<a href=3D"https://save.spirit-airlines.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglL=
+jHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX%3D=
+UWYBAT&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_gNnV=
+fZcbgU3." style=3D"text-decoration: none;">*</a> round-trip flight-only boo=
+kings or the round-trip flight portion of vacation packages<br />
+                           <img src=3D"https://static.cdn.responsys.net/i2/=
+responsysimages/spirit/contentlibrary/1_templates/icon.jpg" />&nbsp; Travel=
+: 9/2/17 - 10/2/17 (Mon / Thu / Sat)<br />
+                           <img src=3D"https://static.cdn.responsys.net/i2/=
+responsysimages/spirit/contentlibrary/1_templates/icon.jpg" />&nbsp; Blacko=
+ut Dates: 9/4/17<br />
+                           <br />
+                           <img src=3D"https://static.cdn.responsys.net/i2/=
+responsysimages/spirit/contentlibrary/1_templates/icon.jpg" />&nbsp; Use co=
+upon code: <strong><a href=3D"https://save.spirit-airlines.com/pub/cc?_ri_=
+=3DX0Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pz=
+dFrwsPdOzaVXtpKX%3DUWYBCT&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92=
+x5-YkN-IEJfH6g_gNnVfZcbgU3.">SAVE$</a></strong><br />
+                           <img src=3D"https://static.cdn.responsys.net/i2/=
+responsysimages/spirit/contentlibrary/1_templates/icon.jpg" />&nbsp; Book b=
+y 11:59PM on August 22, 2017<strong>&nbsp;</strong>
+                           </p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+                  <td class=3D"em_hide" style=3D"width:90px;" width=3D"90">=
+</td>
+               </tr>
+            </tbody>
+         </table>
+         </td>
+      </tr>
+      <tr>
+         <td bgcolor=3D"#efefef" class=3D"em_hide" height=3D"13" style=3D"l=
+ine-height:1px; font-size:1px;"></td>
+      </tr>
+      <tr>
+         <td bgcolor=3D"#efefef" height=3D"35"></td>
+      </tr>
+   </tbody>
+</table>
+</td>
+                        </tr>
+                        <tr>
+                           <td align=3D"center" data-content-region-name=3D=
+"Offer2" valign=3D"top">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%">
+   <tbody>
+      <tr>
+         <td align=3D"center" valign=3D"top"><a href=3D"https://save.spirit=
+-airlines.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor=
+17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DUWYCRT&_ei_=3DEq2tf9zs59idfPO1S=
+c_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_gNnVfZcbgU3." style=3D"text-decorat=
+ion:none;" target=3D"_blank"><img alt=3D"Spirit" class=3D"em_full_img" heig=
+ht=3D"261" src=3D"https://static.cdn.responsys.net/i2/responsysimages/spiri=
+t/contentlibrary/promotional/2017/aug/22248_3_VacationPKG_Email.jpg" style=
+=3D"max-width:600px;" width=3D"600" /></a></td>
+      </tr>
+      <tr>
+         <td class=3D"em_height10" height=3D"38"></td>
+      </tr>
+      <tr>
+         <td align=3D"center" valign=3D"top">
+         <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%">
+            <tbody>
+               <tr>
+                  <td class=3D"em_spacer" style=3D"width:47px;" width=3D"47=
+"></td>
+                  <td align=3D"left" style=3D"padding-top:5px;" valign=3D"t=
+op"><a href=3D"https://save.spirit-airlines.com/pub/cc?_ri_=3DX0Gzc2X%3DYQp=
+glLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX=
+%3DUWYCTT&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_g=
+NnVfZcbgU3." style=3D"text-decoration:none;" target=3D"_blank"><img alt=3D"=
+Deal" class=3D"em_widthoff100" src=3D"https://static.cdn.responsys.net/i2/r=
+esponsysimages/spirit/contentlibrary/promotional/2017/aug/SPIRIT_Email_Pric=
+eTile_25OFF_B.jpg" style=3D"display: block;border: none;font-family: Arial,=
+ sans-serif;font-size: 30px;line-height: 35px;color: #000000;" width=3D"200=
+" /></a></td>
+                  <td align=3D"right" valign=3D"top" width=3D"242">
+                  <table align=3D"right" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" class=3D"em_width200" style=3D"width:242px;">
+                     <tbody>
+                        <tr>
+                           <td align=3D"left" class=3D"em_text2 em_black" s=
+tyle=3D"font-family: Verdana, Geneva, sans-serif;font-size: 30px;color: #00=
+0000;font-weight: bold;line-height: 36px;" valign=3D"top">Book Your Vacatio=
+n Package</td>
+                        </tr>
+                        <tr>
+                           <td class=3D"em_height10" height=3D"18" style=3D=
+"line-height:1px;font-size:1px;"></td>
+                        </tr>
+                        <tr>
+                           <td align=3D"left" valign=3D"top">
+                           <table align=3D"left" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" class=3D"em_width150" style=3D"width:177px;" width=
+=3D"177">
+                              <tbody>
+                                 <tr>
+                                    <td align=3D"center" bgcolor=3D"#0073e6=
+" class=3D"em_btnblue " height=3D"50" style=3D"font-family: Verdana, Geneva=
+, sans-serif;color: #ffffff;font-size: 20px;font-weight: bold;text-transfor=
+m: uppercase;" valign=3D"middle"><a href=3D"https://save.spirit-airlines.co=
+m/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5za=
+ia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DUWYCWT&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iug=
+v0oNAsu4RqK92x5-YkN-IEJfH6g_gNnVfZcbgU3." style=3D"text-decoration: none;co=
+lor: #ffffff;line-height: 50px;display: block;" target=3D"_blank">Click her=
+e</a></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class=3D"em_height10" height=3D"25"></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         </td>
+      </tr>
+      <tr>
+         <td align=3D"center" valign=3D"top"><img class=3D"em_full_img" hei=
+ght=3D"32" src=3D"https://static.cdn.responsys.net/i2/responsysimages/spiri=
+t/contentlibrary/promotional/2017/aug/20953_SPIRIT_EmailImage_ArrowAsset_R1=
+.jpg" style=3D"display: block;border: none;font-family: Arial, sans-serif;f=
+ont-size: 12px;line-height: 20px;color: #000000;" width=3D"600" /></td>
+      </tr>
+      <tr>
+         <td bgcolor=3D"#efefef" class=3D"em_hide" height=3D"15" style=3D"l=
+ine-height:1px; font-size:1px;"></td>
+      </tr>
+      <tr>
+         <td bgcolor=3D"#efefef" class=3D"em_height10" height=3D"35"></td>
+      </tr>
+      <tr>
+         <td bgcolor=3D"#efefef" class=3D"em_aside em_aside1" valign=3D"top=
+">
+         <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%">
+            <tbody>
+               <tr>
+                  <td class=3D"em_hide" style=3D"width:124px;" width=3D"124=
+"></td>
+                  <td valign=3D"top">
+                  <table align=3D"left" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" class=3D"em_wrapper" style=3D"width:386px;" width=3D"386">
+                     <tbody>
+                        <tr>
+                           <td align=3D"left" class=3D"em_text3 em_black" s=
+tyle=3D"font-family:Arial, sans-serif;font-size:16px;color:#000000;line-hei=
+ght:24px;" valign=3D"top">
+                           <p>The only thing better than the sand and the s=
+un, is the sand and the sun and some savings. Because those savings are wha=
+t you use to get in all of the fun on your next Florida vacation. We'll fly=
+ you to Ft. Lauderdale, Ft. Myers, Tampa or Orlando and give you $25 off<a =
+href=3D"https://save.spirit-airlines.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJl=
+TQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DUWYC=
+AT&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_gNnVfZcb=
+gU3." style=3D"text-decoration: none;">**</a> your vacation package. Once y=
+ou're there, the fun is up to you. Play a round of golf, swim in the ocean,=
+ go shopping, eat a lot of food or pump some adrenaline at an amusement par=
+k. Book now!<br />
+                           <br />
+                           <img src=3D"https://static.cdn.responsys.net/i2/=
+responsysimages/spirit/contentlibrary/1_templates/icon.jpg" />&nbsp;Up to $=
+25 off<a href=3D"https://save.spirit-airlines.com/pub/cc?_ri_=3DX0Gzc2X%3DY=
+QpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtp=
+KX%3DUWYCAT&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g=
+_gNnVfZcbgU3." style=3D"text-decoration: none;">**</a> your vacation packag=
+e<br />
+                           <img src=3D"https://static.cdn.responsys.net/i2/=
+responsysimages/spirit/contentlibrary/1_templates/icon.jpg" />&nbsp;<strong=
+>Travel:</strong>&nbsp;8/22/17 - 9/30/17<br />
+                           <img src=3D"https://static.cdn.responsys.net/i2/=
+responsysimages/spirit/contentlibrary/1_templates/icon.jpg" />&nbsp;Enter <=
+strong><a href=3D"https://save.spirit-airlines.com/pub/cc?_ri_=3DX0Gzc2X%3D=
+YQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXt=
+pKX%3DUWYCCT&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6=
+g_gNnVfZcbgU3.">25OFFPK</a></strong> in the promotion code box on the home =
+page<br />
+                           <img src=3D"https://static.cdn.responsys.net/i2/=
+responsysimages/spirit/contentlibrary/1_templates/icon.jpg" />&nbsp;Book by=
+ 11:59PM on August 30, 2017
+                           </p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+                  <td class=3D"em_hide" style=3D"width:90px;" width=3D"90">=
+</td>
+               </tr>
+            </tbody>
+         </table>
+         </td>
+      </tr>
+      <tr>
+         <td bgcolor=3D"#efefef" class=3D"em_hide" height=3D"13" style=3D"l=
+ine-height:1px; font-size:1px;"></td>
+      </tr>
+      <tr>
+         <td bgcolor=3D"#efefef" height=3D"35"></td>
+      </tr>
+   </tbody>
+</table>
+</td>
+                        </tr>
+                        <tr>
+                           <td align=3D"center" data-content-region-name=3D=
+"Banner1" valign=3D"top">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%">
+   <tbody>
+      <tr>
+         <td><a href=3D"https://save.spirit-airlines.com/pub/cc?_ri_=3DX0Gz=
+c2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPd=
+OzaVXtpKX%3DUWYDRT&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-=
+IEJfH6g_gNnVfZcbgU3." style=3D"text-decoration:none;" target=3D"_blank"><im=
+g class=3D"em_full_img" height=3D"225" src=3D"https://static.cdn.responsys.=
+net/i2/responsysimages/spirit/contentlibrary/promotional/2017/aug/20961_Ema=
+ilTemplateSectionRevamp_Library_9FC_R3.jpg" width=3D"600" /></a></td>
+      </tr>
+   </tbody>
+</table>
+</td>
+                        </tr>
+                        <tr>
+                           <td align=3D"center" data-content-region-name=3D=
+"Banner2" valign=3D"top">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%">
+   <tbody>
+      <tr>
+         <td><a href=3D"https://save.spirit-airlines.com/pub/cc?_ri_=3DX0Gz=
+c2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPd=
+OzaVXtpKX%3DUWYDTT&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-=
+IEJfH6g_gNnVfZcbgU3."><img class=3D"em_full_img" height=3D"225" src=3D"http=
+s://static.cdn.responsys.net/i2/responsysimages/spirit/contentlibrary/promo=
+tional/2017/aug/20961_EmailTemplateSectionRevamp_Library_PersonalItem_R3.jp=
+g" width=3D"600" /></a></td>
+      </tr>
+   </tbody>
+</table>
+</td>
+                        </tr>
+                        <!--Social icon section-->
+                        <tr>
+                           <td align=3D"center" bgcolor=3D"#000000" class=
+=3D"em_aside" style=3D"padding:0px 29px;" valign=3D"top">
+                           <table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%">
+                              <tbody>
+                                 <tr>
+                                    <td height=3D"30"></td>
+                                 </tr>
+                                 <tr>
+                                    <td valign=3D"top">
+                                    <table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%">
+                                       <tbody>
+                                          <tr>
+                                             <td align=3D"left" class=3D"em=
+_w165" style=3D"width:132px;" valign=3D"middle" width=3D"132"><a href=3D"ht=
+tp://www.spirit.com/Default.aspx" style=3D"text-decoration:none;" target=3D=
+"_blank"><img alt=3D"spirit" class=3D"em_width100" height=3D"33" src=3D"htt=
+ps://static.cdn.responsys.net/i2/responsysimages/spirit/contentlibrary/1_te=
+mplates/footer_logo.png" style=3D"display: block;border: none;font-family: =
+Arial, sans-serif;font-size: 20px;line-height: 32px;color: #ffffff;max-widt=
+h:115px;" width=3D"115" /></a></td>
+                                             <td align=3D"left" class=3D"em=
+_footer2 em_yellow" style=3D"font-family: Arial, sans-serif;font-size: 12px=
+;color: #ffe600;font-weight: bold;line-height: 14px;" valign=3D"middle">Les=
+s Money. More Go.</td>
+                                             <td align=3D"right" valign=3D"=
+middle" width=3D"50">
+                                             <table align=3D"right" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width:50px;" width=3D"5=
+0">
+                                                <tbody>
+                                                   <tr>
+                                                      <td align=3D"center" =
+style=3D"width:24px;" valign=3D"middle" width=3D"24"><a href=3D"https://www=
+.instagram.com/spiritairlines/" style=3D"text-decoration:none;" target=3D"_=
+blank"><img alt=3D"Insta" height=3D"22" src=3D"https://static.cdn.responsys=
+.net/i2/responsysimages/spirit/contentlibrary/1_templates/insta.jpg" style=
+=3D"display: block;border: none;font-family: Arial, sans-serif;font-size: 1=
+2px;line-height: 22px;color: #ffffff;max-width:22px;" width=3D"22" /></a></=
+td>
+                                                      <td width=3D"6"></td>
+                                                      <td align=3D"center" =
+style=3D"width:24px;" valign=3D"middle" width=3D"24"><a href=3D"https://sav=
+e.spirit-airlines.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdY=
+mbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DUWYART&amp;_ei_=3DEq2tf=
+9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_gNnVfZcbgU3." style=3D"=
+text-decoration:none;" target=3D"_blank"><img alt=3D"TW" height=3D"22" src=
+=3D"https://static.cdn.responsys.net/i2/responsysimages/spirit/contentlibra=
+ry/1_templates/tw.jpg" style=3D"display: block;border: none;font-family: Ar=
+ial, sans-serif;font-size: 12px;line-height: 22px;color: #ffffff;max-width:=
+22px;" width=3D"24" /></a></td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    </td>
+                                 </tr>
+                                 <!--<tr>
+<td valign=3D"top" align=3D"center"><table width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tr>
+<td valign=3D"top" align=3D"left" width=3D"115" style=3D"width:115px;"><a h=
+ref=3D"http://www.spirit.com/Default.aspx" target=3D"_blank" style=3D"text-=
+decoration:none;"><img class=3D"em_width100" src=3D"images/footer_logo.png"=
+ height=3D"33" width=3D"115" alt=3D"spirit" style=3D"display: block;border:=
+ none;font-family: Arial, sans-serif;font-size: 20px;line-height: 32px;colo=
+r: #ffffff;max-width:115px;"></a></td>
+<td width=3D"17" class=3D"em_width10">&nbsp;</td>
+<td valign=3D"middle" align=3D"left" class=3D"em_footer2" style=3D"font-fam=
+ily: Arial, sans-serif;font-size: 12px;color: #ffe600;font-weight: bold;lin=
+e-height: 14px;">Less Money. More Go.</td>
+<td>&nbsp;</td>
+</tr>
+</table></td>
+</tr>-->
+                                 <tr>
+                                    <td height=3D"30"></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </td>
+                        </tr>
+                        <!--Social icon section--><!--footer  section-->
+                        <tr>
+                           <td align=3D"center" class=3D"em_aside" data-con=
+tent-region-name=3D"Footer" style=3D"padding:0px 25px;" valign=3D"top">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%">
+  <tbody>
+    <tr>
+      <td height=3D"25">
+      </td>
+    </tr>
+    <tr>
+      <td align=3D"center" class=3D"em_footer1 em_black" style=3D"font-fami=
+ly: Arial, sans-serif;font-size: 12px;color: #000000;line-height: 14px;text=
+-decoration:none;" valign=3D"top">
+        <p>*Route exclusions apply. Coupon only applies to the flight porti=
+on of a vacation package. To receive 65% off<a href=3D"https://save.spirit-=
+airlines.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor1=
+7jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DUWYDWT&_ei_=3DEq2tf9zs59idfPO1Sc=
+_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_gNnVfZcbgU3.">*</a>&nbsp;your round-=
+trip purchase, you must enter <strong><a href=3D"https://save.spirit-airlin=
+es.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0=
+zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DUWYDWT&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_=
+y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_gNnVfZcbgU3.">SAVE$</a></strong> (all caps=
+, no spaces) in the promotion code box on the homepage when booking your fl=
+ight. Travel must be booked by 11:59 PM on August 22, 2017. This offer is v=
+alid only on new, non-refundable round-trip flight and vacation package boo=
+kings made at spirit.com for travel: 8/29/17 - 12/13/17 (Tue / Wed). Blacko=
+ut dates: 9/5/17, 11/21/17, 11/22/17 and 11/28/17. Once the promotional cod=
+e is entered, fares displayed will automatically reflect a promotional disc=
+ount of 65% off<a href=3D"https://save.spirit-airlines.com/pub/cc?_ri_=3DX0=
+Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrws=
+PdOzaVXtpKX%3DUWYDWT&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-Yk=
+N-IEJfH6g_gNnVfZcbgU3.">*</a>. Please note that the value of the coupon doe=
+s not apply to the Passenger Usage Fee (up to $18.99 each way) or DOT Unint=
+ended Consequences Fee ($7.00 each way) which are included in the 'Base Far=
+e'. The coupon will apply to the remaining balance once these are deducted =
+from the combination of the 'Base Fare' and 'Fuel' (where applicable). <a h=
+ref=3D"https://save.spirit-airlines.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlT=
+QGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DUWYDW=
+T&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_gNnVfZcbg=
+U3.">Additional terms</a> apply. <a href=3D"https://save.spirit-airlines.co=
+m/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5za=
+ia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DUWYDAT&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iug=
+v0oNAsu4RqK92x5-YkN-IEJfH6g_gNnVfZcbgU3.">Baggage charges</a> may apply.
+          <br />
+          <br />
+          *Route exclusions apply. Coupon only applies to the flight portio=
+n of a vacation package. To receive 35% off<a href=3D"https://save.spirit-a=
+irlines.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17=
+jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DUWYDWT&_ei_=3DEq2tf9zs59idfPO1Sc_=
+9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_gNnVfZcbgU3.">*</a>&nbsp;your round-t=
+rip purchase, you must enter <strong><a href=3D"https://save.spirit-airline=
+s.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0z=
+c5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DUWYDWT&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y=
+8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_gNnVfZcbgU3.">SAVE$</a></strong> (all caps,=
+ no spaces) in the promotion code box on the homepage when booking your fli=
+ght. Travel must be booked by 11:59 PM on August 22, 2017. This offer is va=
+lid only on new, non-refundable round-trip flight and vacation package book=
+ings made at spirit.com for travel: 9/2/17 &ndash; 10/2/17 (Mon / Thu / Sat=
+). Blackout dates: 9/4/17. Once the promotional code is entered, fares disp=
+layed will automatically reflect a promotional discount of 35% off<a href=
+=3D"https://save.spirit-airlines.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlTQGg=
+zemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DUWYDWT&_=
+ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_gNnVfZcbgU3.=
+">*</a>. Please note that the value of the coupon does not apply to the Pas=
+senger Usage Fee (up to $18.99 each way) or DOT Unintended Consequences Fee=
+ ($7.00 each way) which are included in the 'Base Fare'. The coupon will ap=
+ply to the remaining balance once these are deducted from the combination o=
+f the 'Base Fare' and 'Fuel' (where applicable). <a href=3D"https://save.sp=
+irit-airlines.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK7=
+7eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DUWYDWT&_ei_=3DEq2tf9zs59idf=
+PO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_gNnVfZcbgU3.">Additional terms<=
+/a> apply. <a href=3D"https://save.spirit-airlines.com/pub/cc?_ri_=3DX0Gzc2=
+X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOz=
+aVXtpKX%3DUWYDAT&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IE=
+JfH6g_gNnVfZcbgU3.">Baggage charges</a> may apply.
+          <br />
+          <br />
+          **Coupon only applies to the flight portion of a vacation package=
+. Must be booked by August 30, 2017. To receive $25 off<a href=3D"https://s=
+ave.spirit-airlines.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBz=
+dYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DUWYDCT&_ei_=3DEq2tf9z=
+s59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_gNnVfZcbgU3.">**</a> your=
+ purchase, you must enter <a href=3D"https://save.spirit-airlines.com/pub/c=
+c?_ri_=3DX0Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7be=
+NXF9pzdFrwsPdOzaVXtpKX%3DUWARRT&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu=
+4RqK92x5-YkN-IEJfH6g_gNnVfZcbgU3.">25OFFPK</a> (all caps, no spaces) in the=
+ promotion code box on the homepage. The value of the coupon does not apply=
+ to the Passenger Usage Fee (up to $18.99 each way) or DOT Unintended Conse=
+quences Fee ($7.00 each way) which are included in the 'Base Fare'. The cou=
+pon will apply to the remaining balance once these are deducted from the co=
+mbination of the 'Base Fare' and 'Fuel' (where applicable). Travel dates: 8=
+/1/17 - 9/30/17. Valid to Fort Lauderdale, FL. <a href=3D"https://save.spir=
+it-airlines.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77e=
+or17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DUWYDCT&_ei_=3DEq2tf9zs59idfPO=
+1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_gNnVfZcbgU3.
+            ">Additional terms</a> apply. <a href=3D"https://save.spirit-ai=
+rlines.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17j=
+rPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DUWARTT&_ei_=3DEq2tf9zs59idfPO1Sc_9=
+Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_gNnVfZcbgU3.">Baggage charges</a> may =
+apply.
+          <br />
+          <br />
+          The coupon code does NOT apply to $9 Fare Club exclusive fares (i=
+ncluding O and N classes of service), U class fares and also Y class fares,=
+ which are our highest fares and may be the only fares available on certain=
+ dates or flights. Coupon offers are valid only with fares of $49 each way =
+or higher at spirit.com for travel between the specified dates in each offe=
+r.
+          <br />
+          <br />
+          Spirit Airlines 2800 Executive Way Miramar, FL 33025
+          <br />
+          &copy;=20
+               2017 Spirit Airlines. All rights reserved.
+          <br />
+          <br />
+          <br />
+          <a href=3D"https://save.spirit-airlines.com/pub/cc?_ri_=3DX0Gzc2X=
+%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOza=
+VXtpKX%3DUWYATT&_ei_=3DEq2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJ=
+fH6g_gNnVfZcbgU3." style=3D"text-decoration:underline;color:#0073e6;" targe=
+t=3D"_blank">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;<span class=3D"em_hide">&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href=3D"http=
+s://save.spirit-airlines.com/pub/cc?_ri_=3DX0Gzc2X%3DYQpglLjHJlTQGgzemgHvzf=
+IzaBzdYmbK77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXtpKX%3DUWARWT&_ei_=3DEq=
+2tf9zs59idfPO1Sc_9Bbm_y8Iugv0oNAsu4RqK92x5-YkN-IEJfH6g_gNnVfZcbgU3." style=
+=3D"text-decoration:underline;color:#0073e6;" target=3D"_blank">Update Emai=
+l Address</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class=3D=
+"em_hide">&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href=3D"https://save.spirit-ai=
+rlines.com/pub/sf/FormLink?_ri_=3DX0Gzc2X%3DYQpglLjHJlTQGgzemgHvzfIzaBzdYmb=
+K77eor17jrPE0zc5zaia0b7beNXF9pzdFrwsPdOzaVXMtX%3DYQpglLjHJlTQGkzeHTakOzd5ul=
+wcizezbCgkr7hyh9jbhDrzdEGhALlmzatjzbyq75a&_ei_=3DEolaGGF4SNMvxFF7KucKuWOalv=
+qyTfPrugZEOhrp5fdCfaQxZ5wnC5vo5M." style=3D"text-decoration:underline;color=
+:#0073e6;" target=3D"_blank">Unsubscribe</a>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td height=3D"25"><img alt=3D"" height=3D"1" src=3D"https://static.cd=
+n.responsys.net/i2/responsysimages/content/spirit/spacer.gif" style=3D"disp=
+lay:block;border:none;" width=3D"1" />
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--//footer  section--><!--Template Body End--><!--Full width table End-->=
+<!--Increase/decrease the number of (&nbsp;) as per the template width-->
+<div class=3D"em_hide" style=3D"white-space:nowrap;font:20px courier;color:=
+#FFFFFF">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp;
+</div>
+</td>
+                        </tr>
+                        <!--//footer  section-->
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <!--Template Body End--></td>
+      </tr>
+   </tbody>
+</table>
+<!--Full width table End--><!--Increase/decrease the number of (&nbsp;) as =
+per the template width-->
+
+<div class=3D"em_hide" style=3D"white-space:nowrap;font:20px courier;color:=
+#FFFFFF">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp;
+</div>
+<!--ReturnPath Pixel Start--><img height=3D"1" src=3D"https://pixel.app.ret=
+urnpath.net/pixel.gif?r=3De428fc843b5505f471a6d5af4123a9705572897d" width=
+=3D"1" /> <img height=3D"1" src=3D"https://pixel.monitor1.returnpath.net/pi=
+xel.gif?r=3De428fc843b5505f471a6d5af4123a9705572897d" width=3D"1" /> <!--Re=
+turnPath Pixel End--></body>
+</html>
+
+

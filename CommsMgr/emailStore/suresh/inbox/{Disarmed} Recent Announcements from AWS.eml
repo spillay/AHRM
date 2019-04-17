@@ -1,0 +1,1755 @@
+Return-Path: <112-TZM-766.0.280725.0.0.84688.9.32669425@em-sj-77.mktomail.com>
+Delivered-To: suresh@workspaceafrica.com
+Received: from gaea.thishost.co.za
+	by gaea.thishost.co.za (Dovecot) with LMTP id 0bdROhJ9nFlGeAIAFcTQEQ
+	for <suresh@workspaceafrica.com>; Tue, 22 Aug 2017 20:50:58 +0200
+Return-path: <112-TZM-766.0.280725.0.0.84688.9.32669425@em-sj-77.mktomail.com>
+Envelope-to: suresh@workspaceafrica.com
+Delivery-date: Tue, 22 Aug 2017 20:50:58 +0200
+Received: from smtp-out-174-136.amazon.com ([207.171.174.136]:42516)
+	by gaea.thishost.co.za with esmtp (Exim 4.89)
+	(envelope-from <112-TZM-766.0.280725.0.0.84688.9.32669425@em-sj-77.mktomail.com>)
+	id 1dkEGG-000gPU-D7
+	for suresh@workspaceafrica.com; Tue, 22 Aug 2017 20:50:52 +0200
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+  d=amazon.com; i=aws-marketing-email-replies@amazon.com;
+  q=dns/txt; s=amazon201209; t=1503427851; x=1534963851;
+  h=date:from:reply-to:to:message-id:subject:mime-version:
+   list-unsubscribe;
+  bh=0HYibb0gKgeau4ZgFganOiz+SOK1jVBuHuRvqzythFY=;
+  b=Rq5j6ZsuwhZhPpphKeUPHkgUdhi+psyOsz/hRzhLy80VY9aR0y+psCbv
+   SRPW5ZqedV8yxWTOVYH71K7JuoZ9DibMlxAUpm+ROCITcdQejxvlRh4M+
+   EvZnc2/CMhDLuKIqEvMQdBxqtLIjkkqGa6lHRKV7rhGEqurd2fkmBC+AP
+   w=;
+X-MSFBL: c3VyZXNoQHdvcmtzcGFjZWFmcmljYS5jb21AZHZwLTE5OS0xNS0yMTUtNjRAYmct
+	c2pkLTAzQDExMi1UWk0tNzY2OjEzNTE1ODo1NDM3OTozMjUyMDg6MDo4NDY4ODo5
+	OjI4MDcyNTozMjY2OTQyNQ==
+Received: from [10.0.87.249] ([10.0.87.249:59777] helo=sjmas02.marketo.org)
+	by sjmta17.marketo.org (envelope-from <aws-marketing-email-replies@amazon.com>)
+	(ecelerity 3.6.8.47404 r(Core:3.6.8.0)) with ESMTP
+	id E1/4B-29469-0CF5C995; Tue, 22 Aug 2017 11:45:52 -0500
+Date: Tue, 22 Aug 2017 11:45:52 -0500 (CDT)
+From: Amazon Web Services <aws-marketing-email-replies@amazon.com>
+Reply-To: aws-marketing-email-replies@amazon.com
+To: suresh@workspaceafrica.com
+Message-ID: <519955074.859160393.1503420352033.JavaMail.root@sjmas02.marketo.org>
+Subject: {Disarmed} Recent Announcements from AWS
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_859160392_1452526723.1503420352032"
+X-PVIQ: mkto-112TZM766-000001-000000-280725
+X-Binding: bg-sjd-03
+X-MarketoID: 112-TZM-766:135158:54379:325208:0:84688:9:280725:32669425
+X-MktArchive: false
+List-Unsubscribe: <mailto:OZYDKMS2KRBVU2CJKNDDITKUGBTDI23VMZ4WULKJMRJVCMLXMNKG6QSSIVCDE6LRM5YGGPI.280725.84688.9@unsub-sj.mktomail.com>
+X-Mailfrom: 112-TZM-766.0.280725.0.0.84688.9.32669425@em-sj-77.mktomail.com
+X-MSYS-API: {"options":{"open_tracking":false,"click_tracking":false}}
+X-SADomain-MailScanner-Information: Please contact SA Domain technical support for more information
+X-SADomain-MailScanner-ID: 1dkEGG-000gPU-D7
+X-SADomain-MailScanner: Found to be clean
+X-SADomain-MailScanner-SpamCheck: not spam, SpamAssassin (not cached,
+	score=-4.118, required 5, autolearn=not spam, BAYES_00 -1.90,
+	DCC_CHECK 1.10, DKIM_SIGNED 0.10, DKIM_VALID -0.10,
+	DKIM_VALID_AU -0.10, HTML_FONT_LOW_CONTRAST 0.00, HTML_MESSAGE 0.00,
+	RCVD_IN_DNSWL_HI -5.00, RCVD_IN_MSPIKE_H3 -0.01,
+	RCVD_IN_MSPIKE_WL -0.01, REMOVE_BEFORE_LINK 1.80, SPF_PASS -0.00,
+	URIBL_BLOCKED 0.00)
+X-SADomain-MailScanner-From: 112-tzm-766.0.280725.0.0.84688.9.32669425@em-sj-77.mktomail.com
+X-Spam-Status: No
+
+------=_Part_859160392_1452526723.1503420352032
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+A Weekly Review of the Latest Announcements from AWS
+AWS Release=C2=A0Notes=20=20=20=20
+=20
+    A Weekly Review of the Latest Announcements from=C2=A0AWS   <http://ema=
+il.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelDwuMHWwcSjeJDqaI_p35Wy7-iuHoD_9B--Zj=
+AF9fYUdsNf9Dn3JffD_qReEZcoxlr2ZQ50KaNQmyAHipUL-t0HVQ-OjJgha58uNvUsn9n0Q_7aC=
+cR2so2oI-y2Q1Ja6EMdKCUJIsvqS0ou70AGiNE3jyIR1PML87bjgWloWZoXkfGwj46RUtZn0VhZ=
+i5KwI-stPE9AqDfblupnC8ro1WYS119z3G4kJpbKKZz2TCzRbC/p0d00T44fM042xkZtO0dO10>
+<tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, A=
+rial, sans-serif;">         <a href=3D "http://email.awscloud.com/wZOMkdtTO=
+0040d4p2040H01"            target=3D"_blank" title=3D"AWS Config Supports N=
+ew Managed Rules for Securing Amazon S3 Buckets" ><img src=3D"https://s3.am=
+azonaws.com/aws-email-assets/Product+Category+Icons+250x250/Product_Icons_G=
+rey_Management_Tools.png" width=3D"50" height=3D"50"                       =
+                               style=3D"display: block; border: 0px; font-f=
+amily: Helvetica, Arial, sans-serif;"                                      =
+                constrain=3D"true" imagepreview=3D"false"/></a></td>     <t=
+d align=3D"left"         style=3D"font-family: Helvetica, Arial, sans-serif=
+; padding: 0; font-size: 15px; line-height: 22px; color: #000000;">        =
+ <p style=3D"margin: 0;"><a                 href=3D "http://email.awscloud.=
+com/wZOMkdtTO0040d4p2040H01"                 style=3D"color: #527fff; text-=
+decoration: none; font-size: 16px;" target=3D"_blank" title=3D"AWS Config S=
+upports New Managed Rules for Securing Amazon S3 Buckets" >AWS Config Suppo=
+rts New Managed Rules for Securing Amazon S3 Buckets</a>         </p>     <=
+/td> </tr>                  <tr>     <td width=3D"60" valign=3D"top" style=
+=3D"font-family: Helvetica, Arial, sans-serif;">         <a href=3D "http:/=
+/email.awscloud.com/B404qT0Mk000d21Z0OIOd4t"            target=3D"_blank" t=
+itle=3D"Amazon EFS Now Supports Encryption of Data at Rest" ><img src=3D"ht=
+tps://s3.amazonaws.com/aws-email-assets/Product+Category+Icons+250x250/Prod=
+uct_Icons_Grey_Storage_Delivery.png" width=3D"50" height=3D"50"            =
+                                          style=3D"display: block; border: =
+0px; font-family: Helvetica, Arial, sans-serif;"                           =
+                           constrain=3D"true" imagepreview=3D"false"/></a><=
+/td>     <td align=3D"left"         style=3D"font-family: Helvetica, Arial,=
+ sans-serif; padding: 0; font-size: 15px; line-height: 22px; color: #000000=
+;">         <p style=3D"margin: 0;"><a                 href=3D "http://emai=
+l.awscloud.com/B404qT0Mk000d21Z0OIOd4t"                 style=3D"color: #52=
+7fff; text-decoration: none; font-size: 16px;" target=3D"_blank" title=3D"A=
+mazon EFS Now Supports Encryption of Data at Rest" >Amazon EFS Now Supports=
+ Encryption of Data at Rest</a>         </p>     </td> </tr>               =
+   <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica=
+, Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/m200kr=
+00d44t4OdOZ1J0TM0"            target=3D"_blank" title=3D"AWS CloudTrail Int=
+egration is Now Available in Amazon Lex" ><img src=3D"https://pages.awsclou=
+d.com/rs/112-TZM-766/images/product-Icons_Email_generic.png" width=3D"50" h=
+eight=3D"50"                                                      style=3D"=
+display: block; border: 0px; font-family: Helvetica, Arial, sans-serif;"   =
+                                                   constrain=3D"true" image=
+preview=3D"false"/></a></td>     <td align=3D"left"         style=3D"font-f=
+amily: Helvetica, Arial, sans-serif; padding: 0; font-size: 15px; line-heig=
+ht: 22px; color: #000000;">         <p style=3D"margin: 0;"><a             =
+    href=3D "http://email.awscloud.com/m200kr00d44t4OdOZ1J0TM0"            =
+     style=3D"color: #527fff; text-decoration: none; font-size: 16px;" targ=
+et=3D"_blank" title=3D"AWS CloudTrail Integration is Now Available in Amazo=
+n Lex" >AWS CloudTrail Integration is Now Available in Amazon Lex</a>      =
+   </p>     </td> </tr>                  <tr>     <td width=3D"60" valign=
+=3D"top" style=3D"font-family: Helvetica, Arial, sans-serif;">         <a h=
+ref=3D "http://email.awscloud.com/NZ00KT4t0024d1M4skd0O0O"            targe=
+t=3D"_blank" title=3D"AWS Batch Adds Support for AWS CloudFormation" ><img =
+src=3D"https://pages.awscloud.com/rs/112-TZM-766/images/product-Icons_Email=
+_generic.png" width=3D"50" height=3D"50"                                   =
+                   style=3D"display: block; border: 0px; font-family: Helve=
+tica, Arial, sans-serif;"                                                  =
+    constrain=3D"true" imagepreview=3D"false"/></a></td>     <td align=3D"l=
+eft"         style=3D"font-family: Helvetica, Arial, sans-serif; padding: 0=
+; font-size: 15px; line-height: 22px; color: #000000;">         <p style=3D=
+"margin: 0;"><a                 href=3D "http://email.awscloud.com/NZ00KT4t=
+0024d1M4skd0O0O"                 style=3D"color: #527fff; text-decoration: =
+none; font-size: 16px;" target=3D"_blank" title=3D"AWS Batch Adds Support f=
+or AWS CloudFormation" >AWS Batch Adds Support for AWS CloudFormation</a>  =
+       </p>     </td> </tr>                  <tr>     <td width=3D"60" vali=
+gn=3D"top" style=3D"font-family: Helvetica, Arial, sans-serif;">         <a=
+ href=3D "http://email.awscloud.com/R00OdO4Z4t0000d2TLM1tk4"            tar=
+get=3D"_blank" title=3D"Introducing AWS SAM Local, a CLI Tool to Test AWS L=
+ambda Functions Locally" ><img src=3D"https://s3.amazonaws.com/aws-email-as=
+sets/Product+Category+Icons+250x250/Product_Icons_Grey_Compute.png" width=
+=3D"50" height=3D"50"                                                      =
+style=3D"display: block; border: 0px; font-family: Helvetica, Arial, sans-s=
+erif;"                                                      constrain=3D"tr=
+ue" imagepreview=3D"false"/></a></td>     <td align=3D"left"         style=
+=3D"font-family: Helvetica, Arial, sans-serif; padding: 0; font-size: 15px;=
+ line-height: 22px; color: #000000;">         <p style=3D"margin: 0;"><a   =
+              href=3D "http://email.awscloud.com/R00OdO4Z4t0000d2TLM1tk4"  =
+               style=3D"color: #527fff; text-decoration: none; font-size: 1=
+6px;" target=3D"_blank" title=3D"Introducing AWS SAM Local, a CLI Tool to T=
+est AWS Lambda Functions Locally" >Introducing AWS SAM Local, a CLI Tool to=
+ Test AWS Lambda Functions Locally</a>         </p>     </td> </tr>        =
+          <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: He=
+lvetica, Arial, sans-serif;">         <a href=3D "http://email.awscloud.com=
+/y41TO4dk0t0OMZM4du00200"            target=3D"_blank" title=3D"Amazon Reds=
+hift announces Federated Authentication with Single Sign-On " ><img src=3D"=
+https://s3.amazonaws.com/aws-email-assets/Product+Category+Icons+250x250/Pr=
+oduct_Icons_Grey_Database.png" width=3D"50" height=3D"50"                  =
+                                    style=3D"display: block; border: 0px; f=
+ont-family: Helvetica, Arial, sans-serif;"                                 =
+                     constrain=3D"true" imagepreview=3D"false"/></a></td>  =
+   <td align=3D"left"         style=3D"font-family: Helvetica, Arial, sans-=
+serif; padding: 0; font-size: 15px; line-height: 22px; color: #000000;">   =
+      <p style=3D"margin: 0;"><a                 href=3D "http://email.awsc=
+loud.com/y41TO4dk0t0OMZM4du00200"                 style=3D"color: #527fff; =
+text-decoration: none; font-size: 16px;" target=3D"_blank" title=3D"Amazon =
+Redshift announces Federated Authentication with Single Sign-On " >Amazon R=
+edshift announces Federated Authentication with Single Sign-On </a>        =
+ </p>     </td> </tr>                  <tr>     <td width=3D"60" valign=3D"=
+top" style=3D"font-family: Helvetica, Arial, sans-serif;">         <a href=
+=3D "http://email.awscloud.com/DTNd40v0MZO00124Ok0d0t4"            target=
+=3D"_blank" title=3D"Amazon Redshift announces enhanced support for viewing=
+ external Redshift Spectrum tables" ><img src=3D"https://s3.amazonaws.com/a=
+ws-email-assets/Product+Category+Icons+250x250/Product_Icons_Grey_Database.=
+png" width=3D"50" height=3D"50"                                            =
+          style=3D"display: block; border: 0px; font-family: Helvetica, Ari=
+al, sans-serif;"                                                      const=
+rain=3D"true" imagepreview=3D"false"/></a></td>     <td align=3D"left"     =
+    style=3D"font-family: Helvetica, Arial, sans-serif; padding: 0; font-si=
+ze: 15px; line-height: 22px; color: #000000;">         <p style=3D"margin: =
+0;"><a                 href=3D "http://email.awscloud.com/DTNd40v0MZO00124O=
+k0d0t4"                 style=3D"color: #527fff; text-decoration: none; fon=
+t-size: 16px;" target=3D"_blank" title=3D"Amazon Redshift announces enhance=
+d support for viewing external Redshift Spectrum tables" >Amazon Redshift a=
+nnounces enhanced support for viewing external Redshift Spectrum tables</a>=
+         </p>     </td> </tr>                  <tr>     <td width=3D"60" va=
+lign=3D"top" style=3D"font-family: Helvetica, Arial, sans-serif;">         =
+<a href=3D "http://email.awscloud.com/HT000440kdwO1Md2O4Z00Ot"            t=
+arget=3D"_blank" title=3D"Amazon Athena Now Integrates With AWS Glue" ><img=
+ src=3D"https://pages.awscloud.com/rs/112-TZM-766/images/product-Icons_Emai=
+l_generic.png" width=3D"50" height=3D"50"                                  =
+                    style=3D"display: block; border: 0px; font-family: Helv=
+etica, Arial, sans-serif;"                                                 =
+     constrain=3D"true" imagepreview=3D"false"/></a></td>     <td align=3D"=
+left"         style=3D"font-family: Helvetica, Arial, sans-serif; padding: =
+0; font-size: 15px; line-height: 22px; color: #000000;">         <p style=
+=3D"margin: 0;"><a                 href=3D "http://email.awscloud.com/HT000=
+440kdwO1Md2O4Z00Ot"                 style=3D"color: #527fff; text-decoratio=
+n: none; font-size: 16px;" target=3D"_blank" title=3D"Amazon Athena Now Int=
+egrates With AWS Glue" >Amazon Athena Now Integrates With AWS Glue</a>     =
+    </p>     </td> </tr>                  <tr>     <td width=3D"60" valign=
+=3D"top" style=3D"font-family: Helvetica, Arial, sans-serif;">         <a h=
+ref=3D "http://email.awscloud.com/G4Z0M100OxdPT0tO0240dk4"            targe=
+t=3D"_blank" title=3D"Announcing the new AWS CloudHSM, offering cost effect=
+ive hardware key management at cloud scale for sensitive and regulated work=
+loads" ><img src=3D"https://s3.amazonaws.com/aws-email-assets/Product+Categ=
+ory+Icons+250x250/Product_Icons_Grey_Security_Identity.png" width=3D"50" he=
+ight=3D"50"                                                      style=3D"d=
+isplay: block; border: 0px; font-family: Helvetica, Arial, sans-serif;"    =
+                                                  constrain=3D"true" imagep=
+review=3D"false"/></a></td>     <td align=3D"left"         style=3D"font-fa=
+mily: Helvetica, Arial, sans-serif; padding: 0; font-size: 15px; line-heigh=
+t: 22px; color: #000000;">         <p style=3D"margin: 0;"><a              =
+   href=3D "http://email.awscloud.com/G4Z0M100OxdPT0tO0240dk4"             =
+    style=3D"color: #527fff; text-decoration: none; font-size: 16px;" targe=
+t=3D"_blank" title=3D"Announcing the new AWS CloudHSM, offering cost effect=
+ive hardware key management at cloud scale for sensitive and regulated work=
+loads" >Announcing the new AWS CloudHSM, offering cost effective hardware k=
+ey management at cloud scale for sensitive and regulated workloads</a>     =
+    </p>     </td> </tr>                  <tr>     <td width=3D"60" valign=
+=3D"top" style=3D"font-family: Helvetica, Arial, sans-serif;">         <a h=
+ref=3D "http://email.awscloud.com/n0Td0Qy004kO0MZ0O424t1d"            targe=
+t=3D"_blank" title=3D"Amazon Virtual Private Cloud (VPC) now allows custome=
+rs to recover accidentally released EIPs" ><img src=3D"https://pages.awsclo=
+ud.com/rs/112-TZM-766/images/product-Icons_Email_generic.png" width=3D"50" =
+height=3D"50"                                                      style=3D=
+"display: block; border: 0px; font-family: Helvetica, Arial, sans-serif;"  =
+                                                    constrain=3D"true" imag=
+epreview=3D"false"/></a></td>     <td align=3D"left"         style=3D"font-=
+family: Helvetica, Arial, sans-serif; padding: 0; font-size: 15px; line-hei=
+ght: 22px; color: #000000;">         <p style=3D"margin: 0;"><a            =
+     href=3D "http://email.awscloud.com/n0Td0Qy004kO0MZ0O424t1d"           =
+      style=3D"color: #527fff; text-decoration: none; font-size: 16px;" tar=
+get=3D"_blank" title=3D"Amazon Virtual Private Cloud (VPC) now allows custo=
+mers to recover accidentally released EIPs" >Amazon Virtual Private Cloud (=
+VPC) now allows customers to recover accidentally released EIPs</a>        =
+ </p>     </td> </tr>                  <tr>     <td width=3D"60" valign=3D"=
+top" style=3D"font-family: Helvetica, Arial, sans-serif;">         <a href=
+=3D "http://email.awscloud.com/O010dd4M0024kTOR0z0t4OZ"            target=
+=3D"_blank" title=3D"Amazon Redshift Spectrum Now Integrates with AWS Glue"=
+ ><img src=3D"https://pages.awscloud.com/rs/112-TZM-766/images/product-Icon=
+s_Email_generic.png" width=3D"50" height=3D"50"                            =
+                          style=3D"display: block; border: 0px; font-family=
+: Helvetica, Arial, sans-serif;"                                           =
+           constrain=3D"true" imagepreview=3D"false"/></a></td>     <td ali=
+gn=3D"left"         style=3D"font-family: Helvetica, Arial, sans-serif; pad=
+ding: 0; font-size: 15px; line-height: 22px; color: #000000;">         <p s=
+tyle=3D"margin: 0;"><a                 href=3D "http://email.awscloud.com/O=
+010dd4M0024kTOR0z0t4OZ"                 style=3D"color: #527fff; text-decor=
+ation: none; font-size: 16px;" target=3D"_blank" title=3D"Amazon Redshift S=
+pectrum Now Integrates with AWS Glue" >Amazon Redshift Spectrum Now Integra=
+tes with AWS Glue</a>         </p>     </td> </tr>                  <tr>   =
+  <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, Arial, s=
+ans-serif;">         <a href=3D "http://email.awscloud.com/ek4OSM00020ZT104=
+d4AOd0t"            target=3D"_blank" title=3D"Introducing Amazon Macie for=
+ S3" ><img src=3D"https://pages.awscloud.com/rs/112-TZM-766/images/product-=
+Icons_Email_generic.png" width=3D"50" height=3D"50"                        =
+                              style=3D"display: block; border: 0px; font-fa=
+mily: Helvetica, Arial, sans-serif;"                                       =
+               constrain=3D"true" imagepreview=3D"false"/></a></td>     <td=
+ align=3D"left"         style=3D"font-family: Helvetica, Arial, sans-serif;=
+ padding: 0; font-size: 15px; line-height: 22px; color: #000000;">         =
+<p style=3D"margin: 0;"><a                 href=3D "http://email.awscloud.c=
+om/ek4OSM00020ZT104d4AOd0t"                 style=3D"color: #527fff; text-d=
+ecoration: none; font-size: 16px;" target=3D"_blank" title=3D"Introducing A=
+mazon Macie for S3" >Introducing Amazon Macie for S3</a>         </p>     <=
+/td> </tr>                  <tr>     <td width=3D"60" valign=3D"top" style=
+=3D"font-family: Helvetica, Arial, sans-serif;">         <a href=3D "http:/=
+/email.awscloud.com/P040k2tTOZ0dTd010OBM440"            target=3D"_blank" t=
+itle=3D"AWS CloudTrail Event History Now Available to All Customers" ><img =
+src=3D"https://pages.awscloud.com/rs/112-TZM-766/images/product-Icons_Email=
+_generic.png" width=3D"50" height=3D"50"                                   =
+                   style=3D"display: block; border: 0px; font-family: Helve=
+tica, Arial, sans-serif;"                                                  =
+    constrain=3D"true" imagepreview=3D"false"/></a></td>     <td align=3D"l=
+eft"         style=3D"font-family: Helvetica, Arial, sans-serif; padding: 0=
+; font-size: 15px; line-height: 22px; color: #000000;">         <p style=3D=
+"margin: 0;"><a                 href=3D "http://email.awscloud.com/P040k2tT=
+OZ0dTd010OBM440"                 style=3D"color: #527fff; text-decoration: =
+none; font-size: 16px;" target=3D"_blank" title=3D"AWS CloudTrail Event His=
+tory Now Available to All Customers" >AWS CloudTrail Event History Now Avai=
+lable to All Customers</a>         </p>     </td> </tr>                  <t=
+r>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, Ari=
+al, sans-serif;">         <a href=3D "http://email.awscloud.com/A12C0dTZ00k=
+t4d400O0U4OM"            target=3D"_blank" title=3D"Amazon EC2 Systems Mana=
+ger Adds New Maintenance Window Task Types for Automation, AWS Step Functio=
+ns, and AWS Lambda" ><img src=3D"https://s3.amazonaws.com/aws-email-assets/=
+Product+Category+Icons+250x250/Product_Icons_Grey_Compute.png" width=3D"50"=
+ height=3D"50"                                                      style=
+=3D"display: block; border: 0px; font-family: Helvetica, Arial, sans-serif;=
+"                                                      constrain=3D"true" i=
+magepreview=3D"false"/></a></td>     <td align=3D"left"         style=3D"fo=
+nt-family: Helvetica, Arial, sans-serif; padding: 0; font-size: 15px; line-=
+height: 22px; color: #000000;">         <p style=3D"margin: 0;"><a         =
+        href=3D "http://email.awscloud.com/A12C0dTZ00kt4d400O0U4OM"        =
+         style=3D"color: #527fff; text-decoration: none; font-size: 16px;" =
+target=3D"_blank" title=3D"Amazon EC2 Systems Manager Adds New Maintenance =
+Window Task Types for Automation, AWS Step Functions, and AWS Lambda" >Amaz=
+on EC2 Systems Manager Adds New Maintenance Window Task Types for Automatio=
+n, AWS Step Functions, and AWS Lambda</a>         </p>     </td> </tr>     =
+             <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family:=
+ Helvetica, Arial, sans-serif;">         <a href=3D "http://email.awscloud.=
+com/rd0V0M014ZDOOkT4d0240t0"            target=3D"_blank" title=3D"Introduc=
+ing AWS Glue: A Simple, Flexible, and Cost-Effective Extract, Transfer, and=
+ Load (ETL) Service" ><img src=3D"https://s3.amazonaws.com/aws-email-assets=
+/Product+Category+Icons+250x250/Product_Icons_Grey_Analytics.png" width=3D"=
+50" height=3D"50"                                                      styl=
+e=3D"display: block; border: 0px; font-family: Helvetica, Arial, sans-serif=
+;"                                                      constrain=3D"true" =
+imagepreview=3D"false"/></a></td>     <td align=3D"left"         style=3D"f=
+ont-family: Helvetica, Arial, sans-serif; padding: 0; font-size: 15px; line=
+-height: 22px; color: #000000;">         <p style=3D"margin: 0;"><a        =
+         href=3D "http://email.awscloud.com/rd0V0M014ZDOOkT4d0240t0"       =
+          style=3D"color: #527fff; text-decoration: none; font-size: 16px;"=
+ target=3D"_blank" title=3D"Introducing AWS Glue: A Simple, Flexible, and C=
+ost-Effective Extract, Transfer, and Load (ETL) Service" >Introducing AWS G=
+lue: A Simple, Flexible, and Cost-Effective Extract, Transfer, and Load (ET=
+L) Service</a>         </p>     </td> </tr>                  <tr>     <td w=
+idth=3D"60" valign=3D"top" style=3D"font-family: Helvetica, Arial, sans-ser=
+if;">         <a href=3D "http://email.awscloud.com/ek4OWM00020ZT104d4EOd0t=
+"            target=3D"_blank" title=3D"Introducing AWS Tools for Microsoft=
+ Visual Studio Team Services" ><img src=3D"https://pages.awscloud.com/rs/11=
+2-TZM-766/images/product-Icons_Email_generic.png" width=3D"50" height=3D"50=
+"                                                      style=3D"display: bl=
+ock; border: 0px; font-family: Helvetica, Arial, sans-serif;"              =
+                                        constrain=3D"true" imagepreview=3D"=
+false"/></a></td>     <td align=3D"left"         style=3D"font-family: Helv=
+etica, Arial, sans-serif; padding: 0; font-size: 15px; line-height: 22px; c=
+olor: #000000;">         <p style=3D"margin: 0;"><a                 href=3D=
+ "http://email.awscloud.com/ek4OWM00020ZT104d4EOd0t"                 style=
+=3D"color: #527fff; text-decoration: none; font-size: 16px;" target=3D"_bla=
+nk" title=3D"Introducing AWS Tools for Microsoft Visual Studio Team Service=
+s" >Introducing AWS Tools for Microsoft Visual Studio Team Services</a>    =
+     </p>     </td> </tr>                  <tr>     <td width=3D"60" valign=
+=3D"top" style=3D"font-family: Helvetica, Arial, sans-serif;">         <a h=
+ref=3D "http://email.awscloud.com/WT04FkZdO2X0Mtd0044O100"            targe=
+t=3D"_blank" title=3D"Introducing AWS Migration Hub" ><img src=3D"https://p=
+ages.awscloud.com/rs/112-TZM-766/images/migration-logo.png" width=3D"50" he=
+ight=3D"50"                                                      style=3D"d=
+isplay: block; border: 0px; font-family: Helvetica, Arial, sans-serif;"    =
+                                                  constrain=3D"true" imagep=
+review=3D"false"/></a></td>     <td align=3D"left"         style=3D"font-fa=
+mily: Helvetica, Arial, sans-serif; padding: 0; font-size: 15px; line-heigh=
+t: 22px; color: #000000;">         <p style=3D"margin: 0;"><a              =
+   href=3D "http://email.awscloud.com/WT04FkZdO2X0Mtd0044O100"             =
+    style=3D"color: #527fff; text-decoration: none; font-size: 16px;" targe=
+t=3D"_blank" title=3D"Introducing AWS Migration Hub" >Introducing AWS Migra=
+tion Hub</a>         </p>     </td> </tr>                  <tr>     <td wid=
+th=3D"60" valign=3D"top" style=3D"font-family: Helvetica, Arial, sans-serif=
+;">         <a href=3D "http://email.awscloud.com/F4OZO00YG4T2d014000Mtkd" =
+           target=3D"_blank" title=3D"AWS CodeDeploy Now Supports Using App=
+lication Load Balancers for Blue/Green and In-Place Deployments" ><img src=
+=3D"https://s3.amazonaws.com/aws-email-assets/Product+Category+Icons+250x25=
+0/Product_Icons_Grey_DevOps.png" width=3D"50" height=3D"50"                =
+                                      style=3D"display: block; border: 0px;=
+ font-family: Helvetica, Arial, sans-serif;"                               =
+                       constrain=3D"true" imagepreview=3D"false"/></a></td>=
+     <td align=3D"left"         style=3D"font-family: Helvetica, Arial, san=
+s-serif; padding: 0; font-size: 15px; line-height: 22px; color: #000000;"> =
+        <p style=3D"margin: 0;"><a                 href=3D "http://email.aw=
+scloud.com/F4OZO00YG4T2d014000Mtkd"                 style=3D"color: #527fff=
+; text-decoration: none; font-size: 16px;" target=3D"_blank" title=3D"AWS C=
+odeDeploy Now Supports Using Application Load Balancers for Blue/Green and =
+In-Place Deployments" >AWS CodeDeploy Now Supports Using Application Load B=
+alancers for Blue/Green and In-Place Deployments</a>         </p>     </td>=
+ </tr>                  <tr>     <td width=3D"60" valign=3D"top" style=3D"f=
+ont-family: Helvetica, Arial, sans-serif;">         <a href=3D "http://emai=
+l.awscloud.com/o00Zk00H1004dT4dOMZt4O2"            target=3D"_blank" title=
+=3D"VPC Endpoints for Amazon DynamoDB Now Generally Available" ><img src=3D=
+"https://pages.awscloud.com/rs/112-TZM-766/images/product-Icons_Email_gener=
+ic.png" width=3D"50" height=3D"50"                                         =
+             style=3D"display: block; border: 0px; font-family: Helvetica, =
+Arial, sans-serif;"                                                      co=
+nstrain=3D"true" imagepreview=3D"false"/></a></td>     <td align=3D"left"  =
+       style=3D"font-family: Helvetica, Arial, sans-serif; padding: 0; font=
+-size: 15px; line-height: 22px; color: #000000;">         <p style=3D"margi=
+n: 0;"><a                 href=3D "http://email.awscloud.com/o00Zk00H1004dT=
+4dOMZt4O2"                 style=3D"color: #527fff; text-decoration: none; =
+font-size: 16px;" target=3D"_blank" title=3D"VPC Endpoints for Amazon Dynam=
+oDB Now Generally Available" >VPC Endpoints for Amazon DynamoDB Now General=
+ly Available</a>         </p>     </td> </tr>                  <tr>     <td=
+ width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, Arial, sans-s=
+erif;">         <a href=3D "http://email.awscloud.com/B404JT0Mk000d22Z0O0Od=
+4t"            target=3D"_blank" title=3D"Use Apache Spark and Hive on Amaz=
+on EMR with the AWS Glue Data Catalog" ><img src=3D"https://pages.awscloud.=
+com/rs/112-TZM-766/images/product-Icons_Email_generic.png" width=3D"50" hei=
+ght=3D"50"                                                      style=3D"di=
+splay: block; border: 0px; font-family: Helvetica, Arial, sans-serif;"     =
+                                                 constrain=3D"true" imagepr=
+eview=3D"false"/></a></td>     <td align=3D"left"         style=3D"font-fam=
+ily: Helvetica, Arial, sans-serif; padding: 0; font-size: 15px; line-height=
+: 22px; color: #000000;">         <p style=3D"margin: 0;"><a               =
+  href=3D "http://email.awscloud.com/B404JT0Mk000d22Z0O0Od4t"              =
+   style=3D"color: #527fff; text-decoration: none; font-size: 16px;" target=
+=3D"_blank" title=3D"Use Apache Spark and Hive on Amazon EMR with the AWS G=
+lue Data Catalog" >Use Apache Spark and Hive on Amazon EMR with the AWS Glu=
+e Data Catalog</a>         </p>     </td> </tr>                     See all=
+ recent announcements =C2=BB <http://email.awscloud.com/o00Gk00o1004dT4dOMZ=
+t4O2>
+<http://email.awscloud.com/q4MT0t2OOh0kd140Z0dz004>
+Events & Webinars             <http://email.awscloud.com/dc/KwqiTCOQ16Q1JCi=
+3MdelDzkklPF39CVm0Wb528miNVGHi2YaePLHnZ1z4aSIoPSD7ZUnwOFMvMSesQc6VaLQ_NM6Lu=
+p1nTushsN3z9L8GsEtW7qpnatXS3axO4bGTsvesvxeIjpeyQkTxke8c5vhv16Uv1gMTbQJDdXLQ=
+RDHrnCKg8jAb6r-L8fTDu8Qw4O98aKRLXFxGAjampM2rjlRrV-6eEoI5xeh5fPJP_WmsEHuZjnv=
+-et2OSjHtdYr7CLal12TJrG0hGA2POQ7YdoCpw=3D=3D/p0d00T44fM042xkZtO0dO10>  AWS =
+Global Summits 2017 <http://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelDzkkl=
+PF39CVm0Wb528miNVGHi2YaePLHnZ1z4aSIoPSD7ZUnwOFMvMSesQc6VaLQ_NM6Lup1nTushsN3=
+z9L8GsEtW7qpnatXS3axO4bGTsvesvxeIjpeyQkTxke8c5vhv16Uv1gMTbQJDdXLQRDHrnCKg8j=
+Ab6r-L8fTDu8Qw4O98aKRLXFxGAjampM2rjlRrV-6eEoI5xeh5fPJP_WmsEHuZjnv-et2OSjHtd=
+Yr7CLal12TJrG0hGA2POQ7YdoCpw=3D=3D/p0d00T44fM042xkZtO0dO10>                =
+     <http://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD5Wf1a0xWVUzLJ8TEakW=
+NHeE-SgVGwTl1MI1HlV16C7GodoghPuyAcn-e49fY8aVDTPsKXWVJLUHI8zr5AzvicSjQ544AwU=
+XJ5L6BMRllKI1ziJQsmPturd3DYGJlKWZ0ltYImiGKTwHUFMJXLe0lZEj2C_ybNMQNGQGPPp06L=
+AILDUBz9UNKHpb-EdgwsYDyPW5UwVXd1ScazguGnmfWRkthPrm3s1jkuO3MlGHDccEtvOXMW62g=
+Olotwvd4ZBMck-8t_BqSfwg26LeWzCjXs1di9EdNw5n4vTgVGrSgbVP/p0d00T44fM042xkZtO0=
+dO10>  AWS Online Tech Talks                     <http://email.awscloud.com=
+/dc/KwqiTCOQ16Q1JCi3MdelD3cJdYoXYTKCVeoZSuSQ-FHJwrJy-osyewM_Za78r8ib1o0z6Ec=
+GD_2BBAchUDd5NCDjPW7WIqzyL067LGEtN_dpyqBYdprG1aZSTtabYJRshGi3q_WXFB3MTPWqh7=
+SVKkhNI8tbALVXrPOucwkU88teCJ9aiEVRcdLtthAUEKTcfXQp93w0rndOzzyNvinsqKcqfeLY3=
+dkTVHxDYwDKFj7OGqAM2hYJZ6Q8WIAinihyV8BsFYER5YCdFo9gthD1Cg6f7RHohIpTLwIcXroa=
+fes=3D/p0d00T44fM042xkZtO0dO10>  AWS Partner Webinar Series <http://email.a=
+wscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD3cJdYoXYTKCVeoZSuSQ-FHJwrJy-osyewM_Za78=
+r8ib1o0z6EcGD_2BBAchUDd5NCDjPW7WIqzyL067LGEtN_dpyqBYdprG1aZSTtabYJRshGi3q_W=
+XFB3MTPWqh7SVKkhNI8tbALVXrPOucwkU88teCJ9aiEVRcdLtthAUEKTcfXQp93w0rndOzzyNvi=
+nsqKcqfeLY3dkTVHxDYwDKFj7OGqAM2hYJZ6Q8WIAinihyV8BsFYER5YCdFo9gthD1Cg6f7RHoh=
+IpTLwIcXroafes=3D/p0d00T44fM042xkZtO0dO10>
+AWS on Twitter <http://email.awscloud.com/kT2iO0k401d00Zt4O40Ad0M> | AWS on=
+ Facebook <http://email.awscloud.com/JZ0OT40B4M0kj1O4td002d0> | AWS on Goog=
+le+ <http://email.awscloud.com/SZ0M0t0OO2d0kTd440014kC> | AWS Blog <http://=
+email.awscloud.com/A12l0dTZ00kt4d400O0D4OM> | AWS Podcast <http://email.aws=
+cloud.com/DTEd40m0MZO00124Ok0d0t4>=20=20=20
+=20
+   Management Console <http://email.awscloud.com/dc/yuZkfPEXXFT65tdReNucEvT=
+Rm1nqq5Eg9ByfCCxPZLA-dZcf09-NdDKKAYHJm2RGLnL5fKM5fnxw-jcplNz5j-wVjAnrKZWfZt=
+3Hgc-lR4bjQzUyc_XAG5Tovxpqp_JiYJmPifJ94LZjaGGbpY0z8PqVNzLgmFYJhWdZTISB8HpYK=
+4dyIxar0nPKXpDtUSD8dXOQdzKJUT7dDrXAQ37pzd3u4HWvH97LSiOCjSp53BI=3D/p0d00T44f=
+M042xkZtO0dO10> | Getting Started <http://email.awscloud.com/dc/KwqiTCOQ16Q=
+1JCi3MdelD3ZZGcncVANDEUTkhckMhmgWIJnF3Xbo1VxJ3Tw8oB_T4ulvYKghqOz8PBoGtvh7kF=
+zQa6_OjbQZxex1-p_oBmQF8CQc_HqlK50sQhmbLkzYu7u7zJMbmjJktbyNo3PPSNpJ3rfqO8F5V=
+99t-IX41_eIPwC7y92GpZTWZiYunVI4XmSm2uSDPfBD6oJpyC3xQyKGvsbZ79qDTo8fzZzytUsf=
+pusYv_uMnQtCC7u7Lwjy/p0d00T44fM042xkZtO0dO10> | Marketplace <http://email.a=
+wscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD78in__VMI_zdbVDMzZ3kSvR93Srg3KACAeaH-fe=
+V6n81hRMzEP9bTlCMj-NAhhSlmtUeCAeCK9sUUtRn5g4b_mSDzCT8BNsdvoLEFw3SALU058JGs8=
+ioaFgcn0kx00dNpt6VA66b3Ewh4u5_bL2c4tYLetoOi9piw3MFP2Y2w_sfQ3EqSJA0p_ew3JiG_=
+jkEOet9WrHpogtkFYpxYbegn8=3D/p0d00T44fM042xkZtO0dO10> | Pricing <http://ema=
+il.awscloud.com/dc/ajD_BapU74vzOhWVQvr7p2cy1ELLlkvByqWei9bfR-8SptaGS-rFv-pi=
+kON9vR8Rpx5xxKfBoxuQ6ufw_ktvKL327V9FRWYydtK7LFA4vkWlbpGGx2IywQqYcrY2kHnTqCZ=
+2sBK33yQuW3HWjkajZTZ9Qy58Pi-dKJuwaFWFtmOuc_uwl1kv4Mmwlk5Ioehz_qKTB2WLJ3jVGc=
+tDwvQqGVWlZTvgwfNESnMOjSB74dA=3D/p0d00T44fM042xkZtO0dO10> | Partners <http:=
+//email.awscloud.com/dc/ajD_BapU74vzOhWVQvr7pwZEstDV9Ps9416YONcLSEEQ8nCz15D=
+JFdUMtXu5ban4En6r_h1FE1ERqiYL1t_C4AuSuNynKr_tJvxWcDIAMDZj7QZjsZPetSZ9DjtsJD=
+PjIuH9MUxTHKoL_NhXmJy83X4djzbmCj4pCAaHne5G9i-HN6e6ESNNp3Z-pGYqrhJrZhkN9wh2D=
+_UParwIfk9V5NHOstWtFuKE7WJobtRjC3w=3D/p0d00T44fM042xkZtO0dO10> | Documentat=
+ion <http://email.awscloud.com/dc/ajD_BapU74vzOhWVQvr7p-ZQ749iALJ6Yd3d1oPtC=
+01N1IC_o2OvptCjYrzUTP1puCbsmnYTBq7PNWYX3xXqFlysXtU9JcmwlkS5xSPi67kghq69WjyQ=
+jhlDxvgDTApp2q86GlhpscIWdbrj-ZUPXFU0Z2zc1dsOqjf7oD0rfmK2fxsvsZTn8s8Pz01K7dl=
+3CUjkxW_ekR4okHeDCXqVYlXNC9rK3vi9UAw1A3xD7pc=3D/p0d00T44fM042xkZtO0dO10> | =
+Training <http://email.awscloud.com/dc/ajD_BapU74vzOhWVQvr7p_qWKeonTop1TVJl=
+Hau9PECFxjja7QHfn-JMK0tqw6ZrrGINzNBQknY526gvFQc6VQe3Wooi9OQjhScbh5WguF5OSvw=
+PS6nndmoyo8L01Awmom1JRSEsr_Mo7w4AwWxOW1Fo3TvOJesBjEt6rJItu4S-8Xo2iY8ctap4zs=
+Ktc7pNa0u2XWTuoz5xWsWqeF0Je0DQ8bKhYcN6bDF8IHb7FPw=3D/p0d00T44fM042xkZtO0dO1=
+0> | Events & Webinars <http://email.awscloud.com/dc/ajD_BapU74vzOhWVQvr7p9=
+MwfMxNMOCe_0VHXzfN8dN-Pg8LCpQSQaN0TBrjXosTKUJTx1GIeNIsspGz_9dL_11umeybChNvk=
+obrYB00rgpur3AeMQjmB8UaGx2MJ_DvOav1tnAl85CD08zDBXqUVYqagZn6UxV1sajO9LMm5jNL=
+QYY5zn_HDBxB6sV9gi_QhoYGJUB9BQimBOJHd0mYpfYAcj84h3qp30Ayy48O6BPcacFv0b2f6zG=
+39Kc2ug5Y/p0d00T44fM042xkZtO0dO10>=20=20=20
+=20
+      Not interested in receiving our weekly AWS Announcement email? Opt-ou=
+t here <http://email.awscloud.com/dc/sRhgdM26bquWWERQj_H99vaUy9noK3MKMZnM3y=
+aiQier0jr2eNg4qR8hLpej4YQAQ-0bafH6NusSHS740kc1dHN3ftFqqUDjSu92V3pNQpvDHEAdk=
+eaB3VwknXdxWsKah79y-4YFr748vnN84KReEzRWaacXvv5Gbi2tVyQjsit2htSukysopX5z2Yo9=
+Mfcx2euaxHDd2gThx2oea2VRPiF6a_1SHj2NlnRnjW1Ybggk0CBmfS0j7brzMKL8mxT1N1TPyyH=
+Y5vRw7V4usggj7w=3D=3D/p0d00T44fM042xkZtO0dO10>.=20
+ We hope you enjoyed this email. If you'd rather not receive future emails =
+from Amazon Web Services, unsubscribe here <http://email.awscloud.com/dc/sR=
+hgdM26bquWWERQj_H99lCavgYp1xy4_-5c9n1WxRAg-Iit3iVTUYZUZlQmzz1BTdI04NvsSqvrT=
+M6rSnQGNK7Z_G6-zH4bcFNO__1cW3s6neaOITFtFE6iKvt_WyLfi3cO-9uZv2fbPEmIwLFUaZNq=
+JnbTJ3S123oMIE6ZtLtsSWp_76pcJ-idQDrgLcgEEdJcIYHhT0Hwya93Dn52YLC4aut06xmrzoQ=
+ZqwxUxFG2WGJ-H4XJFb344rPP49oUPsOTWU_zcGBpxjiCg7Uozw=3D=3D/p0d00T44fM042xkZt=
+O0dO10>.   Amazon Web Services, Inc. is a subsidiary of Amazon.com, Inc. Am=
+azon.com is a registered trademark of Amazon.com.   This message was produc=
+ed and distributed by Amazon Web Services, Inc., 410 Terry Ave. North, Seat=
+tle, WA 98109.   =C2=A9 2017, Amazon Web Services, Inc. or its affiliates. =
+All rights reserved. Read our Privacy Policy <http://email.awscloud.com/dc/=
+KwqiTCOQ16Q1JCi3MdelD6mgc6L_A9yJFl4Y46lWCAPt-0wYpKftx8DgRuOQm-JCCoCcPbPeXmd=
+tsuDuv2EZU0b6SlOerGtET3uKJcT_NvphFRNf_aIluzZ8Vx0lfAWtXZTZNirr3PZWgz-owv-36T=
+V7uPiGaQ8oZneBA-hd5ghd5ne84Pi3X7YSF-8z_kA5ZTlAneldHC-BfuLGiQb3QR2ZBqkrH3QFA=
+iT0PGf_nSY=3D/p0d00T44fM042xkZtO0dO10>.
+
+--------------------------------------------
+
+------=_Part_859160392_1452526723.1503420352032
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+<head>=20
+<meta name=3D"viewport" content=3D"width=3Ddevice-width" />=20
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" />=
+=20
+<link rel=3D"icon" sizes=3D"16x16 32x32" href=3D"http://aws.amazon.com/favi=
+con.ico" />=20
+<title>Amazon Web Services</title>=20
+<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->=20
+<style type=3D"text/css">
+/* CLIENT-SPECIFIC STYLES */
+body, table, td, a {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+}
+table, td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+}
+img {
+        -ms-interpolation-mode: bicubic;
+}
+/* RESET STYLES */
+img {
+        border: 0;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+}
+table {
+        border-collapse: collapse !important;
+}
+body {
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+}
+/* iOS BLUE LINKS */
+a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+}
+
+/* MOBILE STYLES */
+@media screen and (max-width: 600px) {
+.img-max {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+}
+.max-width {
+        max-width: 100% !important;
+}
+.mobile-wrapper {
+        width: 85% !important;
+        max-width: 85% !important;
+}
+.mobile-padding {
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+}
+}
+/* ANDRfOID CENTER FIX */
+div[style*=3D"margin: 16px 0;"] {
+        margin: 0 !important;
+}
+</style>=20
+</head>=20
+<body style=3D"margin:0 !important; padding:0; !important background-color:=
+#ffffff; " bgcolor=3D"#FFFFFF">
+<center class=3D"wrapper" style=3D"width:100%; -webkit-text-size-adjust:100=
+%; -ms-text-size-adjust:100%; ">
+<table align=3D"center" calls=3D"img-max" border=3D"0" cellpadding=3D"10" c=
+ellspacing=3D"0" style=3D"max-width:600px; margin:0 auto; ">
+<tbody>
+<tr style=3D"">
+<!-- Hidden Preheader -->=20
+<td style=3D"display:none !important; visibility:hidden; mso-hide:all; font=
+-size:1px; color:#ffffff; line-height:1px; max-height:0px; max-width:0px; o=
+pacity:0; overflow:hidden; ">
+<div class=3D"mktEditable" id=3D"Pre-Header" style=3D"">
+<p>A Weekly Review of the Latest Announcements from AWS</p>
+</div></td>
+</tr>
+<tr style=3D"">
+<td align=3D"center" valign=3D"top" width=3D"100%" background=3D"https://pa=
+ges.awscloud.com/rs/112-TZM-766/images/600x200_orange-background.png" bgcol=
+or=3D"#FF9D00" style=3D"background:#FF9D00 url('https://pages.awscloud.com/=
+rs/112-TZM-766/images/600x200_orange-background.png'); background-size:cove=
+r; padding:0px; box-shadow:0px 12px 10px 0px rgba(68,68,68,0.75); " class=
+=3D"mobile-padding">
+<!--[if gte mso 9]>
+  <v:rect xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"true" stroke=3D=
+"false" style=3D"width:620px;width:620;height:150px;">
+    <v:fill type=3D"tile" src=3D"https://pages.awscloud.com/rs/112-TZM-766/=
+images/600x200_orange-background.png" color=3D"#FF9D00" />
+    <v:textbox inset=3D"0,0,0,0">
+  <![endif]-->
+<!--[if (gte mso 9)|(IE)]>
+=20=20=20=20=20=20=20=20=20
+<table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" wi=
+dth=3D"600">
+<tr>
+<td align=3D"center" valign=3D"top" width=3D"600" style=3D"padding-top:10px=
+;>
+          <![endif]-->=20
+<div class=3D"mktEditable" id=3D"Header" style=3D"">
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" style=3D"max-width: 600px;">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"padding: 20px 10px 10px; font-fa=
+mily: HelveticaNeue,Helvetica, Arial, sans-serif;"> <h1 style=3D"font-size:=
+ 28px; color: #ffffff; font-family: HelveticaNeue,Helvetica, Arial, sans-se=
+rif;">AWS Release&nbsp;Notes</h1> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" style=3D"max-width: 600px;">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" valign=3D"top" style=3D"padding: 10px 10px 20px 10px; fo=
+nt-family: HelveticaNeue,Helvetica, Arial, sans-serif;"> <p style=3D"color:=
+ #ffffff; font-size: 16px; letter-spacing: 1px; line-height: 20px; margin: =
+0; font-family: Helvetica, Arial, sans-serif;">A Weekly Review of the Lates=
+t Announcements from&nbsp;AWS</p> </td>=20
+<td align=3D"right" valign=3D"bottom" style=3D"padding: 0px 10px 20px 10px;=
+"><a href=3D
+"http://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelDwuMHWwcSjeJDqaI_p35Wy7Hq=
+RwTMubqvqQCZd5mBwx_rUNK5EvHdmdL_1BScwC_9OfYv3QV0IsPP56eBJUL7nfk8XSDvk9iUcpI=
+TqD4zdgwTAMhY6mvppTahRhEkZj1Ri6_i3tsVzDt1tmdukF_icGczrBvfUzawC6AWPWMe9BPtc_=
+JU5tu72oAAGgevnxj-q0usgfHNgWzvl0hD3esypDRj5uHc4i5Pf3w3OM9kgM0qHbGljASqsbpmo=
+LMwkiEn_H3DG4-6jHT5s1TjGwYnvo=3D/p0d00T44fM042xkZtO0dO10" target=3D"_blank"
+><img src=3D"https://s3.amazonaws.com/aws-email-assets/AWS_Logo_W_200x75.pn=
+g" width=3D"110" border=3D"0" style=3D"display: block;" /></a></td>=20
+</tr>=20
+</tbody>=20
+</table>
+</div>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+<!--[if gte mso 9]>
+        </v:textbox>
+      </v:rect>
+      <![endif]--></td>
+</tr>
+<!-- Body -->
+<!-- Release Notes -->=20
+<tr style=3D"">
+<td align=3D"center" style=3D"font-family:Helvetica, Arial, sans-serif; pad=
+ding-top:20px; ">
+<!--[if (gte mso 9)|(IE)]>
+<table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" wi=
+dth=3D"600">
+<tr>
+<td align=3D"center" valign=3D"top" width=3D"600">
+      <![endif]-->=20
+<div class=3D"mktEditable" id=3D"Body-section" style=3D"">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"max-width: 600px;">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" style=3D"font-family: Helvetica, Arial, sans-serif; padd=
+ing: 0px 20px; font-size: 20px; line-height: 28px;" class=3D"padding"> <p s=
+tyle=3D"color: #333333; margin: 0;"> <br /> </p> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#FFFFFF" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/wZOMkdtT=
+O0040d4p2040H01"            target=3D"_blank" title=3D"AWS Config Supports =
+New Managed Rules for Securing Amazon S3 Buckets" ><img src=3D"https://s3.a=
+mazonaws.com/aws-email-assets/Product+Category+Icons+250x250/Product_Icons_=
+Grey_Management_Tools.png" width=3D"50" height=3D"50"                      =
+                                style=3D"display: block; border: 0px; font-=
+family: Helvetica, Arial, sans-serif;"                                     =
+                 constrain=3D"true" imagepreview=3D"false"/></a></td>     <=
+td align=3D"left"         style=3D"font-family: Helvetica, Arial, sans-seri=
+f; padding: 0; font-size: 15px; line-height: 22px; color: #000000;">       =
+  <p style=3D"margin: 0;"><a                 href=3D "http://email.awscloud=
+.com/wZOMkdtTO0040d4p2040H01"                 style=3D"color: #527fff; text=
+-decoration: none; font-size: 16px;" target=3D"_blank" title=3D"AWS Config =
+Supports New Managed Rules for Securing Amazon S3 Buckets" >AWS Config Supp=
+orts New Managed Rules for Securing Amazon S3 Buckets</a>         </p>     =
+</td> </tr>=20=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#E5E5E5" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0; background-color:=
+ #e5e5e5;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/B404qT0M=
+k000d21Z0OIOd4t"            target=3D"_blank" title=3D"Amazon EFS Now Suppo=
+rts Encryption of Data at Rest" ><img src=3D"https://s3.amazonaws.com/aws-e=
+mail-assets/Product+Category+Icons+250x250/Product_Icons_Grey_Storage_Deliv=
+ery.png" width=3D"50" height=3D"50"                                        =
+              style=3D"display: block; border: 0px; font-family: Helvetica,=
+ Arial, sans-serif;"                                                      c=
+onstrain=3D"true" imagepreview=3D"false"/></a></td>     <td align=3D"left" =
+        style=3D"font-family: Helvetica, Arial, sans-serif; padding: 0; fon=
+t-size: 15px; line-height: 22px; color: #000000;">         <p style=3D"marg=
+in: 0;"><a                 href=3D "http://email.awscloud.com/B404qT0Mk000d=
+21Z0OIOd4t"                 style=3D"color: #527fff; text-decoration: none;=
+ font-size: 16px;" target=3D"_blank" title=3D"Amazon EFS Now Supports Encry=
+ption of Data at Rest" >Amazon EFS Now Supports Encryption of Data at Rest<=
+/a>         </p>     </td> </tr>=20=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#FFFFFF" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/m200kr00=
+d44t4OdOZ1J0TM0"            target=3D"_blank" title=3D"AWS CloudTrail Integ=
+ration is Now Available in Amazon Lex" ><img src=3D"https://pages.awscloud.=
+com/rs/112-TZM-766/images/product-Icons_Email_generic.png" width=3D"50" hei=
+ght=3D"50"                                                      style=3D"di=
+splay: block; border: 0px; font-family: Helvetica, Arial, sans-serif;"     =
+                                                 constrain=3D"true" imagepr=
+eview=3D"false"/></a></td>     <td align=3D"left"         style=3D"font-fam=
+ily: Helvetica, Arial, sans-serif; padding: 0; font-size: 15px; line-height=
+: 22px; color: #000000;">         <p style=3D"margin: 0;"><a               =
+  href=3D "http://email.awscloud.com/m200kr00d44t4OdOZ1J0TM0"              =
+   style=3D"color: #527fff; text-decoration: none; font-size: 16px;" target=
+=3D"_blank" title=3D"AWS CloudTrail Integration is Now Available in Amazon =
+Lex" >AWS CloudTrail Integration is Now Available in Amazon Lex</a>        =
+ </p>     </td> </tr>=20=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#E5E5E5" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0; background-color:=
+ #e5e5e5;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/NZ00KT4t=
+0024d1M4skd0O0O"            target=3D"_blank" title=3D"AWS Batch Adds Suppo=
+rt for AWS CloudFormation" ><img src=3D"https://pages.awscloud.com/rs/112-T=
+ZM-766/images/product-Icons_Email_generic.png" width=3D"50" height=3D"50"  =
+                                                    style=3D"display: block=
+; border: 0px; font-family: Helvetica, Arial, sans-serif;"                 =
+                                     constrain=3D"true" imagepreview=3D"fal=
+se"/></a></td>     <td align=3D"left"         style=3D"font-family: Helveti=
+ca, Arial, sans-serif; padding: 0; font-size: 15px; line-height: 22px; colo=
+r: #000000;">         <p style=3D"margin: 0;"><a                 href=3D "h=
+ttp://email.awscloud.com/NZ00KT4t0024d1M4skd0O0O"                 style=3D"=
+color: #527fff; text-decoration: none; font-size: 16px;" target=3D"_blank" =
+title=3D"AWS Batch Adds Support for AWS CloudFormation" >AWS Batch Adds Sup=
+port for AWS CloudFormation</a>         </p>     </td> </tr>=20=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#FFFFFF" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/R00OdO4Z=
+4t0000d2TLM1tk4"            target=3D"_blank" title=3D"Introducing AWS SAM =
+Local, a CLI Tool to Test AWS Lambda Functions Locally" ><img src=3D"https:=
+//s3.amazonaws.com/aws-email-assets/Product+Category+Icons+250x250/Product_=
+Icons_Grey_Compute.png" width=3D"50" height=3D"50"                         =
+                             style=3D"display: block; border: 0px; font-fam=
+ily: Helvetica, Arial, sans-serif;"                                        =
+              constrain=3D"true" imagepreview=3D"false"/></a></td>     <td =
+align=3D"left"         style=3D"font-family: Helvetica, Arial, sans-serif; =
+padding: 0; font-size: 15px; line-height: 22px; color: #000000;">         <=
+p style=3D"margin: 0;"><a                 href=3D "http://email.awscloud.co=
+m/R00OdO4Z4t0000d2TLM1tk4"                 style=3D"color: #527fff; text-de=
+coration: none; font-size: 16px;" target=3D"_blank" title=3D"Introducing AW=
+S SAM Local, a CLI Tool to Test AWS Lambda Functions Locally" >Introducing =
+AWS SAM Local, a CLI Tool to Test AWS Lambda Functions Locally</a>         =
+</p>     </td> </tr>=20=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#E5E5E5" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0; background-color:=
+ #e5e5e5;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/y41TO4dk=
+0t0OMZM4du00200"            target=3D"_blank" title=3D"Amazon Redshift anno=
+unces Federated Authentication with Single Sign-On " ><img src=3D"https://s=
+3.amazonaws.com/aws-email-assets/Product+Category+Icons+250x250/Product_Ico=
+ns_Grey_Database.png" width=3D"50" height=3D"50"                           =
+                           style=3D"display: block; border: 0px; font-famil=
+y: Helvetica, Arial, sans-serif;"                                          =
+            constrain=3D"true" imagepreview=3D"false"/></a></td>     <td al=
+ign=3D"left"         style=3D"font-family: Helvetica, Arial, sans-serif; pa=
+dding: 0; font-size: 15px; line-height: 22px; color: #000000;">         <p =
+style=3D"margin: 0;"><a                 href=3D "http://email.awscloud.com/=
+y41TO4dk0t0OMZM4du00200"                 style=3D"color: #527fff; text-deco=
+ration: none; font-size: 16px;" target=3D"_blank" title=3D"Amazon Redshift =
+announces Federated Authentication with Single Sign-On " >Amazon Redshift a=
+nnounces Federated Authentication with Single Sign-On </a>         </p>    =
+ </td> </tr>=20=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#FFFFFF" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/DTNd40v0=
+MZO00124Ok0d0t4"            target=3D"_blank" title=3D"Amazon Redshift anno=
+unces enhanced support for viewing external Redshift Spectrum tables" ><img=
+ src=3D"https://s3.amazonaws.com/aws-email-assets/Product+Category+Icons+25=
+0x250/Product_Icons_Grey_Database.png" width=3D"50" height=3D"50"          =
+                                            style=3D"display: block; border=
+: 0px; font-family: Helvetica, Arial, sans-serif;"                         =
+                             constrain=3D"true" imagepreview=3D"false"/></a=
+></td>     <td align=3D"left"         style=3D"font-family: Helvetica, Aria=
+l, sans-serif; padding: 0; font-size: 15px; line-height: 22px; color: #0000=
+00;">         <p style=3D"margin: 0;"><a                 href=3D "http://em=
+ail.awscloud.com/DTNd40v0MZO00124Ok0d0t4"                 style=3D"color: #=
+527fff; text-decoration: none; font-size: 16px;" target=3D"_blank" title=3D=
+"Amazon Redshift announces enhanced support for viewing external Redshift S=
+pectrum tables" >Amazon Redshift announces enhanced support for viewing ext=
+ernal Redshift Spectrum tables</a>         </p>     </td> </tr>=20=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#E5E5E5" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0; background-color:=
+ #e5e5e5;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/HT000440=
+kdwO1Md2O4Z00Ot"            target=3D"_blank" title=3D"Amazon Athena Now In=
+tegrates With AWS Glue" ><img src=3D"https://pages.awscloud.com/rs/112-TZM-=
+766/images/product-Icons_Email_generic.png" width=3D"50" height=3D"50"     =
+                                                 style=3D"display: block; b=
+order: 0px; font-family: Helvetica, Arial, sans-serif;"                    =
+                                  constrain=3D"true" imagepreview=3D"false"=
+/></a></td>     <td align=3D"left"         style=3D"font-family: Helvetica,=
+ Arial, sans-serif; padding: 0; font-size: 15px; line-height: 22px; color: =
+#000000;">         <p style=3D"margin: 0;"><a                 href=3D "http=
+://email.awscloud.com/HT000440kdwO1Md2O4Z00Ot"                 style=3D"col=
+or: #527fff; text-decoration: none; font-size: 16px;" target=3D"_blank" tit=
+le=3D"Amazon Athena Now Integrates With AWS Glue" >Amazon Athena Now Integr=
+ates With AWS Glue</a>         </p>     </td> </tr>=20=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#FFFFFF" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/G4Z0M100=
+OxdPT0tO0240dk4"            target=3D"_blank" title=3D"Announcing the new A=
+WS CloudHSM, offering cost effective hardware key management at cloud scale=
+ for sensitive and regulated workloads" ><img src=3D"https://s3.amazonaws.c=
+om/aws-email-assets/Product+Category+Icons+250x250/Product_Icons_Grey_Secur=
+ity_Identity.png" width=3D"50" height=3D"50"                               =
+                       style=3D"display: block; border: 0px; font-family: H=
+elvetica, Arial, sans-serif;"                                              =
+        constrain=3D"true" imagepreview=3D"false"/></a></td>     <td align=
+=3D"left"         style=3D"font-family: Helvetica, Arial, sans-serif; paddi=
+ng: 0; font-size: 15px; line-height: 22px; color: #000000;">         <p sty=
+le=3D"margin: 0;"><a                 href=3D "http://email.awscloud.com/G4Z=
+0M100OxdPT0tO0240dk4"                 style=3D"color: #527fff; text-decorat=
+ion: none; font-size: 16px;" target=3D"_blank" title=3D"Announcing the new =
+AWS CloudHSM, offering cost effective hardware key management at cloud scal=
+e for sensitive and regulated workloads" >Announcing the new AWS CloudHSM, =
+offering cost effective hardware key management at cloud scale for sensitiv=
+e and regulated workloads</a>         </p>     </td> </tr>=20=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#E5E5E5" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0; background-color:=
+ #e5e5e5;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/n0Td0Qy0=
+04kO0MZ0O424t1d"            target=3D"_blank" title=3D"Amazon Virtual Priva=
+te Cloud (VPC) now allows customers to recover accidentally released EIPs" =
+><img src=3D"https://pages.awscloud.com/rs/112-TZM-766/images/product-Icons=
+_Email_generic.png" width=3D"50" height=3D"50"                             =
+                         style=3D"display: block; border: 0px; font-family:=
+ Helvetica, Arial, sans-serif;"                                            =
+          constrain=3D"true" imagepreview=3D"false"/></a></td>     <td alig=
+n=3D"left"         style=3D"font-family: Helvetica, Arial, sans-serif; padd=
+ing: 0; font-size: 15px; line-height: 22px; color: #000000;">         <p st=
+yle=3D"margin: 0;"><a                 href=3D "http://email.awscloud.com/n0=
+Td0Qy004kO0MZ0O424t1d"                 style=3D"color: #527fff; text-decora=
+tion: none; font-size: 16px;" target=3D"_blank" title=3D"Amazon Virtual Pri=
+vate Cloud (VPC) now allows customers to recover accidentally released EIPs=
+" >Amazon Virtual Private Cloud (VPC) now allows customers to recover accid=
+entally released EIPs</a>         </p>     </td> </tr>=20=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#FFFFFF" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/O010dd4M=
+0024kTOR0z0t4OZ"            target=3D"_blank" title=3D"Amazon Redshift Spec=
+trum Now Integrates with AWS Glue" ><img src=3D"https://pages.awscloud.com/=
+rs/112-TZM-766/images/product-Icons_Email_generic.png" width=3D"50" height=
+=3D"50"                                                      style=3D"displ=
+ay: block; border: 0px; font-family: Helvetica, Arial, sans-serif;"        =
+                                              constrain=3D"true" imageprevi=
+ew=3D"false"/></a></td>     <td align=3D"left"         style=3D"font-family=
+: Helvetica, Arial, sans-serif; padding: 0; font-size: 15px; line-height: 2=
+2px; color: #000000;">         <p style=3D"margin: 0;"><a                 h=
+ref=3D "http://email.awscloud.com/O010dd4M0024kTOR0z0t4OZ"                 =
+style=3D"color: #527fff; text-decoration: none; font-size: 16px;" target=3D=
+"_blank" title=3D"Amazon Redshift Spectrum Now Integrates with AWS Glue" >A=
+mazon Redshift Spectrum Now Integrates with AWS Glue</a>         </p>     <=
+/td> </tr>=20=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#E5E5E5" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0; background-color:=
+ #e5e5e5;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/ek4OSM00=
+020ZT104d4AOd0t"            target=3D"_blank" title=3D"Introducing Amazon M=
+acie for S3" ><img src=3D"https://pages.awscloud.com/rs/112-TZM-766/images/=
+product-Icons_Email_generic.png" width=3D"50" height=3D"50"                =
+                                      style=3D"display: block; border: 0px;=
+ font-family: Helvetica, Arial, sans-serif;"                               =
+                       constrain=3D"true" imagepreview=3D"false"/></a></td>=
+     <td align=3D"left"         style=3D"font-family: Helvetica, Arial, san=
+s-serif; padding: 0; font-size: 15px; line-height: 22px; color: #000000;"> =
+        <p style=3D"margin: 0;"><a                 href=3D "http://email.aw=
+scloud.com/ek4OSM00020ZT104d4AOd0t"                 style=3D"color: #527fff=
+; text-decoration: none; font-size: 16px;" target=3D"_blank" title=3D"Intro=
+ducing Amazon Macie for S3" >Introducing Amazon Macie for S3</a>         </=
+p>     </td> </tr>=20=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#FFFFFF" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/P040k2tT=
+OZ0dTd010OBM440"            target=3D"_blank" title=3D"AWS CloudTrail Event=
+ History Now Available to All Customers" ><img src=3D"https://pages.awsclou=
+d.com/rs/112-TZM-766/images/product-Icons_Email_generic.png" width=3D"50" h=
+eight=3D"50"                                                      style=3D"=
+display: block; border: 0px; font-family: Helvetica, Arial, sans-serif;"   =
+                                                   constrain=3D"true" image=
+preview=3D"false"/></a></td>     <td align=3D"left"         style=3D"font-f=
+amily: Helvetica, Arial, sans-serif; padding: 0; font-size: 15px; line-heig=
+ht: 22px; color: #000000;">         <p style=3D"margin: 0;"><a             =
+    href=3D "http://email.awscloud.com/P040k2tTOZ0dTd010OBM440"            =
+     style=3D"color: #527fff; text-decoration: none; font-size: 16px;" targ=
+et=3D"_blank" title=3D"AWS CloudTrail Event History Now Available to All Cu=
+stomers" >AWS CloudTrail Event History Now Available to All Customers</a>  =
+       </p>     </td> </tr>=20=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#E5E5E5" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0; background-color:=
+ #e5e5e5;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/A12C0dTZ=
+00kt4d400O0U4OM"            target=3D"_blank" title=3D"Amazon EC2 Systems M=
+anager Adds New Maintenance Window Task Types for Automation, AWS Step Func=
+tions, and AWS Lambda" ><img src=3D"https://s3.amazonaws.com/aws-email-asse=
+ts/Product+Category+Icons+250x250/Product_Icons_Grey_Compute.png" width=3D"=
+50" height=3D"50"                                                      styl=
+e=3D"display: block; border: 0px; font-family: Helvetica, Arial, sans-serif=
+;"                                                      constrain=3D"true" =
+imagepreview=3D"false"/></a></td>     <td align=3D"left"         style=3D"f=
+ont-family: Helvetica, Arial, sans-serif; padding: 0; font-size: 15px; line=
+-height: 22px; color: #000000;">         <p style=3D"margin: 0;"><a        =
+         href=3D "http://email.awscloud.com/A12C0dTZ00kt4d400O0U4OM"       =
+          style=3D"color: #527fff; text-decoration: none; font-size: 16px;"=
+ target=3D"_blank" title=3D"Amazon EC2 Systems Manager Adds New Maintenance=
+ Window Task Types for Automation, AWS Step Functions, and AWS Lambda" >Ama=
+zon EC2 Systems Manager Adds New Maintenance Window Task Types for Automati=
+on, AWS Step Functions, and AWS Lambda</a>         </p>     </td> </tr>=20=
+=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#FFFFFF" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/rd0V0M01=
+4ZDOOkT4d0240t0"            target=3D"_blank" title=3D"Introducing AWS Glue=
+: A Simple, Flexible, and Cost-Effective Extract, Transfer, and Load (ETL) =
+Service" ><img src=3D"https://s3.amazonaws.com/aws-email-assets/Product+Cat=
+egory+Icons+250x250/Product_Icons_Grey_Analytics.png" width=3D"50" height=
+=3D"50"                                                      style=3D"displ=
+ay: block; border: 0px; font-family: Helvetica, Arial, sans-serif;"        =
+                                              constrain=3D"true" imageprevi=
+ew=3D"false"/></a></td>     <td align=3D"left"         style=3D"font-family=
+: Helvetica, Arial, sans-serif; padding: 0; font-size: 15px; line-height: 2=
+2px; color: #000000;">         <p style=3D"margin: 0;"><a                 h=
+ref=3D "http://email.awscloud.com/rd0V0M014ZDOOkT4d0240t0"                 =
+style=3D"color: #527fff; text-decoration: none; font-size: 16px;" target=3D=
+"_blank" title=3D"Introducing AWS Glue: A Simple, Flexible, and Cost-Effect=
+ive Extract, Transfer, and Load (ETL) Service" >Introducing AWS Glue: A Sim=
+ple, Flexible, and Cost-Effective Extract, Transfer, and Load (ETL) Service=
+</a>         </p>     </td> </tr>=20=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#E5E5E5" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/ek4OWM00=
+020ZT104d4EOd0t"            target=3D"_blank" title=3D"Introducing AWS Tool=
+s for Microsoft Visual Studio Team Services" ><img src=3D"https://pages.aws=
+cloud.com/rs/112-TZM-766/images/product-Icons_Email_generic.png" width=3D"5=
+0" height=3D"50"                                                      style=
+=3D"display: block; border: 0px; font-family: Helvetica, Arial, sans-serif;=
+"                                                      constrain=3D"true" i=
+magepreview=3D"false"/></a></td>     <td align=3D"left"         style=3D"fo=
+nt-family: Helvetica, Arial, sans-serif; padding: 0; font-size: 15px; line-=
+height: 22px; color: #000000;">         <p style=3D"margin: 0;"><a         =
+        href=3D "http://email.awscloud.com/ek4OWM00020ZT104d4EOd0t"        =
+         style=3D"color: #527fff; text-decoration: none; font-size: 16px;" =
+target=3D"_blank" title=3D"Introducing AWS Tools for Microsoft Visual Studi=
+o Team Services" >Introducing AWS Tools for Microsoft Visual Studio Team Se=
+rvices</a>         </p>     </td> </tr>=20=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#FFFFFF" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0; background-color:=
+ #FFFFFF;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/WT04FkZd=
+O2X0Mtd0044O100"            target=3D"_blank" title=3D"Introducing AWS Migr=
+ation Hub" ><img src=3D"https://pages.awscloud.com/rs/112-TZM-766/images/mi=
+gration-logo.png" width=3D"50" height=3D"50"                               =
+                       style=3D"display: block; border: 0px; font-family: H=
+elvetica, Arial, sans-serif;"                                              =
+        constrain=3D"true" imagepreview=3D"false"/></a></td>     <td align=
+=3D"left"         style=3D"font-family: Helvetica, Arial, sans-serif; paddi=
+ng: 0; font-size: 15px; line-height: 22px; color: #000000;">         <p sty=
+le=3D"margin: 0;"><a                 href=3D "http://email.awscloud.com/WT0=
+4FkZdO2X0Mtd0044O100"                 style=3D"color: #527fff; text-decorat=
+ion: none; font-size: 16px;" target=3D"_blank" title=3D"Introducing AWS Mig=
+ration Hub" >Introducing AWS Migration Hub</a>         </p>     </td> </tr>=
+=20=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#E5E5E5" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/F4OZO00Y=
+G4T2d014000Mtkd"            target=3D"_blank" title=3D"AWS CodeDeploy Now S=
+upports Using Application Load Balancers for Blue/Green and In-Place Deploy=
+ments" ><img src=3D"https://s3.amazonaws.com/aws-email-assets/Product+Categ=
+ory+Icons+250x250/Product_Icons_Grey_DevOps.png" width=3D"50" height=3D"50"=
+                                                      style=3D"display: blo=
+ck; border: 0px; font-family: Helvetica, Arial, sans-serif;"               =
+                                       constrain=3D"true" imagepreview=3D"f=
+alse"/></a></td>     <td align=3D"left"         style=3D"font-family: Helve=
+tica, Arial, sans-serif; padding: 0; font-size: 15px; line-height: 22px; co=
+lor: #000000;">         <p style=3D"margin: 0;"><a                 href=3D =
+"http://email.awscloud.com/F4OZO00YG4T2d014000Mtkd"                 style=
+=3D"color: #527fff; text-decoration: none; font-size: 16px;" target=3D"_bla=
+nk" title=3D"AWS CodeDeploy Now Supports Using Application Load Balancers f=
+or Blue/Green and In-Place Deployments" >AWS CodeDeploy Now Supports Using =
+Application Load Balancers for Blue/Green and In-Place Deployments</a>     =
+    </p>     </td> </tr>=20=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#FFFFFF" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0; background-color:=
+ #FFFFFF;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/o00Zk00H=
+1004dT4dOMZt4O2"            target=3D"_blank" title=3D"VPC Endpoints for Am=
+azon DynamoDB Now Generally Available" ><img src=3D"https://pages.awscloud.=
+com/rs/112-TZM-766/images/product-Icons_Email_generic.png" width=3D"50" hei=
+ght=3D"50"                                                      style=3D"di=
+splay: block; border: 0px; font-family: Helvetica, Arial, sans-serif;"     =
+                                                 constrain=3D"true" imagepr=
+eview=3D"false"/></a></td>     <td align=3D"left"         style=3D"font-fam=
+ily: Helvetica, Arial, sans-serif; padding: 0; font-size: 15px; line-height=
+: 22px; color: #000000;">         <p style=3D"margin: 0;"><a               =
+  href=3D "http://email.awscloud.com/o00Zk00H1004dT4dOMZt4O2"              =
+   style=3D"color: #527fff; text-decoration: none; font-size: 16px;" target=
+=3D"_blank" title=3D"VPC Endpoints for Amazon DynamoDB Now Generally Availa=
+ble" >VPC Endpoints for Amazon DynamoDB Now Generally Available</a>        =
+ </p>     </td> </tr>=20=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#E5E5E5" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>
+ <tr>     <td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, =
+Arial, sans-serif;">         <a href=3D "http://email.awscloud.com/B404JT0M=
+k000d22Z0O0Od4t"            target=3D"_blank" title=3D"Use Apache Spark and=
+ Hive on Amazon EMR with the AWS Glue Data Catalog" ><img src=3D"https://pa=
+ges.awscloud.com/rs/112-TZM-766/images/product-Icons_Email_generic.png" wid=
+th=3D"50" height=3D"50"                                                    =
+  style=3D"display: block; border: 0px; font-family: Helvetica, Arial, sans=
+-serif;"                                                      constrain=3D"=
+true" imagepreview=3D"false"/></a></td>     <td align=3D"left"         styl=
+e=3D"font-family: Helvetica, Arial, sans-serif; padding: 0; font-size: 15px=
+; line-height: 22px; color: #000000;">         <p style=3D"margin: 0;"><a  =
+               href=3D "http://email.awscloud.com/B404JT0Mk000d22Z0O0Od4t" =
+                style=3D"color: #527fff; text-decoration: none; font-size: =
+16px;" target=3D"_blank" title=3D"Use Apache Spark and Hive on Amazon EMR w=
+ith the AWS Glue Data Catalog" >Use Apache Spark and Hive on Amazon EMR wit=
+h the AWS Glue Data Catalog</a>         </p>     </td> </tr>=20=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#FFFFFF" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ padding: 0;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; pa=
+dding: 15px;" colspan=3D"2">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" style=3D"font-family: Helvetica, Arial, sans-serif; padd=
+ing: 0; font-size: 15px; line-height: 22px; color: #000000;"> <p style=3D"m=
+argin: 0; text-align: right;"> <a href=3D
+"http://email.awscloud.com/o00yk00g1004dT4dOMZt4O2" style=3D"color: #527fff=
+; text-decoration: none; font-size: 16px;" target=3D"_blank"
+>See all recent announcements =C2=BB</a> </p> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table>
+</div>
+<!--[if (gte mso 9)|(IE)]>
+      </td>
+</tr>
+</table>
+<![endif]--></td>
+</tr>
+<!-- Two Tile Grid -->=20
+<tr style=3D"">
+<td align=3D"center" height=3D"100%" valign=3D"top" width=3D"100%" style=3D=
+"padding-left:10px; ">
+<div class=3D"mktEditable" id=3D"Two-Tiles" style=3D"">
+<p><a href=3D
+"http://email.awscloud.com/q4MT0t2OOh0kd140Z0dz004" target=3D"_blank"
+><img src=3D"https://pages.awscloud.com/rs/112-TZM-766/images/Merch-Tile_Su=
+rvey1.png" width=3D"600" height=3D"200" border=3D"0" style=3D"display: bloc=
+k;" class=3D"img-max" constrain=3D"true" imagepreview=3D"false" /></a></p>
+</div></td>
+</tr>
+<tr style=3D"">
+<td align=3D"center" style=3D"font-family:Helvetica, Arial, sans-serif; pad=
+ding-top:20px; ">
+<!--[if (gte mso 9)|(IE)]>
+=20=20=20=20=20=20
+<table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" wi=
+dth=3D"600">
+<tr>
+<td align=3D"center" valign=3D"top" width=3D"600">
+      <![endif]-->=20
+<div class=3D"mktEditable" id=3D"Events-and-Webinar" style=3D"">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"max-width: 600px;">=20
+<tbody>=20
+<tr>=20
+<td align=3D"left" style=3D"font-family: Helvetica, Arial, sans-serif; padd=
+ing: 6px 10px; font-size: 20px; line-height: 28px;" class=3D"padding"> <p s=
+tyle=3D"color: #333333; margin: 0;">Events &amp; Webinars</p> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#FFFFFF" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px; background-color: #ffffff;" =
+colspan=3D"2" bgcolor=3D"#FFFFFF">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>=20
+<tr>=20
+<td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, Arial, san=
+s-serif;"><a href=3D
+"http://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelDzkklPF39CVm0Wb528miNVGjp=
+pZPmlaIi6-aXSNAbHAm7W-Q8BqXipGQIvF9clu1wU_QZ5iljWFSEOflDmJl65Sg2EUhiS8mdGE0=
+hlETp_aECl-gudLaXWBzBesibImzh1SWOqETpJyxSeQdviBk-BC9XD4iINFfq6QrtwL_KEAHbM2=
+n3wX1BadU9KrMKIG0DJmcfHXkkhKBCYU68Qm5kVCqpg56WTH6rd4rKv_cs4cn6DJ_cyuRMN44CH=
+3tEbssqz6jz5-0-8OrnvYQucp9_OnoaeAbIMx1yeI0beK3nMu9/p0d00T44fM042xkZtO0dO10"=
+ target=3D"_blank" title=3D"AWS Global Summits 2017"
+><img src=3D"https://pages.awscloud.com/rs/112-TZM-766/images/benefit_calen=
+dar.png" width=3D"50" height=3D"50" style=3D"display: block; border: 0px; f=
+ont-family: Helvetica, Arial, sans-serif;" constrain=3D"false" imagepreview=
+=3D"false" /></a></td>=20
+<td align=3D"left" style=3D"font-family: Helvetica, Arial, sans-serif; padd=
+ing: 0; font-size: 15px; line-height: 22px; color: #000000;"> <p style=3D"m=
+argin: 0;"><a href=3D
+"http://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelDzkklPF39CVm0Wb528miNVGjp=
+pZPmlaIi6-aXSNAbHAm7W-Q8BqXipGQIvF9clu1wU_QZ5iljWFSEOflDmJl65Sg2EUhiS8mdGE0=
+hlETp_aECl-gudLaXWBzBesibImzh1SWOqETpJyxSeQdviBk-BC9XD4iINFfq6QrtwL_KEAHbM2=
+n3wX1BadU9KrMKIG0DJmcfHXkkhKBCYU68Qm5kVCqpg56WTH6rd4rKv_cs4cn6DJ_cyuRMN44CH=
+3tEbssqz6jz5-0-8OrnvYQucp9_OnoaeAbIMx1yeI0beK3nMu9/p0d00T44fM042xkZtO0dO10"=
+ style=3D"color: #527fff; text-decoration: none; font-size: 16px;" target=
+=3D"_blank" title=3D"AWS Global Summits 2017"
+>AWS Global Summits 2017</a></p> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#FFFFFF" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px; background-color: #e5e5e5;" =
+colspan=3D"2" bgcolor=3D"#E5E5E5">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>=20
+<tr>=20
+<td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, Arial, san=
+s-serif;"><a href=3D
+"http://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD5Wf1a0xWVUzLJ8TEakWNHeE-=
+SgVGwTl1MI1HlV16C7GodoghPuyAcn-e49fY8aVDWKe-e6JWge6izn1lKR8C4gqlVxmSAM0d_ja=
+0WGDCMV87NkbMOIKO-Ij0BDZJUY4rO9zq6zotP1e6sPm41rI1WlU6NjVn9l7_T3FGkAx1xpIXyp=
+d_j83xh1HX5iZycGg1di0tZm3Bel9dbSgkTGIRKXlM9LzISfhYg_JUzT-xXDxJ7wOjh3kWdmw4q=
+9kaJRMMVOyranJTbAKtiGn-CtWcA3CKKnD3jL_ga9LF4wk0C2k91Q-ByZQj-dpAeI-0Y3E2LMJ5=
+2vAD7hQfehrM5cuoP0=3D/p0d00T44fM042xkZtO0dO10" target=3D"_blank" title=3D"A=
+WS Online Tech Talks"
+><img src=3D"https://pages.awscloud.com/rs/112-TZM-766/images/benefit_calen=
+dar.png" alt=3D"Webinar" height=3D"50" width=3D"50" constrain=3D"true" imag=
+epreview=3D"false" /></a></td>=20
+<td align=3D"left" style=3D"font-family: Helvetica, Arial, sans-serif; padd=
+ing: 0; font-size: 15px; line-height: 22px; color: #000000;"> <p style=3D"m=
+argin: 0;"><a href=3D
+"http://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD5Wf1a0xWVUzLJ8TEakWNHeE-=
+SgVGwTl1MI1HlV16C7GodoghPuyAcn-e49fY8aVDWKe-e6JWge6izn1lKR8C4gqlVxmSAM0d_ja=
+0WGDCMV87NkbMOIKO-Ij0BDZJUY4rO9zq6zotP1e6sPm41rI1WlU6NjVn9l7_T3FGkAx1xpIXyp=
+d_j83xh1HX5iZycGg1di0tZm3Bel9dbSgkTGIRKXlM9LzISfhYg_JUzT-xXDxJ7wOjh3kWdmw4q=
+9kaJRMMVOyranJTbAKtiGn-CtWcA3CKKnD3jL_ga9LF4wk0C2k91Q-ByZQj-dpAeI-0Y3E2OMRb=
+nkno4Uns9mAbe9lTWg=3D/p0d00T44fM042xkZtO0dO10" style=3D"color: #527fff; tex=
+t-decoration: none; font-size: 16px;" target=3D"_blank" title=3D"AWS Online=
+ Tech Talks"
+>AWS Online Tech Talks</a></p> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr>=20
+<td bgcolor=3D"#FFFFFF" style=3D"font-family: Helvetica, Arial, sans-serif;=
+ border: 1px solid #eeeeee; padding: 0; border-radius: 0;">=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"left" class=3D"responsive-table1">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, sans-serif; bo=
+rder-bottom: 1px solid #eeeeee; padding: 20px; background-color: #ffffff;" =
+colspan=3D"2" bgcolor=3D"#FFFFFF">=20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">=20
+<tbody>=20
+<tr>=20
+<td width=3D"60" valign=3D"top" style=3D"font-family: Helvetica, Arial, san=
+s-serif;"><a href=3D
+"http://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD3cJdYoXYTKCVeoZSuSQ-FHJw=
+rJy-osyewM_Za78r8ib1o0z6EcGD_2BBAchUDd5ND34QqxviiTpyT-ouFgaptQgce0qXfEfSMYZ=
+tnTQjCZdl4m47Zz-3Tb-l9zu0Y_eYdeZqNMDeVbLEOWzRHrpmNL960jUege9zM8Q_gdjg89HKOW=
+-TuCEiCYAv3zTl1Bv8g1Da_Sd7p9TqQocGfGTt2uwxnpFRxglyQ9aMdsS6J-fGS2KH72zdxVBYr=
+oKV5wx_QKzCMqBXj8m-vIDSZenVR7J7O06qgEEqsNoP3Med1Kor9Hp9aJbqqeQoUhUPHEP3Q=3D=
+=3D/p0d00T44fM042xkZtO0dO10" target=3D"_blank" title=3D"AWS Partner Webinar=
+ Series"
+><img src=3D"https://pages.awscloud.com/rs/112-TZM-766/images/benefit_calen=
+dar.png" width=3D"50" height=3D"50" style=3D"display: block; border: 0px; f=
+ont-family: Helvetica, Arial, sans-serif;" constrain=3D"false" imagepreview=
+=3D"false" /></a></td>=20
+<td align=3D"left" style=3D"font-family: Helvetica, Arial, sans-serif; padd=
+ing: 0; font-size: 15px; line-height: 22px; color: #000000;"> <p style=3D"m=
+argin: 0;"><a href=3D
+"http://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD3cJdYoXYTKCVeoZSuSQ-FHJw=
+rJy-osyewM_Za78r8ib1o0z6EcGD_2BBAchUDd5ND34QqxviiTpyT-ouFgaptQgce0qXfEfSMYZ=
+tnTQjCZdl4m47Zz-3Tb-l9zu0Y_eYdeZqNMDeVbLEOWzRHrpmNL960jUege9zM8Q_gdjg89HKOW=
+-TuCEiCYAv3zTl1Bv8g1Da_Sd7p9TqQocGfGTt2uwxnpFRxglyQ9aMdsS6J-fGS2KH72zdxVBYr=
+oKV5wx_QKzCMqBXj8m-vIDSZenVR7J7O06qgEEqsNoP3Med1Kor9Hp9aJbqqeQoUhUPHEP3Q=3D=
+=3D/p0d00T44fM042xkZtO0dO10" style=3D"color: #527fff; text-decoration: none=
+; font-size: 16px;" target=3D"_blank" title=3D"AWS Partner Webinar Series"
+>AWS Partner Webinar Series</a></p> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+</tbody>=20
+</table> </td>=20
+</tr>=20
+<tr></tr>=20
+</tbody>=20
+</table>
+</div>
+<!--[if (gte mso 9)|(IE)]>
+            </td>
+</tr>
+</table>
+<![endif]-->
+<!-- Footer --></td>
+</tr>
+<tr style=3D"">
+<td bgcolor=3D"#E5E5E5" align=3D"center" style=3D"padding:20px 0px; ">
+<div class=3D"mktEditable" id=3D"Footer" style=3D"">
+<!--[if (gte mso 9)|(IE)]>
+=20=20=20=20=20=20=20=20=20=20=20=20
+<table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" wi=
+dth=3D"600">
+<tr>
+<td align=3D"center" valign=3D"top" width=3D"600">
+            <![endif]-->=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"10" ali=
+gn=3D"center" style=3D"max-width: 600px;" class=3D"responsive-table">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" valign=3D"top" style=3D"padding: 0px; background-color=
+: #e5e5e5;"><img src=3D"https://pbs.twimg.com/profile_images/1776846899/cub=
+e_400x400.png" width=3D"50" height=3D"50" border=3D"0" style=3D"display: bl=
+ock;" /></td>=20
+</tr>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, Sans-serif; fo=
+nt-size: 10px; line-height: 14px; color: #333333; border-top-color: #d7d7d7=
+; border-top-style: solid; border-top-width: 1px; padding-top: 10px; backgr=
+ound-color: #e5e5e5;"><a style=3D"color: #527fff; text-decoration: none;" h=
+ref=3D
+"http://email.awscloud.com/kT2iO0k401d00Zt4O40Ad0M"
+>AWS on Twitter</a> | <a style=3D"color: #527fff;=20
+text-decoration: none;" href=3D
+"http://email.awscloud.com/JZ0OT40B4M0kj1O4td002d0"
+>AWS on Facebook</a> | <a style=3D"color: #527fff; text-decoration: none;" =
+href=3D
+"http://email.awscloud.com/SZ0M0t0OO2d0kTd440014kC"
+>AWS on Google+</a> | <a style=3D"color: #527fff; text-decoration: none;" h=
+ref=3D
+"http://email.awscloud.com/A12l0dTZ00kt4d400O0D4OM"
+>AWS Blog</a> | <a style=3D"color: #527fff;=20
+text-decoration: none;" href=3D
+"http://email.awscloud.com/DTEd40m0MZO00124Ok0d0t4"
+>AWS Podcast</a></td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" style=3D"max-width: 600px;" class=3D"responsive-table">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-family: Helvetica, Arial, Sans-serif; fo=
+nt-size: 9px; line-height: 14px; color: #333333; border-top-color: #d7d7d7;=
+ border-top-style: solid; border-top-width: 1px; padding: 10px; background-=
+color: #e5e5e5;"><a href=3D
+"http://email.awscloud.com/dc/yuZkfPEXXFT65tdReNucEvTRm1nqq5Eg9ByfCCxPZLBhF=
+WAGCfvufj6dhVwTzEtOKId_GLH1qrWsaKXP0ZpBjHwyFB2Ltm_OsbingFFeWszf3HiCkD9if39F=
+ma0F24LF2_db86La3iiIVMJ26sh91m4Wd6Qkf_0xvkNz4YMRn5K2WaJ8ZwBR0VxjIBgQLgWO7rE=
+TzB5v4fPTGVAe64104sMurvuQ_yCSUiKeEfolvX1GSoYjdKETWiUeGpWI8pmh-mRJr0eDyISJUN=
+BAgCfCZQ=3D=3D/p0d00T44fM042xkZtO0dO10" style=3D"color: #527fff; text-decor=
+ation: none;"
+>Management Console</a> | <a href=3D
+"http://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD3ZZGcncVANDEUTkhckMhmgWI=
+JnF3Xbo1VxJ3Tw8oB_T6EwLBO4zyH8G2DzJO_0TtzrFJN4A4ZH5Fip5ZJ88cwt8JfTf-wb8GWgf=
+GiquUlNxIXpeeVG22n7ReT5LgNXuC-XnTgozvp8CerCmCqcgGX7XQV-Mn8G8rENlc5qNRrtCBB2=
+2q9ejVKnNM8niUJIsH-vFl-llaMeAII-K7L3fjSQa1Yjp_YhrxueaQ2H2f__mt5h18EdMcidYx1=
+ejlISRHw=3D=3D/p0d00T44fM042xkZtO0dO10" style=3D"color: #527fff; text-decor=
+ation: none;"
+>Getting Started</a> | <a href=3D
+"http://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD78in__VMI_zdbVDMzZ3kSvR9=
+3Srg3KACAeaH-feV6n8fFZFwLCyL52zEa_l-HxV0A3QQqEOcg6X_k6lLYUrcCpR0b2UVhql5uAB=
+lvTTlMkw8XZgxxXiOPWMAdw1rknMUnc6o2vvOenuHrDm99HhOF09RcWx0xrryki0HwHjfl9ryMX=
+ihxZ-PjppWUGSKGGYZczg8iDO9cTjvngh8Ns4lJOztfPv5kWnfoaND3BXHtMQqkmWp_oHaJVdQi=
+fcOZSEuw=3D=3D/p0d00T44fM042xkZtO0dO10" style=3D"color: #527fff; text-decor=
+ation: none;"
+>Marketplace</a> | <a href=3D
+"http://email.awscloud.com/dc/ajD_BapU74vzOhWVQvr7p2cy1ELLlkvByqWei9bfR--ho=
+jGlhPzUN78r_Zch2HtbznNHU3Y_1CxZGy-ARi-rHyBqK1RRgkvRLy8rB878MxkncneQkM32WrGv=
+lakYaYPPZVYhqTv3rci7LfH-2H45p63lT-PuXnFdSBVxHlkFc5dcKnsvX835U8Ss4X_d5ZZVyyL=
+9cNpxTET6aiMarvp7XVWrWAFM0bhGjPWiX3odM9L-ForkCTCpPL-1PNwgnalYS7ZWdW0Z-J6sfH=
+maqGWBJg=3D=3D/p0d00T44fM042xkZtO0dO10" style=3D"color: #527fff; text-decor=
+ation: none;"
+>Pricing</a> | <a href=3D
+"http://email.awscloud.com/dc/ajD_BapU74vzOhWVQvr7pwZEstDV9Ps9416YONcLSEF8r=
+-AaBoFaCUYu1ZF75He0Rjzx3dVTaD0PBgC0afi_8re9SICL13nMbiInlYaSjhnf7N0kHrnpPjq5=
+YsxrFTW-8ev4h-s_GNIGJWh8z0QdvYGnieSG_TnhA1RbvcTChA5EaPj3bS4Tzj5oO0B2YhZ7UXz=
+ii54bA_LIpfqdvU3px7koQ-vfoM3NLZYn1RI99ghE02_xHxPrfkNpCOmcyKI5UL11caph0sgpk8=
+87vXQ4KQ=3D=3D/p0d00T44fM042xkZtO0dO10" style=3D"color: #527fff; text-decor=
+ation: none;"
+>Partners</a> | <a href=3D
+"http://email.awscloud.com/dc/ajD_BapU74vzOhWVQvr7p-ZQ749iALJ6Yd3d1oPtC01N1=
+IC_o2OvptCjYrzUTP1po01fJ_fh0V7xQxTUh1G9tpqvM_NRgQ7hxl_FLgZpe-B69v9e6HSSqewd=
+evojtihsylWw9uwlWziJVTTeQflee2-BBgKCmciUBE7_EI830wAIqFUdqaz0Ph4kmfJK6pEWWmz=
+KtPa_YfBU2wpGDLDqQBwUrbBSLmMDhkvSRTGldsjku9Y_ne7KLnOHkFxm4-iRxQl4aEGBOl-kZ7=
+3Ndo2tKQ=3D=3D/p0d00T44fM042xkZtO0dO10" style=3D"color: #527fff; text-decor=
+ation: none;"
+>Documentation</a> | <a href=3D
+"http://email.awscloud.com/dc/ajD_BapU74vzOhWVQvr7p_qWKeonTop1TVJlHau9PECVq=
+CWxK_yFPuI6uoEMmeaC_xUGDNmAFn9DikYS-pK4uHLT_JimB-MYIZKre02wT3BpKumHA4NOrxL3=
+VUUV3giMtR9hJiUJKlNO59UHJgpysgdj15LiSzAWCrPpT4H-qL_PFMRNX6PTUSqddMxclKOJo0-=
+ynFbzolljt7ADDFIWB8AfmERhc-zPoLPQkNgiA0SMnJEmsc4odtTJuwxO6lRKtJYp6QLPE7dT6-=
+UFTWmOHA=3D=3D/p0d00T44fM042xkZtO0dO10" style=3D"color: #527fff; text-decor=
+ation: none;"
+>Training</a> | <a href=3D
+"http://email.awscloud.com/dc/ajD_BapU74vzOhWVQvr7p9MwfMxNMOCe_0VHXzfN8dN-P=
+g8LCpQSQaN0TBrjXosT8IVHM7g9SjZ9JhEtgldhBWYIOI3LAuFcIJRwjDzXRPxCokIw2E84Xrcn=
+U9R6f6QPW_Ydv2H3ldpPPXn8HeSFG3x0qyx8-kfMP7oyaD7I8SMIUMLgeWN9GQW891ajavdISWq=
+4pAc7-sWA8fI9rN1N-AfmbwORzV_hxjZz91vn1xwXsaXPOTLyFTE-dh-EU1Pbil55gHKs7pebXJ=
+DqjLwiRg=3D=3D/p0d00T44fM042xkZtO0dO10" style=3D"color: #527fff; text-decor=
+ation: none;"
+>Events &amp; Webinars</a></td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" style=3D"max-width: 600px;" class=3D"responsive-table">=20
+<tbody>=20
+<tr>=20
+<td align=3D"center" style=3D"font-size: 12px; line-height: 18px; font-fami=
+ly: Helvetica, Arial, sans-serif; color: #666666; background-color: #e5e5e5=
+;">=20
+<dl>=20
+<dt style=3D"color: #888888; font-size: 10px; text-align: center;">
+ Not interested in receiving our weekly AWS Announcement email?=20
+<a href=3D
+"http://email.awscloud.com/dc/sRhgdM26bquWWERQj_H99vaUy9noK3MKMZnM3yaiQier0=
+jr2eNg4qR8hLpej4YQAQ-0bafH6NusSHS740kc1dOUgyFEGfyZt3tULeGHFEYQzykitueRwv4b-=
+g0PKCuefoT70LgFSjZV-MUXChy3s9it9RgVpX4F5hgoBX7DtnSLCPs79ETR4VbSM3J6jb4RUpaA=
+RCU1qPJ2gJmkvj_AwlhfcikM6WsWQK_SKY-tXy3aM-DDgCqoOBjvzzWX_idV_DppG8pNOY_vEDZ=
+Z8HWqAEDii3e3kczpVlXc7eqs9xerDXqkDVhMIfHsPWixUa1W3/p0d00T44fM042xkZtO0dO10"=
+ style=3D"-ms-text-size-adjust: 100%;=20
+-webkit-text-size-adjust: 100%; color: #527fff; font-size: 10px; text-decor=
+ation: none;"
+>Opt-out here</a>.=20
+<br /> We hope you enjoyed this email. If you'd rather not receive future e=
+mails from Amazon Web Services,=20
+<a href=3D
+"http://email.awscloud.com/dc/sRhgdM26bquWWERQj_H99lCavgYp1xy4_-5c9n1WxRAg-=
+Iit3iVTUYZUZlQmzz1BTdI04NvsSqvrTM6rSnQGNE7u0izR2mDymghKXNuyYsvz-29mvf5nka3v=
+pIJZ_F7RHW_D5IEXNw-cBtHqYOKCUG-aMvomxnXCLWKlBYbcI4AYS_mrZ48iTcWUFUjOY749onV=
+bZofeyDBjwjyGMj-aVryQjnMud0hV2eItfNHFN5-XkYJFcfBeu3hbnBbIPsj0IIJQAq6b-0jN8C=
+8cmOkjvb15qXjX03MUJjxIBE40148=3D/p0d00T44fM042xkZtO0dO10" style=3D"-ms-text=
+-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #527fff; font-si=
+ze: 10px; text-decoration:=20
+none;"
+>unsubscribe here</a>.=20
+</dt>=20
+<dt style=3D"color: #888888; font-size: 10px; text-align: center;">
+ Amazon Web Services, Inc. is a subsidiary of Amazon.com, Inc. Amazon.com i=
+s a registered trademark of Amazon.com.=20
+</dt>=20
+<dt style=3D"color: #888888; font-size: 10px; text-align: center;">
+ This message was produced and distributed by Amazon Web Services, Inc., 41=
+0 Terry Ave. North, Seattle, WA 98109.=20
+</dt>=20
+<dt style=3D"color: #888888; font-size: 10px; text-align: center;">
+ =C2=A9 2017, Amazon Web Services, Inc. or its affiliates. All rights reser=
+ved. Read our=20
+<a href=3D
+"http://email.awscloud.com/dc/KwqiTCOQ16Q1JCi3MdelD6mgc6L_A9yJFl4Y46lWCANAR=
+2VzUarKQCVOKyGMwmOCOK-mvvCzPt8-XI-X0KU1F3_kcMChBLrrNWLxS-qC1pJbEhm34pkI8vw-=
+xXxTehF78s7OKrut7rkacMTX6nDeTV34pK0UVX2CAbTL7WNUf6btoezHXNG2Fec4-EaKcNt7y14=
+IV0UQQDnoNyZk-Gq84t3udCGtGPpvQnjof_6IWbiv47v_Vp_rgTRZ-mrj4IFaMBc6e3RB-8M4RQ=
+YIJjkzQQ=3D=3D/p0d00T44fM042xkZtO0dO10" style=3D"-ms-text-size-adjust: 100%=
+; -webkit-text-size-adjust: 100%; color: #527fff; font-size: 10px; text-dec=
+oration: none;"
+>Privacy Policy</a>.=20
+</dt>=20
+</dl> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<!--[if (gte mso 9)|(IE)]>
+            </td>
+</tr>
+</table>
+<![endif]-->=20
+<p><br /></p>=20
+</div></td>
+</tr>
+</tbody>
+</table>
+</center>
+<a href=3D
+"http://email.awscloud.com/HT000440kdnO1Md2O4Z00Ft"
+></a>
+<img src=3D"https://s3.amazonaws.com/msv5/images/spacer.gif" width=3D"1" he=
+ight=3D"1" alt=3D"Web Bug from http://email.awscloud.com/trk?t=3D1&mid=3DMT=
+EyLVRaTS03NjY6MTM1MTU4OjU0Mzc5OjMyNTIwODowOjg0Njg4Ojk6MjgwNzI1OjMyNjY5NDI1O=
+nN1cmVzaEB3b3Jrc3BhY2VhZnJpY2EuY29t" />
+
+<p></p>
+</body>
+</html>=
+
+------=_Part_859160392_1452526723.1503420352032--

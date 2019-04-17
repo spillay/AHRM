@@ -48,6 +48,7 @@ Query.method("addFilter", function (type, sub, template) {
 Query.method("cleanFilters", function () {
     //this.childFilters = [];
     this.allFilters = [];
+    console.log("cleanFilters")
 });
 
 Query.method("getChildFilters", function () {
@@ -162,7 +163,7 @@ Query.method("processParams", function (query) {
 });
 Query.method("getFullQuery", function () {
     var query = "";
-    var index = '"index": "all-items"';
+    var index = '"index": "ahrm"';
     switch (this.queryType) {
         case "Terms": {
             query = this.db.BasicTemplate;
