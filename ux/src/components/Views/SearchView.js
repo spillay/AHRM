@@ -74,6 +74,7 @@ export default class SearchView extends React.Component {
             <div>
                 <form onSubmit={this.onSubmit}>
                     <datalist id="days">
+                        <option label="Email Data">2019-03-12</option>
                         <option label="Email Data">2001-01-01</option>
                         <option label="Email Data">2002-01-01</option>
                         <option label="Email Data">1999-12-27</option>

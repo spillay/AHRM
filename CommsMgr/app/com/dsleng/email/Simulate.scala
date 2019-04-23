@@ -25,8 +25,21 @@ case class EmoStr(ec: ArrayBuffer[EmoUnit]){
     val total = ec.reduce((a,b)=>new EmoUnit("total",a.count+b.count))
     println(total.count)
     val norm = ec.map(e=>new EmoUnit(e.name,e.count/total.count))
-    val ar = JsArray(norm.map(e=>Json.toJson(e)))
-    ar.toString()
+    var res = "{"
+    var i = 0
+    norm.foreach(e=>{
+      res += "\"" + e.name + "\":\"" + e.count + "\"" 
+      println(i,norm.length)
+      if (i!=norm.length-1){
+        res += ","
+      }
+      i=i+1
+    })
+    res += "}"
+    
+    //val ar = JsArray(norm.map(e=>Json.toJson(e)))
+    //ar.toString()
+    return res
   }
   def getPrime(): String={
     val res = ec.sortBy(-_.count)
@@ -96,6 +109,27 @@ class Emos {
       val j = Json.toJson(oj)
       (j.toString())
    }
+    def getNegStr(): String = {
+      var em = new ArrayBuffer[EmoUnit]()
+      val r = ran.getRandomJump(1, 4)
+      for(i<- 0 to r){
+        val c = ran.getRandomJump(1, 6)
+        em += new EmoUnit(getNeg(),c)
+      }
+      var cem = new ArrayBuffer[EmoUnit]()
+      em.foreach(p=>{
+        em.foreach(c=>{
+          if (p.name == c.name){
+            p.count = p.count + c.count
+            //c.count = 0
+          }
+        })
+        cem += new EmoUnit(p.name,p.count)
+      })
+      val oj = new EmoStr(cem)
+      val j = Json.toJson(oj)
+      (j.toString())
+   }
 }
 
 
@@ -146,23 +180,35 @@ class Simulate {
     println(pl.size)
     var ran = new RandomGen()
     val form = DateTimeFormat.forPattern("yyyy-MM-dd'T'HH:mm:ss")
-    var dte = form.parseDateTime("2019-04-12T12:00:00")
+    var dte = form.parseDateTime("2018-04-12T12:00:00")
     
     
     val mgr = pl.filter(p=>{p.emptype=="manager"})
     val emp = pl.filter(p=>{p.emptype=="employee"})
     val eHandle = new Emos()
     var a = 0
-    for(a <- 0 to 168){
+    // 168 gives a week
+    // 168x4 = 672
+    // 8064 is a year
+    for(a <- 0 to 8064){
+      val pn = ran.getRandom(0, 1)
       mgr.foreach(m=>{
         emp.foreach(e=>{
-          emails += getEmail(m, e, dte.toString(form),eHandle.getPosStr())
+          if (pn == 0){
+            emails += getEmail(m, e, dte.toString(form),eHandle.getPosStr())
+          } else {
+            emails += getEmail(m, e, dte.toString(form),eHandle.getNegStr())
+          }
         })
       })
       emp.foreach(e=>{
           val i = ran.getRandom(1, emp.length-1)
           if (e.email != emp(i).email){
-            emails += getEmail(e, emp(i), dte.toString(form),eHandle.getPosStr())
+            if (pn == 0){
+              emails += getEmail(e, emp(i), dte.toString(form),eHandle.getPosStr())
+            }else{
+              emails += getEmail(e, emp(i), dte.toString(form),eHandle.getNegStr())
+            }
           }
       })
       dte = dte.plusHours(1)

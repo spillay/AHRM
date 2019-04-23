@@ -9,7 +9,9 @@ export const emotionPalette2 = [
   { emotion: 'Anxiety', color: '#c0392b' },
   { emotion: 'Agreeableness', color: '#ecf0f1' },
   { emotion: 'Relief', color: '#f1c40f' },
-  { emotion: 'Interest', color: '#7f8c8d' }]
+  { emotion: 'Interest', color: '#7f8c8d' },
+  { emotion: 'Shame', color: '#f4ee42' },
+]
 
   export const emotionPalette = [
     { emotion: 'Joy', color: 'rgb(129,176,217)' },
@@ -22,7 +24,9 @@ export const emotionPalette2 = [
     { emotion: 'Anxiety', color: 'rgb(178,136,106)' },
     { emotion: 'Agreeableness', color: 'rgb(180,223,192)' },
     { emotion: 'Relief', color: 'rgb(152,219,231)' },
-    { emotion: 'Interest', color: 'rgb(200,231,224)' }]
+    { emotion: 'Interest', color: 'rgb(200,231,224)' },
+    { emotion: 'Shame', color: 'rgb(244, 238, 66)' },
+  ]
 
 export const colorPalette =
   {
@@ -36,7 +40,8 @@ export const colorPalette =
     Anxiety: 'rgb(178,136,106)',
     Agreeableness: 'rgb(180,223,192)',
     Relief: 'rgb(152,219,231)',
-    Interest: 'rgb(200,231,224)'
+    Interest: 'rgb(200,231,224)',
+    Shame: 'rgb(244, 238, 66)'
   }
 
   export const graphPalette =
@@ -51,7 +56,8 @@ export const colorPalette =
     Anxiety: 'rgb(178,136,106)',
     Agreeableness: 'rgb(180,223,192)',
     Relief: 'rgb(152,219,231)',
-    Interest: 'rgb(200,231,224)'
+    Interest: 'rgb(200,231,224)',
+    Shame: 'rgb(244, 238, 66)'
   }
 
 export const strokePalette =
@@ -66,7 +72,8 @@ export const strokePalette =
     Anxiety: 'rgb(178,136,106)',
     Agreeableness: 'rgb(180,223,192)',
     Relief: 'rgb(152,219,231)',
-    Interest: 'rgb(200,231,224)'
+    Interest: 'rgb(200,231,224)',
+    Shame: 'rgb(244, 238, 66)'
   }
   /*
 const colorPalette = [

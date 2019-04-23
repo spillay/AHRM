@@ -21,7 +21,7 @@ import com.dsleng.utils.auth.DefaultEnv
 import com.dsleng.utils.responses.rest.Bad
 import play.api.Logger
 import scala.concurrent.{ExecutionContext, Future}
-import com.dsleng.service.ESService
+import com.dsleng.service.{ESService,CalcService}
 import play.api.libs.json._
 
 
@@ -43,6 +43,31 @@ class BLController @Inject()(components: ControllerComponents,
 
   implicit val signUpFormat = Json.format[SignUp]
 
+  @ApiOperation(value = "genEntropy", response = classOf[String])
+  @ApiImplicitParams(
+    Array(
+      new ApiImplicitParam(
+        value = "query",
+        required = true,
+        dataType = "String",
+        paramType = "body"
+      )
+    )
+  )
+  def genEntropy =  silhouette.UnsecuredAction.async { implicit request =>
+      val body = request.body.asJson;
+      println("body}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}",body)
+      body.map { content =>
+        //val msg = Json.stringify((content \ "text").get)
+        val calc = new CalcService()
+        val res = calc.process(Json.stringify(content))
+        Future.successful(Ok(Json.toJson(res)))
+      }.getOrElse {
+        Future.successful(Ok(Json.toJson("Expecting Query for genEntropy")))
+      }
+  }
+  
+  
   @ApiOperation(value = "ES Query", response = classOf[String])
   @ApiImplicitParams(
     Array(

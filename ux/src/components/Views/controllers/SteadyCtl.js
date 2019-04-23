@@ -108,6 +108,7 @@ export default class SteadyCtl extends React.Component {
         emotions.forEach(e => {
             this.log("================================", e, norm, norm[e]);
             if (norm[e] !== undefined) {
+                this.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>norm" + norm[e],10)
                 res[e] = norm[e];
             } else {
                 res[e] = 0.0;
@@ -152,7 +153,7 @@ export default class SteadyCtl extends React.Component {
         var query = dh.getModel().getQuery("From", "SimpleFilter");
 
         var ndata = dh.getData(data, query.dataposition);
-        this.log(JSON.stringify(ndata));
+        this.log(JSON.stringify(ndata),10);
         var graphData = [];
 
         var cnt = 0;
@@ -170,6 +171,8 @@ export default class SteadyCtl extends React.Component {
             this.setState({ data: [], contentShow: true });
         } else {
              // Get Entropy from the server
+            this.log("graphData------------------------------------", 10)
+            this.log(graphData, 10)
             var res = {}
             res["text"] = graphData;
             var essvr = new EmoService();

@@ -31,6 +31,9 @@ GET     /api                        	com.dsleng.controllers.ApplicationControlle
 
 ### NoDocs ###
 + nocsrf
+POST    /api/genentropy                  com.dsleng.controllers.BLController.genEntropy
+### NoDocs ###
++ nocsrf
 POST    /api/query                      com.dsleng.controllers.BLController.query
 ### NoDocs ###
 + nocsrf

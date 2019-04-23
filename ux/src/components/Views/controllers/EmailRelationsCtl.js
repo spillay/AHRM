@@ -185,7 +185,7 @@ export default class EmailRelationsCtl extends React.Component {
         dte.getSeries(query, this.state.interval, 6);
         var timeFilter = this.state.dh.getTimeFilter(this.state.range);
         query.addFilterObj(timeFilter);
-        query.addFilter("must", "", "{\"term\": { \"model.to.keyword\": \"" + email + "\" }}");
+        query.addFilter("must", "", "{\"term\": { \"model.from.keyword\": \"" + email + "\" }}");
         var res = query.getFullQuery();
         return res;
     }

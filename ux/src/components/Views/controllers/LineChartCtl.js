@@ -94,15 +94,16 @@ export default class LineChartCtl extends React.Component {
     getEmotionValue = (it, emo) => {
         var emoValue = 0;
         it.prime.buckets.forEach(b => {
-            console.log(b, emo)
+            //console.log(b, emo)
             if (b.key === emo) {
-                console.log(b.doc_count)
+                console.log(b.key,b.doc_count)
                 emoValue = b.doc_count
             }
         });
+        console.log("emoValue",emoValue)
         return emoValue;
     }
-    updateData = (resp) => {
+    updateData = (resp,interval) => {
         this.log("Updating data");
         var data = JSON.parse(resp);
         var dh = new DataHelper();
@@ -122,7 +123,11 @@ export default class LineChartCtl extends React.Component {
         ndata.forEach(it => {
             emotionPalette.forEach(e => {
                 var pData = {}
-                pData["x"] = dte.getStr(it.key,"MM-DD-YY") //it.key_as_string;
+                if (interval=="1h"){
+                    pData["x"] = dte.getStr(it.key,"hh:mm")
+                } else {
+                    pData["x"] = dte.getStr(it.key,"MM-DD-YY hh:mm") //it.key_as_string;
+                }
                 pData["y"] = this.getEmotionValue(it, e.emotion)
                 emoData.forEach(b => {
                     if (b["name"] === e.emotion) {
@@ -184,7 +189,7 @@ export default class LineChartCtl extends React.Component {
         // client.search(JSON.parse(res)).then((resp) => this.updateData(resp));
 
         var essvr = new ESService();
-        essvr.getData(JSON.parse(res)).then((resp) => this.updateData(resp));
+        essvr.getData(JSON.parse(res)).then((resp) => this.updateData(resp,interval));
     }
 
     render() {

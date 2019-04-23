@@ -62,7 +62,7 @@ class Home extends Component {
     this.state = {
       data: [],
       dataDonut: [],
-      pivotDate: "05/05/2019",
+      pivotDate: "03/12/2019",
       dh: new DataHelper()
     };
   }

@@ -1,0 +1,5 @@
+INFO  time: initialize in 0.75s
+WARN  Skipping build import for unsupported sbt version 0.13.15
+INFO  no build target: using presentation compiler with only scala-library
+WARN  code navigation does not work for the file '/Data/2019/git/AHRM/CommsMgr/app/com/dsleng/nlp/MCAnalysis.scala' because it doesn't belong to a build target.
+INFO  shutting down Metals

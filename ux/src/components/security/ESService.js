@@ -12,7 +12,7 @@ export default class ESService {
     }
     getData(query) {
         console.log("getdata" + this.domain)
-        console.log(query)
+        console.log(JSON.stringify( query ))
         return this.fetch(`${this.domain}/api/query`, {
             method: 'POST',
             body: JSON.stringify( query )

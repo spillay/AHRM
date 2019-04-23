@@ -19,6 +19,7 @@ libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2
 libraryDependencies += "org.elasticsearch.client" % "elasticsearch-rest-client" % "6.2.4"
 libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.5"
 libraryDependencies += "org.apache.httpcomponents" % "httpcore" % "4.4.9"
+libraryDependencies += "org.scalanlp" % "breeze_2.12" % "0.13.2"
 
 // Adds additional packages into Twirl
 //TwirlKeys.templateImports += "com.dsleng.controllers._"
