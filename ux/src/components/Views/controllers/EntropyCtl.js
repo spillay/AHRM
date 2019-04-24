@@ -30,6 +30,7 @@ import EmoService from '../../security/EmoService';
 import ESService from '../../security/ESService';
 import ModalView from '../ModalView';
 import ReactSpeedometer from "react-d3-speedometer";
+import EntropyHandler from '../../BL/EntropyHandler';
 
 const chkData = [
     { "name": "2000-12-31T00:00:00.000-05:00", "Contentment": 0, "Joy": 0, "Sadness": 0, "Unknown": 1 },
@@ -154,6 +155,8 @@ export default class EntropyCtl extends React.Component {
             this.log(JSON.stringify(graphData),1)
             var essvr = new EmoService();
             var that = this
+            var ent = new EntropyHandler(graphData)
+            ent.processByDay(graphData)
             essvr.getEntropy(res).then((resp) => {
                 that.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>res -" + res, 1)
                 that.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + resp, 10)

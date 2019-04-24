@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Data/2019/git/AHRM/store/conf/swagger.yml,/Data/2019/git/AHRM/store/target/scala-2.12/classes/swagger.yml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Data/2019/git/AHRM/store/conf/routes,/Data/2019/git/AHRM/store/target/scala-2.12/classes/routes)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Data/2019/git/AHRM/store/conf/logback.xml,/Data/2019/git/AHRM/store/target/scala-2.12/classes/logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Data/2019/git/AHRM/store/conf/silhouette.conf,/Data/2019/git/AHRM/store/target/scala-2.12/classes/silhouette.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Data/2019/git/AHRM/store/conf/application.conf,/Data/2019/git/AHRM/store/target/scala-2.12/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Data/2019/git/AHRM/store/conf/messages,/Data/2019/git/AHRM/store/target/scala-2.12/classes/messages)[0m
