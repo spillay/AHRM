@@ -75,6 +75,7 @@ object Info {
 
 class CalcService {
   def process(input: String): String ={
+    println(input)
     val info = Json.parse(input).as[Info]
     //println(info)
     val vec = getVector(info.getArray())

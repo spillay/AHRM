@@ -25,11 +25,18 @@ export default class EmoService {
         });
     }
     getEntropy(msg) {
-        return this.fetch(`${this.domain}/api/entropy`, {
+        //return this.fetch(`${this.domain}/api/genentropy`, {
+        return this.fetch(`http://localhost:9000/api/genentropy`, {
             method: 'POST',
             body: JSON.stringify( msg )
         });
     }
+    // getEntropy(msg) {
+    //     return this.fetch(`${this.domain}/api/entropy`, {
+    //         method: 'POST',
+    //         body: JSON.stringify( msg )
+    //     });
+    // }
     getDeception(msg) {
         return this.fetch(`${this.domain}/api/deception`, {
             method: 'POST',

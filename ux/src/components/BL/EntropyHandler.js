@@ -11,7 +11,7 @@ export default function EntropyHandler(opts) {
 EntropyHandler.method("processByDay", function (data) {
     console.log("processByDay",data)
     Array.prototype.sumEmotions = function (props) {
-        console.log(Array.isArray(props),typeof(props))
+        //console.log(Array.isArray(props),typeof(props))
         var emo = {}
         for (var i = 0, ilen = props.length; i < ilen; i++) {
           var total = 0.0
@@ -60,7 +60,9 @@ EntropyHandler.method("processByDay", function (data) {
       console.log(c)
       var s = new DeepSet(c)
    
-      console.log(s.getStates())
+      // console.log("states :> ",s.getStates())
+      // console.log("matrix :>",s.getMatrix())
+      return s.getMatrix()
     //   var newGroups = []
     //   groups.forEach(g => {
     //       console.log(g.sum("Shame"))

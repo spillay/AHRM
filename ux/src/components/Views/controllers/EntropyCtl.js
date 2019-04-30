@@ -156,13 +156,13 @@ export default class EntropyCtl extends React.Component {
             var essvr = new EmoService();
             var that = this
             var ent = new EntropyHandler(graphData)
-            ent.processByDay(graphData)
-            essvr.getEntropy(res).then((resp) => {
+            var handlerData = ent.processByDay(graphData)
+            essvr.getEntropy(handlerData).then((resp) => {
                 that.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>res -" + res, 1)
                 that.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + resp, 10)
                 var rdata = JSON.parse(resp)
-                that.log(rdata["entropy"][0], 10)
-                that.setState({ entropy: rdata["entropy"][0] })
+                that.log(rdata["norm_entropy"], 10)
+                that.setState({ entropy: rdata["norm_entropy"] })
             }).catch(function (e) {
                 that.log("Cannot connect to Server" + e, 1)
             });

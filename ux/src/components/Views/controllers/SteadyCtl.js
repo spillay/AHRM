@@ -33,6 +33,7 @@ import ESService from '../../security/ESService';
 import ModalView from '../ModalView';
 import ReactSpeedometer from "react-d3-speedometer";
 import SimpleBarChart from '../ui/SimpleBarChart';
+import EntropyHandler from '../../BL/EntropyHandler';
 
 const chkData = [
     { "name": "2000-12-31T00:00:00.000-05:00", "Contentment": 0, "Joy": 0, "Sadness": 0, "Unknown": 1 },
@@ -129,20 +130,31 @@ export default class SteadyCtl extends React.Component {
     }
     setData = (steady) => {
         this.log("setdata", 10)
+        this.log(steady, 10)
         var graphData = []
-        var p = JSON.parse(steady)
-        for (var key in p) {
-            if (p.hasOwnProperty(key)) {
-                console.log(key + " -> " + p[key]["sender"]);
-                if (key !== "neg") {
-                    var item = {}
-                    item["x"] = key
-                    item["y"] = p[key]["sender"]
-                    item["color"] = graphPalette[key];
-                    graphData.push(item)
-                }
-            }
-        }
+        //var p = JSON.parse(steady)
+        // for (var key in p) {
+        //     console.log(key)
+        //     if (p.hasOwnProperty(key)) {
+        //         console.log(key + " -> " + p[key]["sender"]);
+        //         if (key !== "neg") {
+        //             var item = {}
+        //             item["x"] = key
+        //             item["y"] = p[key]["sender"]
+        //             item["color"] = graphPalette[key];
+        //             graphData.push(item)
+        //         }
+        //     }
+        // }
+        //console.log(p)
+        steady.forEach(k=>{
+            console.log(k)
+            var item = {}
+            item["x"] = k[0]
+            item["y"] = k[1]
+            item["color"] = graphPalette[k[0]];
+            graphData.push(item)
+        })
         this.log(JSON.stringify(graphData), 10)
         this.setState({ data: graphData })
     }
@@ -177,11 +189,14 @@ export default class SteadyCtl extends React.Component {
             res["text"] = graphData;
             var essvr = new EmoService();
             var that = this
-            essvr.getEntropy(res).then((resp) => {
+            console.log("=============================================================before entropy")
+            var ent = new EntropyHandler(graphData)
+            var handlerData = ent.processByDay(graphData)
+            essvr.getEntropy(handlerData).then((resp) => {
                 that.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + resp, 1)
                 var rdata = JSON.parse(resp)
-                that.log(rdata["steady"], 1)
-                var steady = rdata["steady"]
+                that.log(rdata["norm_steady_states"], 1)
+                var steady = rdata["norm_steady_states"]
                 that.setData(steady)
             }).catch(function (e) {
                 that.log("Cannot connect to Server" + e, 1)
