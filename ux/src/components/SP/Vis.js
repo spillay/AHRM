@@ -122,7 +122,8 @@ Vis.method("setChild", function (c) {
 Vis.method("draw", function (element, info) {
     console.log("**********************draw*************************** " + info);
     var server = queryMgr.getSingleton().getServer();
-    var query = this.query.getFullQueryIndex(this.index);
+    //var query = this.query.getFullQueryIndex(this.index);
+    var query = this.query.getFullQuery();
     var dataposition = this.query.dataposition;
     var container = this.parent;
     console.log("-------------Query---> " + query);

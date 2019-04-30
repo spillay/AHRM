@@ -180,7 +180,7 @@ export default class LineChartCtl extends React.Component {
             query.addFilterObj(timeFilter);
         }
 
-        query.addFilter("must", "", "{\"term\": { \"model.to.keyword\": \"" + this.state.email + "\" }}");
+        query.addFilter("must", "", "{\"term\": { \"model.from.keyword\": \"" + this.state.email + "\" }}");
         var res = query.getFullQuery();
         this.log(res);
 
