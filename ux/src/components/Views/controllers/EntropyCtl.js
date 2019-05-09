@@ -66,15 +66,15 @@ export default class EntropyCtl extends React.Component {
         this.log("after construct");
     }
     log = (mesg, type) => {
-        if (type === 10) {
+        //if (type === 10) {
             console.log(mesg)
-        }
+        //}
     }
     handleContentClose = (e) => {
         this.setState({ contentShow: false })
     }
     componentDidUpdate() {
-        this.log("update ------------------------> LineChartCtl");
+        this.log("update ------------------------> EntropyCtl");
         var dhandler = new DataHelper();
         var pivotDate = dhandler.convertProcDate(this.props.pivotDate);
         this.log(this.props.email + " : " + this.state.email)
@@ -157,6 +157,7 @@ export default class EntropyCtl extends React.Component {
             var that = this
             var ent = new EntropyHandler(graphData)
             var handlerData = ent.processByDay(graphData)
+            this.log(handlerData,1)
             essvr.getEntropy(handlerData).then((resp) => {
                 that.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>res -" + res, 1)
                 that.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + resp, 10)
@@ -221,7 +222,7 @@ export default class EntropyCtl extends React.Component {
 
     render() {
         this.log("rerendering");
-        this.log(this.state.data);
+        this.log(this.state,this.props);
         return (<div>
             <SPPanel headerCustomClass="contentHeading" bodyCustomClass="contentNoScrollBody2" panelCustomClass="contentPanel"
                 header={<span>

@@ -92,6 +92,7 @@ class EmployeeAnalysis extends React.Component {
       email: "s..shively@enron.com",
       interval: "1h",
       show: false,
+      show2: false,
       tshow: false,
       searchShow: true
     }

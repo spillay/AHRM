@@ -60,8 +60,8 @@ EntropyHandler.method("processByDay", function (data) {
       console.log(c)
       var s = new DeepSet(c)
    
-      // console.log("states :> ",s.getStates())
-      // console.log("matrix :>",s.getMatrix())
+      console.log("states :> ",s.getStates())
+      console.log("matrix :>",s.getMatrix())
       return s.getMatrix()
     //   var newGroups = []
     //   groups.forEach(g => {

@@ -1,7 +1,0 @@
-[0m[[0m[33mwarn[0m] [0m[0m/Data/2019/git/AHRM/store/app/views/swagger.scala.html:45:22: method current in object Play is deprecated (since 2.5.0): This is a static reference to application, use DI instead[0m
-[0m[[0m[33mwarn[0m] [0m[0m        url = "@{s"${current.configuration.getString("swagger.api.basepath")[0m
-[0m[[0m[33mwarn[0m] [0m[0m                     ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/Data/2019/git/AHRM/store/app/views/swagger.scala.html:45:44: method getString in class Configuration is deprecated (since 2.6.0): Use get[String] or getAndValidate[String] with reference config entry[0m
-[0m[[0m[33mwarn[0m] [0m[0m        url = "@{s"${current.configuration.getString("swagger.api.basepath")[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                           ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m

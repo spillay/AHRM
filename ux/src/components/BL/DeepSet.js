@@ -59,8 +59,13 @@ export default class DeepSet  {
         matrix.forEach(r=>{
             var nr = []
             var sum = r.reduce((partial_sum, a) => partial_sum + a);
+            console.log("sum",sum)
             r.forEach(e=>{
-                nr.push(e/sum)
+                if(sum===0){
+                    nr.push(0)
+                }else {
+                    nr.push(e/sum)
+                }
             })
             stocmatrix.push(nr)
         })

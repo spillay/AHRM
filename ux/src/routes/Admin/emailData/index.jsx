@@ -4,7 +4,7 @@ import { DateHelper } from 'DataManager';
 import withTour from '../../../components/tour/withTour';
 import withNav from '../../../components/navigation/withNav';
 import withAuth from '../../../components/security/withAuth';
-import ReactBootstrapSlider from 'react-bootstrap-slider';
+//import ReactBootstrapSlider from 'react-bootstrap-slider';
 import archiImage from '../../../images/architecture.png';
 import SPPanel from '../../../components/Views/ui/SPPanel';
 
