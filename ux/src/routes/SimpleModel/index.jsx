@@ -33,7 +33,7 @@ class SimpleModel extends React.Component {
         return (
             <div className="infoPanel">
                 <div className="panel-heading">
-                    <i className="fa fa-info-circle" /> Text Analysis
+                    <i className="fa fa-info-circle" /> Emotion Detection Algorithm
                 </div>
                 <div className="infoBody">
                     <TextView />
@@ -42,4 +42,4 @@ class SimpleModel extends React.Component {
         )
     }
 }
-export default withAuth(withTour(withNav(SimpleModel,{title:'Simple Text Analysis'}), steps));
+export default withAuth(withTour(withNav(SimpleModel,{title:'Emotion Analysis'}), steps));

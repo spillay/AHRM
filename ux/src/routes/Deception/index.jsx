@@ -33,7 +33,7 @@ class DeceptionModel extends React.Component {
         return (
             <div className="infoPanel">
                 <div className="panel-heading">
-                    <i className="fa fa-info-circle" /> Deception Analysis
+                    <i className="fa fa-info-circle" /> Deception Detection Algorithm
                 </div>
                 <div className="infoBody">
                     <DeceptionView />

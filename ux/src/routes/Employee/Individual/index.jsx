@@ -103,7 +103,7 @@ class EmployeeAnalysis extends React.Component {
     console.log(this.state.email);
     this.forceUpdate();
   }
-
+  
   componentDidUpdate() {
     console.log("update")
     console.log(this.state.email)
@@ -123,7 +123,7 @@ class EmployeeAnalysis extends React.Component {
                   </SPPanel>
                 </Col>
                 <Col lg={6}>
-                  {this.state.show && <EntropyCtl email={this.state.email} pivotDate={this.state.date} interval={this.state.interval} load={true} />}
+                  {this.state.show && <EntropyCtl  email={this.state.email} pivotDate={this.state.date} interval={this.state.interval} load={true} />}
                 </Col>
               </Row>
               <Row>

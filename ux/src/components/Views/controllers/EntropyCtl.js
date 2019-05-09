@@ -31,6 +31,8 @@ import ESService from '../../security/ESService';
 import ModalView from '../ModalView';
 import ReactSpeedometer from "react-d3-speedometer";
 import EntropyHandler from '../../BL/EntropyHandler';
+import Spinner from '../ui/Spinner';
+
 
 const chkData = [
     { "name": "2000-12-31T00:00:00.000-05:00", "Contentment": 0, "Joy": 0, "Sadness": 0, "Unknown": 1 },
@@ -57,7 +59,8 @@ export default class EntropyCtl extends React.Component {
             data: [],
             contentShow: false,
             entropy: 0,
-            emailSent: 0
+            emailSent: 0,
+            isloading: false
         };
         if (this.props.load === true) {
             var dte = new DateHelper(this.state.pivotDate);
@@ -163,7 +166,7 @@ export default class EntropyCtl extends React.Component {
                 that.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + resp, 10)
                 var rdata = JSON.parse(resp)
                 that.log(rdata["norm_entropy"], 10)
-                that.setState({ entropy: rdata["norm_entropy"] })
+                that.setState({ entropy: rdata["norm_entropy"],isloading: false })
             }).catch(function (e) {
                 that.log("Cannot connect to Server" + e, 1)
             });
@@ -173,6 +176,7 @@ export default class EntropyCtl extends React.Component {
 
     }
     onSelect = (target) => {
+        this.setState({ isloading: true })
         var dte = new DateHelper(this.state.pivotDate);
         if (target == 1) {
             this.fetchData(dte.get24HourRange(), "1h");
@@ -238,6 +242,8 @@ export default class EntropyCtl extends React.Component {
                     </div>
                 </span>}
                 body={<span>
+                    {this.state.isloading && <Spinner height={180} width={280}/>}
+                    {!this.state.isloading && <div>
                     <div>Total Emails sent for the Period is: {this.state.emailSent}</div>
                     <div>
                         <ReactSpeedometer
@@ -252,7 +258,7 @@ export default class EntropyCtl extends React.Component {
                             width={250}
                         />
                     </div>
-
+                    </div>}
                 </span>}
             >
 

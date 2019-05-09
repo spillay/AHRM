@@ -118,7 +118,7 @@ class SideBar extends Component {
                   return false;
                 }}
               >
-                <i className="fa fa-bar-chart-o fa-fw" /> &nbsp;Data Analysis
+                <i className="fa fa-bar-chart-o fa-fw" /> &nbsp;Text Detection
                 <span className="fa arrow" />
               </a>
               <ul
@@ -131,12 +131,12 @@ class SideBar extends Component {
               >
                 <li>
                   <a href="" onClick={(e) => { e.preventDefault(); this.props.history.push('/SimpleView'); }} >
-                    Analysis
+                    Detect Emotion
                   </a>
                 </li>
                 <li>
                   <a href="" onClick={(e) => { e.preventDefault(); this.props.history.push('/DeceptionView'); }} >
-                    Deception
+                    Detect Deception
                   </a>
                 </li>
               </ul>
