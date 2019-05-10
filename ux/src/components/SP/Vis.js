@@ -19,13 +19,15 @@ import ESService from '../security/ESService';
 import { settings } from './spconfig'
 var d3 = require("d3");
 
-export function Vis(opts, filters) {
-    console.log("Init Vis");
+export function Vis(opts, filters,server) {
+    console.log("Init Vis>>>>>>>>>>>>>>>>>>>>>>>>>>>>>",server);
     console.log(opts);
     this.width = opts.width;
     this.height = opts.height;
     this.margin = opts.margin;
     this.type = opts.type;
+    this.server = server;
+
 
     this.dataModel = opts.dataModel;
     this.index = "\"index\":\"" + this.dataModel.index.index + "\"";
@@ -44,7 +46,7 @@ export function Vis(opts, filters) {
         if (opts.child != null) {
             console.log("Vis:adding child");
             console.log(opts.child);
-            var v = new Vis(opts.child, []);
+            var v = new Vis(opts.child, [],server);
             //var v = new Vis(opts.child,[]);
             this.child = v;
         }
@@ -121,7 +123,7 @@ Vis.method("setChild", function (c) {
 
 Vis.method("draw", function (element, info) {
     console.log("**********************draw*************************** " + info);
-    var server = queryMgr.getSingleton().getServer();
+    //var server = queryMgr.getSingleton().getServer();
     //var query = this.query.getFullQueryIndex(this.index);
     var query = this.query.getFullQuery();
     var dataposition = this.query.dataposition;
@@ -134,7 +136,7 @@ Vis.method("draw", function (element, info) {
 
     if (this.type === "Pie") {
         var essvr = new ESService();
-        essvr.getData(JSON.parse(query)).then(function (resp) {
+        essvr.getDatabyHost(JSON.parse(query),this.server).then(function (resp) {
             var data = JSON.parse(resp);
             console.log(resp);
             dataposition.forEach(s => {
@@ -170,7 +172,7 @@ Vis.method("draw", function (element, info) {
     if (this.type === "DataGrid") {
 
 
-        ReactDOM.render(<SPDataGrid query={query} pageSize="5" />, element);
+        ReactDOM.render(<SPDataGrid query={query} server={this.server} pageSize="5" />, element);
         /*
         var client = new es.Client(JSON.parse(server));
         client.search(JSON.parse(query)).then(function (resp) {
@@ -200,7 +202,7 @@ Vis.method("draw", function (element, info) {
         // var client = new es.Client(JSON.parse(server));
         // client.search(JSON.parse(query)).then(function (resp) {
         var essvr = new ESService();
-        essvr.getData(JSON.parse(query)).then(function (resp) {
+        essvr.getDatabyHost(JSON.parse(query),this.server).then(function (resp) {
             var data = JSON.parse(resp);
             dataposition.forEach(s => {
                 data = data[s];

@@ -102,6 +102,7 @@ export default class DeceptionView extends React.Component {
     }
     clearSubmit = (event) => {
         console.log("clear")
+        document.getElementById("helper").value = ""
         this.setState({ donutShow: false, textReadOnly: false });
         this.forceUpdate();
     }
@@ -128,7 +129,7 @@ export default class DeceptionView extends React.Component {
                         <br/>
                             <div className="form-group">
                                 <label htmlFor="helper">Predefined Text Messages(Purely for Research Purposes)</label>
-                                <input id="helper" list="mesg" onChange={this.pretextChange}/>
+                                <input id="helper" type="text" list="mesg" onChange={this.pretextChange}/>
                                </div>
                             <div className="form-group">
                                 <label htmlFor="text">Text Message</label>

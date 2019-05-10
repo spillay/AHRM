@@ -254,7 +254,7 @@ export default class SPDataGrid extends React.Component {
     var essvr = new ESService();
 
     //var client = new Client(JSON.parse(elasticsearch.server));
-    essvr.getData(JSON.parse(query)).then(res => {
+    essvr.getDatabyHost(JSON.parse(query),this.props.server).then(res => {
       var resp = JSON.parse(res);
       var data = resp.hits.hits;
       console.log(data.toString());

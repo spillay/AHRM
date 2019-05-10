@@ -32,7 +32,7 @@ export function VisMgr(opts) {
                 filters.push(f1);
             }
             console.log("VisMgr: adding child");
-            var v = new Vis(opts.child,filters);
+            var v = new Vis(opts.child,filters,opts.server);
             this.root = v;
             this.current = v;
         }

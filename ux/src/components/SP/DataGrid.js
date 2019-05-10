@@ -150,7 +150,7 @@ export default class DataGrid extends React.Component {
     }
     console.log("fetch ----------------------" + query);
     var essvr = new EmoService(JSON.parse(elasticsearch.server));
-    essvr.getData(JSON.parse(query)).then(function (resp) {
+    essvr.getDatabyHost(JSON.parse(query),this.props.server).then(function (resp) {
     // var client = new es.Client(JSON.parse(elasticsearch.server));
     // client.search(JSON.parse(query)).then(resp => {
       var data = resp.hits.hits;

@@ -10,6 +10,15 @@ export default class ESService {
         }
         this.fetch = this.fetch.bind(this)
     }
+    getDatabyHost(query,server) {
+        console.log("=====================================================getdata" + server)
+        console.log(JSON.stringify( query ))
+        return this.fetch(`${server}/api/query`, {
+            method: 'POST',
+            body: JSON.stringify( query )
+        });
+        
+    }
     getData(query) {
         console.log("getdata" + this.domain)
         console.log(JSON.stringify( query ))

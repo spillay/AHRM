@@ -13,7 +13,7 @@ export function SPBar(opts) {
     this.margin = opts.margin;
     this.parent = opts.parent;
     // console.log(this.parent);
-    this.color = d3.scaleOrdinal(d3.schemeCategory20);
+    this.color = d3.scaleOrdinal(d3.schemeCategory10);
     this.draw();
 
 }

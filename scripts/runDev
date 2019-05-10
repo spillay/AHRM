@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+xterm -e "/Users/suresh/server/ELK/elasticsearch/bin/elasticsearch && /bin/bash" &
+xterm -e "cd ../store/ && sbt run && /bin/bash" &
+xterm -e "cd ../ux/ && yarn start && /bin/bash" &
+

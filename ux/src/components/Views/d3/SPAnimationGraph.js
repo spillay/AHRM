@@ -250,7 +250,7 @@ SPAnimationGraph.method("initForce", function () {
     */
     // add a label to each node
     node.append("text")
-        .attr("dx", 12)
+        .attr("dx", 30)
         .attr("dy", ".35em")
         .text(function (d) {
             //console.log("circle id " + d.id);
