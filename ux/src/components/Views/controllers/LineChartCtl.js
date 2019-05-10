@@ -30,6 +30,7 @@ import EmoService from '../../security/EmoService';
 import ESService from '../../security/ESService';
 import ModalView from '../ModalView';
 import SimpleLineChart from '../ui/SimpleLineChart';
+import Spinner from '../ui/Spinner';
 
 const chkData = [
     { "name": "2000-12-31T00:00:00.000-05:00", "Contentment": 0, "Joy": 0, "Sadness": 0, "Unknown": 1 },
@@ -54,7 +55,8 @@ export default class LineChartCtl extends React.Component {
             email: email,
             interval: this.props.interval,
             data: [],
-            contentShow: false
+            contentShow: false,
+            isloading: true
         };
         if (this.props.load === true) {
             var dte = new DateHelper(this.state.pivotDate);
@@ -141,14 +143,15 @@ export default class LineChartCtl extends React.Component {
             graphData.push(e["values"])
         })
         if (graphData.length === 0) {
-            this.setState({ data: [], contentShow: true });
+            this.setState({ data: [], contentShow: true,isloading: false });
         } else {
-            this.setState({ data: graphData, contentShow: false });
+            this.setState({ data: graphData, contentShow: false,isloading: false });
         }
         //this.forceUpdate();
         this.log("completed");
     }
     onSelect = (target) => {
+        this.setState({ isloading: true })
         var dte = new DateHelper(this.state.pivotDate);
         if (target == 1) {
             this.fetchData(dte.get24HourRange(), "1h");
@@ -209,8 +212,11 @@ export default class LineChartCtl extends React.Component {
                         </DropdownButton>
                     </div>
                 </span>}
-                body={<span>
+                body={<span> 
+                {this.state.isloading && <Spinner height={250} width={600}/>}
+                {!this.state.isloading &&
                     <div> <SimpleLineChart data={this.state.data}  title="Emotional Trends" /></div>
+                }
                 </span>}
             >
             </SPPanel>

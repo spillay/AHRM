@@ -60,7 +60,7 @@ export default class EntropyCtl extends React.Component {
             contentShow: false,
             entropy: 0,
             emailSent: 0,
-            isloading: false
+            isloading: true
         };
         if (this.props.load === true) {
             var dte = new DateHelper(this.state.pivotDate);

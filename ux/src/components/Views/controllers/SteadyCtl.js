@@ -34,6 +34,7 @@ import ModalView from '../ModalView';
 import ReactSpeedometer from "react-d3-speedometer";
 import SimpleBarChart from '../ui/SimpleBarChart';
 import EntropyHandler from '../../BL/EntropyHandler';
+import Spinner from '../ui/Spinner';
 
 const chkData = [
     { "name": "2000-12-31T00:00:00.000-05:00", "Contentment": 0, "Joy": 0, "Sadness": 0, "Unknown": 1 },
@@ -60,7 +61,8 @@ export default class SteadyCtl extends React.Component {
             data: [],
             contentShow: false,
             entropy: 0,
-            emailSent: 0
+            emailSent: 0,
+            isloading: true
         };
         if (this.props.load === true) {
             var dte = new DateHelper(this.state.pivotDate);
@@ -156,7 +158,7 @@ export default class SteadyCtl extends React.Component {
             graphData.push(item)
         })
         this.log(JSON.stringify(graphData), 10)
-        this.setState({ data: graphData })
+        this.setState({ data: graphData,isloading:false })
     }
     updateData = (resp) => {
         this.log("Updating data");
@@ -206,6 +208,7 @@ export default class SteadyCtl extends React.Component {
         }
     }
     onSelect = (target) => {
+        this.setState({ isloading: true })
         var dte = new DateHelper(this.state.pivotDate);
         if (target == 1) {
             this.fetchData(dte.get24HourRange(), "1h");
@@ -271,7 +274,10 @@ export default class SteadyCtl extends React.Component {
                     </div>
                 </span>}
                 body={<span>
+                    {this.state.isloading && <Spinner height={250} width={650}/>}
+                    {!this.state.isloading &&
                     <SimpleBarChart data={this.state.data} />
+                    }
                 </span>}
             >
 

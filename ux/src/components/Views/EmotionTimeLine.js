@@ -30,7 +30,7 @@ import EmailView from './EmailView.js';
 import ModalView from './ModalView';
 import EmoService from '../../components/security/EmoService';
 import ESService from '../../components/security/ESService';
-
+import Spinner from './ui/Spinner';
 
 
 
@@ -54,7 +54,8 @@ export default class EmotionTimeLine extends React.Component {
             email: email,
             emailVisibility: false,
             emailData: "",
-            nodata: false
+            nodata: false,
+            isloading: true
         };
         if (this.props.load === true){
             var dt = new DateHelper(this.state.pivotDate);
@@ -65,9 +66,9 @@ export default class EmotionTimeLine extends React.Component {
         }
     }
     log = (mesg, type) => {
-        if (type === 1) {
+        //if (type === 1) {
             console.log(mesg)
-        }
+        //}
     }
     handleContentClose = () => {
         this.log("content close");
@@ -106,6 +107,7 @@ export default class EmotionTimeLine extends React.Component {
     }
     onSelect = (target) => {
         this.log("Outputting from here: ", target);
+        this.setState({ isloading: true })
         var dt = new DateHelper(this.state.pivotDate);
         var range;
         if (target == 1) {
@@ -173,7 +175,8 @@ export default class EmotionTimeLine extends React.Component {
                     cnt = cnt + 1;
                 })
                 this.setState({
-                    data: ndata
+                    data: ndata,
+                    isloading: false
                 })
                 if (ndata.length===0){
                     this.setState({nodata:true})
@@ -216,9 +219,10 @@ export default class EmotionTimeLine extends React.Component {
             graphData.push(jsonData);
 
         })
-        
+        this.log("++++++++++++++++++++++++++++++++++++++++++++++")
         this.setState({
-            data: graphData
+            data: graphData,
+            isloading: false
         })
         this.log(graphData,1)
         this.log(graphData.length,1)
@@ -288,6 +292,8 @@ export default class EmotionTimeLine extends React.Component {
                         </div>
                     </span>}
                     body={<span>
+                        {this.state.isloading && <Spinner height={180} width={280}/>}
+                        {!this.state.isloading && 
                         <div>
                             <ul className="timeline">
 
@@ -298,6 +304,7 @@ export default class EmotionTimeLine extends React.Component {
 
                             </ul>
                         </div>
+                        }
                     </span>}
                 >
 
