@@ -3,6 +3,11 @@ Function.prototype.method = function (name, func) {
     return this;
 };
 
+Function.prototype.methodA = async function (name, func) {
+    this.prototype[name] = func;
+    return this;
+};
+
 Function.method('inherits', function (parent) {
     this.prototype = new parent();
     var d = {}, 

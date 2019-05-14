@@ -2,6 +2,8 @@ import { emotionPalette } from '../../config/EmotionConfig.js';
 import Color from 'color';
 import legend from 'd3-svg-legend';
 import userImage from '../../../images/user-generic.png'
+import GraphData from '../../BL/GraphData';
+
 var obj = require('../../SPObject');
 var d3 = require("d3");
 
@@ -324,12 +326,12 @@ SPAnimationGraph.method("createLegend", function () {
     var domain = [];
     var range = [];
     emotionPalette.forEach(e => {
-        console.log(e);
+        //console.log(e);
         domain.push(e.emotion);
         range.push(e.color);
     })
-    console.log(domain);
-    console.log(range);
+    //console.log(domain);
+    //console.log(range);
     var linear = d3.scaleOrdinal()
         .domain(domain)
         .range(range);
@@ -382,6 +384,8 @@ SPAnimationGraph.method("draw", function () {
     var svg = this.svg;
     var easeparam = "linear";
     this.createLegend();
+    console.log("createDrill")
+    this.createDrill();
     d3.select('#advance').on('click', function () {
         console.log("transition");
         var circle = svg.selectAll(".circle");
@@ -529,11 +533,24 @@ SPAnimationGraph.method('clean', function () {
     d3.select(this.element).selectAll("*").remove();
 });
 SPAnimationGraph.method('createDrill', function () {
-    var dataset = this.data;
-    var path = this.path;
-    var parent = this.parent;
-    path.on('click', function (d) {
-        console.log('Drill Down ' + d.data.label);
-        parent.redraw(d.data.label);
+    // var dataset = this.data;
+    // var path = this.path;
+    // var parent = this.parent;
+    // console.log("createDrill",path)
+    // path.on('click', function (d) {
+    //     console.log('Drill Down ' + d.data.label);
+    //     parent.redraw(d.data.label);
+    // });
+    console.log(d3.selectAll('.node'))
+    var that = this
+    d3.selectAll('.node').on('click', function (d) {
+        console.log('Drill Down ',d.name);
+        var gd = new GraphData({"id":d.id,"name":d.name});
+        gd.process().then(res=>{
+            console.log("}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}",gd.getData())
+            that.data = gd.getData()
+            that.clean()
+            that.draw()
+        })
     });
 });

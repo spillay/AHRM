@@ -33,6 +33,7 @@ import ESService from '../../security/ESService';
 import SearchView from '../../Views/SearchView';
 import NotificationForm from '../../Views/ui/NotificationForm';
 import ModalView from '../../Views/ModalView';
+import GraphData from '../../BL/GraphData';
 
 function sanitizeJSON(unsanitized) {
     return unsanitized.replace(/\\/g, "\\\\").replace(/\n/g, "\\n").replace(/\r/g, "\\r").replace(/\t/g, "\\t").replace(/\f/g, "\\f").replace(/"/g, "\\\"").replace(/'/g, "\\\'").replace(/\&/g, "\\&");
@@ -62,6 +63,12 @@ export default class EmailRelationsCtl extends React.Component {
             noresults: false,
             contentShow: false
         };
+        // var graph = new GraphData()
+        // console.log(graph.process())
+        // .then((result)=>{
+        //      console.log("result",result)
+        // })
+        console.log("constructiore")
     }
     onLevel = (target) => {
         console.log("Outputting from level here: ", target);
@@ -371,7 +378,7 @@ export default class EmailRelationsCtl extends React.Component {
     }
     display = () => {
         console.log("displaying", this.state.node.getNodeData());
-        console.log(JSON.stringify(this.state.data));
+        //console.log(JSON.stringify(this.state.data));
     }
     searchSubmit = (email, date) => {
         this.setState({ showPanel: true, showNotification: true,showRelations: false, email: email, date: date },()=>{
@@ -389,6 +396,7 @@ export default class EmailRelationsCtl extends React.Component {
         console.log("close")
         this.setState({ contentShow: false })
     }
+    
     render() {
         return (
             <div>

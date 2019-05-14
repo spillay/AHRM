@@ -20,7 +20,6 @@ export default class SimpleLineChart extends React.Component {
             colors: colors
         }
     }
-
     render() {
         console.log("rerender",this.props.data,this.state.colors)
         return (
@@ -30,6 +29,7 @@ export default class SimpleLineChart extends React.Component {
                 axes
                 grid
                 verticalGrid
+                tickTimeDisplayFormat={'%m'}
                 width={600}
                 height={250}
                 data={this.props.data}
