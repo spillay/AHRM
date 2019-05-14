@@ -11,13 +11,15 @@ var d3 = require("d3");
 export default function GraphData(opts) {
     console.log("Init GraphData----------------------------------------------->");
     console.log(opts)
-    this.dte = new DateHelper("01/01/2019");
+    this.dte = new DateHelper(opts.date);
     this.root = new DataNode(opts.id,opts.name,0)
-    this.interval = "1h";
+    this.interval = opts.interval;
     this.range =  this.dte.get24HourRange();
+    console.log(":::::::::::::::::::::::::::::::::::::::::::::::",this.range)
     this.nodeList = [];
     this.essvr = new ESService();
     this.nodeList.push(this.root)
+    this.level = opts.level;
 }
 
 
@@ -25,11 +27,9 @@ GraphData.prototype.processChildren3 =  function (nodeList,level) {
     return this.essvr.getData(JSON.parse(this.root.getChildrenQuery(this.range)))
  }
 
-GraphData.prototype.process =  function (email,date) {
-    
-
+GraphData.prototype.process =  function () {
     console.log("++++++++++++++++++++++++++++++++++++process")
-    let res =  this.processChildren(this.nodeList,2).then(()=>{
+    let res =  this.processChildren(this.nodeList,this.level).then(()=>{
         return this.processEmotions();
     })
     return res
@@ -99,7 +99,7 @@ GraphData.method("processEmotions", function () {
                     console.log(ndata);
                     var tdata = [];
                     ndata.forEach(t => {
-                        console.log(t.prime.buckets[0].key);
+                        //console.log(t.prime.buckets[0].key);
                         tdata.push(t.prime.buckets[0].key);
                     })
                     data.nodes[idx]["emotions"] = tdata;

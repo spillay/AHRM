@@ -55,7 +55,8 @@ export default class EmotionTimeLine extends React.Component {
             emailVisibility: false,
             emailData: "",
             nodata: false,
-            isloading: true
+            isloading: true,
+            selected: "Date Range"
         };
         if (this.props.load === true){
             var dt = new DateHelper(this.state.pivotDate);
@@ -105,6 +106,7 @@ export default class EmotionTimeLine extends React.Component {
         var res = query.getFullQuery();
         return res;
     }
+   
     onSelect = (target) => {
         this.log("Outputting from here: ", target);
         this.setState({ isloading: true })
@@ -112,18 +114,23 @@ export default class EmotionTimeLine extends React.Component {
         var range;
         if (target == 1) {
             range = dt.get24HourRange();
+            this.state.selected = "Last 24 Hours";
         }
         if (target == 2) {
             range = dt.getWeekRange();
+            this.state.selected = "Last Week";
         }
         if (target == 3) {
             range = dt.getMonthRange();
+            this.state.selected = "Last Month";
         }
         if (target == 4) {
             range = dt.getYearRange();
+            this.state.selected = "Last Year";
         }
         if (target == 5) {
             range = "none";
+            this.state.selected = "All";
         }
         var inboxRes = this.getToQuery(range);
         var sentRes = this.getFromQuery(range);
@@ -282,7 +289,7 @@ export default class EmotionTimeLine extends React.Component {
                     header={<span>
                         <i className="fa fa-clock-o fa-fw" /> Emotion Timeline
                     <div className="pull-right">
-                            <DropdownButton title="Date Range" bsSize="xs" pullRight id="dropdownButton1" onSelect={this.onSelect}>
+                            <DropdownButton title={this.state.selected} bsSize="xs" pullRight id="dropdownButton1" onSelect={this.onSelect}>
                                 <MenuItem eventKey="1">Last 24 Hours</MenuItem>
                                 <MenuItem eventKey="2">Last Week</MenuItem>
                                 <MenuItem eventKey="3">Last Month</MenuItem>

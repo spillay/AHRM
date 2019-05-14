@@ -56,7 +56,8 @@ export default class LineChartCtl extends React.Component {
             interval: this.props.interval,
             data: [],
             contentShow: false,
-            isloading: true
+            isloading: true,
+            selected: "Date Range"
         };
         if (this.props.load === true) {
             var dte = new DateHelper(this.state.pivotDate);
@@ -150,23 +151,30 @@ export default class LineChartCtl extends React.Component {
         //this.forceUpdate();
         this.log("completed");
     }
+
+    
     onSelect = (target) => {
         this.setState({ isloading: true })
         var dte = new DateHelper(this.state.pivotDate);
         if (target == 1) {
             this.fetchData(dte.get24HourRange(), "1h");
+            this.state.selected = "Last 24 Hours";
         }
         if (target == 2) {
             this.fetchData(dte.getWeekRange(), "1d");
+            this.state.selected = "Last Week";
         }
         if (target == 3) {
             this.fetchData(dte.getMonthRange(), "1w");
+            this.state.selected = "Last Month";
         }
         if (target == 4) {
             this.fetchData(dte.getYearRange(), "1M");
+            this.state.selected = "Last Year";
         }
         if (target == 5) {
             this.fetchData("none", "1M");
+            this.state.selected = "All";
         }
 
         this.forceUpdate();
@@ -203,7 +211,7 @@ export default class LineChartCtl extends React.Component {
                 header={<span>
                     <i className="fa fa-clock-o fa-fw" /> Emotion Line Chart
                     <div className="pull-right btn-group">
-                        <DropdownButton title="Date Range" bsSize="xs" pullRight id="dropdownButton1" onSelect={this.onSelect}>
+                        <DropdownButton title={this.state.selected} bsSize="xs" pullRight id="dropdownButton1" onSelect={this.onSelect}>
                             <MenuItem eventKey="1">Last 24 Hours</MenuItem>
                             <MenuItem eventKey="2">Last Week</MenuItem>
                             <MenuItem eventKey="3">Last Month</MenuItem>

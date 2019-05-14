@@ -545,7 +545,7 @@ SPAnimationGraph.method('createDrill', function () {
     var that = this
     d3.selectAll('.node').on('click', function (d) {
         console.log('Drill Down ',d.name);
-        var gd = new GraphData({"id":d.id,"name":d.name});
+        var gd = new GraphData({"id":d.id,"name":d.name,"date":"01/01/2019","interval":"1h","level":1});
         gd.process().then(res=>{
             console.log("}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}",gd.getData())
             that.data = gd.getData()

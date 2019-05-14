@@ -63,12 +63,14 @@ class Home extends Component {
       data: [],
       dataDonut: [],
       pivotDate: "03/12/2019",
-      dh: new DataHelper()
+      dh: new DataHelper(),
+      selected: "Date Range"
     };
   }
   onSelect = (target) => {
     console.log("Outputting from here: ", target);
     if (target == 1) {
+      this.state.selected = "Last 24 Hours";
       var dt = new DateHelper(this.state.pivotDate);
       var range = dt.get24HourRange();
       console.log("--------------------" + range.start + " : " + range.end)
@@ -79,6 +81,7 @@ class Home extends Component {
       this.executeQuery(query2, this.updateDataDonut);
     }
     if (target == 2) {
+      this.state.selected = "Last Week";
       var dt = new DateHelper(this.state.pivotDate);
       var range = dt.getWeekRange();
       console.log("--------------------" + range.start + " : " + range.end)
@@ -89,6 +92,7 @@ class Home extends Component {
       this.executeQuery(query2, this.updateDataDonut);
     }
     if (target == 3) {
+      this.state.selected = "Last Month";
       var dt = new DateHelper(this.state.pivotDate);
       var range = dt.getMonthRange();
       console.log("--------------------" + range.start + " : " + range.end)
@@ -99,6 +103,7 @@ class Home extends Component {
       this.executeQuery(query2, this.updateDataDonut);
     }
     if (target == 4) {
+      this.state.selected = "Last Year";
       var dt = new DateHelper(this.state.pivotDate);
       var range = dt.getYearRange();
       console.log("--------------------" + range.start + " : " + range.end)
@@ -216,7 +221,7 @@ class Home extends Component {
                 header={<span>
                   <i className="fa fa-bar-chart-o fa-fw" /> Overview of Emotion Analysis
               <div id="org-select" className="pull-right">
-                    <DropdownButton  title="Date Range" bsSize="xs" pullRight id="dropdownButton1" onSelect={this.onSelect}>
+                    <DropdownButton  title={this.state.selected} bsSize="xs" pullRight id="dropdownButton1" onSelect={this.onSelect}>
                       <MenuItem eventKey="1">Last 24 Hours</MenuItem>
                       <MenuItem eventKey="2">Last Week</MenuItem>
                       <MenuItem eventKey="3">Last Month</MenuItem>
