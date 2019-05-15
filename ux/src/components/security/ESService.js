@@ -3,10 +3,10 @@ import jwt_decode from 'jwt-decode';
 export default class ESService {
     constructor(server) {
         if (process.env.NODE_ENV === 'development'){
-            this.domain = 'http://localhost:9000'
-            //this.domain = 'http://149.28.59.50:9000'
+            //this.domain = 'http://localhost:9001'
+            this.domain = 'http://149.28.59.50:9001'
         } else {
-            this.domain = 'http://149.28.59.50:9000'
+            this.domain = 'http://149.28.59.50:9001'
         }
         this.fetch = this.fetch.bind(this)
     }
@@ -20,7 +20,7 @@ export default class ESService {
         
     }
     getData(query) {
-        console.log("getdata" + this.domain)
+        console.log("getdata++++++++++++++++++++++++++++++++++++",this.domain)
         console.log(JSON.stringify( query ))
         return this.fetch(`${this.domain}/api/query`, {
             method: 'POST',

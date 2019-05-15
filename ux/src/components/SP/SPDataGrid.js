@@ -32,7 +32,7 @@ import Donut from '../Views/ui/Donut';
 import EmailAnalysisView from '../Views/EmailAnalysisView';
 import EmployeeView from '../Views/EmployeeView';
 
-import { DataHelper } from 'DataManager';
+import DataHelper from '../SP/data/DataHelper';
 import ModalView from '../Views/ModalView';
 
 const TreeTable = treeTableHOC(ReactTable);

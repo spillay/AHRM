@@ -1,7 +1,8 @@
+import { Query } from './Query.js';
+import { Builder } from './Builder.js';
 
-import Query  from '../query/Query.js';
-import { Builder } from '../query/Builder.js';
 var obj = require('../../../SPObject');
+
 
 export function Topic(opts,db) {
     //console.log("Constructor:Topic");

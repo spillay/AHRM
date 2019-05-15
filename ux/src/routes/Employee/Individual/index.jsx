@@ -31,7 +31,7 @@ import SearchView from '../../../components/Views/SearchView.js';
 import LineChartCtl from '../../../components/Views/controllers/LineChartCtl';
 import EntropyCtl from '../../../components/Views/controllers/EntropyCtl';
 import SteadyCtl from '../../../components/Views/controllers/SteadyCtl';
-import { DateHelper } from 'DataManager';
+import DateHelper from '../../../components/SP/data/DateHelper';
 import AuthService from '../../../components/security/AuthService';
 import withAuth from '../../../components/security/withAuth';
 import withTour from '../../../components/tour/withTour';

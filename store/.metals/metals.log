@@ -1,0 +1,4 @@
+INFO  time: initialize in 0.59s
+INFO  skipping build import with status 'Requested'
+INFO  no build target: using presentation compiler with only scala-library
+INFO  shutting down Metals

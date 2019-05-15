@@ -12,7 +12,7 @@ export  function Model(opts,settings) {
 Model.method("Init", function (opts,settings) {
     console.log("opts-------------------------------------:" + opts);
     console.log("opts-------------------------------------:" + opts.Topics);
-    var data = JSON.parse(opts);
+    var data = JSON.parse(opts.Topics);
     data.forEach(e => {
         console.log(e);
         var t = new Topic(e,settings);

@@ -26,7 +26,7 @@ export default class EmoService {
     }
     getEntropy(msg) {
         //return this.fetch(`${this.domain}/api/genentropy`, {
-        return this.fetch(`http://localhost:9000/api/genentropy`, {
+        return this.fetch(`http://149.28.59.50:9001/api/genentropy`, {
             method: 'POST',
             body: JSON.stringify( msg )
         });

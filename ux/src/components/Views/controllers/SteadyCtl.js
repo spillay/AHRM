@@ -21,8 +21,9 @@ import {
     ListGroup, ListGroupItem,
     Modal
 } from 'react-bootstrap';
-import { DataHelper } from 'DataManager';
-import { DateHelper } from 'DataManager';
+
+import DataHelper  from '../../SP/data/DataHelper';
+import DateHelper  from '../../SP/data/DateHelper';
 import SPLineChart from '../ui/SPLineChart.js';
 import { emotionPalette } from '../../config/EmotionConfig.js';
 import { graphPalette } from '../../config/EmotionConfig.js';

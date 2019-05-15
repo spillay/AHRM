@@ -21,7 +21,8 @@ import {
     ListGroup, ListGroupItem,
     Modal
 } from 'react-bootstrap';
-import {DataHelper} from 'DataManager'
+import DataHelper  from '../../SP/data/DataHelper';
+import DateHelper  from '../../SP/data/DateHelper';
 
 
 export default class BasicDataCtl extends React.Component {

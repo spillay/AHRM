@@ -1,4 +1,4 @@
-name := """DAT"""
+name := """SPWS"""
 organization := "com.dsleng"
 
 version := "1.0-SNAPSHOT"

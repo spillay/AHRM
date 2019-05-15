@@ -22,8 +22,9 @@ import {
     DropdownButton,
     ListGroup, ListGroupItem
 } from 'react-bootstrap';
-import { DataHelper } from 'DataManager';
-import { DateHelper } from 'DataManager';
+
+import DataHelper  from '../SP/data/DataHelper';
+import DateHelper from '../SP/data/DateHelper';
 import EmotionCard from './ui/EmotionCard.js';
 import EmailAnalysisView from './EmailAnalysisView.js';
 import EmailView from './EmailView.js';

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import EntropyCtl from '../../../components/Views/controllers/EntropyCtl'
-import { DateHelper } from 'DataManager';
+import DateHelper  from '../../../components/SP/data/DateHelper';
 import withTour from '../../../components/tour/withTour';
 import withNav from '../../../components/navigation/withNav';
 import withAuth from '../../../components/security/withAuth';

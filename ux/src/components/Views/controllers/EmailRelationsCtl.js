@@ -21,10 +21,7 @@ import {
     ListGroup, ListGroupItem,
     Modal
 } from 'react-bootstrap';
-import { DataHelper } from 'DataManager'
-import { DateHelper } from 'DataManager'
-import { DataNode } from 'DataManager'
-import { GraphHelper } from 'DataManager'
+
 import { DRelationsView } from '../RelationsView'
 import SPPanel from '../ui/SPPanel.js';
 import { DPanelView } from '../PanelView';
@@ -34,6 +31,8 @@ import SearchView from '../../Views/SearchView';
 import NotificationForm from '../../Views/ui/NotificationForm';
 import ModalView from '../../Views/ModalView';
 import GraphData from '../../BL/GraphData';
+import DataHelper  from '../../SP/data/DataHelper';
+import DateHelper  from '../../SP/data/DateHelper';
 
 function sanitizeJSON(unsanitized) {
     return unsanitized.replace(/\\/g, "\\\\").replace(/\n/g, "\\n").replace(/\r/g, "\\r").replace(/\t/g, "\\t").replace(/\f/g, "\\f").replace(/"/g, "\\\"").replace(/'/g, "\\\'").replace(/\&/g, "\\&");

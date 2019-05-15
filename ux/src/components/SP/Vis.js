@@ -3,12 +3,8 @@ import { SPBar } from './SPBar.js';
 import { MessageBox } from './MessageBox.js';
 import DataGrid from './DataGrid.js';
 import SPDataGrid from './SPDataGrid.js';
-//import  DataGrid  from '../../custom/DataGrid.jsx';
-import { dataMgr } from 'DataManager';
-//import { queryMgr } from 'DataManager';
+import { dataMgr } from './data/DataMgr';
 import {queryMgr} from './data/QueryMgr';
-//import Query from './data/query/Query';
-//import { Filter } from 'DataManager';
 import Filter from './data/query/Filter';
 
 

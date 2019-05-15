@@ -8,8 +8,8 @@ import Header from '../../components/navigation/Header';
 import SPPanel from '../../components/Views/ui/SPPanel'
 import Donut from '../../components/Views/ui/Donut';
 
-import { DataHelper } from 'DataManager';
-import { DateHelper } from 'DataManager';
+import DataHelper  from '../../components/SP/data/DataHelper';
+import DateHelper  from '../../components/SP/data/DateHelper';
 
 import { colorPalette } from '../../components/config/EmotionConfig.js';
 import { strokePalette } from '../../components/config/EmotionConfig.js';

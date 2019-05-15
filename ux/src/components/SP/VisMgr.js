@@ -1,6 +1,5 @@
 import { select } from "d3";
 import {Vis} from './Vis.js';
-//import {Filter} from 'DataManager';
 import Filter from './data/query/Filter';
 import { settings } from './spconfig'
 

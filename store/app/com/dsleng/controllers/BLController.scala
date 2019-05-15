@@ -54,7 +54,7 @@ class BLController @Inject()(components: ControllerComponents,
       )
     )
   )
-  def genEntropy =  silhouette.UnsecuredAction.async { implicit request =>
+  def genEntropy =  silhouette.SecuredAction.async { implicit request =>
       val body = request.body.asJson;
       println("body}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}",body)
       body.map { content =>
@@ -79,8 +79,8 @@ class BLController @Inject()(components: ControllerComponents,
       )
     )
   )
-  def query =  silhouette.UnsecuredAction.async { implicit request =>
-  //def query =  silhouette.SecuredAction.async { implicit request =>
+  //def query =  silhouette.UnsecuredAction.async { implicit request =>
+  def query =  silhouette.SecuredAction.async { implicit request =>
   //def query =  Action.async { implicit request =>
       println("before request");
       //Future.successful(Ok(Json.toJson("hello")))

@@ -1,0 +1,86 @@
+plugins {
+  id 'org.hidetake.ssh' version '2.9.0'
+}
+
+remotes {
+  webServer {
+    host = '149.28.59.50'
+    user = 'jaasuz'
+    identity = file('/home/suresh/.ssh/id_rsa')
+  }
+}
+task storeBuild(type: Exec){
+   workingDir './store/'
+   commandLine 'sbt','dist'
+}
+task storeExtract(type: Copy) {
+    def zipFile = file('./store/target/universal/spws-1.0-SNAPSHOT.zip')
+    def outputDir = file("./deploy/WS/")
+
+    from zipTree(zipFile)
+    into outputDir
+}
+
+task commsBuild(type: Exec){
+   workingDir './CommsMgr/'
+   commandLine 'sbt','dist'
+}
+task commsExtract(type: Copy) {
+    def zipFile = file('./CommsMgr/target/universal/commsmgr-1.0-SNAPSHOT.zip')
+    def outputDir = file("./deploy/CommsMgr/")
+
+    from zipTree(zipFile)
+    into outputDir
+}
+
+
+
+task deployComms {
+  doLast {
+    ssh.run {
+      session(remotes.webServer) {
+        put from: './deploy/CommsMgr', into: '/home/jaasuz/deployV2/'
+      }
+    }
+  }
+}
+
+
+task deployStore {
+  doLast {
+    ssh.run {
+      session(remotes.webServer) {
+        put from: './deploy/WS', into: '/home/jaasuz/deployV2/'
+      }
+    }
+  }
+}
+
+task frontendBuild(type: Exec){
+   workingDir './ux/'
+   commandLine 'yarn','build'
+}
+
+task frontendCopy(type: Copy) {
+    from './ux/build/'
+    into './deploy/FrontEnd'
+    include '**'
+}
+
+task deployFE {
+  doLast {
+    ssh.run {
+      session(remotes.webServer) {
+        put from: './deploy/FrontEnd', into: '/home/jaasuz/deployV2/'
+      }
+    }
+  }
+}
+
+
+commsExtract.dependsOn commsBuild
+deployComms.dependsOn commsExtract
+storeExtract.dependsOn storeBuild
+deployStore.dependsOn storeExtract
+frontendCopy.dependsOn frontendBuild
+deployFE.dependsOn frontendCopy

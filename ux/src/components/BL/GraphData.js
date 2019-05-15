@@ -1,7 +1,7 @@
-import { DataNode } from 'DataManager'
-import { DataHelper } from 'DataManager'
-import { DateHelper } from 'DataManager'
-import { GraphHelper } from 'DataManager'
+import DataNode from '../SP/data/DataNode';
+import DataHelper from '../SP/data/DataHelper';
+import DateHelper from '../SP/data/DateHelper';
+import GraphHelper from '../SP/data/GraphHelper';
 import ESService from '../security/ESService';
 
 var obj = require('../SPObject');
