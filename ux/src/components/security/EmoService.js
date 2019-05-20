@@ -10,8 +10,8 @@ export default class EmoService {
         //this.server = server || '{"host":"' + process.env.ES + http://192.168.1.5:9200'","log":"trace"}'
         // this.server = "{'host':'sp008.hopto.org:9200','log':'trace'}"
         if (process.env.NODE_ENV === 'development'){
-            //this.domain = 'http://localhost:9000'
-            this.domain = 'http://149.28.59.50:9000'
+            this.domain = 'http://localhost:9000'
+            //this.domain = 'http://149.28.59.50:9000'
         } else {
             this.domain = 'http://149.28.59.50:9000'
         }
@@ -25,8 +25,8 @@ export default class EmoService {
         });
     }
     getEntropy(msg) {
-        //return this.fetch(`${this.domain}/api/genentropy`, {
-        return this.fetch(`http://149.28.59.50:9001/api/genentropy`, {
+        return this.fetch(`${this.domain}/api/genentropy`, {
+        //return this.fetch(`api/genentropy`, {
             method: 'POST',
             body: JSON.stringify( msg )
         });

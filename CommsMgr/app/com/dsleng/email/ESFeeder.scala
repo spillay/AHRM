@@ -24,13 +24,13 @@ class ESFeeder(ip: String) {
       new HttpHost(ip, 9201, "http")))
 
   def write(indexRequest: IndexRequest) {
-    var indexResponse = client.index(indexRequest)
+    var indexResponse = client.index(indexRequest,RequestOptions.DEFAULT)
     if (indexResponse.getResult() == DocWriteResponse.Result.CREATED) {
       println("created document")
     }
   }
   def writeBULK() {
-    val bulkResponse = client.bulk(bulkRequest);
+    val bulkResponse = client.bulk(bulkRequest,RequestOptions.DEFAULT);
     if (bulkResponse.hasFailures()) {
       bulkResponse.forEach(item => {
         val failure = item.getFailure()
@@ -47,7 +47,8 @@ class ESFeeder(ip: String) {
  
     val jsonString = Json.toJson(model).toString()
     println(jsonString)
-    var indexRequest = new IndexRequest(index, "_doc")
+    //var indexRequest = new IndexRequest(index, "_doc")
+    var indexRequest = new IndexRequest(index)
     indexRequest.source(jsonString, XContentType.JSON);
 
     bulkRequest.add(indexRequest)
@@ -99,7 +100,8 @@ class ESFeeder(ip: String) {
 
     val jsonString = Json.toJson(model).toString()
     println(jsonString)
-    var indexRequest = new IndexRequest(index, "_doc")
+    //var indexRequest = new IndexRequest(index, "_doc")
+    var indexRequest = new IndexRequest(index)
     indexRequest.source(jsonString, XContentType.JSON);
 
     bulkRequest.add(indexRequest)

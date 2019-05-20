@@ -16,8 +16,8 @@ libraryDependencies += "org.apache.commons" % "commons-email" % "1.5"
 libraryDependencies += "tech.blueglacier" % "email-mime-parser" % "1.0.2"
 libraryDependencies += "commons-net" % "commons-net" % "3.6"
 libraryDependencies += "org.scalanlp" % "breeze_2.12" % "0.13.2"
-libraryDependencies += "org.elasticsearch" % "elasticsearch" % "6.2.1"
-libraryDependencies += "org.elasticsearch.client" % "elasticsearch-rest-high-level-client" % "6.2.1"
+libraryDependencies += "org.elasticsearch" % "elasticsearch" % "7.0.1"
+libraryDependencies += "org.elasticsearch.client" % "elasticsearch-rest-high-level-client" % "7.0.1"
 libraryDependencies += "com.pff" % "java-libpst" % "0.8.1"
 
 

@@ -1,12 +1,10 @@
 import decode from 'jwt-decode';
 export default class AuthService {
     constructor(domain) {
-        //this.domain = 'http://149.28.59.50:9000'
-        //this.domain = 'http://192.168.1.5:9000'
-        //this.domain = domain || 'http://localhost:9000'
+        console.log(process.env.NODE_ENV)
         if (process.env.NODE_ENV === 'development'){
-            //this.domain = 'http://localhost:9000'
-            this.domain = 'http://149.28.59.50:9000'
+            this.domain = 'http://localhost:9000'
+            //this.domain = 'http://149.28.59.50:9000'
         } else {
             this.domain = 'http://149.28.59.50:9000'
         }

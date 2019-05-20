@@ -139,7 +139,22 @@ class Simulate {
   var emails = new ArrayBuffer[AEmailExt]()
   
   def getAll(): ArrayBuffer[AEmailExt] = {
-    this.processDept()
+    var pl = new ArrayBuffer[Person]()
+    pl += new Person("john@example.com","manager","operations")
+    pl += new Person("peter@example.com","employee","operations")
+    pl += new Person("paul@example.com","employee","operations")
+    pl += new Person("mark@example.com","employee","operations")
+    pl += new Person("mathew@example.com","employee","operations")
+    this.processDept(pl)
+    
+    var pl2 = new ArrayBuffer[Person]()
+    pl2 += new Person("james@example.com","manager","IT")
+    pl2 += new Person("ann@example.com","employee","IT")
+    pl2 += new Person("maltilda@example.com","employee","IT")
+    pl2 += new Person("frank@example.com","employee","IT")
+    pl2 += new Person("marry@example.com","employee","IT")
+    this.processDept(pl2)
+    
     return emails
   }
   def getEmail(from: Person,to: Person,dte: String,emo: String): AEmailExt ={
@@ -163,19 +178,13 @@ class Simulate {
     val sEmail = new AEmailExt(
         "",
         simpleModel,
-        "Operations",
+        from.dept,
         ArrayBuffer[String]("ProductA").toArray,
         emo
     )
      return sEmail
   }
-  def processDept(){
-    var pl = new ArrayBuffer[Person]()
-    pl += new Person("john@example.com","manager","operations")
-    pl += new Person("peter@example.com","employee","operations")
-    pl += new Person("paul@example.com","employee","operations")
-    pl += new Person("mark@example.com","employee","operations")
-    pl += new Person("mathew@example.com","employee","operations")
+  def processDept(pl: ArrayBuffer[Person]){
     
     println(pl.size)
     var ran = new RandomGen()

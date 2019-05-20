@@ -1,0 +1,20 @@
+{
+    "ax_dir": "repo/EmotionAnalytics",
+    "check_box": [
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        true
+    ],
+    "csv_dir": "repo/CSV",
+    "emotion_dir": "repo/EmotionLabeling",
+    "file_count": 1,
+    "input_dir": "repo/Emails",
+    "label_count": 1,
+    "pst_dir": "repo/PST",
+    "text_dir": "repo/TextEmails"
+}
