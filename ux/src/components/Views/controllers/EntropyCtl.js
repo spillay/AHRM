@@ -84,7 +84,7 @@ export default class EntropyCtl extends React.Component {
         this.log(this.props.email + " : " + this.state.email)
         this.log(pivotDate + " : " + this.state.pivotDate)
         if (this.props.email !== this.state.email || pivotDate !== this.state.pivotDate) {
-            this.log("============================ updating all for LineChartCtl")
+            //this.log("============================ updating all for LineChartCtl")
             var email = this.props.email;
             if (email.indexOf(",") > 0) {
                 email = email.slice(0, email.indexOf(","));
@@ -108,7 +108,7 @@ export default class EntropyCtl extends React.Component {
         var res = {}
         var emotions = ['Agreeableness', 'Anger', 'Anxiety', 'Contentment', 'Disgust', 'Fear', 'Interest', 'Joy', 'Pride', 'Relief', 'Sadness', 'Shame']
         emotions.forEach(e => {
-            this.log("================================", e, norm, norm[e]);
+            //this.log("================================", e, norm, norm[e]);
             if (norm[e] !== undefined) {
                 res[e] = norm[e];
             } else {
@@ -161,18 +161,22 @@ export default class EntropyCtl extends React.Component {
             var that = this
             var ent = new EntropyHandler(graphData)
             var handlerData = ent.processByDay(graphData)
-            this.log(handlerData,1)
-            essvr.getEntropy(handlerData).then((resp) => {
-                that.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>res -" + res, 1)
-                that.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + resp, 10)
-                var rdata = JSON.parse(resp)
-                that.log(rdata["norm_entropy"], 10)
-                that.setState({ entropy: rdata["norm_entropy"],isloading: false })
-            }).catch(function (e) {
-                that.log("Cannot connect to Server" + e, 1)
-            });
-            this.forceUpdate();
-            this.log("completed");
+            this.log("handlerData::::::::::::::::::::" +JSON.stringify(handlerData),1)
+            if (handlerData.states.length > 0){
+                essvr.getEntropy(handlerData).then((resp) => {
+                    that.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>res -" + res, 1)
+                    that.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + resp, 10)
+                    var rdata = JSON.parse(resp)
+                    that.log(rdata["norm_entropy"], 10)
+                    that.setState({ entropy: rdata["norm_entropy"],isloading: false })
+                }).catch(function (e) {
+                    that.log("Cannot connect to Server" + e, 1)
+                });
+                this.forceUpdate();
+                this.log("completed");
+            } else {
+                alert("No Data Found for Entropy")
+            }
         }
 
     }

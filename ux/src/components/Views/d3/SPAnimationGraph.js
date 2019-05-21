@@ -9,18 +9,32 @@ var d3 = require("d3");
 
 export function SPAnimationGraph(opts) {
     console.log("Init SPGraph");
-    this.data = opts.data;
+    //this.data = opts.data;
     this.element = opts.element;
     this.width = this.element.offsetWidth;
     this.height = opts.height;
     this.margin = opts.margin;
     this.parent = opts.parent;
+    this.email = opts.email;
+    this.date = opts.date;
+    this.interval = opts.interval;
+    this.level = opts.level;
     this.animationStep = 400;
     this.timerID = 0;
-    console.log("+++++++++++++++++++++++++++++++++++++++++++++++", this.data);
-    this.draw();
-
+    console.log("+++++++++++++++++++++++++++++++++++++++++++++++", opts);
+    this.setData(this.email,this.date,this.interval,this.level);
 }
+
+SPAnimationGraph.method("setData", function () {
+    var that = this;
+    var gd = new GraphData({"id":this.email,"name":this.email,"date":this.date,"interval":this.interval,"level":this.level});
+    gd.process().then(res=>{
+            console.log("}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}",gd.getData())
+            that.data = gd.getData()
+            that.clean()
+            that.draw()
+    })
+})
 
 SPAnimationGraph.method("getColor", function (emotion) {
     console.log("getcolor");
@@ -196,17 +210,7 @@ SPAnimationGraph.method("initForce", function () {
         .attr('stroke', function (d) {
             return "#ddd";
         })
-    //.attr("d", (d) => this.diagonalLink(d));
-    /*
-    var link = this.svg.selectAll(".link")
-        .data(data.links)
-        .enter()
-        .append("path")
-        .attr("class", "link")
-        .attr('stroke', function (d) {
-            return "#ddd";
-        }).append("g");
-    */
+    
 
     console.log("before node");
     // add the nodes to the graphic
@@ -228,6 +232,7 @@ SPAnimationGraph.method("initForce", function () {
         })
 
 
+
     var images = node.append("svg:image")
         .attr("class", "image")
         .attr("xlink:href", userImage)
@@ -242,31 +247,16 @@ SPAnimationGraph.method("initForce", function () {
             .on("drag", (d) => this.dragged(d))
             .on("end", (d) => this.dragended(d)));
 
-    /*
-            console.log("before title");
-    // hover text for the node
-    node.append("title")
-        .text(function (d) {
-            return d.id;
-        });
-    */
-    // add a label to each node
+ 
     node.append("text")
         .attr("dx", 30)
         .attr("dy", ".35em")
         .text(function (d) {
-            //console.log("circle id " + d.id);
             return d.id;
         })
         .style("stroke", "black")
-        .style("stroke-width", 0.5)
-    //.style("fill", function (d) {
-    //   return "#008142";
-    //return d.colour;
-    // })//.on('contextmenu', function (data, index) {
-    // console.log("contextmenu",data,index);
-    //d3.event.preventDefault();
-    //})
+        .style("stroke-width", 0.5);
+
 
     link.append("text")
         .attr("class", "linktext")
@@ -274,22 +264,6 @@ SPAnimationGraph.method("initForce", function () {
         .attr("fill", "Black")
         .attr("color", "red")
         .style("font", "normal 12px Arial")
-        /*
-     .attr("transform", function(d) {
-         return "translate(" +
-             ((d.source.y + d.target.y)/2) + "," + 
-             ((d.source.x + d.target.x)/2) + ")";
-     })  
-  
-     .attr("transform", function (d) {
-         return "translate(" +
-             (width / 2) + "," +
-             (height / 2) + ")";
-         return "translate(" +
-             ((d.source.y + d.target.y) / 2) + "," +
-             ((d.source.x + d.target.x) / 2) + ")";
-     })
-     */
         .attr("dy", ".35em")
         .attr("text-anchor", "middle")
         .text(function (d) {
@@ -354,6 +328,11 @@ SPAnimationGraph.method("createLegend", function () {
 
 
 });
+SPAnimationGraph.method("setLevel", function (i) {
+    this.level = i;
+    this.setData();
+})
+
 SPAnimationGraph.method("setPos", function (i) {
     console.log("set Position", i);
     this.timerID = i;
@@ -407,15 +386,15 @@ SPAnimationGraph.method("draw", function () {
                     } else {
                         return Color(d["color"]);
                     }
-                    //console.log("time",t)
-                    //var grn = Math.floor((1 - d.index / 60) * 255);
-                    //console.log("rgb(0, " + grn + ", 0)");
-                    //return "rgb(" + t*10 + ", " + grn + ", 0)";
-
-                    // return "translate(" + ((width / 2) + t_offset + t_x) + "," + (height / 2 + t_offset + t_y) + ")";
                 };
             };
         }
+    });
+    d3.select('#levels').on('change', function () {
+        var selectedLevel = d3.select(this).property("value");
+        console.log("selected value",selectedLevel)
+        that.level = selectedLevel;
+        that.setData();
     });
     d3.select('#play').on('click', function () {
         simulation.slowMotion = true;
@@ -464,38 +443,6 @@ SPAnimationGraph.method("draw", function () {
                 }
             }
         }
-        /*
-        var duration = 30 * 1000;
-
-        // background color progression is smooth from lime to orange to red
-        var colorScale = d3.scaleLinear().clamp(true)
-            .domain([0, duration / 2, duration])
-            .range(['lime', 'orange', 'red']);
-
-
-
-        var index = -1;
-        that.intervalID = setInterval(function () {
-            console.log("setInterval ID: " + that.intervalID);
-            index = index + 1;
-            d3.selectAll('circle')
-                .attr("fill", setColor(index))
-            //d3.selectAll('.image')
-              //  .attr("background-color", setColor(index))
-        }, 1000);
-        function setColor(index) {
-            return function (d, i, a) {
-                if (d.emotions.length > 0 && index < d.emotions.length) {
-                    var c = that.getColor(d.emotions[index]);
-                    console.log("color", c)
-                    d["color"] = c;
-                    return Color(c);
-                } else {
-                    return Color(d["color"]);
-                }
-            }
-        }
-        */
     });
     d3.select('#reset').on('click', function () {
         console.log("reset", simulation);
@@ -533,24 +480,44 @@ SPAnimationGraph.method('clean', function () {
     d3.select(this.element).selectAll("*").remove();
 });
 SPAnimationGraph.method('createDrill', function () {
-    // var dataset = this.data;
-    // var path = this.path;
-    // var parent = this.parent;
-    // console.log("createDrill",path)
-    // path.on('click', function (d) {
-    //     console.log('Drill Down ' + d.data.label);
-    //     parent.redraw(d.data.label);
-    // });
-    console.log(d3.selectAll('.node'))
-    var that = this
+    var that = this;
     d3.selectAll('.node').on('click', function (d) {
         console.log('Drill Down ',d.name);
-        var gd = new GraphData({"id":d.id,"name":d.name,"date":"01/01/2019","interval":"1h","level":1});
-        gd.process().then(res=>{
-            console.log("}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}",gd.getData())
-            that.data = gd.getData()
-            that.clean()
-            that.draw()
-        })
+        that.email = d.name;
+        that.setData();
     });
 });
+SPAnimationGraph.method('contextMenu', function () {
+    d3.selectAll('.node').on("contextmenu", function(data, index) {
+        var position = d3.mouse(this);
+        console.log(this,data,position[0],data,position[1])
+        var x = position[0];
+        var y = position[1];
+        var width = 1500,height = 1500,margin=0.1;
+        var cmenu = d3.select('#person-context')
+          .attr('x', x)
+          .attr('y', y)
+          .style('position', 'fixed')
+          .style('left', position[0] + "px")
+          .style('top', position[1] + "px")
+          .style('display', 'inline-block')
+          .append('g').attr('class', 'menu-entry')
+
+        cmenu.append('rect')
+            .attr('x', x)
+            //.attr('y', function(d, i){ return y + (i * height); })
+            .attr('y', y)
+            .attr('width', width)
+            .attr('height', height)
+            
+        cmenu.append("text")
+            .text("hello")
+            .attr('x', x)
+            .attr('y', y)
+            //.attr('y', function(d, i){ return y + (i * height); })
+            .attr('dy', height - margin / 2)
+            .attr('dx', margin)
+            
+        d3.event.preventDefault();
+    });
+})

@@ -87,7 +87,7 @@ export default class SteadyCtl extends React.Component {
         this.log(this.props.email + " : " + this.state.email)
         this.log(pivotDate + " : " + this.state.pivotDate)
         if (this.props.email !== this.state.email || pivotDate !== this.state.pivotDate) {
-            this.log("============================ updating all for LineChartCtl")
+            //this.log("============================ updating all for LineChartCtl")
             var email = this.props.email;
             if (email.indexOf(",") > 0) {
                 email = email.slice(0, email.indexOf(","));
@@ -111,9 +111,9 @@ export default class SteadyCtl extends React.Component {
         var res = {}
         var emotions = ['Agreeableness', 'Anger', 'Anxiety', 'Contentment', 'Disgust', 'Fear', 'Interest', 'Joy', 'Pride', 'Relief', 'Sadness', 'Shame']
         emotions.forEach(e => {
-            this.log("================================", e, norm, norm[e]);
+            //this.log("================================", e, norm, norm[e]);
             if (norm[e] !== undefined) {
-                this.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>norm" + norm[e],10)
+                //this.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>norm" + norm[e],10)
                 res[e] = norm[e];
             } else {
                 res[e] = 0.0;
@@ -196,17 +196,21 @@ export default class SteadyCtl extends React.Component {
             console.log("=============================================================before entropy")
             var ent = new EntropyHandler(graphData)
             var handlerData = ent.processByDay(graphData)
-            essvr.getEntropy(handlerData).then((resp) => {
-                that.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + resp, 1)
-                var rdata = JSON.parse(resp)
-                that.log(rdata["norm_steady_states"], 1)
-                var steady = rdata["norm_steady_states"]
-                that.setData(steady)
-            }).catch(function (e) {
-                that.log("Cannot connect to Server" + e, 1)
-            });
-            this.forceUpdate();
-            this.log("completed");
+            if (handlerData.states.length > 0){
+                essvr.getEntropy(handlerData).then((resp) => {
+                    that.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + resp, 1)
+                    var rdata = JSON.parse(resp)
+                    that.log(rdata["norm_steady_states"], 1)
+                    var steady = rdata["norm_steady_states"]
+                    that.setData(steady)
+                }).catch(function (e) {
+                    that.log("Cannot connect to Server" + e, 1)
+                });
+                this.forceUpdate();
+                this.log("completed");
+            } else {
+                alert("No Data Found for Steady States")
+            }
         }
     }
     onSelect = (target) => {

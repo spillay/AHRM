@@ -75,6 +75,7 @@ export default class SearchView extends React.Component {
                 <form onSubmit={this.onSubmit}>
                     <datalist id="days">
                         <option label="Email Data">2019-03-12</option>
+                        <option label="Email Data">2018-10-12</option>
                         <option label="Email Data">2001-01-01</option>
                         <option label="Email Data">2002-01-01</option>
                         <option label="Email Data">1999-12-27</option>
@@ -90,7 +91,8 @@ export default class SearchView extends React.Component {
                         <option>frank.hayden@enron.com</option>
                         <option>lisa.kinsey@enron.com</option>
                         <option>mike.roberts@enron.com</option>
-                        <option>from@example.com</option>
+                        <option>john@example.com</option>
+                        <option>james@example.com</option>
                     </datalist>
                     <div className="form-group">
                         <label htmlFor="email">Email address</label>

@@ -37,7 +37,8 @@ export default class RelationsView extends React.Component {
             width: 1000,
             height: 1000,
             margin: 5,
-            contentShow: false
+            contentShow: false,
+            selected: 'Select Level'
         };
         console.log("Parent info--------------------------------", this.props);
     }
@@ -60,7 +61,11 @@ export default class RelationsView extends React.Component {
             'data': this.props.data,
             'width': this.props.windowWidth,
             'height': this.props.windowHeight,
-            'margin': this.state.margin
+            'margin': this.state.margin,
+            'level': this.props.level,
+            'email': this.props.email,
+            'interval': this.props.interval,
+            'date': this.props.date
         });
         var rangeObj = document.querySelector('input[type=range]');
         rangeObj.style.setProperty('--range-width', this.props.windowWidth)
@@ -81,6 +86,10 @@ export default class RelationsView extends React.Component {
             this.state.graph.setPos(e.target.value);
 
         }
+    }
+    onLevel = (target) => {
+        this.state.graph.setLevel(target)
+        this.setState({'level':target,'selected':target})
     }
     render() {
         console.log("RelationView render", this.props.windowWidth, " window width ", this.props.panelWidth, window.innerWidth, window.parent.innerWidth);
@@ -115,7 +124,17 @@ export default class RelationsView extends React.Component {
                     <option value="23" label="23hr" />
                     <option value="24" label="24hr" />
                 </datalist>
+               
+                <label>Levels:</label>
+                <select id='levels'>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
 
+                <br></br>
                 <button id='slow' title='Run Layout in Slow Motion'>
                     <i className='fa fa-play'></i>
                 </button>
@@ -130,7 +149,8 @@ export default class RelationsView extends React.Component {
 
                 <input id="range-input-datalist" type="range" min="0" max="24" list="range1" onChange={this.changeRange} />
                 <input id="output" type="text" name="output" readOnly />
-
+                <div id="person-context" className="context-menu" />
+                
                 <div id="ComponentPlace" width={this.props.windowWidth} height={this.props.windowHeight}>
                 </div>
                 <ModalView show={this.state.contentShow} closeaction={this.handleContentClose} title="Notifications">

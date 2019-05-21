@@ -155,6 +155,22 @@ class Simulate {
     pl2 += new Person("marry@example.com","employee","IT")
     this.processDept(pl2)
     
+    var pl3 = new ArrayBuffer[Person]()
+    pl3 += new Person("henry@example.com","manager","Finance")
+    pl3 += new Person("chan@example.com","employee","Finance")
+    pl3 += new Person("siva@example.com","employee","Finance")
+    pl3 += new Person("jones@example.com","employee","Finance")
+    pl3 += new Person("vivian@example.com","employee","Finance")
+    this.processDept(pl3)
+    
+    val mgrs1 = pl.filter(p=>{p.emptype=="manager"})
+    val mgrs2 = pl2.filter(p=>{p.emptype=="manager"})
+    val mgrs3 = pl3.filter(p=>{p.emptype=="manager"})
+    
+    val mgrsv1 = mgrs1.++=(mgrs2)
+    this.processManager(mgrsv1,6)
+    val mgrsv2 = mgrs1.++=(mgrs3)
+    this.processManager(mgrsv2,12)
     return emails
   }
   def getEmail(from: Person,to: Person,dte: String,emo: String): AEmailExt ={
@@ -183,6 +199,32 @@ class Simulate {
         emo
     )
      return sEmail
+  }
+  def processManager(pl: ArrayBuffer[Person],period: Integer){
+    println(pl.length)
+    var ran = new RandomGen()
+    val form = DateTimeFormat.forPattern("yyyy-MM-dd'T'HH:mm:ss")
+    var dte = form.parseDateTime("2018-04-12T12:00:00")
+    val eHandle = new Emos()
+    
+     for(i <- 0 to 2){
+      dte = dte.plusMonths(period)
+      val pn = ran.getRandom(0, 1)
+      for(a <- 0 to 672){
+        pl.foreach(p1=>{
+          pl.foreach(p2=>{
+            if (p1.email != p2.email){
+              if (pn == 0){
+                emails += getEmail(p1, p2, dte.toString(form),eHandle.getPosStr())
+              } else {
+                emails += getEmail(p1, p2, dte.toString(form),eHandle.getNegStr())
+              }
+            }
+          })
+        })
+      }
+     }
+    
   }
   def processDept(pl: ArrayBuffer[Person]){
     
@@ -227,12 +269,16 @@ class Simulate {
 }
 object Simulate extends App {
   Console.println("Hello World: " + (args mkString ", "))
-  val emos = new ArrayBuffer[EmoUnit]()
-  emos += new EmoUnit("Fear",2)
-  emos += new EmoUnit("Anger",3)
-  emos += new EmoUnit("Disgust",5)
-  val oj = new EmoStr(emos)
-  oj.getNorm()
-  val j = Json.toJson(oj)
-  println(j.toString())
+  val o = new Simulate()
+  println(o.getAll().length)
+  def processEmo(){
+    val emos = new ArrayBuffer[EmoUnit]()
+    emos += new EmoUnit("Fear",2)
+    emos += new EmoUnit("Anger",3)
+    emos += new EmoUnit("Disgust",5)
+    val oj = new EmoStr(emos)
+    oj.getNorm()
+    val j = Json.toJson(oj)
+    println(j.toString())
+  }
 }

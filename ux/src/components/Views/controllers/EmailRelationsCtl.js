@@ -149,19 +149,13 @@ export default class EmailRelationsCtl extends React.Component {
                         <i className="fa fa-clock-o fa-fw" /> Email Connections
     <div className="pull-right">
                           
-                            <DropdownButton title={this.state.selected} bsSize="xs" pullRight id="dropdownButton1" onSelect={this.onLevel} >
-                                <MenuItem eventKey="1">1</MenuItem>
-                                <MenuItem eventKey="2">2</MenuItem>
-                                <MenuItem eventKey="3">3</MenuItem>
-                                <MenuItem eventKey="4">4</MenuItem>
-                                <MenuItem eventKey="5">5</MenuItem>
-                            </DropdownButton>
+                          
                         </div>
 
                     </span>}
                     body={<span>
 
-                        {this.state.showRelations && <DRelationsView data={this.state.data} panelWidth={this.props.windowWidth} />}
+                        {this.state.showRelations && <DRelationsView data={this.state.data} email={this.state.email} date={this.state.date} interval={this.state.interval} panelWidth={this.props.windowWidth} level={this.state.level}/>}
                     </span>}
                 >
                 </DPanelView>}
