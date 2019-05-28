@@ -1,0 +1,8 @@
+dependencies {
+	compile group: 'org.elasticsearch.client', name: 'elasticsearch-rest-high-level-client', version: '6.4.1'
+    compile group: 'org.elasticsearch.client', name: 'elasticsearch-rest-client', version: '6.4.1'
+    compile group: 'org.elasticsearch', name: 'elasticsearch', version: '6.4.1'
+    compile group: 'org.mongodb.scala', name: 'mongo-scala-driver_2.12', version: '2.6.0'
+    compile group: 'com.sfxcode.nosql', name: 'simple-mongo_2.12', version: '1.6.3-SNAPSHOT'
+	compile project(":com.dsleng.model")
+}

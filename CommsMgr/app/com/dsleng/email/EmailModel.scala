@@ -90,8 +90,23 @@ case class AEmailModel(
     return "0.0.0.0"
   }
   def getGeoLocation(ip: String): GeoInfo = {
-    var geo = new IPTZ()
-    return geo.getGeoInfo(ip);
+    //var geo = new IPTZ()
+    //return geo.getGeoInfo(ip);
+    
+    val geoinfo = new GeoInfo(
+         "184.168.221.79",
+          "US",
+         "United States",
+          "AZ",
+          "Arizona",
+          "Scottsdale",
+          "85260",
+          "America/Phoenix",
+          "33.6013",
+          "-111.8867",
+          "753"
+          )
+    return geoinfo
   }
 }
 
@@ -171,8 +186,23 @@ case class SimpleEmailModel(
     return "0.0.0.0"
   }
   def getGeoLocation(ip: String): GeoInfo = {
-    var geo = new IPTZ()
-    return geo.getGeoInfo(ip);
+    //var geo = new IPTZ()
+    //return geo.getGeoInfo(ip);
+    
+     val geoinfo = new GeoInfo(
+         "184.168.221.79",
+          "US",
+         "United States",
+          "AZ",
+          "Arizona",
+          "Scottsdale",
+          "85260",
+          "America/Phoenix",
+          "33.6013",
+          "-111.8867",
+          "753"
+          )
+    return geoinfo
   }
 }
 

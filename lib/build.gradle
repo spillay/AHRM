@@ -1,0 +1,105 @@
+// Global Configuration for Scala Projects
+configure([ project(':com.dsleng.store'),project(':com.dsleng.model'),project('com.dsleng.twitter'),project('com.dsleng.test')]) {
+
+	apply plugin: 'scala'
+	apply plugin: 'eclipse'
+	apply plugin: "maven"
+    apply plugin: 'maven-publish'
+
+	group = "com.dsleng"
+	version = "1.0"
+	
+	repositories{
+	    mavenCentral()
+	    mavenLocal()
+	}
+	
+	dependencies{
+	    compile "org.scala-lang:scala-library:2.12.3"
+    
+	    compileOnly group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.2'
+	    //annotationProcessor group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.1'
+  		compileOnly group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.2'
+  		//annotationProcessor group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.1'
+  		compile group: 'org.apache.logging.log4j', name: 'log4j-api-scala_2.12', version: '11.0'
+	    testCompile "junit:junit:4.11"
+	}
+	compileJava {
+    	options.compilerArgs += '-proc:none'
+	}
+	task wrapper(type: Wrapper) {
+   		gradleVersion = '4.10.2' //version required
+	}
+    /*
+	configurations.all {
+	    resolutionStrategy.force "org.scala-lang:scala-library:2.12.3"
+	    exclude group: 'org.slf4j', module: 'slf4j-simple'
+	    exclude group: 'org.slf4j', module: 'slf4j-log4j2'
+	}
+    */
+    clean.doLast {
+        file('./bin/').deleteDir()
+    }
+    publishing {
+    publications {
+        myLibrary(MavenPublication) {
+            from components.java
+        }
+    }
+
+    repositories {
+        maven {
+            name = 'myRepo'
+            url = "file://${buildDir}/repo"
+        }
+    }
+    }
+}
+// Global Configuration for Java Projects
+configure([project(':com.dsleng.nlp')]) {
+	apply plugin: 'java'
+	apply plugin: 'eclipse'
+	apply plugin: "maven"
+    apply plugin: 'maven-publish'
+
+	group = "com.dsleng"
+	version = "1.0"
+	
+	repositories{
+	    mavenCentral()
+	    mavenLocal()
+	}
+	
+	compileJava {
+    	options.compilerArgs += '-proc:none'
+	}
+	task wrapper(type: Wrapper) {
+   		gradleVersion = '4.10.2' //version required
+	}
+   	dependencies {
+		compileOnly group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.2'
+	    //annotationProcessor group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.1'
+  		compileOnly group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.2'
+  		//annotationProcessor group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.1'
+	}
+    clean.doLast {
+        file('./bin/').deleteDir()
+    }
+    publishing {
+    publications {
+        myLibrary(MavenPublication) {
+            from components.java
+        }
+    }
+
+    repositories {
+        maven {
+            name = 'myRepo'
+            url = "file://${buildDir}/repo"
+        }
+    }
+}
+}
+
+
+

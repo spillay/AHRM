@@ -1,0 +1,28 @@
+StatusJSONImpl{createdAt=Thu May 23 22:06:28 EDT 2019, id=1131743235036962816, text='MA'AM I NEED THE HD https://t.co/YDbsDrIXwv', source='<a href="http://twitter.com/download/android" rel="nofollow">Twitter for Android</a>', isTruncated=false, inReplyToStatusId=-1, inReplyToUserId=-1, isFavorited=false, isRetweeted=false, favoriteCount=0, inReplyToScreenName='null', geoLocation=null, place=null, retweetCount=0, isPossiblySensitive=false, lang='en', contributorsIDs=[], retweetedStatus=null, userMentionEntities=[], urlEntities=[], hashtagEntities=[], mediaEntities=[MediaEntityJSONImpl{id=1131743217781579778, url='https://t.co/YDbsDrIXwv', mediaURL='http://pbs.twimg.com/media/D7TCddjUIAIDwjM.jpg', mediaURLHttps='https://pbs.twimg.com/media/D7TCddjUIAIDwjM.jpg', expandedURL='https://twitter.com/izoneshoe/status/1131743235036962816/photo/1', displayURL='pic.twitter.com/YDbsDrIXwv', sizes={0=Size{width=116, height=116, resize=101}, 1=Size{width=123, height=116, resize=100}, 2=Size{width=123, height=116, resize=100}, 3=Size{width=123, height=116, resize=100}}, type='photo', videoAspectRatioWidth=0, videoAspectRatioHeight=0, videoDurationMillis=0, videoVariants=0, extAltText='null'}, MediaEntityJSONImpl{id=1131743221493534720, url='https://t.co/YDbsDrIXwv', mediaURL='http://pbs.twimg.com/media/D7TCdrYUEAAsDW3.jpg', mediaURLHttps='https://pbs.twimg.com/media/D7TCdrYUEAAsDW3.jpg', expandedURL='https://twitter.com/izoneshoe/status/1131743235036962816/photo/1', displayURL='pic.twitter.com/YDbsDrIXwv', sizes={0=Size{width=120, height=120, resize=101}, 1=Size{width=140, height=120, resize=100}, 2=Size{width=140, height=120, resize=100}, 3=Size{width=140, height=120, resize=100}}, type='photo', videoAspectRatioWidth=0, videoAspectRatioHeight=0, videoDurationMillis=0, videoVariants=0, extAltText='null'}, MediaEntityJSONImpl{id=1131743226128297984, url='https://t.co/YDbsDrIXwv', mediaURL='http://pbs.twimg.com/media/D7TCd8pU8AApWTB.jpg', mediaURLHttps='https://pbs.twimg.com/media/D7TCd8pU8AApWTB.jpg', expandedURL='https://twitter.com/izoneshoe/status/1131743235036962816/photo/1', displayURL='pic.twitter.com/YDbsDrIXwv', sizes={0=Size{width=116, height=116, resize=101}, 1=Size{width=116, height=118, resize=100}, 2=Size{width=116, height=118, resize=100}, 3=Size{width=116, height=118, resize=100}}, type='photo', videoAspectRatioWidth=0, videoAspectRatioHeight=0, videoDurationMillis=0, videoVariants=0, extAltText='null'}, MediaEntityJSONImpl{id=1131743232251924480, url='https://t.co/YDbsDrIXwv', mediaURL='http://pbs.twimg.com/media/D7TCeTdUEAAL9Zw.jpg', mediaURLHttps='https://pbs.twimg.com/media/D7TCeTdUEAAL9Zw.jpg', expandedURL='https://twitter.com/izoneshoe/status/1131743235036962816/photo/1', displayURL='pic.twitter.com/YDbsDrIXwv', sizes={0=Size{width=150, height=150, resize=101}, 1=Size{width=680, height=227, resize=100}, 2=Size{width=765, height=255, resize=100}, 3=Size{width=765, height=255, resize=100}}, type='photo', videoAspectRatioWidth=0, videoAspectRatioHeight=0, videoDurationMillis=0, videoVariants=0, extAltText='null'}], symbolEntities=[], currentUserRetweetId=-1, user=UserJSONImpl{id=1056148095837204480, name='sal', email='null', screenName='izoneshoe', location=' this is ot12 zone', description='fan account for #아이즈원 & other ggs
+                
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     ot12 
+
+
+
+
+
+
+       annyeongz is my religion', isContributorsEnabled=false, profileImageUrl='http://pbs.twimg.com/profile_images/1131694274238648331/HdLrVF_a_normal.jpg', profileImageUrlHttps='https://pbs.twimg.com/profile_images/1131694274238648331/HdLrVF_a_normal.jpg', isDefaultProfileImage=false, url='null', isProtected=false, followersCount=1330, status=null, profileBackgroundColor='F5F8FA', profileTextColor='333333', profileLinkColor='1DA1F2', profileSidebarFillColor='DDEEF6', profileSidebarBorderColor='C0DEED', profileUseBackgroundImage=true, isDefaultProfile=true, showAllInlineMedia=false, friendsCount=460, createdAt=Sat Oct 27 07:38:23 EDT 2018, favouritesCount=11565, utcOffset=-1, timeZone='null', profileBackgroundImageUrl='', profileBackgroundImageUrlHttps='', profileBackgroundTiled=false, lang='null', statusesCount=8379, isGeoEnabled=false, isVerified=false, translator=false, listedCount=12, isFollowRequestSent=false, withheldInCountries=null}, withHeldInCountries=null, quotedStatusId=-1, quotedStatus=null}

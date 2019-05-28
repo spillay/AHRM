@@ -486,14 +486,70 @@ SPAnimationGraph.method('createDrill', function () {
         that.email = d.name;
         that.setData();
     });
+    this.contextMenu();
 });
+
+
 SPAnimationGraph.method('contextMenu', function () {
+    console.log("svg")
+    
+      
+    d3.selectAll('.node').on("contextmenu", function(data, index) {
+        console.log(data.x,"in context menu")
+        
+        var width = 100,height = 30,margin=0.1;
+        var position = d3.mouse(this);
+        // var x = 100;
+        // var y = 300;
+        var x = data.x;
+        var y = data.y;
+
+        var cm = d3.select("svg").append("g")
+                        .attr("class", "context-menu")
+                        .attr("id","person-context");
+        
+        cm.style('position', 'absolute')
+            .attr('x',x)
+            .attr('y',y)
+            //.attr("transform", "translate("+x+","+y+")")
+            .style('left', position[0] + "px")
+            .style('top', position[1] + "px")
+            .style('display', 'block');
+        cm.on("mouseout",function(d,i){
+            console.log(d,i,d3.select(this))
+            d3.select(this).remove()
+        })
+        var cmenu = cm.append('g').attr('class', 'menu-entry')
+        
+        cmenu.append('rect')
+            .attr('x', x)
+            //.attr('y', function(d, i){ return y + (i * height); })
+            .attr('y', y)
+            .attr('width', width)
+            .attr('height', height)
+        
+        cmenu.append("text")
+            .text("hello")
+            .attr('x', x)
+            .attr('y', y)
+            //.attr('y', function(d, i){ return y + (i * height); })
+            .attr('dy', height - margin / 2)
+            .attr('dx', margin)
+
+        console.log("contextmenu2",cm)
+        d3.event.preventDefault();
+    })
+})
+
+SPAnimationGraph.method('contextMenu1', function () {
     d3.selectAll('.node').on("contextmenu", function(data, index) {
         var position = d3.mouse(this);
+        console.log("xposit",d3.select(this),position);
         console.log(this,data,position[0],data,position[1])
         var x = position[0];
         var y = position[1];
         var width = 1500,height = 1500,margin=0.1;
+        console.log("context",d3.select('#person-context'))
         var cmenu = d3.select('#person-context')
           .attr('x', x)
           .attr('y', y)

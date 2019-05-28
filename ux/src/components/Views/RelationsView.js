@@ -149,9 +149,10 @@ export default class RelationsView extends React.Component {
 
                 <input id="range-input-datalist" type="range" min="0" max="24" list="range1" onChange={this.changeRange} />
                 <input id="output" type="text" name="output" readOnly />
-                <div id="person-context" className="context-menu" />
+                {/* <div id="person-context" className="context-menu" /> */}
                 
                 <div id="ComponentPlace" width={this.props.windowWidth} height={this.props.windowHeight}>
+                
                 </div>
                 <ModalView show={this.state.contentShow} closeaction={this.handleContentClose} title="Notifications">
                     <div>

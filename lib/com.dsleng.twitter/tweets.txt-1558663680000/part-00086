@@ -1,0 +1,37 @@
+StatusJSONImpl{createdAt=Thu May 23 22:07:22 EDT 2019, id=1131743461512638465, text='😂😂😂 https://t.co/bYLlHGncI2', source='<a href="http://twitter.com/download/android" rel="nofollow">Twitter for Android</a>', isTruncated=false, inReplyToStatusId=-1, inReplyToUserId=-1, isFavorited=false, isRetweeted=false, favoriteCount=0, inReplyToScreenName='null', geoLocation=null, place=null, retweetCount=0, isPossiblySensitive=false, lang='und', contributorsIDs=[], retweetedStatus=null, userMentionEntities=[], urlEntities=[], hashtagEntities=[], mediaEntities=[MediaEntityJSONImpl{id=1131743444492152833, url='https://t.co/bYLlHGncI2', mediaURL='http://pbs.twimg.com/media/D7TCqqHU8AESl35.jpg', mediaURLHttps='https://pbs.twimg.com/media/D7TCqqHU8AESl35.jpg', expandedURL='https://twitter.com/sushishuhua/status/1131743461512638465/photo/1', displayURL='pic.twitter.com/bYLlHGncI2', sizes={0=Size{width=150, height=150, resize=101}, 1=Size{width=680, height=680, resize=100}, 2=Size{width=774, height=774, resize=100}, 3=Size{width=774, height=774, resize=100}}, type='photo', videoAspectRatioWidth=0, videoAspectRatioHeight=0, videoDurationMillis=0, videoVariants=0, extAltText='null'}, MediaEntityJSONImpl{id=1131743454344564737, url='https://t.co/bYLlHGncI2', mediaURL='http://pbs.twimg.com/media/D7TCrO0U0AEQHi8.jpg', mediaURLHttps='https://pbs.twimg.com/media/D7TCrO0U0AEQHi8.jpg', expandedURL='https://twitter.com/sushishuhua/status/1131743461512638465/photo/1', displayURL='pic.twitter.com/bYLlHGncI2', sizes={0=Size{width=150, height=150, resize=101}, 1=Size{width=680, height=680, resize=100}, 2=Size{width=774, height=774, resize=100}, 3=Size{width=774, height=774, resize=100}}, type='photo', videoAspectRatioWidth=0, videoAspectRatioHeight=0, videoDurationMillis=0, videoVariants=0, extAltText='null'}], symbolEntities=[], currentUserRetweetId=-1, user=UserJSONImpl{id=741549045395554304, name='sophie | yves day', email='null', screenName='sushishuhua', location='she/her', description='fanacc and im not affiliated with any artists
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#HYUNJIN: i aeong u', isContributorsEnabled=false, profileImageUrl='http://pbs.twimg.com/profile_images/1131426379294072832/EAAD3O8U_normal.jpg', profileImageUrlHttps='https://pbs.twimg.com/profile_images/1131426379294072832/EAAD3O8U_normal.jpg', isDefaultProfileImage=false, url='http://curiouscat.me/sushishuhua', isProtected=false, followersCount=920, status=null, profileBackgroundColor='000000', profileTextColor='000000', profileLinkColor='ABB8C2', profileSidebarFillColor='000000', profileSidebarBorderColor='000000', profileUseBackgroundImage=false, isDefaultProfile=false, showAllInlineMedia=false, friendsCount=883, createdAt=Sat Jun 11 04:34:04 EDT 2016, favouritesCount=22352, utcOffset=-1, timeZone='null', profileBackgroundImageUrl='http://abs.twimg.com/images/themes/theme1/bg.png', profileBackgroundImageUrlHttps='https://abs.twimg.com/images/themes/theme1/bg.png', profileBackgroundTiled=false, lang='null', statusesCount=12557, isGeoEnabled=false, isVerified=false, translator=false, listedCount=9, isFollowRequestSent=false, withheldInCountries=null}, withHeldInCountries=null, quotedStatusId=-1, quotedStatus=null}
+StatusJSONImpl{createdAt=Thu May 23 22:07:22 EDT 2019, id=1131743461525282816, text='希望你的演技越来越棒，作品越来越好，会有更多的人喜欢你❤️
+
+ #ใบไม้ที่ปลิดปลิว https://t.co/HbGDuAoyKE', source='<a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>', isTruncated=false, inReplyToStatusId=-1, inReplyToUserId=-1, isFavorited=false, isRetweeted=false, favoriteCount=0, inReplyToScreenName='null', geoLocation=null, place=null, retweetCount=0, isPossiblySensitive=false, lang='zh', contributorsIDs=[], retweetedStatus=null, userMentionEntities=[], urlEntities=[], hashtagEntities=[HashtagEntityJSONImpl{text='ใบไม้ที่ปลิดปลิว'}], mediaEntities=[MediaEntityJSONImpl{id=1131743440650219521, url='https://t.co/HbGDuAoyKE', mediaURL='http://pbs.twimg.com/media/D7TCqbzVsAEcVxG.jpg', mediaURLHttps='https://pbs.twimg.com/media/D7TCqbzVsAEcVxG.jpg', expandedURL='https://twitter.com/7ERtyutr0To4Iey/status/1131743461525282816/photo/1', displayURL='pic.twitter.com/HbGDuAoyKE', sizes={0=Size{width=150, height=150, resize=101}, 1=Size{width=350, height=500, resize=100}, 2=Size{width=350, height=500, resize=100}, 3=Size{width=350, height=500, resize=100}}, type='photo', videoAspectRatioWidth=0, videoAspectRatioHeight=0, videoDurationMillis=0, videoVariants=0, extAltText='null'}, MediaEntityJSONImpl{id=1131743440658583552, url='https://t.co/HbGDuAoyKE', mediaURL='http://pbs.twimg.com/media/D7TCqb1VUAAwWv7.jpg', mediaURLHttps='https://pbs.twimg.com/media/D7TCqb1VUAAwWv7.jpg', expandedURL='https://twitter.com/7ERtyutr0To4Iey/status/1131743461525282816/photo/1', displayURL='pic.twitter.com/HbGDuAoyKE', sizes={0=Size{width=150, height=150, resize=101}, 1=Size{width=680, height=509, resize=100}, 2=Size{width=960, height=719, resize=100}, 3=Size{width=960, height=719, resize=100}}, type='photo', videoAspectRatioWidth=0, videoAspectRatioHeight=0, videoDurationMillis=0, videoVariants=0, extAltText='null'}], symbolEntities=[], currentUserRetweetId=-1, user=UserJSONImpl{id=1112976836823150592, name='阿阿蒙PS🖤❤️', email='null', screenName='7ERtyutr0To4Iey', location='Thailand', description='如果你真的爱一个人，那么他喜欢谁，你同样会喜欢谁💕', isContributorsEnabled=false, profileImageUrl='http://pbs.twimg.com/profile_images/1131501235733843968/Ttgl2Hjg_normal.jpg', profileImageUrlHttps='https://pbs.twimg.com/profile_images/1131501235733843968/Ttgl2Hjg_normal.jpg', isDefaultProfileImage=false, url='null', isProtected=false, followersCount=175, status=null, profileBackgroundColor='F5F8FA', profileTextColor='333333', profileLinkColor='1DA1F2', profileSidebarFillColor='DDEEF6', profileSidebarBorderColor='C0DEED', profileUseBackgroundImage=true, isDefaultProfile=true, showAllInlineMedia=false, friendsCount=288, createdAt=Tue Apr 02 03:15:30 EDT 2019, favouritesCount=8162, utcOffset=-1, timeZone='null', profileBackgroundImageUrl='', profileBackgroundImageUrlHttps='', profileBackgroundTiled=false, lang='null', statusesCount=3862, isGeoEnabled=false, isVerified=false, translator=false, listedCount=1, isFollowRequestSent=false, withheldInCountries=null}, withHeldInCountries=null, quotedStatusId=-1, quotedStatus=null}

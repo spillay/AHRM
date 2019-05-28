@@ -164,7 +164,8 @@ Query.method("processParams", function (query) {
 });
 Query.method("getFullQuery", function () {
     var query = "";
-    var index = '"index": "ahrm"';
+    //var index = '"index": "ahrm"';
+    var index = '"index": "all-items"';
     switch (this.queryType) {
         case "Terms": {
             query = this.db.BasicTemplate;

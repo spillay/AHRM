@@ -8,11 +8,12 @@ import play.api.http.Status
 
 trait WSHandler {
   import scala.concurrent.ExecutionContext.Implicits._
-   def processWS(email: String): Unit = {
-    implicit val system = ActorSystem()
-    implicit val materializer = ActorMaterializer()
-    val wsClient = AhcWSClient()
+  implicit val system = ActorSystem()
+  implicit val materializer = ActorMaterializer()
+  val wsClient = AhcWSClient()
 
+  def processWS(email: String): Unit = {
+    //implicit val system = ActorSystem()
     call(wsClient,email)
       .andThen { case _ => wsClient.close() }
       .andThen { case _ => system.terminate() }
@@ -29,5 +30,8 @@ trait WSHandler {
         println(response.body[String])
       }
     }
+  }
+  def close(){
+    this.system.terminate()
   }
 }

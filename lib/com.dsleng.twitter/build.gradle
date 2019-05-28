@@ -1,0 +1,11 @@
+dependencies {
+    compile group: 'org.apache.bahir', name: 'spark-streaming-twitter_2.12', version: '2.4.0-SNAPSHOT'
+    compile group: 'org.apache.spark', name: 'spark-core_2.12', version: '2.4.3'
+    compile group: 'org.apache.spark', name: 'spark-streaming_2.12', version: '2.4.3'
+    compile group: 'org.apache.spark', name: 'spark-sql_2.12', version: '2.4.3'
+    //compile group: 'org.twitter4j', name: 'twitter4j-core', version: '4.0.7'
+    //compile group: 'org.twitter4j', name: 'twitter4j-stream', version: '4.0.7'
+    
+    
+	compile project(":com.dsleng.model")
+}
