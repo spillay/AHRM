@@ -1,27 +1,51 @@
 package com.dsleng.uploadengine
 
-import akka.actor.{ Actor, ActorLogging, ActorRef, ActorSystem, Props }
-//import com.dsleng.readers.MimeHandler
+import akka.actor.{ Actor, ActorLogging, ActorRef, ActorSystem, Props,PoisonPill }
+import com.dsleng.readers.MimeHandler
+import com.dsleng.email.SimpleEmailModel
 import java.io.File
 import play.api.libs.json._
+import scala.concurrent.{Await}
+import scala.concurrent.duration.{Duration,TimeUnit}
+import com.dsleng.akka.pattern.ReaperWatched
+import com.dsleng.akka.pattern.Reaper
 
-case class Email(name: String,from: String)
+import com.dsleng.actor.EmailCtl
+import com.dsleng.actor.Reader
+import com.dsleng.actor.Reader.FileCtl
 
+import akka.http.scaladsl.Http
+import akka.http.scaladsl.model._
+import akka.stream.ActorMaterializer
+
+/*
 object Email {
-  implicit val emailWrites = Json.writes[Email]
-  
-//  implicit val emailWrites = new Writes[Email] {
-//    def writes(a: Email) = Json.obj(
-//      "Address" -> a.name)
-//  }
+  def props: Props = Props[Email]
+}
+
+class Email extends Actor with ActorLogging with ReaperWatched {
+  import Email._
+
+  def receive = {
+    case "receive" =>
+      log.info("Greeting received (from " + sender() + "): ")
+      self ! "self"
+    case "self" =>
+      log.info("Self received (from " + sender() + "): ")
+    case EmailCtl(model,emotion) =>
+      log.info("Model received (from " + sender() + "): ")
+      
+  }
+  //override def preStart(): Unit = {println("Starting Emotion")}
+  override def postStop(): Unit = {println("Stopping Emotion")}
 }
 
 object Emotion {
   def props: Props = Props[Emotion]
 }
 
-class Emotion extends Actor with ActorLogging {
-  //import Printer._
+class Emotion extends Actor with ActorLogging with ReaperWatched {
+  import Emotion._
 
   def receive = {
     case "receive" =>
@@ -29,17 +53,22 @@ class Emotion extends Actor with ActorLogging {
       self ! "self"
     case "self" =>
       log.info("Self received (from " + sender() + "): ")
+    case EmailCtl(model,emotion) =>
+      log.info("Model received (from " + sender() + "): ")
+      
   }
-  override def preStart(): Unit = {println("Starting Emotion")}
+  //override def preStart(): Unit = {println("Starting Emotion")}
   override def postStop(): Unit = {println("Stopping Emotion")}
 }
 
 object EmailReader {
-  def props: Props = Props[EmailReader]
+  //def props: Props = Props[EmailReader]
+  def props(emotion: ActorRef): Props = Props(new EmailReader(emotion))
+  val mhandle = new MimeHandler()
 }
 
-class EmailReader extends Actor with ActorLogging {
-  //val mhandle = new MimeHandler()
+class EmailReader(emotion: ActorRef) extends Actor with ActorLogging with ReaperWatched {
+  import EmailReader._
 
   def receive = {
     case "receive" =>
@@ -47,13 +76,26 @@ class EmailReader extends Actor with ActorLogging {
       self ! "self"
     case "self" =>
       log.info("Self received (from " + sender() + "): ")
+    case "process" =>
+      log.info("Process received (from " + sender() + "): ")
+      val f = new File("/Data/enron/maildir/kean-s/inbox/62.")
+      val model = mhandle.processSimpleModel(f)
+      val email = context.actorOf(Email.props,"Email")
+      email ! new EmailCtl(model,"")
+      println(email.path)
+      emotion ! PoisonPill
+      self ! PoisonPill
+    case EmailCtl(model,emoStr) =>
+      log.info("Message received (from " + sender() + "): " + model)
+      emotion ! new EmailCtl(model,emoStr)
+      
       
   }
-  override def preStart(): Unit = {println("Starting EmailReader")}
+  //override def preStart(): Unit = {println("Starting EmailReader")}
   override def postStop(): Unit = {println("Stopping EmailReader")}
 }
 
-
+*/
 class Main {
   
 }
@@ -61,17 +103,26 @@ class Main {
 object Main extends App {
   println("Starting UploadEngine...")
   val system: ActorSystem = ActorSystem("UploadEngine")
+  system.registerOnTermination {
+    println("ActorSystem terminated")
+  }
   
-  val reader: ActorRef = system.actorOf(EmailReader.props, "emailReader")
-  // If invoked from an instance that is not an Actor the sender will be deadLetters actor reference by default.
-  reader ! "receive"
   
-//  val mhandle = new MimeHandler()
-//  val f = new File("/Data/enron/maildir/kean-s/inbox/9.")
-//  val res = mhandle.processSimpleModel(f)
-//  println(res.from)
-  var em = new Email("name","from")
-  println(Json.toJson(em))
+  val reaperActor = system.actorOf(Props(new Reaper()), name=Reaper.name)
   
-  system.terminate()
+  val reader: ActorRef = system.actorOf(Reader.props, "Reader")
+  
+  reader ! new FileCtl("/Data/enron/maildir/kean-s/inbox/62.")
+  
+  //reader ! PoisonPill
+//  val emotion: ActorRef = system.actorOf(Emotion.props, "emotion")
+//  val reader: ActorRef = system.actorOf(EmailReader.props(emotion), "emailReader")
+//  println(emotion.path)
+//  println(reader.path)
+//  // If invoked from an instance that is not an Actor the sender will be deadLetters actor reference by default.
+//  reader ! "process"
+  
+  
+  Await.ready(system.whenTerminated, Duration.Inf)
+  //system.c
 }

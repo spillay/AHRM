@@ -104,7 +104,7 @@ class EmoHelper(val spark: SparkSession) {
     ndf = ndf.withColumn("ext_count", countArr()(col("ext_fwords")))
     ndf = ndf.withColumn("liwc_count", countArr()(col("liwc_fwords")))
     //ndf = ndf.withColumn("diff", compareStrArray()(col("liwc_words"), col("ext_words")))
-    //ndf.show()
+    ndf.show()
     return ndf
   }
   def getData(df: DataFrame): String = {
@@ -146,8 +146,8 @@ class EmoHelper(val spark: SparkSession) {
         }
       }
     })
-    //println(res)
-    //println("end")
+    println(res)
+    println("end")
    
     val prime = this.getPrime(res)
     val out = new EmoRes(res,prime)
@@ -155,6 +155,7 @@ class EmoHelper(val spark: SparkSession) {
     return js.toString()
   }
   def getPrime(emo: Seq[EmoData]): Seq[EmoData] = {
+    if (emo.isEmpty) return Seq[EmoData](new EmoData("Unknown",0,Seq[String]()))
     val max = emo.maxBy(f => f.cnt)
     val res = emo.filter(p => p.cnt == max.cnt)
     var prime: Seq[EmoData] = null
