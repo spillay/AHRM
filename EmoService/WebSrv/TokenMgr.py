@@ -10,6 +10,7 @@ from WebSrv.utilities import read_from_json_file,read_from_pickle_file
 from WebSrv.applications import extract_basic_emotion_from_tokens
 from WebSrv.utilities import is_token_word
 import re
+import nltk
 
 class TokenMgr(object):
     '''
@@ -32,7 +33,10 @@ class TokenMgr(object):
                 key_tokens.append(t)
                 
         return key_tokens
-    
+    def getStopWords(self):
+        sp_nltk_stopwords = nltk.corpus.stopwords.words('english')
+        return sp_nltk_stopwords
+
     def extractbasic(self,tokens, emotion_word_dict):
         emotions = list(emotion_word_dict.keys())
         #print("emotions",emotions)

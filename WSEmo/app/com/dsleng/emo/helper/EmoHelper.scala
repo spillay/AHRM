@@ -97,6 +97,8 @@ class EmoHelper(val spark: SparkSession) {
         col("ext.words") as "ext_words")
     //ndf.show()
     tokens.foreach(tok => {
+      println(tok)
+      println("next token")
       ndf = ndf.withColumn("liwc_fwords", compareStrAgainstArray()(lit(tok), col("liwc_words"), col("liwc_fwords")))
       ndf = ndf.withColumn("ext_fwords", compareStrAgainstArray()(lit(tok), col("ext_words"), col("ext_fwords")))
     })

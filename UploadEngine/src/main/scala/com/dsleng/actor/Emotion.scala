@@ -14,6 +14,8 @@ import akka.stream.ActorMaterializer
 import play.api.libs.json._
 import akka.http.scaladsl.model._
 import akka.http.scaladsl.Http
+import com.dsleng.nlp.SimplePL
+import scala.collection.JavaConversions._
  
  //   ws.url("http://localhost:5001/emo/tokens").post(js).map{response =>
 
@@ -27,6 +29,7 @@ class Emotion extends Actor with ActorLogging with ReaperWatched {
   implicit val materializer = ActorMaterializer()
   implicit val executionContext = context.system.dispatcher
   implicit val system = context.system
+  val simplePL = new SimplePL()
   
   def receive = {
     case "process" =>
@@ -34,9 +37,11 @@ class Emotion extends Actor with ActorLogging with ReaperWatched {
     case TokenCtl(model,tokens) =>
       log.info("Processing tokens received (from " + sender() + "): " + tokens)  
       val origSender = sender
-      val js = Json.parse(tokens)
-      val tks = js \ "tokens"
-      log.info(tks.as[String])
+      val js = Json.toJson(tokens)
+      
+      //val tks = js \ "tokens"
+      //log.info(tks.as[String])
+      log.info(js.toString())
       val requestEntity = HttpEntity(MediaTypes.`application/json`, js.toString())
       val responseFuture: Future[HttpResponse] = Http().singleRequest(
           HttpRequest(
@@ -68,26 +73,31 @@ class Emotion extends Actor with ActorLogging with ReaperWatched {
       val origSender = sender
       
 
-      val requestEntity = HttpEntity(MediaTypes.`application/json`, js.toString)
-      val responseFuture: Future[HttpResponse] = Http().singleRequest(
-          HttpRequest(
-              method = HttpMethods.POST,
-              uri = "http://localhost:5001/emo/tokens",
-              entity = requestEntity
-          ))
-      responseFuture.onComplete {
-        case Success(value) => {
-          println(s"Got the callback, meaning = $value")
-          println(sender())
-          val HttpResponse(statusCodes, headers, entity, _) = value
-          println(statusCodes)
-          Unmarshal(entity).to[String].map(res=>{
-            self ! new TokenCtl(model,res)
-          })
-          
-        }
-        case Failure(e) => e.printStackTrace
-      }
+      
+      simplePL.process(model.model.textContent)
+      val toks = simplePL.getTokens()
+      self ! new TokenCtl(model,new TokenStrCtl(toks.toList))
+      
+//      val requestEntity = HttpEntity(MediaTypes.`application/json`, js.toString)
+//      val responseFuture: Future[HttpResponse] = Http().singleRequest(
+//          HttpRequest(
+//              method = HttpMethods.POST,
+//              uri = "http://localhost:5001/emo/tokens",
+//              entity = requestEntity
+//          ))
+//      responseFuture.onComplete {
+//        case Success(value) => {
+//          println(s"Got the callback, meaning = $value")
+//          println(sender())
+//          val HttpResponse(statusCodes, headers, entity, _) = value
+//          println(statusCodes)
+//          Unmarshal(entity).to[String].map(res=>{
+//            self ! new TokenCtl(model,res)
+//          })
+//          
+//        }
+//        case Failure(e) => e.printStackTrace
+//      }
       
   }
   override def postStop(): Unit = {println("Stopping Emotion")}

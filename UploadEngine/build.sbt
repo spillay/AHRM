@@ -19,6 +19,7 @@ libraryDependencies ++= Seq(
 
 libraryDependencies += "tech.blueglacier" % "email-mime-parser" % "1.0.5"
 libraryDependencies += "com.dsleng" % "com.dsleng.model" % "1.0"
+libraryDependencies += "com.dsleng" % "com.dsleng.nlp" % "1.0"
 
 //libraryDependencies += "de.heikoseeberger" %% "akka-http-play-json" % "1.25.2"
 //libraryDependencies += "com.typesafe.play" %% "play-json" % playVersion

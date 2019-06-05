@@ -20,6 +20,7 @@ import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
+import edu.stanford.nlp.util.Pair;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations.CollapsedDependenciesAnnotation;
 import edu.stanford.nlp.trees.Tree;
@@ -30,7 +31,7 @@ import edu.stanford.nlp.coref.data.CorefChain;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
+import com.dsleng.nlp.annotator.StopWord;
 import com.google.common.collect.Lists;
 
 /**
@@ -42,10 +43,22 @@ public class SimplePL {
     List<String> posTags = new ArrayList<>();
     List<String> nerTags = new ArrayList<>();
     StanfordCoreNLP pipeline;
-	public SimplePL() {
+    
+    public static String nltk_sw = "i,me,my,myself,we,our,ours,ourselves,you,you're,you've,you'll,you'd,your,yours,yourself,yourselves,he,him,his,himself,she,she's,her,hers,herself,it,it's,its,itself,they,them,their,theirs,themselves,what,which,who,whom,this,that,that'll,these,those,am,is,are,was,were,be,been,being,have,has,had,having,do,does,did,doing,a,an,the,and,but,if,or,because,as,until,while,of,at,by,for,with,about,against,between,into,through,during,before,after,above,below,to,from,up,down,in,out,on,off,over,under,again,further,then,once,here,there,when,where,why,how,all,any,both,each,few,more,most,other,some,such,no,nor,not,only,own,same,so,than,too,very,s,t,can,will,just,don,don't,'should',should've,now,d,ll,m,o,re,ve,y,ain,aren,aren't,couldn, couldn't,didn, didn't,doesn,doesn't,hadn, hadn't,hasn,hasn't,haven,haven't,isn,isn't,ma,mightn,mightn't,mustn,mustn't,needn,needn't,shan,shan't,shouldn,shouldn't,wasn,wasn't,weren,weren't,won, won't,wouldn,wouldn't"; 
+    public SimplePL() {
 		System.out.println("SimplePL");
 		Properties props = new Properties();
-        props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
+        props.setProperty("annotators", "tokenize, ssplit, pos, lemma,stopword, ner, parse, dcoref");
+        props.setProperty("customAnnotatorClass.stopword", "com.dsleng.nlp.annotator.StopWord");
+        pipeline = new StanfordCoreNLP(props);
+	}
+	public SimplePL(String stopWords) {
+		System.out.println("SimplePL with Custom Stop Words");
+		String customStopWordList = stopWords;
+		Properties props = new Properties();
+        props.setProperty("annotators", "tokenize, ssplit, pos, lemma,stopword, ner, parse, dcoref");
+        props.setProperty("customAnnotatorClass.stopword", "com.dsleng.nlp.annotator.StopWord");
+        props.setProperty(StopWord.STOPWORDS_LIST,customStopWordList);
         pipeline = new StanfordCoreNLP(props);
 	}
 	public List<String> getTokens(){ return words; }
@@ -74,6 +87,11 @@ public class SimplePL {
                 // this is the NER label of the token
                 String ne = token.get(NamedEntityTagAnnotation.class);
                 nerTags.add(ne);
+                
+                Pair<Boolean, Boolean> stopword = token.get(StopWord.class);
+                System.out.println("============================================================");
+                //System.out.println(word + stopword.first() + "," + stopword.second());
+                System.out.println(word + stopword);
             }
         }
 //        System.out.println(words.toString());
@@ -97,6 +115,8 @@ public class SimplePL {
 		List<String> words = new ArrayList<>();
 	    List<String> posTags = new ArrayList<>();
 	    List<String> nerTags = new ArrayList<>();
+	    List<String> stopIndicator = new ArrayList<>();
+	    List<String> tokensSW = new ArrayList<>();
 	    
         Annotation document = new Annotation(text);
         pipeline.annotate(document);
@@ -116,6 +136,13 @@ public class SimplePL {
                 // this is the NER label of the token
                 String ne = token.get(NamedEntityTagAnnotation.class);
                 nerTags.add(ne);
+                
+                Pair<Boolean, Boolean> stopword = token.get(StopWord.class);
+                if (stopword.first()) {
+                	stopIndicator.add("1");
+                } else {
+                	stopIndicator.add("0");
+                }
             }
             JSONArray jwArray = this.convertArray(words);
             obj.put("tokens", jwArray);
@@ -125,6 +152,19 @@ public class SimplePL {
             
             JSONArray jnArray = this.convertArray(nerTags);
             obj.put("ne", jnArray);
+            
+            JSONArray swArray = this.convertArray(stopIndicator);
+            obj.put("sw", swArray);
+            
+            int pos = 0;
+            for(String tok: words) {
+            	if (stopIndicator.get(pos).compareTo("0") == 0) {
+            		tokensSW.add(tok);
+            	}
+            	pos++;
+            }
+            JSONArray tswArray = this.convertArray(tokensSW);
+            obj.put("tokensSW", tswArray);
             
             return obj.toString();
         }

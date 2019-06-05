@@ -29,7 +29,7 @@ object Transformers extends Serializable {
       val nto = to.substring(0, to.indexOf('*'))
       // TODO: Change this to >= to include words that match exactly and more
       if (str.length() > nto.length()) {
-        val nstr = str.substring(0, nto.length())
+        val nstr = str.substring(0, nto.length()).toLowerCase()
         if (nstr.matches(nto)) {
           if (str == "sure"){print(to)}
           if (str == "problem"){print(to)}
@@ -41,7 +41,7 @@ object Transformers extends Serializable {
         return false
       }
     } else {
-      return str.matches(to)
+      return str.toLowerCase().matches(to)
     }
     return false;
   }

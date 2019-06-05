@@ -7,7 +7,8 @@ import play.api.libs.json._
 case class EmoEmailCtl(model: SimpleEmailExt,emotion: String)
 case class EmailCtl(model: SimpleEmailExt)
 case class TextCtl(text: String)
-case class TokenCtl(model: SimpleEmailExt,tokens: String)
+case class TokenCtl(model: SimpleEmailExt,tokens: TokenStrCtl)
+case class TokenStrCtl(tokens: List[String])
 
 object EmailCtl {
   implicit val emailWrites = Json.writes[EmailCtl]
@@ -19,6 +20,9 @@ object EmailCtl {
 }
 object TextCtl {
   implicit val textWrites = Json.writes[TextCtl]
+}
+object TokenStrCtl {
+  implicit val tokenStrWrites = Json.writes[TokenStrCtl]
 }
 object TokenCtl {
   implicit val tokenWrites = Json.writes[TokenCtl]

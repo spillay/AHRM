@@ -1,0 +1,1 @@
+['sure', 'hope', 'make', 'good', 'use', 'bad', 'news', "skilling's", 'resignation', 'house', 'cleaning', '--', 'write', 'problem', 'assets', 'unwind', 'raptor']
