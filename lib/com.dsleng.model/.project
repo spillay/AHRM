@@ -3,6 +3,7 @@
 	<name>com.dsleng.model</name>
 	<comment></comment>
 	<projects>
+		<project>com.dsleng.nlp</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

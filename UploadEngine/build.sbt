@@ -14,9 +14,10 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-testkit" % akkaVersion,
   "com.typesafe.akka" %% "akka-stream" % akkaVersion,
   "com.typesafe.akka" %% "akka-http" % "10.1.8",
+  "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
   "org.scalatest" %% "scalatest" % "3.0.5" % "test"
 )
-
+libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.2.3"
 libraryDependencies += "tech.blueglacier" % "email-mime-parser" % "1.0.5"
 libraryDependencies += "com.dsleng" % "com.dsleng.model" % "1.0"
 libraryDependencies += "com.dsleng" % "com.dsleng.nlp" % "1.0"
@@ -25,6 +26,9 @@ libraryDependencies += "com.dsleng" % "com.dsleng.nlp" % "1.0"
 //libraryDependencies += "com.typesafe.play" %% "play-json" % playVersion
 libraryDependencies += "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.9.9"
 libraryDependencies += "com.fasterxml.jackson.core" % "jackson-databind" % "2.9.9"
+
+libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.9.2"
+libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.9.2" classifier "models"
 
 //conflictWarning := ConflictWarning.disable
 

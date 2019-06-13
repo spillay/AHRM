@@ -11,17 +11,20 @@ object Email {
 
 class Email extends Actor with ActorLogging with ReaperWatched {
   import Email._
-  val emotion = context.actorOf(Emotion.props,"Emotion")
+  
   
   def receive = {
     case "process" =>
-      log.info("Processing instruction received (from " + sender() + "): ")
+      log.debug("Processing instruction received (from " + sender() + "): ")
     case EmailCtl(model) =>
-      log.info("Message received (from " + sender() + "): " + model)  
-      emotion ! new EmailCtl(model)
+      log.debug("Message received (from " + sender() + "): " + model.fileName)  
+      val nlp = context.actorSelection("akka://UploadEngine/user/Reader/NLP")
+      nlp ! new EmailCtl(model)
     case EmoEmailCtl(model,value) =>
-      log.info("Done received (from " + sender() + "): " + model)
+      log.info("Done received (from " + sender() + "): " + model.fileName)
       log.info(value)
+      val reader = context.actorSelection("akka://UploadEngine/user/Reader")
+      reader ! "complete"
       //self ! PoisonPill
   }
   override def postStop(): Unit = {println("Stopping Emotion")}

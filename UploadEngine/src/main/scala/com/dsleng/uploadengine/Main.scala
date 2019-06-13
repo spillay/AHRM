@@ -112,8 +112,8 @@ object Main extends App {
   
   val reader: ActorRef = system.actorOf(Reader.props, "Reader")
   
-  reader ! new FileCtl("/Data/enron/maildir/kean-s/inbox/62.")
-  
+  //reader ! new FileCtl("/Data/enron/maildir/kean-s/inbox/62.")
+  reader ! "process"
   //reader ! PoisonPill
 //  val emotion: ActorRef = system.actorOf(Emotion.props, "emotion")
 //  val reader: ActorRef = system.actorOf(EmailReader.props(emotion), "emailReader")

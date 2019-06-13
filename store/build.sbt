@@ -28,7 +28,7 @@ libraryDependencies += "org.scalanlp" % "breeze_2.12" % "0.13.2"
 // play.sbt.routes.RoutesKeys.routesImport += "com.dsleng.binders._"
 
 
-val reactiveMongoVersion = "0.13.0-play26"
+val reactiveMongoVersion = "0.17.1-play26"//"0.13.0-play26"//
 val silhouetteVersion = "5.0.4"
 val playMailerVersion = "6.0.1"
 val playJsonVersion = "2.6.9"
@@ -36,7 +36,7 @@ val playJsonVersion = "2.6.9"
 val swaggerUIVersion = "3.20.5"
 
 libraryDependencies ++= Seq(
-  "org.reactivemongo" %% "play2-reactivemongo" % reactiveMongoVersion,
+  "org.reactivemongo" %% "play2-reactivemongo" % reactiveMongoVersion excludeAll( ExclusionRule("com.typesafe.play", "play-iteratees_2.12")),
   "com.mohiva" %% "play-silhouette" % silhouetteVersion,
   "com.mohiva" %% "play-silhouette-persistence" % silhouetteVersion,
   "com.mohiva" %% "play-silhouette-password-bcrypt" % silhouetteVersion,

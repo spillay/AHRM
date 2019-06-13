@@ -11,6 +11,7 @@ import reactivemongo.play.json._
 import reactivemongo.play.json.collection._
 
 import scala.concurrent.{ExecutionContext, Future}
+import reactivemongo.bson.BSONDocument
 
 /**
   * An implementation of the auth info DAO which stores the data in database.
@@ -33,7 +34,7 @@ class PasswordInfoDAOImpl @Inject()(val reactiveMongoApi: ReactiveMongoApi)(impl
   override def find(loginInfo: LoginInfo): Future[Option[PasswordInfo]] = {
     println("PasswordInfoDAOImpl:find")
     println(loginInfo)
-    passwords.flatMap(_.find(Json.obj("loginInfoId" -> loginInfo.providerKey)).one[PasswordInfo])
+    passwords.flatMap(_.find(Json.obj("loginInfoId" -> loginInfo.providerKey),projection = Option.empty[BSONDocument]).one[PasswordInfo])
   }
 
   /**
@@ -48,7 +49,7 @@ class PasswordInfoDAOImpl @Inject()(val reactiveMongoApi: ReactiveMongoApi)(impl
     println(loginInfo)
     println(authInfo);
     val passwordBuilder = Json.toJson(authInfo).as[JsObject] ++ Json.obj("loginInfoId" -> Some(loginInfo.providerKey))
-    passwords.flatMap(_.insert(passwordBuilder)).flatMap {
+    passwords.flatMap(_.insert(ordered=false).one(passwordBuilder)).flatMap {
       _ => Future.successful(authInfo)
     }
   }
@@ -65,7 +66,7 @@ class PasswordInfoDAOImpl @Inject()(val reactiveMongoApi: ReactiveMongoApi)(impl
     println(loginInfo)
     println(authInfo);
     val passwordBuilder = Json.toJson(authInfo).as[JsObject] ++ Json.obj("loginInfoId" -> Some(loginInfo.providerKey))
-    passwords.flatMap(_.update(Json.obj("loginInfoId" -> loginInfo.providerKey), passwordBuilder)).flatMap {
+    passwords.flatMap(_.update(ordered=false).one(Json.obj("loginInfoId" -> loginInfo.providerKey), passwordBuilder)).flatMap {
       _ => Future.successful(authInfo)
     }
   }
@@ -94,6 +95,6 @@ class PasswordInfoDAOImpl @Inject()(val reactiveMongoApi: ReactiveMongoApi)(impl
     * @return A future to wait for the process to be completed.
     */
   override def remove(loginInfo: LoginInfo): Future[Unit] = {
-    passwords.flatMap(_.remove(Json.obj("loginInfoId" -> loginInfo.providerKey))).flatMap(_ => Future.successful(()))
+    passwords.flatMap(_.delete().one(Json.obj("loginInfoId" -> loginInfo.providerKey))).flatMap(_ => Future.successful(()))
   }
 }

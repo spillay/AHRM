@@ -65,6 +65,7 @@ class SignUpController @Inject()(components: ControllerComponents,
       val loginInfo = LoginInfo(CredentialsProvider.ID, signUp.identifier)
       userService.retrieve(loginInfo).flatMap {
         case None => // user not already exists 
+          println("User not exists")
           val user = User(None, loginInfo, loginInfo.providerKey, signUp.email, signUp.firstName, signUp.lastName, None, true)
           // val plainPassword = UUID.randomUUID().toString.replaceAll("-", "")
           val authInfo = passwordHasherRegistry.current.hash(signUp.password)
@@ -92,6 +93,7 @@ class SignUpController @Inject()(components: ControllerComponents,
             result
           }
         case Some(_) => // user already exists!
+          println("User Exists")
           Future(Conflict(Json.toJson(Bad(message = "user already exists"))))
       }
     }

@@ -112,9 +112,9 @@ class MimeHandler(metaData: MetaInfo) {
 	
 		val em = content.getEmail()
 	
-		println("From: " + em.getFromEmailHeaderValue())
-		println("To: " + em.getToEmailHeaderValue())
-		println("Subject: " + em.getEmailSubject())
+//		println("From: " + em.getFromEmailHeaderValue())
+//		println("To: " + em.getToEmailHeaderValue())
+//		println("Subject: " + em.getEmailSubject())
 		
 		val buf = new ListBuffer[EmailHeader]()
 		val it = em.getHeader().iterator()
@@ -154,9 +154,9 @@ class MimeHandler(metaData: MetaInfo) {
 	
 		val em = content.getEmail()
 	
-		println("From: " + em.getFromEmailHeaderValue())
-		println("To: " + em.getToEmailHeaderValue())
-		println("Subject: " + em.getEmailSubject())
+//		println("From: " + em.getFromEmailHeaderValue())
+//		println("To: " + em.getToEmailHeaderValue())
+//		println("Subject: " + em.getEmailSubject())
 		
 		val buf = new ListBuffer[EmailHeader]()
 		val it = em.getHeader().iterator()

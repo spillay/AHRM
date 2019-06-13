@@ -66,8 +66,8 @@ public class StopWord implements Annotator,CoreAnnotation<Pair<Boolean, Boolean>
 	    return Collections.unmodifiableSet(new ArraySet<>(Arrays.asList(
 	        CoreAnnotations.TextAnnotation.class,
 	        CoreAnnotations.TokensAnnotation.class,
-	        CoreAnnotations.SentencesAnnotation.class,
-	        CoreAnnotations.PartOfSpeechAnnotation.class
+	        CoreAnnotations.SentencesAnnotation.class
+	        //CoreAnnotations.PartOfSpeechAnnotation.class
 	    )));
 	  }
 

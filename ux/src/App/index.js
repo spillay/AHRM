@@ -14,6 +14,7 @@ import ProductModel from '../routes/Analysis/ProductModel';
 import SimpleModel from '../routes/SimpleModel';
 import DeceptionModel from '../routes/Deception';
 import EmailData from '../routes/Admin/emailData';
+import TSNE from '../routes/Stats/TSNE';
 import '../styles/css/main.css';
 
 class App extends Component {
@@ -34,6 +35,7 @@ class App extends Component {
             <Route path="/about" component={About} />
             <Route path="/topics" component={Topics} />
             <Route path="/admin-email" component={EmailData} />
+            <Route path="/tsne" component={TSNE} />
           </Switch>
         </div>
       </Router>

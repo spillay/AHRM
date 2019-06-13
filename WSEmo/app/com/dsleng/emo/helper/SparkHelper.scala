@@ -22,6 +22,7 @@ trait SparkHelper{
       .config("spark.eventLog.enabled", "true")
       .config("spark.eventLog.dir", "file:/usr/local/spark/history/")
       .config("spark.sql.codegen.wholeStage","false")
+      .config("spark.driver.memory","5g")
       .getOrCreate()
       
      //spark.conf.set("spark.eventLog.enabled", "true").set("spark.eventLog.dir", "file:///C:/Users/me/spark/logs")

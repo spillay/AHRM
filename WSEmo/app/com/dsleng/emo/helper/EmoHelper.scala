@@ -79,13 +79,6 @@ class EmoHelper(val spark: SparkSession) {
     return ndf
   }
   def process(tokens: Seq[String]): DataFrame = {
-//    val output = "/Data/emo-store/dict-data/twelve_emotions_liwc-df.parquet"
-//    val output2 = "/Data/emo-store/dict-data/extended_emotions.pkl.parquet"
-//    val df_extended = spark.sqlContext.read.parquet(output2).as("ext")
-//    val df = spark.sqlContext.read.parquet(output).as("liwc")  
-    
-    //df.show()
-    //df_extended.show()
     var ndf = df.join(df_extended, col("ext.emotion") === col("liwc.emotion")).
       select(
         col("liwc.emotion") as "emotion",
@@ -95,22 +88,26 @@ class EmoHelper(val spark: SparkSession) {
         col("ext.fwords") as "ext_fwords",
         col("ext.count") as "ext_count",
         col("ext.words") as "ext_words")
-    //ndf.show()
+        
     tokens.foreach(tok => {
-      println(tok)
-      println("next token")
       ndf = ndf.withColumn("liwc_fwords", compareStrAgainstArray()(lit(tok), col("liwc_words"), col("liwc_fwords")))
       ndf = ndf.withColumn("ext_fwords", compareStrAgainstArray()(lit(tok), col("ext_words"), col("ext_fwords")))
     })
 
     ndf = ndf.withColumn("ext_count", countArr()(col("ext_fwords")))
     ndf = ndf.withColumn("liwc_count", countArr()(col("liwc_fwords")))
-    //ndf = ndf.withColumn("diff", compareStrArray()(col("liwc_words"), col("ext_words")))
+    
     ndf.show()
     return ndf
   }
   def getData(df: DataFrame): String = {
     println("running getdata")
+    /*
+    val sp = """
+      {"emotions":[],"prime":[{"emotion":"Unknown","count":0,"words":[]}]}
+      """
+    return sp
+    */
     var res = Seq[EmoData]()
     df.collect().foreach(r => {
       val cnt = r.getAs[Integer]("liwc_count")

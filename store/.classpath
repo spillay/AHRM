@@ -130,7 +130,6 @@
       <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/docs/jackson-datatype-jsr310-2.8.11-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="lib" path="/home/suresh/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar"/>
   <classpathentry sourcepath="/home/suresh/.ivy2/cache/com.typesafe.play/play-json_2.12/srcs/play-json_2.12-2.6.9-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/com.typesafe.play/play-json_2.12/jars/play-json_2.12-2.6.9.jar">
     <attributes>
       <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/com.typesafe.play/play-json_2.12/docs/play-json_2.12-2.6.9-javadoc.jar!/"/>
@@ -315,29 +314,49 @@
       <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/com.chuusai/shapeless_2.12/docs/shapeless_2.12-2.3.2-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="/home/suresh/.ivy2/cache/org.reactivemongo/play2-reactivemongo_2.12/srcs/play2-reactivemongo_2.12-0.13.0-play26-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/org.reactivemongo/play2-reactivemongo_2.12/jars/play2-reactivemongo_2.12-0.13.0-play26.jar">
+  <classpathentry sourcepath="/home/suresh/.ivy2/cache/org.reactivemongo/play2-reactivemongo_2.12/srcs/play2-reactivemongo_2.12-0.17.1-play26-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/org.reactivemongo/play2-reactivemongo_2.12/jars/play2-reactivemongo_2.12-0.17.1-play26.jar">
     <attributes>
-      <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/org.reactivemongo/play2-reactivemongo_2.12/docs/play2-reactivemongo_2.12-0.13.0-play26-javadoc.jar!/"/>
+      <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/org.reactivemongo/play2-reactivemongo_2.12/docs/play2-reactivemongo_2.12-0.17.1-play26-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo_2.12/srcs/reactivemongo_2.12-0.13.0-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo_2.12/jars/reactivemongo_2.12-0.13.0.jar">
+  <classpathentry sourcepath="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo_2.12/srcs/reactivemongo_2.12-0.17.1-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo_2.12/jars/reactivemongo_2.12-0.17.1.jar">
     <attributes>
-      <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo_2.12/docs/reactivemongo_2.12-0.13.0-javadoc.jar!/"/>
+      <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo_2.12/docs/reactivemongo_2.12-0.17.1-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-bson-macros_2.12/srcs/reactivemongo-bson-macros_2.12-0.13.0-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-bson-macros_2.12/jars/reactivemongo-bson-macros_2.12-0.13.0.jar">
+  <classpathentry sourcepath="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-bson-macros_2.12/srcs/reactivemongo-bson-macros_2.12-0.17.1-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-bson-macros_2.12/jars/reactivemongo-bson-macros_2.12-0.17.1.jar">
     <attributes>
-      <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-bson-macros_2.12/docs/reactivemongo-bson-macros_2.12-0.13.0-javadoc.jar!/"/>
+      <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-bson-macros_2.12/docs/reactivemongo-bson-macros_2.12-0.17.1-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-bson_2.12/srcs/reactivemongo-bson_2.12-0.13.0-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-bson_2.12/jars/reactivemongo-bson_2.12-0.13.0.jar">
+  <classpathentry sourcepath="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-bson_2.12/srcs/reactivemongo-bson_2.12-0.17.1-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-bson_2.12/jars/reactivemongo-bson_2.12-0.17.1.jar">
     <attributes>
-      <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-bson_2.12/docs/reactivemongo-bson_2.12-0.13.0-javadoc.jar!/"/>
+      <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-bson_2.12/docs/reactivemongo-bson_2.12-0.17.1-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
-  <classpathentry sourcepath="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-shaded/srcs/reactivemongo-shaded-0.13.0-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-shaded/jars/reactivemongo-shaded-0.13.0.jar">
+  <classpathentry sourcepath="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-shaded/srcs/reactivemongo-shaded-0.17.1-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-shaded/jars/reactivemongo-shaded-0.17.1.jar">
     <attributes>
-      <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-shaded/docs/reactivemongo-shaded-0.13.0-javadoc.jar!/"/>
+      <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-shaded/docs/reactivemongo-shaded-0.17.1-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/home/suresh/.ivy2/cache/dnsjava/dnsjava/srcs/dnsjava-2.1.8-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/dnsjava/dnsjava/jars/dnsjava-2.1.8.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/dnsjava/dnsjava/docs/dnsjava-2.1.8-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/home/suresh/.ivy2/cache/commons-codec/commons-codec/srcs/commons-codec-1.11-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.11.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/commons-codec/commons-codec/docs/commons-codec-1.11-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/home/suresh/.ivy2/cache/org.apache.logging.log4j/log4j-api/srcs/log4j-api-2.5-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/org.apache.logging.log4j/log4j-api/jars/log4j-api-2.5.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/org.apache.logging.log4j/log4j-api/docs/log4j-api-2.5-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry sourcepath="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-play-json_2.12/srcs/reactivemongo-play-json_2.12-0.17.1-play26-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-play-json_2.12/jars/reactivemongo-play-json_2.12-0.17.1-play26.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-play-json_2.12/docs/reactivemongo-play-json_2.12-0.17.1-play26-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
   <classpathentry sourcepath="/home/suresh/.ivy2/cache/com.typesafe.play/play-iteratees_2.12/srcs/play-iteratees_2.12-2.6.1-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/com.typesafe.play/play-iteratees_2.12/jars/play-iteratees_2.12-2.6.1.jar">
@@ -348,16 +367,6 @@
   <classpathentry sourcepath="/home/suresh/.ivy2/cache/org.scala-stm/scala-stm_2.12/srcs/scala-stm_2.12-0.8-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/org.scala-stm/scala-stm_2.12/jars/scala-stm_2.12-0.8.jar">
     <attributes>
       <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/org.scala-stm/scala-stm_2.12/docs/scala-stm_2.12-0.8-javadoc.jar!/"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry sourcepath="/home/suresh/.ivy2/cache/org.apache.logging.log4j/log4j-api/srcs/log4j-api-2.5-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/org.apache.logging.log4j/log4j-api/jars/log4j-api-2.5.jar">
-    <attributes>
-      <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/org.apache.logging.log4j/log4j-api/docs/log4j-api-2.5-javadoc.jar!/"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry sourcepath="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-play-json_2.12/srcs/reactivemongo-play-json_2.12-0.13.0-play26-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-play-json_2.12/jars/reactivemongo-play-json_2.12-0.13.0-play26.jar">
-    <attributes>
-      <attribute name="javadoc_location" value="jar:file:/home/suresh/.ivy2/cache/org.reactivemongo/reactivemongo-play-json_2.12/docs/reactivemongo-play-json_2.12-0.13.0-play26-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
   <classpathentry sourcepath="/home/suresh/.ivy2/cache/com.typesafe.play/play-iteratees-reactive-streams_2.12/srcs/play-iteratees-reactive-streams_2.12-2.6.1-sources.jar" kind="lib" path="/home/suresh/.ivy2/cache/com.typesafe.play/play-iteratees-reactive-streams_2.12/jars/play-iteratees-reactive-streams_2.12-2.6.1.jar">

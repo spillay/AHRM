@@ -51,7 +51,7 @@
     <appender-ref ref="ASYNCANALYTICS"/>
   </logger>
 
-  <root level="DEBUG">
+  <root level="INFO">
     <appender-ref ref="ASYNCFILE" />
     <appender-ref ref="ASYNCSTDOUT" />
   </root>

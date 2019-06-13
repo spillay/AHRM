@@ -15,7 +15,7 @@ configure([ project(':com.dsleng.store'),project(':com.dsleng.model'),project('c
 	}
 	
 	dependencies{
-	    compile "org.scala-lang:scala-library:2.12.3"
+	    compile "org.scala-lang:scala-library:2.12.7"
     
 	    compileOnly group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.2'
 	    //annotationProcessor group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.1'
@@ -28,7 +28,7 @@ configure([ project(':com.dsleng.store'),project(':com.dsleng.model'),project('c
     	options.compilerArgs += '-proc:none'
 	}
 	task wrapper(type: Wrapper) {
-   		gradleVersion = '4.10.2' //version required
+   		gradleVersion = '5.4.1' //version required
 	}
     /*
 	configurations.all {
@@ -74,7 +74,7 @@ configure([project(':com.dsleng.nlp')]) {
     	options.compilerArgs += '-proc:none'
 	}
 	task wrapper(type: Wrapper) {
-   		gradleVersion = '4.10.2' //version required
+   		gradleVersion = '5.4.1' //version required
 	}
    	dependencies {
 		compileOnly group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.2'

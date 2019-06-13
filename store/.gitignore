@@ -1,5 +1,5 @@
-/bin/
-logs/
-project/target/
-project/project/target/
-target/
+bin
+logs
+project/target
+project/project/target
+target

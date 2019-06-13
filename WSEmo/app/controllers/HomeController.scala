@@ -47,7 +47,8 @@ class HomeController @Inject()(cc: ControllerComponents,ec: EmoComponent,ws: WSC
   def getEmoFromTokens = Action.async { implicit request: Request[AnyContent] =>
      val emodel = request.body.asJson.get
      val tokens = (emodel \ "tokens" ).get
-     val stoks = Json.parse(tokens.as[String]).as[JsArray].value.map(_.as[String])
+     val stoks = tokens.as[List[String]]
+     //val stoks = Json.parse(tokens.as[String]).as[JsArray].value.map(_.as[String])
      val futureString: Future[String] = scala.concurrent.Future {
           ec.execute(stoks)
      }
