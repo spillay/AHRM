@@ -29,7 +29,7 @@ class EmoSimple extends SparkHelper with Performance {
   }
   def test5(){
     var df = spark.read.parquet(testpath)
-    df = df.withColumn("p6", addOneCustomNative(lit(1)))
+    df = df.withColumn("p6", addOneCustomNative(lit(2)))
     df.explain(true)
     averageTime{ df.count() }
     df.show()

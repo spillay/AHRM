@@ -134,7 +134,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.12/1.1.0/814f47c79da8234cb3feeb8257a918ee855009d0/scala-parser-combinators_2.12-1.1.0-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.12/1.1.0/bbce493f8bf61b56623624ff96ac3865f7f6999a/scala-parser-combinators_2.12-1.1.0.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.0/scala-parser-combinators_2.12-1.1.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>

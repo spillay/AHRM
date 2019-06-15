@@ -2,18 +2,29 @@ apply plugin: 'base'
 
 def sparkVersion = "2.4.3"
 def scalaVersion = "2.12"
-def scalaVersionFull = "2.12.7"
+def scalaVersionFull = "2.12.8"
 
 
 task process(){
-   doLast {
+   doFirst {
    	println("Starting production of artifacts by Suresh Pillay...")
+   }
+   doLast {
+   	println("Suresh Pillay...complete")
    }
 }
 
 task processInit(){
    doLast {
-   	println("Initializing Structures...")
+   	println("Initialized Structures...")
+   }
+}
+task processDev(){
+   doFirst {
+   	println("Starting production of eclipse artifacts by Suresh Pillay...")
+   }
+   doLast {
+   	println("Suresh Pillay...now you ready to import into eclipse")
    }
 }
 
@@ -69,6 +80,10 @@ task publishSpark(type:Exec){
   workingDir "spark-${sparkVersion}"
   commandLine './build/sbt',"-Dscala.version=${scalaVersionFull}",'publishLocal'
 }
+task eclipseSpark(type:Exec){
+  workingDir "spark-${sparkVersion}"
+  commandLine './build/sbt',"-Dscala.version=${scalaVersionFull}",'eclipse'
+}
 
 
 
@@ -76,9 +91,12 @@ copyAll.dependsOn copySrcA
 copyAll.dependsOn copySrcB
 publishSpark.dependsOn compileSpark
 compileSpark.dependsOn cleanSpark
-cleanSpark.dependsOn copyAll
+cleanSpark.dependsOn scalaSpark
+scalaSpark.dependsOn copyAll
 // Starting point
 process.dependsOn publishSpark
 // Initialization starting point is processInit
 extractSpark.dependsOn pullSpark
 processInit.dependsOn extractSpark
+// prep for dev
+processDev.dependsOn eclipseSpark
