@@ -41,11 +41,12 @@ class Reader extends Actor with ActorLogging with ReaperWatched {
       //val ubox = new File("/Data/enron/test/")
       
       val files = ubox.listFiles().filter(f=>(!f.isDirectory()))
+      // Fix Sink
       val s1 = Source(files.toList).map(f=>{
         val model = mhandle.processSimpleModel(f)
         var smodel = new SimpleEmailExt(f.getAbsolutePath(), model, "none", department = "", product = ArrayBuffer[String]().toArray)
         new EmailCtl(smodel)
-      }).to(sink)
+      })//.to(sink)
       
       var fileCnt = 0
       ubox.listFiles().foreach(f=>{

@@ -66,6 +66,11 @@ class SideBar extends Component {
                     Group Analysis
                   </a>
                 </li>
+                <li>
+                  <a href="" onClick={(e) => { e.preventDefault(); this.props.history.push('/tsne'); }} >
+                    T-SNE Analysis
+                  </a>
+                </li>
               </ul>
             </li>
 

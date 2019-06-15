@@ -9,6 +9,7 @@ export function SPTGraph(opts) {
     console.log("Init SPTGraph");
     this.data = opts.data;
     this.dists = opts.dists;
+    this.costThreshold = opts.costThreshold;
     this.element = opts.element;
     this.width = opts.width;
     this.height = opts.height;
@@ -50,8 +51,9 @@ SPTGraph.method("onClick", function (mouse) {
 });
 
 SPTGraph.method("drawCanvas", function (canvas,nodes) {
+    //console.log("drawCanvas");
     let context = canvas.node().getContext("2d");
-    context.clearRect(0, 0, this.width, this.width);
+    context.clearRect(0, 0, context.canvas.width, context.canvas.height);
 
     for (var i = 0, n = nodes.length; i < n; ++i) {
         var node = nodes[i];
@@ -65,6 +67,7 @@ SPTGraph.method("drawCanvas", function (canvas,nodes) {
         context.fillStyle = node.color;
         context.fill();
     }
+    
 
 })
 
@@ -89,24 +92,27 @@ SPTGraph.method("draw", function () {
     });
     model.initDataDist(dists)
 
-    const canvas = d3.select("body").append("canvas")
+    var canvas = d3.select(this.element).append("canvas")
+        .attr("class","tsne-canvas")
         .attr("width", width)
         .attr("height", height);
+
+    canvas.style.border = "1px solid red";
 
     canvas.on("click", function(){
         var mouse = d3.mouse(this);
         that.onClick(mouse);
     })
-
+    
     var force = d3.forceSimulation(data.map(d => (d.x = width / 2, d.y = height / 2, d)))
     var tseForce = force
-        .alphaDecay(0.005)
+        .alphaDecay(0.0) // default would be 0.005
         .alpha(0.1)
         .force('tsne', function (alpha) {
             // every time you call this, solution gets better
-            console.log("alpha",alpha);
+            //console.log("alpha",alpha);
             var cost = model.step();
-            console.log("cost",cost)
+            //console.log("cost",cost)
             // Y is an array of 2-D points that you can plot
             let pos = model.getSolution();
 
@@ -117,8 +123,9 @@ SPTGraph.method("draw", function () {
                 d.x += alpha * (centerx(pos[i][0]) - d.x);
                 d.y += alpha * (centery(pos[i][1]) - d.y);
             });
-            if (cost < 10.5){
-                //tseForce.stop();
+            d3.select('#costOuput').attr("value",cost)
+            if (cost < that.costThreshold){
+                tseForce.stop();
             }
         })
     var collideForce = force.force('collide', d3.forceCollide().radius(d => 1.5 + d.r))
@@ -137,6 +144,20 @@ SPTGraph.method("draw", function () {
             that.drawCanvas(canvas, nodes);
 
         });
+    d3.select('#stop').on("click",function(){
+        console.log("stop clicked")
+        tseForce.stop();    
+    })
+    d3.select('#pause').on("click",function(){
+        console.log("pause clicked")
+        tseForce.stop();    
+        console.log(d3.select('#resume'))
+        d3.select('#resume').attr('disabled', null);
+    })
+    d3.select('#resume').on("click",function(){
+        console.log("resume clicked")
+        // Cannot simply resume   
+    })
 });
 
 

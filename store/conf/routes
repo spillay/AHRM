@@ -49,7 +49,7 @@ POST    /api/deception                  com.dsleng.controllers.BLController.dece
 
 POST    /api/auth/signin/credentials    com.dsleng.controllers.CredentialsAuthController.authenticate
 ### NoDocs ###
-#POST    /api/auth/signup                com.dsleng.controllers.SignUpController.signUpUser
+POST    /api/auth/signup                com.dsleng.controllers.SignUpController.signUpUser
 ### NoDocs ###
 #POST    /api/auth/register              com.dsleng.controllers.SignUpController.register
 ### NoDocs ###

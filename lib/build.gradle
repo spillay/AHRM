@@ -1,5 +1,6 @@
+def scalaVersion = '2.12.7'
 // Global Configuration for Scala Projects
-configure([ project(':com.dsleng.store'),project(':com.dsleng.model'),project('com.dsleng.twitter'),project('com.dsleng.test')]) {
+configure([ project(':com.dsleng.store'),project(':com.dsleng.model'),project('com.dsleng.twitter'),project('com.dsleng.test'),project('com.dsleng.emo')]) {
 
 	apply plugin: 'scala'
 	apply plugin: 'eclipse'
@@ -10,12 +11,12 @@ configure([ project(':com.dsleng.store'),project(':com.dsleng.model'),project('c
 	version = "1.0"
 	
 	repositories{
-	    mavenCentral()
 	    mavenLocal()
+	    mavenCentral()
 	}
 	
 	dependencies{
-	    compile "org.scala-lang:scala-library:2.12.7"
+	    compile "org.scala-lang:scala-library:${scalaVersion}"
     
 	    compileOnly group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.2'
 	    //annotationProcessor group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.1'

@@ -47,7 +47,7 @@ class ESService(server: String) {
   println("Starting Simple App")
   
   def getSyncData(index: String,query: String): String ={
-    println("in getSyncData")
+    println("in getSyncData",index)
     var restClient = RestClient.builder(
         new HttpHost("localhost", 9200, "http")
        ).build();

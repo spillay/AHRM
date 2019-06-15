@@ -32,7 +32,7 @@ class PasswordInfoDAOImpl @Inject()(val reactiveMongoApi: ReactiveMongoApi)(impl
     * @return The retrieved auth info or None if no auth info could be retrieved for the given login info.
     */
   override def find(loginInfo: LoginInfo): Future[Option[PasswordInfo]] = {
-    println("PasswordInfoDAOImpl:find")
+    println("PasswordInfoDAOImpl:find----------------------")
     println(loginInfo)
     passwords.flatMap(_.find(Json.obj("loginInfoId" -> loginInfo.providerKey),projection = Option.empty[BSONDocument]).one[PasswordInfo])
   }

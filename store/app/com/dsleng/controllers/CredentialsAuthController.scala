@@ -63,7 +63,7 @@ def authenticate =  silhouette.UnsecuredAction.async(parse.json[Credentials]) { 
     credentialsProvider
       .authenticate(credentials)
       .flatMap { loginInfo =>
-        println("loginInfo",loginInfo)
+        println("loginInfo++++++++++++++++++++++++++++++++",loginInfo)
         userService.retrieve(loginInfo).flatMap {
           case Some(user) if !user.activated =>
             Future.failed(new IdentityNotFoundException("Couldn't find user"))

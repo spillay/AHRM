@@ -1,0 +1,84 @@
+apply plugin: 'base'
+
+def sparkVersion = "2.4.3"
+def scalaVersion = "2.12"
+def scalaVersionFull = "2.12.7"
+
+
+task process(){
+   doLast {
+   	println("Starting production of artifacts by Suresh Pillay...")
+   }
+}
+
+task processInit(){
+   doLast {
+   	println("Initializing Structures...")
+   }
+}
+
+task copyAll(){
+   doLast {
+   	println("Copying src files...")
+   }
+}
+
+clean.doLast {
+    file("v${sparkVersion}.tar.gz").delete()
+    file("spark-${sparkVersion}").deleteDir()
+    file('pax_global_header').delete()
+}
+
+
+task pullSpark(type:Exec){
+   commandLine 'wget',"https://github.com/apache/spark/archive/v${sparkVersion}.tar.gz"
+}
+
+task extractSpark(type: Copy) {
+   from tarTree(resources.gzip("v${sparkVersion}.tar.gz"))
+   into getProjectDir()
+}
+
+
+task copySrcA(type: Copy) {
+    from "src/SPFunctions.scala"
+    into "spark-${sparkVersion}/sql/core/src/main/scala/org/apache/spark/sql/"
+}
+task copySrcB(type: Copy) {
+    from "src/SPEmo.scala"
+    into "spark-${sparkVersion}/sql/catalyst/src/main/scala/org/apache/spark/sql/catalyst/expressions/"
+}
+
+
+task scalaSpark(type:Exec){
+  workingDir "spark-${sparkVersion}"
+  commandLine './dev/change-scala-version.sh',"${scalaVersion}"
+}
+
+task cleanSpark(type:Exec){
+  workingDir "spark-${sparkVersion}"
+  commandLine './build/sbt',"-Dscala.version=${scalaVersionFull}",'clean'
+}
+
+task compileSpark(type:Exec){
+  workingDir "spark-${sparkVersion}"
+  commandLine './build/sbt',"-Dscala.version=${scalaVersionFull}",'compile'
+}
+
+task publishSpark(type:Exec){
+  workingDir "spark-${sparkVersion}"
+  commandLine './build/sbt',"-Dscala.version=${scalaVersionFull}",'publishLocal'
+}
+
+
+
+copyAll.dependsOn copySrcA
+copyAll.dependsOn copySrcB
+publishSpark.dependsOn compileSpark
+compileSpark.dependsOn cleanSpark
+cleanSpark.dependsOn copyAll
+// Starting point
+process.dependsOn publishSpark
+// Initialization starting point is processInit
+extractSpark.dependsOn pullSpark
+processInit.dependsOn extractSpark
