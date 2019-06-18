@@ -19,10 +19,14 @@
 package org.apache.spark.sql
 
 import org.apache.spark.sql.catalyst.expressions._
+import org.apache.spark.sql.functions.lit
 
 object SPFunctions {
   private def withExpr(expr: Expression): Column = Column(expr)
   def addOneCustomNative(x: Column): Column = withExpr {
     Add_One_Custom_Native(x.expr)
+  }
+  def checkforFeature(arr: Column, value: Any): Column = withExpr {
+    SPArrayContains(arr.expr, lit(value).expr)
   }
 }

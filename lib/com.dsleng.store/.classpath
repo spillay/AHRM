@@ -2,13 +2,13 @@
 <classpath>
 	<classpathentry kind="src" path="src/main/scala"/>
 	<classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
-	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry output="bin/main" kind="src" path="src/main/scala">
 		<attributes>
 			<attribute name="gradle_scope" value="main"/>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
 	<classpathentry kind="src" path="/com.dsleng.model"/>
 	<classpathentry kind="src" path="/com.dsleng.nlp"/>
@@ -32,7 +32,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/com.typesafe.scala-logging/scala-logging_2.12/3.9.0/91387647fa19f1db2adf8c3aee8a3c0dee5d7aa7/scala-logging_2.12-3.9.0-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/com.typesafe.scala-logging/scala-logging_2.12/3.9.0/b6c6bb584f3e5c2d3f20aa7c8ff3e6959870b13c/scala-logging_2.12-3.9.0.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/typesafe/scala-logging/scala-logging_2.12/3.9.0/scala-logging_2.12-3.9.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -52,17 +52,17 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.spire-math/spire_2.12/0.13.0/286fffb835b9d59c8d1d5418de186ffeb110da2e/spire_2.12-0.13.0-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.spire-math/spire_2.12/0.13.0/28b4a0b11618f82ded3d34ef58292c6c93d7550d/spire_2.12-0.13.0.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/spire-math/spire_2.12/0.13.0/spire_2.12-0.13.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.spire-math/spire-macros_2.12/0.13.0/1f4f761a602f6e1659bf2351fd11a3e79f7fffa8/spire-macros_2.12-0.13.0-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.spire-math/spire-macros_2.12/0.13.0/2276ac9864b9209049fdc2a151352ccffebe4bad/spire-macros_2.12-0.13.0.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/spire-math/spire-macros_2.12/0.13.0/spire-macros_2.12-0.13.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.typelevel/machinist_2.12/0.6.1/3a218f5ae9095ff2f5719dd158a2f2ffea8ca682/machinist_2.12-0.6.1-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.typelevel/machinist_2.12/0.6.1/13f7388cf36bcecf51bde7b87a216d5aa101ae2a/machinist_2.12-0.6.1.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/typelevel/machinist_2.12/0.6.1/machinist_2.12-0.6.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -82,17 +82,12 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/com.chuusai/shapeless_2.12/2.3.2/6d83fa4fa6d25b1e8d8cd9d9d551c05c745633b1/shapeless_2.12-2.3.2-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/com.chuusai/shapeless_2.12/2.3.2/27e115ffed7917b456e54891de67173f4a68d5f1/shapeless_2.12-2.3.2.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/chuusai/shapeless_2.12/2.3.2/shapeless_2.12-2.3.2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.typelevel/macro-compat_2.12/1.1.1/ade6d6ec81975cf514b0f9e2061614f2799cfe97/macro-compat_2.12-1.1.1-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.typelevel/macro-compat_2.12/1.1.1/ed809d26ef4237d7c079ae6cf7ebd0dfa7986adf/macro-compat_2.12-1.1.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.8/45ccb865e040cbef5d5620571527831441392f24/scala-library-2.12.8-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.8/36b234834d8f842cdde963c8591efae6cf413e3f/scala-library-2.12.8.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/typelevel/macro-compat_2.12/1.1.1/macro-compat_2.12-1.1.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -142,7 +137,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.2/b9f9e3e5255b6ddc3bf21be05428c7a60d00e042/httpclient-4.5.2-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.2/733db77aa8d9b2d68015189df76ab06304406e50/httpclient-4.5.2.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -162,12 +157,12 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/11fb3d88ae7e3b757d70237064210ceb954a5a04/commons-codec-1.10-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/28bb0405fddaf04f15058fbfbe01fe2780d7d3b6/commons-logging-1.1.3-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -292,7 +287,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/com.tdunning/t-digest/3.2/b1858d66a80a93f61f048cf542fc2751ec7971bf/t-digest-3.2-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/com.tdunning/t-digest/3.2/2ab94758b0276a8a26102adf8d528cf6d0567b9a/t-digest-3.2.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/tdunning/t-digest/3.2/t-digest-3.2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -372,7 +367,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/962153db4a9ea71b79d047dfd1b2a0d80d8f4739/slf4j-api-1.7.25-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -392,22 +387,22 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/3697e9f67a2ed7ac5f589cff30f21173299440/activation-1.1-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/com.github.fommil.netlib/core/1.1.2/db345b07c3809044d45f2acde54e2c9f6a5d3c4c/core-1.1.2-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/com.github.fommil.netlib/core/1.1.2/574b480eca62f535fad6d259e144fee3ef24b66e/core-1.1.2.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/github/fommil/netlib/core/1.1.2/core-1.1.2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/net.sourceforge.f2j/arpack_combined_all/0.1/225619a060b42605b4d9fd4af11815664abf26eb/arpack_combined_all-0.1.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/net.sf.opencsv/opencsv/2.3/235993117036d44d126f76db9ea2202ee4884682/opencsv-2.3-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/net.sf.opencsv/opencsv/2.3/c23708cdb9e80a144db433e23344a788a1fd6599/opencsv-2.3.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -422,7 +417,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-math3/3.5/1d3f412d28c8bff0e8f048240b08bcd21cfa432e/commons-math3-3.5-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-math3/3.5/13af68e9a11576953f5c4b09436f8207be9d3a27/commons-math3-3.5.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/commons/commons-math3/3.5/commons-math3-3.5.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -432,7 +427,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/com.thoughtworks.paranamer/paranamer/2.8/8f3421a8203053a6ab4b74f76a0550d21eee8cfe/paranamer-2.8-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/com.thoughtworks.paranamer/paranamer/2.8/619eba74c19ccf1da8ebec97a2d7f8ba05773dd6/paranamer-2.8.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -462,7 +457,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.json/1.0.4/ef782abad0d3f1d30644c4023a6bbc6fe371e23a/javax.json-1.0.4-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.json/1.0.4/3178f73569fd7a1e5ffc464e680f7a8cc784b85a/javax.json-1.0.4.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -492,12 +487,12 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/xerces/xercesImpl/2.8.0/393b9a589bc36ae0274f7ec59c5ed2016e4048d7/xercesImpl-2.8.0-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/xerces/xercesImpl/2.8.0/cfd3ebe2f8034e660344f9108c3e2daf78c29cc3/xercesImpl-2.8.0.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/xerces/xercesImpl/2.8.0/xercesImpl-2.8.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/xalan/xalan/2.7.0/fe8fb14a14470c747d80c611852985ded830dab5/xalan-2.7.0-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/xalan/xalan/2.7.0/a33c0097f1c70b20fa7ded220ea317eb3500515e/xalan-2.7.0.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/xalan/xalan/2.7.0/xalan-2.7.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -512,7 +507,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -532,12 +527,12 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/4e031bb61df09069aeb2bffb4019e7a5034a4ee0/junit-4.11.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/junit/junit/4.11/junit-4.11.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar" kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="test"/>
 		</attributes>

@@ -1,0 +1,29 @@
+dependencies {
+	compile group: 'org.json', name: 'json', version: '20180813'
+	compile group: 'org.apache.lucene', name: 'lucene-core', version: '4.10.3'
+	compile group: 'org.scala-lang', name: 'scala-library', version: '2.12.8'
+	compile group: 'org.apache.spark', name: 'spark-core_2.12', version: '2.4.3'
+	compile group: 'org.apache.spark', name: 'spark-sql_2.12', version: '2.4.3'
+	
+	testCompile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+	
+    // This dependency is exported to consumers, that is to say found on their compile classpath.
+    //api 'org.apache.commons:commons-math3:3.6.1'
+
+    // This dependency is used internally, and not exposed to consumers on their own compile classpath.
+    implementation 'com.google.guava:guava:23.0'
+
+    // Use JUnit test framework
+    testImplementation 'junit:junit:4.12'
+}
+
+tasks.withType(JavaExec) {
+    jvmArgs = ['-Xms512m', '-Xmx3G']
+}
+/*
+task nlpcheck(type: JavaExec, dependsOn: classes) {
+    main = 'com.dsleng.nlp.Main'
+    classpath sourceSets.main.runtimeClasspath
+    classpath configurations.runtime
+}
+*/

@@ -33,6 +33,11 @@ task copyAll(){
    	println("Copying src files...")
    }
 }
+task backup(){
+   doLast {
+   	println("backup files...")
+   }
+}
 
 clean.doLast {
     file("v${sparkVersion}.tar.gz").delete()
@@ -59,7 +64,14 @@ task copySrcB(type: Copy) {
     from "src/SPEmo.scala"
     into "spark-${sparkVersion}/sql/catalyst/src/main/scala/org/apache/spark/sql/catalyst/expressions/"
 }
-
+task bkSrcA(type: Copy) {
+    from "spark-${sparkVersion}/sql/core/src/main/scala/org/apache/spark/sql/SPFunctions.scala"
+    into "src/"
+}
+task bkSrcB(type: Copy) {
+    from "spark-${sparkVersion}/sql/catalyst/src/main/scala/org/apache/spark/sql/catalyst/expressions/SPEmo.scala"
+    into "src/"
+}
 
 task scalaSpark(type:Exec){
   workingDir "spark-${sparkVersion}"
@@ -75,10 +87,18 @@ task compileSpark(type:Exec){
   workingDir "spark-${sparkVersion}"
   commandLine './build/sbt',"-Dscala.version=${scalaVersionFull}",'compile'
 }
+task compileCat(type:Exec){
+  workingDir "spark-${sparkVersion}"
+  commandLine './build/sbt',"-Dscala.version=${scalaVersionFull}",'project catalyst','compile'
+}
+task compileSQL(type:Exec){
+  workingDir "spark-${sparkVersion}"
+  commandLine './build/sbt',"-Dscala.version=${scalaVersionFull}",'project sql','compile'
+}
 
 task publishSpark(type:Exec){
   workingDir "spark-${sparkVersion}"
-  commandLine './build/sbt',"-Dscala.version=${scalaVersionFull}",'publishLocal'
+  commandLine './build/sbt',"-Dscala.version=${scalaVersionFull}",'publish-local'
 }
 task eclipseSpark(type:Exec){
   workingDir "spark-${sparkVersion}"
@@ -89,10 +109,12 @@ task eclipseSpark(type:Exec){
 
 copyAll.dependsOn copySrcA
 copyAll.dependsOn copySrcB
-publishSpark.dependsOn compileSpark
+//publishSpark.dependsOn compileSpark
+publishSpark.dependsOn compileSQL
+compileSQL.dependsOn compileCat
 compileSpark.dependsOn cleanSpark
-cleanSpark.dependsOn scalaSpark
-scalaSpark.dependsOn copyAll
+//cleanSpark.dependsOn scalaSpark
+//scalaSpark.dependsOn copyAll
 // Starting point
 process.dependsOn publishSpark
 // Initialization starting point is processInit
@@ -100,3 +122,6 @@ extractSpark.dependsOn pullSpark
 processInit.dependsOn extractSpark
 // prep for dev
 processDev.dependsOn eclipseSpark
+// backup
+backup.dependsOn bkSrcB
+bkSrcB.dependsOn bkSrcA

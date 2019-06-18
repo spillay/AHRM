@@ -5,12 +5,15 @@ configure([ project(':com.dsleng.store'),project(':com.dsleng.model'),project('c
 	apply plugin: 'scala'
 	apply plugin: 'eclipse'
 	apply plugin: "maven"
-    apply plugin: 'maven-publish'
+        apply plugin: 'maven-publish'
 
 	group = "com.dsleng"
 	version = "1.0"
 	
 	repositories{
+	   ivy {
+        	url "${System.properties['user.home']}/.ivy2/local"
+	    }
 	    mavenLocal()
 	    mavenCentral()
 	}
@@ -57,7 +60,7 @@ configure([ project(':com.dsleng.store'),project(':com.dsleng.model'),project('c
     }
 }
 // Global Configuration for Java Projects
-configure([project(':com.dsleng.nlp')]) {
+configure([project(':com.dsleng.nlp'),project(':com.dsleng.testj')]) {
 	apply plugin: 'java'
 	apply plugin: 'eclipse'
 	apply plugin: "maven"
