@@ -18,9 +18,10 @@ trait SparkHelper{
       .master(master)
       .config("spark.eventLog.enabled", "true")
       .config("spark.eventLog.dir", "file:/usr/local/spark/history/")
-      .config("spark.sql.codegen.wholeStage","false")
+      //.config("spark.sql.codegen.wholeStage","true")
+      .config("spark.sql.codegen",true)
       .config("spark.driver.memory","5g")
-      .config("spark.sql.parquet.filterPushdown","true")
+      //.config("spark.sql.parquet.filterPushdown","true")
       .getOrCreate()
       
    spark.sparkContext.setLogLevel("ERROR")

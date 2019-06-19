@@ -5,18 +5,20 @@ import org.apache.spark.sql.{SparkSession}
 import org.apache.spark.sql.SaveMode
 import org.apache.spark.sql.DataFrame
 import play.api.libs.json._
-import org.apache.spark.sql.functions.col
-import org.apache.spark.sql.functions.lit
+import org.apache.spark.sql.functions._
 import org.apache.spark.sql.SPFunctions.addOneCustomNative
 import org.apache.spark.sql.SPFunctions.checkforFeature
 
 import com.dsleng.tut.QuasiTest
 import org.apache.spark.sql.catalyst.expressions.SPArrayContains
 import org.apache.spark.sql.catalyst.expressions.Literal
+import org.apache.spark.sql.catalyst.expressions.ArrayContains
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.catalyst.expressions.codegen.CodegenContext
 import org.apache.spark.sql.execution.command.ExplainCommand
-
+import org.apache.spark.sql.execution.debug._
+import org.apache.spark.sql.functions.typedLit
+import org.apache.spark.sql.functions.array_contains
 
 class EmoSimple extends SparkHelper with Performance {
   import spark.sqlContext.implicits._
@@ -69,20 +71,57 @@ class EmoSimple extends SparkHelper with Performance {
     QuasiTest.printTree("simple"){expr}
   }
    def test8(){
-      val data = Seq(Seq("hello","bye","welcome"),Seq("hello","bye","welcome"),Seq("hello","bye","welcome"),Seq("hello","bye","welcome"))
+     println(spark.sessionState.conf.wholeStageEnabled)
+      var data = Seq(Seq("hello","bye","welcome"),Seq("hello","bye","welcome"),Seq("hello","bye","welcome"),Seq("hello","bye","welcome"))
+      
+      println(data.length)
       val cols = Array("p1","index")
       val a6 = Literal.create(Seq("hello", "sure*", "bye"), ArrayType(IntegerType, containsNull = false))
       
       var df = data.zip(cols).map { 
         case (col,index) => (col,index)
       }.toDF(cols: _*)
+//      for(i <- 0 to 3){
+//        val df2 = df.withColumn("p1", typedLit(Seq("whello","bye","welcome"))).withColumn("index", lit(i))
+//        df = df.union(df2)
+//        println(i)
+//      }
+//      println("before show")
+      
+      
+      //df = df.withColumn("p2", checkforFeature(col("p1"),lit("hello")))
+      df.show(true)
+      df = df.where('p1 !== typedLit(Seq()))
       val explain = ExplainCommand(df.queryExecution.logical, codegen=true)
       spark.sessionState.executePlan(explain).executedPlan.executeCollect().foreach {
         r => println(r.getString(0))
       }
-      df = df.withColumn("p2", checkforFeature(col("p1"),lit("hello")))
+      
+      //df.queryExecution.debug.codegen()
+      //df.debugCodegen()
+      df.explain(false)
       averageTime{ df.count() }
       df.show();
+   }
+   def test9(){
+     var df =  spark.range(1000L * 1000 * 1000).selectExpr("sum(id)")
+     df.explain(false)
+     val explain = ExplainCommand(df.queryExecution.logical, codegen=true)
+      spark.sessionState.executePlan(explain).executedPlan.executeCollect().foreach {
+        r => println(r.getString(0))
+      }
+     df.show()
+   }
+   def test10(){
+     var df = spark.read.parquet(complete)
+     //df = df.where('liwc_count === 0)
+     df = df.withColumn("p1", checkforFeature(col("liwc_words"),lit("abandoned")))
+     df.show()
+     df.explain()
+     val explain = ExplainCommand(df.queryExecution.logical, codegen=true)
+      spark.sessionState.executePlan(explain).executedPlan.executeCollect().foreach {
+        r => println(r.getString(0))
+      }
    }
 }
 
@@ -107,6 +146,7 @@ object EmoSimple extends App {
   //o.test6()
   //o.test3()
   //o.test4()
-  o.test8()
+  o.test10()
+  //o.test9()
   //o.processTest(tokens)
 }

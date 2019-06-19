@@ -13,16 +13,6 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/spark/spark-sql_2.12/2.4.3/spark-sql_2.12-2.4.3.jar" sourcepath="/home/suresh/.m2/repository/org/apache/spark/spark-sql_2.12/2.4.3/spark-sql_2.12-2.4.3-sources.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/spark/spark-catalyst_2.12/2.4.3/spark-catalyst_2.12-2.4.3.jar" sourcepath="/home/suresh/.m2/repository/org/apache/spark/spark-catalyst_2.12/2.4.3/spark-catalyst_2.12-2.4.3-sources.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/spark/spark-core_2.12/2.4.3/spark-core_2.12-2.4.3.jar" sourcepath="/home/suresh/.m2/repository/org/apache/spark/spark-core_2.12/2.4.3/spark-core_2.12-2.4.3-sources.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
@@ -64,6 +54,11 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.12.8/682d33402cdae50258afa2c0860eb54688dab610/scala-reflect-2.12.8.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.12.8/2b4a5bbdc19f8ab34d474f30dbca957addc8ae09/scala-reflect-2.12.8-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.12/1.1.2/2ad65ccbeed662b51e2b96221cb4e7d7d6b7b87a/scala-parser-combinators_2.12-1.1.2.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.12/1.1.2/17be9d543fa1f7f01d57722cc37d0c4024a15f69/scala-parser-combinators_2.12-1.1.2-sources.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -118,11 +113,6 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/spark/spark-sketch_2.12/2.4.3/spark-sketch_2.12-2.4.3.jar" sourcepath="/home/suresh/.m2/repository/org/apache/spark/spark-sketch_2.12/2.4.3/spark-sketch_2.12-2.4.3-sources.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/spark/spark-tags_2.12/2.4.3/spark-tags_2.12-2.4.3.jar" sourcepath="/home/suresh/.m2/repository/org/apache/spark/spark-tags_2.12/2.4.3/spark-tags_2.12-2.4.3-sources.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
@@ -134,11 +124,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/typelevel/macro-compat_2.12/1.1.1/macro-compat_2.12-1.1.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.12/1.1.0/scala-parser-combinators_2.12-1.1.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -166,11 +151,6 @@
 	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.11.2/f5e9a2ffca496057d6891a3de65128efc636e26e/log4j-api-2.11.2.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.11.2/a11bdc0e8f95da31527b4f34f1a35c23e197498d/log4j-api-2.11.2-sources.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/arrow/arrow-vector/0.10.0/arrow-vector-0.10.0.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.10.2/a079fc39ccc3de02acdeb7117443e5d9bd431687/joda-time-2.10.2.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.10.2/fbf6cbd712c30629c77cefa42fe15ca888e609d5/joda-time-2.10.2-sources.jar">
@@ -388,46 +368,6 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.apache.orc/orc-core/1.5.5/31c4c6c741a558d68c76c4cf88fb06fdca82adc/orc-core-1.5.5-nohive.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.apache.orc/orc-core/1.5.5/aef69606b98bb1d307a3361d22c554d7b393061b/orc-core-1.5.5-sources.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/orc/orc-shims/1.5.5/orc-shims-1.5.5.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/parquet/parquet-hadoop/1.10.1/parquet-hadoop-1.10.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/parquet/parquet-column/1.10.1/parquet-column-1.10.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/parquet/parquet-encoding/1.10.1/parquet-encoding-1.10.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/parquet/parquet-common/1.10.1/parquet-common-1.10.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/parquet/parquet-format/2.4.0/parquet-format-2.4.0.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/arrow/arrow-memory/0.10.0/arrow-memory-0.10.0.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
@@ -448,7 +388,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -543,7 +483,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/b19b5927c2c25b6c70f093767041e641ae0b1b35/jsr305-3.0.2-sources.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -668,12 +608,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/univocity/univocity-parsers/2.7.3/univocity-parsers-2.7.3.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.apache.orc/orc-mapreduce/1.5.5/fc8c58a4bd3a3523e42eec3eee61810e92ab6fe4/orc-mapreduce-1.5.5-nohive.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.apache.orc/orc-mapreduce/1.5.5/42115ac382937d6ca7680cda8133c25108c7d3ab/orc-mapreduce-1.5.5-sources.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -688,12 +623,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/google/guava/guava/16.0.1/guava-16.0.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -743,7 +673,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar">
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -808,66 +738,6 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/codehaus/janino/janino/3.0.9/janino-3.0.9.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/codehaus/janino/commons-compiler/3.0.9/commons-compiler-3.0.9.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/antlr/antlr4/4.7/antlr4-4.7.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/io/airlift/aircompressor/0.10/aircompressor-0.10.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/parquet/parquet-jackson/1.10.1/parquet-jackson-1.10.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/arrow/arrow-format/0.10.0/arrow-format-0.10.0.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/carrotsearch/hppc/0.7.2/hppc-0.7.2.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/vlkan/flatbuffers/1.2.0-3f79e055/flatbuffers-1.2.0-3f79e055.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
@@ -893,7 +763,22 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="/home/suresh/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -924,31 +809,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/antlr/ST4/4.0.8/ST4-4.0.8.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/abego/treelayout/org.abego.treelayout.core/1.0.3/org.abego.treelayout.core-1.0.3.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/ibm/icu/icu4j/58.2/icu4j-58.2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>

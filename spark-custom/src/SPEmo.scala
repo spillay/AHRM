@@ -98,27 +98,46 @@ case class SPArrayContains(left: Expression, right: Expression)
 
   override def doGenCode(ctx: CodegenContext, ev: ExprCode): ExprCode = {
     nullSafeCodeGen(ctx, ev, (arr, value) => {
+      val av = ctx.freshName("av")
+      val vv = ctx.freshName("vv")
       val i = ctx.freshName("i")
       val getValue = CodeGenerator.getValue(arr, right.dataType, i)
       val loopBodyCode = if (nullable) {
         s"""
+           | // start 1
            |if ($arr.isNullAt($i)) {
            |   ${ev.isNull} = true;
-           |} else if (${ctx.genEqual(right.dataType, value, getValue)}) {
-           |   ${ev.isNull} = false;
-           |   ${ev.value} = true;
-           |   break;
+           |} else { 
+           |  if (${getValue}.contains(UTF8String.fromString("*"))){
+           |    UTF8String ${av} = ${getValue}.substring(0,${getValue}.indexOf(UTF8String.fromString("*"),0));
+           |    UTF8String ${vv} = ${value}.substring(0,${getValue}.indexOf(UTF8String.fromString("*"),0));
+           |    if (${ctx.genEqual(right.dataType, av, vv)}) {
+           |      ${ev.isNull} = false;
+           |      ${ev.value} = true;
+           |      break;
+           |    }
+           |  }
+           |  if (${ctx.genEqual(right.dataType, value, getValue)}) {
+           |     ${ev.isNull} = false;
+           |     ${ev.value} = true;
+           |     break;
+           |  }
            |}
          """.stripMargin
       } else {
         s"""
-           |if (${ctx.genEqual(right.dataType, value, getValue)}) {
+           |// start 2 ------------------------------------------------------------------------------------------
+           |// UTF8String ${av} = ${getValue};
+           |//if (${av}.contains("*")){
+           |//}
+           |if (${ctx.genEqual(right.dataType, value, getValue)}) { // ++++++++++++++++++++++++++++++++++++++
            |  ${ev.value} = true;
            |  break;
            |}
          """.stripMargin
       }
       s"""
+         |// start 4 ====================================================
          |for (int $i = 0; $i < $arr.numElements(); $i ++) {
          |  $loopBodyCode
          |}
