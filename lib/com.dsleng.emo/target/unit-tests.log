@@ -1,59 +1,59 @@
-16:56:42.780 main WARN Utils: Your hostname, thor resolves to a loopback address: 127.0.1.1; using 192.168.1.11 instead (on interface wlp10s0)
-16:56:42.781 main WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
-16:56:42.840 main INFO SparkContext: Running Spark version 2.4.3
-16:56:43.110 main WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-16:56:43.209 main INFO SparkContext: Submitted application: Emotion Analysis
-16:56:43.267 main INFO SecurityManager: Changing view acls to: suresh
-16:56:43.267 main INFO SecurityManager: Changing modify acls to: suresh
-16:56:43.267 main INFO SecurityManager: Changing view acls groups to: 
-16:56:43.268 main INFO SecurityManager: Changing modify acls groups to: 
-16:56:43.268 main INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(suresh); groups with view permissions: Set(); users  with modify permissions: Set(suresh); groups with modify permissions: Set()
-16:56:43.575 main INFO Utils: Successfully started service 'sparkDriver' on port 41025.
-16:56:43.598 main INFO SparkEnv: Registering MapOutputTracker
-16:56:43.618 main INFO SparkEnv: Registering BlockManagerMaster
-16:56:43.620 main INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
-16:56:43.620 main INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
-16:56:43.635 main INFO DiskBlockManager: Created local directory at /tmp/blockmgr-2876efcd-ddad-4c47-ba06-352c622dfa0a
-16:56:43.656 main INFO MemoryStore: MemoryStore started with capacity 1922.4 MB
-16:56:43.671 main INFO SparkEnv: Registering OutputCommitCoordinator
-16:56:43.755 main INFO log: Logging initialized @1665ms
-16:56:43.809 main INFO Server: jetty-9.3.24.v20180605, build timestamp: 2018-06-05T13:11:56-04:00, git hash: 84205aa28f11a4f31f2a3b86d1bba2cc8ab69827
-16:56:43.821 main INFO Server: Started @1731ms
-16:56:43.836 main INFO AbstractConnector: Started ServerConnector@78f5c518{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
-16:56:43.836 main INFO Utils: Successfully started service 'SparkUI' on port 4040.
-16:56:43.854 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2d36e77e{/jobs,null,AVAILABLE,@Spark}
-16:56:43.854 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3668d4{/jobs/json,null,AVAILABLE,@Spark}
-16:56:43.855 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1c3b9394{/jobs/job,null,AVAILABLE,@Spark}
-16:56:43.856 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7f6f61c8{/jobs/job/json,null,AVAILABLE,@Spark}
-16:56:43.856 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4c2cc639{/stages,null,AVAILABLE,@Spark}
-16:56:43.857 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@ccb4b1b{/stages/json,null,AVAILABLE,@Spark}
-16:56:43.857 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4097cac{/stages/stage,null,AVAILABLE,@Spark}
-16:56:43.858 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7c1e2a2d{/stages/stage/json,null,AVAILABLE,@Spark}
-16:56:43.859 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@333dd51e{/stages/pool,null,AVAILABLE,@Spark}
-16:56:43.859 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@52d645b1{/stages/pool/json,null,AVAILABLE,@Spark}
-16:56:43.860 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2101b44a{/storage,null,AVAILABLE,@Spark}
-16:56:43.860 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2cc3ad05{/storage/json,null,AVAILABLE,@Spark}
-16:56:43.861 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@710b18a6{/storage/rdd,null,AVAILABLE,@Spark}
-16:56:43.861 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@119020fb{/storage/rdd/json,null,AVAILABLE,@Spark}
-16:56:43.862 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3d9f6567{/environment,null,AVAILABLE,@Spark}
-16:56:43.862 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@c055c54{/environment/json,null,AVAILABLE,@Spark}
-16:56:43.863 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@25e2ab5a{/executors,null,AVAILABLE,@Spark}
-16:56:43.863 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@35e5d0e5{/executors/json,null,AVAILABLE,@Spark}
-16:56:43.864 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@73173f63{/executors/threadDump,null,AVAILABLE,@Spark}
-16:56:43.864 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@55562aa9{/executors/threadDump/json,null,AVAILABLE,@Spark}
-16:56:43.870 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@655ef322{/static,null,AVAILABLE,@Spark}
-16:56:43.871 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2e61d218{/,null,AVAILABLE,@Spark}
-16:56:43.872 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3569fc08{/api,null,AVAILABLE,@Spark}
-16:56:43.872 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@54a67a45{/jobs/job/kill,null,AVAILABLE,@Spark}
-16:56:43.873 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7d42c224{/stages/stage/kill,null,AVAILABLE,@Spark}
-16:56:43.874 main INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://192.168.1.11:4040
-16:56:43.985 main INFO Executor: Starting executor ID driver on host localhost
-16:56:44.032 main INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 41561.
-16:56:44.033 main INFO NettyBlockTransferService: Server created on 192.168.1.11:41561
-16:56:44.034 main INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
-16:56:44.039 main INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.1.11, 41561, None)
-16:56:44.043 dispatcher-event-loop-2 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.1.11:41561 with 1922.4 MB RAM, BlockManagerId(driver, 192.168.1.11, 41561, None)
-16:56:44.044 main INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.1.11, 41561, None)
-16:56:44.045 main INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.168.1.11, 41561, None)
-16:56:44.143 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@50687efb{/metrics/json,null,AVAILABLE,@Spark}
-16:56:44.295 main INFO EventLoggingListener: Logging events to file:/usr/local/spark/history/local-1560977803961
+21:15:03.957 main WARN Utils: Your hostname, thor resolves to a loopback address: 127.0.1.1; using 192.168.1.11 instead (on interface wlp10s0)
+21:15:03.958 main WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+21:15:04.025 main INFO SparkContext: Running Spark version 2.4.3
+21:15:04.272 main WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+21:15:04.374 main INFO SparkContext: Submitted application: Emotion Analysis
+21:15:04.426 main INFO SecurityManager: Changing view acls to: suresh
+21:15:04.427 main INFO SecurityManager: Changing modify acls to: suresh
+21:15:04.427 main INFO SecurityManager: Changing view acls groups to: 
+21:15:04.428 main INFO SecurityManager: Changing modify acls groups to: 
+21:15:04.428 main INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(suresh); groups with view permissions: Set(); users  with modify permissions: Set(suresh); groups with modify permissions: Set()
+21:15:04.698 main INFO Utils: Successfully started service 'sparkDriver' on port 37749.
+21:15:04.720 main INFO SparkEnv: Registering MapOutputTracker
+21:15:04.739 main INFO SparkEnv: Registering BlockManagerMaster
+21:15:04.741 main INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+21:15:04.741 main INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+21:15:04.756 main INFO DiskBlockManager: Created local directory at /tmp/blockmgr-e40b2650-2ae6-4270-b0c3-b25b9f6561bd
+21:15:04.776 main INFO MemoryStore: MemoryStore started with capacity 1922.4 MB
+21:15:04.790 main INFO SparkEnv: Registering OutputCommitCoordinator
+21:15:04.868 main INFO log: Logging initialized @1576ms
+21:15:04.921 main INFO Server: jetty-9.3.24.v20180605, build timestamp: 2018-06-05T13:11:56-04:00, git hash: 84205aa28f11a4f31f2a3b86d1bba2cc8ab69827
+21:15:04.931 main INFO Server: Started @1640ms
+21:15:04.947 main INFO AbstractConnector: Started ServerConnector@78f5c518{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+21:15:04.947 main INFO Utils: Successfully started service 'SparkUI' on port 4040.
+21:15:04.964 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2d36e77e{/jobs,null,AVAILABLE,@Spark}
+21:15:04.965 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3668d4{/jobs/json,null,AVAILABLE,@Spark}
+21:15:04.965 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1c3b9394{/jobs/job,null,AVAILABLE,@Spark}
+21:15:04.966 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7f6f61c8{/jobs/job/json,null,AVAILABLE,@Spark}
+21:15:04.967 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4c2cc639{/stages,null,AVAILABLE,@Spark}
+21:15:04.967 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@ccb4b1b{/stages/json,null,AVAILABLE,@Spark}
+21:15:04.968 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4097cac{/stages/stage,null,AVAILABLE,@Spark}
+21:15:04.969 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7c1e2a2d{/stages/stage/json,null,AVAILABLE,@Spark}
+21:15:04.969 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@333dd51e{/stages/pool,null,AVAILABLE,@Spark}
+21:15:04.970 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@52d645b1{/stages/pool/json,null,AVAILABLE,@Spark}
+21:15:04.970 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2101b44a{/storage,null,AVAILABLE,@Spark}
+21:15:04.971 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2cc3ad05{/storage/json,null,AVAILABLE,@Spark}
+21:15:04.971 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@710b18a6{/storage/rdd,null,AVAILABLE,@Spark}
+21:15:04.972 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@119020fb{/storage/rdd/json,null,AVAILABLE,@Spark}
+21:15:04.972 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3d9f6567{/environment,null,AVAILABLE,@Spark}
+21:15:04.973 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@c055c54{/environment/json,null,AVAILABLE,@Spark}
+21:15:04.973 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@25e2ab5a{/executors,null,AVAILABLE,@Spark}
+21:15:04.974 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@35e5d0e5{/executors/json,null,AVAILABLE,@Spark}
+21:15:04.974 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@73173f63{/executors/threadDump,null,AVAILABLE,@Spark}
+21:15:04.975 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@55562aa9{/executors/threadDump/json,null,AVAILABLE,@Spark}
+21:15:04.981 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@655ef322{/static,null,AVAILABLE,@Spark}
+21:15:04.982 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2e61d218{/,null,AVAILABLE,@Spark}
+21:15:04.983 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3569fc08{/api,null,AVAILABLE,@Spark}
+21:15:04.983 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@54a67a45{/jobs/job/kill,null,AVAILABLE,@Spark}
+21:15:04.984 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7d42c224{/stages/stage/kill,null,AVAILABLE,@Spark}
+21:15:04.985 main INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://192.168.1.11:4040
+21:15:05.088 main INFO Executor: Starting executor ID driver on host localhost
+21:15:05.133 main INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 41649.
+21:15:05.134 main INFO NettyBlockTransferService: Server created on 192.168.1.11:41649
+21:15:05.135 main INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+21:15:05.140 main INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.1.11, 41649, None)
+21:15:05.144 dispatcher-event-loop-2 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.1.11:41649 with 1922.4 MB RAM, BlockManagerId(driver, 192.168.1.11, 41649, None)
+21:15:05.146 main INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.1.11, 41649, None)
+21:15:05.146 main INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.168.1.11, 41649, None)
+21:15:05.235 main INFO ContextHandler: Started o.e.j.s.ServletContextHandler@50687efb{/metrics/json,null,AVAILABLE,@Spark}
+21:15:05.393 main INFO EventLoggingListener: Logging events to file:/usr/local/spark/history/local-1560993305064

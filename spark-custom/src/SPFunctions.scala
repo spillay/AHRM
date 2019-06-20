@@ -29,4 +29,7 @@ object SPFunctions {
   def checkforFeature(arr: Column, value: Any): Column = withExpr {
     SPArrayContains(arr.expr, lit(value).expr)
   }
+  def checkforFeature2(arr: Column, value: Any,add: Column): Column = withExpr {
+    SPArrayContains2(arr.expr, lit(value).expr,add.expr)
+  }
 }

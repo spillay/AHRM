@@ -8,9 +8,11 @@ import play.api.libs.json._
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.SPFunctions.addOneCustomNative
 import org.apache.spark.sql.SPFunctions.checkforFeature
+import org.apache.spark.sql.SPFunctions.checkforFeature2
 
 import com.dsleng.tut.QuasiTest
 import org.apache.spark.sql.catalyst.expressions.SPArrayContains
+import org.apache.spark.sql.catalyst.expressions.SPArrayContains2
 import org.apache.spark.sql.catalyst.expressions.Literal
 import org.apache.spark.sql.catalyst.expressions.ArrayContains
 import org.apache.spark.sql.types._
@@ -62,8 +64,22 @@ class EmoSimple extends SparkHelper with Performance {
     //averageTime {ndf.show()}
   }
   def test6(){
-    val a6 = Literal.create(Seq("hello", "sure*", "bye"), ArrayType(IntegerType, containsNull = false))
+    val a6 = Literal.create(Seq("hello", "sure*", "bye"), ArrayType(StringType, containsNull = false))
     val sa = SPArrayContains(a6, Literal("surest"))
+    
+    val ctx = new CodegenContext()
+    val expr = sa.genCode(ctx)
+    println(expr)
+    QuasiTest.printTree("simple"){expr}
+  }
+  def test7(){
+    
+    val a6 = Literal.create(Seq("hello", "sure*", "bye"), ArrayType(StringType, containsNull = false))
+    val sa = SPArrayContains2(a6, Literal("surest"),Literal(""))
+    
+    println("Literal Null",Literal("").nullable)
+    println("Array",a6.nullable)
+    println("Array Contains",a6.dataType.asInstanceOf[ArrayType].containsNull)
     
     val ctx = new CodegenContext()
     val expr = sa.genCode(ctx)
@@ -115,7 +131,9 @@ class EmoSimple extends SparkHelper with Performance {
    def test10(){
      var df = spark.read.parquet(complete)
      //df = df.where('liwc_count === 0)
-     df = df.withColumn("p1", checkforFeature(col("liwc_words"),lit("abandoned")))
+     df = df.withColumn("words", lit(""))
+     df = df.withColumn("words", checkforFeature2(col("liwc_words"),lit("abandoned"),col("words")))
+     df = df.withColumn("words", checkforFeature2(col("liwc_words"),lit("ache"),col("words")))
      df.show()
      df.explain()
      val explain = ExplainCommand(df.queryExecution.logical, codegen=true)
@@ -143,7 +161,7 @@ object EmoSimple extends App {
   }
   */
   var o = new EmoSimple()
-  //o.test6()
+  o.test7()
   //o.test3()
   //o.test4()
   o.test10()
