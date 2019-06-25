@@ -15,20 +15,25 @@ import org.apache.spark.sql.catalyst.expressions.SPArrayContains
 import org.apache.spark.sql.catalyst.expressions.SPArrayContains2
 import org.apache.spark.sql.catalyst.expressions.Literal
 import org.apache.spark.sql.catalyst.expressions.ArrayContains
+import org.apache.spark.sql.catalyst.expressions.Size
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.catalyst.expressions.codegen.CodegenContext
 import org.apache.spark.sql.execution.command.ExplainCommand
 import org.apache.spark.sql.execution.debug._
 import org.apache.spark.sql.functions.typedLit
 import org.apache.spark.sql.functions.array_contains
+import org.apache.spark.serializer.JavaSerializer
+import org.apache.spark.sql.catalyst.analysis.{ResolveTimeZone, SimpleAnalyzer}
+import org.apache.spark.sql.internal.SQLConf
 
 class EmoSimple extends SparkHelper with Performance {
   import spark.sqlContext.implicits._
   
   val testpath = "/Data/emo-store/test-df.parquet"
   val complete = "/Data/emo-store/dict-data/emo-df.parquet"
+  val complete2 = "/Data/emo-store/dict-data/emo-dfv2.parquet"
   
-  def test3(){
+  private def test3(){
       val data = Seq((0.0,0.4,0.4,0.0),(0.1,0.0,0.0,0.7),(0.0,0.2,0.0,0.3),(0.3,0.0,0.0,0.0))
       val cols = Array("p1", "p2", "p3", "p4","index")
       
@@ -65,17 +70,17 @@ class EmoSimple extends SparkHelper with Performance {
   }
   def test6(){
     val a6 = Literal.create(Seq("hello", "sure*", "bye"), ArrayType(StringType, containsNull = false))
-    val sa = SPArrayContains(a6, Literal("surest"))
+    val sa = SPArrayContains2(a6, Literal("surest"))
     
     val ctx = new CodegenContext()
     val expr = sa.genCode(ctx)
     println(expr)
-    QuasiTest.printTree("simple"){expr}
+    QuasiTest.printTree("simple"){expr.code}
   }
   def test7(){
     
     val a6 = Literal.create(Seq("hello", "sure*", "bye"), ArrayType(StringType, containsNull = false))
-    val sa = SPArrayContains2(a6, Literal("surest"),Literal(""))
+    val sa = SPArrayContains(a6, Literal("surest"),Literal(""))
     
     println("Literal Null",Literal("").nullable)
     println("Array",a6.nullable)
@@ -85,6 +90,13 @@ class EmoSimple extends SparkHelper with Performance {
     val expr = sa.genCode(ctx)
     println(expr)
     QuasiTest.printTree("simple"){expr}
+    
+    val serializer = new JavaSerializer(spark.sparkContext.getConf).newInstance
+    val resolver = ResolveTimeZone(new SQLConf)
+    val expr2 = resolver.resolveTimeZones(serializer.deserialize(serializer.serialize(sa)))
+    println(expr2)
+    val result = expr2.eval()
+    println(result)
   }
    def test8(){
      println(spark.sessionState.conf.wholeStageEnabled)
@@ -132,21 +144,85 @@ class EmoSimple extends SparkHelper with Performance {
      var df = spark.read.parquet(complete)
      //df = df.where('liwc_count === 0)
      df = df.withColumn("words", lit(""))
-     df = df.withColumn("words", checkforFeature2(col("liwc_words"),lit("abandoned"),col("words")))
-     df = df.withColumn("words", checkforFeature2(col("liwc_words"),lit("ache"),col("words")))
+     
+     df = df.withColumn("words", checkforFeature(col("liwc_words"),lit("abandoned"),col("words")))
+     df = df.withColumn("words", checkforFeature(col("liwc_words"),lit("ache"),col("words")))
+
+     df = df.withColumn("words", checkforFeature(col("liwc_words"),lit("ac"),col("words")))
+
+     
+     
+       df = df.withColumn("words", checkforFeature(col("liwc_words"),lit("afraid"),col("words")))
+       df = df.withColumn("words", checkforFeature(col("liwc_words"),lit("danger"),col("words")))
+       df = df.withColumn("words", checkforFeature(col("liwc_words"),lit("adoration"),col("words")))
+
      df.show()
+     
      df.explain()
      val explain = ExplainCommand(df.queryExecution.logical, codegen=true)
       spark.sessionState.executePlan(explain).executedPlan.executeCollect().foreach {
         r => println(r.getString(0))
       }
    }
+   def transform(){
+    var df = spark.read.parquet(complete)
+    
+    // Fix Structure of Parquet DF
+    df.drop(df.col("liwc_fwords"))
+    df = df.withColumn("liwc_fwords", lit(""))
+    
+    df.drop(df.col("ext_fwords"))
+    df = df.withColumn("ext_fwords", lit(""))
+    this.savePAR(df, complete2)
+     
+   }
+   def process(tokens: Seq[String]){
+      var df = spark.read.parquet(complete)
+      df.show()
+      takenTime{
+        tokens.foreach(s=>{
+          df = df.withColumn("liwc_fwords", checkforFeature(col("liwc_words"),lit(s),col("liwc_fwords")))
+          df = df.withColumn("ext_fwords", checkforFeature(col("ext_words"),lit(s),col("ext_fwords")))
+        })  
+        df = df.withColumn("liwc_count", size(col("liwc_fwords")))
+        df = df.withColumn("ext_count", size(col("ext_fwords")))
+      }
+      df.show()
+   }
+   private def test11(){
+    var df = spark.read.parquet(complete2)
+    var edf = spark.read.parquet(complete2)
+    //df.show()
+    //df.drop(df.col("liwc_fwords"))
+    //df = df.withColumn("liwc_fwords",lit(null).cast("string"))
+    df.show()
+    //df = df.withColumn("liwc_fwords", checkforFeature(col("liwc_words"),lit("abandoned"),col("liwc_fwords")))
+    takenTime{
+      df = df.withColumn("liwc_fwords", checkforFeature(col("liwc_words"),lit("abandoned"),col("liwc_fwords")))
+      df = df.withColumn("liwc_fwords", checkforFeature(col("liwc_words"),lit("ache"),col("liwc_fwords")))
+      df = df.withColumn("liwc_fwords", checkforFeature(col("liwc_words"),lit("ac"),col("liwc_fwords")))
+    }
+    takenTime{
+      df = df.filter(col("liwc_fwords")!=="")
+    }
+    takenTime{
+      df = df.withColumn("liwc_count", size(split(col("liwc_fwords"), ",").cast("array<string>")))
+    }
+//    takenTime{
+//      df = df.withColumn("liwc_array", split(col("liwc_fwords"), ",").cast("array<string>"))
+//      df = df.withColumn("liwc_count", size(col("liwc_array")))
+//    }
+    df.show()
+    df = df.select(col("emotion"), col("liwc_count"),col("liwc_fwords"))
+      .joinWith(edf, df.col("emotion")===edf.col("emotion")).toDF()
+    
+  }
 }
 
 object EmoSimple extends App {
   println("Starting EmoSimple")
   //val func = function.asInstanceOf[() => Any]
-  val tokens = List("terrible","funny","story")
+  val tokens = List("terrible","funny","story","peacefully","foolproof","amaze")
   /*
   val qt = QuasiTest.addCreationDate()
   println(qt)
@@ -161,10 +237,11 @@ object EmoSimple extends App {
   }
   */
   var o = new EmoSimple()
-  o.test7()
+  //o.transform()
+  //o.test7()
   //o.test3()
   //o.test4()
-  o.test10()
+  //o.test11()
   //o.test9()
-  //o.processTest(tokens)
+  o.process(tokens)
 }

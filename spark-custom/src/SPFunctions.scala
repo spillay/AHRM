@@ -26,10 +26,10 @@ object SPFunctions {
   def addOneCustomNative(x: Column): Column = withExpr {
     Add_One_Custom_Native(x.expr)
   }
-  def checkforFeature(arr: Column, value: Any): Column = withExpr {
-    SPArrayContains(arr.expr, lit(value).expr)
+  def checkforFeature2(arr: Column, value: Any): Column = withExpr {
+    SPArrayContains2(arr.expr, lit(value).expr)
   }
-  def checkforFeature2(arr: Column, value: Any,add: Column): Column = withExpr {
-    SPArrayContains2(arr.expr, lit(value).expr,add.expr)
+  def checkforFeature(arr: Column, value: Any,add: Column): Column = withExpr {
+    SPArrayContains(arr.expr, lit(value).expr,add.expr)
   }
 }

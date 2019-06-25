@@ -9,4 +9,12 @@ trait Performance {
      val timeTakenMs = averageTimeTaken / 1000000
      println("Elapsed time: " + timeTakenMs + "ms")
    }
+  def takenTime[R](block: => R): Unit = {
+     val t0 = System.nanoTime()
+      block
+     val t1 = System.nanoTime()
+     val averageTimeTaken = (t1 - t0)
+     val timeTakenMs = averageTimeTaken / 1000000
+     println("Elapsed time: " + timeTakenMs + "ms")
+   }
 }

@@ -37,7 +37,7 @@ import org.apache.spark.util.collection.OpenHashSet
 
 
 /**
- * Checks if the array (left) has the element (right)
+ * Checks if the array (left) has the element (right) using a regex if array element contains *
  */
 @ExpressionDescription(
   usage = "_FUNC_(array, value) - Returns true if the array contains the value. Uses simple regex",
@@ -46,17 +46,17 @@ import org.apache.spark.util.collection.OpenHashSet
       > SELECT _FUNC_(array("hello","bye","sur*"), "surest");
        true
   """)
-case class SPArrayContains2(left: Expression, right: Expression,add: Expression)
+case class SPArrayContains(left: Expression, right: Expression,add: Expression)
   extends TernaryExpression with ImplicitCastInputTypes {
 
   override def children: Seq[Expression] = left :: right :: add :: Nil
   //override def dataType: DataType = BooleanType
-  override def dataType: DataType = StringType
+  override def dataType: DataType = ArrayType(StringType, true)
 
   //@transient private lazy val ordering: Ordering[Any] =
     //TypeUtils.getInterpretedOrdering(right.dataType)
 
-  override def inputTypes: Seq[AbstractDataType] = Seq(ArrayType, StringType, StringType)
+  override def inputTypes: Seq[AbstractDataType] = Seq(ArrayType, StringType, ArrayType)
 //  override def inputTypes: Seq[AbstractDataType] = {
 //    (left.dataType, right.dataType,add.dataType) match {
 //      case (_, NullType,_) => Seq.empty
@@ -82,7 +82,7 @@ case class SPArrayContains2(left: Expression, right: Expression,add: Expression)
   }
 
   override def nullable: Boolean = {
-    left.nullable || right.nullable || add.nullable || left.dataType.asInstanceOf[ArrayType].containsNull
+    left.nullable || right.nullable || left.dataType.asInstanceOf[ArrayType].containsNull
   }
 
   override def nullSafeEval(arr: Any, value: Any,add: Any): Any = {
@@ -95,40 +95,59 @@ case class SPArrayContains2(left: Expression, right: Expression,add: Expression)
        // return true
       //}
     )
+    if (!add.isInstanceOf[ArrayData]){
+      hasNull = true
+    }
     if (hasNull) {
       null
     } else {
       false
     }
   }
+  def genApply(ctx: CodegenContext, ev: ExprCode,vVal: String,add: String): String = {
+    val arrlen = ctx.freshName("arrlen")
+    val newArray = ctx.freshName("newArray")
+    return s"""
+      |    int ${arrlen} = ${add}.numElements(); 
+      |    UTF8String[] $newArray = new UTF8String[${arrlen}+1];  
+      |    for(int cnt=0;cnt<${arrlen};cnt++)
+      |    {  
+      |      $newArray[cnt] = (UTF8String) $add.get(cnt, org.apache.spark.sql.types.DataTypes.StringType); 
+      |    }  
+      |    $newArray[${arrlen}] = ${vVal};
+      |    ${ev.value} = ArrayData.toArrayData(${newArray});
+      """
+ }
 
-  def genContains(ctx: CodegenContext, ev: ExprCode,aVal: String,vVal: String,av: String,vv: String,add: String): String = {
+ def genContains(ctx: CodegenContext, ev: ExprCode,aVal: String,vVal: String,
+      av: String,vv: String,add: String,avlen: String,vvlen: String): String = {
     return s"""
      | if (${aVal}.contains(UTF8String.fromString("*"))){
+     |    int ${vvlen} = ${vVal}.toString().length();    
      |    UTF8String ${av} = ${aVal}.substring(0,${aVal}.indexOf(UTF8String.fromString("*"),0));
-     |    UTF8String ${vv} = ${vVal}.substring(0,${aVal}.indexOf(UTF8String.fromString("*"),0));
-     |    if (${ctx.genEqual(right.dataType, av, vv)}) {
-     |      ${ev.isNull} = false;
-     |      //${ev.value} = UTF8String.fromString("result from contains");
-     |      if (${add}.equals(UTF8String.fromString(""))){ 
-     |        ${ev.value} = ${vVal};
-     |      } else {
-     |        ${ev.value} = UTF8String.concat(${add},UTF8String.fromString(","),${vVal});
-     |      } 
-     |      break;
-     |    }
-     |  }
+     |    int ${avlen} = ${av}.toString().length();
+     |    UTF8String ${vv} = ${vVal};
+     |    if (${vvlen} > ${avlen}){ 
+     |       ${vv} = ${vVal}.substring(0,${avlen});
+     |    } 
+     |    ${vv} = ${vv}.trim();
+     |    ${av} = ${av}.trim();
+     |    ${this.genEquals(ctx, ev, av, vv,add)}
+     | } else {
+     |   ${this.genEquals(ctx, ev, aVal, vVal,add)}
+     | }
       """
   }
-  def genEquals(ctx: CodegenContext, ev: ExprCode,aVal: String,vVal: String,av: String,vv: String,add: String): String = {
-    return ""
-    return s"""
-           |  ${this.genContains(ctx, ev, aVal, vVal, av, vv,add)}
-           |  if (${ctx.genEqual(right.dataType, vVal, aVal)}) {
-           |     ${ev.isNull} = false;
-           |     //${ev.value} = UTF8String.fromString(${add}) + UTF8String.fromString(",") + UTF8String.fromString(${vVal});
-           |     ${CodeGenerator.javaType(dataType)} ${ev.value} = UTF8String.fromString("result1");
+   def genEquals(ctx: CodegenContext, ev: ExprCode,aVal: String,
+      vVal: String,add: String): String = {
+    return s"""           
+           |  if (${ctx.genEqual(right.dataType, aVal, vVal)}) {
+           |     ${ev.isNull} = false; 
+           |     ${this.genApply(ctx, ev, vVal, add)}
            |     break;
+           |  } else {
+           |     ${ev.isNull} = false;
+           |     ${ev.value} = ${add};
            |  }
       """
   }
@@ -137,30 +156,24 @@ case class SPArrayContains2(left: Expression, right: Expression,add: Expression)
       val av = ctx.freshName("av")
       val vv = ctx.freshName("vv")
       val i = ctx.freshName("i")
+      val avlen = ctx.freshName("avlen")
+      val vvlen = ctx.freshName("vvlen")
       val getValue = CodeGenerator.getValue(arr, right.dataType, i)
-      val loopBodyCode1 = 
-        s"""
-          | ${ev.value} = UTF8String.fromString("f1");
-          """
       val loopBodyCode = if (nullable) {
         s"""
            | // start 1
            |if ($arr.isNullAt($i)) {
            |  ${ev.isNull} = true;
            |} else { 
-           |  ${this.genContains(ctx, ev, getValue, value, av, vv,add)}
-           |  ${ev.isNull} = false;
-           |  ${ev.value} = UTF8String.fromString("result");
+           |  ${this.genContains(ctx, ev, getValue, value, av, vv,add,avlen,vvlen)}
            |}
          """.stripMargin
       } else {
         s"""
-           |//${ev.isNull} = false;
-           |${ev.value} = UTF8String.fromString("result2");
+           |${this.genContains(ctx, ev, getValue, value, av, vv,add,avlen,vvlen)}
          """.stripMargin
       }
       s"""
-         |// start 4 ====================================================
          |for (int $i = 0; $i < $arr.numElements(); $i ++) {
          |  $loopBodyCode
          |}
@@ -168,40 +181,9 @@ case class SPArrayContains2(left: Expression, right: Expression,add: Expression)
     })
   }
   
-//  override def doGenCode(ctx: CodegenContext, ev: ExprCode): ExprCode = {
-//    nullSafeCodeGen(ctx, ev, (arr, value,add) => {
-//      val av = ctx.freshName("av")
-//      val vv = ctx.freshName("vv")
-//      val i = ctx.freshName("i")
-//      val getValue = CodeGenerator.getValue(arr, right.dataType, i)
-//      val loopBodyCode = if (nullable) {
-//        s"""
-//           | // start 1
-//           |if ($arr.isNullAt($i)) {
-//           |   ${ev.isNull} = true;
-//           |} else { 
-//           |  ${ev.isNull} = false;
-//           |  ${ev.value} = "result";
-//           |}
-//         """.stripMargin
-//      } else {
-//        s"""
-//           |//${this.genContains(ctx, ev, getValue, value, av, vv)}
-//           |//${this.genEquals(ctx, ev, getValue, value, av, vv)}
-//           |${ev.isNull} = false;
-//           |${ev.value} = "result";
-//         """.stripMargin
-//      }
-//      s"""
-//         |// start 4 ====================================================
-//         |for (int $i = 0; $i < $arr.numElements(); $i ++) {
-//         |  $loopBodyCode
-//         |}
-//       """.stripMargin
-//    })
-//  }
 
-  override def prettyName: String = "sparray_contains2"
+
+  override def prettyName: String = "sparray_contains"
 }
 /**
  * Checks if the array (left) has the element (right)
@@ -213,7 +195,7 @@ case class SPArrayContains2(left: Expression, right: Expression,add: Expression)
       > SELECT _FUNC_(array("hello","bye","sur*"), "surest");
        true
   """)
-case class SPArrayContains(left: Expression, right: Expression)
+case class SPArrayContains2(left: Expression, right: Expression)
   extends BinaryExpression with ImplicitCastInputTypes {
 
   override def dataType: DataType = BooleanType
@@ -315,7 +297,7 @@ case class SPArrayContains(left: Expression, right: Expression)
     })
   }
 
-  override def prettyName: String = "sparray_contains"
+  override def prettyName: String = "sparray_contains2"
 }
 
 
