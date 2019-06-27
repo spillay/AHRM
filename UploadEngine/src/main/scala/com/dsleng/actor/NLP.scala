@@ -16,7 +16,7 @@ import akka.http.scaladsl.model._
 import akka.http.scaladsl.Http
 import com.dsleng.nlp.SimplePL
 import scala.collection.JavaConversions._
- 
+import com.dsleng.emo.helper.{TokenCtl,EmailCtl,TokenStrCtl}
  //   ws.url("http://localhost:5001/emo/tokens").post(js).map{response =>
 
 object NLP {

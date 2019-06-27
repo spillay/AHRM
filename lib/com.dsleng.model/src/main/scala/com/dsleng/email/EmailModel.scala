@@ -10,11 +10,12 @@ import org.joda.time.DateTime
 import org.joda.time.format.DateTimeFormat
 import java.net.InetAddress
 import java.net.UnknownHostException
-//import play.libs.Json
-import play.api.libs.json.{ JsNull, Json, JsString, JsValue, Writes }
+
 import java.util.Date
 import java.text.SimpleDateFormat
 import java.util.Locale
+import spray.json._
+import spray.json.DefaultJsonProtocol._
 
 case class RecipientInfo(Email: String, Department: String)
 case class DummySenderInfo(Email: String, IP: String)
@@ -341,48 +342,52 @@ case class EmailExt(var model: EmailModel, genderInfo: Gender, deception: Decept
 case class SimpleEmailExt(var fileName: String,var model: SimpleEmailModel, var emotions: String,var prime: String="Unknown",var norm: String="",var ec: String="",var department: String ="Unassigned",product: Array[String] = Array[String]()) {
   //println("Emotions " + emotions)
   if (emotions != "none"){ 
-    val obj = Json.parse(emotions)
-    this.prime = obj.\("prime").as[String]
+    //val res = emotions.parseJson
+    val obj = emotions.parseJson //Json.parse(emotions)
+    val res = obj.convertTo[Map[String, String]]
+    
+    this.prime = res("prime")
+    //this.prime = obj.\("prime").as[String]
     this.prime = this.prime.replaceAll("\"", "")
     
-    var n = obj.\("norm")
-    ////println(n)
+    var n = res("norm")
+    //var n = obj.\("norm")
     
     
-    this.norm = obj.\("norm").as[String]
+    this.norm = res("norm")
+    //this.norm = obj.\("norm").as[String]
     
-    this.ec = obj.\("ec").as[String]
+    this.ec = res("ec")
+    //this.ec = obj.\("ec").as[String]
   }
-  ////println(prime)
-  // Comment this to save content as well
-  //model.htmlContent = ""
-  //model.textContent = ""
  
   
 }
 case class AEmailExt(var fileName: String,var model: AEmailModel,var department: String ="Unassigned",product: Array[String] = Array[String](), var emotions: String,var prime: String="Unknown",var norm: String="",var ec: String="") {
   //println("Emotions " + emotions)
   if (emotions != "none"){ 
-    val obj = Json.parse(emotions)
-    this.prime = obj.\("prime").as[String]
+    //val res = emotions.parseJson
+    val obj = emotions.parseJson //Json.parse(emotions)
+    val res = obj.convertTo[Map[String, String]]
+    
+    this.prime = res("prime")
+    //this.prime = obj.\("prime").as[String]
     this.prime = this.prime.replaceAll("\"", "")
     
-    var n = obj.\("norm")
-    //println(n)
+    var n = res("norm")
+    //var n = obj.\("norm")
     
     
-    this.norm = obj.\("norm").as[String]
+    this.norm = res("norm")
+    //this.norm = obj.\("norm").as[String]
     
-    this.ec = obj.\("ec").as[String]
+    this.ec = res("ec")
+    //this.ec = obj.\("ec").as[String]
   }
-  ////println(prime)
-  // Comment this to save content as well
-  //model.htmlContent = ""
-  //model.textContent = ""
- 
-  
 }
 
+
+/*
 object Gender {
   implicit val genderWrites = Json.writes[Gender]
 }
@@ -434,3 +439,4 @@ object AEmailModel {
 object AEmailExt {
   implicit val simpleEmailExtWrites = Json.writes[AEmailExt]
 }
+* */

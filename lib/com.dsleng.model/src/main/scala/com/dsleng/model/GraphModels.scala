@@ -1,5 +1,6 @@
 package com.analog42.model
 
+/*
 import play.api.libs.json.{ JsNull, Json, JsString, JsValue, Writes,JsArray }
 import scala.collection.mutable.ListBuffer
 import scala.collection.mutable.ArrayBuffer
@@ -120,3 +121,4 @@ object ChartMinMax {
     return Json.stringify(Json.toJson(c))
   }
 }
+*/

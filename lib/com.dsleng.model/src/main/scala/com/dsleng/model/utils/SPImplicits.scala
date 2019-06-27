@@ -1,11 +1,10 @@
 package com.dsleng.model.utils
 
 import java.sql.Timestamp
-import play.api.libs.json.{ JsNull, Json, JsString, JsValue, Writes }
-import java.sql.Timestamp
 import java.text.SimpleDateFormat
-import play.api.libs.json._
+import spray.json._
 
+/*
 object SPImplicits {
   implicit object timestampFormat extends Format[Timestamp] {
     //val format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SS'Z'")
@@ -19,3 +18,4 @@ object SPImplicits {
     def writes(ts: Timestamp) = JsString(output.format(ts))
   }
 }
+*/

@@ -1,8 +1,7 @@
-package com.dsleng.actor
-
+package com.dsleng.emo.helper
 
 import com.dsleng.email.{SimpleEmailModel,SimpleEmailExt}
-import play.api.libs.json._
+//import play.api.libs.json._
 
 case class EmoEmailCtl(model: SimpleEmailExt,emotion: String)
 case class EmailCtl(model: SimpleEmailExt)
@@ -10,6 +9,7 @@ case class TextCtl(text: String)
 case class TokenCtl(model: SimpleEmailExt,tokens: TokenStrCtl)
 case class TokenStrCtl(tokens: List[String])
 
+/*
 object EmailCtl {
   implicit val emailWrites = Json.writes[EmailCtl]
   
@@ -27,3 +27,4 @@ object TokenStrCtl {
 object TokenCtl {
   implicit val tokenWrites = Json.writes[TokenCtl]
 }
+*/

@@ -10,7 +10,7 @@ import scala.concurrent.duration.{Duration,TimeUnit}
 import com.dsleng.akka.pattern.ReaperWatched
 import com.dsleng.akka.pattern.Reaper
 
-import com.dsleng.actor.EmailCtl
+
 import com.dsleng.actor.Reader
 import com.dsleng.actor.Reader.FileCtl
 import com.dsleng.actor.Simple
@@ -97,9 +97,7 @@ class EmailReader(emotion: ActorRef) extends Actor with ActorLogging with Reaper
 }
 
 */
-class Main {
-  
-}
+
 
 object Main extends App {
   println("Starting UploadEngine...")
@@ -111,11 +109,11 @@ object Main extends App {
   
   val reaperActor = system.actorOf(Props(new Reaper()), name=Reaper.name)
   
-  //val reader: ActorRef = system.actorOf(Reader.props, "Reader")
-  val simple: ActorRef = system.actorOf(Simple.props, "Simple")
+  val reader: ActorRef = system.actorOf(Reader.props, "Reader")
+  //val simple: ActorRef = system.actorOf(Simple.props, "Simple")
   
-  //reader ! "process"
-  simple ! "process"
+  reader ! "process"
+  //simple ! "process"
  
   
   Await.ready(system.whenTerminated, Duration.Inf)

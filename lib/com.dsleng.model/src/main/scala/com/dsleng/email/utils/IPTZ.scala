@@ -1,12 +1,15 @@
 package com.dsleng.email.utils
-import play.api.libs.json._
+
 import org.joda.time.DateTimeZone
 import org.joda.time.DateTime
 import org.joda.time.format.DateTimeFormat
-import play.api.libs.json.JsValue.jsValueToJsLookup
+
 import com.dsleng.email.Location
 import com.dsleng.email.GeoInfo
 import com.dsleng.email.DummySenderInfoExt
+
+import spray.json._
+import spray.json.DefaultJsonProtocol._
 
 class IPTZ {
   val startHour = 8
@@ -53,46 +56,49 @@ class IPTZ {
   }
   def getInfo(ip: String): String={
      val res= get("http://localhost:4000/json/" + ip)
-     val parsed = Json.parse(res)
+     val parsed = res.parseJson
      return parsed.toString()
   }
   def getLocation(ip: String): Location={
     val res= get("http://localhost:4000/json/" + ip)
-    val parsed = Json.parse(res)
-    val lat = (parsed \ "latitude").as[JsNumber].value
-    val lon = (parsed \ "longitude").as[JsNumber].value
+    val obj = res.parseJson
+    val parsed = obj.convertTo[Map[String, String]]
+    val lat = parsed("latitude")
+    val lon = parsed("longitude")
     log("lat " + lat)
     return new Location(lat.toString(),lon.toString())
   }
   def getGeoInfo(ip: String): GeoInfo ={
-      val res= get("http://localhost:4000/json/" + ip)
-      val parsed = Json.parse(res)
-      (parsed \ "ip").as[JsString]
+      val sendergeoip= get("http://localhost:4000/json/" + ip)
+      val res = sendergeoip.parseJson//Json.parse(sendergeoip)
+      val parsed = res.convertTo[Map[String, String]]
       val geoinfo = new GeoInfo(
-          (parsed \ "ip").as[JsString].toString(),
-          (parsed \ "country_code").as[JsString].toString(),
-          (parsed \ "country_name").as[JsString].toString(),
-          (parsed \ "region_code").as[JsString].toString(),
-          (parsed \ "region_name").as[JsString].toString(),
-          (parsed \ "city").as[JsString].toString(),
-          (parsed \ "zip_code").as[JsString].toString(),
-          (parsed \ "time_zone").as[JsString].toString(),
-          (parsed \ "latitude").as[JsNumber].toString(),
-          (parsed \ "longitude").as[JsNumber].toString(),
-          (parsed \ "metro_code").as[JsNumber].toString())
+          parsed("ip"),
+          parsed("country_code"),
+          parsed("country_name"),
+          parsed("region_code"),
+          parsed("region_name"),
+          parsed("city"),
+          parsed("zip_code"),
+          parsed("time_zone"),
+          parsed("latitude"),
+          parsed("longitude"),
+          parsed("metro_code"))
       return geoinfo
   }
   def getTimeZone(ip: String): String={
     val res= get("http://localhost:4000/json/" + ip)
-    val parsed = Json.parse(res)
-    val tz = (parsed \ "time_zone").as[JsString].value
+    val obj = res.parseJson
+    val parsed = obj.convertTo[Map[String, String]]
+    val tz = parsed("time_zone")
     if ( tz == "" ){ return null }
     else { return tz }
   }
   def getTimeZone(ip: String,datetime: String): DateTime={
     val res= get("http://localhost:4000/json/" + ip)
-    val parsed = Json.parse(res)
-    val tz = (parsed \ "time_zone").as[JsString].value
+    val obj = res.parseJson
+    val parsed = obj.convertTo[Map[String, String]]
+    val tz = parsed("time_zone")
     if ( tz == "" ){ return null }
     log("Time Zone: " + tz + " for ip " + ip)
     log("DateTime " + datetime)

@@ -9,9 +9,11 @@ import java.net.InetAddress
 import com.dsleng.email.DummySenderInfo
 import com.dsleng.email.RecipientInfo
 import com.dsleng.email.DummySenderInfoExt
-import play.api.libs.json._
-import play.api.libs.json.JsValue.jsValueToJsLookup
+
 import com.dsleng.email.GeoInfo
+
+import spray.json._
+import spray.json.DefaultJsonProtocol._
 
 class MetaInfo(baseDir: String) {
   var deptMap = ArrayBuffer[RecipientInfo]()
@@ -91,20 +93,20 @@ class MetaInfo(baseDir: String) {
       inbound += r
       
       val sendergeoip = IPCheck.getInfo(r.IP)
-      val parsed = Json.parse(sendergeoip)
-      (parsed \ "ip").as[JsString]
+      val res = sendergeoip.parseJson//Json.parse(sendergeoip)
+      val parsed = res.convertTo[Map[String, String]]
       val geoinfo = new GeoInfo(
-          (parsed \ "ip").as[JsString].toString(),
-          (parsed \ "country_code").as[JsString].toString(),
-          (parsed \ "country_name").as[JsString].toString(),
-          (parsed \ "region_code").as[JsString].toString(),
-          (parsed \ "region_name").as[JsString].toString(),
-          (parsed \ "city").as[JsString].toString(),
-          (parsed \ "zip_code").as[JsString].toString(),
-          (parsed \ "time_zone").as[JsString].toString(),
-          (parsed \ "latitude").as[JsNumber].toString(),
-          (parsed \ "longitude").as[JsNumber].toString(),
-          (parsed \ "metro_code").as[JsNumber].toString())
+          parsed("ip"),
+          parsed("country_code"),
+          parsed("country_name"),
+          parsed("region_code"),
+          parsed("region_name"),
+          parsed("city"),
+          parsed("zip_code"),
+          parsed("time_zone"),
+          parsed("latitude"),
+          parsed("longitude"),
+          parsed("metro_code"))
       val tz = IPCheck.getTimeZone(r.IP)
       val parts = r.Email.split("@")
       println(parts(1))
@@ -149,19 +151,19 @@ object MetaInfo {
   def main(args: Array[String]) {
       val IPCheck = new IPTZ()
       val sendergeoip = IPCheck.getInfo("1.2.3.4")
-      val parsed = Json.parse(sendergeoip)
-      (parsed \ "ip").as[JsString]
+      val res = sendergeoip.parseJson//Json.parse(sendergeoip)
+      val parsed = res.convertTo[Map[String, String]]
       val geoinfo = new GeoInfo(
-          (parsed \ "ip").as[JsString].toString(),
-          (parsed \ "country_code").as[JsString].toString(),
-          (parsed \ "country_name").as[JsString].toString(),
-          (parsed \ "region_code").as[JsString].toString(),
-          (parsed \ "region_name").as[JsString].toString(),
-          (parsed \ "city").as[JsString].toString(),
-          (parsed \ "zip_code").as[JsString].toString(),
-          (parsed \ "time_zone").as[JsString].toString(),
-          (parsed \ "latitude").as[JsNumber].toString(),
-          (parsed \ "longitude").as[JsNumber].toString(),
-          (parsed \ "metro_code").as[JsNumber].toString())
+          parsed("ip"),
+          parsed("country_code"),
+          parsed("country_name"),
+          parsed("region_code"),
+          parsed("region_name"),
+          parsed("city"),
+          parsed("zip_code"),
+          parsed("time_zone"),
+          parsed("latitude"),
+          parsed("longitude"),
+          parsed("metro_code"))
   }
 }

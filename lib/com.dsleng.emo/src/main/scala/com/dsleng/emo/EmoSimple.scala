@@ -10,7 +10,7 @@ import org.apache.spark.sql.SPFunctions.addOneCustomNative
 import org.apache.spark.sql.SPFunctions.checkforFeature
 import org.apache.spark.sql.SPFunctions.checkforFeature2
 
-import com.dsleng.tut.QuasiTest
+//import com.dsleng.tut.QuasiTest
 import org.apache.spark.sql.catalyst.expressions.SPArrayContains
 import org.apache.spark.sql.catalyst.expressions.SPArrayContains2
 import org.apache.spark.sql.catalyst.expressions.Literal

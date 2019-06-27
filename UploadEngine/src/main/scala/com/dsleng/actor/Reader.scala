@@ -9,6 +9,8 @@ import com.dsleng.email.{SimpleEmailModel,SimpleEmailExt}
 import scala.collection.mutable.ArrayBuffer
 import akka.stream.scaladsl._
 
+import util.control.Breaks._
+import com.dsleng.emo.helper.{EmailCtl}
 object Reader {
   def props: Props = Props[Reader]
   final case class FileCtl(file: String)
@@ -57,6 +59,7 @@ class Reader extends Actor with ActorLogging with ReaperWatched {
           fileCnt = fileCnt + 1
           println("FileCounter " + fileCnt + " : " + cnt + "=====================================================")
           email ! new EmailCtl(smodel)
+          //break
         }
       })
   }

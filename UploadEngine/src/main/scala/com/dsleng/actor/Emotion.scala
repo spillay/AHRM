@@ -1,6 +1,8 @@
 package com.dsleng.actor
 
 import akka.actor.{ Actor, ActorLogging, ActorRef, ActorSystem, Props,PoisonPill }
+import akka.stream.{ ActorMaterializer, ActorMaterializerSettings }
+import akka.util.ByteString
 import akka.http.scaladsl.unmarshalling.Unmarshal
 import com.dsleng.akka.pattern.ReaperWatched
 import com.dsleng.akka.pattern.Reaper
@@ -21,7 +23,7 @@ import akka.stream.scaladsl._
 
 import scala.concurrent.Future
 import scala.util.Try
-//import com.dsleng.emo.EmoSimple 
+import com.dsleng.emo.helper._
 
 object Emotion {
   def props: Props = Props[Emotion]
@@ -29,19 +31,40 @@ object Emotion {
 
 class Emotion extends Actor with ActorLogging with ReaperWatched {
   import Emotion._
-  //val emo = new EmoSimple()
+  import akka.pattern.pipe
+  import context.dispatcher
+
+  final implicit val materializer: ActorMaterializer = ActorMaterializer(ActorMaterializerSettings(context.system))
+
+  val http = Http(context.system)
+
   
   def receive = {
     case TokenCtl(model,tokens) =>
+      println("in emotion tokenctl")
       log.info("Processing tokens received (from " + sender() + "): " + tokens)  
       val origSender = sender
       val js = Json.toJson(tokens)
       
-      
-      //val res = emo.execute(tokens.tokens)
-      val res = "not yet"
-      val email = context.actorSelection("akka://UploadEngine/user/Reader/Email")
-      email ! new EmoEmailCtl(model,res)  
+      val requestEntity = HttpEntity(MediaTypes.`application/json`, js.toString())
+      val req = HttpRequest(
+              method = HttpMethods.POST,
+              //uri = "/emo",
+              uri = "http://localhost:9011/emo",
+              entity = requestEntity
+      )
+      println("before firing")
+      http.singleRequest(req).pipeTo(self)
+//      val res = "not yet"
+//      val email = context.actorSelection("akka://UploadEngine/user/Reader/Email")
+//      email ! new EmoEmailCtl(model,res)  
+     case HttpResponse(StatusCodes.OK, headers, entity, _) =>
+      entity.dataBytes.runFold(ByteString(""))(_ ++ _).foreach { body =>
+        println("Got response, body: " + body.utf8String)
+      }
+    case resp @ HttpResponse(code, _, _, _) =>
+      println("Request failed, response code: " + code)
+      resp.discardEntityBytes()
       
   }
   override def postStop(): Unit = {println("Stopping Emotion")}
