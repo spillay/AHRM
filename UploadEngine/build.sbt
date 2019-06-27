@@ -15,7 +15,9 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-stream" % akkaVersion,
   "com.typesafe.akka" %% "akka-http" % "10.1.8",
   "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
-  "org.scalatest" %% "scalatest" % "3.0.5" % "test"
+  "org.scalatest" %% "scalatest" % "3.0.5" % "test",
+  "org.apache.spark" %% "spark-core" % "2.4.3",
+  "org.apache.spark" %% "spark-sql" % "2.4.3"
 )
 libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.2.3"
 libraryDependencies += "tech.blueglacier" % "email-mime-parser" % "1.0.5"
@@ -29,6 +31,9 @@ libraryDependencies += "com.fasterxml.jackson.core" % "jackson-databind" % "2.9.
 
 libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.9.2"
 libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.9.2" classifier "models"
+
+libraryDependencies += "com.google.guava" % "guava" % "28.0-jre"
+
 
 //conflictWarning := ConflictWarning.disable
 

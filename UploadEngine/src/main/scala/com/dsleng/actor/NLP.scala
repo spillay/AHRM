@@ -24,11 +24,11 @@ object NLP {
 }
 
 class NLP extends Actor with ActorLogging with ReaperWatched {
-  import Emotion._
+  import NLP._
   
-  implicit val materializer = ActorMaterializer()
-  implicit val executionContext = context.system.dispatcher
-  implicit val system = context.system
+  //implicit val materializer = ActorMaterializer()
+  //implicit val executionContext = context.system.dispatcher
+  //implicit val system = context.system
   val simplePL = new SimplePL(SimplePL.nltk_sw,true)
   
   def receive = {

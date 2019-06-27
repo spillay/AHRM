@@ -54,12 +54,12 @@ class HomeController @Inject()(cc: ControllerComponents,ec: EmoComponent,ws: WSC
      }
      futureString.map(s => Ok(s))
   }
-  def getEntropy = Action.async { implicit request: Request[AnyContent] =>
-    val futureString: Future[String] = scala.concurrent.Future {
-       val emodel = request.body.asJson.get
-       val emotions = (emodel \ "emotions" ).get
-       ec.Entropy(emotions)
-    }
-    futureString.map(s => Ok("Got result: " + s))
-  }
+//  def getEntropy = Action.async { implicit request: Request[AnyContent] =>
+//    val futureString: Future[String] = scala.concurrent.Future {
+//       val emodel = request.body.asJson.get
+//       val emotions = (emodel \ "emotions" ).get
+//       ec.Entropy(emotions)
+//    }
+//    futureString.map(s => Ok("Got result: " + s))
+//  }
 }

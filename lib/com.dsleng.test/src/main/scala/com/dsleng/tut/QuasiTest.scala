@@ -13,7 +13,7 @@ import scala.language.experimental.macros
 import scala.reflect.macros.blackbox.Context
 import scala.util.matching._
 import java.util.Date
-import org.apache.spark.sql.catalyst.expressions.SPArrayContains
+// import org.apache.spark.sql.catalyst.expressions.SPArrayContains
 
 object QuasiTest {
   def addCreationDate(): java.util.Date = macro addCreationDateMacro

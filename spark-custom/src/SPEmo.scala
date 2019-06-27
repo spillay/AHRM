@@ -46,15 +46,15 @@ import org.apache.spark.util.collection.OpenHashSet
       > SELECT _FUNC_(array("hello","bye","sur*"), "surest");
        true
   """)
-case class SPArrayContains(left: Expression, right: Expression,add: Expression)
+case class SPArrayContains(left: Expression, right: Expression, add: Expression)
   extends TernaryExpression with ImplicitCastInputTypes {
 
   override def children: Seq[Expression] = left :: right :: add :: Nil
-  //override def dataType: DataType = BooleanType
+  // override def dataType: DataType = BooleanType
   override def dataType: DataType = ArrayType(StringType, true)
 
-  //@transient private lazy val ordering: Ordering[Any] =
-    //TypeUtils.getInterpretedOrdering(right.dataType)
+  // @transient private lazy val ordering: Ordering[Any] =
+    // TypeUtils.getInterpretedOrdering(right.dataType)
 
   override def inputTypes: Seq[AbstractDataType] = Seq(ArrayType, StringType, ArrayType)
 //  override def inputTypes: Seq[AbstractDataType] = {
@@ -70,10 +70,10 @@ case class SPArrayContains(left: Expression, right: Expression,add: Expression)
 //  }
 
   override def checkInputDataTypes(): TypeCheckResult = {
-    (left.dataType, right.dataType,add.dataType) match {
-      case (_, NullType,_) =>
+    (left.dataType, right.dataType, add.dataType) match {
+      case (_, NullType, _) =>
         TypeCheckResult.TypeCheckFailure("Null typed values cannot be used as arguments")
-      case (ArrayType(e1, _), e2,_) if e1.sameType(e2) =>
+      case (ArrayType(e1, _), e2, _) if e1.sameType(e2) =>
         TypeUtils.checkForOrderingExpr(e2, s"function $prettyName")
       case _ => TypeCheckResult.TypeCheckFailure(s"Input to function $prettyName should have " +
         s"been ${ArrayType.simpleString} followed by a value with same element type, but it's " +
@@ -85,17 +85,14 @@ case class SPArrayContains(left: Expression, right: Expression,add: Expression)
     left.nullable || right.nullable || left.dataType.asInstanceOf[ArrayType].containsNull
   }
 
-  override def nullSafeEval(arr: Any, value: Any,add: Any): Any = {
+  override def nullSafeEval(arr: Any, value: Any, add: Any): Any = {
     var hasNull = false
     arr.asInstanceOf[ArrayData].foreach(right.dataType, (i, v) =>
       if (v == null) {
         hasNull = true
-      } 
-      //else if (ordering.equiv(v, value)) {
-       // return true
-      //}
+      }
     )
-    if (!add.isInstanceOf[ArrayData]){
+    if (!add.isInstanceOf[ArrayData]) {
       hasNull = true
     }
     if (hasNull) {
@@ -104,45 +101,46 @@ case class SPArrayContains(left: Expression, right: Expression,add: Expression)
       false
     }
   }
-  def genApply(ctx: CodegenContext, ev: ExprCode,vVal: String,add: String): String = {
+  def genApply(ctx: CodegenContext, ev: ExprCode, vVal: String, add: String): String = {
     val arrlen = ctx.freshName("arrlen")
     val newArray = ctx.freshName("newArray")
     return s"""
-      |    int ${arrlen} = ${add}.numElements(); 
-      |    UTF8String[] $newArray = new UTF8String[${arrlen}+1];  
+      |    int ${arrlen} = ${add}.numElements();
+      |    UTF8String[] $newArray = new UTF8String[${arrlen}+1];
       |    for(int cnt=0;cnt<${arrlen};cnt++)
-      |    {  
-      |      $newArray[cnt] = (UTF8String) $add.get(cnt, org.apache.spark.sql.types.DataTypes.StringType); 
-      |    }  
+      |    {
+      |      $newArray[cnt] = (UTF8String) $add
+      |      .get(cnt, org.apache.spark.sql.types.DataTypes.StringType);
+      |    }
       |    $newArray[${arrlen}] = ${vVal};
       |    ${ev.value} = ArrayData.toArrayData(${newArray});
       """
  }
 
- def genContains(ctx: CodegenContext, ev: ExprCode,aVal: String,vVal: String,
-      av: String,vv: String,add: String,avlen: String,vvlen: String): String = {
+ def genContains(ctx: CodegenContext, ev: ExprCode, aVal: String, vVal: String,
+      av: String, vv: String, add: String, avlen: String, vvlen: String): String = {
     return s"""
-     | if (${aVal}.contains(UTF8String.fromString("*"))){
-     |    int ${vvlen} = ${vVal}.toString().length();    
+     | if (${aVal}.contains(UTF8String.fromString("*"))) {
+     |    int ${vvlen} = ${vVal}.toString().length();
      |    UTF8String ${av} = ${aVal}.substring(0,${aVal}.indexOf(UTF8String.fromString("*"),0));
      |    int ${avlen} = ${av}.toString().length();
      |    UTF8String ${vv} = ${vVal};
-     |    if (${vvlen} > ${avlen}){ 
+     |    if (${vvlen} > ${avlen}) {
      |       ${vv} = ${vVal}.substring(0,${avlen});
-     |    } 
+     |    }
      |    ${vv} = ${vv}.trim();
      |    ${av} = ${av}.trim();
-     |    ${this.genEquals(ctx, ev, av, vv,add)}
+     |    ${this.genEquals(ctx, ev, av, vv, add)}
      | } else {
-     |   ${this.genEquals(ctx, ev, aVal, vVal,add)}
+     |   ${this.genEquals(ctx, ev, aVal, vVal, add)}
      | }
       """
   }
-   def genEquals(ctx: CodegenContext, ev: ExprCode,aVal: String,
-      vVal: String,add: String): String = {
-    return s"""           
+   def genEquals(ctx: CodegenContext, ev: ExprCode, aVal: String,
+      vVal: String, add: String): String = {
+    return s"""
            |  if (${ctx.genEqual(right.dataType, aVal, vVal)}) {
-           |     ${ev.isNull} = false; 
+           |     ${ev.isNull} = false;
            |     ${this.genApply(ctx, ev, vVal, add)}
            |     break;
            |  } else {
@@ -152,7 +150,7 @@ case class SPArrayContains(left: Expression, right: Expression,add: Expression)
       """
   }
   override def doGenCode(ctx: CodegenContext, ev: ExprCode): ExprCode = {
-    nullSafeCodeGen(ctx, ev, (arr, value,add) => {
+    nullSafeCodeGen(ctx, ev, (arr, value, add) => {
       val av = ctx.freshName("av")
       val vv = ctx.freshName("vv")
       val i = ctx.freshName("i")
@@ -164,13 +162,13 @@ case class SPArrayContains(left: Expression, right: Expression,add: Expression)
            | // start 1
            |if ($arr.isNullAt($i)) {
            |  ${ev.isNull} = true;
-           |} else { 
-           |  ${this.genContains(ctx, ev, getValue, value, av, vv,add,avlen,vvlen)}
+           |} else {
+           |  ${this.genContains(ctx, ev, getValue, value, av, vv, add, avlen, vvlen)}
            |}
          """.stripMargin
       } else {
         s"""
-           |${this.genContains(ctx, ev, getValue, value, av, vv,add,avlen,vvlen)}
+           |${this.genContains(ctx, ev, getValue, value, av, vv, add, avlen, vvlen)}
          """.stripMargin
       }
       s"""
@@ -180,7 +178,7 @@ case class SPArrayContains(left: Expression, right: Expression,add: Expression)
        """.stripMargin
     })
   }
-  
+
 
 
   override def prettyName: String = "sparray_contains"
@@ -203,7 +201,6 @@ case class SPArrayContains2(left: Expression, right: Expression)
   @transient private lazy val ordering: Ordering[Any] =
     TypeUtils.getInterpretedOrdering(right.dataType)
 
-  
   override def inputTypes: Seq[AbstractDataType] = {
     (left.dataType, right.dataType) match {
       case (_, NullType) => Seq.empty
@@ -259,10 +256,14 @@ case class SPArrayContains2(left: Expression, right: Expression)
            | // start 1
            |if ($arr.isNullAt($i)) {
            |   ${ev.isNull} = true;
-           |} else { 
-           |  if (${getValue}.contains(UTF8String.fromString("*"))){
-           |    UTF8String ${av} = ${getValue}.substring(0,${getValue}.indexOf(UTF8String.fromString("*"),0));
-           |    UTF8String ${vv} = ${value}.substring(0,${getValue}.indexOf(UTF8String.fromString("*"),0));
+           |} else {
+           |  if (${getValue}.contains(UTF8String.fromString("*"))) {
+           |    UTF8String ${av} = ${getValue}
+           |    .substring(0,${getValue}
+           |    .indexOf(UTF8String.fromString("*"),0));
+           |    UTF8String ${vv} = ${value}
+           |    .substring(0,${getValue}
+           |    .indexOf(UTF8String.fromString("*"),0));
            |    if (${ctx.genEqual(right.dataType, av, vv)}) {
            |      ${ev.isNull} = false;
            |      ${ev.value} = true;
@@ -278,18 +279,13 @@ case class SPArrayContains2(left: Expression, right: Expression)
          """.stripMargin
       } else {
         s"""
-           |// start 2 ------------------------------------------------------------------------------------------
-           |// UTF8String ${av} = ${getValue};
-           |//if (${av}.contains("*")){
-           |//}
-           |if (${ctx.genEqual(right.dataType, value, getValue)}) { // ++++++++++++++++++++++++++++++++++++++
+           |if (${ctx.genEqual(right.dataType, value, getValue)}) {
            |  ${ev.value} = true;
            |  break;
            |}
          """.stripMargin
       }
       s"""
-         |// start 4 ====================================================
          |for (int $i = 0; $i < $arr.numElements(); $i ++) {
          |  $loopBodyCode
          |}

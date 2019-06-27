@@ -64,12 +64,20 @@ task copySrcB(type: Copy) {
     from "src/SPEmo.scala"
     into "spark-${sparkVersion}/sql/catalyst/src/main/scala/org/apache/spark/sql/catalyst/expressions/"
 }
+task copySrcC(type: Copy) {
+    from "src/SPUDFSuite.scala"
+    into "spark-${sparkVersion}/sql/catalyst/src/test/scala/org/apache/spark/sql/catalyst/expressions/"
+}
 task bkSrcA(type: Copy) {
     from "spark-${sparkVersion}/sql/core/src/main/scala/org/apache/spark/sql/SPFunctions.scala"
     into "src/"
 }
 task bkSrcB(type: Copy) {
     from "spark-${sparkVersion}/sql/catalyst/src/main/scala/org/apache/spark/sql/catalyst/expressions/SPEmo.scala"
+    into "src/"
+}
+task bkSrcC(type: Copy) {
+    from "spark-${sparkVersion}/sql/catalyst/src/test/scala/org/apache/spark/sql/catalyst/expressions/SPUDFSuite.scala"
     into "src/"
 }
 
@@ -109,6 +117,7 @@ task eclipseSpark(type:Exec){
 
 copyAll.dependsOn copySrcA
 copyAll.dependsOn copySrcB
+copyAll.dependsOn copySrcC
 //publishSpark.dependsOn compileSpark
 publishSpark.dependsOn compileSQL
 compileSQL.dependsOn compileCat
@@ -123,5 +132,6 @@ processInit.dependsOn extractSpark
 // prep for dev
 processDev.dependsOn eclipseSpark
 // backup
-backup.dependsOn bkSrcB
+backup.dependsOn bkSrcC
 bkSrcB.dependsOn bkSrcA
+bkSrcC.dependsOn bkSrcB

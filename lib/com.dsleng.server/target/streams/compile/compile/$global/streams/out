@@ -1,0 +1,121 @@
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:4:8: not found: object akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.http.scaladsl.server.Directives._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:14:8: not found: object play[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.api.libs.json._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:5:8: not found: object akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.http.scaladsl.server.{HttpApp, Route}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:17:26: not found: type HttpApp[0m
+[0m[[0m[31merror[0m] [0m[0mobject WebServer extends HttpApp {[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/Main.scala:4:13: value startServer is not a member of object com.dsleng.server.WebServer[0m
+[0m[[0m[31merror[0m] [0m[0m  WebServer.startServer("localhost", 9011)[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:3:8: not found: object akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.http.scaladsl.model.{ContentTypes, HttpEntity}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:6:8: not found: object akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.http.scaladsl.model.{ResponseEntity,HttpResponse}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:7:8: not found: object akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.annotation.ApiMayChange[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:8:8: not found: object akka[0m
+[0m[[0m[31merror[0m] [0m[0mimport akka.http.scaladsl.model.StatusCodes[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:10:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.{SparkSession}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:11:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.SaveMode[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:12:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:13:19: object emo is not a member of package com.dsleng[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.dsleng.emo.helper.Emotions[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:16:2: not found: type ApiMayChange[0m
+[0m[[0m[31merror[0m] [0m[0m@ApiMayChange[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:20:19: not found: type SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m  lazy val spark: SparkSession = SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:20:34: not found: value SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m  lazy val spark: SparkSession = SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:33:17: not found: type Emotions[0m
+[0m[[0m[31merror[0m] [0m[0m  val emo = new Emotions(spark)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:34:24: not found: type Route[0m
+[0m[[0m[31merror[0m] [0m[0m  override def routes: Route =[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:35:5: not found: value path[0m
+[0m[[0m[31merror[0m] [0m[0m    path("hello") {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:36:9: not found: value get[0m
+[0m[[0m[31merror[0m] [0m[0m        get {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:37:11: not found: value complete[0m
+[0m[[0m[31merror[0m] [0m[0m          complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, "<h1>Say hello to akka-http</h1>"))[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:37:20: not found: value HttpEntity[0m
+[0m[[0m[31merror[0m] [0m[0m          complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, "<h1>Say hello to akka-http</h1>"))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:37:31: not found: value ContentTypes[0m
+[0m[[0m[31merror[0m] [0m[0m          complete(HttpEntity(ContentTypes.`text/html(UTF-8)`, "<h1>Say hello to akka-http</h1>"))[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:40:5: not found: value path[0m
+[0m[[0m[31merror[0m] [0m[0m    path("test") {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:41:7: not found: value parameter[0m
+[0m[[0m[31merror[0m] [0m[0m      parameter('id.as[Int]) { id =>[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:41:21: value as is not a member of Symbol[0m
+[0m[[0m[31merror[0m] [0m[0m      parameter('id.as[Int]) { id =>[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:42:9: not found: value post[0m
+[0m[[0m[31merror[0m] [0m[0m        post { [0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:43:11: not found: value complete[0m
+[0m[[0m[31merror[0m] [0m[0m          complete {[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:49:5: not found: value path[0m
+[0m[[0m[31merror[0m] [0m[0m    path("emo") { [0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:50:7: not found: value post[0m
+[0m[[0m[31merror[0m] [0m[0m      post {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:51:9: not found: value entity[0m
+[0m[[0m[31merror[0m] [0m[0m        entity(as[String]){ param =>{[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:51:16: not found: value as[0m
+[0m[[0m[31merror[0m] [0m[0m        entity(as[String]){ param =>{[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:53:20: not found: value Json[0m
+[0m[[0m[31merror[0m] [0m[0m          val js = Json.parse(param)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:58:21: not found: type ResponseEntity[0m
+[0m[[0m[31merror[0m] [0m[0m          val resp: ResponseEntity = HttpEntity(ContentTypes.`application/json`,res)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:58:38: not found: value HttpEntity[0m
+[0m[[0m[31merror[0m] [0m[0m          val resp: ResponseEntity = HttpEntity(ContentTypes.`application/json`,res)[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:58:49: not found: value ContentTypes[0m
+[0m[[0m[31merror[0m] [0m[0m          val resp: ResponseEntity = HttpEntity(ContentTypes.`application/json`,res)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:59:11: not found: value complete[0m
+[0m[[0m[31merror[0m] [0m[0m          complete(HttpResponse(StatusCodes.OK, entity = resp))[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:59:20: not found: value HttpResponse[0m
+[0m[[0m[31merror[0m] [0m[0m          complete(HttpResponse(StatusCodes.OK, entity = resp))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:59:33: not found: value StatusCodes[0m
+[0m[[0m[31merror[0m] [0m[0m          complete(HttpResponse(StatusCodes.OK, entity = resp))[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.server/src/main/scala/com/dsleng/server/WebServer.scala:59:49: not found: value entity[0m
+[0m[[0m[31merror[0m] [0m[0m          complete(HttpResponse(StatusCodes.OK, entity = resp))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m40 errors found[0m

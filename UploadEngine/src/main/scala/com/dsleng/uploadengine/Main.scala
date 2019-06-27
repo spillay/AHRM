@@ -13,6 +13,7 @@ import com.dsleng.akka.pattern.Reaper
 import com.dsleng.actor.EmailCtl
 import com.dsleng.actor.Reader
 import com.dsleng.actor.Reader.FileCtl
+import com.dsleng.actor.Simple
 
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.model._
@@ -106,15 +107,22 @@ object Main extends App {
   system.registerOnTermination {
     println("ActorSystem terminated")
   }
-  
+  System.setProperty("hadoop.home.dir", "/");
   
   val reaperActor = system.actorOf(Props(new Reaper()), name=Reaper.name)
   
-  val reader: ActorRef = system.actorOf(Reader.props, "Reader")
+  //val reader: ActorRef = system.actorOf(Reader.props, "Reader")
+  val simple: ActorRef = system.actorOf(Simple.props, "Simple")
   
-  //reader ! new FileCtl("/Data/enron/maildir/kean-s/inbox/62.")
-  reader ! "process"
-  //reader ! PoisonPill
+  //reader ! "process"
+  simple ! "process"
+ 
+  
+  Await.ready(system.whenTerminated, Duration.Inf)
+  //system.c
+}
+//reader ! new FileCtl("/Data/enron/maildir/kean-s/inbox/62.")
+ //reader ! PoisonPill
 //  val emotion: ActorRef = system.actorOf(Emotion.props, "emotion")
 //  val reader: ActorRef = system.actorOf(EmailReader.props(emotion), "emailReader")
 //  println(emotion.path)
@@ -122,7 +130,3 @@ object Main extends App {
 //  // If invoked from an instance that is not an Actor the sender will be deadLetters actor reference by default.
 //  reader ! "process"
   
-  
-  Await.ready(system.whenTerminated, Duration.Inf)
-  //system.c
-}

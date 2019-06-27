@@ -1,6 +1,6 @@
 def scalaVersion = '2.12.8'
 // Global Configuration for Scala Projects
-configure([ project(':com.dsleng.store'),project(':com.dsleng.model'),project('com.dsleng.twitter'),project('com.dsleng.test'),project('com.dsleng.emo')]) {
+configure([ project(':com.dsleng.store'),project(':com.dsleng.model'),project('com.dsleng.twitter'),project('com.dsleng.test'),project('com.dsleng.emo'),project('com.dsleng.server')]) {
 
 	apply plugin: 'scala'
 	apply plugin: 'eclipse'
