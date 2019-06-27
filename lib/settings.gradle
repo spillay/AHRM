@@ -1,2 +1,2 @@
 rootProject.name = 'DSLEngine'
-include 'com.dsleng.nlp','com.dsleng.store','com.dsleng.model','com.dsleng.twitter','com.dsleng.test','com.dsleng.emo','com.dsleng.testj','com.dsleng.server'
+include 'com.dsleng.nlp','com.dsleng.model','com.dsleng.twitter','com.dsleng.test','com.dsleng.emo','com.dsleng.testj','com.dsleng.server'

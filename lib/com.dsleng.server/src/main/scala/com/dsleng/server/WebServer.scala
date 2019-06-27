@@ -10,8 +10,9 @@ import akka.http.scaladsl.model.StatusCodes
 import org.apache.spark.sql.{SparkSession}
 import org.apache.spark.sql.SaveMode
 import org.apache.spark.sql.DataFrame
-//import com.dsleng.emo.helper.Emotions
-//import play.api.libs.json._
+import com.dsleng.emo.helper.Emotions
+import spray.json._
+import spray.json.DefaultJsonProtocol._
 
 @ApiMayChange
 object WebServer extends HttpApp {
@@ -30,7 +31,7 @@ object WebServer extends HttpApp {
       .getOrCreate()
       
   spark.sparkContext.setLogLevel("ERROR")
-  //val emo = new Emotions(spark)
+  val emo = new Emotions(spark)
   override def routes: Route =
     path("hello") {
         get {
@@ -50,11 +51,14 @@ object WebServer extends HttpApp {
       post {
         entity(as[String]){ param =>{
           println(param)
-//          val js = Json.parse(param)
-//          val tokens = (js \ "tokens" ).get
-//          val stoks = tokens.as[List[String]]
-          val stoks = List("terrible","funny","story","peacefully","foolproof","amaze","forgive")
-          val res = "testing"//emo.execute(stoks)
+          val obj = param.parseJson
+          println(obj)
+          val js = obj.convertTo[Map[String, String]]
+          println(js("tokens").toJson)
+          val tokens = js("tokens").toJson.convertTo[List[String]]
+          //val stoks = tokens.as[List[String]]
+          //val stoks = List("terrible","funny","story","peacefully","foolproof","amaze","forgive")
+          val res = emo.execute(tokens)
           val resp: ResponseEntity = HttpEntity(ContentTypes.`application/json`,res)
           complete(HttpResponse(StatusCodes.OK, entity = resp))
         }

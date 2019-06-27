@@ -12,31 +12,51 @@ import org.apache.spark.sql.expressions._
 import org.apache.spark.sql.DataFrame
 import scala.collection.mutable.WrappedArray
 import scala.collection.mutable.MutableList
-import play.api.libs.json._
-import play.api.libs.functional.syntax._
 import scala.collection.IndexedSeq
 import scala.util.control.Breaks._
+import spray.json._
+import spray.json.DefaultJsonProtocol._
 
 case class Emo(emotion: String, words: Seq[String])
 case class EmoData(emotion: String, cnt: Integer, words: Seq[String])
 object EmoData {
-  implicit val implicitEDWrites = new Writes[EmoData] {
-    def writes(o: EmoData): JsValue = {
-      Json.obj(
-        "emotion" -> o.emotion,
-        "count" -> o.cnt.toInt,
-        "words" -> o.words)
+  implicit val emJsonFormat = new RootJsonFormat[EmoData] {
+    def write(o: EmoData): JsValue = {
+      JsObject(
+        "emotion" -> o.emotion.toJson,
+        "count" -> JsNumber(o.cnt),
+        "words" -> o.words.toJson
+       )
+    }
+    def read(value: JsValue) = {
+      value.asJsObject.getFields("emotions","cnt","words") match {
+        case Seq(JsString(emotion),JsNumber(cnt),JsArray(words)) => 
+          new EmoData(
+              emotion,
+              cnt.toInt,
+              words.map(_.convertTo[String]))
+        case _ => throw new DeserializationException("EmoRes expected")
+      }
     }
   }
 }
 case class EmoRes(emotions: Seq[EmoData],prime: Seq[EmoData])
 object EmoRes {
-  implicit val implicitResWrites = new Writes[EmoRes] {
-    def writes(o: EmoRes): JsValue = {
-      Json.obj(
-        "emotions" -> o.emotions,
-        "prime" -> o.prime
+  implicit val implicitResWrites = new RootJsonFormat[EmoRes] {
+    def write(o: EmoRes): JsValue = {
+      JsObject(
+        "emotions" -> JsArray(o.emotions.map(_.toJson).toVector),
+        "prime" -> JsArray(o.prime.map(_.toJson).toVector)
        )
+    }
+    def read(value: JsValue) = {
+      value.asJsObject.getFields("emotions","prime") match {
+        case Seq(JsArray(emotion),JsArray(prime)) => 
+          new EmoRes(
+              emotion.map(_.convertTo[EmoData]),
+              prime.map(_.convertTo[EmoData]))
+        case _ => throw new DeserializationException("EmoRes expected")
+      }
     }
   }
 }
@@ -213,7 +233,7 @@ class EmoHelper(val spark: SparkSession) {
    
     val prime = this.getPrime(res)
     val out = new EmoRes(res,prime)
-    val js = Json.toJson(out)
+    val js = out.toJson //Json.toJson(out)
     return js.toString()
   }
   def getPrime(emo: Seq[EmoData]): Seq[EmoData] = {

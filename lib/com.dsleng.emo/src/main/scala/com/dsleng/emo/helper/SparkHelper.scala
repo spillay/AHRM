@@ -3,7 +3,6 @@ package com.dsleng.emo.helper
 import org.apache.spark.sql.{SparkSession}
 import org.apache.spark.sql.SaveMode
 import org.apache.spark.sql.DataFrame
-import play.api.libs.json._
 
 trait SparkHelper{
   def appName: String = "Emotion Analysis"

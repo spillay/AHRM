@@ -4,7 +4,6 @@ import com.dsleng.emo.helper._
 import org.apache.spark.sql.{SparkSession}
 import org.apache.spark.sql.SaveMode
 import org.apache.spark.sql.DataFrame
-import play.api.libs.json._
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.SPFunctions.addOneCustomNative
 import org.apache.spark.sql.SPFunctions.checkforFeature
@@ -26,6 +25,9 @@ import org.apache.spark.serializer.JavaSerializer
 import org.apache.spark.sql.catalyst.analysis.{ResolveTimeZone, SimpleAnalyzer}
 import org.apache.spark.sql.internal.SQLConf
 import scala.util.control.Breaks._
+
+import spray.json._
+import spray.json.DefaultJsonProtocol._
 
 class EmoSimple extends SparkHelper with Performance {
   import spark.sqlContext.implicits._
@@ -80,7 +82,7 @@ class EmoSimple extends SparkHelper with Performance {
       })    
       val prime = this.getPrime(res)   
       val out = new EmoRes(res,prime)
-      val js = Json.toJson(out)
+      val js = out.toJson // Json.toJson(out)
       println(js.toString())
       return js.toString() 
    }
@@ -101,7 +103,7 @@ class EmoSimple extends SparkHelper with Performance {
         prime = this.getPrime(res)
       })
       val out = new EmoRes(res,prime)
-      val js = Json.toJson(out)
+      val js = out.toJson
       
       return js.toString() 
    }
@@ -151,7 +153,7 @@ class EmoSimple extends SparkHelper with Performance {
       prime = this.getPrime(res)
     })
     val out = new EmoRes(res,prime)
-    val js = Json.toJson(out)
+    val js = out.toJson //Json.toJson(out)
     return js.toString()
   }
   def getPrime(emo: Seq[EmoData]): Seq[EmoData] = {

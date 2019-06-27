@@ -49,7 +49,7 @@ products:
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Transformers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/Transformers$.class
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Transformers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/Transformers.class
 binary dependencies:
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala -> /home/suresh/.gradle/caches/modules-2/files-2.1/com.typesafe.play/play-json_2.12/2.8.0-M1/65c9dff001a80e3192397b374d03645104947fee/play-json_2.12-2.8.0-M1.jar
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala -> /home/suresh/.gradle/caches/modules-2/files-2.1/io.spray/spray-json_2.12/1.3.5/1ee2fe69970ae12fac6cf7dfefdfb4b41699714/spray-json_2.12-1.3.5.jar
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala -> /home/suresh/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.8/36b234834d8f842cdde963c8591efae6cf413e3f/scala-library-2.12.8.jar
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala -> /home/suresh/.m2/repository/org/apache/spark/spark-catalyst_2.12/2.4.3/spark-catalyst_2.12-2.4.3.jar
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala -> /home/suresh/.m2/repository/org/apache/spark/spark-core_2.12/2.4.3/spark-core_2.12-2.4.3.jar
@@ -57,7 +57,7 @@ binary dependencies:
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala -> /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /home/suresh/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.8/36b234834d8f842cdde963c8591efae6cf413e3f/scala-library-2.12.8.jar
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /home/suresh/.gradle/caches/modules-2/files-2.1/com.typesafe.play/play-json_2.12/2.8.0-M1/65c9dff001a80e3192397b374d03645104947fee/play-json_2.12-2.8.0-M1.jar
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /home/suresh/.gradle/caches/modules-2/files-2.1/io.spray/spray-json_2.12/1.3.5/1ee2fe69970ae12fac6cf7dfefdfb4b41699714/spray-json_2.12-1.3.5.jar
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /home/suresh/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.8/36b234834d8f842cdde963c8591efae6cf413e3f/scala-library-2.12.8.jar
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /home/suresh/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-reflect/2.12.8/682d33402cdae50258afa2c0860eb54688dab610/scala-reflect-2.12.8.jar
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /home/suresh/.m2/repository/org/apache/spark/spark-catalyst_2.12/2.4.3/spark-catalyst_2.12-2.4.3.jar
@@ -65,7 +65,7 @@ binary dependencies:
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /home/suresh/.m2/repository/org/apache/spark/spark-mllib_2.12/2.4.3/spark-mllib_2.12-2.4.3.jar
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /home/suresh/.m2/repository/org/apache/spark/spark-sql_2.12/2.4.3/spark-sql_2.12-2.4.3.jar
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala -> /home/suresh/.gradle/caches/modules-2/files-2.1/com.typesafe.play/play-json_2.12/2.8.0-M1/65c9dff001a80e3192397b374d03645104947fee/play-json_2.12-2.8.0-M1.jar
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala -> /home/suresh/.gradle/caches/modules-2/files-2.1/io.spray/spray-json_2.12/1.3.5/1ee2fe69970ae12fac6cf7dfefdfb4b41699714/spray-json_2.12-1.3.5.jar
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala -> /home/suresh/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.8/36b234834d8f842cdde963c8591efae6cf413e3f/scala-library-2.12.8.jar
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala -> /home/suresh/.m2/repository/org/apache/spark/spark-catalyst_2.12/2.4.3/spark-catalyst_2.12-2.4.3.jar
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala -> /home/suresh/.m2/repository/org/apache/spark/spark-core_2.12/2.4.3/spark-core_2.12-2.4.3.jar

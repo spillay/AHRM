@@ -3,7 +3,6 @@ package com.dsleng.emo.helper
 import org.apache.spark.sql.{SparkSession}
 import org.apache.spark.sql.SaveMode
 import org.apache.spark.sql.DataFrame
-import play.api.libs.json._
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.SPFunctions.addOneCustomNative
 import org.apache.spark.sql.SPFunctions.checkforFeature
