@@ -25,6 +25,7 @@ import play.api.libs.json._
 //import play.api.libs.ws._
 import com.dsleng.email.utils.MetaInfo
 import com.dsleng.email._
+import spray.json._
 
 class MimeHandler(metaData: MetaInfo) {
   
@@ -137,6 +138,7 @@ class MimeHandler(metaData: MetaInfo) {
 		 val eModel = new EmailModel(buf.toList,senderIp,em.getFromEmailHeaderValue(),em.getToEmailHeaderValue(),"",em.getEmailSubject(),textContent,htmlContent,"")
 		 return eModel
   }
+  /*
   def process(email: File,datetime: String): JsValue={
     val mime4jParserConfig = MimeConfig.DEFAULT;
 		val bodyDescriptorBuilder = new DefaultBodyDescriptorBuilder();		
@@ -178,7 +180,10 @@ class MimeHandler(metaData: MetaInfo) {
 		 val senderIp = new scala.collection.mutable.ArrayBuffer[SenderInfo]()
 		 val eModel = new EmailModel(buf.toList,senderIp,em.getFromEmailHeaderValue(),em.getToEmailHeaderValue(),"",em.getEmailSubject(),textContent,htmlContent,"")
 		 eModel.dummyUpdate(metaData,datetime)
-		 return Json.toJson(eModel)
+		 
+		 return eModel.toJson
 		
   }
+  * *
+  */
 }

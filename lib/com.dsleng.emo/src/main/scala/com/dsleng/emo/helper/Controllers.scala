@@ -1,7 +1,8 @@
 package com.dsleng.emo.helper
 
 import com.dsleng.email.{SimpleEmailModel,SimpleEmailExt}
-//import play.api.libs.json._
+import spray.json._
+import spray.json.DefaultJsonProtocol._
 
 case class EmoEmailCtl(model: SimpleEmailExt,emotion: String)
 case class EmailCtl(model: SimpleEmailExt)
@@ -9,7 +10,16 @@ case class TextCtl(text: String)
 case class TokenCtl(model: SimpleEmailExt,tokens: TokenStrCtl)
 case class TokenStrCtl(tokens: List[String])
 
+
+
+object SPJsonImplicits extends DefaultJsonProtocol {
+  implicit val impTokenStrCtl = jsonFormat1(TokenStrCtl)
+}
+
 /*
+ * object TokenStrCtl {
+  implicit val tokenStrWrites = Json.writes[TokenStrCtl]
+}
 object EmailCtl {
   implicit val emailWrites = Json.writes[EmailCtl]
   

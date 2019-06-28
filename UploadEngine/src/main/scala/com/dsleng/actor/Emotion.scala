@@ -24,6 +24,8 @@ import akka.stream.scaladsl._
 import scala.concurrent.Future
 import scala.util.Try
 import com.dsleng.emo.helper._
+import com.dsleng.emo.helper.SPJsonImplicits._
+import spray.json._
 
 object Emotion {
   def props: Props = Props[Emotion]
@@ -44,7 +46,7 @@ class Emotion extends Actor with ActorLogging with ReaperWatched {
       println("in emotion tokenctl")
       log.info("Processing tokens received (from " + sender() + "): " + tokens)  
       val origSender = sender
-      val js = Json.toJson(tokens)
+      val js = tokens.toJson //Json.toJson(tokens)
       
       val requestEntity = HttpEntity(MediaTypes.`application/json`, js.toString())
       val req = HttpRequest(

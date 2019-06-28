@@ -23,6 +23,8 @@ import scala.concurrent.Future
 import scala.util.Try
 import com.dsleng.emo.helper.{TokenCtl,EmoEmailCtl}
  //   ws.url("http://localhost:5001/emo/tokens").post(js).map{response =>
+import com.dsleng.emo.helper.SPJsonImplicits._
+import spray.json._
 
 object Emotion2 {
   def props: Props = Props[Emotion2]
@@ -61,7 +63,7 @@ class Emotion2 extends Actor with ActorLogging with ReaperWatched {
     case TokenCtl(model,tokens) =>
       log.info("Processing tokens received (from " + sender() + "): " + tokens)  
       val origSender = sender
-      val js = Json.toJson(tokens)
+      val js = tokens.toJson
       
       val email = context.actorSelection("akka://UploadEngine/user/Reader/Email")
       email ! new EmoEmailCtl(model,"not implemented emotion")

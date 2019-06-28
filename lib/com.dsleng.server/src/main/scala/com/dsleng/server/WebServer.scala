@@ -50,12 +50,9 @@ object WebServer extends HttpApp {
     path("emo") { 
       post {
         entity(as[String]){ param =>{
-          println(param)
           val obj = param.parseJson
-          println(obj)
-          val js = obj.convertTo[Map[String, String]]
-          println(js("tokens").toJson)
-          val tokens = js("tokens").toJson.convertTo[List[String]]
+          val js = obj.convertTo[Map[String, Seq[String]]]
+          val tokens = js("tokens")
           //val stoks = tokens.as[List[String]]
           //val stoks = List("terrible","funny","story","peacefully","foolproof","amaze","forgive")
           val res = emo.execute(tokens)

@@ -33,7 +33,8 @@ libraryDependencies += "com.fasterxml.jackson.core" % "jackson-databind" % "2.9.
 libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.9.2"
 libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.9.2" classifier "models"
 
-libraryDependencies += "com.google.guava" % "guava" % "28.0-jre"
+//libraryDependencies += "com.google.guava" % "guava" % "28.0-jre"
+libraryDependencies += "io.spray" %% "spray-json" % "1.3.5"
 
 
 //conflictWarning := ConflictWarning.disable

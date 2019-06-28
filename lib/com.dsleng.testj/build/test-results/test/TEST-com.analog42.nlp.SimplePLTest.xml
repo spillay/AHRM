@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.analog42.nlp.SimplePLTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-06-28T00:05:35" hostname="thor" time="0.001">
+  <properties/>
+  <testcase name="process" classname="com.analog42.nlp.SimplePLTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
