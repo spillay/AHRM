@@ -23,8 +23,8 @@ import scala.concurrent.Future
 import scala.util.Try
 import com.dsleng.emo.helper.{TokenCtl,EmoEmailCtl}
  //   ws.url("http://localhost:5001/emo/tokens").post(js).map{response =>
-import com.dsleng.emo.helper.SPJsonImplicits._
 import spray.json._
+import com.dsleng.emo.helper.CtlJsonImplicits._
 
 object Emotion2 {
   def props: Props = Props[Emotion2]

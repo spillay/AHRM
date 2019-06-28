@@ -3,6 +3,7 @@ package com.dsleng.emo.helper
 import com.dsleng.email.{SimpleEmailModel,SimpleEmailExt}
 import spray.json._
 import spray.json.DefaultJsonProtocol._
+import com.dsleng.email.ModelJsonImplicits._
 
 case class EmoEmailCtl(model: SimpleEmailExt,emotion: String)
 case class EmailCtl(model: SimpleEmailExt)
@@ -12,8 +13,10 @@ case class TokenStrCtl(tokens: List[String])
 
 
 
-object SPJsonImplicits extends DefaultJsonProtocol {
+object CtlJsonImplicits extends DefaultJsonProtocol {
   implicit val impTokenStrCtl = jsonFormat1(TokenStrCtl)
+  implicit val impTokenCtl = jsonFormat2(TokenCtl)
+  implicit val impEmoEmailCtl = jsonFormat2(EmoEmailCtl)
 }
 
 /*

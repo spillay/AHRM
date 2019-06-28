@@ -16,6 +16,7 @@ import java.text.SimpleDateFormat
 import java.util.Locale
 import spray.json._
 import spray.json.DefaultJsonProtocol._
+import com.dsleng.model.utils.DateMarshalling._
 
 case class RecipientInfo(Email: String, Department: String)
 case class DummySenderInfo(Email: String, IP: String)
@@ -39,8 +40,9 @@ case class Location(lat: String, lon: String){
 }
 
 case class GeoInfo(ip: String, country_code: String, country_name: String,
-                   region_code: String, region_name: String, city: String, zip_code: String,
-                   time_zone: String, latitude: String, longitude: String, metro_code: String)
+                   region_code: String, region_name: String, city: String, 
+                   zip_code: String, time_zone: String, latitude: String, 
+                   longitude: String, metro_code: String)
 
 case class Headers(theHeaders: List[EmailHeader])
 
@@ -113,7 +115,8 @@ case class AEmailModel(
 
 case class SimpleEmailModel(
   var allHeaders:  Headers,
-  var textContent: String  = "", var htmlContent: String = "",
+  var textContent: String  = "", 
+  var htmlContent: String = "",
   var from:              String = "",
   var to:                String = "",
   var date:              Date = null,
@@ -209,9 +212,15 @@ case class SimpleEmailModel(
 
 case class EmailModel(
   var allHeaders: List[EmailHeader],
-  var senderIp:   scala.collection.mutable.ArrayBuffer[SenderInfo], var from: String,
-  var to: String, var date: String, var subject: String, var textContent: String,
-  var htmlContent: String, var Department: String,
+  var senderIp:   List[SenderInfo], 
+  //var senderIp:   scala.collection.mutable.ArrayBuffer[SenderInfo], 
+  var from: String,
+  var to: String, 
+  var date: String, 
+  var subject: String, 
+  var textContent: String,
+  var htmlContent: String, 
+  var Department: String,
   var products:    Array[String] = null,
   var senderGeoIP: GeoInfo       = null) {
   if (senderIp.isEmpty) {
@@ -220,7 +229,8 @@ case class EmailModel(
       //println(h.name)
       if (h.name == "Received") {
         ////println(h.value)
-        senderIp += extract(h.value)
+        //senderIp += extract(h.value)
+        senderIp = senderIp.::(extract(h.value))
       }
       if (h.name == "From") {
         //println(h.value)
@@ -272,7 +282,8 @@ case class EmailModel(
     //this.products.foreach(p=>{//println("emailmodel" + p)})
     this.from = send.Email
     val si = new SenderInfo(send.IP, "", send.IP, "")
-    senderIp += si
+    //senderIp += si
+    senderIp = senderIp.::(si)
     this.senderGeoIP = send.senderGeoIP
 
   }
@@ -336,11 +347,19 @@ case class EmailExt(var model: EmailModel, genderInfo: Gender, deception: Decept
   model.htmlContent = ""
   model.textContent = ""
   model.allHeaders = (new ListBuffer[EmailHeader]()).toList
-  model.senderIp = new scala.collection.mutable.ArrayBuffer[SenderInfo]()
+  model.senderIp = new scala.collection.mutable.ArrayBuffer[SenderInfo]().toList
 
 }
-case class SimpleEmailExt(var fileName: String,var model: SimpleEmailModel, var emotions: String,var prime: String="Unknown",var norm: String="",var ec: String="",var department: String ="Unassigned",product: Array[String] = Array[String]()) {
-  //println("Emotions " + emotions)
+case class SimpleEmailExt(
+    var fileName: String,
+    var model: SimpleEmailModel, 
+    var emotions: String,
+    var prime: String="Unknown",
+    var norm: String="",
+    var ec: String="",
+    var department: String ="Unassigned",
+    product: Array[String] = Array[String]()) {
+  println("Emotions " + emotions)
   if (emotions != "none"){ 
     //val res = emotions.parseJson
     val obj = emotions.parseJson //Json.parse(emotions)
@@ -386,6 +405,17 @@ case class AEmailExt(var fileName: String,var model: AEmailModel,var department:
   }
 }
 
+object ModelJsonImplicits extends DefaultJsonProtocol {
+  implicit val impSenderInfo = jsonFormat4(SenderInfo)
+  implicit val impGender = jsonFormat2(Gender)
+  implicit val impEmailHeader = jsonFormat2(EmailHeader)
+  implicit val impHeaders = jsonFormat1(Headers)
+  implicit val impLocation = jsonFormat2(Location)
+  implicit val impGeoInfo = jsonFormat11(GeoInfo)
+  implicit val impEmailModel = jsonFormat11(EmailModel)
+  implicit val impSimpleEmailModel = jsonFormat13(SimpleEmailModel)
+  implicit val impSimpleEmailExt = jsonFormat8(SimpleEmailExt)
+}
 
 /*
 object Gender {

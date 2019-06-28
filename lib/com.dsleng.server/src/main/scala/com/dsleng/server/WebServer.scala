@@ -13,11 +13,14 @@ import org.apache.spark.sql.DataFrame
 import com.dsleng.emo.helper.Emotions
 import spray.json._
 import spray.json.DefaultJsonProtocol._
+import com.dsleng.emo.helper.{TokenCtl,TokenStrCtl,EmoEmailCtl}
+import com.dsleng.emo.helper.CtlJsonImplicits._
 
 @ApiMayChange
 object WebServer extends HttpApp {
   def appName: String = "Analysis Services"
   def master: String = "local[*]"
+  val emo = new Emotions(spark)
   lazy val spark: SparkSession = SparkSession
       .builder
       .appName(appName)
@@ -31,7 +34,7 @@ object WebServer extends HttpApp {
       .getOrCreate()
       
   spark.sparkContext.setLogLevel("ERROR")
-  val emo = new Emotions(spark)
+  
   override def routes: Route =
     path("hello") {
         get {
@@ -50,13 +53,23 @@ object WebServer extends HttpApp {
     path("emo") { 
       post {
         entity(as[String]){ param =>{
-          val obj = param.parseJson
-          val js = obj.convertTo[Map[String, Seq[String]]]
-          val tokens = js("tokens")
+          println(param)
+          val jdata = param.parseJson
+          val tc = jdata.convertTo[TokenCtl] 
+          
+          //val payload = jdata.convertTo[Map[String, String]]
+            
+          //println(payload)
+          val tsc = tc.tokens.toJson.convertTo[TokenStrCtl]
+          val tokens = tsc.tokens
+          
+          val model = tc.model
+          
           //val stoks = tokens.as[List[String]]
           //val stoks = List("terrible","funny","story","peacefully","foolproof","amaze","forgive")
           val res = emo.execute(tokens)
-          val resp: ResponseEntity = HttpEntity(ContentTypes.`application/json`,res)
+          val result = new EmoEmailCtl(model,res)
+          val resp: ResponseEntity = HttpEntity(ContentTypes.`application/json`,result.toJson.toString())
           complete(HttpResponse(StatusCodes.OK, entity = resp))
         }
        }

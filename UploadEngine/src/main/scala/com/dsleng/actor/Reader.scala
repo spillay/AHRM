@@ -59,7 +59,7 @@ class Reader extends Actor with ActorLogging with ReaperWatched {
           fileCnt = fileCnt + 1
           println("FileCounter " + fileCnt + " : " + cnt + "=====================================================")
           email ! new EmailCtl(smodel)
-          //break
+          break
         }
       })
   }

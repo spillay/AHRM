@@ -24,7 +24,8 @@ import akka.stream.scaladsl._
 import scala.concurrent.Future
 import scala.util.Try
 import com.dsleng.emo.helper._
-import com.dsleng.emo.helper.SPJsonImplicits._
+import com.dsleng.emo.helper.CtlJsonImplicits._
+import com.dsleng.email.SimpleEmailExt
 import spray.json._
 
 object Emotion {
@@ -46,7 +47,9 @@ class Emotion extends Actor with ActorLogging with ReaperWatched {
       println("in emotion tokenctl")
       log.info("Processing tokens received (from " + sender() + "): " + tokens)  
       val origSender = sender
-      val js = tokens.toJson //Json.toJson(tokens)
+      val js = (new TokenCtl(model,tokens)).toJson
+      
+      //val js = tokens.toJson //Json.toJson(tokens)
       
       val requestEntity = HttpEntity(MediaTypes.`application/json`, js.toString())
       val req = HttpRequest(
@@ -63,6 +66,16 @@ class Emotion extends Actor with ActorLogging with ReaperWatched {
      case HttpResponse(StatusCodes.OK, headers, entity, _) =>
       entity.dataBytes.runFold(ByteString(""))(_ ++ _).foreach { body =>
         println("Got response, body: " + body.utf8String)
+        val output = body.utf8String
+        val eec = output.parseJson.convertTo[EmoEmailCtl]
+        println("after eec")
+        val model = new SimpleEmailExt(
+              eec.model.fileName,
+              eec.model.model,
+              eec.emotion
+            )
+        println("after model")
+        println("model info",model)
       }
     case resp @ HttpResponse(code, _, _, _) =>
       println("Request failed, response code: " + code)
