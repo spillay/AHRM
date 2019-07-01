@@ -23,6 +23,7 @@ class Reader extends Actor with ActorLogging with ReaperWatched {
   val email = context.actorOf(Email.props,"Email")
   val emotion = context.actorOf(Emotion.props,"Emotion")
   val nlp = context.actorOf(NLP.props,"NLP")
+  val store = context.actorOf(Store.props,"Store")
   var cnt = 0
   
   def receive = {

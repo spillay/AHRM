@@ -21,10 +21,10 @@ import scala.collection.mutable.ListBuffer
 import java.io._
 import java.net.URL;
 import java.util._
-import play.api.libs.json._
+
 //import play.api.libs.ws._
 import com.dsleng.email.utils.MetaInfo
-import com.dsleng.email._
+import com.dsleng.email.{EmailModel,SimpleEmailModel,SenderInfo,Headers,EmailHeader}
 import spray.json._
 
 class MimeHandler(metaData: MetaInfo) {
@@ -133,9 +133,18 @@ class MimeHandler(metaData: MetaInfo) {
 		  textContent = scala.io.Source.fromInputStream(em.getPlainTextEmailBody().getIs()).mkString
 		}
 		
-		 //val senderIp = new ListBuffer[SenderInfo]()
-		 val senderIp = new scala.collection.mutable.ArrayBuffer[SenderInfo]()
-		 val eModel = new EmailModel(buf.toList,senderIp,em.getFromEmailHeaderValue(),em.getToEmailHeaderValue(),"",em.getEmailSubject(),textContent,htmlContent,"")
+		 //val senderIp = new scala.collection.mutable.ArrayBuffer[SenderInfo]()
+		 var senderIp = Seq[SenderInfo]()
+		 val eModel = new EmailModel(
+		     buf.toList,
+		     senderIp.toList,
+		     em.getFromEmailHeaderValue(),
+		     em.getToEmailHeaderValue(),
+		     "",
+		     em.getEmailSubject(),
+		     textContent,htmlContent,
+		     ""
+		     )
 		 return eModel
   }
   /*

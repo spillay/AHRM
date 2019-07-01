@@ -17,49 +17,7 @@ import scala.util.control.Breaks._
 import spray.json._
 import spray.json.DefaultJsonProtocol._
 
-case class Emo(emotion: String, words: Seq[String])
-case class EmoData(emotion: String, cnt: Integer, words: Seq[String])
-object EmoData {
-  implicit val emJsonFormat = new RootJsonFormat[EmoData] {
-    def write(o: EmoData): JsValue = {
-      JsObject(
-        "emotion" -> o.emotion.toJson,
-        "count" -> JsNumber(o.cnt),
-        "words" -> o.words.toJson
-       )
-    }
-    def read(value: JsValue) = {
-      value.asJsObject.getFields("emotions","cnt","words") match {
-        case Seq(JsString(emotion),JsNumber(cnt),JsArray(words)) => 
-          new EmoData(
-              emotion,
-              cnt.toInt,
-              words.map(_.convertTo[String]))
-        case _ => throw new DeserializationException("EmoRes expected")
-      }
-    }
-  }
-}
-case class EmoRes(emotions: Seq[EmoData],prime: Seq[EmoData])
-object EmoRes {
-  implicit val implicitResWrites = new RootJsonFormat[EmoRes] {
-    def write(o: EmoRes): JsValue = {
-      JsObject(
-        "emotions" -> JsArray(o.emotions.map(_.toJson).toVector),
-        "prime" -> JsArray(o.prime.map(_.toJson).toVector)
-       )
-    }
-    def read(value: JsValue) = {
-      value.asJsObject.getFields("emotions","prime") match {
-        case Seq(JsArray(emotion),JsArray(prime)) => 
-          new EmoRes(
-              emotion.map(_.convertTo[EmoData]),
-              prime.map(_.convertTo[EmoData]))
-        case _ => throw new DeserializationException("EmoRes expected")
-      }
-    }
-  }
-}
+
 
 class EmoHelper(val spark: SparkSession) {
   import spark.sqlContext.implicits._
@@ -238,8 +196,8 @@ class EmoHelper(val spark: SparkSession) {
   }
   def getPrime(emo: Seq[EmoData]): Seq[EmoData] = {
     if (emo.isEmpty) return Seq[EmoData](new EmoData("Unknown",0,Seq[String]()))
-    val max = emo.maxBy(f => f.cnt)
-    val res = emo.filter(p => p.cnt == max.cnt)
+    val max = emo.maxBy(f => f.count)
+    val res = emo.filter(p => p.count == max.count)
     var prime: Seq[EmoData] = null
     if (res.length > 1) {
       breakable {

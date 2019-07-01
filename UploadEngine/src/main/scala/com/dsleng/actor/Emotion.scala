@@ -13,7 +13,6 @@ import scala.util.{Failure, Success}
 
 import akka.stream.ActorMaterializer
 
-import play.api.libs.json._
 import akka.http.scaladsl.model._
 import akka.http.scaladsl.Http
 import com.dsleng.nlp.SimplePL
@@ -61,21 +60,26 @@ class Emotion extends Actor with ActorLogging with ReaperWatched {
       println("before firing")
       http.singleRequest(req).pipeTo(self)
 //      val res = "not yet"
-//      val email = context.actorSelection("akka://UploadEngine/user/Reader/Email")
-//      email ! new EmoEmailCtl(model,res)  
+//     
      case HttpResponse(StatusCodes.OK, headers, entity, _) =>
       entity.dataBytes.runFold(ByteString(""))(_ ++ _).foreach { body =>
         println("Got response, body: " + body.utf8String)
         val output = body.utf8String
         val eec = output.parseJson.convertTo[EmoEmailCtl]
-        println("after eec")
+        log.debug("Got EmoEmailCtl")
+        println("after eec",eec.emotion)
+        val er = eec.emotion.parseJson.convertTo[EmoRes]
+        println("before simpleemailext")
         val model = new SimpleEmailExt(
               eec.model.fileName,
               eec.model.model,
-              eec.emotion
+              "none"
             )
-        println("after model")
-        println("model info",model)
+        model.prime = er.prime.toJson.toString()
+        model.emotions = er.emotions.toJson.toString()
+       
+        val store = context.actorSelection("akka://UploadEngine/user/Reader/Store")
+        store ! new EmoEmailCtl(model,"")  
       }
     case resp @ HttpResponse(code, _, _, _) =>
       println("Request failed, response code: " + code)

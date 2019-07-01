@@ -1024,5 +1024,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry combineaccessrules="false" kind="src" path="/com.dsleng.emo"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/com.dsleng.model"/>
 	<classpathentry kind="output" path="bin/default"/>
 </classpath>

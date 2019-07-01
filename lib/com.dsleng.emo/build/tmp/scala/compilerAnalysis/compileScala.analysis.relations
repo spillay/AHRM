@@ -6,19 +6,22 @@ products:
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/CtlJsonImplicits.class
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmailCtl$.class
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmailCtl.class
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/Emo$.class
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/Emo.class
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoData$$anon$1.class
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoData$.class
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoData.class
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoEmailCtl$.class
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoEmailCtl.class
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoRes$$anon$2.class
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoRes$.class
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoRes.class
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/TextCtl$.class
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/TextCtl.class
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/TokenCtl$.class
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/TokenCtl.class
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/TokenStrCtl$.class
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/TokenStrCtl.class
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/Emo$.class
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/Emo.class
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoData$$anon$1.class
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoData$.class
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoData.class
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoHelper$$typecreator1$1.class
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoHelper$$typecreator1$2.class
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoHelper$$typecreator1$3.class
@@ -34,9 +37,6 @@ products:
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoHelper$$typecreator5$1.class
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoHelper$$typecreator5$2.class
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoHelper.class
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoRes$$anon$2.class
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoRes$.class
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/EmoRes.class
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/Emotions.class
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Performance.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/Performance.class
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/SparkHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/build/classes/scala/main/com/dsleng/emo/helper/SparkHelper.class
@@ -92,11 +92,12 @@ binary dependencies:
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Transformers.scala -> /home/suresh/.m2/repository/org/apache/spark/spark-sql_2.12/2.4.3/spark-sql_2.12-2.4.3.jar
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Transformers.scala -> /usr/lib/jvm/java-8-oracle/jre/lib/rt.jar
 source dependencies:
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Performance.scala
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/SparkHelper.scala
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Transformers.scala
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/SparkHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/TestHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Performance.scala
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/TestHelper.scala -> /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/SparkHelper.scala
@@ -117,19 +118,22 @@ class names:
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> com.dsleng.emo.helper.CtlJsonImplicits$
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> com.dsleng.emo.helper.EmailCtl
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> com.dsleng.emo.helper.EmailCtl$
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> com.dsleng.emo.helper.Emo
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> com.dsleng.emo.helper.Emo$
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> com.dsleng.emo.helper.EmoData
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> com.dsleng.emo.helper.EmoData$
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> com.dsleng.emo.helper.EmoData$$anon$1
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> com.dsleng.emo.helper.EmoEmailCtl
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> com.dsleng.emo.helper.EmoEmailCtl$
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> com.dsleng.emo.helper.EmoRes
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> com.dsleng.emo.helper.EmoRes$
+   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> com.dsleng.emo.helper.EmoRes$$anon$2
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> com.dsleng.emo.helper.TextCtl
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> com.dsleng.emo.helper.TextCtl$
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> com.dsleng.emo.helper.TokenCtl
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> com.dsleng.emo.helper.TokenCtl$
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> com.dsleng.emo.helper.TokenStrCtl
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Controllers.scala -> com.dsleng.emo.helper.TokenStrCtl$
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> com.dsleng.emo.helper.Emo
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> com.dsleng.emo.helper.Emo$
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> com.dsleng.emo.helper.EmoData
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> com.dsleng.emo.helper.EmoData$
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> com.dsleng.emo.helper.EmoData$$anon$1
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> com.dsleng.emo.helper.EmoHelper
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> com.dsleng.emo.helper.EmoHelper$$typecreator1$1
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> com.dsleng.emo.helper.EmoHelper$$typecreator1$2
@@ -145,9 +149,6 @@ class names:
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> com.dsleng.emo.helper.EmoHelper$$typecreator4$1
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> com.dsleng.emo.helper.EmoHelper$$typecreator5$1
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> com.dsleng.emo.helper.EmoHelper$$typecreator5$2
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> com.dsleng.emo.helper.EmoRes
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> com.dsleng.emo.helper.EmoRes$
-   /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala -> com.dsleng.emo.helper.EmoRes$$anon$2
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala -> com.dsleng.emo.helper.Emotions
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Performance.scala -> com.dsleng.emo.helper.Performance
    /Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/SparkHelper.scala -> com.dsleng.emo.helper.SparkHelper

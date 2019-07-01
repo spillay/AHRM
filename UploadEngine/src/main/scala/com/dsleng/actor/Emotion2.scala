@@ -11,7 +11,6 @@ import scala.util.{Failure, Success}
 
 import akka.stream.ActorMaterializer
 
-import play.api.libs.json._
 import akka.http.scaladsl.model._
 import akka.http.scaladsl.Http
 import com.dsleng.nlp.SimplePL

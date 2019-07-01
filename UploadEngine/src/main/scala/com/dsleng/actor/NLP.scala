@@ -11,12 +11,13 @@ import scala.util.{Failure, Success}
 
 import akka.stream.ActorMaterializer
 
-import play.api.libs.json._
 import akka.http.scaladsl.model._
 import akka.http.scaladsl.Http
 import com.dsleng.nlp.SimplePL
 import scala.collection.JavaConversions._
 import com.dsleng.emo.helper.{TokenCtl,EmailCtl,TokenStrCtl}
+import spray.json._
+import spray.json.DefaultJsonProtocol._
  //   ws.url("http://localhost:5001/emo/tokens").post(js).map{response =>
 
 object NLP {
@@ -46,8 +47,9 @@ class NLP extends Actor with ActorLogging with ReaperWatched {
       log.info(model.fileName + " length: " + msg.length())
       val res = simplePL.processSentence(msg)
       log.debug(res)
-      val jr = Json.parse(res)
-      val toks = (jr \ "tokensSW").as[List[String]]
+      val obj = res.parseJson //Json.parse(res)
+      val jr = obj.convertTo[Map[String, List[String]]]
+      val toks = jr("tokensSW")
       
       //val reader = context.actorSelection("akka://UploadEngine/user/Reader")
       //reader ! "complete"

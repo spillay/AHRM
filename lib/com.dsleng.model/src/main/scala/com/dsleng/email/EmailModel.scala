@@ -209,11 +209,10 @@ case class SimpleEmailModel(
     return geoinfo
   }
 }
-
+//var senderIp:   scala.collection.mutable.ArrayBuffer[SenderInfo], 
 case class EmailModel(
   var allHeaders: List[EmailHeader],
   var senderIp:   List[SenderInfo], 
-  //var senderIp:   scala.collection.mutable.ArrayBuffer[SenderInfo], 
   var from: String,
   var to: String, 
   var date: String, 
@@ -359,12 +358,13 @@ case class SimpleEmailExt(
     var ec: String="",
     var department: String ="Unassigned",
     product: Array[String] = Array[String]()) {
-  println("Emotions " + emotions)
+  println("Emotions +++++++++++++++++++++++++++++++++++++++++++++++++" + emotions)
   if (emotions != "none"){ 
     //val res = emotions.parseJson
     val obj = emotions.parseJson //Json.parse(emotions)
+    println(obj)
     val res = obj.convertTo[Map[String, String]]
-    
+    println(res)
     this.prime = res("prime")
     //this.prime = obj.\("prime").as[String]
     this.prime = this.prime.replaceAll("\"", "")

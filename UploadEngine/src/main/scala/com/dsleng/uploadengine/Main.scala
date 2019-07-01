@@ -4,7 +4,6 @@ import akka.actor.{ Actor, ActorLogging, ActorRef, ActorSystem, Props,PoisonPill
 import com.dsleng.readers.MimeHandler
 import com.dsleng.email.SimpleEmailModel
 import java.io.File
-import play.api.libs.json._
 import scala.concurrent.{Await}
 import scala.concurrent.duration.{Duration,TimeUnit}
 import com.dsleng.akka.pattern.ReaperWatched

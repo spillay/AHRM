@@ -74,8 +74,8 @@ class Emotions(spark: SparkSession) {
    }
    def getPrime(emo: Seq[EmoData]): Seq[EmoData] = {
     if (emo.isEmpty) return Seq[EmoData](new EmoData("Unknown",0,Seq[String]()))
-    val max = emo.maxBy(f => f.cnt)
-    val res = emo.filter(p => p.cnt == max.cnt)
+    val max = emo.maxBy(f => f.count)
+    val res = emo.filter(p => p.count == max.count)
     var prime: Seq[EmoData] = null
     if (res.length > 1) {
       breakable {
