@@ -38,7 +38,7 @@ tasks.withType(JavaExec) {
     jvmArgs = ['-Xms512m', '-Xmx3G']
 }
 
-task nlpcheck(type: JavaExec, dependsOn: classes) {
+task runIT(type: JavaExec, dependsOn: classes) {
     main = 'com.dsleng.nlp.Main'
     classpath sourceSets.main.runtimeClasspath
     classpath configurations.runtime

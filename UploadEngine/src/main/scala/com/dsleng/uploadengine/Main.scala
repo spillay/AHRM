@@ -97,7 +97,6 @@ class EmailReader(emotion: ActorRef) extends Actor with ActorLogging with Reaper
 
 */
 
-
 object Main extends App {
   println("Starting UploadEngine...")
   val system: ActorSystem = ActorSystem("UploadEngine")

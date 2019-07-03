@@ -27,8 +27,9 @@ import scala.util.control.Breaks._
 
 import spray.json._
 import spray.json.DefaultJsonProtocol._
+import com.dsleng.model._
 
-class Emotions(spark: SparkSession) {
+class Emotions(spark: SparkSession) extends Performance {
   import spark.sqlContext.implicits._
   
   val complete = "/Data/emo-store/dict-data/emo-df.parquet"
@@ -38,14 +39,19 @@ class Emotions(spark: SparkSession) {
   var odf = spark.read.parquet(complete)
   
   def execute(tokens: Seq[String]): String = {
-     val ndf = process(tokens)
-     return convertToJson(ndf)
+    var result = ""
+    takenTime("Emotion Process",tokens.length,{
+      val ndf = process(tokens)
+      result = convertToJson(ndf)
+    })
+    return result
    }
    def process(tokens: Seq[String]): DataFrame = {
     var df = odf
       tokens.foreach(s=>{
-        df = df.withColumn("liwc_fwords", checkforFeature(col("liwc_words"),lit(s),col("liwc_fwords")))
-        df = df.withColumn("ext_fwords", checkforFeature(col("ext_words"),lit(s),col("ext_fwords")))
+        val ns = s.replaceAll("\"", "")
+        df = df.withColumn("liwc_fwords", checkforFeature(col("liwc_words"),lit(ns),col("liwc_fwords")))
+        df = df.withColumn("ext_fwords", checkforFeature(col("ext_words"),lit(ns),col("ext_fwords")))
       })  
       df = df.withColumn("liwc_count", size(col("liwc_fwords")))
       df = df.withColumn("ext_count", size(col("ext_fwords")))

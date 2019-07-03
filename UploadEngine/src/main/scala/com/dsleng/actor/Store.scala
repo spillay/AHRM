@@ -35,8 +35,7 @@ class Store extends Actor with ActorLogging with ReaperWatched {
     case EmoEmailCtl(model,res) =>
       log.debug("Message received (from " + sender() + "): ++++++++++++++++++++++++++++++++++++++++++++++++++++++")
       println("store it")
-      fd.addDocumentGen(model.toJson.toString(), "ahrm3")
-      println(model.toJson)
+      fd.addDocumentGen(model.toJson.toString(), "ahrm_test")
     case "close" =>
       log.debug("Closing")
       fd.close()

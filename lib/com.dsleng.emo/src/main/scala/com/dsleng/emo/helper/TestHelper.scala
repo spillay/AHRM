@@ -8,7 +8,7 @@ import org.apache.spark.sql.SPFunctions.addOneCustomNative
 import org.apache.spark.sql.SPFunctions.checkforFeature
 import org.apache.spark.sql.SPFunctions.checkforFeature2
 
-import com.dsleng.tut.QuasiTest
+//import com.dsleng.tut.QuasiTest
 import org.apache.spark.sql.catalyst.expressions.SPArrayContains
 import org.apache.spark.sql.catalyst.expressions.SPArrayContains2
 import org.apache.spark.sql.catalyst.expressions.Literal
@@ -29,6 +29,7 @@ trait TestHelper extends SparkHelper with Performance{
   val testpath = "/Data/emo-store/test-df.parquet"
   val complete = "/Data/emo-store/dict-data/emo-df.parquet"
   val complete2 = "/Data/emo-store/dict-data/emo-dfv2.parquet"
+  /*
   private def test3(){
       val data = Seq((0.0,0.4,0.4,0.0),(0.1,0.0,0.0,0.7),(0.0,0.2,0.0,0.3),(0.3,0.0,0.0,0.0))
       val cols = Array("p1", "p2", "p3", "p4","index")
@@ -188,5 +189,5 @@ trait TestHelper extends SparkHelper with Performance{
         .joinWith(edf, df.col("emotion")===edf.col("emotion")).toDF()
     
   }
-   
+   */
 }

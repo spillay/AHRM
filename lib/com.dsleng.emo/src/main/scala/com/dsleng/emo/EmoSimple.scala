@@ -1,5 +1,6 @@
 package com.dsleng.emo
 
+import com.dsleng.model._
 import com.dsleng.emo.helper._
 import org.apache.spark.sql.{SparkSession}
 import org.apache.spark.sql.SaveMode
@@ -89,7 +90,7 @@ class EmoSimple extends SparkHelper with Performance {
    def convertToJsonPerf(df: DataFrame): String = {
       var res = Seq[EmoData]()
       
-      takenTime("Collect",{
+      takenTime("Collect",0,{
         df.collect().foreach(r => {
           val e = new EmoData(
               r.getAs[String]("emotion"),
@@ -99,7 +100,7 @@ class EmoSimple extends SparkHelper with Performance {
         })
       })
       var prime: Seq[EmoData] = null
-      takenTime("Prime",{
+      takenTime("Prime",0,{
         prime = this.getPrime(res)
       })
       val out = new EmoRes(res,prime)
@@ -149,7 +150,7 @@ class EmoSimple extends SparkHelper with Performance {
     println("end")
    
     var prime: Seq[EmoData] = null
-    takenTime("Prime",{
+    takenTime("Prime",0,{
       prime = this.getPrime(res)
     })
     val out = new EmoRes(res,prime)
@@ -182,7 +183,8 @@ class EmoSimple extends SparkHelper with Performance {
 
 object EmoSimple extends App with Performance {
   println("Starting EmoSimple")
-  val tokens = List("terrible","funny","story","peacefully","foolproof","amaze","forgive")
+  //val tokens = List("terrible","funny","story","peacefully","foolproof","amaze","forgive")
+  val tokens = List("north", "american", "electric", "reliability", "council", "-lrb-", "nerc", "-rrb-", "december", "4", ",", "2001", ",", "posted", "public", "comment", "proposed", "wholesale", "electric", "standards", "model", "-lrb-", "wesm", "-rrb-", "--", "industry-based", "consensus", "process", "developing", ",", "maintaining", ",", "publishing", "standards", "promote", "reliable", "efficient", "wholesale", "electricity", "markets", "throughout", "north", "america", ".", "standards", "would", "address", ",", "integrated", "way", ",", "whole", "spectrum", "reliability", ",", "market", "interface", ",", "business", "practice", "standards", "fair", ",", "open", ",", "balanced", ",", "inclusive", "stakeholder", "process", ".", "december", "19", ",", "federal", "energy", "regulatory", "commission", "-lrb-", "ferc", "-rrb-", "issued", "order", "providing", "guidance", "formation", "standards", "development", "organization", "wholesale", "electric", "industry", "-lrb-", "docket", ".", "rm01-12-00", "-rrb-", ".", "order", "directs", "industry", "reach", "agreement", "formation", "organization", "develop", "consensus", "standards", "business", "practices", "electronic", "communications", ".", "industry", "reach", "consensus", "issue", "march", "15", ",", "commission", "indicated", "either", "institute", "procedures", "choose", "organization", "develop", "standards", ".", "provide", "nerc", "standing", "committees", "representation", "task", "force", "-lrb-", "scrtf", "-rrb-", "well", "nerc", "stakeholders", "committee", "board", "trustees", "broadest", "possible", "input", ",", "board", "strongly", "urges", "interested", "parties", "comment", "wesm", "proposal", "context", "recent", "ferc", "order", ".", "commenters", "should", "give", "particular", "attention", "nerc", "recently", "approved", "north", "american", "energy", "standards", "board", "-lrb-", "naesb", "-rrb-", "could", "collaborate", "developing", "overseeing", "single", ",", "industry-based", "consensus", "process", "develop", "standards", "assure", "continued", "reliable", "operation", "integrated", "north", "american", "electric", "transmission", "grids", "well", "development", "business", "practice", "standards", "communication", "protocols", "needed", "complement", "market", "design", "principles", "ferc", "announced", "intention", "develop", ".", "nerc", "'s", "scrtf", "use", "comments", "received", "help", "shape", "final", "proposal", "nerc", "stakeholders", "committee", "board", "trustees", "february", "2002", ".", "also", "intend", "provide", "input", "receive", "public", "forum", "wesm", "model", "ferc", "consideration", ".", "additional", "information", "scrtf", "membership", ",", "go", ":", "www.nerc.com/committees/scrtf.html", ".", "please", "direct", "questions", "david", "nevius", ",", "nerc", "vice", "president", ",", "609-452-8060", ",", "e-mail", "dave.nevius@nerc.com", ".", "proposal", "posted", "following", "nerc", "web", "site", ":", "http://www.nerc.com/", ".", "deadline", "comments", "january", "8", ",", "2002", ".", "sincerely", ",", "heather", "gibbs")
   var o = new EmoSimple()
   var res = ""
   averageTime("process",{

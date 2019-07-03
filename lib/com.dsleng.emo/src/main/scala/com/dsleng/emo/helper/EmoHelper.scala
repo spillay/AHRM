@@ -16,7 +16,7 @@ import scala.collection.IndexedSeq
 import scala.util.control.Breaks._
 import spray.json._
 import spray.json.DefaultJsonProtocol._
-
+import com.dsleng.model._
 
 
 class EmoHelper(val spark: SparkSession) {

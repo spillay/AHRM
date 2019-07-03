@@ -25,7 +25,7 @@ libraryDependencies += "com.dsleng" % "com.dsleng.model" % "1.0"
 libraryDependencies += "com.dsleng" % "com.dsleng.emo" % "1.0"
 libraryDependencies += "com.dsleng" % "com.dsleng.store" % "1.0"
 libraryDependencies += "org.apache.logging.log4j" % "log4j-core" % "2.12.0"
-libraryDependencies += "org.apache.lucene" % "lucene-core" % "4.10.3"
+libraryDependencies += "org.apache.lucene" % "lucene-core" % "8.0.0"
 
 
 libraryDependencies += "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.9.9"

@@ -2,9 +2,7 @@
 <projectDescription>
 	<name>com.dsleng.model</name>
 	<comment></comment>
-	<projects>
-		<project>com.dsleng.nlp</project>
-	</projects>
+	<projects/>
 	<natures>
 		<nature>org.scala-ide.sdt.core.scalanature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>

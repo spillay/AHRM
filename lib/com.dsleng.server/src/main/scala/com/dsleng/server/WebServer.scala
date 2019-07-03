@@ -55,22 +55,17 @@ object WebServer extends HttpApp {
         entity(as[String]){ param =>{
           //println(param)
           val jdata = param.parseJson
-          println("-------------------------------------------------------1")
           val tc = jdata.convertTo[TokenCtl] 
-          println("-------------------------------------------------------2")
-          //val payload = jdata.convertTo[Map[String, String]]
+         
             
-          println(tc.tokens)
+          
           val tsc = tc.tokens.toJson.convertTo[TokenStrCtl]
-          println("-------------------------------------------------------3")
           val tokens = tsc.tokens
-          println("-------------------------------------------------------4")
           val model = tc.model
           
           //val stoks = tokens.as[List[String]]
           //val stoks = List("terrible","funny","story","peacefully","foolproof","amaze","forgive")
           val res = emo.execute(tokens)
-          println("-------------------------------------------------------5")
           val result = new EmoEmailCtl(model,res)
           val resp: ResponseEntity = HttpEntity(ContentTypes.`application/json`,result.toJson.toString())
           complete(HttpResponse(StatusCodes.OK, entity = resp))

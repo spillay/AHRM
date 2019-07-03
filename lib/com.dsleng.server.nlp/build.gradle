@@ -7,7 +7,7 @@ buildscript {
     }
 }
 
-apply plugin: 'com.github.johnrengelman.shadow'
+//apply plugin: 'com.github.johnrengelman.shadow'
 apply plugin: 'application'
 
 dependencies{ 
@@ -17,20 +17,22 @@ dependencies{
 	compile group: 'com.dsleng', name: 'com.dsleng.nlp', version: '1.0'
 	compile group: 'com.dsleng', name: 'com.dsleng.model', version: '1.0'
 }
+mainClassName = 'com.dsleng.server.Main'
+/*
 shadowJar{
   zip64 true
   mergeServiceFiles()
 
   relocate 'com.google', 'hidden.google'
 }
-mainClassName = 'com.dsleng.server.Main'
+
 
 artifacts {
     shadowJar;
 }
 
-//build.dependsOn(shadowJar);
-
+build.dependsOn(shadowJar);
+*/
 task runServer(type: JavaExec) {
    classpath = files('build/libs/com.dsleng.server.nlp-1.0.jar')
    classpath += sourceSets.main.runtimeClasspath

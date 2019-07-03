@@ -16,11 +16,12 @@ import akka.http.scaladsl.model._
 import akka.http.scaladsl.Http
 
 import scala.collection.JavaConversions._
-import com.dsleng.model.{TokenCtl,EmailCtl,TokenStrCtl,NLPDataCtl}
+import com.dsleng.model.{TokenCtl,EmailCtl,TokenStrCtl,NLPDataCtl,TokenDataCtl}
 import com.dsleng.email.SimpleEmailExt
 import spray.json._
 import spray.json.DefaultJsonProtocol._
 import com.dsleng.email.ModelJsonImplicits._
+import com.dsleng.model.CtlJsonImplicits._
 import akka.util.ByteString
 
 
@@ -67,18 +68,13 @@ class NLP extends Actor with ActorLogging with ReaperWatched {
       entity.dataBytes.runFold(ByteString(""))(_ ++ _).foreach { body =>
         println("Got response, body: " + body.utf8String)
         val output = body.utf8String
-        val jObj = output.parseJson.asJsObject
-        val nlp = jObj.getFields("emotion","model")
-        
-        nlp(0).asJsObject.convertTo[NLPDataCtl]
-        
-        val toks = JsArray(nlp(0).asJsObject.getFields("tokens")(0))
-        val model = jObj.getFields("model")(0).convertTo[SimpleEmailExt]
-        
-        
+        val value = output.parseJson
+        println(value)
+        val model = value.asJsObject.getFields("model")(0).convertTo[SimpleEmailExt]
+        val nlp = value.asJsObject.getFields("nlp")(0).convertTo[NLPDataCtl]
+        println("at nlp",nlp.tokens)
         val emotion = context.actorSelection("akka://UploadEngine/user/Reader/Emotion")
-        
-        //emotion ! new TokenCtl(model,new TokenStrCtl(toks))
+        emotion ! new TokenDataCtl(model,nlp)
       }
     case resp @ HttpResponse(code, _, _, _) =>
       println("Request failed, response code: " + code)

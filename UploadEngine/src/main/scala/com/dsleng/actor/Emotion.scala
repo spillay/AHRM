@@ -42,12 +42,11 @@ class Emotion extends Actor with ActorLogging with ReaperWatched {
 
   
   def receive = {
-    case TokenCtl(model,tokens) =>
+    case TokenDataCtl(model,nlpData) =>
       println("in emotion tokenctl")
-      log.info("Processing tokens received (from " + sender() + "): " + tokens)  
+      log.info("Processing tokens received (from " + sender() + "): " + nlpData.tokens)  
       val origSender = sender
-      val js = (new TokenCtl(model,tokens)).toJson
-      
+      val js = (new TokenCtl(model,new TokenStrCtl(nlpData.tokensSW.toList))).toJson
       //val js = tokens.toJson //Json.toJson(tokens)
       
       val requestEntity = HttpEntity(MediaTypes.`application/json`, js.toString())
@@ -59,8 +58,7 @@ class Emotion extends Actor with ActorLogging with ReaperWatched {
       )
       println("before firing")
       http.singleRequest(req).pipeTo(self)
-//      val res = "not yet"
-//     
+
      case HttpResponse(StatusCodes.OK, headers, entity, _) =>
       entity.dataBytes.runFold(ByteString(""))(_ ++ _).foreach { body =>
         println("Got response, body: " + body.utf8String)
@@ -75,12 +73,15 @@ class Emotion extends Actor with ActorLogging with ReaperWatched {
               eec.model.model,
               "none"
             )
-        val total = er.emotions.map(f=>f.count).reduce(_+_)
-        val norm = er.emotions.map(f=>{
-          val nval = f.count/total.toDouble
-          new NormData(f.emotion,nval)
-        })
-        model.norm = norm.toJson.toString()
+        if (er.emotions.length > 0){
+          val total = er.emotions.map(f=>f.count).reduce(_+_)
+          val norm = er.emotions.map(f=>{
+            val nval = f.count/total.toDouble
+            new NormData(f.emotion,nval)
+          })
+          model.norm = norm.toJson.toString()
+        }
+        
         model.prime = if (er.prime.length > 0)  er.prime(0).emotion else "Unknown"
         model.emotions = er.emotions.toJson.toString()
        

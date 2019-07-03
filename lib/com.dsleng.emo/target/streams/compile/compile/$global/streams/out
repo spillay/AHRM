@@ -1,34 +1,142 @@
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:4:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:3:19: object model is not a member of package com.dsleng[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.dsleng.model._[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:5:12: object apache is not a member of package org[0m
 [0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.{SparkSession}[0m
 [0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:5:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:6:12: object apache is not a member of package org[0m
 [0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.SaveMode[0m
 [0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:6:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:7:12: object apache is not a member of package org[0m
 [0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.DataFrame[0m
 [0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:7:8: not found: object play[0m
-[0m[[0m[31merror[0m] [0m[0mimport play.api.libs.json._[0m
-[0m[[0m[31merror[0m] [0m[0m       ^[0m
 [0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:8:12: object apache is not a member of package org[0m
-[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.functions.col[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.functions._[0m
 [0m[[0m[31merror[0m] [0m[0m           ^[0m
 [0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:9:12: object apache is not a member of package org[0m
 [0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.SPFunctions.addOneCustomNative[0m
 [0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/SparkHelper.scala:6:8: not found: object play[0m
-[0m[[0m[31merror[0m] [0m[0mimport play.api.libs.json._[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:10:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.SPFunctions.checkforFeature[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:11:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.SPFunctions.checkforFeature2[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:14:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.catalyst.expressions.SPArrayContains[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:15:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.catalyst.expressions.SPArrayContains2[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:16:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.catalyst.expressions.Literal[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:17:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.catalyst.expressions.ArrayContains[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:18:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.catalyst.expressions.Size[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:19:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.types._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:20:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.catalyst.expressions.codegen.CodegenContext[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:21:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.execution.command.ExplainCommand[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:22:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.execution.debug._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:23:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.functions.typedLit[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:24:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.functions.array_contains[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:25:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.serializer.JavaSerializer[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:26:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.catalyst.analysis.{ResolveTimeZone, SimpleAnalyzer}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:27:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.internal.SQLConf[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:30:8: not found: object spray[0m
+[0m[[0m[31merror[0m] [0m[0mimport spray.json._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:31:8: not found: object spray[0m
+[0m[[0m[31merror[0m] [0m[0mimport spray.json.DefaultJsonProtocol._[0m
 [0m[[0m[31merror[0m] [0m[0m       ^[0m
 [0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/SparkHelper.scala:3:12: object apache is not a member of package org[0m
 [0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.{SparkSession}[0m
 [0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/SparkHelper.scala:15:19: not found: type SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/SparkHelper.scala:14:19: not found: type SparkSession[0m
 [0m[[0m[31merror[0m] [0m[0m  lazy val spark: SparkSession = SparkSession[0m
 [0m[[0m[31merror[0m] [0m[0m                  ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:23:9: value toDF is not a member of Seq[(Double, Double, Double, Double, String)][0m
-[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value toDF'?[0m
-[0m[[0m[31merror[0m] [0m[0m      }.toDF(cols: _*)[0m
-[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/SparkHelper.scala:5:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/SparkHelper.scala:61:19: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m  def savePAR(df: DataFrame,output: String){[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:59:38: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m   def process(tokens: Seq[String]): DataFrame = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:75:26: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m   def convertToJson(df: DataFrame): String = {[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:76:21: not found: type EmoData[0m
+[0m[[0m[31merror[0m] [0m[0m      var res = Seq[EmoData]()[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:160:40: not found: type EmoData[0m
+[0m[[0m[31merror[0m] [0m[0m  def getPrime(emo: Seq[EmoData]): Seq[EmoData] = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:160:25: not found: type EmoData[0m
+[0m[[0m[31merror[0m] [0m[0m  def getPrime(emo: Seq[EmoData]): Seq[EmoData] = {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:85:21: not found: type EmoRes[0m
+[0m[[0m[31merror[0m] [0m[0m      val out = new EmoRes(res,prime)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:90:30: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m   def convertToJsonPerf(df: DataFrame): String = {[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:91:21: not found: type EmoData[0m
+[0m[[0m[31merror[0m] [0m[0m      var res = Seq[EmoData]()[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:102:22: not found: type EmoData[0m
+[0m[[0m[31merror[0m] [0m[0m      var prime: Seq[EmoData] = null[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:106:21: not found: type EmoRes[0m
+[0m[[0m[31merror[0m] [0m[0m      val out = new EmoRes(res,prime)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:111:20: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m   def getData(df: DataFrame): String = {[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:112:19: not found: type EmoData[0m
+[0m[[0m[31merror[0m] [0m[0m    var res = Seq[EmoData]()[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:152:20: not found: type EmoData[0m
+[0m[[0m[31merror[0m] [0m[0m    var prime: Seq[EmoData] = null[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:156:19: not found: type EmoRes[0m
+[0m[[0m[31merror[0m] [0m[0m    val out = new EmoRes(res,prime)[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:161:33: not found: type EmoData[0m
+[0m[[0m[31merror[0m] [0m[0m    if (emo.isEmpty) return Seq[EmoData](new EmoData("Unknown",0,Seq[String]()))[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:161:46: not found: type EmoData[0m
+[0m[[0m[31merror[0m] [0m[0m    if (emo.isEmpty) return Seq[EmoData](new EmoData("Unknown",0,Seq[String]()))[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:162:24: diverging implicit expansion for type Ordering[B][0m
+[0m[[0m[31merror[0m] [0m[0mstarting with method Tuple9 in object Ordering[0m
+[0m[[0m[31merror[0m] [0m[0m    val max = emo.maxBy(f => f.count)[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:164:20: not found: type EmoData[0m
+[0m[[0m[31merror[0m] [0m[0m    var prime: Seq[EmoData] = null[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
 [0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:3:12: object apache is not a member of package org[0m
 [0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.SparkSession[0m
 [0m[[0m[31merror[0m] [0m[0m           ^[0m
@@ -59,119 +167,138 @@
 [0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:12:12: object apache is not a member of package org[0m
 [0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.DataFrame[0m
 [0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:15:8: not found: object play[0m
-[0m[[0m[31merror[0m] [0m[0mimport play.api.libs.json._[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:17:8: not found: object spray[0m
+[0m[[0m[31merror[0m] [0m[0mimport spray.json._[0m
 [0m[[0m[31merror[0m] [0m[0m       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:16:8: not found: object play[0m
-[0m[[0m[31merror[0m] [0m[0mimport play.api.libs.functional.syntax._[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:18:8: not found: object spray[0m
+[0m[[0m[31merror[0m] [0m[0mimport spray.json.DefaultJsonProtocol._[0m
 [0m[[0m[31merror[0m] [0m[0m       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:23:39: not found: type Writes[0m
-[0m[[0m[31merror[0m] [0m[0m  implicit val implicitEDWrites = new Writes[EmoData] {[0m
-[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:24:29: not found: type JsValue[0m
-[0m[[0m[31merror[0m] [0m[0m    def writes(o: EmoData): JsValue = {[0m
-[0m[[0m[31merror[0m] [0m[0m                            ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:25:7: not found: value Json[0m
-[0m[[0m[31merror[0m] [0m[0m      Json.obj([0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:34:40: not found: type Writes[0m
-[0m[[0m[31merror[0m] [0m[0m  implicit val implicitResWrites = new Writes[EmoRes] {[0m
-[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:35:28: not found: type JsValue[0m
-[0m[[0m[31merror[0m] [0m[0m    def writes(o: EmoRes): JsValue = {[0m
-[0m[[0m[31merror[0m] [0m[0m                           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:36:7: not found: value Json[0m
-[0m[[0m[31merror[0m] [0m[0m      Json.obj([0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:44:28: not found: type SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:19:19: object model is not a member of package com.dsleng[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.dsleng.model._[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:22:28: not found: type SparkSession[0m
 [0m[[0m[31merror[0m] [0m[0mclass EmoHelper(val spark: SparkSession) {[0m
 [0m[[0m[31merror[0m] [0m[0m                           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:55:22: not found: value udf[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:33:22: not found: value udf[0m
 [0m[[0m[31merror[0m] [0m[0m  def  onlyflatten = udf{list: Seq[String] => list}[0m
 [0m[[0m[31merror[0m] [0m[0m                     ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:57:34: not found: value udf[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:35:34: not found: value udf[0m
 [0m[[0m[31merror[0m] [0m[0m  def compareStrAgainstArray() = udf((str: String, lst: Seq[String], fwords: Seq[String]) =>[0m
 [0m[[0m[31merror[0m] [0m[0m                                 ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:59:27: not found: value udf[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:37:27: not found: value udf[0m
 [0m[[0m[31merror[0m] [0m[0m  def compareStrArray() = udf((lst1: Seq[String], lst2: Seq[String]) =>[0m
 [0m[[0m[31merror[0m] [0m[0m                          ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:61:20: not found: value udf[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:39:20: not found: value udf[0m
 [0m[[0m[31merror[0m] [0m[0m  def countArr() = udf((lst: Seq[String]) =>[0m
 [0m[[0m[31merror[0m] [0m[0m                   ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:71:63: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:49:63: not found: type DataFrame[0m
 [0m[[0m[31merror[0m] [0m[0m  def processExt(tokens: Seq[String],df_extended: DataFrame): DataFrame = {[0m
 [0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:71:51: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:49:51: not found: type DataFrame[0m
 [0m[[0m[31merror[0m] [0m[0m  def processExt(tokens: Seq[String],df_extended: DataFrame): DataFrame = {[0m
 [0m[[0m[31merror[0m] [0m[0m                                                  ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:79:55: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:57:55: not found: type DataFrame[0m
 [0m[[0m[31merror[0m] [0m[0m  def processLIWC(tokens: Seq[String],df: DataFrame): DataFrame = {[0m
 [0m[[0m[31merror[0m] [0m[0m                                                      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:79:43: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:57:43: not found: type DataFrame[0m
 [0m[[0m[31merror[0m] [0m[0m  def processLIWC(tokens: Seq[String],df: DataFrame): DataFrame = {[0m
 [0m[[0m[31merror[0m] [0m[0m                                          ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:87:81: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:65:81: not found: type DataFrame[0m
 [0m[[0m[31merror[0m] [0m[0m  def processConvert(tokens: Seq[String],df: DataFrame,df_extended: DataFrame): DataFrame = {[0m
 [0m[[0m[31merror[0m] [0m[0m                                                                                ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:87:46: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:65:46: not found: type DataFrame[0m
 [0m[[0m[31merror[0m] [0m[0m  def processConvert(tokens: Seq[String],df: DataFrame,df_extended: DataFrame): DataFrame = {[0m
 [0m[[0m[31merror[0m] [0m[0m                                             ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:87:69: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:65:69: not found: type DataFrame[0m
 [0m[[0m[31merror[0m] [0m[0m  def processConvert(tokens: Seq[String],df: DataFrame,df_extended: DataFrame): DataFrame = {[0m
 [0m[[0m[31merror[0m] [0m[0m                                                                    ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:105:24: not found: value udf[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:83:24: not found: value udf[0m
 [0m[[0m[31merror[0m] [0m[0m    val strLengthUdf = udf(strLength _)[0m
 [0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:121:9: value toDF is not a member of Seq[(Double, Double, Double, Double, String)][0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:99:9: value toDF is not a member of Seq[(Double, Double, Double, Double, String)][0m
 [0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value toDF'?[0m
 [0m[[0m[31merror[0m] [0m[0m      }.toDF(cols: _*)[0m
 [0m[[0m[31merror[0m] [0m[0m        ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:125:38: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:103:38: not found: type DataFrame[0m
 [0m[[0m[31merror[0m] [0m[0m  def process2(tokens: Seq[String]): DataFrame = {[0m
 [0m[[0m[31merror[0m] [0m[0m                                     ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:166:19: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:144:19: not found: type DataFrame[0m
 [0m[[0m[31merror[0m] [0m[0m  def getData(df: DataFrame): String = {[0m
 [0m[[0m[31merror[0m] [0m[0m                  ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:216:14: not found: value Json[0m
-[0m[[0m[31merror[0m] [0m[0m    val js = Json.toJson(out)[0m
-[0m[[0m[31merror[0m] [0m[0m             ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:259:39: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:152:19: not found: type EmoData[0m
+[0m[[0m[31merror[0m] [0m[0m    var res = Seq[EmoData]()[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:197:40: not found: type EmoData[0m
+[0m[[0m[31merror[0m] [0m[0m  def getPrime(emo: Seq[EmoData]): Seq[EmoData] = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:197:25: not found: type EmoData[0m
+[0m[[0m[31merror[0m] [0m[0m  def getPrime(emo: Seq[EmoData]): Seq[EmoData] = {[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:193:19: not found: type EmoRes[0m
+[0m[[0m[31merror[0m] [0m[0m    val out = new EmoRes(res,prime)[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:198:33: not found: type EmoData[0m
+[0m[[0m[31merror[0m] [0m[0m    if (emo.isEmpty) return Seq[EmoData](new EmoData("Unknown",0,Seq[String]()))[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:198:46: not found: type EmoData[0m
+[0m[[0m[31merror[0m] [0m[0m    if (emo.isEmpty) return Seq[EmoData](new EmoData("Unknown",0,Seq[String]()))[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:199:24: diverging implicit expansion for type Ordering[B][0m
+[0m[[0m[31merror[0m] [0m[0mstarting with method Tuple9 in object Ordering[0m
+[0m[[0m[31merror[0m] [0m[0m    val max = emo.maxBy(f => f.count)[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:201:20: not found: type EmoData[0m
+[0m[[0m[31merror[0m] [0m[0m    var prime: Seq[EmoData] = null[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:237:39: not found: type DataFrame[0m
 [0m[[0m[31merror[0m] [0m[0m  def TranslateStruct(df: DataFrame): DataFrame = {[0m
 [0m[[0m[31merror[0m] [0m[0m                                      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:259:27: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:237:27: not found: type DataFrame[0m
 [0m[[0m[31merror[0m] [0m[0m  def TranslateStruct(df: DataFrame): DataFrame = {[0m
 [0m[[0m[31merror[0m] [0m[0m                          ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:267:15: value toDF is not a member of scala.collection.mutable.MutableList[com.dsleng.emo.helper.Emo][0m
-[0m[[0m[31merror[0m] [0m[0m    return nr.toDF()[0m
-[0m[[0m[31merror[0m] [0m[0m              ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/SparkHelper.scala:4:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/EmoHelper.scala:238:26: not found: type Emo[0m
+[0m[[0m[31merror[0m] [0m[0m    var nr = MutableList[Emo]()[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala:3:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.{SparkSession}[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala:4:12: object apache is not a member of package org[0m
 [0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.SaveMode[0m
 [0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/SparkHelper.scala:5:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala:5:12: object apache is not a member of package org[0m
 [0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.DataFrame[0m
 [0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/SparkHelper.scala:15:34: not found: value SparkSession[0m
-[0m[[0m[31merror[0m] [0m[0m  lazy val spark: SparkSession = SparkSession[0m
-[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/SparkHelper.scala:47:19: not found: type DataFrame[0m
-[0m[[0m[31merror[0m] [0m[0m  def saveCSV(df: DataFrame,output: String){[0m
-[0m[[0m[31merror[0m] [0m[0m                  ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/SparkHelper.scala:61:19: not found: type DataFrame[0m
-[0m[[0m[31merror[0m] [0m[0m  def savePAR(df: DataFrame,output: String){[0m
-[0m[[0m[31merror[0m] [0m[0m                  ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/SparkHelper.scala:64:47: not found: type DataFrame[0m
-[0m[[0m[31merror[0m] [0m[0m  def loadCSV(name: String, header: Boolean): DataFrame = {[0m
-[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/SparkHelper.scala:73:31: not found: type DataFrame[0m
-[0m[[0m[31merror[0m] [0m[0m  def loadJSON(name: String): DataFrame = {[0m
-[0m[[0m[31merror[0m] [0m[0m                              ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Transformers.scala:3:12: object apache is not a member of package org[0m
-[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.functions.udf[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala:6:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.functions._[0m
 [0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Transformers.scala:7:15: not found: value udf[0m
-[0m[[0m[31merror[0m] [0m[0m  val test2 = udf{list: String => list}[0m
-[0m[[0m[31merror[0m] [0m[0m              ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Transformers.scala:8:15: not found: value udf[0m
-[0m[[0m[31merror[0m] [0m[0m  val test3 = udf{list: Float => list}[0m
-[0m[[0m[31merror[0m] [0m[0m              ^[0m
-[0m[[0m[31merror[0m] [0m[0m58 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala:7:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.SPFunctions.addOneCustomNative[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala:8:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.SPFunctions.checkforFeature[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala:9:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.SPFunctions.checkforFeature2[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala:12:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.catalyst.expressions.SPArrayContains[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala:13:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.catalyst.expressions.SPArrayContains2[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala:14:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.catalyst.expressions.Literal[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala:15:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.catalyst.expressions.ArrayContains[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala:16:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.catalyst.expressions.Size[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala:17:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.types._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala:18:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.catalyst.expressions.codegen.CodegenContext[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m150 errors found[0m

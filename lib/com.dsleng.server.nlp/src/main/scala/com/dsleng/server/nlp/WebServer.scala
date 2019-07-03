@@ -13,7 +13,7 @@ import spray.json.DefaultJsonProtocol._
 import com.dsleng.nlp.SimplePL
 import com.dsleng.email.ModelJsonImplicits._
 import com.dsleng.email.SimpleEmailExt
-import com.dsleng.model.EmoEmailCtl
+import com.dsleng.model.{EmoEmailCtl,NLPDataCtl,TokenDataCtl}
 import com.dsleng.model.CtlJsonImplicits._
 
 @ApiMayChange
@@ -42,9 +42,10 @@ object WebServer extends HttpApp {
           //println(param)
           val model = param.parseJson.convertTo[SimpleEmailExt]
           val res = simplePL.processSentence(model.model.textContent)
-          val result = new EmoEmailCtl(model,res)
+          val nlp = res.parseJson.convertTo[NLPDataCtl]
+          val result = new TokenDataCtl(model,nlp)
           //val result = "not yet"
-          val resp: ResponseEntity = HttpEntity(ContentTypes.`application/json`,res)
+          val resp: ResponseEntity = HttpEntity(ContentTypes.`application/json`,result.toJson.toString())
           complete(HttpResponse(StatusCodes.OK, entity = resp))
         }
        }
