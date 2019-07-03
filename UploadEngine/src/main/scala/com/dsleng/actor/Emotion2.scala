@@ -20,10 +20,10 @@ import akka.stream.scaladsl._
 
 import scala.concurrent.Future
 import scala.util.Try
-import com.dsleng.emo.helper.{TokenCtl,EmoEmailCtl}
+import com.dsleng.model.{TokenCtl,EmoEmailCtl}
  //   ws.url("http://localhost:5001/emo/tokens").post(js).map{response =>
 import spray.json._
-import com.dsleng.emo.helper.CtlJsonImplicits._
+import com.dsleng.model.CtlJsonImplicits._
 
 object Emotion2 {
   def props: Props = Props[Emotion2]

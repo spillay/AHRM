@@ -8,21 +8,6 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/com.typesafe.play/play-json_2.12/2.8.0-M1/65c9dff001a80e3192397b374d03645104947fee/play-json_2.12-2.8.0-M1.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/com.typesafe.play/play-json_2.12/2.8.0-M1/a5fe4d4bf7e6f1349f155c909fb8b3d7ba5fc66c/play-json_2.12-2.8.0-M1-sources.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/spark/spark-core_2.12/2.4.3/spark-core_2.12-2.4.3.jar" sourcepath="/home/suresh/.m2/repository/org/apache/spark/spark-core_2.12/2.4.3/spark-core_2.12-2.4.3-sources.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-scala_2.12/2.9.9/a2029daaea881bb310f04b3a95234e4148b18546/jackson-module-scala_2.12-2.9.9.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-scala_2.12/2.9.9/e5325479e14cefa79d17e4e50eca341be61baefd/jackson-module-scala_2.12-2.9.9-sources.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.scalanlp/breeze_2.12/1.0-RC2/bc2033dc00241e638fa26367efebcac4ad575113/breeze_2.12-1.0-RC2.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.scalanlp/breeze_2.12/1.0-RC2/41aa49d10ee8ebae840ec35a2bc2c1d85fb5bf65/breeze_2.12-1.0-RC2-sources.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
@@ -34,6 +19,16 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.scalanlp/breeze-macros_2.12/1.0-RC2/b80f738db00cb567aba0e78a1f3daa5a7a45a4e0/breeze-macros_2.12-1.0-RC2.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.scalanlp/breeze-macros_2.12/1.0-RC2/a53d0572a262b82594df7dec64101cd8d6dc3423/breeze-macros_2.12-1.0-RC2-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/spark/spark-core_2.12/2.4.3/spark-core_2.12-2.4.3.jar" sourcepath="/home/suresh/.m2/repository/org/apache/spark/spark-core_2.12/2.4.3/spark-core_2.12-2.4.3-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/fasterxml/jackson/module/jackson-module-scala_2.12/2.6.7.1/jackson-module-scala_2.12-2.6.7.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -59,11 +54,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.12/1.1.2/2ad65ccbeed662b51e2b96221cb4e7d7d6b7b87a/scala-parser-combinators_2.12-1.1.2.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.scala-lang.modules/scala-parser-combinators_2.12/1.1.2/17be9d543fa1f7f01d57722cc37d0c4024a15f69/scala-parser-combinators_2.12-1.1.2-sources.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/com.typesafe.play/play-functional_2.12/2.8.0-M1/7b8c6640412ec252d7b309241f6baeacd0542f20/play-functional_2.12-2.8.0-M1.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/com.typesafe.play/play-functional_2.12/2.8.0-M1/e704a9c99d55835cde0a67ef7ec513c50ae5689b/play-functional_2.12-2.8.0-M1-sources.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -151,46 +141,6 @@
 	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.11.2/f5e9a2ffca496057d6891a3de65128efc636e26e/log4j-api-2.11.2.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.11.2/a11bdc0e8f95da31527b4f34f1a35c23e197498d/log4j-api-2.11.2-sources.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.10.2/a079fc39ccc3de02acdeb7117443e5d9bd431687/joda-time-2.10.2.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.10.2/fbf6cbd712c30629c77cefa42fe15ca888e609d5/joda-time-2.10.2-sources.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.9.9/4b04126963103216c9c43b0f34bbc36315654204/jackson-datatype-jdk8-2.9.9.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.9.9/dd2a21d5d75b2ac56da7508780c8acf88b727d15/jackson-datatype-jdk8-2.9.9-sources.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.9.9/a33df137557793b0404a486888dbe049f7abeeeb/jackson-datatype-jsr310-2.9.9.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.9.9/5846120b788392577d357eba5d3ca1cb766469aa/jackson-datatype-jsr310-2.9.9-sources.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-paranamer/2.9.9/a99b9809c0d45072ca9911eead00ecee946ba06a/jackson-module-paranamer-2.9.9.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-paranamer/2.9.9/a591061598dd6472cb48b0321a1dab44af1e0f93/jackson-module-paranamer-2.9.9-sources.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/io/dropwizard/metrics/metrics-json/3.1.5/metrics-json-3.1.5.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.9/d6eb9817d9c7289a91f043ac5ee02a6b3cc86238/jackson-databind-2.9.9.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.9/8b717e1bc24a642cee070ae3860f04eb20c92779/jackson-databind-2.9.9-sources.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.9/bfff5af9fb8347d26bbb7959cb9b4fe9a2b0ca5e/jackson-core-2.9.9.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.9/c8a91180aef81d62f44b27cef42bacb168871a4c/jackson-core-2.9.9-sources.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.9/2ea299c145207161c212e28abbc8f513fa245940/jackson-annotations-2.9.9.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.9/4ac77aa5799fcf00a9cde00cd7da4d08bdc038ff/jackson-annotations-2.9.9-sources.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/hadoop/hadoop-client/2.6.5/hadoop-client-2.6.5.jar">
@@ -354,6 +304,11 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/home/suresh/.m2/repository/io/dropwizard/metrics/metrics-jvm/3.1.5/metrics-jvm-3.1.5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/io/dropwizard/metrics/metrics-json/3.1.5/metrics-json-3.1.5.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -573,6 +528,11 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.4/1c36c81e79cacdf48116afba8495e3393d267ba1/jackson-databind-2.8.4.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.4/2b4edfb6d6bad1710951837b4911eddd1415228f/jackson-databind-2.8.4-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/apache/ivy/ivy/2.4.0/ivy-2.4.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
@@ -608,11 +568,6 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/htrace/htrace-core/3.0.4/htrace-core-3.0.4.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
@@ -633,6 +588,16 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.4/ca365c0817cc345ea831cae7c4e9b42a72b32281/jackson-core-2.8.4.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.4/2b19a5be7b533aea3a4b7931ee518d5642c5c513/jackson-core-2.8.4-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.0/45b426f7796b741035581a176744d91090e2e6fb/jackson-annotations-2.8.0.jar" sourcepath="/home/suresh/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.0/29a1a95363d497e856c0a7d682e4f7973e334068/jackson-annotations-2.8.0-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
@@ -649,6 +614,16 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/home/suresh/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/fasterxml/jackson/module/jackson-module-paranamer/2.7.9/jackson-module-paranamer-2.7.9.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/suresh/.m2/repository/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>

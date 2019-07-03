@@ -175,7 +175,6 @@ public class SimplePL {
         }
         JSONArray tswArray = this.convertArray(tokensSW);
         obj.put("tokensSW", tswArray);
-        
         return obj.toString();
 
 	}

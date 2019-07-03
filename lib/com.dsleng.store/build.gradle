@@ -1,8 +1,18 @@
 dependencies {
-	compile group: 'org.elasticsearch.client', name: 'elasticsearch-rest-high-level-client', version: '6.4.1'
-    compile group: 'org.elasticsearch.client', name: 'elasticsearch-rest-client', version: '6.4.1'
-    compile group: 'org.elasticsearch', name: 'elasticsearch', version: '6.4.1'
+	//compile group: 'org.elasticsearch.client', name: 'elasticsearch-rest-high-level-client', version: '7.2.0'
+    //compile group: 'org.elasticsearch.client', name: 'elasticsearch-rest-client', version: '7.2.0'
+    //compile group: 'org.elasticsearch', name: 'elasticsearch', version: '7.2.0'
+    
+    compile 'org.elasticsearch.client:elasticsearch-rest-high-level-client:7.2.0'
+    compile 'org.elasticsearch:elasticsearch:7.2.0'
     compile group: 'org.mongodb.scala', name: 'mongo-scala-driver_2.12', version: '2.6.0'
     compile group: 'com.sfxcode.nosql', name: 'simple-mongo_2.12', version: '1.6.3-SNAPSHOT'
+    compile group: 'io.spray', name: 'spray-json_2.12', version: '1.3.5'
+    compile group: 'org.apache.lucene', name: 'lucene-core', version: '4.10.3'
 	compile project(":com.dsleng.model")
+}
+task runIT(type: JavaExec) {
+   classpath = files('build/libs/com.dsleng.store-1.0.jar')
+   classpath += sourceSets.main.runtimeClasspath
+   main = 'com.dsleng.store.es.Feeder'
 }

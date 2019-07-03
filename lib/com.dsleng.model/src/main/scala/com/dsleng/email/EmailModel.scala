@@ -358,27 +358,27 @@ case class SimpleEmailExt(
     var ec: String="",
     var department: String ="Unassigned",
     product: Array[String] = Array[String]()) {
-  println("Emotions +++++++++++++++++++++++++++++++++++++++++++++++++" + emotions)
-  if (emotions != "none"){ 
-    //val res = emotions.parseJson
-    val obj = emotions.parseJson //Json.parse(emotions)
-    println(obj)
-    val res = obj.convertTo[Map[String, String]]
-    println(res)
-    this.prime = res("prime")
-    //this.prime = obj.\("prime").as[String]
-    this.prime = this.prime.replaceAll("\"", "")
-    
-    var n = res("norm")
-    //var n = obj.\("norm")
-    
-    
-    this.norm = res("norm")
-    //this.norm = obj.\("norm").as[String]
-    
-    this.ec = res("ec")
-    //this.ec = obj.\("ec").as[String]
-  }
+    println("Emotions +++++++++++++++++++++++++++++++++++++++++++++++++" + emotions)
+//  if (emotions != "none"){ 
+//    //val res = emotions.parseJson
+//    val obj = emotions.parseJson //Json.parse(emotions)
+//    println(obj)
+//    val res = obj.convertTo[Map[String, String]]
+//    println(res)
+//    this.prime = res("prime")
+//    //this.prime = obj.\("prime").as[String]
+//    this.prime = this.prime.replaceAll("\"", "")
+//    
+//    var n = res("norm")
+//    //var n = obj.\("norm")
+//    
+//    
+//    this.norm = res("norm")
+//    //this.norm = obj.\("norm").as[String]
+//    
+//    this.ec = res("ec")
+//    //this.ec = obj.\("ec").as[String]
+//  }
  
   
 }

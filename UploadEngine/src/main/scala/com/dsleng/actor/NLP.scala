@@ -1,6 +1,7 @@
 package com.dsleng.actor
 
 import akka.actor.{ Actor, ActorLogging, ActorRef, ActorSystem, Props,PoisonPill }
+import akka.stream.{ ActorMaterializer, ActorMaterializerSettings }
 import akka.http.scaladsl.unmarshalling.Unmarshal
 import com.dsleng.akka.pattern.ReaperWatched
 import com.dsleng.akka.pattern.Reaper
@@ -13,12 +14,15 @@ import akka.stream.ActorMaterializer
 
 import akka.http.scaladsl.model._
 import akka.http.scaladsl.Http
-import com.dsleng.nlp.SimplePL
+
 import scala.collection.JavaConversions._
-import com.dsleng.emo.helper.{TokenCtl,EmailCtl,TokenStrCtl}
+import com.dsleng.model.{TokenCtl,EmailCtl,TokenStrCtl,NLPDataCtl}
+import com.dsleng.email.SimpleEmailExt
 import spray.json._
 import spray.json.DefaultJsonProtocol._
- //   ws.url("http://localhost:5001/emo/tokens").post(js).map{response =>
+import com.dsleng.email.ModelJsonImplicits._
+import akka.util.ByteString
+
 
 object NLP {
   def props: Props = Props[NLP]
@@ -26,11 +30,13 @@ object NLP {
 
 class NLP extends Actor with ActorLogging with ReaperWatched {
   import NLP._
+  import akka.pattern.pipe
+  import context.dispatcher
   
-  //implicit val materializer = ActorMaterializer()
-  //implicit val executionContext = context.system.dispatcher
-  //implicit val system = context.system
-  val simplePL = new SimplePL(SimplePL.nltk_sw,true)
+  final implicit val materializer: ActorMaterializer = ActorMaterializer(ActorMaterializerSettings(context.system))
+
+  val http = Http(context.system)
+  
   
   def receive = {
     case "start" =>
@@ -40,22 +46,43 @@ class NLP extends Actor with ActorLogging with ReaperWatched {
     case EmailCtl(model) =>
       log.debug("Message received (from " + sender() + "): ++++++++++++++++++++++++++++++++++++++++++++++++++++++")
        
-      var msg = model.model.textContent
+      var msg = model.toJson
 //      if (msg.length() > 2000){
 //        msg = msg.substring(0, 2000)
 //      }
-      log.info(model.fileName + " length: " + msg.length())
-      val res = simplePL.processSentence(msg)
-      log.debug(res)
-      val obj = res.parseJson //Json.parse(res)
-      val jr = obj.convertTo[Map[String, List[String]]]
-      val toks = jr("tokensSW")
+      val requestEntity = HttpEntity(MediaTypes.`application/json`, msg.toString())
+      val req = HttpRequest(
+              method = HttpMethods.POST,
+              //uri = "/emo",
+              uri = "http://localhost:9012/nlp",
+              entity = requestEntity
+      )
+      println("before firing")
+      http.singleRequest(req).pipeTo(self)
       
-      //val reader = context.actorSelection("akka://UploadEngine/user/Reader")
-      //reader ! "complete"
       
-      val emotion = context.actorSelection("akka://UploadEngine/user/Reader/Emotion")
-      emotion ! new TokenCtl(model,new TokenStrCtl(toks))
+      
+      
+    case HttpResponse(StatusCodes.OK, headers, entity, _) =>
+      entity.dataBytes.runFold(ByteString(""))(_ ++ _).foreach { body =>
+        println("Got response, body: " + body.utf8String)
+        val output = body.utf8String
+        val jObj = output.parseJson.asJsObject
+        val nlp = jObj.getFields("emotion","model")
+        
+        nlp(0).asJsObject.convertTo[NLPDataCtl]
+        
+        val toks = JsArray(nlp(0).asJsObject.getFields("tokens")(0))
+        val model = jObj.getFields("model")(0).convertTo[SimpleEmailExt]
+        
+        
+        val emotion = context.actorSelection("akka://UploadEngine/user/Reader/Emotion")
+        
+        //emotion ! new TokenCtl(model,new TokenStrCtl(toks))
+      }
+    case resp @ HttpResponse(code, _, _, _) =>
+      println("Request failed, response code: " + code)
+      resp.discardEntityBytes()
       
   }
   override def postStop(): Unit = {println("Stopping Emotion")}

@@ -1,0 +1,649 @@
+INFO UploadEngine-akka.actor.default-dispatcher-3 akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 akka.event.EventStream - logger log1-Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 akka.event.EventStream - Default Loggers started
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.actor.Reader - Processing instruction received (from Actor[akka://UploadEngine/deadLetters]): 
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Email#-1483413226]
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader#1758249981]
+DEBUG UploadEngine-akka.actor.default-dispatcher-7 com.typesafe.sslconfig.akka.AkkaSSLConfig - Initializing AkkaSSLConfig extension...
+DEBUG UploadEngine-akka.actor.default-dispatcher-7 com.typesafe.sslconfig.akka.AkkaSSLConfig - buildHostnameVerifier: created hostname verifier: com.typesafe.sslconfig.ssl.DefaultHostnameVerifier@1ef6c1c1
+INFO UploadEngine-akka.actor.default-dispatcher-4 edu.stanford.nlp.pipeline.StanfordCoreNLP - Registering annotator stopword with class com.dsleng.nlp.annotator.StopWord
+INFO UploadEngine-akka.actor.default-dispatcher-4 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+INFO UploadEngine-akka.actor.default-dispatcher-4 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+INFO UploadEngine-akka.actor.default-dispatcher-4 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator stopword
+ERROR UploadEngine-akka.actor.default-dispatcher-4 akka.actor.OneForOneStrategy - MetaClass couldn't create public com.dsleng.nlp.annotator.StopWord(java.lang.String,java.util.Properties) with args [stopword, {stopword-list=i,me,my,myself,we,our,ours,ourselves,you,you're,you've,you'll,you'd,your,yours,yourself,yourselves,he,him,his,himself,she,she's,her,hers,herself,it,it's,its,itself,they,them,their,theirs,themselves,what,which,who,whom,this,that,that'll,these,those,am,is,are,was,were,be,been,being,have,has,had,having,do,does,did,doing,a,an,the,and,but,if,or,because,as,until,while,of,at,by,for,with,about,against,between,into,through,during,before,after,above,below,to,from,up,down,in,out,on,off,over,under,again,further,then,once,here,there,when,where,why,how,all,any,both,each,few,more,most,other,some,such,no,nor,not,only,own,same,so,than,too,very,s,t,can,will,just,don,don't,'should',should've,now,d,ll,m,o,re,ve,y,ain,aren,aren't,couldn, couldn't,didn, didn't,doesn,doesn't,hadn, hadn't,hasn,hasn't,haven,haven't,isn,isn't,ma,mightn,mightn't,mustn,mustn't,needn,needn't,shan,shan't,shouldn,shouldn't,wasn,wasn't,weren,weren't,won, won't,wouldn,wouldn't, customAnnotatorClass.stopword=com.dsleng.nlp.annotator.StopWord, annotators=tokenize, ssplit,stopword}]
+akka.actor.ActorInitializationException: akka://UploadEngine/user/Reader/NLP: exception during creation
+	at akka.actor.ActorInitializationException$.apply(Actor.scala:193)
+	at akka.actor.ActorCell.create(ActorCell.scala:673)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:527)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:549)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:283)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: edu.stanford.nlp.util.MetaClass$ClassCreationException: MetaClass couldn't create public com.dsleng.nlp.annotator.StopWord(java.lang.String,java.util.Properties) with args [stopword, {stopword-list=i,me,my,myself,we,our,ours,ourselves,you,you're,you've,you'll,you'd,your,yours,yourself,yourselves,he,him,his,himself,she,she's,her,hers,herself,it,it's,its,itself,they,them,their,theirs,themselves,what,which,who,whom,this,that,that'll,these,those,am,is,are,was,were,be,been,being,have,has,had,having,do,does,did,doing,a,an,the,and,but,if,or,because,as,until,while,of,at,by,for,with,about,against,between,into,through,during,before,after,above,below,to,from,up,down,in,out,on,off,over,under,again,further,then,once,here,there,when,where,why,how,all,any,both,each,few,more,most,other,some,such,no,nor,not,only,own,same,so,than,too,very,s,t,can,will,just,don,don't,'should',should've,now,d,ll,m,o,re,ve,y,ain,aren,aren't,couldn, couldn't,didn, didn't,doesn,doesn't,hadn, hadn't,hasn,hasn't,haven,haven't,isn,isn't,ma,mightn,mightn't,mustn,mustn't,needn,needn't,shan,shan't,shouldn,shouldn't,wasn,wasn't,weren,weren't,won, won't,wouldn,wouldn't, customAnnotatorClass.stopword=com.dsleng.nlp.annotator.StopWord, annotators=tokenize, ssplit,stopword}]
+	at edu.stanford.nlp.util.MetaClass$ClassFactory.createInstance(MetaClass.java:237)
+	at edu.stanford.nlp.util.MetaClass.createInstance(MetaClass.java:382)
+	at edu.stanford.nlp.pipeline.AnnotatorImplementations.custom(AnnotatorImplementations.java:141)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.lambda$null$28(StanfordCoreNLP.java:583)
+	at edu.stanford.nlp.util.Lazy$3.compute(Lazy.java:126)
+	at edu.stanford.nlp.util.Lazy.get(Lazy.java:31)
+	at edu.stanford.nlp.pipeline.AnnotatorPool.get(AnnotatorPool.java:149)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:251)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:192)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:188)
+	at com.dsleng.nlp.SimplePL.<init>(SimplePL.java:68)
+	at com.dsleng.actor.NLP.<init>(NLP.scala:33)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at akka.util.Reflect$.instantiate(Reflect.scala:45)
+	at akka.actor.NoArgsReflectConstructor.produce(IndirectActorProducer.scala:105)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:628)
+	at akka.actor.ActorCell.create(ActorCell.scala:654)
+	... 9 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.stanford.nlp.util.MetaClass$ClassFactory.createInstance(MetaClass.java:233)
+	... 30 more
+Caused by: java.lang.NoSuchFieldError: LUCENE_3_1
+	at org.apache.lucene.analysis.util.CharacterUtils.getInstance(CharacterUtils.java:50)
+	at org.apache.lucene.analysis.util.CharArrayMap.<init>(CharArrayMap.java:89)
+	at org.apache.lucene.analysis.util.CharArrayMap.<init>(CharArrayMap.java:74)
+	at org.apache.lucene.analysis.util.CharArrayMap$EmptyCharArrayMap.<init>(CharArrayMap.java:675)
+	at org.apache.lucene.analysis.util.CharArrayMap.<clinit>(CharArrayMap.java:54)
+	at org.apache.lucene.analysis.util.CharArraySet.<clinit>(CharArraySet.java:59)
+	at com.dsleng.nlp.annotator.StopWord.getStopWordList(StopWord.java:88)
+	at com.dsleng.nlp.annotator.StopWord.<init>(StopWord.java:43)
+	... 35 more
+INFO UploadEngine-akka.actor.default-dispatcher-5 akka.actor.LocalActorRef - Message [java.lang.String] from Actor[akka://UploadEngine/user/Reader#1758249981] to Actor[akka://UploadEngine/user/Reader/NLP#2053208091] was not delivered. [1] dead letters encountered. If this is not an expected behavior, then [Actor[akka://UploadEngine/user/Reader/NLP#2053208091]] may have terminated unexpectedly, This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+INFO UploadEngine-akka.actor.default-dispatcher-2 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Emotion#1033394072]
+INFO UploadEngine-akka.actor.default-dispatcher-6 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Store#-237516775]
+INFO UploadEngine-akka.actor.default-dispatcher-2 akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.event.EventStream - logger log1-Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.event.EventStream - Default Loggers started
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.actor.Reader - Processing instruction received (from Actor[akka://UploadEngine/deadLetters]): 
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Email#-1614053131]
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader#311151603]
+DEBUG UploadEngine-akka.actor.default-dispatcher-7 com.typesafe.sslconfig.akka.AkkaSSLConfig - Initializing AkkaSSLConfig extension...
+DEBUG UploadEngine-akka.actor.default-dispatcher-7 com.typesafe.sslconfig.akka.AkkaSSLConfig - buildHostnameVerifier: created hostname verifier: com.typesafe.sslconfig.ssl.DefaultHostnameVerifier@520a75f0
+INFO UploadEngine-akka.actor.default-dispatcher-5 edu.stanford.nlp.pipeline.StanfordCoreNLP - Registering annotator stopword with class com.dsleng.nlp.annotator.StopWord
+INFO UploadEngine-akka.actor.default-dispatcher-5 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+INFO UploadEngine-akka.actor.default-dispatcher-5 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+INFO UploadEngine-akka.actor.default-dispatcher-5 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator stopword
+ERROR UploadEngine-akka.actor.default-dispatcher-5 akka.actor.OneForOneStrategy - MetaClass couldn't create public com.dsleng.nlp.annotator.StopWord(java.lang.String,java.util.Properties) with args [stopword, {stopword-list=i,me,my,myself,we,our,ours,ourselves,you,you're,you've,you'll,you'd,your,yours,yourself,yourselves,he,him,his,himself,she,she's,her,hers,herself,it,it's,its,itself,they,them,their,theirs,themselves,what,which,who,whom,this,that,that'll,these,those,am,is,are,was,were,be,been,being,have,has,had,having,do,does,did,doing,a,an,the,and,but,if,or,because,as,until,while,of,at,by,for,with,about,against,between,into,through,during,before,after,above,below,to,from,up,down,in,out,on,off,over,under,again,further,then,once,here,there,when,where,why,how,all,any,both,each,few,more,most,other,some,such,no,nor,not,only,own,same,so,than,too,very,s,t,can,will,just,don,don't,'should',should've,now,d,ll,m,o,re,ve,y,ain,aren,aren't,couldn, couldn't,didn, didn't,doesn,doesn't,hadn, hadn't,hasn,hasn't,haven,haven't,isn,isn't,ma,mightn,mightn't,mustn,mustn't,needn,needn't,shan,shan't,shouldn,shouldn't,wasn,wasn't,weren,weren't,won, won't,wouldn,wouldn't, customAnnotatorClass.stopword=com.dsleng.nlp.annotator.StopWord, annotators=tokenize, ssplit,stopword}]
+akka.actor.ActorInitializationException: akka://UploadEngine/user/Reader/NLP: exception during creation
+	at akka.actor.ActorInitializationException$.apply(Actor.scala:193)
+	at akka.actor.ActorCell.create(ActorCell.scala:673)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:527)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:549)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:283)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: edu.stanford.nlp.util.MetaClass$ClassCreationException: MetaClass couldn't create public com.dsleng.nlp.annotator.StopWord(java.lang.String,java.util.Properties) with args [stopword, {stopword-list=i,me,my,myself,we,our,ours,ourselves,you,you're,you've,you'll,you'd,your,yours,yourself,yourselves,he,him,his,himself,she,she's,her,hers,herself,it,it's,its,itself,they,them,their,theirs,themselves,what,which,who,whom,this,that,that'll,these,those,am,is,are,was,were,be,been,being,have,has,had,having,do,does,did,doing,a,an,the,and,but,if,or,because,as,until,while,of,at,by,for,with,about,against,between,into,through,during,before,after,above,below,to,from,up,down,in,out,on,off,over,under,again,further,then,once,here,there,when,where,why,how,all,any,both,each,few,more,most,other,some,such,no,nor,not,only,own,same,so,than,too,very,s,t,can,will,just,don,don't,'should',should've,now,d,ll,m,o,re,ve,y,ain,aren,aren't,couldn, couldn't,didn, didn't,doesn,doesn't,hadn, hadn't,hasn,hasn't,haven,haven't,isn,isn't,ma,mightn,mightn't,mustn,mustn't,needn,needn't,shan,shan't,shouldn,shouldn't,wasn,wasn't,weren,weren't,won, won't,wouldn,wouldn't, customAnnotatorClass.stopword=com.dsleng.nlp.annotator.StopWord, annotators=tokenize, ssplit,stopword}]
+	at edu.stanford.nlp.util.MetaClass$ClassFactory.createInstance(MetaClass.java:237)
+	at edu.stanford.nlp.util.MetaClass.createInstance(MetaClass.java:382)
+	at edu.stanford.nlp.pipeline.AnnotatorImplementations.custom(AnnotatorImplementations.java:141)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.lambda$null$28(StanfordCoreNLP.java:583)
+	at edu.stanford.nlp.util.Lazy$3.compute(Lazy.java:126)
+	at edu.stanford.nlp.util.Lazy.get(Lazy.java:31)
+	at edu.stanford.nlp.pipeline.AnnotatorPool.get(AnnotatorPool.java:149)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:251)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:192)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:188)
+	at com.dsleng.nlp.SimplePL.<init>(SimplePL.java:68)
+	at com.dsleng.actor.NLP.<init>(NLP.scala:33)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at akka.util.Reflect$.instantiate(Reflect.scala:45)
+	at akka.actor.NoArgsReflectConstructor.produce(IndirectActorProducer.scala:105)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:628)
+	at akka.actor.ActorCell.create(ActorCell.scala:654)
+	... 9 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.stanford.nlp.util.MetaClass$ClassFactory.createInstance(MetaClass.java:233)
+	... 30 more
+Caused by: java.lang.NoClassDefFoundError: org/apache/lucene/analysis/util/CharArraySet
+	at com.dsleng.nlp.annotator.StopWord.getStopWordList(StopWord.java:88)
+	at com.dsleng.nlp.annotator.StopWord.<init>(StopWord.java:43)
+	... 35 more
+Caused by: java.lang.ClassNotFoundException: org.apache.lucene.analysis.util.CharArraySet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 37 more
+INFO UploadEngine-akka.actor.default-dispatcher-5 akka.actor.LocalActorRef - Message [java.lang.String] from Actor[akka://UploadEngine/user/Reader#311151603] to Actor[akka://UploadEngine/user/Reader/NLP#-793752560] was not delivered. [1] dead letters encountered. If this is not an expected behavior, then [Actor[akka://UploadEngine/user/Reader/NLP#-793752560]] may have terminated unexpectedly, This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+INFO UploadEngine-akka.actor.default-dispatcher-3 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Emotion#231455725]
+INFO UploadEngine-akka.actor.default-dispatcher-6 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Store#-2088174403]
+INFO UploadEngine-akka.actor.default-dispatcher-3 akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 akka.event.EventStream - logger log1-Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 akka.event.EventStream - Default Loggers started
+INFO UploadEngine-akka.actor.default-dispatcher-3 com.dsleng.actor.Reader - Processing instruction received (from Actor[akka://UploadEngine/deadLetters]): 
+INFO UploadEngine-akka.actor.default-dispatcher-3 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader#-138653388]
+INFO UploadEngine-akka.actor.default-dispatcher-3 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Email#-1343578278]
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 com.typesafe.sslconfig.akka.AkkaSSLConfig - Initializing AkkaSSLConfig extension...
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 com.typesafe.sslconfig.akka.AkkaSSLConfig - buildHostnameVerifier: created hostname verifier: com.typesafe.sslconfig.ssl.DefaultHostnameVerifier@662f613c
+INFO UploadEngine-akka.actor.default-dispatcher-5 edu.stanford.nlp.pipeline.StanfordCoreNLP - Registering annotator stopword with class com.dsleng.nlp.annotator.StopWord
+INFO UploadEngine-akka.actor.default-dispatcher-5 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+INFO UploadEngine-akka.actor.default-dispatcher-5 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+INFO UploadEngine-akka.actor.default-dispatcher-5 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator stopword
+ERROR UploadEngine-akka.actor.default-dispatcher-5 akka.actor.OneForOneStrategy - MetaClass couldn't create public com.dsleng.nlp.annotator.StopWord(java.lang.String,java.util.Properties) with args [stopword, {stopword-list=i,me,my,myself,we,our,ours,ourselves,you,you're,you've,you'll,you'd,your,yours,yourself,yourselves,he,him,his,himself,she,she's,her,hers,herself,it,it's,its,itself,they,them,their,theirs,themselves,what,which,who,whom,this,that,that'll,these,those,am,is,are,was,were,be,been,being,have,has,had,having,do,does,did,doing,a,an,the,and,but,if,or,because,as,until,while,of,at,by,for,with,about,against,between,into,through,during,before,after,above,below,to,from,up,down,in,out,on,off,over,under,again,further,then,once,here,there,when,where,why,how,all,any,both,each,few,more,most,other,some,such,no,nor,not,only,own,same,so,than,too,very,s,t,can,will,just,don,don't,'should',should've,now,d,ll,m,o,re,ve,y,ain,aren,aren't,couldn, couldn't,didn, didn't,doesn,doesn't,hadn, hadn't,hasn,hasn't,haven,haven't,isn,isn't,ma,mightn,mightn't,mustn,mustn't,needn,needn't,shan,shan't,shouldn,shouldn't,wasn,wasn't,weren,weren't,won, won't,wouldn,wouldn't, customAnnotatorClass.stopword=com.dsleng.nlp.annotator.StopWord, annotators=tokenize, ssplit,stopword}]
+akka.actor.ActorInitializationException: akka://UploadEngine/user/Reader/NLP: exception during creation
+	at akka.actor.ActorInitializationException$.apply(Actor.scala:193)
+	at akka.actor.ActorCell.create(ActorCell.scala:673)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:527)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:549)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:283)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: edu.stanford.nlp.util.MetaClass$ClassCreationException: MetaClass couldn't create public com.dsleng.nlp.annotator.StopWord(java.lang.String,java.util.Properties) with args [stopword, {stopword-list=i,me,my,myself,we,our,ours,ourselves,you,you're,you've,you'll,you'd,your,yours,yourself,yourselves,he,him,his,himself,she,she's,her,hers,herself,it,it's,its,itself,they,them,their,theirs,themselves,what,which,who,whom,this,that,that'll,these,those,am,is,are,was,were,be,been,being,have,has,had,having,do,does,did,doing,a,an,the,and,but,if,or,because,as,until,while,of,at,by,for,with,about,against,between,into,through,during,before,after,above,below,to,from,up,down,in,out,on,off,over,under,again,further,then,once,here,there,when,where,why,how,all,any,both,each,few,more,most,other,some,such,no,nor,not,only,own,same,so,than,too,very,s,t,can,will,just,don,don't,'should',should've,now,d,ll,m,o,re,ve,y,ain,aren,aren't,couldn, couldn't,didn, didn't,doesn,doesn't,hadn, hadn't,hasn,hasn't,haven,haven't,isn,isn't,ma,mightn,mightn't,mustn,mustn't,needn,needn't,shan,shan't,shouldn,shouldn't,wasn,wasn't,weren,weren't,won, won't,wouldn,wouldn't, customAnnotatorClass.stopword=com.dsleng.nlp.annotator.StopWord, annotators=tokenize, ssplit,stopword}]
+	at edu.stanford.nlp.util.MetaClass$ClassFactory.createInstance(MetaClass.java:237)
+	at edu.stanford.nlp.util.MetaClass.createInstance(MetaClass.java:382)
+	at edu.stanford.nlp.pipeline.AnnotatorImplementations.custom(AnnotatorImplementations.java:141)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.lambda$null$28(StanfordCoreNLP.java:583)
+	at edu.stanford.nlp.util.Lazy$3.compute(Lazy.java:126)
+	at edu.stanford.nlp.util.Lazy.get(Lazy.java:31)
+	at edu.stanford.nlp.pipeline.AnnotatorPool.get(AnnotatorPool.java:149)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:251)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:192)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:188)
+	at com.dsleng.nlp.SimplePL.<init>(SimplePL.java:68)
+	at com.dsleng.actor.NLP.<init>(NLP.scala:33)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at akka.util.Reflect$.instantiate(Reflect.scala:45)
+	at akka.actor.NoArgsReflectConstructor.produce(IndirectActorProducer.scala:105)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:628)
+	at akka.actor.ActorCell.create(ActorCell.scala:654)
+	... 9 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.stanford.nlp.util.MetaClass$ClassFactory.createInstance(MetaClass.java:233)
+	... 30 more
+Caused by: java.lang.NoClassDefFoundError: org/apache/lucene/analysis/util/CharArraySet
+	at com.dsleng.nlp.annotator.StopWord.getStopWordList(StopWord.java:88)
+	at com.dsleng.nlp.annotator.StopWord.<init>(StopWord.java:43)
+	... 35 more
+Caused by: java.lang.ClassNotFoundException: org.apache.lucene.analysis.util.CharArraySet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 37 more
+INFO UploadEngine-akka.actor.default-dispatcher-5 akka.actor.LocalActorRef - Message [java.lang.String] from Actor[akka://UploadEngine/user/Reader#-138653388] to Actor[akka://UploadEngine/user/Reader/NLP#2116877246] was not delivered. [1] dead letters encountered. If this is not an expected behavior, then [Actor[akka://UploadEngine/user/Reader/NLP#2116877246]] may have terminated unexpectedly, This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+INFO UploadEngine-akka.actor.default-dispatcher-2 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Emotion#1846927490]
+INFO UploadEngine-akka.actor.default-dispatcher-6 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Store#-724213286]
+INFO UploadEngine-akka.actor.default-dispatcher-3 akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 akka.event.EventStream - logger log1-Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 akka.event.EventStream - Default Loggers started
+INFO UploadEngine-akka.actor.default-dispatcher-3 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader#344004597]
+INFO UploadEngine-akka.actor.default-dispatcher-3 com.dsleng.actor.Reader - Processing instruction received (from Actor[akka://UploadEngine/deadLetters]): 
+INFO UploadEngine-akka.actor.default-dispatcher-3 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Email#331460629]
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 com.typesafe.sslconfig.akka.AkkaSSLConfig - Initializing AkkaSSLConfig extension...
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 com.typesafe.sslconfig.akka.AkkaSSLConfig - buildHostnameVerifier: created hostname verifier: com.typesafe.sslconfig.ssl.DefaultHostnameVerifier@72b02a6b
+INFO UploadEngine-akka.actor.default-dispatcher-5 edu.stanford.nlp.pipeline.StanfordCoreNLP - Registering annotator stopword with class com.dsleng.nlp.annotator.StopWord
+INFO UploadEngine-akka.actor.default-dispatcher-5 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+INFO UploadEngine-akka.actor.default-dispatcher-5 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+INFO UploadEngine-akka.actor.default-dispatcher-5 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator stopword
+ERROR UploadEngine-akka.actor.default-dispatcher-5 akka.actor.OneForOneStrategy - MetaClass couldn't create public com.dsleng.nlp.annotator.StopWord(java.lang.String,java.util.Properties) with args [stopword, {stopword-list=i,me,my,myself,we,our,ours,ourselves,you,you're,you've,you'll,you'd,your,yours,yourself,yourselves,he,him,his,himself,she,she's,her,hers,herself,it,it's,its,itself,they,them,their,theirs,themselves,what,which,who,whom,this,that,that'll,these,those,am,is,are,was,were,be,been,being,have,has,had,having,do,does,did,doing,a,an,the,and,but,if,or,because,as,until,while,of,at,by,for,with,about,against,between,into,through,during,before,after,above,below,to,from,up,down,in,out,on,off,over,under,again,further,then,once,here,there,when,where,why,how,all,any,both,each,few,more,most,other,some,such,no,nor,not,only,own,same,so,than,too,very,s,t,can,will,just,don,don't,'should',should've,now,d,ll,m,o,re,ve,y,ain,aren,aren't,couldn, couldn't,didn, didn't,doesn,doesn't,hadn, hadn't,hasn,hasn't,haven,haven't,isn,isn't,ma,mightn,mightn't,mustn,mustn't,needn,needn't,shan,shan't,shouldn,shouldn't,wasn,wasn't,weren,weren't,won, won't,wouldn,wouldn't, customAnnotatorClass.stopword=com.dsleng.nlp.annotator.StopWord, annotators=tokenize, ssplit,stopword}]
+akka.actor.ActorInitializationException: akka://UploadEngine/user/Reader/NLP: exception during creation
+	at akka.actor.ActorInitializationException$.apply(Actor.scala:193)
+	at akka.actor.ActorCell.create(ActorCell.scala:673)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:527)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:549)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:283)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: edu.stanford.nlp.util.MetaClass$ClassCreationException: MetaClass couldn't create public com.dsleng.nlp.annotator.StopWord(java.lang.String,java.util.Properties) with args [stopword, {stopword-list=i,me,my,myself,we,our,ours,ourselves,you,you're,you've,you'll,you'd,your,yours,yourself,yourselves,he,him,his,himself,she,she's,her,hers,herself,it,it's,its,itself,they,them,their,theirs,themselves,what,which,who,whom,this,that,that'll,these,those,am,is,are,was,were,be,been,being,have,has,had,having,do,does,did,doing,a,an,the,and,but,if,or,because,as,until,while,of,at,by,for,with,about,against,between,into,through,during,before,after,above,below,to,from,up,down,in,out,on,off,over,under,again,further,then,once,here,there,when,where,why,how,all,any,both,each,few,more,most,other,some,such,no,nor,not,only,own,same,so,than,too,very,s,t,can,will,just,don,don't,'should',should've,now,d,ll,m,o,re,ve,y,ain,aren,aren't,couldn, couldn't,didn, didn't,doesn,doesn't,hadn, hadn't,hasn,hasn't,haven,haven't,isn,isn't,ma,mightn,mightn't,mustn,mustn't,needn,needn't,shan,shan't,shouldn,shouldn't,wasn,wasn't,weren,weren't,won, won't,wouldn,wouldn't, customAnnotatorClass.stopword=com.dsleng.nlp.annotator.StopWord, annotators=tokenize, ssplit,stopword}]
+	at edu.stanford.nlp.util.MetaClass$ClassFactory.createInstance(MetaClass.java:237)
+	at edu.stanford.nlp.util.MetaClass.createInstance(MetaClass.java:382)
+	at edu.stanford.nlp.pipeline.AnnotatorImplementations.custom(AnnotatorImplementations.java:141)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.lambda$null$28(StanfordCoreNLP.java:583)
+	at edu.stanford.nlp.util.Lazy$3.compute(Lazy.java:126)
+	at edu.stanford.nlp.util.Lazy.get(Lazy.java:31)
+	at edu.stanford.nlp.pipeline.AnnotatorPool.get(AnnotatorPool.java:149)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:251)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:192)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:188)
+	at com.dsleng.nlp.SimplePL.<init>(SimplePL.java:68)
+	at com.dsleng.actor.NLP.<init>(NLP.scala:33)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at akka.util.Reflect$.instantiate(Reflect.scala:45)
+	at akka.actor.NoArgsReflectConstructor.produce(IndirectActorProducer.scala:105)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:628)
+	at akka.actor.ActorCell.create(ActorCell.scala:654)
+	... 9 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.stanford.nlp.util.MetaClass$ClassFactory.createInstance(MetaClass.java:233)
+	... 30 more
+Caused by: java.lang.NoClassDefFoundError: org/apache/lucene/analysis/util/CharArraySet
+	at com.dsleng.nlp.annotator.StopWord.getStopWordList(StopWord.java:88)
+	at com.dsleng.nlp.annotator.StopWord.<init>(StopWord.java:43)
+	... 35 more
+Caused by: java.lang.ClassNotFoundException: org.apache.lucene.analysis.util.CharArraySet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 37 more
+INFO UploadEngine-akka.actor.default-dispatcher-5 akka.actor.LocalActorRef - Message [java.lang.String] from Actor[akka://UploadEngine/user/Reader#344004597] to Actor[akka://UploadEngine/user/Reader/NLP#-1363630987] was not delivered. [1] dead letters encountered. If this is not an expected behavior, then [Actor[akka://UploadEngine/user/Reader/NLP#-1363630987]] may have terminated unexpectedly, This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+INFO UploadEngine-akka.actor.default-dispatcher-2 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Emotion#244344611]
+INFO UploadEngine-akka.actor.default-dispatcher-6 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Store#-865874284]
+INFO UploadEngine-akka.actor.default-dispatcher-2 akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.event.EventStream - logger log1-Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.event.EventStream - Default Loggers started
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.actor.Reader - Processing instruction received (from Actor[akka://UploadEngine/deadLetters]): 
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader#2074675769]
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Email#120604698]
+DEBUG UploadEngine-akka.actor.default-dispatcher-8 com.typesafe.sslconfig.akka.AkkaSSLConfig - Initializing AkkaSSLConfig extension...
+DEBUG UploadEngine-akka.actor.default-dispatcher-8 com.typesafe.sslconfig.akka.AkkaSSLConfig - buildHostnameVerifier: created hostname verifier: com.typesafe.sslconfig.ssl.DefaultHostnameVerifier@2c17260e
+INFO UploadEngine-akka.actor.default-dispatcher-5 edu.stanford.nlp.pipeline.StanfordCoreNLP - Registering annotator stopword with class com.dsleng.nlp.annotator.StopWord
+INFO UploadEngine-akka.actor.default-dispatcher-5 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+INFO UploadEngine-akka.actor.default-dispatcher-5 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+INFO UploadEngine-akka.actor.default-dispatcher-5 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator stopword
+ERROR UploadEngine-akka.actor.default-dispatcher-5 akka.actor.OneForOneStrategy - MetaClass couldn't create public com.dsleng.nlp.annotator.StopWord(java.lang.String,java.util.Properties) with args [stopword, {stopword-list=i,me,my,myself,we,our,ours,ourselves,you,you're,you've,you'll,you'd,your,yours,yourself,yourselves,he,him,his,himself,she,she's,her,hers,herself,it,it's,its,itself,they,them,their,theirs,themselves,what,which,who,whom,this,that,that'll,these,those,am,is,are,was,were,be,been,being,have,has,had,having,do,does,did,doing,a,an,the,and,but,if,or,because,as,until,while,of,at,by,for,with,about,against,between,into,through,during,before,after,above,below,to,from,up,down,in,out,on,off,over,under,again,further,then,once,here,there,when,where,why,how,all,any,both,each,few,more,most,other,some,such,no,nor,not,only,own,same,so,than,too,very,s,t,can,will,just,don,don't,'should',should've,now,d,ll,m,o,re,ve,y,ain,aren,aren't,couldn, couldn't,didn, didn't,doesn,doesn't,hadn, hadn't,hasn,hasn't,haven,haven't,isn,isn't,ma,mightn,mightn't,mustn,mustn't,needn,needn't,shan,shan't,shouldn,shouldn't,wasn,wasn't,weren,weren't,won, won't,wouldn,wouldn't, customAnnotatorClass.stopword=com.dsleng.nlp.annotator.StopWord, annotators=tokenize, ssplit,stopword}]
+akka.actor.ActorInitializationException: akka://UploadEngine/user/Reader/NLP: exception during creation
+	at akka.actor.ActorInitializationException$.apply(Actor.scala:193)
+	at akka.actor.ActorCell.create(ActorCell.scala:673)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:527)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:549)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:283)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: edu.stanford.nlp.util.MetaClass$ClassCreationException: MetaClass couldn't create public com.dsleng.nlp.annotator.StopWord(java.lang.String,java.util.Properties) with args [stopword, {stopword-list=i,me,my,myself,we,our,ours,ourselves,you,you're,you've,you'll,you'd,your,yours,yourself,yourselves,he,him,his,himself,she,she's,her,hers,herself,it,it's,its,itself,they,them,their,theirs,themselves,what,which,who,whom,this,that,that'll,these,those,am,is,are,was,were,be,been,being,have,has,had,having,do,does,did,doing,a,an,the,and,but,if,or,because,as,until,while,of,at,by,for,with,about,against,between,into,through,during,before,after,above,below,to,from,up,down,in,out,on,off,over,under,again,further,then,once,here,there,when,where,why,how,all,any,both,each,few,more,most,other,some,such,no,nor,not,only,own,same,so,than,too,very,s,t,can,will,just,don,don't,'should',should've,now,d,ll,m,o,re,ve,y,ain,aren,aren't,couldn, couldn't,didn, didn't,doesn,doesn't,hadn, hadn't,hasn,hasn't,haven,haven't,isn,isn't,ma,mightn,mightn't,mustn,mustn't,needn,needn't,shan,shan't,shouldn,shouldn't,wasn,wasn't,weren,weren't,won, won't,wouldn,wouldn't, customAnnotatorClass.stopword=com.dsleng.nlp.annotator.StopWord, annotators=tokenize, ssplit,stopword}]
+	at edu.stanford.nlp.util.MetaClass$ClassFactory.createInstance(MetaClass.java:237)
+	at edu.stanford.nlp.util.MetaClass.createInstance(MetaClass.java:382)
+	at edu.stanford.nlp.pipeline.AnnotatorImplementations.custom(AnnotatorImplementations.java:141)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.lambda$null$28(StanfordCoreNLP.java:583)
+	at edu.stanford.nlp.util.Lazy$3.compute(Lazy.java:126)
+	at edu.stanford.nlp.util.Lazy.get(Lazy.java:31)
+	at edu.stanford.nlp.pipeline.AnnotatorPool.get(AnnotatorPool.java:149)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:251)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:192)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:188)
+	at com.dsleng.nlp.SimplePL.<init>(SimplePL.java:68)
+	at com.dsleng.actor.NLP.<init>(NLP.scala:33)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at akka.util.Reflect$.instantiate(Reflect.scala:45)
+	at akka.actor.NoArgsReflectConstructor.produce(IndirectActorProducer.scala:105)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:628)
+	at akka.actor.ActorCell.create(ActorCell.scala:654)
+	... 9 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.stanford.nlp.util.MetaClass$ClassFactory.createInstance(MetaClass.java:233)
+	... 30 more
+Caused by: java.lang.NoClassDefFoundError: org/apache/lucene/analysis/util/CharArraySet
+	at com.dsleng.nlp.annotator.StopWord.getStopWordList(StopWord.java:88)
+	at com.dsleng.nlp.annotator.StopWord.<init>(StopWord.java:43)
+	... 35 more
+Caused by: java.lang.ClassNotFoundException: org.apache.lucene.analysis.util.CharArraySet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 37 more
+INFO UploadEngine-akka.actor.default-dispatcher-5 akka.actor.LocalActorRef - Message [java.lang.String] from Actor[akka://UploadEngine/user/Reader#2074675769] to Actor[akka://UploadEngine/user/Reader/NLP#1906713839] was not delivered. [1] dead letters encountered. If this is not an expected behavior, then [Actor[akka://UploadEngine/user/Reader/NLP#1906713839]] may have terminated unexpectedly, This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+INFO UploadEngine-akka.actor.default-dispatcher-4 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Emotion#1595605721]
+INFO UploadEngine-akka.actor.default-dispatcher-6 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Store#84408990]
+INFO UploadEngine-akka.actor.default-dispatcher-2 akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.event.EventStream - logger log1-Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.event.EventStream - Default Loggers started
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.actor.Reader - Processing instruction received (from Actor[akka://UploadEngine/deadLetters]): 
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader#1891488684]
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Email#-1556761735]
+DEBUG UploadEngine-akka.actor.default-dispatcher-7 com.typesafe.sslconfig.akka.AkkaSSLConfig - Initializing AkkaSSLConfig extension...
+DEBUG UploadEngine-akka.actor.default-dispatcher-7 com.typesafe.sslconfig.akka.AkkaSSLConfig - buildHostnameVerifier: created hostname verifier: com.typesafe.sslconfig.ssl.DefaultHostnameVerifier@2bb94985
+INFO UploadEngine-akka.actor.default-dispatcher-3 edu.stanford.nlp.pipeline.StanfordCoreNLP - Registering annotator stopword with class com.dsleng.nlp.annotator.StopWord
+INFO UploadEngine-akka.actor.default-dispatcher-3 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+INFO UploadEngine-akka.actor.default-dispatcher-3 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+INFO UploadEngine-akka.actor.default-dispatcher-3 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator stopword
+ERROR UploadEngine-akka.actor.default-dispatcher-3 akka.actor.OneForOneStrategy - MetaClass couldn't create public com.dsleng.nlp.annotator.StopWord(java.lang.String,java.util.Properties) with args [stopword, {stopword-list=i,me,my,myself,we,our,ours,ourselves,you,you're,you've,you'll,you'd,your,yours,yourself,yourselves,he,him,his,himself,she,she's,her,hers,herself,it,it's,its,itself,they,them,their,theirs,themselves,what,which,who,whom,this,that,that'll,these,those,am,is,are,was,were,be,been,being,have,has,had,having,do,does,did,doing,a,an,the,and,but,if,or,because,as,until,while,of,at,by,for,with,about,against,between,into,through,during,before,after,above,below,to,from,up,down,in,out,on,off,over,under,again,further,then,once,here,there,when,where,why,how,all,any,both,each,few,more,most,other,some,such,no,nor,not,only,own,same,so,than,too,very,s,t,can,will,just,don,don't,'should',should've,now,d,ll,m,o,re,ve,y,ain,aren,aren't,couldn, couldn't,didn, didn't,doesn,doesn't,hadn, hadn't,hasn,hasn't,haven,haven't,isn,isn't,ma,mightn,mightn't,mustn,mustn't,needn,needn't,shan,shan't,shouldn,shouldn't,wasn,wasn't,weren,weren't,won, won't,wouldn,wouldn't, customAnnotatorClass.stopword=com.dsleng.nlp.annotator.StopWord, annotators=tokenize, ssplit,stopword}]
+akka.actor.ActorInitializationException: akka://UploadEngine/user/Reader/NLP: exception during creation
+	at akka.actor.ActorInitializationException$.apply(Actor.scala:193)
+	at akka.actor.ActorCell.create(ActorCell.scala:673)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:527)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:549)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:283)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: edu.stanford.nlp.util.MetaClass$ClassCreationException: MetaClass couldn't create public com.dsleng.nlp.annotator.StopWord(java.lang.String,java.util.Properties) with args [stopword, {stopword-list=i,me,my,myself,we,our,ours,ourselves,you,you're,you've,you'll,you'd,your,yours,yourself,yourselves,he,him,his,himself,she,she's,her,hers,herself,it,it's,its,itself,they,them,their,theirs,themselves,what,which,who,whom,this,that,that'll,these,those,am,is,are,was,were,be,been,being,have,has,had,having,do,does,did,doing,a,an,the,and,but,if,or,because,as,until,while,of,at,by,for,with,about,against,between,into,through,during,before,after,above,below,to,from,up,down,in,out,on,off,over,under,again,further,then,once,here,there,when,where,why,how,all,any,both,each,few,more,most,other,some,such,no,nor,not,only,own,same,so,than,too,very,s,t,can,will,just,don,don't,'should',should've,now,d,ll,m,o,re,ve,y,ain,aren,aren't,couldn, couldn't,didn, didn't,doesn,doesn't,hadn, hadn't,hasn,hasn't,haven,haven't,isn,isn't,ma,mightn,mightn't,mustn,mustn't,needn,needn't,shan,shan't,shouldn,shouldn't,wasn,wasn't,weren,weren't,won, won't,wouldn,wouldn't, customAnnotatorClass.stopword=com.dsleng.nlp.annotator.StopWord, annotators=tokenize, ssplit,stopword}]
+	at edu.stanford.nlp.util.MetaClass$ClassFactory.createInstance(MetaClass.java:237)
+	at edu.stanford.nlp.util.MetaClass.createInstance(MetaClass.java:382)
+	at edu.stanford.nlp.pipeline.AnnotatorImplementations.custom(AnnotatorImplementations.java:141)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.lambda$null$28(StanfordCoreNLP.java:583)
+	at edu.stanford.nlp.util.Lazy$3.compute(Lazy.java:126)
+	at edu.stanford.nlp.util.Lazy.get(Lazy.java:31)
+	at edu.stanford.nlp.pipeline.AnnotatorPool.get(AnnotatorPool.java:149)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:251)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:192)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:188)
+	at com.dsleng.nlp.SimplePL.<init>(SimplePL.java:68)
+	at com.dsleng.actor.NLP.<init>(NLP.scala:33)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at akka.util.Reflect$.instantiate(Reflect.scala:45)
+	at akka.actor.NoArgsReflectConstructor.produce(IndirectActorProducer.scala:105)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:628)
+	at akka.actor.ActorCell.create(ActorCell.scala:654)
+	... 9 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.stanford.nlp.util.MetaClass$ClassFactory.createInstance(MetaClass.java:233)
+	... 30 more
+Caused by: java.lang.NoClassDefFoundError: org/apache/lucene/analysis/util/CharArraySet
+	at com.dsleng.nlp.annotator.StopWord.getStopWordList(StopWord.java:88)
+	at com.dsleng.nlp.annotator.StopWord.<init>(StopWord.java:43)
+	... 35 more
+Caused by: java.lang.ClassNotFoundException: org.apache.lucene.analysis.util.CharArraySet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 37 more
+INFO UploadEngine-akka.actor.default-dispatcher-3 akka.actor.LocalActorRef - Message [java.lang.String] from Actor[akka://UploadEngine/user/Reader#1891488684] to Actor[akka://UploadEngine/user/Reader/NLP#-1989164524] was not delivered. [1] dead letters encountered. If this is not an expected behavior, then [Actor[akka://UploadEngine/user/Reader/NLP#-1989164524]] may have terminated unexpectedly, This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+INFO UploadEngine-akka.actor.default-dispatcher-4 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Emotion#434948779]
+INFO UploadEngine-akka.actor.default-dispatcher-6 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Store#1933577037]
+INFO UploadEngine-akka.actor.default-dispatcher-3 akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 akka.event.EventStream - logger log1-Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 akka.event.EventStream - Default Loggers started
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.actor.Reader - Processing instruction received (from Actor[akka://UploadEngine/deadLetters]): 
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader#861373598]
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Email#1938295413]
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 com.typesafe.sslconfig.akka.AkkaSSLConfig - Initializing AkkaSSLConfig extension...
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 com.typesafe.sslconfig.akka.AkkaSSLConfig - buildHostnameVerifier: created hostname verifier: com.typesafe.sslconfig.ssl.DefaultHostnameVerifier@553dc347
+INFO UploadEngine-akka.actor.default-dispatcher-5 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Emotion#-1503059495]
+INFO UploadEngine-akka.actor.default-dispatcher-2 edu.stanford.nlp.pipeline.StanfordCoreNLP - Registering annotator stopword with class com.dsleng.nlp.annotator.StopWord
+INFO UploadEngine-akka.actor.default-dispatcher-2 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+INFO UploadEngine-akka.actor.default-dispatcher-2 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+INFO UploadEngine-akka.actor.default-dispatcher-2 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator stopword
+ERROR UploadEngine-akka.actor.default-dispatcher-2 akka.actor.OneForOneStrategy - MetaClass couldn't create public com.dsleng.nlp.annotator.StopWord(java.lang.String,java.util.Properties) with args [stopword, {stopword-list=i,me,my,myself,we,our,ours,ourselves,you,you're,you've,you'll,you'd,your,yours,yourself,yourselves,he,him,his,himself,she,she's,her,hers,herself,it,it's,its,itself,they,them,their,theirs,themselves,what,which,who,whom,this,that,that'll,these,those,am,is,are,was,were,be,been,being,have,has,had,having,do,does,did,doing,a,an,the,and,but,if,or,because,as,until,while,of,at,by,for,with,about,against,between,into,through,during,before,after,above,below,to,from,up,down,in,out,on,off,over,under,again,further,then,once,here,there,when,where,why,how,all,any,both,each,few,more,most,other,some,such,no,nor,not,only,own,same,so,than,too,very,s,t,can,will,just,don,don't,'should',should've,now,d,ll,m,o,re,ve,y,ain,aren,aren't,couldn, couldn't,didn, didn't,doesn,doesn't,hadn, hadn't,hasn,hasn't,haven,haven't,isn,isn't,ma,mightn,mightn't,mustn,mustn't,needn,needn't,shan,shan't,shouldn,shouldn't,wasn,wasn't,weren,weren't,won, won't,wouldn,wouldn't, customAnnotatorClass.stopword=com.dsleng.nlp.annotator.StopWord, annotators=tokenize, ssplit,stopword}]
+akka.actor.ActorInitializationException: akka://UploadEngine/user/Reader/NLP: exception during creation
+	at akka.actor.ActorInitializationException$.apply(Actor.scala:193)
+	at akka.actor.ActorCell.create(ActorCell.scala:673)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:527)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:549)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:283)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: edu.stanford.nlp.util.MetaClass$ClassCreationException: MetaClass couldn't create public com.dsleng.nlp.annotator.StopWord(java.lang.String,java.util.Properties) with args [stopword, {stopword-list=i,me,my,myself,we,our,ours,ourselves,you,you're,you've,you'll,you'd,your,yours,yourself,yourselves,he,him,his,himself,she,she's,her,hers,herself,it,it's,its,itself,they,them,their,theirs,themselves,what,which,who,whom,this,that,that'll,these,those,am,is,are,was,were,be,been,being,have,has,had,having,do,does,did,doing,a,an,the,and,but,if,or,because,as,until,while,of,at,by,for,with,about,against,between,into,through,during,before,after,above,below,to,from,up,down,in,out,on,off,over,under,again,further,then,once,here,there,when,where,why,how,all,any,both,each,few,more,most,other,some,such,no,nor,not,only,own,same,so,than,too,very,s,t,can,will,just,don,don't,'should',should've,now,d,ll,m,o,re,ve,y,ain,aren,aren't,couldn, couldn't,didn, didn't,doesn,doesn't,hadn, hadn't,hasn,hasn't,haven,haven't,isn,isn't,ma,mightn,mightn't,mustn,mustn't,needn,needn't,shan,shan't,shouldn,shouldn't,wasn,wasn't,weren,weren't,won, won't,wouldn,wouldn't, customAnnotatorClass.stopword=com.dsleng.nlp.annotator.StopWord, annotators=tokenize, ssplit,stopword}]
+	at edu.stanford.nlp.util.MetaClass$ClassFactory.createInstance(MetaClass.java:237)
+	at edu.stanford.nlp.util.MetaClass.createInstance(MetaClass.java:382)
+	at edu.stanford.nlp.pipeline.AnnotatorImplementations.custom(AnnotatorImplementations.java:141)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.lambda$null$28(StanfordCoreNLP.java:583)
+	at edu.stanford.nlp.util.Lazy$3.compute(Lazy.java:126)
+	at edu.stanford.nlp.util.Lazy.get(Lazy.java:31)
+	at edu.stanford.nlp.pipeline.AnnotatorPool.get(AnnotatorPool.java:149)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:251)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:192)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:188)
+	at com.dsleng.nlp.SimplePL.<init>(SimplePL.java:68)
+	at com.dsleng.actor.NLP.<init>(NLP.scala:39)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at akka.util.Reflect$.instantiate(Reflect.scala:45)
+	at akka.actor.NoArgsReflectConstructor.produce(IndirectActorProducer.scala:105)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:628)
+	at akka.actor.ActorCell.create(ActorCell.scala:654)
+	... 9 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.stanford.nlp.util.MetaClass$ClassFactory.createInstance(MetaClass.java:233)
+	... 30 more
+Caused by: java.lang.NoClassDefFoundError: org/apache/lucene/analysis/util/CharArraySet
+	at com.dsleng.nlp.annotator.StopWord.getStopWordList(StopWord.java:88)
+	at com.dsleng.nlp.annotator.StopWord.<init>(StopWord.java:43)
+	... 35 more
+Caused by: java.lang.ClassNotFoundException: org.apache.lucene.analysis.util.CharArraySet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 37 more
+INFO UploadEngine-akka.actor.default-dispatcher-6 akka.actor.LocalActorRef - Message [java.lang.String] from Actor[akka://UploadEngine/user/Reader#861373598] to Actor[akka://UploadEngine/user/Reader/NLP#-1519264628] was not delivered. [1] dead letters encountered. If this is not an expected behavior, then [Actor[akka://UploadEngine/user/Reader/NLP#-1519264628]] may have terminated unexpectedly, This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+INFO UploadEngine-akka.actor.default-dispatcher-4 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Store#-301800133]
+INFO UploadEngine-akka.actor.default-dispatcher-3 akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 akka.event.EventStream - logger log1-Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 akka.event.EventStream - Default Loggers started
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.actor.Reader - Processing instruction received (from Actor[akka://UploadEngine/deadLetters]): 
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Email#-733172079]
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader#-1774407870]
+DEBUG UploadEngine-akka.actor.default-dispatcher-7 com.typesafe.sslconfig.akka.AkkaSSLConfig - Initializing AkkaSSLConfig extension...
+DEBUG UploadEngine-akka.actor.default-dispatcher-7 com.typesafe.sslconfig.akka.AkkaSSLConfig - buildHostnameVerifier: created hostname verifier: com.typesafe.sslconfig.ssl.DefaultHostnameVerifier@cfac2dc
+INFO UploadEngine-akka.actor.default-dispatcher-4 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Emotion#-1675919154]
+INFO UploadEngine-akka.actor.default-dispatcher-2 edu.stanford.nlp.pipeline.StanfordCoreNLP - Registering annotator stopword with class com.dsleng.nlp.annotator.StopWord
+INFO UploadEngine-akka.actor.default-dispatcher-2 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+INFO UploadEngine-akka.actor.default-dispatcher-2 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator ssplit
+INFO UploadEngine-akka.actor.default-dispatcher-2 edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator stopword
+ERROR UploadEngine-akka.actor.default-dispatcher-2 akka.actor.OneForOneStrategy - MetaClass couldn't create public com.dsleng.nlp.annotator.StopWord(java.lang.String,java.util.Properties) with args [stopword, {stopword-list=i,me,my,myself,we,our,ours,ourselves,you,you're,you've,you'll,you'd,your,yours,yourself,yourselves,he,him,his,himself,she,she's,her,hers,herself,it,it's,its,itself,they,them,their,theirs,themselves,what,which,who,whom,this,that,that'll,these,those,am,is,are,was,were,be,been,being,have,has,had,having,do,does,did,doing,a,an,the,and,but,if,or,because,as,until,while,of,at,by,for,with,about,against,between,into,through,during,before,after,above,below,to,from,up,down,in,out,on,off,over,under,again,further,then,once,here,there,when,where,why,how,all,any,both,each,few,more,most,other,some,such,no,nor,not,only,own,same,so,than,too,very,s,t,can,will,just,don,don't,'should',should've,now,d,ll,m,o,re,ve,y,ain,aren,aren't,couldn, couldn't,didn, didn't,doesn,doesn't,hadn, hadn't,hasn,hasn't,haven,haven't,isn,isn't,ma,mightn,mightn't,mustn,mustn't,needn,needn't,shan,shan't,shouldn,shouldn't,wasn,wasn't,weren,weren't,won, won't,wouldn,wouldn't, customAnnotatorClass.stopword=com.dsleng.nlp.annotator.StopWord, annotators=tokenize, ssplit,stopword}]
+akka.actor.ActorInitializationException: akka://UploadEngine/user/Reader/NLP: exception during creation
+	at akka.actor.ActorInitializationException$.apply(Actor.scala:193)
+	at akka.actor.ActorCell.create(ActorCell.scala:673)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:527)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:549)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:283)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:235)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: edu.stanford.nlp.util.MetaClass$ClassCreationException: MetaClass couldn't create public com.dsleng.nlp.annotator.StopWord(java.lang.String,java.util.Properties) with args [stopword, {stopword-list=i,me,my,myself,we,our,ours,ourselves,you,you're,you've,you'll,you'd,your,yours,yourself,yourselves,he,him,his,himself,she,she's,her,hers,herself,it,it's,its,itself,they,them,their,theirs,themselves,what,which,who,whom,this,that,that'll,these,those,am,is,are,was,were,be,been,being,have,has,had,having,do,does,did,doing,a,an,the,and,but,if,or,because,as,until,while,of,at,by,for,with,about,against,between,into,through,during,before,after,above,below,to,from,up,down,in,out,on,off,over,under,again,further,then,once,here,there,when,where,why,how,all,any,both,each,few,more,most,other,some,such,no,nor,not,only,own,same,so,than,too,very,s,t,can,will,just,don,don't,'should',should've,now,d,ll,m,o,re,ve,y,ain,aren,aren't,couldn, couldn't,didn, didn't,doesn,doesn't,hadn, hadn't,hasn,hasn't,haven,haven't,isn,isn't,ma,mightn,mightn't,mustn,mustn't,needn,needn't,shan,shan't,shouldn,shouldn't,wasn,wasn't,weren,weren't,won, won't,wouldn,wouldn't, customAnnotatorClass.stopword=com.dsleng.nlp.annotator.StopWord, annotators=tokenize, ssplit,stopword}]
+	at edu.stanford.nlp.util.MetaClass$ClassFactory.createInstance(MetaClass.java:237)
+	at edu.stanford.nlp.util.MetaClass.createInstance(MetaClass.java:382)
+	at edu.stanford.nlp.pipeline.AnnotatorImplementations.custom(AnnotatorImplementations.java:141)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.lambda$null$28(StanfordCoreNLP.java:583)
+	at edu.stanford.nlp.util.Lazy$3.compute(Lazy.java:126)
+	at edu.stanford.nlp.util.Lazy.get(Lazy.java:31)
+	at edu.stanford.nlp.pipeline.AnnotatorPool.get(AnnotatorPool.java:149)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:251)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:192)
+	at edu.stanford.nlp.pipeline.StanfordCoreNLP.<init>(StanfordCoreNLP.java:188)
+	at com.dsleng.nlp.SimplePL.<init>(SimplePL.java:68)
+	at com.dsleng.actor.NLP.<init>(NLP.scala:39)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at akka.util.Reflect$.instantiate(Reflect.scala:45)
+	at akka.actor.NoArgsReflectConstructor.produce(IndirectActorProducer.scala:105)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:628)
+	at akka.actor.ActorCell.create(ActorCell.scala:654)
+	... 9 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at edu.stanford.nlp.util.MetaClass$ClassFactory.createInstance(MetaClass.java:233)
+	... 30 more
+Caused by: java.lang.NoClassDefFoundError: org/apache/lucene/analysis/util/CharArraySet
+	at com.dsleng.nlp.annotator.StopWord.getStopWordList(StopWord.java:88)
+	at com.dsleng.nlp.annotator.StopWord.<init>(StopWord.java:43)
+	... 35 more
+Caused by: java.lang.ClassNotFoundException: org.apache.lucene.analysis.util.CharArraySet
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 37 more
+INFO UploadEngine-akka.actor.default-dispatcher-5 akka.actor.LocalActorRef - Message [java.lang.String] from Actor[akka://UploadEngine/user/Reader#-1774407870] to Actor[akka://UploadEngine/user/Reader/NLP#-556135204] was not delivered. [1] dead letters encountered. If this is not an expected behavior, then [Actor[akka://UploadEngine/user/Reader/NLP#-556135204]] may have terminated unexpectedly, This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
+INFO UploadEngine-akka.actor.default-dispatcher-6 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Store#1505085794]
+INFO UploadEngine-akka.actor.default-dispatcher-3 akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 akka.event.EventStream - logger log1-Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 akka.event.EventStream - Default Loggers started
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader#1083931697]
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.actor.Reader - Processing instruction received (from Actor[akka://UploadEngine/deadLetters]): 
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Email#-217048835]
+DEBUG UploadEngine-akka.actor.default-dispatcher-7 com.typesafe.sslconfig.akka.AkkaSSLConfig - Initializing AkkaSSLConfig extension...
+DEBUG UploadEngine-akka.actor.default-dispatcher-7 com.typesafe.sslconfig.akka.AkkaSSLConfig - buildHostnameVerifier: created hostname verifier: com.typesafe.sslconfig.ssl.DefaultHostnameVerifier@2df1d238
+INFO UploadEngine-akka.actor.default-dispatcher-5 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/NLP#-2006287209]
+DEBUG UploadEngine-akka.actor.default-dispatcher-5 com.dsleng.actor.NLP - --------------------------------------Processing start instruction received (from Actor[akka://UploadEngine/user/Reader#1083931697]): 
+INFO UploadEngine-akka.actor.default-dispatcher-5 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Emotion#1397964992]
+DEBUG UploadEngine-akka.actor.default-dispatcher-4 com.dsleng.actor.Reader - Reader Starting
+INFO UploadEngine-akka.actor.default-dispatcher-4 com.dsleng.actor.Reader - Processing file instruction received (from Actor[akka://UploadEngine/user/Reader#1083931697]): 
+INFO UploadEngine-akka.actor.default-dispatcher-4 com.dsleng.actor.Reader - Processing from Reader: /Data/enron/maildir/kean-s/inbox/15.'.complete'
+INFO UploadEngine-akka.actor.default-dispatcher-5 tech.blueglacier.email.Email - mime part received
+INFO UploadEngine-akka.actor.default-dispatcher-5 tech.blueglacier.email.Email - Email plain text body identified
+INFO UploadEngine-akka.actor.default-dispatcher-6 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Store#-2061882492]
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 com.dsleng.actor.Email - Message received (from Actor[akka://UploadEngine/user/Reader#1083931697]): /Data/enron/maildir/kean-s/inbox/15.'.complete'
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 com.dsleng.actor.NLP - Message received (from Actor[akka://UploadEngine/user/Reader/Email#-217048835]): ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ERROR UploadEngine-akka.actor.default-dispatcher-3 akka.actor.ActorSystemImpl - Uncaught error from thread [UploadEngine-akka.actor.default-dispatcher-5]
+scala.util.control.BreakControl
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 akka.http.impl.engine.client.PoolGateway - (Re-)starting host connection pool to localhost:9012
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 akka.http.impl.engine.client.PoolGateway - InputBuffer (max-open-requests = 32) now filled with 1 request after enqueuing POST /nlp Strict(4540 bytes)
+DEBUG UploadEngine-akka.actor.default-dispatcher-4 akka.http.impl.engine.client.PoolGateway - [0 (Unconnected)] Dispatching request [POST /nlp Strict(4540 bytes)]
+DEBUG UploadEngine-akka.actor.default-dispatcher-4 akka.http.impl.engine.client.PoolGateway - [0 (Unconnected)] Before event [onNewRequest] In state [Unconnected] for [31 ms]
+DEBUG UploadEngine-akka.actor.default-dispatcher-4 akka.http.impl.engine.client.PoolGateway - [0 (Unconnected)] Establishing connection
+DEBUG UploadEngine-akka.actor.default-dispatcher-4 akka.http.impl.engine.client.PoolGateway - [0 (Connecting)] After event [onNewRequest] State change [Unconnected] -> [Connecting]
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 akka.io.TcpOutgoingConnection - Resolving localhost before connecting
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.io.SimpleDnsManager - Resolution request for localhost from Actor[akka://UploadEngine/system/IO-TCP/selectors/$a/0#-1560233536]
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.io.TcpOutgoingConnection - Attempting connection to [localhost/127.0.0.1:9012]
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.io.TcpOutgoingConnection - Connection established to [localhost:9012]
+DEBUG UploadEngine-akka.actor.default-dispatcher-5 akka.http.impl.engine.client.PoolGateway - [0 (Connecting)] Connection attempt succeeded
+DEBUG UploadEngine-akka.actor.default-dispatcher-5 akka.http.impl.engine.client.PoolGateway - [0 (Connecting)] Before event [onConnectionAttemptSucceeded] In state [Connecting] for [76 ms]
+DEBUG UploadEngine-akka.actor.default-dispatcher-5 akka.http.impl.engine.client.PoolGateway - [0 (Connecting)] Slot connection was established
+DEBUG UploadEngine-akka.actor.default-dispatcher-5 akka.http.impl.engine.client.PoolGateway - [0 (PushingRequestToConnection)] After event [onConnectionAttemptSucceeded] State change [Connecting] -> [PushingRequestToConnection]
+DEBUG UploadEngine-akka.actor.default-dispatcher-5 akka.http.impl.engine.client.PoolGateway - [0 (PushingRequestToConnection)] Before event [onRequestDispatched] In state [PushingRequestToConnection] for [0 ms]
+DEBUG UploadEngine-akka.actor.default-dispatcher-5 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForResponse)] After event [onRequestDispatched] State change [PushingRequestToConnection] -> [WaitingForResponse]
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForResponse)] Received response
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForResponse)] Before event [onResponseReceived] In state [WaitingForResponse] for [455 ms]
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForResponse)] onResponseReceived in WaitingForResponse with false
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForResponseDispatch)] After event [onResponseReceived] State change [WaitingForResponse] -> [WaitingForResponseDispatch]
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForResponseDispatch)] Before event [onResponseDispatchable] In state [WaitingForResponseDispatch] for [0 ms]
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForResponseEntitySubscription)] After event [onResponseDispatchable] State change [WaitingForResponseDispatch] -> [WaitingForResponseEntitySubscription]
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForResponseEntitySubscription)] Before event [onResponseEntitySubscribed] In state [WaitingForResponseEntitySubscription] for [2 ms]
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForEndOfResponseEntity)] After event [onResponseEntitySubscribed] State change [WaitingForResponseEntitySubscription] -> [WaitingForEndOfResponseEntity]
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForEndOfResponseEntity)] Before event [onResponseEntityCompleted] In state [WaitingForEndOfResponseEntity] for [0 ms]
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.http.impl.engine.client.PoolGateway - [0 (Idle)] After event [onResponseEntityCompleted] State change [WaitingForEndOfResponseEntity] -> [Idle]
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.http.impl.engine.client.PoolGateway - [0 (Idle)] Slot became idle... Trying to pull
+DEBUG UploadEngine-akka.actor.default-dispatcher-5 akka.http.impl.engine.client.PoolGateway - Shutting down host connection pool immediately
+DEBUG UploadEngine-akka.actor.default-dispatcher-4 akka.http.impl.engine.client.PoolGateway - Pool upstream was completed
+DEBUG UploadEngine-akka.actor.default-dispatcher-4 akka.http.impl.engine.client.PoolGateway - Pool stopped
+INFO UploadEngine-akka.actor.default-dispatcher-3 akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 akka.event.EventStream - logger log1-Slf4jLogger started
+DEBUG UploadEngine-akka.actor.default-dispatcher-3 akka.event.EventStream - Default Loggers started
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.actor.Reader - Processing instruction received (from Actor[akka://UploadEngine/deadLetters]): 
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader#-445371121]
+INFO UploadEngine-akka.actor.default-dispatcher-7 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Email#1408485206]
+DEBUG UploadEngine-akka.actor.default-dispatcher-7 com.typesafe.sslconfig.akka.AkkaSSLConfig - Initializing AkkaSSLConfig extension...
+DEBUG UploadEngine-akka.actor.default-dispatcher-7 com.typesafe.sslconfig.akka.AkkaSSLConfig - buildHostnameVerifier: created hostname verifier: com.typesafe.sslconfig.ssl.DefaultHostnameVerifier@1ccecaad
+INFO UploadEngine-akka.actor.default-dispatcher-5 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/NLP#1318125755]
+DEBUG UploadEngine-akka.actor.default-dispatcher-5 com.dsleng.actor.NLP - --------------------------------------Processing start instruction received (from Actor[akka://UploadEngine/user/Reader#-445371121]): 
+INFO UploadEngine-akka.actor.default-dispatcher-5 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Emotion#1597672745]
+DEBUG UploadEngine-akka.actor.default-dispatcher-5 com.dsleng.actor.Reader - Reader Starting
+INFO UploadEngine-akka.actor.default-dispatcher-5 com.dsleng.actor.Reader - Processing file instruction received (from Actor[akka://UploadEngine/user/Reader#-445371121]): 
+INFO UploadEngine-akka.actor.default-dispatcher-5 com.dsleng.actor.Reader - Processing from Reader: /Data/enron/maildir/kean-s/inbox/15.'.complete'
+INFO UploadEngine-akka.actor.default-dispatcher-2 tech.blueglacier.email.Email - mime part received
+INFO UploadEngine-akka.actor.default-dispatcher-2 tech.blueglacier.email.Email - Email plain text body identified
+DEBUG UploadEngine-akka.actor.default-dispatcher-4 com.dsleng.actor.Email - Message received (from Actor[akka://UploadEngine/user/Reader#-445371121]): /Data/enron/maildir/kean-s/inbox/15.'.complete'
+DEBUG UploadEngine-akka.actor.default-dispatcher-4 com.dsleng.actor.NLP - Message received (from Actor[akka://UploadEngine/user/Reader/Email#1408485206]): ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ERROR UploadEngine-akka.actor.default-dispatcher-4 akka.actor.ActorSystemImpl - Uncaught error from thread [UploadEngine-akka.actor.default-dispatcher-2]
+scala.util.control.BreakControl
+INFO UploadEngine-akka.actor.default-dispatcher-6 com.dsleng.akka.pattern.Reaper - Watching: Actor[akka://UploadEngine/user/Reader/Store#-1537534836]
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.http.impl.engine.client.PoolGateway - (Re-)starting host connection pool to localhost:9012
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.http.impl.engine.client.PoolGateway - InputBuffer (max-open-requests = 32) now filled with 1 request after enqueuing POST /nlp Strict(4540 bytes)
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.http.impl.engine.client.PoolGateway - [0 (Unconnected)] Dispatching request [POST /nlp Strict(4540 bytes)]
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.http.impl.engine.client.PoolGateway - [0 (Unconnected)] Before event [onNewRequest] In state [Unconnected] for [28 ms]
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.http.impl.engine.client.PoolGateway - [0 (Unconnected)] Establishing connection
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.http.impl.engine.client.PoolGateway - [0 (Connecting)] After event [onNewRequest] State change [Unconnected] -> [Connecting]
+DEBUG UploadEngine-akka.actor.default-dispatcher-8 akka.io.TcpOutgoingConnection - Resolving localhost before connecting
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.io.SimpleDnsManager - Resolution request for localhost from Actor[akka://UploadEngine/system/IO-TCP/selectors/$a/0#-1151579912]
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.io.TcpOutgoingConnection - Attempting connection to [localhost/127.0.0.1:9012]
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.io.TcpOutgoingConnection - Connection established to [localhost:9012]
+DEBUG UploadEngine-akka.actor.default-dispatcher-8 akka.http.impl.engine.client.PoolGateway - [0 (Connecting)] Connection attempt succeeded
+DEBUG UploadEngine-akka.actor.default-dispatcher-8 akka.http.impl.engine.client.PoolGateway - [0 (Connecting)] Before event [onConnectionAttemptSucceeded] In state [Connecting] for [63 ms]
+DEBUG UploadEngine-akka.actor.default-dispatcher-8 akka.http.impl.engine.client.PoolGateway - [0 (Connecting)] Slot connection was established
+DEBUG UploadEngine-akka.actor.default-dispatcher-8 akka.http.impl.engine.client.PoolGateway - [0 (PushingRequestToConnection)] After event [onConnectionAttemptSucceeded] State change [Connecting] -> [PushingRequestToConnection]
+DEBUG UploadEngine-akka.actor.default-dispatcher-8 akka.http.impl.engine.client.PoolGateway - [0 (PushingRequestToConnection)] Before event [onRequestDispatched] In state [PushingRequestToConnection] for [0 ms]
+DEBUG UploadEngine-akka.actor.default-dispatcher-8 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForResponse)] After event [onRequestDispatched] State change [PushingRequestToConnection] -> [WaitingForResponse]
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForResponse)] Received response
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForResponse)] Before event [onResponseReceived] In state [WaitingForResponse] for [64 ms]
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForResponse)] onResponseReceived in WaitingForResponse with false
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForResponseDispatch)] After event [onResponseReceived] State change [WaitingForResponse] -> [WaitingForResponseDispatch]
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForResponseDispatch)] Before event [onResponseDispatchable] In state [WaitingForResponseDispatch] for [0 ms]
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForResponseEntitySubscription)] After event [onResponseDispatchable] State change [WaitingForResponseDispatch] -> [WaitingForResponseEntitySubscription]
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForResponseEntitySubscription)] Before event [onResponseEntitySubscribed] In state [WaitingForResponseEntitySubscription] for [2 ms]
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForEndOfResponseEntity)] After event [onResponseEntitySubscribed] State change [WaitingForResponseEntitySubscription] -> [WaitingForEndOfResponseEntity]
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.http.impl.engine.client.PoolGateway - [0 (WaitingForEndOfResponseEntity)] Before event [onResponseEntityCompleted] In state [WaitingForEndOfResponseEntity] for [0 ms]
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.http.impl.engine.client.PoolGateway - [0 (Idle)] After event [onResponseEntityCompleted] State change [WaitingForEndOfResponseEntity] -> [Idle]
+DEBUG UploadEngine-akka.actor.default-dispatcher-2 akka.http.impl.engine.client.PoolGateway - [0 (Idle)] Slot became idle... Trying to pull
+DEBUG UploadEngine-akka.actor.default-dispatcher-8 akka.http.impl.engine.client.PoolGateway - Shutting down host connection pool immediately
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.http.impl.engine.client.PoolGateway - Pool upstream was completed
+DEBUG UploadEngine-akka.actor.default-dispatcher-6 akka.http.impl.engine.client.PoolGateway - Pool stopped

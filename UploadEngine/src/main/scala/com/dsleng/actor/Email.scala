@@ -3,7 +3,7 @@ package com.dsleng.actor
 import akka.actor.{ Actor, ActorLogging, ActorRef, ActorSystem, Props,PoisonPill }
 import com.dsleng.akka.pattern.ReaperWatched
 import com.dsleng.akka.pattern.Reaper
-import com.dsleng.emo.helper.{EmailCtl,EmoEmailCtl}
+import com.dsleng.model.{EmailCtl,EmoEmailCtl}
 
 object Email {
   def props: Props = Props[Email]

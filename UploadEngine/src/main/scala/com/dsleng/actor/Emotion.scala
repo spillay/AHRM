@@ -22,8 +22,8 @@ import akka.stream.scaladsl._
 
 import scala.concurrent.Future
 import scala.util.Try
-import com.dsleng.emo.helper._
-import com.dsleng.emo.helper.CtlJsonImplicits._
+import com.dsleng.model._
+import com.dsleng.model.CtlJsonImplicits._
 import com.dsleng.email.SimpleEmailExt
 import spray.json._
 
@@ -75,7 +75,13 @@ class Emotion extends Actor with ActorLogging with ReaperWatched {
               eec.model.model,
               "none"
             )
-        model.prime = er.prime.toJson.toString()
+        val total = er.emotions.map(f=>f.count).reduce(_+_)
+        val norm = er.emotions.map(f=>{
+          val nval = f.count/total.toDouble
+          new NormData(f.emotion,nval)
+        })
+        model.norm = norm.toJson.toString()
+        model.prime = if (er.prime.length > 0)  er.prime(0).emotion else "Unknown"
         model.emotions = er.emotions.toJson.toString()
        
         val store = context.actorSelection("akka://UploadEngine/user/Reader/Store")

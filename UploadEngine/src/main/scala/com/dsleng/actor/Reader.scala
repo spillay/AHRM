@@ -10,7 +10,7 @@ import scala.collection.mutable.ArrayBuffer
 import akka.stream.scaladsl._
 
 import util.control.Breaks._
-import com.dsleng.emo.helper.{EmailCtl}
+import com.dsleng.model.{EmailCtl}
 object Reader {
   def props: Props = Props[Reader]
   final case class FileCtl(file: String)
@@ -54,6 +54,7 @@ class Reader extends Actor with ActorLogging with ReaperWatched {
       var fileCnt = 0
       ubox.listFiles().foreach(f=>{
         if (!f.isDirectory()){
+          println("In loop")
           log.info("Processing from Reader: {}",f.getAbsoluteFile())
           val model = mhandle.processSimpleModel(f)
           var smodel = new SimpleEmailExt(f.getAbsolutePath(), model, "none", department = "", product = ArrayBuffer[String]().toArray)
@@ -63,6 +64,7 @@ class Reader extends Actor with ActorLogging with ReaperWatched {
           break
         }
       })
+      store != "close"
   }
   override def postStop(): Unit = {println("Stopping Emotion")}
 }

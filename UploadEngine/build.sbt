@@ -22,18 +22,18 @@ libraryDependencies ++= Seq(
 libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.2.3"
 libraryDependencies += "tech.blueglacier" % "email-mime-parser" % "1.0.5"
 libraryDependencies += "com.dsleng" % "com.dsleng.model" % "1.0"
-libraryDependencies += "com.dsleng" % "com.dsleng.nlp" % "1.0"
 libraryDependencies += "com.dsleng" % "com.dsleng.emo" % "1.0"
+libraryDependencies += "com.dsleng" % "com.dsleng.store" % "1.0"
+libraryDependencies += "org.apache.logging.log4j" % "log4j-core" % "2.12.0"
+libraryDependencies += "org.apache.lucene" % "lucene-core" % "4.10.3"
 
-//libraryDependencies += "de.heikoseeberger" %% "akka-http-play-json" % "1.25.2"
-//libraryDependencies += "com.typesafe.play" %% "play-json" % playVersion
+
 libraryDependencies += "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.9.9"
 libraryDependencies += "com.fasterxml.jackson.core" % "jackson-databind" % "2.9.9"
 
-libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.9.2"
-libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "3.9.2" classifier "models"
 
-//libraryDependencies += "com.google.guava" % "guava" % "28.0-jre"
+
+
 libraryDependencies += "io.spray" %% "spray-json" % "1.3.5"
 
 

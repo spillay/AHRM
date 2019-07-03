@@ -13,8 +13,8 @@ import org.apache.spark.sql.DataFrame
 import com.dsleng.emo.helper.Emotions
 import spray.json._
 import spray.json.DefaultJsonProtocol._
-import com.dsleng.emo.helper.{TokenCtl,TokenStrCtl,EmoEmailCtl}
-import com.dsleng.emo.helper.CtlJsonImplicits._
+import com.dsleng.model.{TokenCtl,TokenStrCtl,EmoEmailCtl}
+import com.dsleng.model.CtlJsonImplicits._
 
 @ApiMayChange
 object WebServer extends HttpApp {
