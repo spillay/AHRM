@@ -106,6 +106,9 @@
 [0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:91:21: not found: type EmoData[0m
 [0m[[0m[31merror[0m] [0m[0m      var res = Seq[EmoData]()[0m
 [0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Performance.scala:3:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.log4j._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
 [0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/EmoSimple.scala:102:22: not found: type EmoData[0m
 [0m[[0m[31merror[0m] [0m[0m      var prime: Seq[EmoData] = null[0m
 [0m[[0m[31merror[0m] [0m[0m                     ^[0m
@@ -298,7 +301,4 @@
 [0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala:17:12: object apache is not a member of package org[0m
 [0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.types._[0m
 [0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Data/2019/git/AHRM/lib/com.dsleng.emo/src/main/scala/com/dsleng/emo/helper/Emotions.scala:18:12: object apache is not a member of package org[0m
-[0m[[0m[31merror[0m] [0m[0mimport org.apache.spark.sql.catalyst.expressions.codegen.CodegenContext[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m150 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m152 errors found[0m

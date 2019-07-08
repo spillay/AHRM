@@ -53,7 +53,7 @@ object WebServer extends HttpApp {
     path("emo") { 
       post {
         entity(as[String]){ param =>{
-          //println(param)
+          println(param)
           val jdata = param.parseJson
           val tc = jdata.convertTo[TokenCtl] 
          

@@ -56,7 +56,7 @@ class Emotion extends Actor with ActorLogging with ReaperWatched {
               uri = "http://localhost:9011/emo",
               entity = requestEntity
       )
-      println("before firing")
+      println("before firing emotion")
       http.singleRequest(req).pipeTo(self)
 
      case HttpResponse(StatusCodes.OK, headers, entity, _) =>
