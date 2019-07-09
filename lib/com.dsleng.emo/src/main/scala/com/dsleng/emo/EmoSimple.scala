@@ -192,7 +192,11 @@ class EmoSimple extends SparkHelper with Performance {
     }
     return prime
   }
-
+  def processEmo(tokens: Seq[String]): String ={
+    val emo = new Emotions(spark)
+    val df = emo.process(tokens)
+    emo.convertToJson(df)
+  }
   
 }
 
@@ -208,13 +212,17 @@ object EmoSimple extends App with Performance {
 //  }
   println(tokens.length)
   var o = new EmoSimple()
-  var res = ""
-  averageTime("process",{
-    val ndf = o.process2(tokens)
-    res = o.convertToJson(ndf)
-  },1)
+//  var res = ""
+//  averageTime("process",{
+//    val ndf = o.process2(tokens)
+//    res = o.convertToJson(ndf)
+//  },1)
 //  takenTime("getData",{
 //    o.getData(ndf)
 //  })
-  println("json string",res)
+ // println("json string",res)
+  averageTime("process2",{
+    val nres = o.processEmo(tokens)
+    println(nres)
+  },1)
 }

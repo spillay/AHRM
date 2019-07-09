@@ -36,8 +36,8 @@ class Emotions(spark: SparkSession) extends Performance {
   val complete2 = "/Data/emo-store/dict-data/emo-dfv2.parquet"
   val emoOrder = Array("Shame", "Fear", "Anger", "Disgust", "Sadness", "Anxiety", "Relief", "Pride", "Interest", "Agreeableness", "Contentment", "Joy")
 
-  var odf = spark.read.parquet(complete)
-  //odf.cache()
+  val odf = spark.read.parquet(complete).cache()
+  
   
   def execute(tokens: Seq[String]): String = {
     var result = ""
@@ -48,6 +48,32 @@ class Emotions(spark: SparkSession) extends Performance {
     return result
    }
   def process(tokens: Seq[String]): DataFrame = {
+    var df = odf
+    df = df.withColumn("liwc_fwords", array_intersect(typedLit(tokens),col("liwc_words")))
+    df = df.withColumn("ext_fwords", array_intersect(typedLit(tokens),col("ext_words")))
+    df = df.withColumn("liwc_count", size(col("liwc_fwords")))
+    df = df.withColumn("ext_count", size(col("ext_fwords")))
+    df = df.withColumn("union",array_union(col("liwc_fwords"),col("ext_fwords")))
+    df = df.withColumn("count",size(col("union")))
+    df = df.filter(col("count")>0) 
+    return df.select("emotion","union", "count")
+   }
+  def showPar(df: DataFrame){
+   val rdd = df.rdd
+   println("Number of partitions: ",rdd.partitions.size)
+   println("Partitioner: ",rdd.partitioner)
+   val par = rdd.glom().collect().map(v=>{
+     //println(v)
+     if (v.length > 0){
+       println(v.length)
+       println(v(0)(0))
+     } else {
+       println("empty partition")
+     }
+   })
+   println("Partitions structure: ",par)
+  }
+  def processPerf(tokens: Seq[String]): DataFrame = {
     var df = odf
     df = df.withColumn("liwc_fwords", array_intersect(typedLit(tokens),col("liwc_words")))
     df = df.withColumn("ext_fwords", array_intersect(typedLit(tokens),col("ext_words")))
@@ -76,7 +102,6 @@ class Emotions(spark: SparkSession) extends Performance {
       return df.select("emotion","union", "count")
    }
    def convertToJson(df: DataFrame): String = {
-      df.explain()
       var res = Seq[EmoData]()
       df.collect().foreach(r => {
         val e = new EmoData(
