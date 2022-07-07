@@ -66,6 +66,6 @@
   "private": false,
   "license": "ISC",
   "dependencies": {
-    "moment": "^2.20.1"
+    "moment": "^2.29.4"
   }
 }
